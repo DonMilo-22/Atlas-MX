@@ -11,7 +11,7 @@ function itemData(item, fallbackDescription) {
   return { nombre: item?.nombre || 'Lugar', descripcion: item?.descripcion || fallbackDescription, imagen: item?.imagen || '' };
 }
 
-function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, fallbackDescription }) {
+function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, href, fallbackDescription }) {
   const data = itemData(item, fallbackDescription);
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -19,8 +19,20 @@ function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, fallba
       onClick?.();
     }
   };
+  const CardElement = href ? 'a' : 'div';
+
   return (
-    <div className="rich-place-card" onClick={onClick} onKeyDown={handleKeyDown} role="button" tabIndex={0} title={`Explorar ${data.nombre}`}>
+    <CardElement
+      className="rich-place-card"
+      href={href || undefined}
+      target={href ? '_blank' : undefined}
+      rel={href ? 'noopener noreferrer' : undefined}
+      onClick={href ? undefined : onClick}
+      onKeyDown={href ? undefined : handleKeyDown}
+      role={href ? undefined : 'button'}
+      tabIndex={href ? undefined : 0}
+      title={`Explorar ${data.nombre}`}
+    >
       <div className="rich-place-thumb">
         <RealPhoto name={data.nombre} stateName={stateName} fallback={data.imagen} alt={`${data.nombre}, ${stateName}`} />
       </div>
@@ -31,7 +43,7 @@ function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, fallba
         </div>
         <p className="rich-place-desc">{data.descripcion}</p>
       </div>
-    </div>
+    </CardElement>
   );
 }
 
@@ -61,9 +73,11 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
     const name = typeof item === 'string' ? item : item?.nombre;
     if (name) onOpenLocationMap?.(name, selectedState.nombre, category);
   };
-  const openSearch = (item) => {
+  const getSearchUrl = (item) => {
     const name = typeof item === 'string' ? item : item?.nombre;
-    if (name) window.open(`https://www.google.com/search?q=${encodeURIComponent(`${name} ${selectedState.nombre} México`)}`, '_blank', 'noopener,noreferrer');
+    return name
+      ? `https://www.google.com/search?q=${encodeURIComponent(`${name} ${selectedState.nombre} México`)}`
+      : undefined;
   };
 
   const destinations = [...(tourism.destinos || []), ...(tourism.playas || [])];
@@ -124,7 +138,7 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
             </div>}
 
             {activeTab === 'gastronomia' && <div className="rich-place-cards-list">
-              {tourism.gastronomia.map((item, index) => <PlaceCard key={`g-${index}`} item={item} stateName={selectedState.nombre} badge="Cocina" badgeClass="food" onClick={() => openSearch(item)} fallbackDescription="Especialidad gastronómica tradicional del estado." />)}
+              {tourism.gastronomia.map((item, index) => <PlaceCard key={`g-${index}`} item={item} stateName={selectedState.nombre} badge="Cocina" badgeClass="food" href={getSearchUrl(item)} fallbackDescription="Especialidad gastronómica tradicional del estado." />)}
             </div>}
           </div>
           <div style={{ fontSize: '0.66rem', color: 'var(--text-dim)', marginTop: '8px', display: 'flex', alignItems: 'center', gap: '5px' }}><ExternalLink size={11} /> Fotografías consultadas dinámicamente en Wikipedia/Wikimedia Commons; los lugares abren Google Maps.</div>
