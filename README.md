@@ -181,7 +181,7 @@ El proyecto fue desarrollado con fines **educativos y de divulgación turística
 
 ## 👨‍💻 Autor
 
-Desarrollado por **Emiliano Guzmán**.
+Desarrollado por **DonMilo22**.
 
 Proyecto académico — Ingeniería en Sistemas Computacionales.
 
