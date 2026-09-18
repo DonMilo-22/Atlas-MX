@@ -5,6 +5,7 @@ import { formatArea, formatPopulation } from '../utils/map';
 import { TOURISM_DATA } from '../data/states';
 import { enrichTourismData } from '../data/tourismEnhancer';
 import RealPhoto from './RealPhoto';
+import TravelSeasonCard from './TravelSeasonCard';
 
 function itemData(item, fallbackDescription) {
   if (typeof item === 'string') return { nombre: item, descripcion: fallbackDescription };
@@ -130,6 +131,8 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
           <div className="stat-box"><div className="stat-label">Huso Horario</div><div className="stat-value" style={{ fontSize: '0.74rem', wordBreak: 'break-all' }}>{selectedState.huso || 'America/Mexico_City'}</div></div>
           <div className="stat-box"><div className="stat-label">Clima</div><div className="stat-value" style={{ fontSize: '0.76rem' }}>{tourism.clima || 'Variable según la región'}</div></div>
         </div>
+
+        <TravelSeasonCard stateCode={selectedState.cve} />
 
         {stateData.resumen && <div className="state-summary-card"><span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--mexico-brown)', textTransform: 'uppercase', letterSpacing: '0.04em', display: 'block', marginBottom: '3px' }}>Perfil del Estado</span><p style={{ margin: 0 }}>{stateData.resumen}</p></div>}
 
