@@ -6,6 +6,7 @@ import StatePanel from './components/StatePanelV2';
 import Legend from './components/Legend';
 import MunicipalityModal from './components/MunicipalityModalV2';
 import GoogleMapsModal from './components/GoogleMapsModalV2';
+import TourismFilters from './components/TourismFilters';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -14,6 +15,7 @@ export default function App() {
   const [showLabels, setShowLabels] = useState(true);
   const [isMunModalOpen, setIsMunModalOpen] = useState(false);
   const [mapsModal, setMapsModal] = useState({ isOpen: false, placeName: '', stateName: '', category: '' });
+  const [tourismFilter, setTourismFilter] = useState('todos');
 
   const handleSelectState = useCallback((state) => setSelectedState(state), []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -31,7 +33,8 @@ export default function App() {
       <Header onSelectState={handleSelectState} selectedState={selectedState} />
       <main className="atlas-main">
         <section className="map-section" style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} />
+          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} />
+          <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} />
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
