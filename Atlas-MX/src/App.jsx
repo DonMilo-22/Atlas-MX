@@ -11,6 +11,8 @@ import MapPlacePreview from './components/MapPlacePreview';
 import FavoritesDrawer from './components/FavoritesDrawer';
 import useFavorites from './hooks/useFavorites';
 import { estado as getEstadoByCve } from '@webrek/mx-geo';
+import TouristRoutesPanel from './components/TouristRoutesPanel';
+import { TOURIST_ROUTES } from './data/touristRoutes';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -23,6 +25,7 @@ export default function App() {
   const [previewPlace, setPreviewPlace] = useState(null);
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const { favorites, isFavorite, toggleFavorite } = useFavorites();
+  const [activeRoute, setActiveRoute] = useState(null);
 
   const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -47,12 +50,13 @@ export default function App() {
 
   return (
     <div className="atlas-app-container">
-      <Header onSelectState={handleSelectState} selectedState={selectedState} favoritesCount={favorites.length} onOpenFavorites={() => setFavoritesOpen(true)} />
+      <Header onSelectState={handleSelectState} selectedState={selectedState} favoritesCount={favorites.length} onOpenFavorites={() => setFavoritesOpen(true)} onOpenRoutes={() => setActiveRoute((current) => current || TOURIST_ROUTES[0])} />
       <main className="atlas-main">
         <section className="map-section" style={{ position: 'relative', width: '100%', height: '100%' }}>
-          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} />
+          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} activeRoute={activeRoute} />
           <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} />
           <MapPlacePreview place={previewPlace} onClose={() => setPreviewPlace(null)} onOpen={() => handleOpenLocationMap(previewPlace?.name, previewPlace?.stateName, previewPlace?.category)} />
+          <TouristRoutesPanel activeRoute={activeRoute} onSelectRoute={setActiveRoute} onSelectState={handleSelectState} onClose={() => setActiveRoute(null)} />
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
