@@ -7,6 +7,7 @@ import { enrichTourismData } from '../data/tourismEnhancer';
 import RealPhoto from './RealPhoto';
 import TravelSeasonCard from './TravelSeasonCard';
 import TravelBudgetCard from './TravelBudgetCard';
+import StateStoryCard from './StateStoryCard';
 
 function itemData(item, fallbackDescription) {
   if (typeof item === 'string') return { nombre: item, descripcion: fallbackDescription };
@@ -137,6 +138,7 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
         <TravelBudgetCard stateCode={selectedState.cve} />
 
         {stateData.resumen && <div className="state-summary-card"><span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--mexico-brown)', textTransform: 'uppercase', letterSpacing: '0.04em', display: 'block', marginBottom: '3px' }}>Perfil del Estado</span><p style={{ margin: 0 }}>{stateData.resumen}</p></div>}
+        <StateStoryCard stateCode={selectedState.cve} stateName={selectedState.nombre} motto={stateData.lema} summary={stateData.resumen} />
 
         <div className="tourism-section">
           <div className="tourism-header-bar"><span className="tourism-header-title">Patrimonio, Lugares y Cocina</span><Sparkles size={15} color="var(--mexico-gold)" /></div>
