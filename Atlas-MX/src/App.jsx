@@ -19,6 +19,7 @@ import ExperienceDock from './components/ExperienceDock';
 import TravelPlanner from './components/TravelPlanner';
 import StateComparisonModal from './components/StateComparisonModal';
 import DestinationQuiz from './components/DestinationQuiz';
+import GastronomyMapModal from './components/GastronomyMapModal';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -37,6 +38,7 @@ export default function App() {
   const [plannerOpen, setPlannerOpen] = useState(false);
   const [compareOpen, setCompareOpen] = useState(false);
   const [quizOpen, setQuizOpen] = useState(false);
+  const [foodOpen, setFoodOpen] = useState(false);
 
   const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -73,7 +75,7 @@ export default function App() {
           <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} onOpenResult={handleOpenTourismResult} />
           <MapPlacePreview place={previewPlace} onClose={() => setPreviewPlace(null)} onOpen={() => handleOpenLocationMap(previewPlace?.name, previewPlace?.stateName, previewPlace?.category)} />
           <TouristRoutesPanel activeRoute={activeRoute} onSelectRoute={setActiveRoute} onSelectState={handleSelectState} onClose={() => setActiveRoute(null)} />
-          <ExperienceDock onOpenPlanner={() => setPlannerOpen(true)} onOpenCompare={() => setCompareOpen(true)} onOpenQuiz={() => setQuizOpen(true)} />
+          <ExperienceDock onOpenPlanner={() => setPlannerOpen(true)} onOpenCompare={() => setCompareOpen(true)} onOpenQuiz={() => setQuizOpen(true)} onOpenFood={() => setFoodOpen(true)} />
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
@@ -86,6 +88,7 @@ export default function App() {
       <TravelPlanner isOpen={plannerOpen} initialState={selectedState} onClose={() => setPlannerOpen(false)} onOpenLocation={handleOpenLocationMap} />
       <StateComparisonModal isOpen={compareOpen} initialState={selectedState} onClose={() => setCompareOpen(false)} onSelectState={(state) => { handleSelectState(state); setCompareOpen(false); }} />
       <DestinationQuiz isOpen={quizOpen} onClose={() => setQuizOpen(false)} onSelectState={(state) => { handleSelectState(state); setQuizOpen(false); }} />
+      <GastronomyMapModal isOpen={foodOpen} initialState={selectedState} onClose={() => setFoodOpen(false)} onOpenLocation={handleOpenLocationMap} />
     </div>
   );
 }
