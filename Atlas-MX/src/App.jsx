@@ -21,6 +21,7 @@ import StateComparisonModal from './components/StateComparisonModal';
 import DestinationQuiz from './components/DestinationQuiz';
 import GastronomyMapModal from './components/GastronomyMapModal';
 import CulturalCalendarModal from './components/CulturalCalendarModal';
+import StateTransition from './components/StateTransition';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -41,8 +42,13 @@ export default function App() {
   const [quizOpen, setQuizOpen] = useState(false);
   const [foodOpen, setFoodOpen] = useState(false);
   const [calendarOpen, setCalendarOpen] = useState(false);
+  const [transitionState, setTransitionState] = useState(null);
 
-  const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
+  const handleSelectState = useCallback((state) => {
+    if (state && selectedState?.cve !== state.cve) setTransitionState(state);
+    setSelectedState(state);
+    setPreviewPlace(null);
+  }, [selectedState?.cve]);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
   const handleZoomOut = useCallback(() => setZoom((prev) => Math.max(0.8, prev * 0.77)), []);
   const handleReset = useCallback(() => { setZoom(1.0); setPan({ x: 0, y: 0 }); setSelectedState(null); }, []);
@@ -58,9 +64,9 @@ export default function App() {
   const handleCloseLocationMap = useCallback(() => setMapsModal((prev) => ({ ...prev, isOpen: false })), []);
   const handleOpenTourismResult = useCallback((result) => {
     const state = getEstadoByCve(result.stateCode);
-    if (state) setSelectedState(state);
+    if (state) handleSelectState(state);
     handleOpenLocationMap(result.name, result.stateName, result.category === 'gastronomia' ? 'Gastronomía' : result.category);
-  }, [handleOpenLocationMap]);
+  }, [handleOpenLocationMap, handleSelectState]);
   const handleOpenFavorite = useCallback((favorite) => {
     const state = getEstadoByCve(favorite.stateCode);
     if (state) setSelectedState(state);
@@ -92,6 +98,7 @@ export default function App() {
       <DestinationQuiz isOpen={quizOpen} onClose={() => setQuizOpen(false)} onSelectState={(state) => { handleSelectState(state); setQuizOpen(false); }} />
       <GastronomyMapModal isOpen={foodOpen} initialState={selectedState} onClose={() => setFoodOpen(false)} onOpenLocation={handleOpenLocationMap} />
       <CulturalCalendarModal isOpen={calendarOpen} onClose={() => setCalendarOpen(false)} onSelectState={(state) => { handleSelectState(state); setCalendarOpen(false); }} />
+      <StateTransition state={transitionState} onDone={() => setTransitionState(null)} />
     </div>
   );
 }
