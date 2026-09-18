@@ -13,6 +13,8 @@ import useFavorites from './hooks/useFavorites';
 import { estado as getEstadoByCve } from '@webrek/mx-geo';
 import TouristRoutesPanel from './components/TouristRoutesPanel';
 import { TOURIST_ROUTES } from './data/touristRoutes';
+import PassportDrawer from './components/PassportDrawer';
+import usePassport from './hooks/usePassport';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -26,6 +28,8 @@ export default function App() {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const { favorites, isFavorite, toggleFavorite } = useFavorites();
   const [activeRoute, setActiveRoute] = useState(null);
+  const [passportOpen, setPassportOpen] = useState(false);
+  const { visitedStates, isVisited, toggleVisited } = usePassport();
 
   const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -50,7 +54,7 @@ export default function App() {
 
   return (
     <div className="atlas-app-container">
-      <Header onSelectState={handleSelectState} selectedState={selectedState} favoritesCount={favorites.length} onOpenFavorites={() => setFavoritesOpen(true)} onOpenRoutes={() => setActiveRoute((current) => current || TOURIST_ROUTES[0])} />
+      <Header onSelectState={handleSelectState} selectedState={selectedState} favoritesCount={favorites.length} onOpenFavorites={() => setFavoritesOpen(true)} onOpenRoutes={() => setActiveRoute((current) => current || TOURIST_ROUTES[0])} visitedCount={visitedStates.length} onOpenPassport={() => setPassportOpen(true)} />
       <main className="atlas-main">
         <section className="map-section" style={{ position: 'relative', width: '100%', height: '100%' }}>
           <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} activeRoute={activeRoute} />
@@ -60,11 +64,12 @@ export default function App() {
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
-        <StatePanel selectedState={selectedState} onSelectState={handleSelectState} onExploreState={handleExploreState} onOpenLocationMap={handleOpenLocationMap} onPreviewLocation={handlePreviewLocation} isFavorite={isFavorite} onToggleFavorite={toggleFavorite} />
+        <StatePanel selectedState={selectedState} onSelectState={handleSelectState} onExploreState={handleExploreState} onOpenLocationMap={handleOpenLocationMap} onPreviewLocation={handlePreviewLocation} isFavorite={isFavorite} onToggleFavorite={toggleFavorite} isVisited={isVisited} onToggleVisited={toggleVisited} />
       </main>
       {selectedState && <MunicipalityModal state={selectedState} isOpen={isMunModalOpen} onClose={() => setIsMunModalOpen(false)} onOpenLocationMap={handleOpenLocationMap} />}
       <GoogleMapsModal isOpen={mapsModal.isOpen} onClose={handleCloseLocationMap} placeName={mapsModal.placeName} stateName={mapsModal.stateName} category={mapsModal.category} />
       <FavoritesDrawer isOpen={favoritesOpen} favorites={favorites} onClose={() => setFavoritesOpen(false)} onOpenFavorite={handleOpenFavorite} onRemove={toggleFavorite} />
+      <PassportDrawer isOpen={passportOpen} visitedStates={visitedStates} onToggleVisited={toggleVisited} onSelectState={(state) => { handleSelectState(state); setPassportOpen(false); }} onClose={() => setPassportOpen(false)} />
     </div>
   );
 }

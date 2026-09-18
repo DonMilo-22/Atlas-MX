@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowRight, Compass, ExternalLink, Heart, MapPin, Sparkles } from 'lucide-react';
+import { ArrowRight, Check, Compass, ExternalLink, Heart, MapPin, Sparkles, Stamp } from 'lucide-react';
 import { vecinos, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatArea, formatPopulation } from '../utils/map';
 import { TOURISM_DATA } from '../data/states';
@@ -55,7 +55,7 @@ function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, onPrev
   );
 }
 
-export default function StatePanelV2({ selectedState, onSelectState, onExploreState, onOpenLocationMap, onPreviewLocation, isFavorite, onToggleFavorite }) {
+export default function StatePanelV2({ selectedState, onSelectState, onExploreState, onOpenLocationMap, onPreviewLocation, isFavorite, onToggleFavorite, isVisited, onToggleVisited }) {
   const [activeTab, setActiveTab] = useState('destinos');
 
   const stateData = selectedState ? (TOURISM_DATA[selectedState.cve] || {}) : {};
@@ -174,7 +174,10 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
           </div>
         </div>}
 
-        <button type="button" className="explore-action-btn" onClick={() => onExploreState?.(selectedState)} aria-label={`Ver división municipal de ${selectedState.nombre}`}><Compass size={18} /><span>Explorar Municipios de {selectedState.nombreCorto}</span><ArrowRight size={17} /></button>
+        <div className="state-footer-actions">
+          <button type="button" className={`passport-state-action ${isVisited?.(selectedState.cve) ? 'visited' : ''}`} onClick={() => onToggleVisited?.(selectedState.cve)} aria-pressed={isVisited?.(selectedState.cve)}>{isVisited?.(selectedState.cve) ? <Check size={17} /> : <Stamp size={17} />}<span>{isVisited?.(selectedState.cve) ? 'Sello agregado al pasaporte' : 'Marcar estado como visitado'}</span></button>
+          <button type="button" className="explore-action-btn" onClick={() => onExploreState?.(selectedState)} aria-label={`Ver división municipal de ${selectedState.nombre}`}><Compass size={18} /><span>Explorar Municipios de {selectedState.nombreCorto}</span><ArrowRight size={17} /></button>
+        </div>
       </div>
     </aside>
   );

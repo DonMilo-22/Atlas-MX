@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
-import { Heart, Route, Search, MapPinned } from 'lucide-react';
+import { Heart, Route, Search, MapPinned, Stamp } from 'lucide-react';
 import { ESTADOS } from '@webrek/mx-geo';
 
-export default function Header({ onSelectState, selectedState, favoritesCount = 0, onOpenFavorites, onOpenRoutes }) {
+export default function Header({ onSelectState, selectedState, favoritesCount = 0, onOpenFavorites, onOpenRoutes, visitedCount = 0, onOpenPassport }) {
   const [query,setQuery]=useState('');
   const results=useMemo(()=>{
     const q=query.toLocaleLowerCase('es-MX').trim();
@@ -18,6 +18,7 @@ export default function Header({ onSelectState, selectedState, favoritesCount = 
     </div>
     <button type="button" className="header-routes" onClick={onOpenRoutes}><Route size={16} /><span>Rutas</span></button>
     <button type="button" className="header-favorites" onClick={onOpenFavorites} aria-label={`Abrir ${favoritesCount} lugares favoritos`}><Heart size={16} fill={favoritesCount ? 'currentColor' : 'none'} /><span>Quiero visitar</span>{favoritesCount > 0 && <b>{favoritesCount}</b>}</button>
+    <button type="button" className="header-passport" onClick={onOpenPassport} aria-label={`Abrir pasaporte con ${visitedCount} estados visitados`}><Stamp size={16} /><span>Pasaporte</span><b>{visitedCount}/32</b></button>
     <div className="header-status">{selectedState ? selectedState.nombre : '32 entidades'}</div>
   </header>;
 }
