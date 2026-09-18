@@ -17,6 +17,7 @@ import PassportDrawer from './components/PassportDrawer';
 import usePassport from './hooks/usePassport';
 import ExperienceDock from './components/ExperienceDock';
 import TravelPlanner from './components/TravelPlanner';
+import StateComparisonModal from './components/StateComparisonModal';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -33,6 +34,7 @@ export default function App() {
   const [passportOpen, setPassportOpen] = useState(false);
   const { visitedStates, isVisited, toggleVisited } = usePassport();
   const [plannerOpen, setPlannerOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
 
   const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -69,7 +71,7 @@ export default function App() {
           <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} onOpenResult={handleOpenTourismResult} />
           <MapPlacePreview place={previewPlace} onClose={() => setPreviewPlace(null)} onOpen={() => handleOpenLocationMap(previewPlace?.name, previewPlace?.stateName, previewPlace?.category)} />
           <TouristRoutesPanel activeRoute={activeRoute} onSelectRoute={setActiveRoute} onSelectState={handleSelectState} onClose={() => setActiveRoute(null)} />
-          <ExperienceDock onOpenPlanner={() => setPlannerOpen(true)} />
+          <ExperienceDock onOpenPlanner={() => setPlannerOpen(true)} onOpenCompare={() => setCompareOpen(true)} />
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
@@ -80,6 +82,7 @@ export default function App() {
       <FavoritesDrawer isOpen={favoritesOpen} favorites={favorites} onClose={() => setFavoritesOpen(false)} onOpenFavorite={handleOpenFavorite} onRemove={toggleFavorite} />
       <PassportDrawer isOpen={passportOpen} visitedStates={visitedStates} onToggleVisited={toggleVisited} onSelectState={(state) => { handleSelectState(state); setPassportOpen(false); }} onClose={() => setPassportOpen(false)} />
       <TravelPlanner isOpen={plannerOpen} initialState={selectedState} onClose={() => setPlannerOpen(false)} onOpenLocation={handleOpenLocationMap} />
+      <StateComparisonModal isOpen={compareOpen} initialState={selectedState} onClose={() => setCompareOpen(false)} onSelectState={(state) => { handleSelectState(state); setCompareOpen(false); }} />
     </div>
   );
 }
