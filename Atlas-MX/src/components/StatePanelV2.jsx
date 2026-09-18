@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowRight, Compass, ExternalLink, MapPin, Sparkles } from 'lucide-react';
+import { ArrowRight, Compass, ExternalLink, Heart, MapPin, Sparkles } from 'lucide-react';
 import { vecinos, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatArea, formatPopulation } from '../utils/map';
 import { TOURISM_DATA } from '../data/states';
@@ -11,7 +11,7 @@ function itemData(item, fallbackDescription) {
   return { nombre: item?.nombre || 'Lugar', descripcion: item?.descripcion || fallbackDescription, imagen: item?.imagen || '' };
 }
 
-function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, onPreview, href, fallbackDescription }) {
+function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, onPreview, href, fallbackDescription, favorite, isFavorite, onToggleFavorite }) {
   const data = itemData(item, fallbackDescription);
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -22,6 +22,7 @@ function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, onPrev
   const CardElement = href ? 'a' : 'div';
 
   return (
+    <article className="rich-place-card-shell">
     <CardElement
       className="rich-place-card"
       href={href || undefined}
@@ -48,10 +49,12 @@ function PlaceCard({ item, stateName, badge, badgeClass = 'map', onClick, onPrev
         <p className="rich-place-desc">{data.descripcion}</p>
       </div>
     </CardElement>
+    <button type="button" className={`place-favorite-btn ${isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite?.(favorite)} aria-label={`${isFavorite ? 'Quitar' : 'Guardar'} ${data.nombre} ${isFavorite ? 'de' : 'en'} favoritos`} title={isFavorite ? 'Quitar de Quiero visitar' : 'Guardar en Quiero visitar'}><Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} /></button>
+    </article>
   );
 }
 
-export default function StatePanelV2({ selectedState, onSelectState, onExploreState, onOpenLocationMap, onPreviewLocation }) {
+export default function StatePanelV2({ selectedState, onSelectState, onExploreState, onOpenLocationMap, onPreviewLocation, isFavorite, onToggleFavorite }) {
   const [activeTab, setActiveTab] = useState('destinos');
 
   const stateData = selectedState ? (TOURISM_DATA[selectedState.cve] || {}) : {};
@@ -78,6 +81,14 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
     if (name) onOpenLocationMap?.(name, selectedState.nombre, category);
   };
   const previewMap = (name, category) => onPreviewLocation?.(name, selectedState.nombre, category);
+  const favoriteData = (item, category) => {
+    const name = typeof item === 'string' ? item : item?.nombre;
+    return { id: `${selectedState.cve}:${category}:${name}`, name, stateName: selectedState.nombre, stateCode: selectedState.cve, category };
+  };
+  const cardFavoriteProps = (item, category) => {
+    const favorite = favoriteData(item, category);
+    return { favorite, isFavorite: isFavorite?.(favorite.id), onToggleFavorite };
+  };
   const getSearchUrl = (item) => {
     const name = typeof item === 'string' ? item : item?.nombre;
     return name
@@ -130,20 +141,20 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
 
           <div className="tourism-tab-content">
             {activeTab === 'destinos' && <div className="rich-place-cards-list">
-              {(tourism.destinos || []).map((item, index) => <PlaceCard key={`d-${index}`} item={item} stateName={selectedState.nombre} badge="Maps" badgeClass="map" onClick={() => openMap(item, 'Destino turístico')} onPreview={(name) => previewMap(name, 'Destino turístico')} fallbackDescription="Destino turístico destacado del estado." />)}
-              {(tourism.playas || []).map((item, index) => <PlaceCard key={`p-${index}`} item={item} stateName={selectedState.nombre} badge="Playa" badgeClass="beach" onClick={() => openMap(item, 'Playa')} onPreview={(name) => previewMap(name, 'Playa')} fallbackDescription="Zona costera destacada del estado." />)}
+              {(tourism.destinos || []).map((item, index) => <PlaceCard key={`d-${index}`} item={item} stateName={selectedState.nombre} badge="Maps" badgeClass="map" onClick={() => openMap(item, 'Destino turístico')} onPreview={(name) => previewMap(name, 'Destino turístico')} fallbackDescription="Destino turístico destacado del estado." {...cardFavoriteProps(item, 'Destino turístico')} />)}
+              {(tourism.playas || []).map((item, index) => <PlaceCard key={`p-${index}`} item={item} stateName={selectedState.nombre} badge="Playa" badgeClass="beach" onClick={() => openMap(item, 'Playa')} onPreview={(name) => previewMap(name, 'Playa')} fallbackDescription="Zona costera destacada del estado." {...cardFavoriteProps(item, 'Playa')} />)}
             </div>}
 
             {activeTab === 'magicos' && <div className="rich-place-cards-list">
-              {tourism.pueblosMagicos.map((item, index) => <PlaceCard key={`m-${index}`} item={item} stateName={selectedState.nombre} badge="Pueblo" badgeClass="magic" onClick={() => openMap(item, 'Pueblo o localidad')} onPreview={(name) => previewMap(name, 'Pueblo o localidad')} fallbackDescription="Pueblo o localidad con identidad cultural del estado." />)}
+              {tourism.pueblosMagicos.map((item, index) => <PlaceCard key={`m-${index}`} item={item} stateName={selectedState.nombre} badge="Pueblo" badgeClass="magic" onClick={() => openMap(item, 'Pueblo o localidad')} onPreview={(name) => previewMap(name, 'Pueblo o localidad')} fallbackDescription="Pueblo o localidad con identidad cultural del estado." {...cardFavoriteProps(item, 'Pueblo o localidad')} />)}
             </div>}
 
             {activeTab === 'arqueologia' && <div className="rich-place-cards-list">
-              {tourism.arqueologia.map((item, index) => <PlaceCard key={`h-${index}`} item={item} stateName={selectedState.nombre} badge="Historia" badgeClass="history" onClick={() => openMap(item, 'Sitio histórico')} onPreview={(name) => previewMap(name, 'Sitio histórico')} fallbackDescription="Sitio histórico o patrimonial del estado." />)}
+              {tourism.arqueologia.map((item, index) => <PlaceCard key={`h-${index}`} item={item} stateName={selectedState.nombre} badge="Historia" badgeClass="history" onClick={() => openMap(item, 'Sitio histórico')} onPreview={(name) => previewMap(name, 'Sitio histórico')} fallbackDescription="Sitio histórico o patrimonial del estado." {...cardFavoriteProps(item, 'Sitio histórico')} />)}
             </div>}
 
             {activeTab === 'gastronomia' && <div className="rich-place-cards-list">
-              {tourism.gastronomia.map((item, index) => <PlaceCard key={`g-${index}`} item={item} stateName={selectedState.nombre} badge="Cocina" badgeClass="food" href={getSearchUrl(item)} fallbackDescription="Especialidad gastronómica tradicional del estado." />)}
+              {tourism.gastronomia.map((item, index) => <PlaceCard key={`g-${index}`} item={item} stateName={selectedState.nombre} badge="Cocina" badgeClass="food" href={getSearchUrl(item)} fallbackDescription="Especialidad gastronómica tradicional del estado." {...cardFavoriteProps(item, 'Gastronomía')} />)}
             </div>}
           </div>
           <div style={{ fontSize: '0.66rem', color: 'var(--text-dim)', marginTop: '8px', display: 'flex', alignItems: 'center', gap: '5px' }}><ExternalLink size={11} /> Fotografías consultadas dinámicamente en Wikipedia/Wikimedia Commons; los lugares abren Google Maps.</div>

@@ -8,6 +8,9 @@ import MunicipalityModal from './components/MunicipalityModalV2';
 import GoogleMapsModal from './components/GoogleMapsModalV2';
 import TourismFilters from './components/TourismFilters';
 import MapPlacePreview from './components/MapPlacePreview';
+import FavoritesDrawer from './components/FavoritesDrawer';
+import useFavorites from './hooks/useFavorites';
+import { estado as getEstadoByCve } from '@webrek/mx-geo';
 
 export default function App() {
   const [selectedState, setSelectedState] = useState(null);
@@ -18,6 +21,8 @@ export default function App() {
   const [mapsModal, setMapsModal] = useState({ isOpen: false, placeName: '', stateName: '', category: '' });
   const [tourismFilter, setTourismFilter] = useState('todos');
   const [previewPlace, setPreviewPlace] = useState(null);
+  const [favoritesOpen, setFavoritesOpen] = useState(false);
+  const { favorites, isFavorite, toggleFavorite } = useFavorites();
 
   const handleSelectState = useCallback((state) => { setSelectedState(state); setPreviewPlace(null); }, []);
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(6.0, prev * 1.3)), []);
@@ -33,10 +38,16 @@ export default function App() {
     setPreviewPlace({ name: placeName, stateName, category });
   }, []);
   const handleCloseLocationMap = useCallback(() => setMapsModal((prev) => ({ ...prev, isOpen: false })), []);
+  const handleOpenFavorite = useCallback((favorite) => {
+    const state = getEstadoByCve(favorite.stateCode);
+    if (state) setSelectedState(state);
+    setFavoritesOpen(false);
+    handleOpenLocationMap(favorite.name, favorite.stateName, favorite.category);
+  }, [handleOpenLocationMap]);
 
   return (
     <div className="atlas-app-container">
-      <Header onSelectState={handleSelectState} selectedState={selectedState} />
+      <Header onSelectState={handleSelectState} selectedState={selectedState} favoritesCount={favorites.length} onOpenFavorites={() => setFavoritesOpen(true)} />
       <main className="atlas-main">
         <section className="map-section" style={{ position: 'relative', width: '100%', height: '100%' }}>
           <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} />
@@ -45,10 +56,11 @@ export default function App() {
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
           <Legend />
         </section>
-        <StatePanel selectedState={selectedState} onSelectState={handleSelectState} onExploreState={handleExploreState} onOpenLocationMap={handleOpenLocationMap} onPreviewLocation={handlePreviewLocation} />
+        <StatePanel selectedState={selectedState} onSelectState={handleSelectState} onExploreState={handleExploreState} onOpenLocationMap={handleOpenLocationMap} onPreviewLocation={handlePreviewLocation} isFavorite={isFavorite} onToggleFavorite={toggleFavorite} />
       </main>
       {selectedState && <MunicipalityModal state={selectedState} isOpen={isMunModalOpen} onClose={() => setIsMunModalOpen(false)} onOpenLocationMap={handleOpenLocationMap} />}
       <GoogleMapsModal isOpen={mapsModal.isOpen} onClose={handleCloseLocationMap} placeName={mapsModal.placeName} stateName={mapsModal.stateName} category={mapsModal.category} />
+      <FavoritesDrawer isOpen={favoritesOpen} favorites={favorites} onClose={() => setFavoritesOpen(false)} onOpenFavorite={handleOpenFavorite} onRemove={toggleFavorite} />
     </div>
   );
 }
