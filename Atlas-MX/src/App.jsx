@@ -45,6 +45,11 @@ export default function App() {
     setPreviewPlace({ name: placeName, stateName, category });
   }, []);
   const handleCloseLocationMap = useCallback(() => setMapsModal((prev) => ({ ...prev, isOpen: false })), []);
+  const handleOpenTourismResult = useCallback((result) => {
+    const state = getEstadoByCve(result.stateCode);
+    if (state) setSelectedState(state);
+    handleOpenLocationMap(result.name, result.stateName, result.category === 'gastronomia' ? 'Gastronomía' : result.category);
+  }, [handleOpenLocationMap]);
   const handleOpenFavorite = useCallback((favorite) => {
     const state = getEstadoByCve(favorite.stateCode);
     if (state) setSelectedState(state);
@@ -58,7 +63,7 @@ export default function App() {
       <main className="atlas-main">
         <section className="map-section" style={{ position: 'relative', width: '100%', height: '100%' }}>
           <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} activeRoute={activeRoute} />
-          <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} />
+          <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} onOpenResult={handleOpenTourismResult} />
           <MapPlacePreview place={previewPlace} onClose={() => setPreviewPlace(null)} onOpen={() => handleOpenLocationMap(previewPlace?.name, previewPlace?.stateName, previewPlace?.category)} />
           <TouristRoutesPanel activeRoute={activeRoute} onSelectRoute={setActiveRoute} onSelectState={handleSelectState} onClose={() => setActiveRoute(null)} />
           <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
