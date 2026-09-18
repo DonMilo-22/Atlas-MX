@@ -6,6 +6,7 @@ import { TOURISM_DATA } from '../data/states';
 import { enrichTourismData } from '../data/tourismEnhancer';
 import RealPhoto from './RealPhoto';
 import TravelSeasonCard from './TravelSeasonCard';
+import TravelBudgetCard from './TravelBudgetCard';
 
 function itemData(item, fallbackDescription) {
   if (typeof item === 'string') return { nombre: item, descripcion: fallbackDescription };
@@ -133,6 +134,7 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
         </div>
 
         <TravelSeasonCard stateCode={selectedState.cve} />
+        <TravelBudgetCard stateCode={selectedState.cve} />
 
         {stateData.resumen && <div className="state-summary-card"><span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--mexico-brown)', textTransform: 'uppercase', letterSpacing: '0.04em', display: 'block', marginBottom: '3px' }}>Perfil del Estado</span><p style={{ margin: 0 }}>{stateData.resumen}</p></div>}
 
