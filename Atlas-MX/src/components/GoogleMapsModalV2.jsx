@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Building2, CloudSun, ExternalLink, Image as ImageIcon, Info, MapPin, Navigation, Search, X } from 'lucide-react';
+import { Building2, CloudSun, ExternalLink, Image as ImageIcon, Info, MapPin, Navigation, Search, X, ZoomIn } from 'lucide-react';
 import { getMunicipalityDetails, getPlaceDetails } from '../data/placesData';
 import { useRealPhotoGallery } from '../hooks/useRealPhoto';
 import { PLACEHOLDER } from '../services/photoService';
+import PhotoLightbox from './PhotoLightbox';
 
 export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateName, category }) {
   const details = useMemo(() => {
@@ -14,6 +15,7 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
 
   const { photos, isLoading } = useRealPhotoGallery(placeName, stateName, 6);
   const [activePhoto, setActivePhoto] = useState('');
+  const [lightboxIndex, setLightboxIndex] = useState(null);
 
   useEffect(() => {
     setActivePhoto(photos[0] || '');
@@ -41,10 +43,11 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
 
         <div className="gmaps-split-container">
           <aside className="gmaps-info-sidebar">
-            <div className="gmaps-hero-media">
+            <div className="gmaps-hero-media" onClick={() => photos.length && setLightboxIndex(Math.max(0, photos.indexOf(visiblePhoto)))} role={photos.length ? 'button' : undefined} tabIndex={photos.length ? 0 : undefined} onKeyDown={(event) => { if (photos.length && (event.key === 'Enter' || event.key === ' ')) setLightboxIndex(Math.max(0, photos.indexOf(visiblePhoto))); }}>
               <img src={visiblePhoto} alt={`${placeName}, ${stateName}`} className="gmaps-hero-img" onError={(event) => { event.currentTarget.src = PLACEHOLDER; }} />
               <div className="gmaps-hero-overlay"><span className="gmaps-category-chip">{details.categoria || category || 'Lugar'}</span></div>
               {isLoading && <span style={{ position: 'absolute', left: 12, bottom: 12, padding: '4px 8px', borderRadius: 999, background: 'rgba(0,0,0,.55)', color: '#fff', fontSize: '0.7rem' }}>Buscando fotos reales…</span>}
+              {photos.length > 0 && <span className="gmaps-expand-photo"><ZoomIn size={13} /> Ver galería</span>}
             </div>
 
             <div className="gmaps-sidebar-body">
@@ -64,7 +67,7 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
               {photos.length > 0 && <div className="gmaps-gallery-section">
                 <div className="gmaps-section-label"><ImageIcon size={13} /><span>Fotografías reales</span></div>
                 <div className="gmaps-thumbs-strip">
-                  {photos.map((photo, index) => <button key={photo} type="button" className={`gmaps-thumb-btn ${visiblePhoto === photo ? 'active' : ''}`} onClick={() => setActivePhoto(photo)} title={`Foto ${index + 1} de ${placeName}`}><img src={photo} alt={`Foto ${index + 1} de ${placeName}`} loading="lazy" /></button>)}
+                  {photos.map((photo, index) => <button key={photo} type="button" className={`gmaps-thumb-btn ${visiblePhoto === photo ? 'active' : ''}`} onClick={() => { setActivePhoto(photo); setLightboxIndex(index); }} title={`Ampliar foto ${index + 1} de ${placeName}`}><img src={photo} alt={`Foto ${index + 1} de ${placeName}`} loading="lazy" /></button>)}
                 </div>
               </div>}
 
@@ -84,6 +87,7 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
           </main>
         </div>
       </div>
+      {lightboxIndex !== null && <PhotoLightbox photos={photos} initialIndex={lightboxIndex} placeName={placeName} onClose={() => setLightboxIndex(null)} />}
     </div>
   );
 }
