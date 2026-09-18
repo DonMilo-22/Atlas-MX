@@ -1,14 +1,16 @@
-import React, { useMemo, useRef, useState } from 'react';
-import { Compass, MapPin, Search, X } from 'lucide-react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Building2, Compass, Hotel, MapPin, Search, Trees, Utensils, X } from 'lucide-react';
 import { MapaMunicipios, municipios } from '@webrek/mx-geo/municipios';
 import { getMunicipalityDetails } from '../data/placesData';
 import RealPhoto from './RealPhoto';
+import { TOURISM_INDEX } from '../data/tourismIndex';
 
 export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLocationMap }) {
   const [selectedMun, setSelectedMun] = useState(null);
   const [hoveredMun, setHoveredMun] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const mapWrapperRef = useRef(null);
+  useEffect(() => { setSelectedMun(null); setSearchQuery(''); }, [state?.cve]);
 
   const munList = useMemo(() => {
     if (!state) return [];
@@ -25,14 +27,18 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
     if (!selectedMun || !state) return null;
     return getMunicipalityDetails(selectedMun.nombre, state.nombre, selectedMun.cvegeo);
   }, [selectedMun, state]);
+  const stateRecommendations = useMemo(() => {
+    if (!state || !selectedMun) return [];
+    const items = TOURISM_INDEX.filter((item) => item.stateCode === state.cve && item.category !== 'gastronomia');
+    const offset = selectedMun.nombre.length % Math.max(1, items.length);
+    return [...items.slice(offset), ...items.slice(0, offset)].slice(0, 4);
+  }, [state, selectedMun]);
 
   if (!isOpen || !state) return null;
 
   const openMunicipality = (mun) => {
     if (!mun) return;
     setSelectedMun(mun);
-    // El clic abre inmediatamente la ficha tipo Maps solicitada por el usuario.
-    onOpenLocationMap?.(mun.nombre, state.nombre, 'Municipio');
   };
 
   const handleMapMouseMove = (event) => {
@@ -56,7 +62,7 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
       <div className="modal-dialog modal-municipios-dialog" onClick={(event) => event.stopPropagation()}>
         <div className="modal-header">
-          <div><div className="modal-title">{state.nombre} — Territorio y Municipios</div><div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 2 }}>División de {munList.length} municipios (INEGI) · Haz clic para abrir fotos reales y Google Maps</div></div>
+          <div><div className="modal-title">{state.nombre} — Territorio y Municipios</div><div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 2 }}>División de {munList.length} municipios (INEGI) · Selecciona uno para descubrir qué hacer</div></div>
           <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Cerrar modal de municipios"><X size={20} /></button>
         </div>
 
@@ -80,8 +86,14 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
             <div className="municipio-expanded-info">
               <div className="municipio-expanded-header"><div><span className="municipio-cve-badge">CVEGEO: {selectedDetails.cvegeo}</span><h3 className="municipio-expanded-name">{selectedDetails.nombre}</h3><div className="municipio-expanded-state">{state.nombre}, México</div></div><button type="button" className="btn-open-google-maps" onClick={() => directMaps(selectedMun)}><MapPin size={15} /><span>Abrir Google Maps</span></button></div>
               <p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>{selectedDetails.historia && <div className="municipio-expanded-history">{selectedDetails.historia}</div>}
+              <div className="municipio-service-actions">
+                <button type="button" onClick={() => onOpenLocationMap?.(`atractivos turísticos en ${selectedMun.nombre}`, state.nombre, 'Atractivos')}><Trees size={14} /> Atractivos</button>
+                <button type="button" onClick={() => onOpenLocationMap?.(`comida típica en ${selectedMun.nombre}`, state.nombre, 'Gastronomía')}><Utensils size={14} /> Dónde comer</button>
+                <button type="button" onClick={() => onOpenLocationMap?.(`hoteles en ${selectedMun.nombre}`, state.nombre, 'Hospedaje')}><Hotel size={14} /> Hospedaje</button>
+              </div>
             </div>
-          </div> : <div className="municipio-selected-banner placeholder"><div style={{ display: 'flex', alignItems: 'center', gap: 10 }}><Compass size={22} color="var(--mexico-brown)" /><span>Selecciona un municipio para abrir su ficha con fotografía real, mapa y accesos a servicios.</span></div></div>}
+          </div> : <div className="municipio-selected-banner placeholder"><div style={{ display: 'flex', alignItems: 'center', gap: 10 }}><Compass size={22} color="var(--mexico-brown)" /><span>Selecciona un municipio para ver su fotografía, ubicación, servicios y recomendaciones.</span></div></div>}
+          {selectedMun && <section className="municipio-recommendations"><div className="municipio-recommendations-head"><Building2 size={15} /><span>Combina tu visita con otros lugares de {state.nombre}</span></div><div>{stateRecommendations.map((item) => <button key={item.id} type="button" onClick={() => onOpenLocationMap?.(item.name, state.nombre, item.category)}><small>{item.category}</small><strong>{item.name}</strong><span><MapPin size={10} /> Ver en mapa</span></button>)}</div></section>}
         </div>
       </div>
     </div>
