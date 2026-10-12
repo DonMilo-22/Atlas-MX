@@ -6,6 +6,12 @@ El proyecto presenta un mapa interactivo de los **32 estados de la República Me
 
 ---
 
+## Vista de la aplicación
+
+![Mapa de Atlas MX ejecutado localmente](docs/mapa.webp)
+
+Captura local de la aplicación. Para probarla, sigue la instalación de abajo; este README no publica una demo remota.
+
 ## 🗺️ Características
 
 - 🇲🇽 Mapa interactivo de los **32 estados de México**
@@ -51,8 +57,7 @@ Los municipios también pueden explorarse individualmente mediante una ventana i
 ## 📂 Estructura del proyecto
 
 ```text
-Atlas-MX/
-├── public/
+Atlas-MX/Atlas-MX/
 ├── scripts/
 ├── src/
 │   ├── components/
@@ -74,7 +79,7 @@ Atlas-MX/
 
 ## 🚀 Instalación
 
-Para ejecutar el proyecto de manera local necesitas tener instalado **Node.js**.
+Para ejecutar el proyecto de manera local necesitas tener instalado **Node.js 22 LTS** y npm (Vite 6 también admite Node.js 18, 20 o versiones posteriores compatibles).
 
 Clona el repositorio:
 
@@ -85,7 +90,7 @@ git clone https://github.com/DonMilo-22/Atlas-MX.git
 Entra a la carpeta:
 
 ```bash
-cd Atlas-MX
+cd Atlas-MX/Atlas-MX
 ```
 
 Instala las dependencias:
@@ -164,6 +169,7 @@ El proyecto está preparado para ser desplegado utilizando **Vercel**.
 Configuración principal:
 
 ```text
+Root Directory: Atlas-MX
 Framework: Vite
 Build Command: npm run build
 Output Directory: dist
@@ -181,7 +187,7 @@ El proyecto fue desarrollado con fines **educativos y de divulgación turística
 
 ## 👨‍💻 Autor
 
-Desarrollado por **DonMilo22**.
+Desarrollado por [DonMilo-22](https://github.com/DonMilo-22).
 
 Proyecto académico — Ingeniería en Sistemas Computacionales.
 
@@ -189,6 +195,6 @@ Proyecto académico — Ingeniería en Sistemas Computacionales.
 
 ## 📄 Licencia
 
-Este proyecto fue desarrollado principalmente con fines educativos.
+El código no tiene una licencia explícita declarada en el repositorio. Su finalidad educativa no constituye por sí misma una licencia de uso o redistribución.
 
 Los datos, fotografías y servicios externos utilizados pertenecen a sus respectivos autores y proveedores y están sujetos a sus propias condiciones de uso.
