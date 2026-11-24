@@ -8,6 +8,10 @@ import { isGenericDescription } from '../data/placesData';
 import RealPhoto from './RealPhoto';
 import TravelSeasonCard from './TravelSeasonCard';
 import StateStoryCard from './StateStoryCard';
+import LiveWeatherCard from './LiveWeatherCard';
+import WikiSummary from './WikiSummary';
+import TodayInMexico from './TodayInMexico';
+import { useWikiSummary } from '../hooks/useLiveData';
 
 const EMPTY_DATA = {};
 const REGION_LABELS = { norte: 'Norte', noroeste: 'Noroeste', noreste: 'Noreste', occidente: 'Occidente', bajio: 'Bajío', centro: 'Centro', sur: 'Sur', sureste: 'Sureste' };
@@ -15,6 +19,14 @@ const REGION_LABELS = { norte: 'Norte', noroeste: 'Noroeste', noreste: 'Noreste'
 function itemData(item, fallbackDescription) {
   if (typeof item === 'string') return { nombre: item, descripcion: fallbackDescription };
   return { nombre: item?.nombre || 'Lugar', descripcion: item?.descripcion || fallbackDescription };
+}
+
+// Descripción real de Wikipedia; mientras carga o si no hay página relevante, la del catálogo.
+function CardDescription({ name, stateName, fallback }) {
+  const { data, isLoading } = useWikiSummary(name, stateName);
+  if (data?.extract) return <p className="rich-place-desc" title="Resumen de Wikipedia">{data.extract}</p>;
+  if (isLoading) return <span className="skeleton-line" aria-hidden="true" />;
+  return fallback && !isGenericDescription(fallback) ? <p className="rich-place-desc">{fallback}</p> : null;
 }
 
 function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallbackDescription, favorite, isFavorite, onToggleFavorite }) {
@@ -35,7 +47,7 @@ function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallback
             <span className="rich-place-name">{data.nombre}</span>
             <span className={`rich-place-badge ${badgeClass}`}>{badge}</span>
           </div>
-          {data.descripcion && !isGenericDescription(data.descripcion) && <p className="rich-place-desc">{data.descripcion}</p>}
+          <CardDescription name={data.nombre} stateName={stateName} fallback={data.descripcion} />
         </div>
       </CardElement>
       <button type="button" className={`place-favorite-btn ${isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite?.(favorite)} aria-pressed={Boolean(isFavorite)} aria-label={`${isFavorite ? 'Quitar' : 'Guardar'} ${data.nombre} ${isFavorite ? 'de' : 'en'} Quiero visitar`} title={isFavorite ? 'Quitar de Quiero visitar' : 'Guardar en Quiero visitar'}><Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} /></button>
@@ -43,7 +55,7 @@ function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallback
   );
 }
 
-export default function StatePanelV2({ selectedState, onSelectState, onExploreState, onOpenLocationMap, onPlanTrip, isFavorite, onToggleFavorite, isVisited, onToggleVisited }) {
+export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace, onExploreState, onOpenLocationMap, onPlanTrip, isFavorite, onToggleFavorite, isVisited, onToggleVisited }) {
   const [activeTab, setActiveTab] = useState('destinos');
   const panelRef = useRef(null);
   const cve = selectedState?.cve;
@@ -66,15 +78,9 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
   if (!selectedState) {
     return (
       <aside className="atlas-sidebar" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label="Información del estado seleccionado">
-        <div className="state-empty-view">
-          <div className="empty-radar" aria-hidden="true"><Compass size={38} /></div>
-          <h2 className="empty-title">Explora los 32 estados</h2>
-          <p className="empty-desc">Selecciona un estado en el mapa o búscalo arriba para descubrir sus destinos, pueblos, historia y cocina.</p>
-          <ul className="empty-tips">
-            <li>Arrastra para mover el mapa y usa la rueda o pellizca para acercar.</li>
-            <li>“Explorar por” resalta los estados con playas, naturaleza, historia y más.</li>
-            <li>Guarda lugares con el corazón y marca los estados que ya visitaste.</li>
-          </ul>
+        <div className="state-content-view">
+          <p className="empty-hint"><Compass size={14} aria-hidden="true" /> Toca un estado en el mapa o búscalo arriba para explorarlo.</p>
+          <TodayInMexico onSelectState={onSelectState} onOpenPlace={onOpenPlace} />
         </div>
       </aside>
     );
@@ -134,7 +140,16 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
           <div className="stat-box stat-box-wide"><div className="stat-label">Clima</div><div className="stat-value stat-value-small">{tourism.clima || 'Variable según la región'}</div></div>
         </div>
 
-        {stateData.resumen && <div className="state-summary-card"><span className="section-kicker">Perfil del estado</span><p>{stateData.resumen}</p></div>}
+        <LiveWeatherCard stateCode={selectedState.cve} capital={selectedState.capital} />
+
+        <WikiSummary
+          key={`wiki-${selectedState.cve}`}
+          name={selectedState.nombre}
+          stateName="estado"
+          title={`Conoce ${selectedState.nombreCorto}`}
+          className="state-summary-card"
+          fallback={stateData.resumen ? <div className="state-summary-card"><span className="section-kicker">Perfil del estado</span><p>{stateData.resumen}</p></div> : null}
+        />
 
         <div className="tourism-section">
           <div className="tourism-header-bar"><span className="tourism-header-title">Qué visitar y probar</span><Sparkles size={15} color="var(--mexico-gold)" aria-hidden="true" /></div>
@@ -162,7 +177,7 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
         </div>
 
         <TravelSeasonCard stateCode={selectedState.cve} />
-        <StateStoryCard key={selectedState.cve} stateCode={selectedState.cve} stateName={selectedState.nombre} />
+        <StateStoryCard key={`story-${selectedState.cve}`} stateCode={selectedState.cve} stateName={selectedState.nombre} />
 
         {neighborKeys.length > 0 && <div className="neighbors-section">
           <div className="section-kicker">Estados colindantes</div>

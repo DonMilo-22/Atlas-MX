@@ -6,6 +6,7 @@ import RealPhoto from './RealPhoto';
 import { TOURISM_INDEX } from '../data/tourismIndex';
 import { getCategoryLabel } from '../data/tourismCategories';
 import useDialog from '../hooks/useDialog';
+import WikiSummary from './WikiSummary';
 
 export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLocationMap }) {
   const [selectedMun, setSelectedMun] = useState(null);
@@ -88,7 +89,7 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
             <div className="municipio-media-thumb"><RealPhoto name={selectedDetails.nombre} stateName={state.nombre} fallback={selectedDetails.imagen || ''} alt={`${selectedDetails.nombre}, ${state.nombre}`} /></div>
             <div className="municipio-expanded-info">
               <div className="municipio-expanded-header"><div><h3 className="municipio-expanded-name">{selectedDetails.nombre}</h3><div className="municipio-expanded-state">{state.nombre}, México</div></div><button type="button" className="btn-open-google-maps" onClick={() => directMaps(selectedMun)}><MapPin size={15} /><span>Abrir Google Maps</span></button></div>
-              <p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>
+              <WikiSummary key={selectedDetails.cvegeo} name={selectedDetails.nombre} stateName={state.nombre} title={`Sobre ${selectedDetails.nombre}`} className="municipio-expanded-desc" fallback={<p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>} />
               <div className="municipio-service-actions">
                 <button type="button" onClick={() => onOpenLocationMap?.(`atractivos turísticos en ${selectedMun.nombre}`, state.nombre, 'Atractivos')}><Trees size={14} /> Atractivos</button>
                 <button type="button" onClick={() => onOpenLocationMap?.(`comida típica en ${selectedMun.nombre}`, state.nombre, 'Gastronomía')}><Utensils size={14} /> Dónde comer</button>

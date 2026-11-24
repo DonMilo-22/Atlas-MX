@@ -112,3 +112,55 @@ button.rich-place-card,a.rich-place-card{width:100%;padding:0;font:inherit;color
 .gmaps-map-open{position:absolute;right:12px;bottom:12px;z-index:2;display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border-radius:999px;background:var(--green);color:#fff;font-size:.72rem;font-weight:700;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
 .tourist-routes-panel{left:24px;right:auto;bottom:76px;width:min(380px,calc(100% - 48px));max-height:calc(100% - 180px);overflow:auto}
 @media(max-width:760px){.tourist-routes-panel{left:8px;right:8px;width:auto;bottom:8px;max-height:48%}.modal-dialog{max-height:94vh;display:flex;flex-direction:column}.modal-municipios-dialog .modal-body{overflow:auto}.modal-header{flex-wrap:nowrap}.modal-title{font-size:1rem}}
+
+/* ===== Información en vivo: Wikipedia, Open-Meteo y "Hoy en México" ===== */
+.live-badge{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;background:#fdecee;color:var(--red);font-size:.64rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(206,17,38,.5);animation:live-pulse 1.8s ease-out infinite}
+@keyframes live-pulse{0%{box-shadow:0 0 0 0 rgba(206,17,38,.45)}70%{box-shadow:0 0 0 7px rgba(206,17,38,0)}100%{box-shadow:0 0 0 0 rgba(206,17,38,0)}}
+.skeleton-line{display:block;height:10px;width:55%;margin:6px 0;border-radius:6px;background:linear-gradient(90deg,#eee4d7 0%,#f8f2ea 50%,#eee4d7 100%);background-size:200% 100%;animation:skeleton-shimmer 1.3s linear infinite}
+.skeleton-line.wide{width:92%}
+@keyframes skeleton-shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+.rich-place-desc{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.wiki-summary p{margin:4px 0 6px;font-size:.82rem;line-height:1.55;color:var(--ink)}
+.wiki-summary a{display:inline-flex;align-items:center;gap:4px;font-size:.72rem;font-weight:700;color:var(--green);text-decoration:none}
+.wiki-summary a:hover{text-decoration:underline}
+.wiki-summary .section-kicker{display:flex;align-items:center;gap:5px}
+.live-weather-card{padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(150deg,#fff,#f3f8f6)}
+.live-weather-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.live-weather-place{font-size:.72rem;color:var(--muted);font-weight:600}
+.live-weather-now{display:flex;align-items:center;gap:10px;color:var(--green)}
+.live-weather-now>strong{font-family:var(--font-display);font-size:2.1rem;line-height:1;color:var(--ink)}
+.live-weather-now>span{display:flex;flex-direction:column;gap:2px}
+.live-weather-now b{font-size:.84rem;color:var(--ink)}
+.live-weather-now small{display:flex;align-items:center;gap:3px;flex-wrap:wrap;font-size:.68rem;color:var(--muted)}
+.live-weather-days{list-style:none;margin:10px 0 6px;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.live-weather-days li{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px;border-radius:9px;background:#fff;border:1px solid #ece3d7;color:var(--green)}
+.live-weather-days small{font-size:.6rem;color:var(--muted);text-transform:capitalize}
+.live-weather-days b{font-size:.72rem;color:var(--ink)}
+.live-weather-days span{font-size:.64rem;color:var(--dim)}
+.live-source{display:flex;align-items:center;gap:4px;font-size:.62rem;color:var(--dim)}
+.live-weather-card.is-skeleton{min-height:120px}
+.empty-hint{display:flex;align-items:center;gap:7px;margin:0;padding:9px 12px;border-radius:10px;background:#eef8f4;color:var(--green);font-size:.78rem;font-weight:600}
+.today-mx{display:grid;gap:12px}
+.today-head h2{margin:8px 0 2px;font-family:var(--font-display);font-size:1.45rem}
+.today-head p{margin:0;font-size:.76rem;color:var(--muted)}
+.today-destination{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:var(--shadow-warm-sm)}
+.today-destination-media{position:relative;height:190px;background:#efe6da}
+.today-destination-media img{width:100%;height:100%;object-fit:cover;display:block}
+.today-chip,.today-weather{position:absolute;display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;font-size:.68rem;font-weight:800}
+.today-chip{left:10px;top:10px;background:var(--gold);color:#3b2608}
+.today-weather{right:10px;bottom:10px;background:rgba(20,16,12,.72);color:#fff}
+.today-destination-body{padding:12px 14px 14px}
+.today-destination-body>small{font-size:.68rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em}
+.today-destination-body h3{margin:3px 0 6px;font-family:var(--font-display);font-size:1.2rem}
+.today-fallback{margin:0 0 6px;font-size:.82rem;line-height:1.5}
+.today-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.today-actions button{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 10px;font-size:.72rem;font-weight:700;color:var(--brown);cursor:pointer}
+.today-actions .today-primary{background:var(--green);border-color:var(--green);color:#fff}
+.today-event{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:12px 13px;border-radius:12px;border:1px solid #f0d9b5;background:#fff8ec;color:var(--brown)}
+.today-event span{display:flex;flex-direction:column;gap:1px;min-width:0}
+.today-event small{font-size:.64rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.today-event strong{font-size:.9rem;color:var(--ink)}
+.today-event em{font-style:normal;font-size:.72rem;color:var(--muted)}
+.today-event button{border:0;background:#fff;border-radius:50%;width:32px;height:32px;display:grid;place-items:center;color:var(--brown);cursor:pointer;box-shadow:var(--shadow-warm-sm)}
+.today-season .section-kicker{display:flex;align-items:center;gap:5px}

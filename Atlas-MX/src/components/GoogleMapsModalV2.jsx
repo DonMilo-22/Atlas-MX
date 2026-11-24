@@ -7,6 +7,7 @@ import { useRealPhotoGallery } from '../hooks/useRealPhoto';
 import useDialog from '../hooks/useDialog';
 import { PLACEHOLDER } from '../services/photoService';
 import PhotoLightbox from './PhotoLightbox';
+import WikiSummary from './WikiSummary';
 
 export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateName, category }) {
   const categoryLabel = getCategoryLabel(category);
@@ -77,8 +78,12 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
               </div>}
 
               <div className="gmaps-info-card">
-                <div className="gmaps-section-label"><Info size={13} /><span>Acerca de este lugar</span></div>
-                <p className="gmaps-description-text">{details.descripcion}</p>
+                <WikiSummary
+                  name={placeName}
+                  stateName={stateName}
+                  title="Acerca de este lugar"
+                  fallback={<><div className="gmaps-section-label"><Info size={13} /><span>Acerca de este lugar</span></div><p className="gmaps-description-text">{details.descripcion}</p></>}
+                />
               </div>
             </div>
           </aside>

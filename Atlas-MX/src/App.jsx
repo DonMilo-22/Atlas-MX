@@ -129,6 +129,7 @@ export default function App() {
         <StatePanel
           selectedState={selectedState}
           onSelectState={handleSelectState}
+          onOpenPlace={handleOpenPlace}
           onExploreState={() => setOpenTool('municipios')}
           onOpenLocationMap={handleOpenLocationMap}
           onPlanTrip={openPlanner}

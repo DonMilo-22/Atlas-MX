@@ -2,6 +2,8 @@
  * Atlas MX — fotos reales mediante Wikipedia y Wikimedia Commons.
  * No requiere API key. Las imágenes se resuelven en el navegador y se cachean en memoria.
  */
+import { wikiSearch } from './wikiService';
+
 const photoCache = new Map();
 const galleryCache = new Map();
 
@@ -21,26 +23,10 @@ async function fetchJson(url) {
   return response.json();
 }
 
+// Reutiliza la búsqueda de wikiService: la misma petición trae foto y resumen del lugar.
 async function queryWikipediaImages(searchTerm, lang = 'es', limit = 5) {
-  const params = new URLSearchParams({
-    action: 'query',
-    generator: 'search',
-    gsrsearch: searchTerm,
-    gsrnamespace: '0',
-    gsrlimit: String(Math.max(limit, 3)),
-    prop: 'pageimages',
-    piprop: 'thumbnail|original',
-    pithumbsize: '1200',
-    format: 'json',
-    origin: '*'
-  });
-  const data = await fetchJson(`https://${lang}.wikipedia.org/w/api.php?${params}`);
-  const pages = Object.values(data?.query?.pages || {});
-  return pages
-    .sort((a, b) => (a.index ?? 999) - (b.index ?? 999))
-    .map((page) => page?.thumbnail?.source || page?.original?.source)
-    .filter(Boolean)
-    .slice(0, limit);
+  const pages = await wikiSearch(searchTerm, lang, 3);
+  return pages.map((page) => page.thumbnail).filter(Boolean).slice(0, limit);
 }
 
 async function queryCommonsImages(searchTerm, limit = 8) {
