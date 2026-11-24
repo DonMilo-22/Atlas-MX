@@ -51,9 +51,16 @@ export default function StatePanelV2({ selectedState, onSelectState, onExploreSt
   const tourism = useMemo(() => (cve ? enrichTourismData(cve, stateData.turismo || EMPTY_DATA) : null), [cve, stateData]);
 
   // Al cambiar de estado: volver al inicio del panel y a la primera pestaña.
+  const firstRender = useRef(true);
   useEffect(() => {
     setActiveTab('destinos');
     panelRef.current?.scrollTo?.({ top: 0 });
+    if (firstRender.current) { firstRender.current = false; return; }
+    // En móvil el panel queda debajo del mapa: lo llevamos a la vista para que se note la selección.
+    if (cve && window.matchMedia?.('(max-width: 760px)').matches) {
+      const top = panelRef.current.getBoundingClientRect().top + window.scrollY - 64;
+      window.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    }
   }, [cve]);
 
   if (!selectedState) {

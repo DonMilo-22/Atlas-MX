@@ -27,7 +27,7 @@ export function createItinerary({ stateCode, days, interest, budget }) {
     day: index + 1,
     morning: pool.length ? pool[(index * 2) % pool.length] : null,
     afternoon: pool.length > 1 ? pool[((index * 2) + 1) % pool.length] : null,
-    food: meals.length ? meals[index % meals.length] : null
+    food: meals[index] || null
   }));
   const budgetData = BUDGET_LEVELS[budget] || BUDGET_LEVELS.medio;
   return { itinerary, budgetData, total: budgetData.daily * dayCount };

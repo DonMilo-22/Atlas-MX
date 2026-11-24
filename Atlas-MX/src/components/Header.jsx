@@ -1,9 +1,8 @@
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Heart, MapPin, MapPinned, Route, Search, Stamp, X } from 'lucide-react';
 import { ESTADOS } from '@webrek/mx-geo';
-import { searchTourism } from '../data/tourismIndex';
+import { searchPlaces } from '../data/tourismIndex';
 
-const CATEGORY_LABELS = { naturaleza: 'Naturaleza', playas: 'Playa', pueblos: 'Pueblo', historia: 'Historia', gastronomia: 'Cocina' };
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 
 export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites, onOpenRoutes, visitedCount = 0, onOpenPassport }) {
@@ -20,11 +19,8 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
       .filter((s) => normalize(`${s.nombre} ${s.nombreCorto} ${s.capital}`).includes(q))
       .slice(0, 5)
       .map((state) => ({ type: 'state', key: `s-${state.cve}`, title: state.nombre, subtitle: `Estado · Capital: ${state.capital}`, state }));
-    const seen = new Set();
-    const places = searchTourism('todos', query)
-      .filter((place) => normalize(place.name).includes(q) && !seen.has(`${place.stateCode}:${place.name}`) && seen.add(`${place.stateCode}:${place.name}`))
-      .slice(0, 6)
-      .map((place) => ({ type: 'place', key: `p-${place.id}`, title: place.name, subtitle: `${CATEGORY_LABELS[place.category] || 'Lugar'} · ${place.stateName}`, place }));
+    const places = searchPlaces(query, 6)
+      .map((place) => ({ type: 'place', key: `p-${place.stateCode}-${place.name}`, title: place.name, subtitle: `${place.category} · ${place.stateName}`, place }));
     return [...states, ...places];
   }, [query]);
 

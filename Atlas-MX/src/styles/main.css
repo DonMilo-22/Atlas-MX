@@ -104,3 +104,11 @@ button.rich-place-card,a.rich-place-card{width:100%;padding:0;font:inherit;color
 .map-tooltip-hud.flip-x{transform:translate(calc(-100% - 12px),12px)}
 .map-tooltip-hud.flip-y{transform:translate(12px,calc(-100% - 12px))}
 .map-tooltip-hud.flip-x.flip-y{transform:translate(calc(-100% - 12px),calc(-100% - 12px))}
+.search-wrap:focus-within{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,104,71,.15)}
+.state-path.state-selected{stroke:#fff;stroke-width:1.6}
+.municipios-empty{padding:14px;font-size:.8rem;color:var(--muted)}
+.municipio-list-item:hover:not(.selected){background:transparent}
+.municipio-list-item:hover{text-decoration:underline}
+.gmaps-map-open{position:absolute;right:12px;bottom:12px;z-index:2;display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border-radius:999px;background:var(--green);color:#fff;font-size:.72rem;font-weight:700;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.tourist-routes-panel{left:24px;right:auto;bottom:76px;width:min(380px,calc(100% - 48px));max-height:calc(100% - 180px);overflow:auto}
+@media(max-width:760px){.tourist-routes-panel{left:8px;right:8px;width:auto;bottom:8px;max-height:48%}.modal-dialog{max-height:94vh;display:flex;flex-direction:column}.modal-municipios-dialog .modal-body{overflow:auto}.modal-header{flex-wrap:nowrap}.modal-title{font-size:1rem}}

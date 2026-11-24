@@ -71,13 +71,14 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
         <div className="modal-body">
           <div className="municipios-layout-grid">
             <div className="municipios-map-wrapper" ref={mapWrapperRef} onMouseMove={handleMapMouseMove} onMouseLeave={() => setHoveredMun(null)}>
-              <MapaMunicipios estado={state.cve} zoom paleta="verde" emptyColor="#f4eee5" stroke="#b59f88" etiquetas={(mun) => selectedMun?.cvegeo === mun.cvegeo ? mun.nombre : ''} colorEtiqueta="#1c140e" onSelect={openMunicipality} />
+              <MapaMunicipios estado={state.cve} zoom data={selectedMun ? { [selectedMun.cvegeo]: 1 } : undefined} colorRange={['#ce1126', '#ce1126']} emptyColor="#efe3d2" stroke="#9c8268" ariaLabel={`Mapa de municipios de ${state.nombre}`} etiquetas={(mun) => selectedMun?.cvegeo === mun.cvegeo ? mun.nombre : ''} colorEtiqueta="#1c140e" onSelect={openMunicipality} />
               {hoveredMun && <div className="municipio-hover-tooltip" style={{ left: hoveredMun.x, top: hoveredMun.y }}><div className="tooltip-mun-name">{hoveredMun.nombre}</div></div>}
             </div>
 
             <div className="municipios-sidebar-selector">
               <div style={{ position: 'relative' }}><Search size={15} style={{ position: 'absolute', left: 10, top: 12, color: 'var(--text-dim)' }} /><input type="text" className="municipios-search-input" placeholder="Buscar municipio…" aria-label="Buscar municipio" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} /></div>
               <div className="municipios-list-scroll">
+                {filteredMuns.length === 0 && <div className="municipios-empty">Ningún municipio coincide con “{searchQuery.trim()}”.</div>}
                 {filteredMuns.map((mun) => <div key={mun.cvegeo} className={`municipio-list-item ${selectedMun?.cvegeo === mun.cvegeo ? 'selected' : ''}`} onClick={() => openMunicipality(mun)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openMunicipality(mun); } }} role="button" tabIndex={0} aria-pressed={selectedMun?.cvegeo === mun.cvegeo}><span style={{ fontWeight: selectedMun?.cvegeo === mun.cvegeo ? 700 : 500 }}>{mun.nombre}</span></div>)}
               </div>
             </div>

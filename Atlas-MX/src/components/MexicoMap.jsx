@@ -41,6 +41,16 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
   const [tip, setTip] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
   const { paths, centroids } = useMemo(getGeometry, []);
+  // Escala pantalla/viewBox para que las abreviaturas tengan siempre un tamaño legible.
+  const [screenScale, setScreenScale] = useState(1);
+  useEffect(() => {
+    const update = () => { const ctm = svgRef.current?.getScreenCTM(); if (ctm?.a) setScreenScale(ctm.a); };
+    update();
+    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(update) : null;
+    if (observer && viewportRef.current) observer.observe(viewportRef.current);
+    window.addEventListener('resize', update);
+    return () => { observer?.disconnect(); window.removeEventListener('resize', update); };
+  }, []);
 
   // Convierte coordenadas de pantalla a coordenadas del viewBox del SVG.
   const toViewBox = useCallback((clientX, clientY) => {
@@ -137,6 +147,7 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
   };
 
   const selectState = (cve) => {
+    setTip(null);
     if (suppressClick.current) { suppressClick.current = false; return; }
     onSelectState?.(getEstadoByCve(cve));
   };
@@ -144,6 +155,10 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
   const filterLabel = getFilterLabel(tourismFilter);
   const filtered = tourismFilter !== 'todos';
   const routePoints = (activeRoute?.stateCodes || []).map((code) => centroids[code]).filter(Boolean);
+  const effectiveScale = screenScale * zoom;
+  const labelSize = 9 / effectiveScale;
+  // Con el mapa muy pequeño las 32 abreviaturas se encimarían: se muestran al acercar.
+  const labelsVisible = showLabels && effectiveScale >= 0.62;
   const transform = `translate(${WIDTH / 2 + pan.x} ${HEIGHT / 2 + pan.y}) scale(${zoom}) translate(${-WIDTH / 2} ${-HEIGHT / 2})`;
 
   return (
@@ -199,10 +214,10 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
             );
           })}
           {routePoints.length > 1 && <g className="tourist-route-layer" aria-hidden="true"><polyline points={routePoints.map((point) => point.join(',')).join(' ')} /><g>{routePoints.map((point) => <circle key={`${point[0]}-${point[1]}`} cx={point[0]} cy={point[1]} r="5" />)}</g></g>}
-          {showLabels && ESTADOS.map((s) => {
+          {labelsVisible && ESTADOS.map((s) => {
             const pt = centroids[s.cve];
             if (!pt) return null;
-            return <text key={s.cve} x={pt[0]} y={pt[1]} textAnchor="middle" dominantBaseline="middle" className={`state-label ${selectedState?.cve === s.cve ? 'selected' : ''}`} aria-hidden="true">{s.abreviatura}</text>;
+            return <text key={s.cve} x={pt[0]} y={pt[1]} textAnchor="middle" dominantBaseline="middle" className={`state-label ${selectedState?.cve === s.cve ? 'selected' : ''}`} style={{ fontSize: `${labelSize}px`, strokeWidth: `${labelSize * 0.32}px` }} aria-hidden="true">{s.abreviatura}</text>;
           })}
         </g>
       </svg>

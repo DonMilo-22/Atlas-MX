@@ -53,7 +53,6 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
               <img src={visiblePhoto} alt={photos.length ? `${placeName}, ${stateName}` : 'Fotografía no disponible'} className="gmaps-hero-img" onError={(event) => { event.currentTarget.src = PLACEHOLDER; }} />
               <div className="gmaps-hero-overlay"><span className="gmaps-category-chip">{details.categoria || 'Lugar'}</span></div>
               {isLoading && <span className="gmaps-photo-status" role="status">Buscando fotos reales…</span>}
-              {!isLoading && photos.length === 0 && <span className="gmaps-photo-status">Sin fotografías disponibles</span>}
               {photos.length > 0 && <span className="gmaps-expand-photo"><ZoomIn size={13} /> Ver galería</span>}
             </div>
 
@@ -86,6 +85,7 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
 
           <div className="gmaps-map-canvas">
             {!mapLoaded && <div className="gmaps-map-loading" aria-hidden="true">Cargando mapa… <a href={directMapsUrl} target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a></div>}
+            <a className="gmaps-map-open" href={directMapsUrl} target="_blank" rel="noopener noreferrer"><Navigation size={13} /> Ver en Google Maps</a>
             <iframe title={`Mapa de ${placeName}`} width="100%" height="100%" src={embedUrl} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" onLoad={() => setMapLoaded(true)} />
           </div>
         </div>
