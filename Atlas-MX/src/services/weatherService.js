@@ -3,6 +3,7 @@
  * https://open-meteo.com/en/docs
  */
 import { CAPITAL_COORDS } from '../data/capitals.js';
+import { fetchWithTimeout } from './http.js';
 
 const TTL_MS = 30 * 60 * 1000;
 const cache = new Map();
@@ -33,6 +34,13 @@ export function describeWeather(code) {
 export async function fetchStateWeather(stateCode) {
   const coords = CAPITAL_COORDS[stateCode];
   if (!coords) return null;
+  return fetchWeatherAt(coords[0], coords[1]);
+}
+
+/** Clima actual y pronóstico de 7 días en cualquier punto. */
+export async function fetchWeatherAt(lat, lon) {
+  const coords = [lat, lon];
+  const stateCode = `${lat.toFixed(2)},${lon.toFixed(2)}`;
   const hit = cache.get(stateCode);
   if (hit && Date.now() - hit.fetchedAt < TTL_MS) return hit;
   if (pending.has(stateCode)) return pending.get(stateCode);
@@ -46,7 +54,7 @@ export async function fetchStateWeather(stateCode) {
     forecast_days: '7'
   });
 
-  const request = fetch(`https://api.open-meteo.com/v1/forecast?${params}`)
+  const request = fetchWithTimeout(`https://api.open-meteo.com/v1/forecast?${params}`)
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();

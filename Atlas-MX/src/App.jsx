@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useCallback, useEffect, useState } from 'react';
 import { estado as getEstadoByCve } from '@webrek/mx-geo';
 import { BarChart3, CalendarDays, CalendarHeart, Info, Route, Sparkles } from 'lucide-react';
 import Header from './components/Header';
+import ErrorBoundary from './components/ErrorBoundary';
 import MexicoMap from './components/MexicoMap';
 import MapControls from './components/MapControls';
 import StatePanel from './components/StatePanelV2';
@@ -14,7 +15,7 @@ import { TOURIST_ROUTES } from './data/touristRoutes';
 // Los modales se cargan bajo demanda: reducen el JavaScript inicial y se montan
 // solo cuando se abren, de modo que siempre reciben el estado seleccionado actual.
 const MunicipalityModal = lazy(() => import('./components/MunicipalityModalV2'));
-const GoogleMapsModal = lazy(() => import('./components/GoogleMapsModalV2'));
+const PlaceExplorer = lazy(() => import('./components/PlaceExplorer'));
 const FavoritesDrawer = lazy(() => import('./components/FavoritesDrawer'));
 const PassportDrawer = lazy(() => import('./components/PassportDrawer'));
 const TravelPlanner = lazy(() => import('./components/TravelPlanner'));
@@ -83,9 +84,10 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey);
   }, [handleZoomIn, handleZoomOut]);
 
-  const handleOpenLocationMap = useCallback((placeName, stateName, category) => {
+  // options: { coords: {lat, lon} exactas, near: {lat, lon} de referencia, initialTab: 'resumen' | 'hoteles' | 'restaurantes' | 'atractivos' | 'clima' }
+  const handleOpenLocationMap = useCallback((placeName, stateName, category, options = {}) => {
     if (!placeName) return;
-    setMapsModal({ placeName, stateName: stateName || selectedState?.nombre || '', category: category || 'Destino' });
+    setMapsModal({ placeName, stateName: stateName || selectedState?.nombre || '', category: category || 'Destino', coords: options.coords || null, near: options.near || null, initialTab: options.initialTab || 'resumen' });
   }, [selectedState]);
   const handleCloseLocationMap = useCallback(() => setMapsModal(null), []);
 
@@ -145,6 +147,7 @@ export default function App() {
         />
       </main>
 
+      <ErrorBoundary key={`${openTool}-${mapsModal?.placeName || ""}`} onReset={() => { setOpenTool(null); setMapsModal(null); }}>
       <Suspense fallback={<div className="lazy-modal-fallback" role="status" aria-live="polite">Cargando…</div>}>
         {openTool === 'municipios' && selectedState && <MunicipalityModal state={selectedState} isOpen onClose={closeTool} onOpenLocationMap={handleOpenLocationMap} />}
         {openTool === 'favoritos' && <FavoritesDrawer isOpen favorites={favorites} onClose={closeTool} onOpenFavorite={handleOpenFavorite} onRemove={toggleFavorite} />}
@@ -154,8 +157,9 @@ export default function App() {
         {openTool === 'quiz' && <DestinationQuiz isOpen onClose={closeTool} onSelectState={selectAndClose} />}
         {openTool === 'agenda' && <CulturalCalendarModal isOpen onClose={closeTool} onSelectState={selectAndClose} />}
         {openTool === 'about' && <AboutModal isOpen onClose={closeTool} />}
-        {mapsModal && <GoogleMapsModal isOpen onClose={handleCloseLocationMap} placeName={mapsModal.placeName} stateName={mapsModal.stateName} category={mapsModal.category} />}
+        {mapsModal && <PlaceExplorer isOpen onClose={handleCloseLocationMap} placeName={mapsModal.placeName} stateName={mapsModal.stateName} category={mapsModal.category} coords={mapsModal.coords} near={mapsModal.near} initialTab={mapsModal.initialTab} />}
       </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }

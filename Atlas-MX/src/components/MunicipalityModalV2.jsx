@@ -1,103 +1,146 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Building2, Compass, Hotel, MapPin, Search, Trees, Utensils, X } from 'lucide-react';
-import { MapaMunicipios, municipios } from '@webrek/mx-geo/municipios';
-import { getMunicipalityDetails } from '../data/placesData';
-import RealPhoto from './RealPhoto';
-import { TOURISM_INDEX } from '../data/tourismIndex';
-import { getCategoryLabel } from '../data/tourismCategories';
+import { ArrowLeft, BedDouble, CloudSun, Landmark, MapPin, Search, UtensilsCrossed, X } from 'lucide-react';
+import { feature } from 'topojson-client';
+import { geoCentroid } from 'd3-geo';
+import { MapaMunicipios, cargaMunicipios, municipios } from '@webrek/mx-geo/municipios';
 import useDialog from '../hooks/useDialog';
+import RealPhoto from './RealPhoto';
 import WikiSummary from './WikiSummary';
+
+const CLICK_TOLERANCE = 6;
+
+/** Centro geográfico real de cada municipio, calculado con la geometría del INEGI. */
+function useMunicipalityCentroids(stateCode) {
+  const [centroids, setCentroids] = useState({ code: null, map: {} });
+  useEffect(() => {
+    let cancelled = false;
+    cargaMunicipios(stateCode).then((topo) => {
+      if (cancelled) return;
+      const map = {};
+      Object.values(topo.objects).forEach((object) => {
+        const collection = feature(topo, object);
+        (collection.features || []).forEach((f) => {
+          const [lon, lat] = geoCentroid(f);
+          if (f.properties?.cvegeo && Number.isFinite(lat)) map[f.properties.cvegeo] = { lat, lon };
+        });
+      });
+      setCentroids({ code: stateCode, map });
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [stateCode]);
+  return centroids.code === stateCode ? centroids.map : {};
+}
 
 export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLocationMap }) {
   const [selectedMun, setSelectedMun] = useState(null);
   const [hoveredMun, setHoveredMun] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const mapWrapperRef = useRef(null);
+  const pointerStart = useRef(null);
+  const detailRef = useRef(null);
   const dialogRef = useDialog(isOpen, onClose);
+  const centroids = useMunicipalityCentroids(state?.cve);
   useEffect(() => { setSelectedMun(null); setSearchQuery(''); setHoveredMun(null); }, [state?.cve]);
 
   const munList = useMemo(() => {
     if (!state) return [];
     try { return municipios(state.cve) || []; } catch { return []; }
   }, [state]);
+  const byCode = useMemo(() => new Map(munList.map((mun) => [mun.cvegeo, mun])), [munList]);
 
   const filteredMuns = useMemo(() => {
-    const q = searchQuery.toLocaleLowerCase('es-MX').trim();
+    const q = searchQuery.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
     if (!q) return munList;
-    return munList.filter((mun) => mun.nombre.toLocaleLowerCase('es-MX').includes(q) || mun.cvegeo.includes(q));
+    return munList.filter((mun) => mun.nombre.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').includes(q));
   }, [munList, searchQuery]);
 
-  const selectedDetails = useMemo(() => {
-    if (!selectedMun || !state) return null;
-    return getMunicipalityDetails(selectedMun.nombre, state.nombre, selectedMun.cvegeo);
-  }, [selectedMun, state]);
-  const stateRecommendations = useMemo(() => {
-    if (!state || !selectedMun) return [];
-    const items = TOURISM_INDEX.filter((item) => item.stateCode === state.cve && item.category !== 'gastronomia');
-    return items.filter((item, index, all) => all.findIndex((other) => other.name === item.name) === index).slice(0, 4);
-  }, [state, selectedMun]);
+  useEffect(() => { if (selectedMun) detailRef.current?.focus({ preventScroll: true }); }, [selectedMun]);
 
   if (!isOpen || !state) return null;
+  const unit = state.cve === '09' ? 'alcaldía' : 'municipio';
+  const units = state.cve === '09' ? 'alcaldías' : 'municipios';
 
-  const openMunicipality = (mun) => {
-    if (!mun) return;
-    setSelectedMun(mun);
+  // La librería captura el puntero para arrastrar, y eso impide que el clic llegue al municipio.
+  // Detectamos el clic nosotros: si el puntero casi no se movió, buscamos el municipio bajo el cursor.
+  const onPointerDown = (event) => { pointerStart.current = { x: event.clientX, y: event.clientY }; };
+  const onPointerUp = (event) => {
+    const start = pointerStart.current;
+    pointerStart.current = null;
+    if (!start || Math.hypot(event.clientX - start.x, event.clientY - start.y) > CLICK_TOLERANCE) return;
+    const hit = document.elementsFromPoint(event.clientX, event.clientY).find((el) => el.getAttribute?.('data-cvegeo'));
+    const mun = hit && byCode.get(hit.getAttribute('data-cvegeo'));
+    if (mun) setSelectedMun(mun);
   };
 
   const handleMapMouseMove = (event) => {
     const path = event.target.closest?.('[data-cvegeo]');
-    if (!path || !mapWrapperRef.current) {
-      setHoveredMun(null);
-      return;
-    }
-    const cvegeo = path.getAttribute('data-cvegeo');
-    const found = munList.find((mun) => mun.cvegeo === cvegeo);
+    if (!path || !mapWrapperRef.current) { setHoveredMun(null); return; }
+    const found = byCode.get(path.getAttribute('data-cvegeo'));
     const rect = mapWrapperRef.current.getBoundingClientRect();
-    setHoveredMun({ ...(found || { cvegeo, nombre: path.getAttribute('aria-label') || 'Municipio' }), x: event.clientX - rect.left, y: event.clientY - rect.top });
+    if (found) setHoveredMun({ ...found, x: event.clientX - rect.left, y: event.clientY - rect.top });
   };
 
-  const directMaps = (mun) => {
-    const q = `${mun.nombre}, ${state.nombre}, México`;
-    window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`, '_blank', 'noopener,noreferrer');
+  const openExplorer = (initialTab) => {
+    // El centro geométrico sirve de referencia: se busca la cabecera municipal cerca de él.
+    const near = centroids[selectedMun.cvegeo] || null;
+    onOpenLocationMap?.(selectedMun.nombre, state.nombre, 'Municipio', { near, initialTab });
   };
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-dialog modal-municipios-dialog" ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="municipios-title" onClick={(event) => event.stopPropagation()}>
-        <div className="modal-header">
-          <div><h2 className="modal-title" id="municipios-title">{state.nombre} — Territorio y Municipios</h2><div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 2 }}>División de {munList.length} municipios (INEGI) · Selecciona uno para descubrir qué hacer</div></div>
-          <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Cerrar modal de municipios"><X size={20} /></button>
-        </div>
+      <div className="modal-dialog modal-municipios-dialog mun-dialog" ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="municipios-title" onClick={(event) => event.stopPropagation()}>
+        <header className="mun-head">
+          <div>
+            <h2 id="municipios-title">{units.replace(/^./, (c) => c.toUpperCase())} de {state.nombre}</h2>
+            <p>{munList.length} {units}. Toca uno en el mapa o búscalo en la lista.</p>
+          </div>
+          <button type="button" className="explorer-close" onClick={onClose} aria-label="Cerrar"><X size={20} /></button>
+        </header>
 
-        <div className="modal-body">
-          <div className="municipios-layout-grid">
-            <div className="municipios-map-wrapper" ref={mapWrapperRef} onMouseMove={handleMapMouseMove} onMouseLeave={() => setHoveredMun(null)}>
-              <MapaMunicipios estado={state.cve} zoom data={selectedMun ? { [selectedMun.cvegeo]: 1 } : undefined} colorRange={['#ce1126', '#ce1126']} emptyColor="#efe3d2" stroke="#9c8268" ariaLabel={`Mapa de municipios de ${state.nombre}`} etiquetas={(mun) => selectedMun?.cvegeo === mun.cvegeo ? mun.nombre : ''} colorEtiqueta="#1c140e" onSelect={openMunicipality} />
-              {hoveredMun && <div className="municipio-hover-tooltip" style={{ left: hoveredMun.x, top: hoveredMun.y }}><div className="tooltip-mun-name">{hoveredMun.nombre}</div></div>}
-            </div>
-
-            <div className="municipios-sidebar-selector">
-              <div style={{ position: 'relative' }}><Search size={15} style={{ position: 'absolute', left: 10, top: 12, color: 'var(--text-dim)' }} /><input type="text" className="municipios-search-input" placeholder="Buscar municipio…" aria-label="Buscar municipio" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} /></div>
-              <div className="municipios-list-scroll">
-                {filteredMuns.length === 0 && <div className="municipios-empty">Ningún municipio coincide con “{searchQuery.trim()}”.</div>}
-                {filteredMuns.map((mun) => <div key={mun.cvegeo} className={`municipio-list-item ${selectedMun?.cvegeo === mun.cvegeo ? 'selected' : ''}`} onClick={() => openMunicipality(mun)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openMunicipality(mun); } }} role="button" tabIndex={0} aria-pressed={selectedMun?.cvegeo === mun.cvegeo}><span style={{ fontWeight: selectedMun?.cvegeo === mun.cvegeo ? 700 : 500 }}>{mun.nombre}</span></div>)}
-              </div>
-            </div>
+        <div className="mun-layout">
+          <div className="mun-map" ref={mapWrapperRef} onPointerDown={onPointerDown} onPointerUp={onPointerUp} onMouseMove={handleMapMouseMove} onMouseLeave={() => setHoveredMun(null)}>
+            <MapaMunicipios
+              estado={state.cve}
+              zoom
+              data={selectedMun ? { [selectedMun.cvegeo]: 1 } : undefined}
+              colorRange={['#D1006B', '#D1006B']}
+              paleta={['#D1006B', '#D1006B']}
+              emptyColor="#D9DFDA"
+              stroke="#F5F6F3"
+              ariaLabel={`Mapa de ${units} de ${state.nombre}`}
+              etiquetas={(mun) => (selectedMun?.cvegeo === mun.cvegeo ? mun.nombre : '')}
+              colorEtiqueta="#1E2A27"
+              onSelect={setSelectedMun}
+            />
+            {hoveredMun && <div className="mun-tooltip" style={{ left: hoveredMun.x, top: hoveredMun.y }}>{hoveredMun.nombre}</div>}
           </div>
 
-          {selectedDetails ? <div className="municipio-card-expanded">
-            <div className="municipio-media-thumb"><RealPhoto name={selectedDetails.nombre} stateName={state.nombre} fallback={selectedDetails.imagen || ''} alt={`${selectedDetails.nombre}, ${state.nombre}`} /></div>
-            <div className="municipio-expanded-info">
-              <div className="municipio-expanded-header"><div><h3 className="municipio-expanded-name">{selectedDetails.nombre}</h3><div className="municipio-expanded-state">{state.nombre}, México</div></div><button type="button" className="btn-open-google-maps" onClick={() => directMaps(selectedMun)}><MapPin size={15} /><span>Abrir Google Maps</span></button></div>
-              <WikiSummary key={selectedDetails.cvegeo} name={selectedDetails.nombre} stateName={state.nombre} title={`Sobre ${selectedDetails.nombre}`} className="municipio-expanded-desc" fallback={<p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>} />
-              <div className="municipio-service-actions">
-                <button type="button" onClick={() => onOpenLocationMap?.(`atractivos turísticos en ${selectedMun.nombre}`, state.nombre, 'Atractivos')}><Trees size={14} /> Atractivos</button>
-                <button type="button" onClick={() => onOpenLocationMap?.(`comida típica en ${selectedMun.nombre}`, state.nombre, 'Gastronomía')}><Utensils size={14} /> Dónde comer</button>
-                <button type="button" onClick={() => onOpenLocationMap?.(`hoteles en ${selectedMun.nombre}`, state.nombre, 'Hospedaje')}><Hotel size={14} /> Hospedaje</button>
-              </div>
-            </div>
-          </div> : <div className="municipio-selected-banner placeholder"><div style={{ display: 'flex', alignItems: 'center', gap: 10 }}><Compass size={22} color="var(--mexico-brown)" /><span>Selecciona un municipio para ver su fotografía, ubicación, servicios y recomendaciones.</span></div></div>}
-          {selectedMun && <section className="municipio-recommendations"><div className="municipio-recommendations-head"><Building2 size={15} /><span>Más lugares para visitar en {state.nombre}</span></div><div>{stateRecommendations.map((item) => <button key={item.id} type="button" onClick={() => onOpenLocationMap?.(item.name, state.nombre, getCategoryLabel(item.category))}><small>{getCategoryLabel(item.category)}</small><strong>{item.name}</strong><span><MapPin size={10} /> Ver en mapa</span></button>)}</div></section>}
+          <aside className="mun-side">
+            {selectedMun ? (
+              <article className="mun-detail" ref={detailRef} tabIndex={-1} aria-live="polite">
+                <button type="button" className="poi-back" onClick={() => setSelectedMun(null)}><ArrowLeft size={15} aria-hidden="true" /> Todos los {units}</button>
+                <div className="mun-photo"><RealPhoto name={selectedMun.nombre} stateName={state.nombre} alt={`${selectedMun.nombre}, ${state.nombre}`} /></div>
+                <h3>{selectedMun.nombre}</h3>
+                <p className="mun-sub">{unit.replace(/^./, (c) => c.toUpperCase())} de {state.nombre}</p>
+                <WikiSummary key={selectedMun.cvegeo} name={selectedMun.nombre} stateName={state.nombre} title="De Wikipedia" fallback={null} />
+                <button type="button" className="sp-primary" onClick={() => openExplorer('resumen')}><MapPin size={17} aria-hidden="true" /><span>Ver en el mapa con puntos de interés</span></button>
+                <div className="mun-quick">
+                  <button type="button" onClick={() => openExplorer('hoteles')}><BedDouble size={16} aria-hidden="true" /> Hoteles</button>
+                  <button type="button" onClick={() => openExplorer('restaurantes')}><UtensilsCrossed size={16} aria-hidden="true" /> Restaurantes</button>
+                  <button type="button" onClick={() => openExplorer('atractivos')}><Landmark size={16} aria-hidden="true" /> Qué ver</button>
+                  <button type="button" onClick={() => openExplorer('clima')}><CloudSun size={16} aria-hidden="true" /> Clima</button>
+                </div>
+              </article>
+            ) : (
+              <>
+                <label className="mun-search"><Search size={15} aria-hidden="true" /><input type="search" placeholder={`Buscar ${unit}…`} aria-label={`Buscar ${unit}`} value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} /></label>
+                <ul className="mun-list">
+                  {filteredMuns.length === 0 && <li className="municipios-empty">Ningún {unit} coincide con “{searchQuery.trim()}”.</li>}
+                  {filteredMuns.map((mun) => <li key={mun.cvegeo}><button type="button" onClick={() => setSelectedMun(mun)}>{mun.nombre}</button></li>)}
+                </ul>
+              </>
+            )}
+          </aside>
         </div>
       </div>
     </div>

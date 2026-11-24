@@ -6,6 +6,7 @@ import { TOURISM_DATA } from '../data/states';
 import { enrichTourismData } from '../data/tourismEnhancer';
 import { isGenericDescription } from '../data/placesData';
 import RealPhoto from './RealPhoto';
+import StatePhoto from './StatePhoto';
 import { getTravelSeason } from '../data/travelSeasons';
 import LiveWeatherCard from './LiveWeatherCard';
 import WikiSummary from './WikiSummary';
@@ -111,7 +112,7 @@ export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace
   return (
     <aside className="atlas-sidebar sp" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label={`Información de ${selectedState.nombre}`}>
       <figure className="sp-hero">
-        <RealPhoto name={selectedState.nombre} stateName="México" alt={`Paisaje representativo de ${selectedState.nombre}`} />
+        <StatePhoto key={selectedState.cve} stateCode={selectedState.cve} stateName={selectedState.nombre} />
       </figure>
 
       <div className="sp-body">

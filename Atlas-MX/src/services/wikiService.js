@@ -3,7 +3,8 @@
  * Una sola búsqueda devuelve título, resumen, enlace y miniatura de cada página, de modo que
  * la foto y el texto de un lugar salen de la misma petición.
  */
-const STORAGE_KEY = 'atlas-mx:wiki:v1';
+import { fetchWithTimeout } from './http.js';
+const STORAGE_KEY = 'atlas-mx:wiki:v2';
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
 const MAX_STORED = 400;
 
@@ -56,7 +57,7 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
     gsrsearch: term,
     gsrnamespace: '0',
     gsrlimit: String(limit),
-    prop: 'pageimages|extracts|info',
+    prop: 'pageimages|extracts|info|coordinates',
     piprop: 'thumbnail|original',
     pithumbsize: '1200',
     exintro: '1',
@@ -64,12 +65,13 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
     exsentences: '3',
     exlimit: String(limit),
     inprop: 'url',
+    colimit: String(limit),
     redirects: '1',
     format: 'json',
     origin: '*'
   });
 
-  const request = fetch(`https://${lang}.wikipedia.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
+  const request = fetchWithTimeout(`https://${lang}.wikipedia.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
@@ -81,7 +83,8 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
           title: page.title || '',
           extract: (page.extract || '').replace(/\s+/g, ' ').trim(),
           url: page.fullurl || `https://${lang}.wikipedia.org/wiki/${encodeURIComponent((page.title || '').replace(/ /g, '_'))}`,
-          thumbnail: page?.thumbnail?.source || page?.original?.source || ''
+          thumbnail: page?.thumbnail?.source || page?.original?.source || '',
+          coordinates: page?.coordinates?.[0] ? { lat: page.coordinates[0].lat, lon: page.coordinates[0].lon } : null
         }));
       persist(key, pages);
       return pages;
@@ -131,3 +134,55 @@ export async function fetchPlaceSummary(placeName, stateName = '') {
 
 /** Solo para pruebas: vacía la caché en memoria. */
 export function __resetWikiCache() { memory.clear(); pending.clear(); }
+
+// Artículo exacto de Wikipedia en español de cada estado (no una búsqueda: así la foto es del estado).
+const STATE_ARTICLES = {
+  '01': 'Aguascalientes', '02': 'Baja California', '03': 'Baja California Sur', '04': 'Campeche', '05': 'Coahuila',
+  '06': 'Colima', '07': 'Chiapas', '08': 'Chihuahua', '09': 'Ciudad de México', '10': 'Durango', '11': 'Guanajuato',
+  '12': 'Guerrero', '13': 'Hidalgo (estado)', '14': 'Jalisco', '15': 'Estado de México', '16': 'Michoacán', '17': 'Morelos',
+  '18': 'Nayarit', '19': 'Nuevo León', '20': 'Oaxaca', '21': 'Puebla', '22': 'Querétaro', '23': 'Quintana Roo',
+  '24': 'San Luis Potosí', '25': 'Sinaloa', '26': 'Sonora', '27': 'Tabasco', '28': 'Tamaulipas', '29': 'Tlaxcala',
+  '30': 'Veracruz', '31': 'Yucatán', '32': 'Zacatecas'
+};
+// Archivos que no son fotografías del lugar: mapas, escudos, banderas, logotipos, gráficas…
+const NOT_A_PHOTO = /(mapa|map[_ .-]|locat|ubicaci|escudo|coat[_ ]of|flag|bandera|seal|sello|logo|emblem|signature|firma|grafic|chart|diagram|icon|\.svg|\.png|\.gif)/i;
+const isPhotoFile = (name = '') => /\.(jpe?g|webp)$/i.test(name) && !NOT_A_PHOTO.test(name);
+
+function fileName(url = '') {
+  try { return decodeURIComponent(url.split('/').pop().split('?')[0]).replace(/^\d+px-/, ''); } catch { return ''; }
+}
+
+/**
+ * Fotografía real del estado, tomada de su propio artículo en Wikipedia.
+ * @returns {Promise<{url: string, page: string} | null>}
+ */
+export async function fetchStatePhoto(stateCode) {
+  const title = STATE_ARTICLES[stateCode];
+  if (!title) return null;
+  if (!loaded) { loaded = true; loadStore(); }
+  const key = `statephoto|${stateCode}`;
+  if (memory.has(key)) return memory.get(key);
+  if (pending.has(key)) return pending.get(key);
+  const pageUrl = `https://es.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}`;
+
+  const request = (async () => {
+    // 1) Imagen principal del artículo, si es una fotografía.
+    const mainParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', prop: 'pageimages', piprop: 'thumbnail|name', pithumbsize: '1400', format: 'json', origin: '*' });
+    const main = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${mainParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
+    const page = Object.values(main?.query?.pages || {})[0];
+    if (page?.thumbnail?.source && isPhotoFile(page.pageimage || fileName(page.thumbnail.source))) {
+      return { url: page.thumbnail.source, page: pageUrl };
+    }
+    // 2) Otras fotografías del artículo: la más grande en formato horizontal.
+    const listParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', generator: 'images', gimlimit: '60', prop: 'imageinfo', iiprop: 'url|mime|size', iiurlwidth: '1400', format: 'json', origin: '*' });
+    const list = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${listParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
+    const candidates = Object.values(list?.query?.pages || {})
+      .map((item) => ({ name: item.title || '', info: item.imageinfo?.[0] }))
+      .filter(({ name, info }) => info?.thumburl && info.mime === 'image/jpeg' && isPhotoFile(name) && info.width >= 900 && info.width >= info.height)
+      .sort((a, b) => b.info.width * b.info.height - a.info.width * a.info.height);
+    return candidates[0] ? { url: candidates[0].info.thumburl, page: pageUrl } : null;
+  })().then((result) => { persist(key, result); return result; }).finally(() => pending.delete(key));
+
+  pending.set(key, request);
+  return request;
+}

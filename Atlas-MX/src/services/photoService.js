@@ -3,6 +3,7 @@
  * No requiere API key. Las imágenes se resuelven en el navegador y se cachean en memoria.
  */
 import { isRelevantPage, wikiSearch } from './wikiService';
+import { fetchWithTimeout } from './http.js';
 
 const photoCache = new Map();
 const galleryCache = new Map();
@@ -18,7 +19,7 @@ const PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent(`
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').trim();
 
 async function fetchJson(url) {
-  const response = await fetch(url, { headers: { Accept: 'application/json' } });
+  const response = await fetchWithTimeout(url, { headers: { Accept: 'application/json' } });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return response.json();
 }
