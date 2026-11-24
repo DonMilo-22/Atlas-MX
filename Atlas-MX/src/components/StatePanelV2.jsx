@@ -1,13 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowRight, CalendarDays, Check, Compass, Heart, MapPin, Sparkles, Stamp } from 'lucide-react';
+import { ArrowRight, CalendarDays, Check, Compass, Heart, Stamp } from 'lucide-react';
 import { vecinos, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatArea, formatPopulation } from '../utils/map';
 import { TOURISM_DATA } from '../data/states';
 import { enrichTourismData } from '../data/tourismEnhancer';
 import { isGenericDescription } from '../data/placesData';
 import RealPhoto from './RealPhoto';
-import TravelSeasonCard from './TravelSeasonCard';
-import StateStoryCard from './StateStoryCard';
+import { getTravelSeason } from '../data/travelSeasons';
 import LiveWeatherCard from './LiveWeatherCard';
 import WikiSummary from './WikiSummary';
 import TodayInMexico from './TodayInMexico';
@@ -24,9 +23,9 @@ function itemData(item, fallbackDescription) {
 // Descripción real de Wikipedia; mientras carga o si no hay página relevante, la del catálogo.
 function CardDescription({ name, stateName, fallback }) {
   const { data, isLoading } = useWikiSummary(name, stateName);
-  if (data?.extract) return <p className="rich-place-desc" title="Resumen de Wikipedia">{data.extract}</p>;
+  if (data?.extract) return <p className="place-row-desc" title="Resumen de Wikipedia">{data.extract}</p>;
   if (isLoading) return <span className="skeleton-line" aria-hidden="true" />;
-  return fallback && !isGenericDescription(fallback) ? <p className="rich-place-desc">{fallback}</p> : null;
+  return fallback && !isGenericDescription(fallback) ? <p className="place-row-desc">{fallback}</p> : null;
 }
 
 function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallbackDescription, favorite, isFavorite, onToggleFavorite }) {
@@ -37,20 +36,15 @@ function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallback
     : { type: 'button', onClick, 'aria-label': `Ver ficha de ${data.nombre}` };
 
   return (
-    <article className="rich-place-card-shell">
-      <CardElement className="rich-place-card" {...linkProps}>
-        <div className="rich-place-thumb">
-          <RealPhoto name={data.nombre} stateName={stateName} alt="" />
-        </div>
-        <div className="rich-place-content">
-          <div className="rich-place-title-row">
-            <span className="rich-place-name">{data.nombre}</span>
-            <span className={`rich-place-badge ${badgeClass}`}>{badge}</span>
-          </div>
+    <article className="place-row">
+      <CardElement className="place-row-main" {...linkProps}>
+        <span className="place-row-thumb"><RealPhoto name={data.nombre} stateName={stateName} alt="" /></span>
+        <span className="place-row-text">
+          <span className="place-row-name">{data.nombre}{badge && <em className={`place-row-badge ${badgeClass}`}>{badge}</em>}</span>
           <CardDescription name={data.nombre} stateName={stateName} fallback={data.descripcion} />
-        </div>
+        </span>
       </CardElement>
-      <button type="button" className={`place-favorite-btn ${isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite?.(favorite)} aria-pressed={Boolean(isFavorite)} aria-label={`${isFavorite ? 'Quitar' : 'Guardar'} ${data.nombre} ${isFavorite ? 'de' : 'en'} Quiero visitar`} title={isFavorite ? 'Quitar de Quiero visitar' : 'Guardar en Quiero visitar'}><Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} /></button>
+      <button type="button" className={`place-row-save ${isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite?.(favorite)} aria-pressed={Boolean(isFavorite)} aria-label={`${isFavorite ? 'Quitar' : 'Guardar'} ${data.nombre} ${isFavorite ? 'de' : 'en'} Quiero visitar`} title={isFavorite ? 'Quitar de Quiero visitar' : 'Guardar en Quiero visitar'}><Heart size={16} fill={isFavorite ? 'currentColor' : 'none'} /></button>
     </article>
   );
 }
@@ -77,11 +71,8 @@ export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace
 
   if (!selectedState) {
     return (
-      <aside className="atlas-sidebar" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label="Información del estado seleccionado">
-        <div className="state-content-view">
-          <p className="empty-hint"><Compass size={14} aria-hidden="true" /> Toca un estado en el mapa o búscalo arriba para explorarlo.</p>
-          <TodayInMexico onSelectState={onSelectState} onOpenPlace={onOpenPlace} />
-        </div>
+      <aside className="atlas-sidebar sp" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label="Hoy en México">
+        <TodayInMexico onSelectState={onSelectState} onOpenPlace={onOpenPlace} />
       </aside>
     );
   }
@@ -115,30 +106,27 @@ export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace
   const current = tabs.find((tab) => tab.key === activeTab) || tabs[0];
   const regionLabel = REGION_LABELS[String(selectedState.region || '').toLowerCase()] || selectedState.region || 'México';
 
-  return (
-    <aside className="atlas-sidebar" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label={`Información de ${selectedState.nombre}`}>
-      <div className="state-content-view">
-        <div className="state-header-card">
-          <div className="state-hero-banner">
-            <RealPhoto name={selectedState.nombre} stateName="México" alt={`Paisaje representativo de ${selectedState.nombre}`} />
-            <div className="state-hero-overlay" />
-          </div>
-          <div className="state-header-inner">
-            <div className="state-header-top">
-              <span className="state-region-badge">Región {regionLabel}</span>
-              {visited && <span className="state-visited-badge"><Check size={12} /> Visitado</span>}
-            </div>
-            <h2 className="state-name-display">{selectedState.nombre}</h2>
-            <div className="state-capital-display"><MapPin size={15} color="var(--mexico-brown)" aria-hidden="true" /><span>Capital: <strong>{selectedState.capital}</strong></span></div>
-            {stateData.lema && <div className="state-lema-quote">«{stateData.lema}»</div>}
-          </div>
-        </div>
+  const season = getTravelSeason(selectedState.cve);
 
-        <div className="stats-grid">
-          <div className="stat-box"><div className="stat-label">Población (2020)</div><div className="stat-value">{formatPopulation(selectedState.poblacion)}</div></div>
-          <div className="stat-box"><div className="stat-label">Superficie</div><div className="stat-value">{formatArea(selectedState.superficie)}</div></div>
-          <div className="stat-box stat-box-wide"><div className="stat-label">Clima</div><div className="stat-value stat-value-small">{tourism.clima || 'Variable según la región'}</div></div>
-        </div>
+  return (
+    <aside className="atlas-sidebar sp" id="panel-estado" ref={panelRef} tabIndex={-1} aria-label={`Información de ${selectedState.nombre}`}>
+      <figure className="sp-hero">
+        <RealPhoto name={selectedState.nombre} stateName="México" alt={`Paisaje representativo de ${selectedState.nombre}`} />
+      </figure>
+
+      <div className="sp-body">
+        <header className="sp-head">
+          <p className="sp-region">Región {regionLabel}{visited && <span className="sp-visited"><Check size={13} aria-hidden="true" /> Ya lo visitaste</span>}</p>
+          <h2 className="sp-name">{selectedState.nombre}</h2>
+          <p className="sp-capital">Capital: {selectedState.capital}</p>
+          {stateData.lema && <p className="sp-motto">«{stateData.lema}»</p>}
+        </header>
+
+        <dl className="sp-facts">
+          <div><dt>Población</dt><dd>{formatPopulation(selectedState.poblacion)}</dd></div>
+          <div><dt>Superficie</dt><dd>{formatArea(selectedState.superficie)}</dd></div>
+          <div><dt>Mejor época</dt><dd>{season.window}</dd></div>
+        </dl>
 
         <LiveWeatherCard stateCode={selectedState.cve} capital={selectedState.capital} />
 
@@ -146,25 +134,24 @@ export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace
           key={`wiki-${selectedState.cve}`}
           name={selectedState.nombre}
           stateName="estado"
-          title={`Conoce ${selectedState.nombreCorto}`}
-          className="state-summary-card"
-          fallback={stateData.resumen ? <div className="state-summary-card"><span className="section-kicker">Perfil del estado</span><p>{stateData.resumen}</p></div> : null}
+          title={`Sobre ${selectedState.nombreCorto}`}
+          className="sp-section"
+          fallback={stateData.resumen ? <div className="wiki-summary sp-section"><p>{stateData.resumen}</p></div> : null}
         />
 
-        <div className="tourism-section">
-          <div className="tourism-header-bar"><span className="tourism-header-title">Qué visitar y probar</span><Sparkles size={15} color="var(--mexico-gold)" aria-hidden="true" /></div>
-          <div className="tourism-tabs" role="tablist" aria-label="Categorías de lugares">
-            {tabs.map((tab) => <button key={tab.key} id={`tab-${tab.key}`} type="button" className={`tourism-tab-btn ${activeTab === tab.key ? 'active' : ''}`} onClick={() => setActiveTab(tab.key)} role="tab" aria-selected={activeTab === tab.key} aria-controls={`tabpanel-${tab.key}`}>{tab.label} ({tab.items.length})</button>)}
+        <section className="sp-section sp-places" aria-labelledby="sp-places-title">
+          <h3 id="sp-places-title" className="sp-title">Qué visitar y probar</h3>
+          <div className="sp-tabs" role="tablist" aria-label="Categorías de lugares">
+            {tabs.map((tab) => <button key={tab.key} id={`tab-${tab.key}`} type="button" className={activeTab === tab.key ? 'active' : ''} onClick={() => setActiveTab(tab.key)} role="tab" aria-selected={activeTab === tab.key} aria-controls={`tabpanel-${tab.key}`}>{tab.label} <span>{tab.items.length}</span></button>)}
           </div>
-
-          <div className="tourism-tab-content" role="tabpanel" id={`tabpanel-${current.key}`} aria-labelledby={`tab-${current.key}`}>
-            {current.items.length === 0 ? <p className="tab-empty">Aún no hay lugares en esta categoría.</p> : <div className="rich-place-cards-list">
+          <div role="tabpanel" id={`tabpanel-${current.key}`} aria-labelledby={`tab-${current.key}`}>
+            {current.items.length === 0 ? <p className="tab-empty">Aún no hay lugares en esta categoría.</p> : <div className="sp-list">
               {current.items.map(({ item, badge, badgeClass, category, fallback, external }, index) => (
                 <PlaceCard
                   key={`${current.key}-${index}`}
                   item={item}
                   stateName={selectedState.nombre}
-                  badge={badge}
+                  badge={badge === 'Playa' ? badge : null}
                   badgeClass={badgeClass}
                   href={external ? getSearchUrl(item) : undefined}
                   onClick={external ? undefined : () => openMap(item, category)}
@@ -174,26 +161,24 @@ export default function StatePanelV2({ selectedState, onSelectState, onOpenPlace
               ))}
             </div>}
           </div>
-        </div>
+        </section>
 
-        <TravelSeasonCard stateCode={selectedState.cve} />
-        <StateStoryCard key={`story-${selectedState.cve}`} stateCode={selectedState.cve} stateName={selectedState.nombre} />
+        {neighborKeys.length > 0 && <p className="sp-neighbors">
+          Colinda con{' '}
+          {neighborKeys.map((neighborCve, index) => {
+            const nState = getEstadoByCve(neighborCve);
+            if (!nState) return null;
+            const separator = index === neighborKeys.length - 1 ? '' : index === neighborKeys.length - 2 ? ' y ' : ', ';
+            return <React.Fragment key={neighborCve}><button type="button" onClick={() => onSelectState?.(nState)}>{nState.nombreCorto}</button>{separator}</React.Fragment>;
+          })}.
+        </p>}
 
-        {neighborKeys.length > 0 && <div className="neighbors-section">
-          <div className="section-kicker">Estados colindantes</div>
-          <div className="neighbor-chips">
-            {neighborKeys.map((neighborCve) => {
-              const nState = getEstadoByCve(neighborCve);
-              if (!nState) return null;
-              return <button key={neighborCve} type="button" className="neighbor-chip" onClick={() => onSelectState?.(nState)}>{nState.nombreCorto}</button>;
-            })}
+        <div className="sp-actions">
+          <button type="button" className="sp-primary" onClick={() => onExploreState?.(selectedState)}><Compass size={17} aria-hidden="true" /><span>Explorar sus {selectedState.cve === '09' ? 'alcaldías' : 'municipios'}</span><ArrowRight size={16} aria-hidden="true" /></button>
+          <div className="sp-secondary">
+            <button type="button" onClick={() => onPlanTrip?.(selectedState)}><CalendarDays size={16} aria-hidden="true" /> Planear viaje</button>
+            <button type="button" className={visited ? 'is-on' : ''} onClick={() => onToggleVisited?.(selectedState.cve)} aria-pressed={visited}>{visited ? <Check size={16} aria-hidden="true" /> : <Stamp size={16} aria-hidden="true" />} {visited ? 'Visitado' : 'Marcar visitado'}</button>
           </div>
-        </div>}
-
-        <div className="state-footer-actions">
-          <button type="button" className="plan-state-action" onClick={() => onPlanTrip?.(selectedState)}><CalendarDays size={17} /><span>Planear viaje y presupuesto</span></button>
-          <button type="button" className={`passport-state-action ${visited ? 'visited' : ''}`} onClick={() => onToggleVisited?.(selectedState.cve)} aria-pressed={visited}>{visited ? <Check size={17} /> : <Stamp size={17} />}<span>{visited ? 'Sello agregado al pasaporte' : 'Marcar estado como visitado'}</span></button>
-          <button type="button" className="explore-action-btn" onClick={() => onExploreState?.(selectedState)}><Compass size={18} /><span>Explorar municipios de {selectedState.nombreCorto}</span><ArrowRight size={17} /></button>
         </div>
       </div>
     </aside>

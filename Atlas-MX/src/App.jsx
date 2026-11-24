@@ -1,13 +1,12 @@
 import React, { Suspense, lazy, useCallback, useEffect, useState } from 'react';
 import { estado as getEstadoByCve } from '@webrek/mx-geo';
+import { BarChart3, CalendarDays, CalendarHeart, Info, Route, Sparkles } from 'lucide-react';
 import Header from './components/Header';
 import MexicoMap from './components/MexicoMap';
 import MapControls from './components/MapControls';
 import StatePanel from './components/StatePanelV2';
 import TourismFilters from './components/TourismFilters';
 import TouristRoutesPanel from './components/TouristRoutesPanel';
-import ExperienceDock from './components/ExperienceDock';
-import Footer from './components/Footer';
 import useFavorites from './hooks/useFavorites';
 import usePassport from './hooks/usePassport';
 import { TOURIST_ROUTES } from './data/touristRoutes';
@@ -37,7 +36,6 @@ export default function App() {
   const [selectedState, setSelectedState] = useState(readStateFromUrl);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
-  const [showLabels, setShowLabels] = useState(true);
   const [tourismFilter, setTourismFilter] = useState('todos');
   const [activeRoute, setActiveRoute] = useState(null);
   const [mapsModal, setMapsModal] = useState(null);
@@ -70,7 +68,6 @@ export default function App() {
   const handleZoomIn = useCallback(() => setZoom((prev) => Math.min(MAX_ZOOM, prev * 1.3)), []);
   const handleZoomOut = useCallback(() => setZoom((prev) => Math.max(MIN_ZOOM, prev * 0.77)), []);
   const handleReset = useCallback(() => { setZoom(1); setPan({ x: 0, y: 0 }); setSelectedState(null); setTourismFilter('todos'); setActiveRoute(null); }, []);
-  const handleToggleLabels = useCallback(() => setShowLabels((prev) => !prev), []);
 
   // Atajos de teclado del mapa: + / - / 0 (solo si no se está escribiendo ni hay un modal abierto).
   useEffect(() => {
@@ -106,6 +103,15 @@ export default function App() {
   const selectAndClose = useCallback((state) => { handleSelectState(state); closeTool(); }, [closeTool, handleSelectState]);
   const openPlanner = useCallback((state) => { setPlannerState(state || selectedState); setOpenTool('planner'); }, [selectedState]);
 
+  const tools = [
+    { id: 'planner', label: 'Planear viaje', hint: 'Itinerario y presupuesto por días', icon: CalendarDays, onSelect: () => openPlanner() },
+    { id: 'rutas', label: 'Rutas temáticas', hint: 'Recorridos por varios estados', icon: Route, onSelect: () => setActiveRoute((current) => current || TOURIST_ROUTES[0]) },
+    { id: 'quiz', label: 'Descubre tu destino', hint: 'Tres preguntas, tres estados', icon: Sparkles, onSelect: () => setOpenTool('quiz') },
+    { id: 'comparar', label: 'Comparar estados', hint: 'Clima, tamaño y qué hacer', icon: BarChart3, onSelect: () => setOpenTool('comparar') },
+    { id: 'agenda', label: 'Agenda cultural', hint: 'Fiestas de cada mes', icon: CalendarHeart, onSelect: () => setOpenTool('agenda') },
+    { id: 'about', label: 'Acerca de y créditos', hint: 'Cómo usarlo y fuentes', icon: Info, onSelect: () => setOpenTool('about') }
+  ];
+
   return (
     <div className="atlas-app-container">
       <a className="skip-link" href="#panel-estado">Saltar a la información del estado</a>
@@ -114,17 +120,16 @@ export default function App() {
         onOpenPlace={handleOpenPlace}
         favoritesCount={favorites.length}
         onOpenFavorites={() => setOpenTool('favoritos')}
-        onOpenRoutes={() => setActiveRoute((current) => current || TOURIST_ROUTES[0])}
+        tools={tools}
         visitedCount={visitedStates.length}
         onOpenPassport={() => setOpenTool('pasaporte')}
       />
       <main className="atlas-main">
         <section className="map-section" aria-label="Mapa interactivo de México">
-          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels={showLabels} tourismFilter={tourismFilter} activeRoute={activeRoute} />
+          <MexicoMap selectedState={selectedState} onSelectState={handleSelectState} zoom={zoom} setZoom={setZoom} pan={pan} setPan={setPan} showLabels tourismFilter={tourismFilter} activeRoute={activeRoute} />
           <TourismFilters activeFilter={tourismFilter} onChange={setTourismFilter} onOpenResult={handleOpenPlace} />
           <TouristRoutesPanel activeRoute={activeRoute} onSelectRoute={setActiveRoute} onSelectState={handleSelectState} onClose={() => setActiveRoute(null)} />
-          <ExperienceDock onOpenPlanner={() => openPlanner()} onOpenCompare={() => setOpenTool('comparar')} onOpenQuiz={() => setOpenTool('quiz')} onOpenCalendar={() => setOpenTool('agenda')} />
-          <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} showLabels={showLabels} onToggleLabels={handleToggleLabels} />
+          <MapControls zoom={zoom} onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} onReset={handleReset} canReset={Boolean(selectedState || zoom !== 1 || pan.x || pan.y || tourismFilter !== 'todos' || activeRoute)} />
         </section>
         <StatePanel
           selectedState={selectedState}
@@ -139,7 +144,6 @@ export default function App() {
           onToggleVisited={toggleVisited}
         />
       </main>
-      <Footer onOpenAbout={() => setOpenTool('about')} />
 
       <Suspense fallback={<div className="lazy-modal-fallback" role="status" aria-live="polite">Cargando…</div>}>
         {openTool === 'municipios' && selectedState && <MunicipalityModal state={selectedState} isOpen onClose={closeTool} onOpenLocationMap={handleOpenLocationMap} />}

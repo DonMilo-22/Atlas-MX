@@ -1,8 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowUpRight, CalendarHeart, Compass, MapPin, Shuffle, Sparkles, Sun } from 'lucide-react';
+import { ArrowUpRight, CalendarHeart, Compass, MapPin, Shuffle } from 'lucide-react';
 import { ESTADOS, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { TOURISM_INDEX } from '../data/tourismIndex';
-import { getCategoryLabel } from '../data/tourismCategories';
 import { CULTURAL_EVENTS, MONTHS } from '../data/culturalEvents';
 import { getTravelSeason } from '../data/travelSeasons';
 import { useStateWeather } from '../hooks/useLiveData';
@@ -44,51 +43,47 @@ export default function TodayInMexico({ onSelectState, onOpenPlace }) {
   }, [month, seed]);
 
   return (
-    <section className="today-mx" aria-label="Hoy en México">
-      <header className="today-head">
-        <span className="live-badge"><span className="live-dot" aria-hidden="true" /> Hoy en México</span>
-        <h2>{dateLabel.format(today).replace(/^./, (c) => c.toUpperCase())}</h2>
-        <p>Una selección que cambia cada día, con información en vivo de Wikipedia y Open-Meteo.</p>
-      </header>
+    <section className="today-mx" aria-labelledby="today-title">
+      <figure className="sp-hero today-hero">
+        <RealPhoto name={destination.name} stateName={destination.stateName} alt={`${destination.name}, ${destination.stateName}`} />
+        {now && <figcaption className="today-weather"><WeatherIcon icon={now.icon} isDay={weather.current.isDay} size={14} /> {weather.current.temp}° ahora en {destinationState?.capital}</figcaption>}
+      </figure>
 
-      <article className="today-destination">
-        <div className="today-destination-media">
-          <RealPhoto name={destination.name} stateName={destination.stateName} alt={`${destination.name}, ${destination.stateName}`} />
-          <span className="today-chip"><Sparkles size={12} aria-hidden="true" /> Destino del día</span>
-          {now && <span className="today-weather"><WeatherIcon icon={now.icon} isDay={weather.current.isDay} size={14} /> {weather.current.temp}° en {destinationState?.capital}</span>}
-        </div>
-        <div className="today-destination-body">
-          <small>{getCategoryLabel(destination.category)} · {destination.stateName}</small>
-          <h3>{destination.name}</h3>
-          <WikiSummary key={`${destination.name}-${destination.stateName}`} name={destination.name} stateName={destination.stateName} title="Desde Wikipedia" fallback={destination.description && !/^Atractivo emblemático/.test(destination.description) ? <p className="today-fallback">{destination.description}</p> : null} />
-          <div className="today-actions">
-            <button type="button" className="today-primary" onClick={() => onOpenPlace?.(destination)}><MapPin size={14} /> Ver ficha y mapa</button>
-            <button type="button" onClick={() => destinationState && onSelectState?.(destinationState)}><Compass size={14} /> Explorar {destinationState?.nombreCorto}</button>
-            <button type="button" onClick={() => setShuffle((value) => value + 1)} aria-label="Mostrar otro destino"><Shuffle size={14} /> Otro</button>
+      <div className="sp-body">
+        <header className="sp-head">
+          <p className="sp-region"><span className="live-dot" aria-hidden="true" /> {dateLabel.format(today).replace(/^./, (c) => c.toUpperCase())}</p>
+          <h2 className="sp-name today-name" id="today-title">{destination.name}</h2>
+          <p className="sp-capital">Destino del día en {destination.stateName}</p>
+        </header>
+
+        <WikiSummary key={`${destination.name}-${destination.stateName}`} name={destination.name} stateName={destination.stateName} title="De Wikipedia" className="sp-section" fallback={destination.description && !/^Atractivo emblemático/.test(destination.description) ? <p className="today-fallback">{destination.description}</p> : null} />
+
+        <div className="sp-actions">
+          <button type="button" className="sp-primary" onClick={() => onOpenPlace?.(destination)}><MapPin size={17} aria-hidden="true" /><span>Ver ficha y mapa</span><ArrowUpRight size={16} aria-hidden="true" /></button>
+          <div className="sp-secondary">
+            <button type="button" onClick={() => destinationState && onSelectState?.(destinationState)}><Compass size={16} aria-hidden="true" /> Explorar {destinationState?.nombreCorto}</button>
+            <button type="button" onClick={() => setShuffle((value) => value + 1)}><Shuffle size={16} aria-hidden="true" /> Otro destino</button>
           </div>
         </div>
-      </article>
 
-      {event && (
-        <article className="today-event">
-          <CalendarHeart size={18} aria-hidden="true" />
-          <span>
-            <small>{monthEvents.length ? `Se celebra en ${MONTHS[month - 1].toLowerCase()}` : `Próximamente, en ${MONTHS[event.month - 1].toLowerCase()}`}</small>
-            <strong>{event.name}</strong>
-            <em>{event.location}, {eventState?.nombre} · {event.theme}</em>
-          </span>
-          <button type="button" onClick={() => eventState && onSelectState?.(eventState)} aria-label={`Explorar ${eventState?.nombre}`}><ArrowUpRight size={15} /></button>
-        </article>
-      )}
+        {event && (
+          <p className="sp-section today-event-line">
+            <CalendarHeart size={16} aria-hidden="true" />
+            <span>{monthEvents.length ? `Este mes se celebra ` : `En ${MONTHS[event.month - 1].toLowerCase()} se celebra `}<button type="button" onClick={() => eventState && onSelectState?.(eventState)}>{event.name}</button>, en {event.location}.</span>
+          </p>
+        )}
 
-      {seasonal.length > 0 && (
-        <div className="today-season">
-          <span className="section-kicker"><Sun size={12} aria-hidden="true" /> Buena temporada en {MONTHS[month - 1].toLowerCase()}</span>
-          <div className="neighbor-chips">
-            {seasonal.map((state) => <button key={state.cve} type="button" className="neighbor-chip" onClick={() => onSelectState?.(state)}>{state.nombreCorto}</button>)}
-          </div>
-        </div>
-      )}
+        {seasonal.length > 0 && (
+          <p className="sp-neighbors">
+            Buena época ahora:{' '}
+            {seasonal.slice(0, 6).map((state, index, list) => (
+              <React.Fragment key={state.cve}><button type="button" onClick={() => onSelectState?.(state)}>{state.nombreCorto}</button>{index === list.length - 1 ? '.' : index === list.length - 2 ? ' y ' : ', '}</React.Fragment>
+            ))}
+          </p>
+        )}
+
+        <p className="sp-hint">Elige un estado en el mapa o búscalo arriba.</p>
+      </div>
     </section>
   );
 }

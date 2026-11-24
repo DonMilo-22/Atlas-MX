@@ -36,7 +36,8 @@ export default function AboutModal({ isOpen, onClose }) {
             <ul>
               <li>Límites estatales y municipales, población y superficie: INEGI, mediante la librería <a href="https://www.npmjs.com/package/@webrek/mx-geo" target="_blank" rel="noopener noreferrer">@webrek/mx-geo</a>.</li>
               <li>Fotografías: <a href="https://www.wikipedia.org/" target="_blank" rel="noopener noreferrer">Wikipedia</a> y <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>. Cada imagen pertenece a su autor bajo su licencia Creative Commons; consulta la página del archivo para la atribución completa.</li>
-              <li>Mapas, hoteles y clima: enlaces a Google Maps y Google Search.</li>
+              <li>Clima en vivo: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> (CC BY 4.0). Resúmenes de lugares: Wikipedia (CC BY-SA 4.0).</li>
+              <li>Mapas y hoteles: enlaces a Google Maps y Google Search.</li>
               <li>Presupuestos, temporadas y fechas de festividades son orientativos; verifica con fuentes oficiales antes de viajar.</li>
               <li>Tus favoritos y tu pasaporte se guardan solo en este navegador.</li>
             </ul>

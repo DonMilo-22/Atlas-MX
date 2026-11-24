@@ -20,7 +20,6 @@ export default function TourismFilters({ activeFilter, onChange, onOpenResult })
 
   return (
     <div className={`tourism-map-filters ${activeFilter !== 'todos' ? 'expanded' : ''}`} aria-label="Explorador turístico por categoría">
-      <span className="tourism-map-filters-title">Explorar por</span>
       <div className="tourism-map-filter-list" role="toolbar" aria-label="Categorías turísticas">
         {TOURISM_FILTERS.map((filter) => {
           const Icon = ICONS[filter.id];
@@ -36,7 +35,7 @@ export default function TourismFilters({ activeFilter, onChange, onOpenResult })
       {activeFilter !== 'todos' && <div className="tourism-discovery-results">
         <div className="tourism-discovery-head">
           <label><Search size={13} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscar lugar o estado…" aria-label="Buscar dentro de la categoría" /></label>
-          <span>{results.length} resultados reales</span>
+          <span>{results.length} {results.length === 1 ? 'lugar' : 'lugares'}</span>
           <button type="button" onClick={() => chooseFilter('todos')} aria-label="Cerrar explorador"><X size={14} /></button>
         </div>
         {visibleResults.length > 0 ? <div className="tourism-result-strip">

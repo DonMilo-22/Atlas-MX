@@ -2,17 +2,17 @@
  * Atlas MX — fotos reales mediante Wikipedia y Wikimedia Commons.
  * No requiere API key. Las imágenes se resuelven en el navegador y se cachean en memoria.
  */
-import { wikiSearch } from './wikiService';
+import { isRelevantPage, wikiSearch } from './wikiService';
 
 const photoCache = new Map();
 const galleryCache = new Map();
 
+// Placeholder neutro en la paleta del sitio (sin texto, para no chocar con lo que va encima).
 const PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent(`
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
-  <rect fill="#f4eee5" width="1000" height="700"/>
-  <path d="M0 510L250 330l160 120 130-100 460 310v40H0z" fill="#d8cabb"/>
-  <circle cx="785" cy="165" r="62" fill="#e4b65d" opacity=".65"/>
-  <text x="500" y="625" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#715b49">Fotografía no disponible</text>
+  <rect fill="#E6EAE7" width="1000" height="700"/>
+  <path d="M0 560L230 390l150 105 140-120 480 240v85H0z" fill="#D5DCD7"/>
+  <path d="M0 640L300 500l220 110 180-80 300 110v60H0z" fill="#C9D1CB"/>
 </svg>`);
 
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').trim();
@@ -24,9 +24,12 @@ async function fetchJson(url) {
 }
 
 // Reutiliza la búsqueda de wikiService: la misma petición trae foto y resumen del lugar.
-async function queryWikipediaImages(searchTerm, lang = 'es', limit = 5) {
+// Solo usa fotos de páginas que de verdad hablan del lugar.
+async function queryWikipediaImages(searchTerm, lang = 'es', limit = 5, placeName = '', stateName = '') {
   const pages = await wikiSearch(searchTerm, lang, 3);
-  return pages.map((page) => page.thumbnail).filter(Boolean).slice(0, limit);
+  return pages
+    .filter((page) => !placeName || isRelevantPage(page, placeName, stateName))
+    .map((page) => page.thumbnail).filter(Boolean).slice(0, limit);
 }
 
 async function queryCommonsImages(searchTerm, limit = 8) {
@@ -69,14 +72,14 @@ export async function fetchRealPhotos(placeName, options = {}) {
     const broadQuery = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
     // Las consultas corren en paralelo; si una falla, las demás conservan sus resultados.
     const settled = await Promise.allSettled([
-      queryWikipediaImages(broadQuery, 'es', Math.min(limit, 3)),
-      queryWikipediaImages(placeName, 'es', Math.min(limit, 3)),
+      queryWikipediaImages(broadQuery, 'es', Math.min(limit, 3), placeName, stateName),
+      queryWikipediaImages(placeName, 'es', Math.min(limit, 3), placeName, stateName),
       queryCommonsImages(broadQuery, limit)
     ]);
     let failures = settled.filter((item) => item.status === 'rejected').length;
     let urls = uniqueUrls(settled.flatMap((item) => (item.status === 'fulfilled' ? item.value : [])));
     if (urls.length === 0 && failures < settled.length) {
-      const fallback = await Promise.allSettled([queryWikipediaImages(broadQuery, 'en', Math.min(limit, 3))]);
+      const fallback = await Promise.allSettled([queryWikipediaImages(broadQuery, 'en', Math.min(limit, 3), placeName, stateName)]);
       failures += fallback.filter((item) => item.status === 'rejected').length;
       urls = uniqueUrls(fallback.flatMap((item) => (item.status === 'fulfilled' ? item.value : [])));
     }

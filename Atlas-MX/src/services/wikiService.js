@@ -92,14 +92,23 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
   return request;
 }
 
-/** ¿La página realmente habla de este lugar? Evita mostrar el resumen de otro sitio. */
-export function isRelevantPage(page, placeName) {
+/**
+ * ¿La página realmente habla de este lugar? Evita mostrar el resumen de otro sitio
+ * (p. ej. "Bahía San Agustín" no debe traer el artículo de un club deportivo).
+ * Reglas: el título debe contener casi todas las palabras clave del lugar, y el texto
+ * debe ubicarse en el estado o en México.
+ */
+export function isRelevantPage(page, placeName, stateName = '') {
   if (!page?.extract || page.extract.length < 40) return false;
   const words = keywords(placeName);
-  if (words.length === 0) return fold(page.title).includes(fold(placeName).trim());
-  const haystack = fold(`${page.title} ${page.extract.slice(0, 300)}`);
-  const hits = words.filter((word) => haystack.includes(word)).length;
-  return hits >= Math.min(2, words.length);
+  const title = fold(page.title);
+  const titleHits = words.filter((word) => title.includes(word)).length;
+  const needed = words.length <= 2 ? words.length : words.length - 1;
+  if (words.length === 0 ? !title.includes(fold(placeName).trim()) : titleHits < needed) return false;
+  const text = fold(page.extract);
+  const placeWords = keywords(stateName).filter((word) => word !== 'estado');
+  const located = text.includes('mexic') || placeWords.some((word) => text.includes(word));
+  return located;
 }
 
 /**
@@ -111,10 +120,10 @@ export async function fetchPlaceSummary(placeName, stateName = '') {
   try {
     const query = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
     const pages = await wikiSearch(query, 'es', 3);
-    const match = pages.find((page) => isRelevantPage(page, placeName));
+    const match = pages.find((page) => isRelevantPage(page, placeName, stateName));
     if (match) return match;
     const direct = await wikiSearch(placeName, 'es', 3);
-    return direct.find((page) => isRelevantPage(page, placeName)) || null;
+    return direct.find((page) => isRelevantPage(page, placeName, stateName)) || null;
   } catch {
     return null;
   }

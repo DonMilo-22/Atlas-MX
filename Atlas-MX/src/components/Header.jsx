@@ -1,11 +1,12 @@
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { Heart, MapPin, MapPinned, Route, Search, Stamp, X } from 'lucide-react';
+import { Heart, MapPin, Search, Stamp, X } from 'lucide-react';
+import ToolsMenu from './ToolsMenu';
 import { ESTADOS } from '@webrek/mx-geo';
 import { searchPlaces } from '../data/tourismIndex';
 
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 
-export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites, onOpenRoutes, visitedCount = 0, onOpenPassport }) {
+export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites, visitedCount = 0, onOpenPassport, tools = [] }) {
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -50,10 +51,7 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
 
   return (
     <header className="atlas-header">
-      <h1 className="brand">
-        <span className="brand-mark" aria-hidden="true"><MapPinned size={23} /></span>
-        <span><span className="brand-title">ATLAS MX</span><span className="brand-sub">México · territorio, cultura y turismo</span></span>
-      </h1>
+      <h1 className="brand"><span className="brand-title">Atlas<span aria-hidden="true">·</span>MX</span><span className="visually-hidden"> — Explora México</span></h1>
       <div className="search-wrap" ref={wrapRef}>
         <Search size={17} aria-hidden="true" />
         <input
@@ -93,9 +91,9 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
         )}
       </div>
       <nav className="header-actions" aria-label="Accesos rápidos">
-        <button type="button" className="header-routes" onClick={onOpenRoutes} title="Rutas turísticas"><Route size={16} aria-hidden="true" /><span>Rutas</span></button>
-        <button type="button" className="header-favorites" onClick={onOpenFavorites} aria-label={`Quiero visitar: ${favoritesCount} lugares guardados`} title="Quiero visitar"><Heart size={16} fill={favoritesCount ? 'currentColor' : 'none'} aria-hidden="true" /><span>Quiero visitar</span>{favoritesCount > 0 && <b>{favoritesCount}</b>}</button>
-        <button type="button" className="header-passport" onClick={onOpenPassport} aria-label={`Pasaporte: ${visitedCount} de 32 estados visitados`} title="Pasaporte"><Stamp size={16} aria-hidden="true" /><span>Pasaporte</span><b>{visitedCount}/32</b></button>
+        <button type="button" className="icon-btn" onClick={onOpenFavorites} aria-label={`Quiero visitar: ${favoritesCount} lugares guardados`} title="Quiero visitar"><Heart size={18} fill={favoritesCount ? 'currentColor' : 'none'} aria-hidden="true" />{favoritesCount > 0 && <b className="icon-count">{favoritesCount}</b>}</button>
+        <button type="button" className="icon-btn" onClick={onOpenPassport} aria-label={`Pasaporte: ${visitedCount} de 32 estados visitados`} title="Pasaporte">{<Stamp size={18} aria-hidden="true" />}{visitedCount > 0 && <b className="icon-count">{visitedCount}</b>}</button>
+        <ToolsMenu tools={tools} />
       </nav>
     </header>
   );
