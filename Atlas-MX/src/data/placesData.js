@@ -1,8 +1,12 @@
+// Frases de relleno que se repiten en todos los estados; no aportan información al usuario.
+const GENERIC_PATTERNS = [/^Atractivo emblemático de /, /^Especialidad tradicional de /];
+export const isGenericDescription = (text = '') => GENERIC_PATTERNS.some((pattern) => pattern.test(text));
+
 export function getPlaceDetails(placeName, stateName = '', category = 'Lugar', description = '') {
   return {
     nombre: placeName,
     categoria: category,
-    descripcion: description || `${placeName} es un lugar de interés en ${stateName || 'México'}. Consulta Google Maps para ver horarios, reseñas y servicios cercanos.`,
+    descripcion: (description && !isGenericDescription(description) && description) || `${placeName} es un lugar de interés en ${stateName || 'México'}. Consulta Google Maps para ver horarios, reseñas y servicios cercanos.`,
     historia: ''
   };
 }

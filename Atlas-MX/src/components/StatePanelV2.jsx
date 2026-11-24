@@ -4,6 +4,7 @@ import { vecinos, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatArea, formatPopulation } from '../utils/map';
 import { TOURISM_DATA } from '../data/states';
 import { enrichTourismData } from '../data/tourismEnhancer';
+import { isGenericDescription } from '../data/placesData';
 import RealPhoto from './RealPhoto';
 import TravelSeasonCard from './TravelSeasonCard';
 import StateStoryCard from './StateStoryCard';
@@ -34,7 +35,7 @@ function PlaceCard({ item, stateName, badge, badgeClass, onClick, href, fallback
             <span className="rich-place-name">{data.nombre}</span>
             <span className={`rich-place-badge ${badgeClass}`}>{badge}</span>
           </div>
-          <p className="rich-place-desc">{data.descripcion}</p>
+          {data.descripcion && !isGenericDescription(data.descripcion) && <p className="rich-place-desc">{data.descripcion}</p>}
         </div>
       </CardElement>
       <button type="button" className={`place-favorite-btn ${isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite?.(favorite)} aria-pressed={Boolean(isFavorite)} aria-label={`${isFavorite ? 'Quitar' : 'Guardar'} ${data.nombre} ${isFavorite ? 'de' : 'en'} Quiero visitar`} title={isFavorite ? 'Quitar de Quiero visitar' : 'Guardar en Quiero visitar'}><Heart size={15} fill={isFavorite ? 'currentColor' : 'none'} /></button>

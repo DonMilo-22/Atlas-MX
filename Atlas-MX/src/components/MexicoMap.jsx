@@ -157,7 +157,7 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
       onPointerLeave={(event) => { if (event.pointerType === 'mouse') setTip(null); }}
     >
       {showTitle && <div className="map-title-card"><strong>República Mexicana</strong><span>{filtered ? `Capa: ${filterLabel}` : 'Mapa interactivo · INEGI'}</span></div>}
-      {tip && <div className="map-tooltip-hud" style={{ left: tip.x, top: tip.y }}><strong>{tip.state.nombre}</strong><span>{tip.state.capital} · {formatPopulation(tip.state.poblacion)} hab.</span>{filtered && <span className="map-tooltip-category">{getStateCategoryStats(tip.state.cve)[tourismFilter] || 0} opciones de {filterLabel.toLocaleLowerCase('es-MX')}</span>}</div>}
+      {tip && <div className={`map-tooltip-hud ${tip.x > (viewportRef.current?.clientWidth || 0) - 220 ? 'flip-x' : ''} ${tip.y > (viewportRef.current?.clientHeight || 0) - 90 ? 'flip-y' : ''}`} style={{ left: tip.x, top: tip.y }}><strong>{tip.state.nombre}</strong><span>{tip.state.capital} · {formatPopulation(tip.state.poblacion)} hab.</span>{filtered && <span className="map-tooltip-category">{getStateCategoryStats(tip.state.cve)[tourismFilter] || 0} opciones de {filterLabel.toLocaleLowerCase('es-MX')}</span>}</div>}
       <svg ref={svgRef} viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="map-svg" role="group" aria-label="Mapa de los 32 estados de México. Usa Tab para recorrer los estados y Enter para seleccionarlos.">
         <defs><filter id="glow"><feDropShadow dx="0" dy="4" stdDeviation="5" floodColor="#ef4444" floodOpacity=".5" /></filter></defs>
         <g transform={transform}>
@@ -177,6 +177,8 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
                 onPointerEnter={(event) => event.pointerType === 'mouse' && showTip(s.cve, event)}
                 onPointerLeave={() => setTip(null)}
                 onFocus={(event) => {
+                  // Solo con teclado: al tocar en móvil el foco no debe dejar un tooltip fijo.
+                  if (!event.currentTarget.matches(':focus-visible')) return;
                   const rect = viewportRef.current?.getBoundingClientRect();
                   const box = event.currentTarget.getBoundingClientRect();
                   if (rect) setTip({ x: box.left + box.width / 2 - rect.left, y: box.top + box.height / 2 - rect.top, state: s });

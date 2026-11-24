@@ -89,7 +89,7 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
                 onMouseEnter={() => setActiveIndex(index)}
                 onClick={() => choose(result)}
               >
-                <strong>{result.type === 'place' && <MapPin size={12} aria-hidden="true" />} {result.title}</strong>
+                <strong>{result.type === 'place' && <MapPin size={12} aria-hidden="true" />}{result.title}</strong>
                 <span>{result.subtitle}</span>
               </button>
             ))}

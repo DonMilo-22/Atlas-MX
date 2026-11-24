@@ -45,8 +45,22 @@ export function searchTourism(category, query = '') {
   });
 }
 
+// Índice de todos los lugares (incluidos destinos sin categoría temática) para mostrar su descripción.
+const PLACE_LOOKUP = new Map();
+ESTADOS.forEach((state) => {
+  const tourism = enrichTourismData(state.cve, TOURISM_DATA[state.cve]?.turismo || {});
+  [...tourism.destinos, ...tourism.playas, ...tourism.pueblosMagicos, ...tourism.arqueologia, ...tourism.gastronomia].forEach((item) => {
+    if (!item?.nombre) return;
+    const key = `${normalize(item.nombre)}|${state.nombre}`;
+    if (!PLACE_LOOKUP.has(key)) PLACE_LOOKUP.set(key, { name: item.nombre, description: item.descripcion || '', stateName: state.nombre, stateCode: state.cve });
+  });
+});
+
 /** Busca la descripción conocida de un lugar para mostrarla en su ficha. */
 export function findPlace(name, stateName) {
+  if (!name) return null;
   const key = normalize(name);
-  return TOURISM_INDEX.find((item) => normalize(item.name) === key && (!stateName || item.stateName === stateName)) || null;
+  if (stateName) return PLACE_LOOKUP.get(`${key}|${stateName}`) || null;
+  for (const [entryKey, value] of PLACE_LOOKUP) if (entryKey.startsWith(`${key}|`)) return value;
+  return null;
 }
