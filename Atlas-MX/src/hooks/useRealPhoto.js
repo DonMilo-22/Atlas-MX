@@ -1,83 +1,41 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchRealPhoto, fetchRealPhotos, getCachedPhoto, PLACEHOLDER } from '../services/photoService';
 
 export function useRealPhoto(placeName, fallbackUrl = '', stateName = '') {
   const cached = getCachedPhoto(placeName, stateName);
-  const [photoUrl, setPhotoUrl] = useState(cached || fallbackUrl || PLACEHOLDER);
-  const [isLoading, setIsLoading] = useState(!cached);
+  const [result, setResult] = useState({ key: '', url: '' });
+  const key = `${placeName}|${stateName}`;
 
   useEffect(() => {
+    if (!placeName || getCachedPhoto(placeName, stateName)) return undefined;
     let cancelled = false;
-    const existing = getCachedPhoto(placeName, stateName);
-    if (existing) {
-      setPhotoUrl(existing);
-      setIsLoading(false);
-      return undefined;
-    }
-    if (!placeName) {
-      setPhotoUrl(fallbackUrl || PLACEHOLDER);
-      setIsLoading(false);
-      return undefined;
-    }
-    setIsLoading(true);
     fetchRealPhoto(placeName, fallbackUrl, { stateName }).then((url) => {
-      if (!cancelled) {
-        setPhotoUrl(url || PLACEHOLDER);
-        setIsLoading(false);
-      }
+      if (!cancelled) setResult({ key, url: url || PLACEHOLDER });
     });
     return () => { cancelled = true; };
-  }, [placeName, fallbackUrl, stateName]);
+  }, [key, placeName, fallbackUrl, stateName]);
 
-  return { photoUrl, isLoading };
+  // Nunca se muestra la foto de otro lugar mientras carga la nueva.
+  if (!placeName) return { photoUrl: fallbackUrl || PLACEHOLDER, isLoading: false };
+  if (cached) return { photoUrl: cached, isLoading: false };
+  if (result.key === key) return { photoUrl: result.url, isLoading: false };
+  return { photoUrl: fallbackUrl || PLACEHOLDER, isLoading: true };
 }
 
 export function useRealPhotoGallery(placeName, stateName = '', limit = 5) {
-  const [photos, setPhotos] = useState([]);
-  const [isLoading, setIsLoading] = useState(Boolean(placeName));
-  useEffect(() => {
-    let cancelled = false;
-    if (!placeName) {
-      setPhotos([]);
-      setIsLoading(false);
-      return undefined;
-    }
-    setIsLoading(true);
-    fetchRealPhotos(placeName, { stateName, limit }).then((urls) => {
-      if (!cancelled) {
-        setPhotos(urls);
-        setIsLoading(false);
-      }
-    }).catch(() => {
-      if (!cancelled) {
-        setPhotos([]);
-        setIsLoading(false);
-      }
-    });
-    return () => { cancelled = true; };
-  }, [placeName, stateName, limit]);
-  return { photos, isLoading };
-}
+  const key = `${placeName}|${stateName}|${limit}`;
+  const [result, setResult] = useState({ key: '', photos: [] });
 
-export function useRealPhotoBatch(items, stateName = '') {
-  const stableNames = useMemo(() => (items || []).map((item) => typeof item === 'string' ? item : item?.nombre).filter(Boolean), [items]);
-  const [photos, setPhotos] = useState(new Map());
-  const [isLoading, setIsLoading] = useState(stableNames.length > 0);
   useEffect(() => {
+    if (!placeName) return undefined;
     let cancelled = false;
-    if (!stableNames.length) {
-      setPhotos(new Map());
-      setIsLoading(false);
-      return undefined;
-    }
-    setIsLoading(true);
-    Promise.all(stableNames.map(async (name) => [name, await fetchRealPhoto(name, '', { stateName })])).then((entries) => {
-      if (!cancelled) {
-        setPhotos(new Map(entries));
-        setIsLoading(false);
-      }
-    });
+    fetchRealPhotos(placeName, { stateName, limit })
+      .then((urls) => { if (!cancelled) setResult({ key, photos: urls }); })
+      .catch(() => { if (!cancelled) setResult({ key, photos: [] }); });
     return () => { cancelled = true; };
-  }, [stableNames.join('|'), stateName]);
-  return { photos, isLoading };
+  }, [key, placeName, stateName, limit]);
+
+  if (!placeName) return { photos: [], isLoading: false };
+  if (result.key !== key) return { photos: [], isLoading: true };
+  return { photos: result.photos, isLoading: false };
 }

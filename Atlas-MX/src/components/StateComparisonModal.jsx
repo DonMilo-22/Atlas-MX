@@ -5,6 +5,7 @@ import { TOURISM_DATA } from '../data/states';
 import { TOURISM_INDEX } from '../data/tourismIndex';
 import { getTravelSeason } from '../data/travelSeasons';
 import { formatArea, formatPopulation } from '../utils/map';
+import useDialog from '../hooks/useDialog';
 
 const CATEGORIES = [['naturaleza', 'Naturaleza'], ['playas', 'Playas'], ['pueblos', 'Pueblos'], ['historia', 'Historia'], ['gastronomia', 'Gastronomía']];
 
@@ -23,6 +24,7 @@ export default function StateComparisonModal({ isOpen, initialState, onClose, on
   const [rightCode, setRightCode] = useState(initialState?.cve === '31' ? '14' : '31');
   const left = useMemo(() => profile(ESTADOS.find((state) => state.cve === leftCode) || ESTADOS[0]), [leftCode]);
   const right = useMemo(() => profile(ESTADOS.find((state) => state.cve === rightCode) || ESTADOS[1]), [rightCode]);
+  const ref = useDialog(isOpen, onClose);
   if (!isOpen) return null;
 
   const cells = [
@@ -34,14 +36,14 @@ export default function StateComparisonModal({ isOpen, initialState, onClose, on
   ];
 
   return <div className="experience-modal-layer" role="dialog" aria-modal="true" aria-label="Comparador de estados">
-    <button type="button" className="experience-modal-backdrop" onClick={onClose} aria-label="Cerrar comparador" />
-    <section className="experience-modal comparison-modal">
+    <button type="button" className="experience-modal-backdrop" onClick={onClose} aria-label="Cerrar comparador" tabIndex={-1} />
+    <section className="experience-modal comparison-modal" ref={ref} tabIndex={-1}>
       <header className="experience-modal-head"><div><span><BarChart3 size={13} /> Comparador Atlas MX</span><h2>¿Qué estado visitar?</h2><p>Contrasta territorio, clima y variedad turística.</p></div><button type="button" onClick={onClose} aria-label="Cerrar comparador"><X size={19} /></button></header>
       <div className="comparison-selectors"><label>Destino A<select value={leftCode} onChange={(event) => setLeftCode(event.target.value)}>{ESTADOS.map((state) => <option key={state.cve} value={state.cve}>{state.nombre}</option>)}</select></label><span>VS</span><label>Destino B<select value={rightCode} onChange={(event) => setRightCode(event.target.value)}>{ESTADOS.map((state) => <option key={state.cve} value={state.cve}>{state.nombre}</option>)}</select></label></div>
       <div className="comparison-table">
         <div className="comparison-state-head"><span /><div><MapPin size={15} /><strong>{left.state.nombre}</strong></div><div><MapPin size={15} /><strong>{right.state.nombre}</strong></div></div>
         {cells.map(([label, leftValue, rightValue]) => <div className="comparison-row" key={label}><b>{label}</b><span>{leftValue}</span><span>{rightValue}</span></div>)}
-        {CATEGORIES.map(([id, label]) => <div className="comparison-row comparison-count" key={id}><b>{label}</b><span><i style={{ width: `${Math.min(100, left.counts[id] * 12)}%` }} />{left.counts[id]} opciones</span><span><i style={{ width: `${Math.min(100, right.counts[id] * 12)}%` }} />{right.counts[id]} opciones</span></div>)}
+        {CATEGORIES.map(([id, label]) => { const max = Math.max(1, left.counts[id], right.counts[id]); return <div className="comparison-row comparison-count" key={id}><b>{label}</b><span><i style={{ width: `${(left.counts[id] / max) * 100}%` }} />{left.counts[id]} {left.counts[id] === 1 ? 'opción' : 'opciones'}</span><span><i style={{ width: `${(right.counts[id] / max) * 100}%` }} />{right.counts[id]} {right.counts[id] === 1 ? 'opción' : 'opciones'}</span></div>; })}
       </div>
       <div className="comparison-actions"><small><CalendarRange size={12} /> Los conteos usan los lugares disponibles actualmente en Atlas MX.</small><div><button type="button" onClick={() => onSelectState?.(left.state)}>Explorar {left.state.nombreCorto}<ArrowRight size={13} /></button><button type="button" onClick={() => onSelectState?.(right.state)}>Explorar {right.state.nombreCorto}<ArrowRight size={13} /></button></div></div>
     </section>

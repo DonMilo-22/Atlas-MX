@@ -30,7 +30,7 @@ function getGeometry() {
   return geometryCache;
 }
 
-export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom, pan, setPan, showLabels, tourismFilter = 'todos', activeRoute, showTitle = true }) {
+export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom, pan, setPan, showLabels, tourismFilter = 'todos', activeRoute, showTitle = false }) {
   const viewportRef = useRef(null);
   const svgRef = useRef(null);
   const pointers = useRef(new Map());

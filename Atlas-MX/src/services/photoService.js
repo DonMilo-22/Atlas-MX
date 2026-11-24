@@ -68,34 +68,41 @@ function uniqueUrls(urls) {
   return [...new Set(urls.filter(Boolean))];
 }
 
+const pendingGalleries = new Map();
+
 /** Obtiene una galería de fotografías reales relacionadas con el lugar. */
 export async function fetchRealPhotos(placeName, options = {}) {
   const { stateName = '', limit = 5 } = options;
-  if (!placeName) return [PLACEHOLDER];
+  if (!placeName) return [];
   const cacheKey = `${normalize(placeName)}|${normalize(stateName)}|${limit}`;
   if (galleryCache.has(cacheKey)) return galleryCache.get(cacheKey);
+  // Comparte la misma petición entre tarjetas que piden el mismo lugar al mismo tiempo.
+  if (pendingGalleries.has(cacheKey)) return pendingGalleries.get(cacheKey);
 
-  const broadQuery = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
-  let urls = [];
-  try {
-    urls = uniqueUrls([
-      ...(await queryWikipediaImages(placeName, 'es', Math.min(limit, 3))),
-      ...(await queryWikipediaImages(broadQuery, 'es', Math.min(limit, 3))),
-      ...(await queryCommonsImages(broadQuery, limit))
+  const request = (async () => {
+    const broadQuery = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
+    // Las consultas corren en paralelo; si una falla, las demás conservan sus resultados.
+    const settled = await Promise.allSettled([
+      queryWikipediaImages(broadQuery, 'es', Math.min(limit, 3)),
+      queryWikipediaImages(placeName, 'es', Math.min(limit, 3)),
+      queryCommonsImages(broadQuery, limit)
     ]);
-    if (urls.length === 0) {
-      urls = uniqueUrls([
-        ...(await queryWikipediaImages(placeName, 'en', Math.min(limit, 3))),
-        ...(await queryCommonsImages(placeName, limit))
-      ]);
+    let failures = settled.filter((item) => item.status === 'rejected').length;
+    let urls = uniqueUrls(settled.flatMap((item) => (item.status === 'fulfilled' ? item.value : [])));
+    if (urls.length === 0 && failures < settled.length) {
+      const fallback = await Promise.allSettled([queryWikipediaImages(broadQuery, 'en', Math.min(limit, 3))]);
+      failures += fallback.filter((item) => item.status === 'rejected').length;
+      urls = uniqueUrls(fallback.flatMap((item) => (item.status === 'fulfilled' ? item.value : [])));
     }
-  } catch (error) {
-    console.warn(`[Atlas MX] No se pudo cargar la galería de “${placeName}”.`, error);
-  }
+    const result = urls.slice(0, limit);
+    // Solo se cachea si hubo resultados o si la red respondió: un fallo temporal se reintenta después.
+    if (result.length > 0 || failures === 0) galleryCache.set(cacheKey, result);
+    else console.warn(`[Atlas MX] No se pudo cargar la galería de “${placeName}”.`);
+    return result;
+  })().finally(() => pendingGalleries.delete(cacheKey));
 
-  const result = urls.slice(0, limit);
-  galleryCache.set(cacheKey, result);
-  return result;
+  pendingGalleries.set(cacheKey, request);
+  return request;
 }
 
 /** Obtiene la mejor fotografía real disponible del lugar. */
@@ -107,24 +114,15 @@ export async function fetchRealPhoto(placeName, fallbackUrl = '', options = {}) 
 
   try {
     const gallery = await fetchRealPhotos(placeName, { stateName, limit: 4 });
-    const result = gallery[0] || PLACEHOLDER;
-    photoCache.set(cacheKey, result);
-    return result;
+    if (gallery[0]) {
+      photoCache.set(cacheKey, gallery[0]);
+      return gallery[0];
+    }
   } catch (error) {
     console.warn(`[Atlas MX] No se pudo cargar foto real de “${placeName}”.`, error);
-    // Evitamos mostrar una foto stock incorrecta como si fuera el lugar real.
-    return PLACEHOLDER;
   }
-}
-
-export async function prefetchPhotos(items, stateName = '') {
-  const results = new Map();
-  await Promise.allSettled((items || []).map(async (item) => {
-    const name = typeof item === 'string' ? item : item?.nombre;
-    if (!name) return;
-    results.set(name, await fetchRealPhoto(name, '', { stateName }));
-  }));
-  return results;
+  // Evitamos mostrar una foto stock incorrecta como si fuera el lugar real.
+  return fallbackUrl || PLACEHOLDER;
 }
 
 export function getCachedPhoto(placeName, stateName = '') {

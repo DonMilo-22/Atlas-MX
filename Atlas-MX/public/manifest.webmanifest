@@ -1,0 +1,11 @@
+{
+  "name": "Atlas MX — Explora México",
+  "short_name": "Atlas MX",
+  "description": "Atlas interactivo de los 32 estados de México: turismo, historia, gastronomía y municipios.",
+  "lang": "es-MX",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#006847",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Heart, MapPin, Trash2, X } from 'lucide-react';
+import useDialog from '../hooks/useDialog';
 
 export default function FavoritesDrawer({ isOpen, favorites, onClose, onOpenFavorite, onRemove }) {
+  const ref = useDialog(isOpen, onClose);
   if (!isOpen) return null;
 
   return (
     <div className="favorites-layer" role="dialog" aria-modal="true" aria-label="Lugares que quiero visitar">
-      <button type="button" className="favorites-backdrop" onClick={onClose} aria-label="Cerrar favoritos" />
-      <aside className="favorites-drawer">
+      <button type="button" className="favorites-backdrop" onClick={onClose} aria-label="Cerrar favoritos" tabIndex={-1} />
+      <aside className="favorites-drawer" ref={ref} tabIndex={-1}>
         <header className="favorites-drawer-head">
           <div><span>Mi colección</span><h2>Quiero visitar</h2><p>{favorites.length} {favorites.length === 1 ? 'lugar guardado' : 'lugares guardados'}</p></div>
           <button type="button" onClick={onClose} aria-label="Cerrar favoritos"><X size={19} /></button>

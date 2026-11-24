@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, Compass, Stamp, X } from 'lucide-react';
 import { ESTADOS } from '@webrek/mx-geo';
+import useDialog from '../hooks/useDialog';
 
 const MILESTONES = [
   { count: 1, label: 'Primer sello' },
@@ -12,14 +13,15 @@ const MILESTONES = [
 ];
 
 export default function PassportDrawer({ isOpen, visitedStates, onToggleVisited, onSelectState, onClose }) {
+  const ref = useDialog(isOpen, onClose);
   if (!isOpen) return null;
   const visitedCount = visitedStates.length;
   const progress = Math.round((visitedCount / 32) * 100);
 
   return (
     <div className="passport-layer" role="dialog" aria-modal="true" aria-label="Pasaporte Atlas MX">
-      <button type="button" className="passport-backdrop" onClick={onClose} aria-label="Cerrar pasaporte" />
-      <section className="passport-drawer">
+      <button type="button" className="passport-backdrop" onClick={onClose} aria-label="Cerrar pasaporte" tabIndex={-1} />
+      <section className="passport-drawer" ref={ref} tabIndex={-1}>
         <header className="passport-head">
           <div className="passport-emblem"><Stamp size={28} /></div>
           <div><span>Documento de exploración</span><h2>Pasaporte Atlas MX</h2><p>Marca únicamente los estados que realmente has visitado.</p></div>
@@ -29,7 +31,7 @@ export default function PassportDrawer({ isOpen, visitedStates, onToggleVisited,
           <div className="passport-progress-label"><strong>{visitedCount} de 32 estados</strong><span>{progress}% de México recorrido</span></div>
           <div className="passport-progress"><span style={{ width: `${progress}%` }} /></div>
           <div className="passport-milestones">
-            {MILESTONES.map((milestone) => <span key={milestone.count} className={visitedCount >= milestone.count ? 'unlocked' : ''} title={`${milestone.label}: ${milestone.count} estados`}><Award size={14} /><small>{milestone.count}</small></span>)}
+            {MILESTONES.map((milestone) => <span key={milestone.count} className={visitedCount >= milestone.count ? 'unlocked' : ''} title={`${milestone.label}: ${milestone.count} estados`} aria-label={`${milestone.label} (${milestone.count} estados)${visitedCount >= milestone.count ? ', desbloqueado' : ''}`}><Award size={14} /><small>{milestone.count}</small></span>)}
           </div>
         </div>
         <div className="passport-grid">

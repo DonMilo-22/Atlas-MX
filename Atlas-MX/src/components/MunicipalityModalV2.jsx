@@ -4,13 +4,16 @@ import { MapaMunicipios, municipios } from '@webrek/mx-geo/municipios';
 import { getMunicipalityDetails } from '../data/placesData';
 import RealPhoto from './RealPhoto';
 import { TOURISM_INDEX } from '../data/tourismIndex';
+import { getCategoryLabel } from '../data/tourismCategories';
+import useDialog from '../hooks/useDialog';
 
 export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLocationMap }) {
   const [selectedMun, setSelectedMun] = useState(null);
   const [hoveredMun, setHoveredMun] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const mapWrapperRef = useRef(null);
-  useEffect(() => { setSelectedMun(null); setSearchQuery(''); }, [state?.cve]);
+  const dialogRef = useDialog(isOpen, onClose);
+  useEffect(() => { setSelectedMun(null); setSearchQuery(''); setHoveredMun(null); }, [state?.cve]);
 
   const munList = useMemo(() => {
     if (!state) return [];
@@ -30,8 +33,7 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
   const stateRecommendations = useMemo(() => {
     if (!state || !selectedMun) return [];
     const items = TOURISM_INDEX.filter((item) => item.stateCode === state.cve && item.category !== 'gastronomia');
-    const offset = selectedMun.nombre.length % Math.max(1, items.length);
-    return [...items.slice(offset), ...items.slice(0, offset)].slice(0, 4);
+    return items.filter((item, index, all) => all.findIndex((other) => other.name === item.name) === index).slice(0, 4);
   }, [state, selectedMun]);
 
   if (!isOpen || !state) return null;
@@ -59,10 +61,10 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
   };
 
   return (
-    <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
-      <div className="modal-dialog modal-municipios-dialog" onClick={(event) => event.stopPropagation()}>
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="modal-dialog modal-municipios-dialog" ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="municipios-title" onClick={(event) => event.stopPropagation()}>
         <div className="modal-header">
-          <div><div className="modal-title">{state.nombre} — Territorio y Municipios</div><div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 2 }}>División de {munList.length} municipios (INEGI) · Selecciona uno para descubrir qué hacer</div></div>
+          <div><h2 className="modal-title" id="municipios-title">{state.nombre} — Territorio y Municipios</h2><div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: 2 }}>División de {munList.length} municipios (INEGI) · Selecciona uno para descubrir qué hacer</div></div>
           <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Cerrar modal de municipios"><X size={20} /></button>
         </div>
 
@@ -70,22 +72,22 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
           <div className="municipios-layout-grid">
             <div className="municipios-map-wrapper" ref={mapWrapperRef} onMouseMove={handleMapMouseMove} onMouseLeave={() => setHoveredMun(null)}>
               <MapaMunicipios estado={state.cve} zoom paleta="verde" emptyColor="#f4eee5" stroke="#b59f88" etiquetas={(mun) => selectedMun?.cvegeo === mun.cvegeo ? mun.nombre : ''} colorEtiqueta="#1c140e" onSelect={openMunicipality} />
-              {hoveredMun && <div className="municipio-hover-tooltip" style={{ left: hoveredMun.x, top: hoveredMun.y }}><div className="tooltip-mun-name">{hoveredMun.nombre}</div><div className="tooltip-mun-cve">CVEGEO: {hoveredMun.cvegeo}</div></div>}
+              {hoveredMun && <div className="municipio-hover-tooltip" style={{ left: hoveredMun.x, top: hoveredMun.y }}><div className="tooltip-mun-name">{hoveredMun.nombre}</div></div>}
             </div>
 
             <div className="municipios-sidebar-selector">
-              <div style={{ position: 'relative' }}><Search size={15} style={{ position: 'absolute', left: 10, top: 12, color: 'var(--text-dim)' }} /><input type="text" className="municipios-search-input" placeholder="Buscar por nombre…" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} /></div>
+              <div style={{ position: 'relative' }}><Search size={15} style={{ position: 'absolute', left: 10, top: 12, color: 'var(--text-dim)' }} /><input type="text" className="municipios-search-input" placeholder="Buscar municipio…" aria-label="Buscar municipio" value={searchQuery} onChange={(event) => setSearchQuery(event.target.value)} /></div>
               <div className="municipios-list-scroll">
-                {filteredMuns.map((mun) => <div key={mun.cvegeo} className={`municipio-list-item ${selectedMun?.cvegeo === mun.cvegeo ? 'selected' : ''}`} onClick={() => openMunicipality(mun)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') openMunicipality(mun); }} role="button" tabIndex={0}><span style={{ fontWeight: selectedMun?.cvegeo === mun.cvegeo ? 700 : 500 }}>{mun.nombre}</span><span style={{ fontSize: '0.7rem', color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>{mun.cvegeo}</span></div>)}
+                {filteredMuns.map((mun) => <div key={mun.cvegeo} className={`municipio-list-item ${selectedMun?.cvegeo === mun.cvegeo ? 'selected' : ''}`} onClick={() => openMunicipality(mun)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openMunicipality(mun); } }} role="button" tabIndex={0} aria-pressed={selectedMun?.cvegeo === mun.cvegeo}><span style={{ fontWeight: selectedMun?.cvegeo === mun.cvegeo ? 700 : 500 }}>{mun.nombre}</span></div>)}
               </div>
             </div>
           </div>
 
           {selectedDetails ? <div className="municipio-card-expanded">
-            <div className="municipio-media-thumb"><RealPhoto name={selectedDetails.nombre} stateName={state.nombre} fallback={selectedDetails.imagen || ''} alt={`${selectedDetails.nombre}, ${state.nombre}`} /><span className="municipio-photo-tag">Foto real · Wikimedia</span></div>
+            <div className="municipio-media-thumb"><RealPhoto name={selectedDetails.nombre} stateName={state.nombre} fallback={selectedDetails.imagen || ''} alt={`${selectedDetails.nombre}, ${state.nombre}`} /></div>
             <div className="municipio-expanded-info">
-              <div className="municipio-expanded-header"><div><span className="municipio-cve-badge">CVEGEO: {selectedDetails.cvegeo}</span><h3 className="municipio-expanded-name">{selectedDetails.nombre}</h3><div className="municipio-expanded-state">{state.nombre}, México</div></div><button type="button" className="btn-open-google-maps" onClick={() => directMaps(selectedMun)}><MapPin size={15} /><span>Abrir Google Maps</span></button></div>
-              <p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>{selectedDetails.historia && <div className="municipio-expanded-history">{selectedDetails.historia}</div>}
+              <div className="municipio-expanded-header"><div><h3 className="municipio-expanded-name">{selectedDetails.nombre}</h3><div className="municipio-expanded-state">{state.nombre}, México</div></div><button type="button" className="btn-open-google-maps" onClick={() => directMaps(selectedMun)}><MapPin size={15} /><span>Abrir Google Maps</span></button></div>
+              <p className="municipio-expanded-desc">{selectedDetails.descripcion}</p>
               <div className="municipio-service-actions">
                 <button type="button" onClick={() => onOpenLocationMap?.(`atractivos turísticos en ${selectedMun.nombre}`, state.nombre, 'Atractivos')}><Trees size={14} /> Atractivos</button>
                 <button type="button" onClick={() => onOpenLocationMap?.(`comida típica en ${selectedMun.nombre}`, state.nombre, 'Gastronomía')}><Utensils size={14} /> Dónde comer</button>
@@ -93,7 +95,7 @@ export default function MunicipalityModalV2({ state, isOpen, onClose, onOpenLoca
               </div>
             </div>
           </div> : <div className="municipio-selected-banner placeholder"><div style={{ display: 'flex', alignItems: 'center', gap: 10 }}><Compass size={22} color="var(--mexico-brown)" /><span>Selecciona un municipio para ver su fotografía, ubicación, servicios y recomendaciones.</span></div></div>}
-          {selectedMun && <section className="municipio-recommendations"><div className="municipio-recommendations-head"><Building2 size={15} /><span>Combina tu visita con otros lugares de {state.nombre}</span></div><div>{stateRecommendations.map((item) => <button key={item.id} type="button" onClick={() => onOpenLocationMap?.(item.name, state.nombre, item.category)}><small>{item.category}</small><strong>{item.name}</strong><span><MapPin size={10} /> Ver en mapa</span></button>)}</div></section>}
+          {selectedMun && <section className="municipio-recommendations"><div className="municipio-recommendations-head"><Building2 size={15} /><span>Más lugares para visitar en {state.nombre}</span></div><div>{stateRecommendations.map((item) => <button key={item.id} type="button" onClick={() => onOpenLocationMap?.(item.name, state.nombre, getCategoryLabel(item.category))}><small>{getCategoryLabel(item.category)}</small><strong>{item.name}</strong><span><MapPin size={10} /> Ver en mapa</span></button>)}</div></section>}
         </div>
       </div>
     </div>

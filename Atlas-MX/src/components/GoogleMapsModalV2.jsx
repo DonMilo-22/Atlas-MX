@@ -1,25 +1,32 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Building2, CloudSun, ExternalLink, Image as ImageIcon, Info, MapPin, Navigation, Search, X, ZoomIn } from 'lucide-react';
-import { getMunicipalityDetails, getPlaceDetails } from '../data/placesData';
+import { Building2, CloudSun, Image as ImageIcon, Info, MapPin, Navigation, Search, X, ZoomIn } from 'lucide-react';
+import { getPlaceDetails } from '../data/placesData';
+import { findPlace } from '../data/tourismIndex';
+import { getCategoryLabel } from '../data/tourismCategories';
 import { useRealPhotoGallery } from '../hooks/useRealPhoto';
+import useDialog from '../hooks/useDialog';
 import { PLACEHOLDER } from '../services/photoService';
 import PhotoLightbox from './PhotoLightbox';
 
 export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateName, category }) {
+  const categoryLabel = getCategoryLabel(category);
   const details = useMemo(() => {
     if (!placeName) return {};
-    return category === 'Municipio'
-      ? getMunicipalityDetails(placeName, stateName)
-      : getPlaceDetails(placeName, stateName, category);
-  }, [placeName, stateName, category]);
+    const known = findPlace(placeName, stateName);
+    return getPlaceDetails(placeName, stateName, categoryLabel, known?.description);
+  }, [placeName, stateName, categoryLabel]);
 
   const { photos, isLoading } = useRealPhotoGallery(placeName, stateName, 6);
   const [activePhoto, setActivePhoto] = useState('');
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [mapLoaded, setMapLoaded] = useState(false);
+  const ref = useDialog(isOpen, onClose);
 
   useEffect(() => {
-    setActivePhoto(photos[0] || '');
-  }, [placeName, stateName, photos]);
+    setActivePhoto('');
+    setLightboxIndex(null);
+    setMapLoaded(false);
+  }, [placeName, stateName]);
 
   if (!isOpen || !placeName) return null;
 
@@ -29,62 +36,58 @@ export default function GoogleMapsModalV2({ isOpen, onClose, placeName, stateNam
   const hotelsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hoteles cerca de ${searchQuery}`)}`;
   const weatherUrl = `https://www.google.com/search?q=${encodeURIComponent(`clima ${searchQuery}`)}`;
   const webUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
-  const visiblePhoto = activePhoto || photos[0] || PLACEHOLDER;
-
-  const open = (url) => window.open(url, '_blank', 'noopener,noreferrer');
+  const visiblePhoto = (activePhoto && photos.includes(activePhoto) ? activePhoto : photos[0]) || PLACEHOLDER;
+  const openGallery = () => { if (photos.length) setLightboxIndex(Math.max(0, photos.indexOf(visiblePhoto))); };
 
   return (
-    <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={`Información de ${placeName}`}>
-      <div className="modal-dialog gmaps-view-dialog" onClick={(event) => event.stopPropagation()}>
+    <div className="modal-backdrop gmaps-backdrop" onClick={onClose}>
+      <div className="modal-dialog gmaps-view-dialog" ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby="gmaps-title" onClick={(event) => event.stopPropagation()}>
         <div className="gmaps-topbar">
-          <div className="gmaps-topbar-breadcrumb"><MapPin size={15} color="var(--mexico-green)" /><span>{stateName ? `${stateName} › ` : ''}<strong>{placeName}</strong></span></div>
-          <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Cerrar vista de mapa"><X size={20} /></button>
+          <div className="gmaps-topbar-breadcrumb"><MapPin size={15} color="var(--mexico-green)" aria-hidden="true" /><span>{stateName ? `${stateName} › ` : ''}<strong>{placeName}</strong></span></div>
+          <button type="button" className="modal-close-btn" onClick={onClose} aria-label="Cerrar ficha del lugar"><X size={20} /></button>
         </div>
 
         <div className="gmaps-split-container">
           <aside className="gmaps-info-sidebar">
-            <div className="gmaps-hero-media" onClick={() => photos.length && setLightboxIndex(Math.max(0, photos.indexOf(visiblePhoto)))} role={photos.length ? 'button' : undefined} tabIndex={photos.length ? 0 : undefined} onKeyDown={(event) => { if (photos.length && (event.key === 'Enter' || event.key === ' ')) setLightboxIndex(Math.max(0, photos.indexOf(visiblePhoto))); }}>
-              <img src={visiblePhoto} alt={`${placeName}, ${stateName}`} className="gmaps-hero-img" onError={(event) => { event.currentTarget.src = PLACEHOLDER; }} />
-              <div className="gmaps-hero-overlay"><span className="gmaps-category-chip">{details.categoria || category || 'Lugar'}</span></div>
-              {isLoading && <span style={{ position: 'absolute', left: 12, bottom: 12, padding: '4px 8px', borderRadius: 999, background: 'rgba(0,0,0,.55)', color: '#fff', fontSize: '0.7rem' }}>Buscando fotos reales…</span>}
+            <div className={`gmaps-hero-media ${isLoading ? 'is-loading' : ''}`} onClick={openGallery} role={photos.length ? 'button' : undefined} tabIndex={photos.length ? 0 : undefined} aria-label={photos.length ? `Abrir galería de ${placeName}` : undefined} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openGallery(); } }}>
+              <img src={visiblePhoto} alt={photos.length ? `${placeName}, ${stateName}` : 'Fotografía no disponible'} className="gmaps-hero-img" onError={(event) => { event.currentTarget.src = PLACEHOLDER; }} />
+              <div className="gmaps-hero-overlay"><span className="gmaps-category-chip">{details.categoria || 'Lugar'}</span></div>
+              {isLoading && <span className="gmaps-photo-status" role="status">Buscando fotos reales…</span>}
+              {!isLoading && photos.length === 0 && <span className="gmaps-photo-status">Sin fotografías disponibles</span>}
               {photos.length > 0 && <span className="gmaps-expand-photo"><ZoomIn size={13} /> Ver galería</span>}
             </div>
 
             <div className="gmaps-sidebar-body">
               <div className="gmaps-title-section">
-                <h2 className="gmaps-place-title">{placeName}</h2>
-                <div className="gmaps-location-sub"><MapPin size={13} /><span>{stateName ? `${stateName}, ` : ''}México</span></div>
-                <div style={{ marginTop: 6, fontSize: '0.7rem', color: 'var(--text-dim)' }}>Fotos: Wikipedia / Wikimedia Commons · mapa y servicios: Google Maps</div>
+                <h2 className="gmaps-place-title" id="gmaps-title">{placeName}</h2>
+                <div className="gmaps-location-sub"><MapPin size={13} aria-hidden="true" /><span>{stateName ? `${stateName}, ` : ''}México</span></div>
               </div>
 
-              <div className="gmaps-actions-row" style={{ flexWrap: 'wrap' }}>
-                <button type="button" className="gmaps-action-button primary" onClick={() => open(directMapsUrl)}><Navigation size={14} /><span>Abrir Maps</span></button>
-                <button type="button" className="gmaps-action-button secondary" onClick={() => open(hotelsUrl)}><Building2 size={14} /><span>Hoteles</span></button>
-                <button type="button" className="gmaps-action-button secondary" onClick={() => open(weatherUrl)}><CloudSun size={14} /><span>Clima</span></button>
-                <button type="button" className="gmaps-action-button secondary" onClick={() => open(webUrl)}><Search size={14} /><span>Buscar</span></button>
+              <div className="gmaps-actions-row">
+                <a className="gmaps-action-button primary" href={directMapsUrl} target="_blank" rel="noopener noreferrer"><Navigation size={14} /><span>Abrir en Google Maps</span></a>
+                <a className="gmaps-action-button secondary" href={hotelsUrl} target="_blank" rel="noopener noreferrer"><Building2 size={14} /><span>Hoteles</span></a>
+                <a className="gmaps-action-button secondary" href={weatherUrl} target="_blank" rel="noopener noreferrer"><CloudSun size={14} /><span>Clima</span></a>
+                <a className="gmaps-action-button secondary" href={webUrl} target="_blank" rel="noopener noreferrer"><Search size={14} /><span>Buscar</span></a>
               </div>
 
-              {photos.length > 0 && <div className="gmaps-gallery-section">
+              {photos.length > 1 && <div className="gmaps-gallery-section">
                 <div className="gmaps-section-label"><ImageIcon size={13} /><span>Fotografías reales</span></div>
                 <div className="gmaps-thumbs-strip">
-                  {photos.map((photo, index) => <button key={photo} type="button" className={`gmaps-thumb-btn ${visiblePhoto === photo ? 'active' : ''}`} onClick={() => { setActivePhoto(photo); setLightboxIndex(index); }} title={`Ampliar foto ${index + 1} de ${placeName}`}><img src={photo} alt={`Foto ${index + 1} de ${placeName}`} loading="lazy" /></button>)}
+                  {photos.map((photo, index) => <button key={photo} type="button" className={`gmaps-thumb-btn ${visiblePhoto === photo ? 'active' : ''}`} onClick={() => { setActivePhoto(photo); setLightboxIndex(index); }} aria-label={`Ampliar foto ${index + 1} de ${placeName}`}><img src={photo} alt="" loading="lazy" /></button>)}
                 </div>
               </div>}
 
               <div className="gmaps-info-card">
                 <div className="gmaps-section-label"><Info size={13} /><span>Acerca de este lugar</span></div>
-                <p className="gmaps-description-text">{details.descripcion || `${placeName} es un punto de interés de ${stateName || 'México'}. Usa Google Maps para consultar información actualizada, horarios, hoteles y servicios cercanos.`}</p>
+                <p className="gmaps-description-text">{details.descripcion}</p>
               </div>
-
-              {details.historia && <div className="gmaps-info-card"><div className="gmaps-section-label"><span>Historia y patrimonio</span></div><p className="gmaps-description-text">{details.historia}</p></div>}
-
-              <button type="button" className="gmaps-action-button secondary" onClick={() => open(directMapsUrl)} style={{ width: '100%', justifyContent: 'center', marginTop: 8 }}><ExternalLink size={14} /><span>Ver ficha actualizada en Google Maps</span></button>
             </div>
           </aside>
 
-          <main className="gmaps-map-canvas">
-            <iframe title={`Mapa de ${placeName}`} width="100%" height="100%" src={embedUrl} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-          </main>
+          <div className="gmaps-map-canvas">
+            {!mapLoaded && <div className="gmaps-map-loading" aria-hidden="true">Cargando mapa… <a href={directMapsUrl} target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a></div>}
+            <iframe title={`Mapa de ${placeName}`} width="100%" height="100%" src={embedUrl} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" onLoad={() => setMapLoaded(true)} />
+          </div>
         </div>
       </div>
       {lightboxIndex !== null && <PhotoLightbox photos={photos} initialIndex={lightboxIndex} placeName={placeName} onClose={() => setLightboxIndex(null)} />}

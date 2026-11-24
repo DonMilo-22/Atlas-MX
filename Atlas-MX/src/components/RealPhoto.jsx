@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRealPhoto } from '../hooks/useRealPhoto';
 import { PLACEHOLDER } from '../services/photoService';
 
 export default function RealPhoto({ name, stateName = '', fallback = '', alt = '', className = '', ...props }) {
   const { photoUrl, isLoading } = useRealPhoto(name, fallback, stateName);
+  const [failedUrl, setFailedUrl] = useState('');
+  const src = failedUrl === photoUrl ? PLACEHOLDER : (photoUrl || PLACEHOLDER);
   return (
     <img
-      src={photoUrl || PLACEHOLDER}
+      src={src}
       alt={alt || name}
-      className={className}
+      className={`${className} ${isLoading ? 'is-loading' : ''}`.trim()}
       loading="lazy"
+      decoding="async"
       data-real-photo={isLoading ? 'loading' : 'ready'}
-      onError={(event) => {
-        if (event.currentTarget.src !== PLACEHOLDER) event.currentTarget.src = PLACEHOLDER;
-      }}
+      onError={() => { if (photoUrl !== PLACEHOLDER) setFailedUrl(photoUrl); }}
       {...props}
     />
   );

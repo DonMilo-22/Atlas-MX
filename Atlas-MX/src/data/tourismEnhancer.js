@@ -154,11 +154,44 @@ function mergeUnique(base = [], extra = [], kind, stateName) {
   return out;
 }
 
+
+// Playas reales de los 17 estados con litoral. Antes todos los arreglos `playas` estaban vacíos
+// y la capa "Playas" no mostraba resultados ni siquiera en Quintana Roo.
+const BEACHES = {
+  '02': [['Playa Rosarito','Amplia playa del Pacífico con malecón, surf y vida nocturna a pocos minutos de Tijuana.'],['Playa Estero','Playa de oleaje tranquilo en la bahía de Todos Santos, al sur de Ensenada.'],['Bahía de San Luis Gonzaga','Bahía del Golfo de California con aguas turquesa y paisaje desértico.']],
+  '03': [['Playa Balandra','Laguna de aguas someras y arena blanca cerca de La Paz, área natural protegida.'],['Playa El Médano','Playa principal de Cabo San Lucas frente a la bahía y El Arco.'],['Playa El Tecolote','Playa de arena clara con vista a la Isla Espíritu Santo.']],
+  '04': [['Playa Bonita','Playa familiar de Lerma, cercana a la ciudad de San Francisco de Campeche.'],['Isla Aguada','Península arenosa entre la Laguna de Términos y el Golfo de México.'],['Playa Sabancuy','Playa tranquila del Golfo con estero y manglares.']],
+  '06': [['Playa La Audiencia','Pequeña bahía de aguas calmadas en Manzanillo, ideal para nadar y bucear.'],['Playa Santiago','Playa urbana de Manzanillo con oleaje moderado y servicios.'],['Playa Boca de Pascuales','Playa de Tecomán reconocida internacionalmente por su oleaje para el surf.']],
+  '07': [['Puerto Arista','Extensa playa del Pacífico chiapaneco y zona de anidación de tortugas.'],['Boca del Cielo','Barra de arena entre manglar y mar abierto en Tonalá.'],['Playa Linda','Playa de Puerto Chiapas, en el municipio de Tapachula.']],
+  '12': [['Playa La Ropa','Playa de aguas tranquilas y arena fina en la bahía de Zihuatanejo.'],['Playa Caleta','Playa tradicional de Acapulco frente a la Isla de la Roqueta.'],['Barra de Potosí','Playa virgen con laguna y aves, al sur de Zihuatanejo.']],
+  '14': [['Playa Los Muertos','Playa principal de la Zona Romántica de Puerto Vallarta, con muelle y restaurantes.'],['Playa Mismaloya','Pequeña bahía rodeada de selva al sur de Puerto Vallarta.'],['Playa Barra de Navidad','Pueblo de playa en la Costalegre con laguna y atardeceres.']],
+  '16': [['Playa Maruata','Playa nahua de arenas doradas y formaciones rocosas, santuario de tortugas.'],['Playa La Ticla','Playa de la costa michoacana conocida por el surf y los campamentos.'],['Playa Nexpa','Rompiente de surf y comunidad costera en Lázaro Cárdenas.']],
+  '18': [['Playa Sayulita','Pueblo de surf con playa animada en la Riviera Nayarit.'],['Playa Los Ayala','Playa de aguas tranquilas entre Rincón de Guayabitos y Lo de Marcos.'],['Playa Chacala','Bahía pequeña de palmeras y aguas calmas en Compostela.']],
+  '20': [['Playa Zicatela','Playa de Puerto Escondido famosa en el mundo por su gran oleaje.'],['Playa Mazunte','Pueblo Mágico costero con santuario de tortugas y ambiente relajado.'],['Bahía San Agustín','Una de las bahías de Huatulco, con arrecife de coral y palapas.']],
+  '23': [['Playa Delfines','Playa pública de Cancún con mirador y el letrero de la ciudad.'],['Playa Paraíso','Playa de arena blanca junto a la zona arqueológica de Tulum.'],['Playa Norte','Playa de aguas someras y turquesa en el extremo norte de Isla Mujeres.']],
+  '25': [['Playa Olas Altas','Playa histórica del malecón de Mazatlán.'],['Playa Cerritos','Playa al norte de Mazatlán con oleaje para surf y ambiente local.'],['Isla de la Piedra','Península frente a Mazatlán con playa extensa y palapas de mariscos.']],
+  '26': [['Playa Los Algodones','Playa de San Carlos con dunas y vista al cerro Tetakawi.'],['Bahía de Kino','Comunidad pesquera con playas tranquilas frente a la Isla Tiburón.'],['Playa Sandy Beach','Playa principal de Puerto Peñasco en el Mar de Cortés.']],
+  '27': [['Playa Pico de Oro','Playa del municipio de Centla con dunas y vegetación costera.'],['Playa Miramar','Playa de Paraíso con palapas y gastronomía de mariscos.'],['Puerto Ceiba','Poblado entre la laguna Mecoacán y el mar, con paseos en lancha.']],
+  '28': [['Playa Miramar','Extensa playa de Ciudad Madero en el Golfo de México.'],['Playa La Pesca','Playa y río en Soto la Marina, destino de pesca deportiva.'],['Playa Bagdad','Playa de Matamoros cercana a la desembocadura del río Bravo.']],
+  '30': [['Costa Esmeralda','Franja de playas entre Tecolutla y Nautla con aguas templadas.'],['Playa Mocambo','Playa tradicional de Boca del Río, junto al puerto de Veracruz.'],['Playa Chachalacas','Playa con dunas de arena en Úrsulo Galván.']],
+  '31': [['Playa de Progreso','Playa del puerto de Progreso con malecón y muelle de varios kilómetros.'],['Playa El Cuyo','Pueblo costero en la Reserva de Ría Lagartos, ideal para kitesurf.'],['Playa Sisal','Antiguo puerto henequenero con playa tranquila y manglares.']]
+};
+
 /**
  * Completa las categorías que históricamente tenían solo 3 elementos.
  * No altera el objeto original de states.js y evita duplicados por nombre.
  */
+const enrichCache = new WeakMap();
+
 export function enrichTourismData(stateCode, baseTourism = {}) {
+  const cached = enrichCache.get(baseTourism);
+  if (cached && cached.stateCode === stateCode) return cached.value;
+  const value = buildTourismData(stateCode, baseTourism);
+  enrichCache.set(baseTourism, { stateCode, value });
+  return value;
+}
+
+function buildTourismData(stateCode, baseTourism) {
   const stateName = STATE_NAMES[stateCode] || 'México';
   const supplement = SUPPLEMENTS[stateCode] || { pueblos: [], historia: [] };
 
@@ -166,14 +199,16 @@ export function enrichTourismData(stateCode, baseTourism = {}) {
   const pueblosMagicos = mergeUnique(baseTourism.pueblosMagicos || [], supplement.pueblos, 'Pueblo o localidad', stateName);
   const arqueologia = mergeUnique(baseTourism.arqueologia || [], supplement.historia, 'Sitio histórico', stateName);
   const gastronomia = mergeUnique(baseTourism.gastronomia || [], [], 'Especialidad gastronómica', stateName);
-  const playas = mergeUnique(baseTourism.playas || [], [], 'Playa', stateName);
+  const destinationNames = new Set(destinos.map((item) => (item?.nombre || '').toLocaleLowerCase('es-MX').trim()));
+  const playas = mergeUnique(baseTourism.playas || [], BEACHES[stateCode] || [], 'Playa', stateName)
+    .filter((item) => !destinationNames.has((item?.nombre || '').toLocaleLowerCase('es-MX').trim()));
 
   return {
     ...baseTourism,
-    destinos: destinos.slice(0, Math.max(5, destinos.length)),
-    pueblosMagicos: pueblosMagicos.slice(0, Math.max(5, pueblosMagicos.length)),
-    arqueologia: arqueologia.slice(0, Math.max(5, arqueologia.length)),
-    gastronomia: gastronomia.slice(0, Math.max(5, gastronomia.length)),
+    destinos,
+    pueblosMagicos,
+    arqueologia,
+    gastronomia,
     playas
   };
 }
@@ -189,4 +224,3 @@ export function validateTourismData(stateCode, tourism) {
   };
 }
 
-export { SUPPLEMENTS };

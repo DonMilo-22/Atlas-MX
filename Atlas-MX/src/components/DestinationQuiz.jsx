@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, MapPin, RotateCcw, Sparkles, X } from 'lucide-react';
 import { MATCH_QUESTIONS, matchDestinations } from '../utils/destinationMatcher';
+import useDialog from '../hooks/useDialog';
 
 export default function DestinationQuiz({ isOpen, onClose, onSelectState }) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState({});
   const finished = step >= MATCH_QUESTIONS.length;
   const results = finished ? matchDestinations(answers) : [];
+  const ref = useDialog(isOpen, onClose);
   if (!isOpen) return null;
 
   const answer = (value) => {
@@ -17,8 +19,8 @@ export default function DestinationQuiz({ isOpen, onClose, onSelectState }) {
   const restart = () => { setStep(0); setAnswers({}); };
 
   return <div className="experience-modal-layer" role="dialog" aria-modal="true" aria-label="Descubre tu próximo destino">
-    <button type="button" className="experience-modal-backdrop" onClick={onClose} aria-label="Cerrar recomendador" />
-    <section className="experience-modal quiz-modal">
+    <button type="button" className="experience-modal-backdrop" onClick={onClose} aria-label="Cerrar recomendador" tabIndex={-1} />
+    <section className="experience-modal quiz-modal" ref={ref} tabIndex={-1}>
       <header className="experience-modal-head"><div><span><Sparkles size={13} /> Recomendador Atlas MX</span><h2>Descubre tu próximo destino</h2><p>Tres preguntas, tres estados hechos para ti.</p></div><button type="button" onClick={onClose} aria-label="Cerrar recomendador"><X size={19} /></button></header>
       {!finished ? <div className="quiz-question">
         <div className="quiz-progress"><span style={{ width: `${((step + 1) / MATCH_QUESTIONS.length) * 100}%` }} /></div>

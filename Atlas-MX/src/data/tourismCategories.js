@@ -1,5 +1,5 @@
-import { TOURISM_DATA } from './states.js';
-import { enrichTourismData } from './tourismEnhancer.js';
+import { ESTADOS } from '@webrek/mx-geo';
+import { TOURISM_INDEX } from './tourismIndex.js';
 
 export const TOURISM_FILTERS = [
   { id: 'todos', label: 'Todo México', shortLabel: 'Todo' },
@@ -10,41 +10,33 @@ export const TOURISM_FILTERS = [
   { id: 'gastronomia', label: 'Gastronomía', shortLabel: 'Cocina' }
 ];
 
-const NATURE_WORDS = [
-  'bosque', 'biosfera', 'cañón', 'cascada', 'cenote', 'cerro', 'desierto', 'gruta',
-  'isla', 'laguna', 'lago', 'montaña', 'nevado', 'parque', 'pico', 'reserva',
-  'río', 'sierra', 'sótano', 'volcán'
-];
-const COAST_WORDS = ['playa', 'bahía', 'cabo', 'costa', 'malecón', 'mar', 'arrecife', 'puerto'];
-const COASTAL_STATES = new Set(['02', '03', '04', '06', '07', '12', '14', '16', '18', '20', '23', '25', '26', '27', '28', '30', '31']);
+export const CATEGORY_LABELS = {
+  naturaleza: 'Naturaleza',
+  playas: 'Playa',
+  pueblos: 'Pueblo o localidad',
+  historia: 'Sitio histórico',
+  gastronomia: 'Gastronomía'
+};
 
-function normalize(value = '') {
-  return value.toLocaleLowerCase('es-MX');
-}
+// Conteos calculados una sola vez a partir del mismo índice que alimenta las listas,
+// para que el mapa y los resultados nunca muestren cifras distintas.
+const STATS = Object.fromEntries(ESTADOS.map((state) => {
+  const items = TOURISM_INDEX.filter((item) => item.stateCode === state.cve);
+  const counts = { todos: new Set(items.map((item) => item.name)).size };
+  TOURISM_FILTERS.slice(1).forEach(({ id }) => { counts[id] = items.filter((item) => item.category === id).length; });
+  return [state.cve, counts];
+}));
 
-function countMatching(items = [], words = []) {
-  return items.filter((item) => {
-    const searchable = normalize(`${item?.nombre || item || ''} ${item?.descripcion || ''}`);
-    return words.some((word) => searchable.includes(word));
-  }).length;
-}
+const EMPTY = { todos: 0, naturaleza: 0, playas: 0, pueblos: 0, historia: 0, gastronomia: 0 };
 
 export function getStateCategoryStats(stateCode) {
-  const source = TOURISM_DATA[stateCode]?.turismo || {};
-  const tourism = enrichTourismData(stateCode, source);
-  const destinations = tourism.destinos || [];
-  const beaches = tourism.playas || [];
-
-  return {
-    todos: destinations.length + beaches.length + tourism.pueblosMagicos.length + tourism.arqueologia.length + tourism.gastronomia.length,
-    naturaleza: countMatching([...destinations, ...beaches], NATURE_WORDS),
-    playas: COASTAL_STATES.has(stateCode) ? Math.max(1, beaches.length + countMatching(destinations, COAST_WORDS)) : beaches.length,
-    pueblos: tourism.pueblosMagicos.length,
-    historia: tourism.arqueologia.length,
-    gastronomia: tourism.gastronomia.length
-  };
+  return STATS[stateCode] || EMPTY;
 }
 
 export function getFilterLabel(filterId) {
   return TOURISM_FILTERS.find((filter) => filter.id === filterId)?.label || 'Todo México';
+}
+
+export function getCategoryLabel(categoryId) {
+  return CATEGORY_LABELS[categoryId] || categoryId;
 }

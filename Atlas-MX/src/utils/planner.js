@@ -17,15 +17,17 @@ export const INTERESTS = [
 
 export function createItinerary({ stateCode, days, interest, budget }) {
   const stateItems = TOURISM_INDEX.filter((item) => item.stateCode === stateCode);
-  const preferred = interest === 'variado' ? stateItems : stateItems.filter((item) => item.category === interest);
-  const pool = [...preferred, ...stateItems].filter((item, index, all) => all.findIndex((candidate) => candidate.name === item.name) === index);
   const meals = stateItems.filter((item) => item.category === 'gastronomia');
+  // Las visitas de mañana y tarde son lugares; los platillos van en "Sabor local".
+  const places = stateItems.filter((item) => item.category !== 'gastronomia');
+  const preferred = interest === 'variado' || interest === 'gastronomia' ? places : places.filter((item) => item.category === interest);
+  const pool = [...preferred, ...places].filter((item, index, all) => all.findIndex((candidate) => candidate.name === item.name) === index);
   const dayCount = Math.max(1, Math.min(7, Number(days) || 1));
   const itinerary = Array.from({ length: dayCount }, (_, index) => ({
     day: index + 1,
-    morning: pool[(index * 2) % pool.length],
-    afternoon: pool[((index * 2) + 1) % pool.length],
-    food: meals[index % Math.max(1, meals.length)]
+    morning: pool.length ? pool[(index * 2) % pool.length] : null,
+    afternoon: pool.length > 1 ? pool[((index * 2) + 1) % pool.length] : null,
+    food: meals.length ? meals[index % meals.length] : null
   }));
   const budgetData = BUDGET_LEVELS[budget] || BUDGET_LEVELS.medio;
   return { itinerary, budgetData, total: budgetData.daily * dayCount };

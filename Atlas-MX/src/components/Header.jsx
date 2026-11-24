@@ -1,24 +1,106 @@
-import React, { useMemo, useState } from 'react';
-import { Heart, Route, Search, MapPinned, Stamp } from 'lucide-react';
+import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { Heart, MapPin, MapPinned, Route, Search, Stamp, X } from 'lucide-react';
 import { ESTADOS } from '@webrek/mx-geo';
+import { searchTourism } from '../data/tourismIndex';
 
-export default function Header({ onSelectState, selectedState, favoritesCount = 0, onOpenFavorites, onOpenRoutes, visitedCount = 0, onOpenPassport }) {
-  const [query,setQuery]=useState('');
-  const results=useMemo(()=>{
-    const q=query.toLocaleLowerCase('es-MX').trim();
-    if(!q) return [];
-    return ESTADOS.filter(s => `${s.nombre} ${s.nombreCorto} ${s.capital}`.toLocaleLowerCase('es-MX').includes(q)).slice(0,8);
-  },[query]);
-  const choose=(s)=>{ onSelectState?.(s); setQuery(''); };
-  return <header className="atlas-header">
-    <div className="brand"><div className="brand-mark"><MapPinned size={23}/></div><div><div className="brand-title">ATLAS MX</div><div className="brand-sub">México · territorio, cultura y turismo</div></div></div>
-    <div className="search-wrap">
-      <Search size={17}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Buscar estado o capital…" aria-label="Buscar estado" />
-      {results.length>0 && <div className="search-results">{results.map(s=><button key={s.cve} onClick={()=>choose(s)}><strong>{s.nombre}</strong><span>{s.capital}</span></button>)}</div>}
-    </div>
-    <button type="button" className="header-routes" onClick={onOpenRoutes}><Route size={16} /><span>Rutas</span></button>
-    <button type="button" className="header-favorites" onClick={onOpenFavorites} aria-label={`Abrir ${favoritesCount} lugares favoritos`}><Heart size={16} fill={favoritesCount ? 'currentColor' : 'none'} /><span>Quiero visitar</span>{favoritesCount > 0 && <b>{favoritesCount}</b>}</button>
-    <button type="button" className="header-passport" onClick={onOpenPassport} aria-label={`Abrir pasaporte con ${visitedCount} estados visitados`}><Stamp size={16} /><span>Pasaporte</span><b>{visitedCount}/32</b></button>
-    <div className="header-status">{selectedState ? selectedState.nombre : '32 entidades'}</div>
-  </header>;
+const CATEGORY_LABELS = { naturaleza: 'Naturaleza', playas: 'Playa', pueblos: 'Pueblo', historia: 'Historia', gastronomia: 'Cocina' };
+const normalize = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+
+export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites, onOpenRoutes, visitedCount = 0, onOpenPassport }) {
+  const [query, setQuery] = useState('');
+  const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const wrapRef = useRef(null);
+  const listId = useId();
+
+  const results = useMemo(() => {
+    const q = normalize(query);
+    if (q.length < 2) return [];
+    const states = ESTADOS
+      .filter((s) => normalize(`${s.nombre} ${s.nombreCorto} ${s.capital}`).includes(q))
+      .slice(0, 5)
+      .map((state) => ({ type: 'state', key: `s-${state.cve}`, title: state.nombre, subtitle: `Estado · Capital: ${state.capital}`, state }));
+    const seen = new Set();
+    const places = searchTourism('todos', query)
+      .filter((place) => normalize(place.name).includes(q) && !seen.has(`${place.stateCode}:${place.name}`) && seen.add(`${place.stateCode}:${place.name}`))
+      .slice(0, 6)
+      .map((place) => ({ type: 'place', key: `p-${place.id}`, title: place.name, subtitle: `${CATEGORY_LABELS[place.category] || 'Lugar'} · ${place.stateName}`, place }));
+    return [...states, ...places];
+  }, [query]);
+
+  useEffect(() => { setActiveIndex(0); }, [query]);
+  useEffect(() => {
+    const onDown = (event) => { if (wrapRef.current && !wrapRef.current.contains(event.target)) setOpen(false); };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, []);
+
+  const choose = (result) => {
+    if (!result) return;
+    if (result.type === 'state') onSelectState?.(result.state);
+    else onOpenPlace?.(result.place);
+    setQuery('');
+    setOpen(false);
+  };
+
+  const onKeyDown = (event) => {
+    if (event.key === 'ArrowDown') { event.preventDefault(); setOpen(true); setActiveIndex((i) => Math.min(results.length - 1, i + 1)); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); setActiveIndex((i) => Math.max(0, i - 1)); }
+    else if (event.key === 'Enter') { event.preventDefault(); choose(results[activeIndex]); }
+    else if (event.key === 'Escape') { setOpen(false); }
+  };
+
+  const showList = open && query.trim().length >= 2;
+
+  return (
+    <header className="atlas-header">
+      <h1 className="brand">
+        <span className="brand-mark" aria-hidden="true"><MapPinned size={23} /></span>
+        <span><span className="brand-title">ATLAS MX</span><span className="brand-sub">México · territorio, cultura y turismo</span></span>
+      </h1>
+      <div className="search-wrap" ref={wrapRef}>
+        <Search size={17} aria-hidden="true" />
+        <input
+          type="search"
+          value={query}
+          onChange={(event) => { setQuery(event.target.value); setOpen(true); }}
+          onFocus={() => setOpen(true)}
+          onKeyDown={onKeyDown}
+          placeholder="Buscar estado, capital o lugar…"
+          aria-label="Buscar estado, capital o lugar"
+          role="combobox"
+          aria-expanded={showList}
+          aria-controls={listId}
+          aria-autocomplete="list"
+          aria-activedescendant={showList && results[activeIndex] ? `${listId}-${activeIndex}` : undefined}
+        />
+        {query && <button type="button" className="search-clear" onClick={() => { setQuery(''); setOpen(false); }} aria-label="Limpiar búsqueda"><X size={14} /></button>}
+        {showList && (
+          <div className="search-results" id={listId} role="listbox" aria-label="Resultados de búsqueda">
+            {results.length === 0 && <div className="search-empty">Sin resultados para “{query.trim()}”.</div>}
+            {results.map((result, index) => (
+              <button
+                key={result.key}
+                id={`${listId}-${index}`}
+                type="button"
+                role="option"
+                aria-selected={index === activeIndex}
+                className={index === activeIndex ? 'active' : ''}
+                onMouseEnter={() => setActiveIndex(index)}
+                onClick={() => choose(result)}
+              >
+                <strong>{result.type === 'place' && <MapPin size={12} aria-hidden="true" />} {result.title}</strong>
+                <span>{result.subtitle}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+      <nav className="header-actions" aria-label="Accesos rápidos">
+        <button type="button" className="header-routes" onClick={onOpenRoutes} title="Rutas turísticas"><Route size={16} aria-hidden="true" /><span>Rutas</span></button>
+        <button type="button" className="header-favorites" onClick={onOpenFavorites} aria-label={`Quiero visitar: ${favoritesCount} lugares guardados`} title="Quiero visitar"><Heart size={16} fill={favoritesCount ? 'currentColor' : 'none'} aria-hidden="true" /><span>Quiero visitar</span>{favoritesCount > 0 && <b>{favoritesCount}</b>}</button>
+        <button type="button" className="header-passport" onClick={onOpenPassport} aria-label={`Pasaporte: ${visitedCount} de 32 estados visitados`} title="Pasaporte"><Stamp size={16} aria-hidden="true" /><span>Pasaporte</span><b>{visitedCount}/32</b></button>
+      </nav>
+    </header>
+  );
 }
