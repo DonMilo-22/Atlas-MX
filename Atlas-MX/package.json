@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check:data": "node scripts/check-data.mjs"
+    "check:data": "node scripts/check-data.mjs",
+    "data:build": "node scripts/build-tourism-data.mjs"
   },
   "dependencies": {
     "@webrek/mx-geo": "^0.9.1",

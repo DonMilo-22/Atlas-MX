@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Images, X } from 'lucide-react';
 import useDialog from '../hooks/useDialog';
 
-// Las miniaturas de Commons tienen la forma .../commons/thumb/a/ab/Archivo.jpg/1200px-Archivo.jpg
+// Las miniaturas de Commons tienen la forma .../commons/thumb/a/ab/Archivo.jpg/1200px-Archivo.jpg;
+// los archivos verificados llegan como .../wiki/Special:FilePath/Archivo.jpg?width=1200
 function commonsPage(url) {
-  const match = /\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//.exec(url || '') || /\/commons\/[^/]+\/[^/]+\/([^/?#]+)$/.exec(url || '');
+  const match = /\/wiki\/Special:FilePath\/([^?#]+)/.exec(url || '')
+    || /\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//.exec(url || '') || /\/commons\/[^/]+\/[^/]+\/([^/?#]+)$/.exec(url || '');
   return match ? `https://commons.wikimedia.org/wiki/File:${match[1]}` : '';
 }
 

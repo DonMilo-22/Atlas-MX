@@ -3,6 +3,7 @@
  * Una sola búsqueda devuelve título, resumen, enlace y miniatura de cada página, de modo que
  * la foto y el texto de un lugar salen de la misma petición.
  */
+import { ESTADOS, estadoDeCoordenada } from '@webrek/mx-geo';
 import { fetchWithTimeout } from './http.js';
 // v3: se descartan resultados guardados con la regla de relevancia anterior (fotos y resúmenes de otros lugares).
 const STORAGE_KEY = 'atlas-mx:wiki:v3';
@@ -129,7 +130,7 @@ const cleanText = (value = '') => fold(value).replace(/[^a-z0-9ñ]+/g, ' ').trim
 /**
  * Coincidencia ESTRICTA entre el título de una página y el lugar: el título es el nombre
  * (sin acentos ni mayúsculas), o el nombre con el estado como desambiguación:
- * "Valladolid (Yucatán)", "Tequila, Jalisco", "Metepec (estado de México)".
+ * "Valladolid (Yucatán)", "Tequila, Jalisco", "Metepec (estado de México)", "Valladolid (México)".
  * Con `municipality: true` también vale "Municipio de Tequila" (para fotos y resúmenes).
  * Una búsqueda difusa que trae un homónimo, un monumento o una bebida no pasa esta regla.
  */
@@ -145,13 +146,43 @@ export function titleMatchesPlace(title, placeName, stateName = '', { municipali
   if (!match || base(match[1]) !== name) return false;
   const qualifier = cleanText(match[2] ?? match[3]).replace(/^estado (de )?/, '');
   const state = cleanText(stateName).replace(/^estado (de )?/, '');
-  if (!qualifier || !state || qualifier.length < 4) return false;
+  if (!qualifier || qualifier.length < 4) return false;
+  // "Valladolid (México)": desambiguación por país (el texto o las coordenadas confirman el estado).
+  if (qualifier === 'mexico') return true;
+  if (!state) return false;
   return qualifier.startsWith(state) || state.startsWith(qualifier);
 }
 
 /** Relevancia estricta: título exacto del lugar y texto ubicado en México o en el estado. */
 export function isStrictMatch(page, placeName, stateName = '', options = {}) {
   return titleMatchesPlace(page?.title, placeName, stateName, options) && isRelevantPage({ ...page, title: placeName }, placeName, stateName);
+}
+
+// Clave INEGI del estado a partir de su nombre, tolerante a acentos y a nombres cortos
+// ("Michoacán" por "Michoacán de Ocampo", "Estado de México" por "México").
+const stateKey = (value = '') => fold(value).replace(/^estado de /, '').trim();
+export function stateCodeFromName(stateName = '') {
+  const wanted = stateKey(stateName);
+  if (!wanted) return '';
+  const exact = ESTADOS.find((state) => stateKey(state.nombre) === wanted);
+  if (exact) return exact.cve;
+  return ESTADOS.find((state) => stateKey(state.nombre).startsWith(`${wanted} `))?.cve || '';
+}
+
+/**
+ * ¿Las coordenadas del artículo caen en el estado (o en México, si no se sabe el estado)?
+ * Separa "Tequila (Jalisco)" del artículo de la bebida, que no tiene coordenadas.
+ */
+export function isPageInState(page, stateName = '') {
+  const c = page?.coordinates;
+  if (!c) return false;
+  try {
+    const code = estadoDeCoordenada([c.lon, c.lat]);
+    const wanted = stateCodeFromName(stateName);
+    return wanted ? code === wanted : Boolean(code);
+  } catch {
+    return false;
+  }
 }
 
 /**
@@ -165,8 +196,13 @@ export async function fetchPlaceSummary(placeName, stateName = '') {
     const query = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
     const [broad, direct] = await Promise.all([wikiSearch(query, 'es', 3), wikiSearch(placeName, 'es', 3).catch(() => [])]);
     const pages = [...broad, ...direct];
-    return pages.find((page) => isStrictMatch(page, placeName, stateName, { municipality: true }))
-      || pages.find((page) => isRelevantPage(page, placeName, stateName))
+    const strict = (page) => isStrictMatch(page, placeName, stateName, { municipality: true });
+    const loose = (page) => isRelevantPage(page, placeName, stateName);
+    // Primero el artículo que además está ubicado en el estado (un pueblo, no la bebida homónima).
+    return pages.find((page) => strict(page) && isPageInState(page, stateName))
+      || pages.find((page) => loose(page) && isPageInState(page, stateName))
+      || pages.find(strict)
+      || pages.find(loose)
       || null;
   } catch {
     return null;
@@ -223,25 +259,29 @@ const entityMemory = new Map();
 export function fetchWikidataEntity(qid) {
   if (!/^Q\d+$/.test(qid || '')) return Promise.resolve(null);
   if (entityMemory.has(qid)) return entityMemory.get(qid);
-  const params = new URLSearchParams({ action: 'wbgetentities', ids: qid, props: 'claims', format: 'json', origin: '*' });
-  const request = fetchWithTimeout(`https://www.wikidata.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((data) => {
-      const claims = data?.entities?.[qid]?.claims || {};
-      const values = (prop) => (claims[prop] || [])
+  // Solo las tres propiedades que se usan (wbgetclaims): el elemento completo de un estado pesa
+  // decenas de KB y tarda mucho más.
+  const claimsOf = (property) => {
+    const params = new URLSearchParams({ action: 'wbgetclaims', entity: qid, property, format: 'json', origin: '*' });
+    return fetchWithTimeout(`https://www.wikidata.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => (data?.claims?.[property] || [])
         .filter((claim) => claim.rank !== 'deprecated')
         .sort((a, b) => (b.rank === 'preferred') - (a.rank === 'preferred'))
         .map((claim) => claim?.mainsnak?.datavalue?.value)
-        .filter((value) => value != null);
-      const coord = values('P625')[0];
+        .filter((value) => value != null));
+  };
+  const request = Promise.all([claimsOf('P625'), claimsOf('P18'), claimsOf('P373')])
+    .then(([coordValues, images, categories]) => {
+      const coord = coordValues[0];
       return {
         qid,
         coords: coord && Number.isFinite(coord.latitude) ? { lat: coord.latitude, lon: coord.longitude } : null,
-        images: values('P18').filter((value) => typeof value === 'string'),
-        commonsCategory: values('P373').find((value) => typeof value === 'string') || null
+        images: images.filter((value) => typeof value === 'string'),
+        commonsCategory: categories.find((value) => typeof value === 'string') || null
       };
     });
   // Un fallo de red no se queda en caché: se reintenta en la siguiente consulta.
@@ -257,7 +297,7 @@ export function __resetWikiCache() { memory.clear(); pending.clear(); entityMemo
 const STATE_ARTICLES = {
   '01': 'Aguascalientes', '02': 'Baja California', '03': 'Baja California Sur', '04': 'Campeche', '05': 'Coahuila',
   '06': 'Colima', '07': 'Chiapas', '08': 'Chihuahua', '09': 'Ciudad de México', '10': 'Durango', '11': 'Guanajuato',
-  '12': 'Guerrero', '13': 'Hidalgo (estado)', '14': 'Jalisco', '15': 'Estado de México', '16': 'Michoacán', '17': 'Morelos',
+  '12': 'Estado de Guerrero', '13': 'Hidalgo (estado)', '14': 'Jalisco', '15': 'Estado de México', '16': 'Michoacán', '17': 'Morelos',
   '18': 'Nayarit', '19': 'Nuevo León', '20': 'Oaxaca', '21': 'Puebla', '22': 'Querétaro', '23': 'Quintana Roo',
   '24': 'San Luis Potosí', '25': 'Sinaloa', '26': 'Sonora', '27': 'Tabasco', '28': 'Tamaulipas', '29': 'Tlaxcala',
   '30': 'Veracruz', '31': 'Yucatán', '32': 'Zacatecas'
@@ -276,7 +316,8 @@ export function commonsFileUrl(file, width = 1200) {
   return name ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(name)}?width=${width}` : '';
 }
 // Archivos que no son fotografías del lugar: mapas, escudos, banderas, logotipos, gráficas…
-const NOT_A_PHOTO = /(mapa|map[_ .-]|locat|ubicaci|escudo|coat[_ ]of|flag|bandera|seal|sello|logo|emblem|signature|firma|grafic|chart|diagram|icon|\.svg|\.png|\.gif)/i;
+// También imágenes de satélite (ISS, ESA, Landsat…): no son una vista del lugar.
+const NOT_A_PHOTO = /(mapa|map[_ .-]|locat|ubicaci|escudo|coat[_ ]of|flag|bandera|seal|sello|logo|emblem|signature|firma|grafic|chart|diagram|icon|satel|landsat|modis|\bISS\d|\bESA\d|\.svg|\.png|\.gif)/i;
 export const isPhotoFile = (name = '') => /\.(jpe?g|webp)$/i.test(name) && !NOT_A_PHOTO.test(name);
 
 function fileName(url = '') {
@@ -299,10 +340,12 @@ export async function fetchStatePhoto(stateCode) {
 
   const request = (async () => {
     // 1) Imagen principal del artículo, si es una fotografía.
-    const mainParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', prop: 'pageimages', piprop: 'thumbnail|name', pithumbsize: '1400', format: 'json', origin: '*' });
+    const mainParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', prop: 'pageimages|pageprops', piprop: 'thumbnail|name', pithumbsize: '1400', ppprop: 'wikibase_item', format: 'json', origin: '*' });
     const main = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${mainParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
     const page = Object.values(main?.query?.pages || {})[0];
-    if (page?.thumbnail?.source && isPhotoFile(page.pageimage || fileName(page.thumbnail.source))) {
+    // El artículo debe ser el del estado (su elemento de Wikidata): "Guerrero" a secas es otro tema.
+    const isStateArticle = page?.pageprops?.wikibase_item === STATE_QIDS[stateCode];
+    if (isStateArticle && page?.thumbnail?.source && isPhotoFile(page.pageimage || fileName(page.thumbnail.source))) {
       return { url: page.thumbnail.source, page: pageUrl, file: page.pageimage || fileName(page.thumbnail.source) };
     }
     // 2) Imagen del estado en Wikidata (P18), si es una fotografía y no un mapa o una bandera.
@@ -312,6 +355,7 @@ export async function fetchStatePhoto(stateCode) {
       if (file) return { url: commonsFileUrl(file, 1400), page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`, file };
     } catch { /* seguimos con las demás fotos del artículo */ }
     // 3) Otras fotografías del artículo: la más grande en formato horizontal.
+    if (!isStateArticle) return null;
     const listParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', generator: 'images', gimlimit: '60', prop: 'imageinfo', iiprop: 'url|mime|size', iiurlwidth: '1400', format: 'json', origin: '*' });
     const list = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${listParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
     const candidates = Object.values(list?.query?.pages || {})

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchPlaceSummary } from '../services/wikiService';
+import { fetchPlaceSummary, fetchWikiByTitle } from '../services/wikiService';
 import { fetchStateWeather, fetchWeatherAt } from '../services/weatherService';
 import { locatePlace } from '../services/geoService';
 import { fetchNearbyPlaces } from '../services/poiService';
@@ -27,15 +27,25 @@ export function useWikiSummary(placeName, stateName = '', enabled = true) {
   return useAsync(key, () => fetchPlaceSummary(placeName, stateName));
 }
 
+/** Resumen de Wikipedia por título EXACTO del artículo (sin búsqueda). `null` si no existe. */
+export function useWikiByTitle(title, enabled = true) {
+  const key = enabled && title ? `title|${title}` : null;
+  return useAsync(key, () => fetchWikiByTitle(title));
+}
+
 /** Clima en vivo de la capital del estado. */
 export function useStateWeather(stateCode) {
   return useAsync(stateCode || null, () => fetchStateWeather(stateCode));
 }
 
-/** Ubicación real y validada de un lugar. */
-export function useLocatePlace({ name, stateName, stateCode, coords, near }) {
-  const key = name ? `${name}|${stateCode}|${coords ? `${coords.lat},${coords.lon}` : ''}|${near ? `${near.lat},${near.lon}` : ''}` : null;
-  return useAsync(key, () => locatePlace({ name, stateName, stateCode, coords, near }));
+/**
+ * Ubicación real y validada de un lugar. `coords` (si se dan) se usan tal cual; si no,
+ * `placeId` (Wikidata P625), `wikiTitle` (coordenadas del artículo) y por último la búsqueda,
+ * que usa `category` para preferir el poblado o el sitio.
+ */
+export function useLocatePlace({ name, stateName, stateCode, category = '', coords = null, near = null, placeId = null, wikiTitle = null }) {
+  const key = name ? [name, stateCode, category, coords ? `${coords.lat},${coords.lon}` : '', near ? `${near.lat},${near.lon}` : '', placeId || '', wikiTitle || ''].join('|') : null;
+  return useAsync(key, () => locatePlace({ name, stateName, stateCode, category, coords, near, placeId, wikiTitle }));
 }
 
 /** Hoteles, restaurantes y atractivos reales cerca de un punto. */

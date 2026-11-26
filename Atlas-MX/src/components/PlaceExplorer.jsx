@@ -1,13 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, BedDouble, Clock, CloudSun, ExternalLink, Globe, Images, Landmark, MapPin, Navigation, Phone, RefreshCw, Star, UtensilsCrossed, X } from 'lucide-react';
-import { ESTADOS } from '@webrek/mx-geo';
-import { getCategoryLabel } from '../data/tourismCategories';
 import { useLocatePlace, useNearbyPlaces, useWeatherAt } from '../hooks/useLiveData';
 import { useRealPhotoGallery } from '../hooks/useRealPhoto';
 import useDialog from '../hooks/useDialog';
 import { describeWeather } from '../services/weatherService';
 import { formatDistance } from '../services/poiService';
 import { PLACEHOLDER } from '../services/photoService';
+import { commonsFileUrl, stateCodeFromName } from '../services/wikiService';
 import PlaceMap from './PlaceMap';
 import WikiSummary from './WikiSummary';
 import WeatherIcon from './WeatherIcon';
@@ -103,24 +102,39 @@ function PlaceWeather({ location }) {
   );
 }
 
-export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, category, coords = null, near = null, initialTab = 'resumen' }) {
-  const stateCode = useMemo(() => ESTADOS.find((state) => state.nombre === stateName)?.cve || '', [stateName]);
+/**
+ * Explorador de un lugar: mapa, resumen, hoteles, restaurantes, qué ver y clima.
+ * Datos verificados opcionales (del conjunto generado):
+ * - coords: {lat, lon} exactas (P625); el mapa las usa tal cual.
+ * - placeId: QID de Wikidata; fotos solo de su P18 y su categoría de Commons (P373).
+ * - image: archivo de Commons (P18) que se muestra primero.
+ * - wikiTitle: título exacto del artículo de es.wikipedia (el resumen no se busca).
+ * - description: texto propio del lugar, si Wikipedia no tiene resumen.
+ * Sin ellos, todo se busca por nombre con reglas estrictas de coincidencia.
+ */
+export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, category, coords = null, near = null, initialTab = 'resumen', placeId = null, image = null, wikiTitle = null, description = null }) {
+  // Sin clave del estado no se puede validar que el punto caiga dentro de él.
+  const stateCode = useMemo(() => stateCodeFromName(stateName), [stateName]);
   const [tab, setTab] = useState(initialTab);
   const [selectedId, setSelectedId] = useState(null);
   const [attempt, setAttempt] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [brokenPhoto, setBrokenPhoto] = useState('');
   const ref = useDialog(isOpen, onClose);
 
-  const located = useLocatePlace({ name: placeName, stateName, stateCode, coords, near });
+  const located = useLocatePlace({ name: placeName, stateName, stateCode, category, coords, near, placeId, wikiTitle });
   const location = located.data;
   const nearby = useNearbyPlaces(location, attempt);
-  const { photos, isLoading: photosLoading } = useRealPhotoGallery(placeName, stateName, 6);
+  const { photos, isLoading: photosLoading } = useRealPhotoGallery(placeName, stateName, 6, { placeId, image });
 
-  useEffect(() => { setTab(initialTab); setSelectedId(null); setLightboxIndex(null); }, [placeName, stateName, initialTab]);
+  useEffect(() => { setTab(initialTab); setSelectedId(null); setLightboxIndex(null); }, [placeName, stateName, placeId, initialTab]);
 
+  // La foto verificada se muestra en cuanto se abre, sin esperar a la galería.
+  const heroCandidate = photos[0] || (image ? commonsFileUrl(image, 1200) : '');
+  const heroPhoto = heroCandidate && heroCandidate !== brokenPhoto ? heroCandidate : PLACEHOLDER;
   const activeList = ['hoteles', 'restaurantes', 'atractivos'].includes(tab) && nearby.data ? nearby.data[tab] : [];
   const selected = activeList.find((poi) => poi.id === selectedId) || null;
-  const categoryLabel = getCategoryLabel(category) || 'Lugar';
+  const categoryLabel = (typeof category === 'string' && category.trim()) || 'Lugar';
   const googleUrl = location?.precise
     ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lon}`
     : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${placeName}, ${stateName}, México`)}`;
@@ -159,10 +173,19 @@ export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, c
             {tab === 'resumen' && (
               <>
                 <button type="button" className={`explorer-photo ${photosLoading ? 'is-loading' : ''}`} onClick={() => photos.length && setLightboxIndex(0)} disabled={!photos.length} aria-label={photos.length ? `Ver ${photos.length} fotos de ${placeName}` : 'Sin fotografías'}>
-                  <img src={photos[0] || PLACEHOLDER} alt="" />
+                  <img src={heroPhoto} alt="" onError={() => { if (heroPhoto !== PLACEHOLDER) setBrokenPhoto(heroPhoto); }} />
                   {photos.length > 1 && <span><Images size={13} aria-hidden="true" /> {photos.length} fotos</span>}
                 </button>
-                <WikiSummary name={placeName} stateName={stateName} title="De Wikipedia" fallback={<p className="poi-note">Wikipedia no tiene un artículo sobre este lugar. Revisa las pestañas de hoteles, restaurantes y qué ver para explorar la zona.</p>} />
+                <WikiSummary
+                  key={wikiTitle || `${placeName}|${stateName}`}
+                  name={placeName}
+                  stateName={stateName}
+                  wikiTitle={wikiTitle}
+                  title="De Wikipedia"
+                  fallback={description
+                    ? <p className="poi-note">{description}</p>
+                    : <p className="poi-note">Wikipedia no tiene un artículo sobre este lugar. Revisa las pestañas de hoteles, restaurantes y qué ver para explorar la zona.</p>}
+                />
                 <div className="explorer-quick">
                   {['hoteles', 'restaurantes', 'atractivos'].map((id) => (
                     <button key={id} type="button" onClick={() => selectTab(id)}>
