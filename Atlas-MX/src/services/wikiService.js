@@ -4,7 +4,8 @@
  * la foto y el texto de un lugar salen de la misma petición.
  */
 import { fetchWithTimeout } from './http.js';
-const STORAGE_KEY = 'atlas-mx:wiki:v2';
+// v3: se descartan resultados guardados con la regla de relevancia anterior (fotos y resúmenes de otros lugares).
+const STORAGE_KEY = 'atlas-mx:wiki:v3';
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
 const MAX_STORED = 400;
 
@@ -40,6 +41,20 @@ const fold = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').r
 const STOPWORDS = new Set(['de', 'del', 'la', 'las', 'los', 'el', 'en', 'y', 'san', 'santa', 'mexico', 'estado', 'centro', 'zona', 'museo', 'playa', 'parque', 'nacional']);
 const keywords = (text) => fold(text).split(/[^a-zñ0-9]+/).filter((word) => word.length >= 4 && !STOPWORDS.has(word));
 
+/** Normaliza una página de la API de Wikipedia al formato que usa la app. */
+function toPage(page, lang) {
+  return {
+    title: page.title || '',
+    extract: (page.extract || '').replace(/\s+/g, ' ').trim(),
+    url: page.fullurl || `https://${lang}.wikipedia.org/wiki/${encodeURIComponent((page.title || '').replace(/ /g, '_'))}`,
+    thumbnail: page?.thumbnail?.source || page?.original?.source || '',
+    // Nombre del archivo de la imagen principal (sin "Archivo:"), para descartar mapas y escudos.
+    image: page.pageimage || '',
+    qid: page?.pageprops?.wikibase_item || null,
+    coordinates: page?.coordinates?.[0] ? { lat: page.coordinates[0].lat, lon: page.coordinates[0].lon } : null
+  };
+}
+
 /**
  * Busca en Wikipedia y devuelve las páginas ordenadas por relevancia.
  * @returns {Promise<Array<{title: string, extract: string, url: string, thumbnail: string}>>}
@@ -57,8 +72,9 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
     gsrsearch: term,
     gsrnamespace: '0',
     gsrlimit: String(limit),
-    prop: 'pageimages|extracts|info|coordinates',
-    piprop: 'thumbnail|original',
+    prop: 'pageimages|extracts|info|coordinates|pageprops',
+    piprop: 'thumbnail|original|name',
+    ppprop: 'wikibase_item',
     pithumbsize: '1200',
     exintro: '1',
     explaintext: '1',
@@ -79,13 +95,7 @@ export async function wikiSearch(term, lang = 'es', limit = 3) {
     .then((data) => {
       const pages = Object.values(data?.query?.pages || {})
         .sort((a, b) => (a.index ?? 999) - (b.index ?? 999))
-        .map((page) => ({
-          title: page.title || '',
-          extract: (page.extract || '').replace(/\s+/g, ' ').trim(),
-          url: page.fullurl || `https://${lang}.wikipedia.org/wiki/${encodeURIComponent((page.title || '').replace(/ /g, '_'))}`,
-          thumbnail: page?.thumbnail?.source || page?.original?.source || '',
-          coordinates: page?.coordinates?.[0] ? { lat: page.coordinates[0].lat, lon: page.coordinates[0].lon } : null
-        }));
+        .map((page) => toPage(page, lang));
       persist(key, pages);
       return pages;
     })
@@ -114,26 +124,134 @@ export function isRelevantPage(page, placeName, stateName = '') {
   return located;
 }
 
+const cleanText = (value = '') => fold(value).replace(/[^a-z0-9ñ]+/g, ' ').trim();
+
 /**
- * Resumen real de Wikipedia de un lugar.
+ * Coincidencia ESTRICTA entre el título de una página y el lugar: el título es el nombre
+ * (sin acentos ni mayúsculas), o el nombre con el estado como desambiguación:
+ * "Valladolid (Yucatán)", "Tequila, Jalisco", "Metepec (estado de México)".
+ * Con `municipality: true` también vale "Municipio de Tequila" (para fotos y resúmenes).
+ * Una búsqueda difusa que trae un homónimo, un monumento o una bebida no pasa esta regla.
+ */
+export function titleMatchesPlace(title, placeName, stateName = '', { municipality = false } = {}) {
+  const name = cleanText(placeName);
+  if (!title || !name) return false;
+  const base = (value) => {
+    const text = cleanText(value);
+    return municipality ? text.replace(/^municipio (de |del )?/, '') : text;
+  };
+  if (base(title) === name) return true;
+  const match = /^(.*?)\s*(?:\(([^)]*)\)|,\s*(.+))$/.exec(title.trim());
+  if (!match || base(match[1]) !== name) return false;
+  const qualifier = cleanText(match[2] ?? match[3]).replace(/^estado (de )?/, '');
+  const state = cleanText(stateName).replace(/^estado (de )?/, '');
+  if (!qualifier || !state || qualifier.length < 4) return false;
+  return qualifier.startsWith(state) || state.startsWith(qualifier);
+}
+
+/** Relevancia estricta: título exacto del lugar y texto ubicado en México o en el estado. */
+export function isStrictMatch(page, placeName, stateName = '', options = {}) {
+  return titleMatchesPlace(page?.title, placeName, stateName, options) && isRelevantPage({ ...page, title: placeName }, placeName, stateName);
+}
+
+/**
+ * Resumen real de Wikipedia de un lugar. Primero se busca una página cuyo título coincida
+ * exactamente con el lugar; si no hay, se acepta la regla de relevancia general.
  * @returns {Promise<{title: string, extract: string, url: string} | null>}
  */
 export async function fetchPlaceSummary(placeName, stateName = '') {
   if (!placeName) return null;
   try {
     const query = stateName ? `${placeName} ${stateName} México` : `${placeName} México`;
-    const pages = await wikiSearch(query, 'es', 3);
-    const match = pages.find((page) => isRelevantPage(page, placeName, stateName));
-    if (match) return match;
-    const direct = await wikiSearch(placeName, 'es', 3);
-    return direct.find((page) => isRelevantPage(page, placeName, stateName)) || null;
+    const [broad, direct] = await Promise.all([wikiSearch(query, 'es', 3), wikiSearch(placeName, 'es', 3).catch(() => [])]);
+    const pages = [...broad, ...direct];
+    return pages.find((page) => isStrictMatch(page, placeName, stateName, { municipality: true }))
+      || pages.find((page) => isRelevantPage(page, placeName, stateName))
+      || null;
   } catch {
     return null;
   }
 }
 
+/**
+ * Página de Wikipedia por su título EXACTO (sin búsqueda). Sigue redirecciones.
+ * @returns {Promise<{title: string, extract: string, url: string, thumbnail: string, image: string, qid: string|null, coordinates: {lat: number, lon: number}|null} | null>}
+ */
+export async function fetchWikiByTitle(title, lang = 'es') {
+  if (!title) return null;
+  if (!loaded) { loaded = true; loadStore(); }
+  const key = `title|${lang}|${title}`;
+  if (memory.has(key)) return memory.get(key);
+  if (pending.has(key)) return pending.get(key);
+  const params = new URLSearchParams({
+    action: 'query',
+    titles: title,
+    redirects: '1',
+    prop: 'pageimages|extracts|info|coordinates|pageprops',
+    piprop: 'thumbnail|original|name',
+    pithumbsize: '1200',
+    ppprop: 'wikibase_item',
+    exintro: '1',
+    explaintext: '1',
+    exsentences: '3',
+    inprop: 'url',
+    format: 'json',
+    origin: '*'
+  });
+  const request = fetchWithTimeout(`https://${lang}.wikipedia.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      const page = Object.values(data?.query?.pages || {})[0];
+      const result = page && !('missing' in page) && !('invalid' in page) ? toPage(page, lang) : null;
+      persist(key, result);
+      return result;
+    })
+    .finally(() => pending.delete(key));
+  pending.set(key, request);
+  return request;
+}
+
+const entityMemory = new Map();
+/**
+ * Datos verificados de un elemento de Wikidata: coordenadas (P625), imagen (P18) y
+ * categoría de Commons (P373). Solo en memoria: son pocos datos y cambian poco.
+ * @returns {Promise<{qid: string, coords: {lat: number, lon: number}|null, images: string[], commonsCategory: string|null}>}
+ */
+export function fetchWikidataEntity(qid) {
+  if (!/^Q\d+$/.test(qid || '')) return Promise.resolve(null);
+  if (entityMemory.has(qid)) return entityMemory.get(qid);
+  const params = new URLSearchParams({ action: 'wbgetentities', ids: qid, props: 'claims', format: 'json', origin: '*' });
+  const request = fetchWithTimeout(`https://www.wikidata.org/w/api.php?${params}`, { headers: { Accept: 'application/json' } })
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      const claims = data?.entities?.[qid]?.claims || {};
+      const values = (prop) => (claims[prop] || [])
+        .filter((claim) => claim.rank !== 'deprecated')
+        .sort((a, b) => (b.rank === 'preferred') - (a.rank === 'preferred'))
+        .map((claim) => claim?.mainsnak?.datavalue?.value)
+        .filter((value) => value != null);
+      const coord = values('P625')[0];
+      return {
+        qid,
+        coords: coord && Number.isFinite(coord.latitude) ? { lat: coord.latitude, lon: coord.longitude } : null,
+        images: values('P18').filter((value) => typeof value === 'string'),
+        commonsCategory: values('P373').find((value) => typeof value === 'string') || null
+      };
+    });
+  // Un fallo de red no se queda en caché: se reintenta en la siguiente consulta.
+  entityMemory.set(qid, request);
+  request.catch(() => entityMemory.delete(qid));
+  return request;
+}
+
 /** Solo para pruebas: vacía la caché en memoria. */
-export function __resetWikiCache() { memory.clear(); pending.clear(); }
+export function __resetWikiCache() { memory.clear(); pending.clear(); entityMemory.clear(); }
 
 // Artículo exacto de Wikipedia en español de cada estado (no una búsqueda: así la foto es del estado).
 const STATE_ARTICLES = {
@@ -144,17 +262,31 @@ const STATE_ARTICLES = {
   '24': 'San Luis Potosí', '25': 'Sinaloa', '26': 'Sonora', '27': 'Tabasco', '28': 'Tamaulipas', '29': 'Tlaxcala',
   '30': 'Veracruz', '31': 'Yucatán', '32': 'Zacatecas'
 };
+// Elemento de Wikidata de cada estado: su imagen (P18) es otra candidata verificada.
+const STATE_QIDS = {
+  '01': 'Q79952', '02': 'Q58731', '03': 'Q46508', '04': 'Q80908', '05': 'Q53079', '06': 'Q61309', '07': 'Q60123', '08': 'Q655',
+  '09': 'Q1489', '10': 'Q79918', '11': 'Q46475', '12': 'Q60158', '13': 'Q80903', '14': 'Q13160', '15': 'Q82112', '16': 'Q79861',
+  '17': 'Q66117', '18': 'Q79920', '19': 'Q15282', '20': 'Q34110', '21': 'Q79923', '22': 'Q79754', '23': 'Q80245', '24': 'Q78980',
+  '25': 'Q80252', '26': 'Q46422', '27': 'Q80914', '28': 'Q80007', '29': 'Q82681', '30': 'Q60130', '31': 'Q60176', '32': 'Q80269'
+};
+
+/** URL de un archivo de Wikimedia Commons al ancho pedido (sin pasar por la API). */
+export function commonsFileUrl(file, width = 1200) {
+  const name = String(file || '').replace(/^(File|Archivo):/i, '').replace(/ /g, '_');
+  return name ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(name)}?width=${width}` : '';
+}
 // Archivos que no son fotografías del lugar: mapas, escudos, banderas, logotipos, gráficas…
 const NOT_A_PHOTO = /(mapa|map[_ .-]|locat|ubicaci|escudo|coat[_ ]of|flag|bandera|seal|sello|logo|emblem|signature|firma|grafic|chart|diagram|icon|\.svg|\.png|\.gif)/i;
-const isPhotoFile = (name = '') => /\.(jpe?g|webp)$/i.test(name) && !NOT_A_PHOTO.test(name);
+export const isPhotoFile = (name = '') => /\.(jpe?g|webp)$/i.test(name) && !NOT_A_PHOTO.test(name);
 
 function fileName(url = '') {
   try { return decodeURIComponent(url.split('/').pop().split('?')[0]).replace(/^\d+px-/, ''); } catch { return ''; }
 }
 
 /**
- * Fotografía real del estado, tomada de su propio artículo en Wikipedia.
- * @returns {Promise<{url: string, page: string} | null>}
+ * Fotografía real del estado: la imagen principal de su artículo en Wikipedia, la imagen
+ * de su elemento de Wikidata (P18) o, en último caso, la foto horizontal más grande del artículo.
+ * @returns {Promise<{url: string, page: string, file: string} | null>}
  */
 export async function fetchStatePhoto(stateCode) {
   const title = STATE_ARTICLES[stateCode];
@@ -171,16 +303,22 @@ export async function fetchStatePhoto(stateCode) {
     const main = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${mainParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
     const page = Object.values(main?.query?.pages || {})[0];
     if (page?.thumbnail?.source && isPhotoFile(page.pageimage || fileName(page.thumbnail.source))) {
-      return { url: page.thumbnail.source, page: pageUrl };
+      return { url: page.thumbnail.source, page: pageUrl, file: page.pageimage || fileName(page.thumbnail.source) };
     }
-    // 2) Otras fotografías del artículo: la más grande en formato horizontal.
+    // 2) Imagen del estado en Wikidata (P18), si es una fotografía y no un mapa o una bandera.
+    try {
+      const entity = await fetchWikidataEntity(STATE_QIDS[stateCode]);
+      const file = entity?.images?.find((name) => isPhotoFile(name));
+      if (file) return { url: commonsFileUrl(file, 1400), page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`, file };
+    } catch { /* seguimos con las demás fotos del artículo */ }
+    // 3) Otras fotografías del artículo: la más grande en formato horizontal.
     const listParams = new URLSearchParams({ action: 'query', titles: title, redirects: '1', generator: 'images', gimlimit: '60', prop: 'imageinfo', iiprop: 'url|mime|size', iiurlwidth: '1400', format: 'json', origin: '*' });
     const list = await fetchWithTimeout(`https://es.wikipedia.org/w/api.php?${listParams}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
     const candidates = Object.values(list?.query?.pages || {})
       .map((item) => ({ name: item.title || '', info: item.imageinfo?.[0] }))
       .filter(({ name, info }) => info?.thumburl && info.mime === 'image/jpeg' && isPhotoFile(name) && info.width >= 900 && info.width >= info.height)
       .sort((a, b) => b.info.width * b.info.height - a.info.width * a.info.height);
-    return candidates[0] ? { url: candidates[0].info.thumburl, page: pageUrl } : null;
+    return candidates[0] ? { url: candidates[0].info.thumburl, page: pageUrl, file: candidates[0].name.replace(/^(File|Archivo):/i, '') } : null;
   })().then((result) => { persist(key, result); return result; }).finally(() => pending.delete(key));
 
   pending.set(key, request);

@@ -1,18 +1,20 @@
 import React, { useMemo, useState } from 'react';
-import { ArrowUpRight, CalendarHeart, Compass, MapPin, Shuffle } from 'lucide-react';
+import { ArrowUpRight, CalendarHeart, Compass, ExternalLink, MapPin, Shuffle } from 'lucide-react';
 import { ESTADOS, estado as getEstadoByCve } from '@webrek/mx-geo';
-import { TOURISM_INDEX } from '../data/tourismIndex';
+import SEARCH_INDEX from '../data/generated/index.json';
+import { commonsThumb, toPlace, wikipediaUrl } from '../data/tourism';
+import useStateTourism from '../hooks/useStateTourism';
 import { CULTURAL_EVENTS, MONTHS } from '../data/culturalEvents';
 import { getTravelSeason } from '../data/travelSeasons';
 import { useStateWeather } from '../hooks/useLiveData';
 import { describeWeather } from '../services/weatherService';
-import RealPhoto from './RealPhoto';
-import WikiSummary from './WikiSummary';
+import { PLACEHOLDER } from '../services/photoService';
 import WeatherIcon from './WeatherIcon';
 
 const dateLabel = new Intl.DateTimeFormat('es-MX', { weekday: 'long', day: 'numeric', month: 'long' });
-// Lugares candidatos a "destino del día" (sin platillos, sin repetir nombre).
-const CANDIDATES = TOURISM_INDEX.filter((item, index, all) => item.category !== 'gastronomia' && all.findIndex((other) => other.name === item.name && other.stateCode === item.stateCode) === index);
+// Candidatos a "destino del día": lugares verificados con foto y descripción (sin platillos).
+const WITH_PHOTO = SEARCH_INDEX.filter((item) => item.p && item.c !== 'cocina');
+const CANDIDATES = WITH_PHOTO.length ? WITH_PHOTO : SEARCH_INDEX.filter((item) => item.c !== 'cocina');
 
 function dayOfYear(date) {
   return Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 86400000);
@@ -26,9 +28,14 @@ export default function TodayInMexico({ onSelectState, onOpenPlace }) {
   const month = today.getMonth() + 1;
   const [shuffle, setShuffle] = useState(0);
 
-  const destination = pick(CANDIDATES, seed + shuffle * 7919);
-  const destinationState = getEstadoByCve(destination.stateCode);
-  const { data: weather } = useStateWeather(destination.stateCode);
+  const entry = pick(CANDIDATES, seed + shuffle * 7919);
+  const destinationState = getEstadoByCve(entry.s);
+  const { data: stateData } = useStateTourism(entry.s);
+  const item = stateData?.categorias?.[entry.c]?.find((candidate) => candidate.id === entry.id) || null;
+  const destination = item ? toPlace(item, entry.c, entry.s, destinationState?.nombre) : { id: entry.id, name: entry.n, category: entry.c, stateCode: entry.s, stateName: destinationState?.nombre || '' };
+  const [failedImage, setFailedImage] = useState('');
+  const imageUrl = item?.imagen && failedImage !== item.imagen ? commonsThumb(item.imagen, 1000) : PLACEHOLDER;
+  const { data: weather } = useStateWeather(entry.s);
   const now = weather ? describeWeather(weather.current.code) : null;
 
   const monthEvents = CULTURAL_EVENTS.filter((event) => event.month === month);
@@ -45,7 +52,7 @@ export default function TodayInMexico({ onSelectState, onOpenPlace }) {
   return (
     <section className="today-mx" aria-labelledby="today-title">
       <figure className="sp-hero today-hero">
-        <RealPhoto name={destination.name} stateName={destination.stateName} alt={`${destination.name}, ${destination.stateName}`} />
+        <img src={imageUrl} alt={`${destination.name}, ${destination.stateName}`} decoding="async" onError={() => setFailedImage(item?.imagen || '')} />
         {now && <figcaption className="today-weather"><WeatherIcon icon={now.icon} isDay={weather.current.isDay} size={14} /> {weather.current.temp}° ahora en {destinationState?.capital}</figcaption>}
       </figure>
 
@@ -53,13 +60,18 @@ export default function TodayInMexico({ onSelectState, onOpenPlace }) {
         <header className="sp-head">
           <p className="sp-region"><span className="live-dot" aria-hidden="true" /> {dateLabel.format(today).replace(/^./, (c) => c.toUpperCase())}</p>
           <h2 className="sp-name today-name" id="today-title">{destination.name}</h2>
-          <p className="sp-capital">Destino del día en {destination.stateName}</p>
+          <p className="sp-capital">{item?.tipo ? `${item.tipo} en ${destination.stateName}` : `Destino del día en ${destination.stateName}`}</p>
         </header>
 
-        <WikiSummary key={`${destination.name}-${destination.stateName}`} name={destination.name} stateName={destination.stateName} title="De Wikipedia" className="sp-section" fallback={destination.description && !/^Atractivo emblemático/.test(destination.description) ? <p className="today-fallback">{destination.description}</p> : null} />
+        {item ? (
+          item.descripcion && <div className="wiki-summary sp-section">
+            <p>{item.descripcion}</p>
+            {item.wiki && <a href={wikipediaUrl(item.wiki)} target="_blank" rel="noopener noreferrer">Leer más en Wikipedia <ExternalLink size={11} aria-hidden="true" /></a>}
+          </div>
+        ) : <div className="wiki-summary is-skeleton sp-section" aria-busy="true"><div className="skeleton-line wide" /><div className="skeleton-line wide" /><div className="skeleton-line" /></div>}
 
         <div className="sp-actions">
-          <button type="button" className="sp-primary" onClick={() => onOpenPlace?.(destination)}><MapPin size={17} aria-hidden="true" /><span>Ver ficha y mapa</span><ArrowUpRight size={16} aria-hidden="true" /></button>
+          <button type="button" className="sp-primary" onClick={() => onOpenPlace?.(destination)} disabled={!item}><MapPin size={17} aria-hidden="true" /><span>Ver ficha y mapa</span><ArrowUpRight size={16} aria-hidden="true" /></button>
           <div className="sp-secondary">
             <button type="button" onClick={() => destinationState && onSelectState?.(destinationState)}><Compass size={16} aria-hidden="true" /> Explorar {destinationState?.nombreCorto}</button>
             <button type="button" onClick={() => setShuffle((value) => value + 1)}><Shuffle size={16} aria-hidden="true" /> Otro destino</button>

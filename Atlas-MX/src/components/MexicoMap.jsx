@@ -3,7 +3,6 @@ import { geoMercator, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import { estadosTopoJSON, ESTADOS, CENTROIDES_ESTADOS, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatPopulation } from '../utils/map';
-import { getFilterLabel, getStateCategoryStats } from '../data/tourismCategories';
 
 const WIDTH = 960;
 const HEIGHT = 640;
@@ -30,7 +29,7 @@ function getGeometry() {
   return geometryCache;
 }
 
-export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom, pan, setPan, showLabels, tourismFilter = 'todos', activeRoute, showTitle = false }) {
+export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom, pan, setPan, showLabels, showTitle = false }) {
   const viewportRef = useRef(null);
   const svgRef = useRef(null);
   const pointers = useRef(new Map());
@@ -152,9 +151,6 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
     onSelectState?.(getEstadoByCve(cve));
   };
 
-  const filterLabel = getFilterLabel(tourismFilter);
-  const filtered = tourismFilter !== 'todos';
-  const routePoints = (activeRoute?.stateCodes || []).map((code) => centroids[code]).filter(Boolean);
   const effectiveScale = screenScale * zoom;
   const labelSize = 9 / effectiveScale;
   // Con el mapa muy pequeño las 32 abreviaturas se encimarían: se muestran al acercar.
@@ -171,23 +167,20 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
       onPointerCancel={endPointer}
       onPointerLeave={(event) => { if (event.pointerType === 'mouse') setTip(null); }}
     >
-      {showTitle && <div className="map-title-card"><strong>República Mexicana</strong><span>{filtered ? `Capa: ${filterLabel}` : 'Mapa interactivo · INEGI'}</span></div>}
-      {tip && <div className={`map-tooltip-hud ${tip.x > (viewportRef.current?.clientWidth || 0) - 220 ? 'flip-x' : ''} ${tip.y > (viewportRef.current?.clientHeight || 0) - 90 ? 'flip-y' : ''}`} style={{ left: tip.x, top: tip.y }}><strong>{tip.state.nombre}</strong><span>{tip.state.capital} · {formatPopulation(tip.state.poblacion)} hab.</span>{filtered && <span className="map-tooltip-category">{getStateCategoryStats(tip.state.cve)[tourismFilter] || 0} opciones de {filterLabel.toLocaleLowerCase('es-MX')}</span>}</div>}
+      {showTitle && <div className="map-title-card"><strong>República Mexicana</strong><span>Mapa interactivo · INEGI</span></div>}
+      {tip && <div className={`map-tooltip-hud ${tip.x > (viewportRef.current?.clientWidth || 0) - 220 ? 'flip-x' : ''} ${tip.y > (viewportRef.current?.clientHeight || 0) - 90 ? 'flip-y' : ''}`} style={{ left: tip.x, top: tip.y }}><strong>{tip.state.nombre}</strong><span>{tip.state.capital} · {formatPopulation(tip.state.poblacion)} hab.</span></div>}
       <svg ref={svgRef} viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="map-svg" role="group" aria-label="Mapa de los 32 estados de México. Usa Tab para recorrer los estados y Enter para seleccionarlos.">
         <defs><filter id="glow"><feDropShadow dx="0" dy="4" stdDeviation="5" floodColor="#ef4444" floodOpacity=".5" /></filter></defs>
         <g transform={transform}>
           {ESTADOS.map((s) => {
             if (!paths[s.cve]) return null;
-            const count = getStateCategoryStats(s.cve)[tourismFilter] || 0;
             const isSelected = selectedState?.cve === s.cve;
-            const inRoute = activeRoute?.stateCodes?.includes(s.cve);
-            const className = ['state-path', isSelected && 'state-selected', filtered && (count > 0 ? 'state-filter-match' : 'state-filter-muted'), inRoute && 'state-route'].filter(Boolean).join(' ');
+            const className = ['state-path', isSelected && 'state-selected'].filter(Boolean).join(' ');
             return (
               <path
                 key={s.cve}
                 d={paths[s.cve]}
                 className={className}
-                style={filtered ? { '--category-strength': Math.min(1, 0.32 + count * 0.11) } : undefined}
                 filter={isSelected ? 'url(#glow)' : undefined}
                 onPointerEnter={(event) => event.pointerType === 'mouse' && showTip(s.cve, event)}
                 onPointerLeave={() => setTip(null)}
@@ -203,7 +196,7 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
                 role="button"
                 tabIndex={0}
                 aria-pressed={isSelected}
-                aria-label={`${s.nombre}${filtered ? `, ${count} opciones de ${filterLabel}` : ''}`}
+                aria-label={s.nombre}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault();
@@ -213,7 +206,6 @@ export default function MexicoMap({ selectedState, onSelectState, zoom, setZoom,
               />
             );
           })}
-          {routePoints.length > 1 && <g className="tourist-route-layer" aria-hidden="true"><polyline points={routePoints.map((point) => point.join(',')).join(' ')} /><g>{routePoints.map((point) => <circle key={`${point[0]}-${point[1]}`} cx={point[0]} cy={point[1]} r="5" />)}</g></g>}
           {labelsVisible && ESTADOS.map((s) => {
             const pt = centroids[s.cve];
             if (!pt) return null;

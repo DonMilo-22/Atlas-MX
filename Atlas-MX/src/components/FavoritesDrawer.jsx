@@ -2,6 +2,9 @@ import React from 'react';
 import { Heart, MapPin, Trash2, X } from 'lucide-react';
 import useDialog from '../hooks/useDialog';
 
+// Categorías internas → texto legible (los favoritos antiguos guardaban la etiqueta directamente).
+const LEGACY = { pueblos: 'Pueblo Mágico', historia: 'Sitio histórico', destinos: 'Destino', cocina: 'Platillo típico' };
+
 export default function FavoritesDrawer({ isOpen, favorites, onClose, onOpenFavorite, onRemove }) {
   const ref = useDialog(isOpen, onClose);
   if (!isOpen) return null;
@@ -21,7 +24,7 @@ export default function FavoritesDrawer({ isOpen, favorites, onClose, onOpenFavo
             <article key={favorite.id} className="favorite-row">
               <button type="button" className="favorite-row-main" onClick={() => onOpenFavorite?.(favorite)}>
                 <span className="favorite-row-icon"><MapPin size={16} /></span>
-                <span><strong>{favorite.name}</strong><small>{favorite.stateName} · {favorite.category}</small></span>
+                <span><strong>{favorite.name}</strong><small>{[favorite.tipo || LEGACY[favorite.category] || favorite.category, favorite.stateName].filter(Boolean).join(', ')}</small></span>
               </button>
               <button type="button" className="favorite-remove" onClick={() => onRemove?.(favorite)} aria-label={`Quitar ${favorite.name} de favoritos`}><Trash2 size={15} /></button>
             </article>

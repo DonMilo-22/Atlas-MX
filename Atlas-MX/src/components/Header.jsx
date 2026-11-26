@@ -1,12 +1,12 @@
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { Heart, MapPin, Search, Stamp, X } from 'lucide-react';
-import ToolsMenu from './ToolsMenu';
+import { Heart, MapPin, Search, X } from 'lucide-react';
 import { ESTADOS } from '@webrek/mx-geo';
-import { searchPlaces } from '../data/tourismIndex';
+import { searchPlaces } from '../data/searchIndex';
+import { CATEGORY_META } from '../data/tourism';
 
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 
-export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites, visitedCount = 0, onOpenPassport, tools = [] }) {
+export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites }) {
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,9 +19,9 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
     const states = ESTADOS
       .filter((s) => normalize(`${s.nombre} ${s.nombreCorto} ${s.capital}`).includes(q))
       .slice(0, 5)
-      .map((state) => ({ type: 'state', key: `s-${state.cve}`, title: state.nombre, subtitle: `Estado · Capital: ${state.capital}`, state }));
+      .map((state) => ({ type: 'state', key: `s-${state.cve}`, title: state.nombre, subtitle: `Estado, capital ${state.capital}`, state }));
     const places = searchPlaces(query, 6)
-      .map((place) => ({ type: 'place', key: `p-${place.stateCode}-${place.name}`, title: place.name, subtitle: `${place.category} · ${place.stateName}`, place }));
+      .map((place) => ({ type: 'place', key: `p-${place.stateCode}-${place.category}-${place.id}`, title: place.name, subtitle: `${CATEGORY_META[place.category]?.single || CATEGORY_META[place.category]?.label || ''}, ${place.stateName}`, place }));
     return [...states, ...places];
   }, [query]);
 
@@ -92,8 +92,6 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
       </div>
       <nav className="header-actions" aria-label="Accesos rápidos">
         <button type="button" className="icon-btn" onClick={onOpenFavorites} aria-label={`Quiero visitar: ${favoritesCount} lugares guardados`} title="Quiero visitar"><Heart size={18} fill={favoritesCount ? 'currentColor' : 'none'} aria-hidden="true" />{favoritesCount > 0 && <b className="icon-count">{favoritesCount}</b>}</button>
-        <button type="button" className="icon-btn" onClick={onOpenPassport} aria-label={`Pasaporte: ${visitedCount} de 32 estados visitados`} title="Pasaporte">{<Stamp size={18} aria-hidden="true" />}{visitedCount > 0 && <b className="icon-count">{visitedCount}</b>}</button>
-        <ToolsMenu tools={tools} />
       </nav>
     </header>
   );
