@@ -6,6 +6,9 @@ import { CATEGORY_META } from '../data/tourism';
 
 const normalize = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 
+// Abreviaturas comunes con las que la gente busca un estado.
+const STATE_ALIASES = { '02': 'bc', '03': 'bcs', '09': 'cdmx df distrito federal', '15': 'edomex', '19': 'nl', '22': 'qro', '23': 'qroo q roo', '24': 'slp' };
+
 export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0, onOpenFavorites }) {
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
@@ -17,7 +20,7 @@ export default function Header({ onSelectState, onOpenPlace, favoritesCount = 0,
     const q = normalize(query);
     if (q.length < 2) return [];
     const states = ESTADOS
-      .filter((s) => normalize(`${s.nombre} ${s.nombreCorto} ${s.capital}`).includes(q))
+      .filter((s) => normalize(`${s.nombre} ${s.nombreCorto} ${s.capital} ${STATE_ALIASES[s.cve] || ''}`).includes(q))
       .slice(0, 5)
       .map((state) => ({ type: 'state', key: `s-${state.cve}`, title: state.nombre, subtitle: `Estado, capital ${state.capital}`, state }));
     const places = searchPlaces(query, 6)

@@ -11,7 +11,7 @@ import LiveWeatherCard from './LiveWeatherCard';
 import WikiSummary from './WikiSummary';
 import TodayInMexico from './TodayInMexico';
 
-const REGION_LABELS = { norte: 'Norte', noroeste: 'Noroeste', noreste: 'Noreste', occidente: 'Occidente', bajio: 'Bajío', centro: 'Centro', sur: 'Sur', sureste: 'Sureste' };
+const REGION_LABELS = { norte: 'Norte', 'centro-norte': 'Centro-norte', centro: 'Centro', sur: 'Sur' };
 const GUIDE_ORDER = ['pueblos', 'historia', 'destinos', 'cocina'];
 
 // Hasta tres fotos reales del catálogo del estado para la portada del botón de la guía.

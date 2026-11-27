@@ -202,20 +202,6 @@
     "fuente": "https://www.wikidata.org/wiki/Q172613"
    },
    {
-    "id": "Q2278207",
-    "nombre": "Municipio de Aculco",
-    "tipo": "Patrimonio de la Humanidad",
-    "descripcion": "El municipio de Aculco es uno de los 125 municipios del Estado de México, México. Se ubica en el altiplano mexicano, a una hora por carretera de Ciudad de México; forma parte del Estado de México y su cabecera municipal lleva el nombre oficial de Aculco de Espinoza (antes San Jerónimo Aculco).",
-    "lat": 20.11667,
-    "lon": -99.83333,
-    "imagen": "Templo de san Jeronimo.JPG",
-    "wiki": "Municipio de Aculco",
-    "distinciones": [
-     "Patrimonio de la Humanidad (UNESCO)"
-    ],
-    "fuente": "https://www.wikidata.org/wiki/Q2278207"
-   },
-   {
     "id": "Q16638480",
     "nombre": "Templo de San Francisco Javier",
     "tipo": "Templo",

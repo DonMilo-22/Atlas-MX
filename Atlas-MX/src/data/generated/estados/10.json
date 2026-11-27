@@ -38,20 +38,6 @@
   ],
   "historia": [
    {
-    "id": "Q2348655",
-    "nombre": "Municipio de Indé",
-    "tipo": "Patrimonio de la Humanidad",
-    "descripcion": "El Municipio de Indé es uno de los 39 municipios en que para su régimen interior se encuentra dividido el estado mexicano de Durango, se encuentra al norte del estado. Su cabecera es el pueblo de Indé.",
-    "lat": 25.74,
-    "lon": -104.98,
-    "imagen": null,
-    "wiki": "Municipio de Indé",
-    "distinciones": [
-     "Patrimonio de la Humanidad (UNESCO)"
-    ],
-    "fuente": "https://www.wikidata.org/wiki/Q2348655"
-   },
-   {
     "id": "Q6462492",
     "nombre": "La Ferrería",
     "tipo": "Zona arqueológica",

@@ -7,7 +7,7 @@
 @media(prefers-reduced-motion:reduce){.state-path{transition:none}}
 @media(max-width:980px){.atlas-main{grid-template-columns:1fr 360px}.atlas-header{gap:12px;padding:0 14px}.brand{min-width:160px}}
 @media(max-width:760px){.atlas-app-container{height:auto;min-height:100vh;overflow:visible}.atlas-header{position:sticky;top:0}.atlas-main{display:flex;flex-direction:column}.map-section{height:62vh;min-height:440px}.atlas-sidebar{height:auto;border-left:0;border-top:1px solid var(--line)}.search-wrap{max-width:none}.brand{min-width:auto}.brand-title{font-size:1rem}.modal-backdrop{padding:8px}}
-@media(max-width:480px){.atlas-header{gap:6px;padding:0 8px}.brand{display:none}.search-wrap{padding:8px;min-width:0}.search-wrap input{font-size:.76rem}.map-controls{left:12px}}
+@media(max-width:480px){.atlas-header{gap:6px;padding:0 8px}.brand{display:none}.search-wrap{padding:8px;min-width:0}.search-wrap input{font-size:16px}.map-controls{left:12px}}
 
 /* ===== Auditoría 2026: accesibilidad, nuevos componentes y orden visual ===== */
 .map-section{position:relative;width:100%;height:100%;min-height:0}
@@ -214,8 +214,9 @@ h1.brand{min-width:0;gap:0}
 .explorer-precision.is-approx{color:var(--rosa)}
 .explorer-close{flex:0 0 auto;width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--hair);border-radius:10px;background:var(--paper);color:var(--obsidiana);cursor:pointer}
 .explorer-close:hover{border-color:var(--obsidiana)}
-.explorer-tabs{display:flex;gap:16px;padding:0 22px;border-bottom:1px solid var(--hair);overflow-x:auto;scrollbar-width:none}
+.explorer-tabs{display:flex;gap:14px;padding:0 20px;border-bottom:1px solid var(--hair);overflow-x:auto;scrollbar-width:none}
 .explorer-tabs::-webkit-scrollbar{display:none}
+.explorer-tabs button svg{display:none}
 .explorer-tabs button{position:relative;display:inline-flex;align-items:center;gap:5px;padding:10px 0 11px;border:0;background:none;color:var(--jade);font-size:.84rem;font-weight:500;cursor:pointer;white-space:nowrap}
 .explorer-tabs button span{font-size:.72rem;color:var(--dim)}
 .explorer-tabs button.active{color:var(--obsidiana);font-weight:600}

@@ -32,14 +32,17 @@ function names(list, max = 3) {
 }
 
 function CategoryMosaic({ data, onPick }) {
+  // Las categorías vacías (p. ej. CDMX no tiene Pueblos Mágicos) nunca ocupan el mosaico grande.
+  const size = (cat) => data.categorias?.[cat.key]?.length || 0;
+  const ordered = [...GUIDE_CATEGORIES.filter((cat) => size(cat)), ...GUIDE_CATEGORIES.filter((cat) => !size(cat))];
   return (
     <div className="guide-mosaic">
-      {GUIDE_CATEGORIES.map((cat) => {
+      {ordered.map((cat, position) => {
         const list = data.categorias?.[cat.key] || [];
         const cover = list.find((item) => item.imagen);
         return (
-          <button key={cat.key} type="button" className={`guide-tile guide-tile-${cat.key}`} onClick={() => onPick(cat.key)} disabled={!list.length} aria-label={`${cat.label}: ${cat.count(list.length)}`}>
-            <Photo file={cover?.imagen} width={cat.key === 'pueblos' ? 900 : 640} className="guide-tile-img" />
+          <button key={cat.key} type="button" className={`guide-tile guide-tile-pos${position}`} onClick={() => onPick(cat.key)} disabled={!list.length} aria-label={`${cat.label}: ${cat.count(list.length)}`}>
+            <Photo file={cover?.imagen} width={position === 0 ? 960 : 500} className="guide-tile-img" />
             <span className="guide-tile-text">
               <span className="guide-tile-name">{cat.label}</span>
               <span className="guide-tile-list">{list.length ? names(list) : cat.empty}</span>
@@ -99,7 +102,16 @@ export default function DestinationGuide({ state, isOpen, onClose, initialCatego
   const [query, setQuery] = useState('');
   const bodyRef = useRef(null);
 
-  useEffect(() => { setQuery(''); bodyRef.current?.scrollTo?.({ top: 0 }); }, [category, dishId]);
+  const titleRef = useRef(null);
+  const firstView = useRef(true);
+  useEffect(() => {
+    if (firstView.current) { firstView.current = false; return; }
+    setQuery('');
+    bodyRef.current?.scrollTo?.({ top: 0 });
+    // Si el botón que tenía el foco desapareció con el cambio de vista, el foco pasa al título.
+    const active = document.activeElement;
+    if (ref.current && (!active || active === document.body || !ref.current.contains(active))) titleRef.current?.focus({ preventScroll: true });
+  }, [category, dishId, ref]);
 
   const list = useMemo(() => {
     const items = data?.categorias?.[category] || [];
@@ -134,7 +146,7 @@ export default function DestinationGuide({ state, isOpen, onClose, initialCatego
                 <ArrowLeft size={15} aria-hidden="true" /> {dish ? `Cocina de ${state.nombreCorto}` : `Guía de ${state.nombreCorto}`}
               </button>
             ) : null}
-            <h2 id="guide-title">{dish ? dish.nombre : cat ? cat.label : `Guía de ${state.nombre}`}</h2>
+            <h2 id="guide-title" ref={titleRef} tabIndex={-1}>{dish ? dish.nombre : cat ? cat.label : `Guía de ${state.nombre}`}</h2>
             {!cat && !dish && <p>Elige qué quieres conocer. Todo viene de fuentes verificables y cada lugar abre su mapa con hoteles, restaurantes y clima.</p>}
             {cat && !dish && <p>{cat.count(total)} en {state.nombre}</p>}
           </div>

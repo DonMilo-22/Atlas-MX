@@ -7,7 +7,7 @@
 
 .guide-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:24px 28px 16px}
 .guide-head-text{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
-.guide-head h2{margin:0;font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:800;letter-spacing:-.045em;line-height:1;color:var(--obsidiana);text-wrap:balance}
+.guide-head h2{outline:0;margin:0;font-size:clamp(1.9rem,3.6vw,2.8rem);font-weight:800;letter-spacing:-.045em;line-height:1;color:var(--obsidiana);text-wrap:balance}
 .guide-head p{margin:0;max-width:62ch;font-size:.92rem;line-height:1.5;color:var(--jade)}
 .guide-back{display:inline-flex;align-items:center;gap:6px;padding:4px 0;border:0;background:none;color:var(--jade);font:inherit;font-size:.85rem;font-weight:500;cursor:pointer}
 .guide-back:hover{color:var(--rosa)}
@@ -29,23 +29,23 @@
 /* Mosaico: el pueblo mágico manda; cocina cierra a lo ancho. */
 .guide-mosaic{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:minmax(220px,1fr) minmax(200px,.9fr);gap:10px;height:100%;min-height:460px}
 .guide-tile{position:relative;min-width:0;overflow:hidden;border:0;border-radius:14px;padding:0;background:var(--piedra);color:#fff;text-align:left;cursor:pointer;isolation:isolate}
-.guide-tile-pueblos{grid-row:1/3}
-.guide-tile-cocina{grid-column:2/4}
+.guide-tile-pos0{grid-row:1/3}
+.guide-tile-pos3{grid-column:2/4}
 .guide-tile-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .guide-tile::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(30,42,39,0) 35%,rgba(30,42,39,.86) 100%)}
 .guide-tile .guide-photo-empty{position:absolute;inset:0;z-index:-2}
 .guide-tile-text{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;gap:6px;padding:20px 22px}
 .guide-tile-name{font-size:clamp(1.5rem,2.6vw,2.15rem);font-weight:800;letter-spacing:-.04em;line-height:1;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:3px;text-underline-offset:6px;transition:text-decoration-color .15s}
-.guide-tile-pueblos .guide-tile-name{font-size:clamp(2rem,3.6vw,3rem)}
+.guide-tile-pos0 .guide-tile-name{font-size:clamp(2rem,3.6vw,3rem)}
 .guide-tile-list{font-size:.86rem;line-height:1.4;color:rgba(255,255,255,.86);max-width:44ch;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .guide-tile:hover .guide-tile-name,.guide-tile:focus-visible .guide-tile-name{text-decoration-color:var(--rosa)}
 .guide-tile:focus-visible{outline:3px solid var(--rosa);outline-offset:3px}
-.guide-tile:disabled{cursor:default;opacity:.7}
+.guide-tile:disabled{cursor:default;filter:grayscale(1);opacity:.45}
 
 .guide-photo-empty{display:block;background:var(--piedra) linear-gradient(135deg,transparent 0 48%,rgba(255,255,255,.35) 48% 52%,transparent 52%) center/18px 18px}
 
 .guide-filter{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;margin:8px 0 4px;padding:9px 12px;border:1px solid var(--hair);border-radius:10px;background:var(--paper);color:var(--jade)}
-.guide-filter:focus-within{border-color:var(--obsidiana)}
+.guide-filter:focus-within{border-color:var(--obsidiana);box-shadow:0 0 0 3px var(--rosa-soft)}
 .guide-filter input{flex:1;min-width:0;border:0;outline:0;background:none;font:inherit;font-size:.9rem;color:var(--obsidiana)}
 
 .guide-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
@@ -88,15 +88,17 @@
   .guide-layer{padding:0}
   .guide{height:100%;width:100%;border-radius:0}
   .guide-head{padding:18px 16px 12px}
-  .guide-switch{padding:0 16px;gap:18px}
+  .guide-switch{padding:0 16px;gap:16px}
+  .guide-switch button svg{display:none}
   .guide-body{padding:6px 16px 22px}
   .guide-foot{padding:10px 16px}
   .guide-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px;min-height:0;height:auto}
-  .guide-tile-pueblos{grid-row:auto;grid-column:1/3}
-  .guide-tile-cocina{grid-column:1/3}
+  .guide-tile-pos0{grid-row:auto;grid-column:1/3}
+  .guide-tile-pos3{grid-column:1/3}
   .guide-loading{grid-template-columns:1fr 1fr;grid-template-rows:260px 180px 180px}
   .guide-loading span:first-child,.guide-loading span:last-child{grid-row:auto;grid-column:1/3}
   .guide-list{grid-template-columns:minmax(0,1fr)}
+  .guide-filter input{font-size:16px}
   .guide-row-img,.guide-row .guide-photo-empty{flex-basis:76px;width:76px;height:76px}
   .guide-dish-body{grid-template-columns:minmax(0,1fr);gap:18px}
 }

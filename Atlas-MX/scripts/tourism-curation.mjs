@@ -8,6 +8,8 @@ const RETYPE = [[/^Plaza (de toros|Monumental)\b/i, 'Plaza de toros'], [/^Audito
 export function curateList(list, { cve, key, stateName, onDrop = () => {} }) {
   return (list || []).filter((it) => {
     const drop = NOT_A_VISIT.has(it.nombre) || DEFUNCT.test(it.descripcion || '')
+      // Un municipio entero no es un sitio para visitar (su cabecera ya aparece como ciudad o pueblo).
+      || /^Municipio de /i.test(it.nombre)
       // La propia Ciudad de México no es un "destino dentro" de la Ciudad de México.
       || (key === 'destinos' && cve === '09' && it.nombre === stateName);
     if (drop) onDrop(it);
