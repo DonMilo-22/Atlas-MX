@@ -7,18 +7,22 @@
 // Nada se redacta a mano: cada campo sale de una de esas fuentes.
 //
 // Uso:  NODE_USE_ENV_PROXY=1 node scripts/build-tourism-data.mjs [--fresh]
-//   --fresh  ignora la caché local (node_modules/.cache/atlas-mx-tourism) y vuelve a descargar todo.
+//   --fresh  ignora la caché local de respuestas y vuelve a descargar todo.
+//   ATLAS_DATA_CACHE=/ruta  carpeta de caché de respuestas crudas (por omisión <tmpdir>/atlas-mx-tourism-cache).
 //
 // Escribe src/data/generated/estados/XX.json (32 archivos) y src/data/generated/index.json.
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync, readdirSync, statSync, rmSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { tmpdir } from 'node:os';
+import { join, resolve as resolvePath } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { ESTADOS, estadoDeCoordenada } from '@webrek/mx-geo';
 
 const ROOT = new URL('../', import.meta.url);
 const OUT_DIR = new URL('src/data/generated/', ROOT);
 const STATES_DIR = new URL('estados/', OUT_DIR);
-const CACHE_DIR = new URL('node_modules/.cache/atlas-mx-tourism/', ROOT);
+const CACHE_DIR = pathToFileURL(resolvePath(process.env.ATLAS_DATA_CACHE || join(tmpdir(), 'atlas-mx-tourism-cache')) + '/');
 const FRESH = process.argv.includes('--fresh');
 const CACHE_TTL_MS = 14 * 24 * 3600 * 1000;
 const UA = 'AtlasMX-data/1.0 (educational project)';
@@ -43,6 +47,7 @@ const LIMITS = { historia: 40, historiaPrioritarios: 45, historiaMinOtros: 10, d
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 mkdirSync(CACHE_DIR, { recursive: true });
 let lastRequestAt = 0;
+const hostGap = new Map();
 const stats = { requests: 0, cached: 0, retries: 0 };
 
 function cachePath(key) {
@@ -58,8 +63,10 @@ async function fetchText(url, { method = 'GET', body = null, headers = {}, minGa
     if (validate) try { validate(cached); } catch { valid = false; }
     if (valid) { stats.cached++; return cached; }
   }
-  for (let attempt = 0; attempt < 12; attempt++) {
-    const wait = lastRequestAt + minGapMs - Date.now();
+  const host = new URL(url).host;
+  for (let attempt = 0; attempt < 15; attempt++) {
+    const gap = Math.max(minGapMs, hostGap.get(host) || 0);
+    const wait = lastRequestAt + gap - Date.now();
     if (wait > 0) await sleep(wait);
     lastRequestAt = Date.now();
     let res;
@@ -86,13 +93,16 @@ async function fetchText(url, { method = 'GET', body = null, headers = {}, minGa
       }
     }
     if (res.ok) {
+      if (hostGap.has(host)) hostGap.set(host, Math.max(minGapMs, hostGap.get(host) * 0.97));
       writeFileSync(file, JSON.stringify({ url, text }));
       return text;
     }
     if (res.status === 429 || res.status >= 500) {
       stats.retries++;
       const retryAfter = Number(res.headers.get('retry-after')) || 0;
-      const backoff = Math.min(120000, Math.max(retryAfter * 1000 + 500, 2000 * 2 ** attempt));
+      // Respeta Retry-After y espacia más las siguientes peticiones a ese servidor.
+      if (res.status === 429) hostGap.set(host, Math.min(15000, Math.max(minGapMs, hostGap.get(host) || 0) * 1.5));
+      const backoff = retryAfter ? retryAfter * 1000 + 750 : Math.min(120000, 2000 * 2 ** attempt);
       console.warn(`  ! HTTP ${res.status} en ${new URL(url).host}; reintento en ${Math.round(backoff / 1000)}s`);
       await sleep(backoff);
       continue;
@@ -118,7 +128,7 @@ async function sparql(query) {
 
 async function wikiApi(params, lang = 'es') {
   const qs = new URLSearchParams({ format: 'json', formatversion: '2', ...params });
-  const text = await fetchText(`https://${lang}.wikipedia.org/w/api.php?${qs}`, { headers: { Accept: 'application/json' }, minGapMs: 1200, validate: (t) => { const j = JSON.parse(t); if (j.error) throw new Error(j.error.info || j.error.code); } });
+  const text = await fetchText(`https://${lang}.wikipedia.org/w/api.php?${qs}`, { headers: { Accept: 'application/json' }, minGapMs: 3200, validate: (t) => { const j = JSON.parse(t); if (j.error && !['missingtitle', 'invalidtitle', 'nosuchsection'].includes(j.error.code)) throw new Error(j.error.info || j.error.code); } });
   return JSON.parse(text);
 }
 
@@ -706,24 +716,38 @@ function gastroCategoryCandidates(e) {
   return names.flatMap((n) => [`Categoría:Gastronomía de ${n}`, `Categoría:Gastronomía del estado de ${n}`]);
 }
 
-async function existingTitles(titles) {
-  await loadWikiInfo(titles);
-  return [...new Set(titles.map((t) => wikiInfo.get(t)?.title).filter(Boolean))];
+// Generadores de es.wikipedia ejecutados del lado de WDQS (servicio MWAPI): devuelven título y QID
+// sin gastar el límite de peticiones de la API de Wikipedia de este equipo.
+async function mwapiGenerator(generator, inputParam, inputs, extra = {}) {
+  if (!inputs.length) return [];
+  const params = Object.entries(extra).map(([k, v]) => `mwapi:${k} "${v}" ;`).join(' ');
+  const rows = await sparql(`SELECT ?src ?title ?item WHERE {
+    VALUES ?src { ${inputs.map((t) => JSON.stringify(t)).join(' ')} }
+    SERVICE wikibase:mwapi {
+      bd:serviceParam wikibase:endpoint "es.wikipedia.org" ; wikibase:api "Generator" ;
+        mwapi:generator "${generator}" ; mwapi:${inputParam} ?src ; ${params}
+        wikibase:limit "once" .
+      ?title wikibase:apiOutput mwapi:title .
+      OPTIONAL { ?item wikibase:apiOutputItem mwapi:item . }
+    }
+  }`);
+  return rows;
 }
 
-async function linksOf(title) {
-  const res = await wikiQueryAll({ titles: title, prop: 'links', plnamespace: '0', pllimit: 'max', redirects: '1' });
-  return res.pages.flatMap((p) => (p.links || []).map((l) => l.title));
+async function categoryMembers(cats) {
+  const rows = await mwapiGenerator('categorymembers', 'gcmtitle', cats, { gcmlimit: 'max', gcmnamespace: '0|14' });
+  const sub = [...new Set(rows.filter((r) => r.title.startsWith('Categoría:')).map((r) => r.title))];
+  // Subcategorías (p. ej. «Categoría:Tequila»): se toma su artículo epónimo, no todos sus miembros (marcas, empresas…).
+  const eponym = await titlesToQids(sub.map((t) => t.replace(/^Categoría:/, '')));
+  const subRows = [...eponym].map(([title, item]) => ({ title, item }));
+  const found = [...new Set(rows.map((r) => r.src))];
+  const members = [...rows, ...subRows].filter((r) => !r.title.startsWith('Categoría:') && r.item);
+  return { found, members };
 }
 
-async function categoryMembers(cat, depth = 1) {
-  const res = await wikiQueryAll({ list: 'categorymembers', cmtitle: cat, cmtype: 'page|subcat', cmlimit: 'max' });
-  const out = [];
-  for (const m of res.lists.categorymembers || []) {
-    if (m.ns === 0) out.push(m.title);
-    else if (m.ns === 14 && depth > 0) out.push(...(await categoryMembers(m.title, depth - 1)));
-  }
-  return out;
+async function articleLinks(titles) {
+  const rows = await mwapiGenerator('links', 'titles', titles, { gpllimit: 'max', gplnamespace: '0' });
+  return { found: [...new Set(rows.map((r) => r.src))], links: rows.filter((r) => r.item) };
 }
 
 async function stateGastroSectionLinks(stateTitle) {
@@ -738,12 +762,13 @@ async function stateGastroSectionLinks(stateTitle) {
   return out;
 }
 
+// Títulos de es.wikipedia → QID por enlace de sitio en Wikidata (sin redirecciones).
 async function titlesToQids(titles) {
-  await loadWikiInfo(titles);
   const m = new Map();
-  for (const t of titles) {
-    const w = wikiInfo.get(t);
-    if (w?.qid && !w.disambiguation) m.set(t, w.qid);
+  for (const part of chunk([...new Set(titles)], 200)) {
+    const rows = await sparql(`SELECT ?t ?x WHERE { VALUES ?t { ${part.map((t) => JSON.stringify(t) + '@es').join(' ')} }
+      ?a schema:name ?t ; schema:isPartOf <https://es.wikipedia.org/> ; schema:about ?x . }`);
+    for (const r of rows) m.set(r.t, r.x);
   }
   return m;
 }
@@ -790,21 +815,16 @@ async function buildCocina(states) {
   for (const e of ESTADOS) {
     const src = new Map();
     const mark = (qid, k) => { const o = src.get(qid) || {}; o[k] = true; src.set(qid, o); };
-    const cats = (await existingTitles(gastroCategoryCandidates(e)));
-    const catTitles = [];
-    for (const c of cats) catTitles.push(...(await categoryMembers(c)));
-    const arts = (await existingTitles(gastroArticleCandidates(e)));
-    const artTitles = [];
-    for (const a of arts) artTitles.push(...(await linksOf(a)));
+    const cat = await categoryMembers(gastroCategoryCandidates(e));
+    for (const r of cat.members) mark(r.item, 'cat');
+    const art = await articleLinks(gastroArticleCandidates(e));
+    for (const r of art.links) mark(r.item, 'art');
     const secTitles = await stateGastroSectionLinks(states.cveToTitle[e.cve]);
-    const all = [...new Set([...catTitles, ...artTitles, ...secTitles])];
-    const t2q = await titlesToQids(all);
-    for (const t of catTitles) if (t2q.has(t)) mark(t2q.get(t), 'cat');
-    for (const t of artTitles) if (t2q.has(t)) mark(t2q.get(t), 'art');
-    for (const t of secTitles) if (t2q.has(t)) mark(t2q.get(t), 'sec');
+    const t2q = await titlesToQids(secTitles);
+    for (const q of t2q.values()) mark(q, 'sec');
     for (const q of origin[e.cve]) mark(q, 'wd');
     sources[e.cve] = src;
-    report[e.cve] = { categoria: cats[0] || null, articulo: arts[0] || null, seccion: secTitles.length > 0 };
+    report[e.cve] = { categoria: cat.found[0] || null, articulo: art.found[0] || null, seccion: t2q.size > 0 };
   }
   const allQ = [...new Set(Object.values(sources).flatMap((m) => [...m.keys()]))];
   const food = await foodFilter(allQ);

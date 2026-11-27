@@ -26,10 +26,10 @@ export async function loadStateTourism(cve) {
 }
 
 export const CATEGORY_META = {
-  pueblos: { label: 'Pueblos Mágicos' },
-  historia: { label: 'Historia' },
-  destinos: { label: 'Destinos' },
-  cocina: { label: 'Cocina' },
+  pueblos: { label: 'Pueblos Mágicos', single: 'Pueblo Mágico' },
+  historia: { label: 'Historia', single: 'Sitio histórico' },
+  destinos: { label: 'Destinos', single: 'Destino' },
+  cocina: { label: 'Cocina', single: 'Platillo típico' },
 };
 
 export function commonsThumb(fileName, width = 640) {

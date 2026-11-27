@@ -145,7 +145,8 @@ async function fetchPhotosByName(placeName, stateName, limit) {
       failed = true;
     }
   }
-  return { urls: uniqueByFile(items).slice(0, limit).map((item) => item.url), failed: failed && !items.length };
+  // Si falló la galería del elemento se devuelve lo que hay, pero no se cachea (se reintenta).
+  return { urls: uniqueByFile(items).slice(0, limit).map((item) => item.url), failed };
 }
 
 /**
@@ -162,7 +163,7 @@ export async function fetchRealPhotos(placeName, options = {}) {
     const { urls, failed } = await fetchPhotosByName(placeName, stateName, limit);
     // Solo se cachea si la red respondió: un fallo temporal se reintenta después.
     if (!failed) galleryCache.set(cacheKey, urls);
-    else console.warn(`[Atlas MX] No se pudo cargar la galería de “${placeName}”.`);
+    else if (!urls.length) console.warn(`[Atlas MX] No se pudo cargar la galería de “${placeName}”.`);
     return urls;
   });
 }

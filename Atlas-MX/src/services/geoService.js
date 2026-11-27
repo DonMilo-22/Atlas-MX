@@ -140,15 +140,36 @@ const osmResult = (match, name) => ({ lat: match.lat, lon: match.lon, precise: t
  * pero solo si cae dentro del contorno del municipio (`valid` lo comprueba).
  */
 const isCabeceraTitle = (title, name) => fold(title.replace(/\s*\(.*\)$/, '')).startsWith(`${fold(name)} de `) || fold(title).startsWith(`${fold(name)} del `);
-async function wikipediaCoords(name, stateName, valid, { cabecera = false } = {}) {
+// Artículo propio de un sitio: "Zona arqueológica de Palenque", "Parque nacional Palenque".
+const SITE_TITLE = /^(zona arqueologica|sitio arqueologico|ruinas|parque nacional)( de| del)? (.+)$/;
+function isSiteTitle(title, name) {
+  const text = fold(title); // sin acentos ni signos: "Palenque (zona arqueológica)" → "palenque zona arqueologica"
+  const wanted = fold(name);
+  const prefixed = SITE_TITLE.exec(text);
+  if (prefixed && prefixed[3] === wanted) return true;
+  return text === `${wanted} zona arqueologica` || text === `${wanted} sitio arqueologico`;
+}
+
+async function wikipediaCoords(name, stateName, valid, { cabecera = false, kind = 'any' } = {}) {
   const queries = [stateName ? `${name} ${stateName}` : name, name];
+  const titleOk = (title) => titleMatchesPlace(title, name, stateName) || (cabecera && isCabeceraTitle(title, name)) || (kind === 'site' && isSiteTitle(title, name));
+  const matches = [];
   for (const query of queries) {
     const pages = await wikiSearch(query, 'es', 5);
-    const titleOk = (title) => titleMatchesPlace(title, name, stateName) || (cabecera && isCabeceraTitle(title, name));
-    const page = pages.find((item) => item.coordinates && titleOk(item.title) && valid(item.coordinates.lat, item.coordinates.lon));
-    if (page) return { lat: page.coordinates.lat, lon: page.coordinates.lon, precise: true, source: 'wikipedia', label: page.title };
+    pages.forEach((item) => {
+      if (item.coordinates && titleOk(item.title) && valid(item.coordinates.lat, item.coordinates.lon) && !matches.some((m) => m.title === item.title)) matches.push(item);
+    });
   }
-  return null;
+  // "Palenque" a secas es la zona arqueológica; "Palenque (Chiapas)", la ciudad. Los destinos
+  // ("any") suelen ser poblados, así que solo un sitio prefiere el título sin desambiguar.
+  const qualified = (title) => /\(|,/.test(title);
+  const rank = (title) => {
+    if (kind !== 'site') return qualified(title) ? 0 : 1;
+    if (isSiteTitle(title, name)) return 0; // el artículo del sitio
+    return qualified(title) ? 2 : 1;
+  };
+  const page = matches.sort((a, b) => rank(a.title) - rank(b.title))[0];
+  return page ? { lat: page.coordinates.lat, lon: page.coordinates.lon, precise: true, source: 'wikipedia', label: page.title } : null;
 }
 
 /**
@@ -178,7 +199,8 @@ export async function locatePlace({ name, stateName = '', stateCode = '', catego
     const attempt = async (step) => {
       try { return await step(); } catch { networkError = true; return null; }
     };
-    const done = (result) => { save(key, result); return result; };
+    // Si algún paso falló por la red, el resultado puede no ser el mejor: se usa, pero no se guarda.
+    const done = (result) => { if (!networkError) save(key, result); return result; };
 
     // 1) Datos verificados: coordenadas del elemento de Wikidata o del artículo exacto.
     if (placeId) {
@@ -207,7 +229,7 @@ export async function locatePlace({ name, stateName = '', stateCode = '', catego
       const box = isAdminBoundary(match.item) ? match.item.boundingbox?.map(Number) : null;
       if (box?.length === 4) {
         const inBox = (lat, lon) => valid(lat, lon) && lat >= box[0] && lat <= box[1] && lon >= box[2] && lon <= box[3];
-        const seat = await attempt(() => wikipediaCoords(name, stateName, inBox, { cabecera: true }));
+        const seat = await attempt(() => wikipediaCoords(name, stateName, inBox, { cabecera: true, kind: 'settlement' }));
         if (seat) return seat;
       }
       return osmResult(match, name);
@@ -217,14 +239,14 @@ export async function locatePlace({ name, stateName = '', stateCode = '', catego
       // 2a) Poblado: el nodo del pueblo en OpenStreetMap, no el centro del municipio.
       const settlement = consider(bestOsmMatch(await attempt(() => nominatimSearch(base, { featuretype: 'settlement' })), ctx));
       if (settlement && settlement.cls <= 1) return done(osmResult(settlement, name));
-      const wiki = await attempt(() => wikipediaCoords(name, stateName, valid));
+      const wiki = await attempt(() => wikipediaCoords(name, stateName, valid, { kind }));
       if (wiki) return done(wiki);
       const general = consider(bestOsmMatch(await attempt(() => nominatimSearch(base)), ctx));
       const best = [settlement, general].filter(Boolean).sort((a, b) => (a.name - b.name) || (a.cls - b.cls))[0];
       if (best) return done(await resolveBoundary(best));
     } else {
       // 2b) Sitio o destino: el artículo exacto de Wikipedia tiene las coordenadas del sitio.
-      const wiki = await attempt(() => wikipediaCoords(name, stateName, valid));
+      const wiki = await attempt(() => wikipediaCoords(name, stateName, valid, { kind }));
       if (wiki) return done(wiki);
       const general = consider(bestOsmMatch(await attempt(() => nominatimSearch(base)), ctx));
       if (general && (kind === 'site' || general.cls === 0)) return done(await resolveBoundary(general));
