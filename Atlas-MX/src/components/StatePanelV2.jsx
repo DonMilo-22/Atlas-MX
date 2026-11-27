@@ -35,11 +35,13 @@ function GuideButton({ state, onOpen }) {
       <span className={`guide-cta-photos n${photos.length}`} aria-hidden="true">
         {photos.length ? photos.map((item) => <img key={item.id} src={commonsThumb(item.imagen, 330)} alt="" loading="lazy" decoding="async" onError={(event) => { if (!retryCommons(event.currentTarget)) event.currentTarget.style.visibility = 'hidden'; }} />) : <span className="guide-cta-empty" />}
       </span>
-      <span className="guide-cta-text">
-        <strong>Qué visitar en {state.nombreCorto}</strong>
-        <span>{isLoading ? 'Cargando la guía…' : summary || 'Pueblos, historia, destinos y cocina'}</span>
+      <span className="guide-cta-row">
+        <span className="guide-cta-text">
+          <strong>Qué visitar en {state.nombreCorto}</strong>
+          <span>{isLoading ? 'Cargando la guía…' : summary || 'Pueblos, historia, destinos y cocina'}</span>
+        </span>
+        <ArrowRight size={18} aria-hidden="true" className="guide-cta-arrow" />
       </span>
-      <ArrowRight size={18} aria-hidden="true" className="guide-cta-arrow" />
     </button>
   );
 }

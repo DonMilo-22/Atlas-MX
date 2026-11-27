@@ -12,6 +12,7 @@ import WikiSummary from './WikiSummary';
 import WeatherIcon from './WeatherIcon';
 import PhotoLightbox from './PhotoLightbox';
 import { retryCommons } from '../utils/commons';
+import { googleEmbedUrl, googleSearchUrl } from '../utils/googleMaps';
 
 const TABS = [
   { id: 'resumen', label: 'Resumen', icon: MapPin },
@@ -20,6 +21,8 @@ const TABS = [
   { id: 'atractivos', label: 'Qué ver', icon: Landmark },
   { id: 'clima', label: 'Clima', icon: CloudSun }
 ];
+// Lo que se busca en Google Maps en cada pestaña.
+const GOOGLE_TERMS = { hoteles: 'hoteles', restaurantes: 'restaurantes', atractivos: 'lugares turísticos' };
 const EMPTY_TEXT = { hoteles: 'hospedajes', restaurantes: 'restaurantes ni cafés', atractivos: 'museos, monumentos ni atractivos' };
 const dayName = new Intl.DateTimeFormat('es-MX', { weekday: 'long' });
 
@@ -52,12 +55,12 @@ function PoiDetail({ poi, onBack }) {
 }
 
 function PoiList({ category, nearby, onSelect, onRetry }) {
-  if (nearby.isLoading) return <div className="poi-loading" aria-busy="true"><span className="skeleton-line wide" /><span className="skeleton-line" /><span className="skeleton-line wide" /><span className="skeleton-line" /></div>;
+  if (nearby.isLoading) return <div className="poi-loading" aria-busy="true" aria-label="Cargando lista de OpenStreetMap"><span className="skeleton-line wide" /><span className="skeleton-line" /><span className="skeleton-line wide" /></div>;
   if (nearby.error || !nearby.data) {
-    return <div className="poi-empty"><p>No pudimos consultar OpenStreetMap en este momento.</p><button type="button" onClick={onRetry}><RefreshCw size={14} aria-hidden="true" /> Reintentar</button></div>;
+    return <div className="poi-empty"><p>La lista de OpenStreetMap no respondió esta vez; el mapa de Google sí muestra todos los lugares.</p><button type="button" onClick={onRetry}><RefreshCw size={14} aria-hidden="true" /> Reintentar lista</button></div>;
   }
   const items = nearby.data[category] || [];
-  if (!items.length) return <div className="poi-empty"><p>OpenStreetMap no registra {EMPTY_TEXT[category]} a menos de {formatDistance(nearby.data.radius)}.</p></div>;
+  if (!items.length) return <div className="poi-empty"><p>OpenStreetMap no registra {EMPTY_TEXT[category]} a menos de {formatDistance(nearby.data.radius)}; revisa el mapa de Google.</p></div>;
   return (
     <ul className="poi-list">
       {items.map((poi) => (
@@ -70,6 +73,18 @@ function PoiList({ category, nearby, onSelect, onRetry }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+function GooglePlacesIntro({ category, placeName, stateName }) {
+  const term = GOOGLE_TERMS[category];
+  return (
+    <div className="gplaces-intro">
+      <p>El mapa muestra los {term} de Google Maps cerca de {placeName}. Toca un punto para ver calificaciones, fotos, horarios y cómo llegar.</p>
+      <a className="gplaces-open" href={googleSearchUrl(`${term} cerca de ${placeName}, ${stateName}, México`)} target="_blank" rel="noopener noreferrer">
+        <MapPin size={15} aria-hidden="true" /> Ver la lista completa en Google Maps <ExternalLink size={12} aria-hidden="true" />
+      </a>
+    </div>
   );
 }
 
@@ -142,6 +157,12 @@ export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, c
 
   if (!isOpen || !placeName) return null;
 
+  const isPoiTab = ['hoteles', 'restaurantes', 'atractivos'].includes(tab);
+  const googleMapSrc = location && isPoiTab
+    ? (selected
+      ? googleEmbedUrl({ query: `${selected.name}, ${placeName}, ${stateName}`, lat: selected.lat, lon: selected.lon, zoom: 17 })
+      : googleEmbedUrl({ query: `${GOOGLE_TERMS[tab]} cerca de ${placeName}, ${stateName}`, lat: location.lat, lon: location.lon, zoom: location.precise ? 15 : 11 }))
+    : '';
   const countFor = (id) => (nearby.data && nearby.data[id] ? nearby.data[id].length : null);
   const selectTab = (id) => { setTab(id); setSelectedId(null); };
 
@@ -190,29 +211,43 @@ export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, c
                 <div className="explorer-quick">
                   {['hoteles', 'restaurantes', 'atractivos'].map((id) => (
                     <button key={id} type="button" onClick={() => selectTab(id)}>
-                      <strong>{countFor(id) ?? '…'}</strong>
-                      <span>{TABS.find((item) => item.id === id).label.toLocaleLowerCase('es-MX')} cerca</span>
+                      <strong>{TABS.find((item) => item.id === id).label}</strong>
+                      <span>{countFor(id) ? `${countFor(id)} cerca, más en Google Maps` : 'Cerca, en Google Maps'}</span>
                     </button>
                   ))}
                 </div>
               </>
             )}
-            {['hoteles', 'restaurantes', 'atractivos'].includes(tab) && (
+            {isPoiTab && (
               selected
                 ? <PoiDetail poi={selected} onBack={() => setSelectedId(null)} />
-                : <PoiList category={tab} nearby={nearby} onSelect={setSelectedId} onRetry={() => setAttempt((value) => value + 1)} />
+                : <>
+                  <GooglePlacesIntro category={tab} placeName={placeName} stateName={stateName} />
+                  <h3 className="gplaces-sub">Con datos de OpenStreetMap</h3>
+                  <PoiList category={tab} nearby={nearby} onSelect={setSelectedId} onRetry={() => setAttempt((value) => value + 1)} />
+                </>
             )}
             {tab === 'clima' && location && <PlaceWeather location={location} />}
           </div>
 
           <footer className="explorer-foot">
-            <span>Datos de OpenStreetMap, Wikipedia y Open-Meteo.</span>
+            <span>Datos de Google Maps, OpenStreetMap, Wikipedia y Open-Meteo.</span>
             <a href={googleUrl} target="_blank" rel="noopener noreferrer">Abrir en Google Maps <ExternalLink size={12} aria-hidden="true" /></a>
           </footer>
         </aside>
 
         <div className="explorer-map">
-          {location
+          {location && isPoiTab
+            ? <iframe
+              key={googleMapSrc}
+              className="explorer-gmap"
+              src={googleMapSrc}
+              title={`Mapa de Google: ${selected ? selected.name : `${GOOGLE_TERMS[tab]} cerca de ${placeName}`}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            : location
             ? <PlaceMap center={location} precise={location.precise} title={placeName} pois={activeList} selectedId={selectedId} onSelect={setSelectedId} />
             : <div className="explorer-map-loading" aria-hidden="true">Ubicando…</div>}
         </div>

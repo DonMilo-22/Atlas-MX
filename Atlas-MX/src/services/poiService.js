@@ -2,8 +2,12 @@
  * Atlas MX — hoteles, restaurantes y atractivos reales cerca de un punto (OpenStreetMap vía Overpass).
  * Se prueban varios servidores públicos de Overpass por si alguno está saturado.
  */
-import { fetchWithTimeout } from './http.js';
-const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
+const ENDPOINTS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.private.coffee/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter'
+];
 const cache = new Map();
 const pending = new Map();
 
@@ -72,7 +76,7 @@ function normalizeElement(element, center) {
 
 function buildQuery(lat, lon, radius) {
   const around = `(around:${radius},${lat},${lon})`;
-  return `[out:json][timeout:25];(
+  return `[out:json][timeout:20];(
     nwr["tourism"~"^(hotel|hostel|guest_house|motel|apartment)$"]["name"]${around};
     nwr["amenity"~"^(restaurant|cafe|fast_food|bar|ice_cream)$"]["name"]${around};
     nwr["tourism"~"^(museum|attraction|viewpoint|gallery|zoo|theme_park)$"]["name"]${around};
@@ -80,18 +84,77 @@ function buildQuery(lat, lon, radius) {
   );out center tags 400;`;
 }
 
-async function runQuery(query) {
-  let lastError;
-  for (const endpoint of ENDPOINTS) {
-    try {
-      const response = await fetchWithTimeout(endpoint, { method: 'POST', body: new URLSearchParams({ data: query }) });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return await response.json();
-    } catch (error) {
-      lastError = error;
+// Los servidores públicos de Overpass se saturan seguido (429, 504 o sin respuesta). En lugar de esperarlos
+// uno por uno, se lanza el primero y, si no contesta en unos segundos o falla, se suma el siguiente; gana la
+// primera respuesta válida y las demás se cancelan.
+const HEDGE_MS = 2500;
+const REQUEST_TIMEOUT_MS = 20000;
+
+function runQuery(query) {
+  return new Promise((resolve, reject) => {
+    const controllers = [];
+    const started = new Set();
+    let failures = 0;
+    let settled = false;
+    let lastError = null;
+    const timers = [];
+
+    const finish = (fn, value) => {
+      if (settled) return;
+      settled = true;
+      timers.forEach(clearTimeout);
+      controllers.forEach((controller) => controller.abort());
+      fn(value);
+    };
+    const launchNext = () => {
+      const index = ENDPOINTS.findIndex((_, i) => !started.has(i));
+      if (index >= 0) launch(index);
+    };
+    function launch(index) {
+      if (settled || started.has(index)) return;
+      started.add(index);
+      const controller = new AbortController();
+      controllers.push(controller);
+      const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+      fetch(ENDPOINTS[index], { method: 'POST', body: new URLSearchParams({ data: query }), signal: controller.signal })
+        .then(async (response) => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const data = await response.json();
+          // Overpass a veces responde 200 con un error de ejecución y sin elementos.
+          if (!Array.isArray(data.elements) || (/error/i.test(data.remark || '') && !data.elements.length)) throw new Error(data.remark || 'Respuesta inválida');
+          finish(resolve, data);
+        })
+        .catch((error) => {
+          lastError = error;
+          failures += 1;
+          if (failures >= ENDPOINTS.length) finish(reject, lastError || new Error('Overpass no disponible'));
+          else launchNext();
+        })
+        .finally(() => clearTimeout(timeout));
     }
-  }
-  throw lastError || new Error('Overpass no disponible');
+
+    ENDPOINTS.forEach((_, i) => timers.push(setTimeout(() => launch(i), i * HEDGE_MS)));
+  });
+}
+
+// Caché en el navegador: volver a abrir un lugar es instantáneo y no vuelve a cargar a Overpass.
+const STORE_KEY = 'atlas-poi-v2';
+const STORE_TTL_MS = 3 * 24 * 3600 * 1000;
+function readStore(key) {
+  try {
+    const entry = JSON.parse(localStorage.getItem(STORE_KEY) || '{}')[key];
+    return entry && Date.now() - entry.t < STORE_TTL_MS ? entry.v : null;
+  } catch { return null; }
+}
+function writeStore(key, value) {
+  try {
+    const store = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+    store[key] = { t: Date.now(), v: value };
+    // Solo los 40 lugares más recientes, para no crecer sin límite.
+    const keys = Object.keys(store).sort((a, b) => store[b].t - store[a].t);
+    keys.slice(40).forEach((k) => delete store[k]);
+    localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  } catch { /* almacenamiento lleno o bloqueado: solo se pierde la caché */ }
 }
 
 /**
@@ -102,6 +165,8 @@ export async function fetchNearbyPlaces(lat, lon, radius = 1500) {
   const key = `${lat.toFixed(3)},${lon.toFixed(3)},${radius}`;
   if (cache.has(key)) return cache.get(key);
   if (pending.has(key)) return pending.get(key);
+  const stored = readStore(key);
+  if (stored) { cache.set(key, stored); return stored; }
 
   const request = (async () => {
     const center = { lat, lon };
@@ -127,6 +192,7 @@ export async function fetchNearbyPlaces(lat, lon, radius = 1500) {
       grouped[category] = grouped[category].slice(0, 40);
     });
     cache.set(key, grouped);
+    writeStore(key, grouped);
     return grouped;
   })().finally(() => pending.delete(key));
 
