@@ -520,7 +520,7 @@
    {
     "id": "Q3302696",
     "nombre": "Auditorio Telmex",
-    "tipo": "Teatro",
+    "tipo": "Auditorio",
     "descripcion": "El Auditorio Telmex es un espacio para espectáculos ubicado en la zona metropolitana de Guadalajara, México. Es parte del proyecto cultural más ambicioso y trascendente de la Universidad de Guadalajara.",
     "lat": 20.7331,
     "lon": -103.381,
@@ -532,7 +532,7 @@
    {
     "id": "Q7203633",
     "nombre": "Plaza de toros Nuevo Progreso",
-    "tipo": "Teatro",
+    "tipo": "Plaza de toros",
     "descripcion": "La Plaza de toros Nuevo Progreso es un coso taurino ubicado en Guadalajara en el Estado de Jalisco en México.",
     "lat": 20.70206,
     "lon": -103.32531,

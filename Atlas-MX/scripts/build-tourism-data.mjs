@@ -12,6 +12,7 @@
 //
 // Escribe src/data/generated/estados/XX.json (32 archivos) y src/data/generated/index.json.
 
+import { curateList } from './tourism-curation.mjs';
 import { mkdirSync, readFileSync, writeFileSync, existsSync, readdirSync, statSync, rmSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { tmpdir } from 'node:os';
@@ -997,6 +998,13 @@ async function main() {
 
   log('\n[4/4] Cocina');
   const ck = await buildCocina(states);
+
+  // Curaduría final (ver scripts/tourism-curation.mjs).
+  for (const e of ESTADOS) {
+    for (const key of ['historia', 'destinos']) {
+      hd[key][e.cve] = curateList(hd[key][e.cve], { cve: e.cve, key, stateName: e.nombre, onDrop: (it) => log(`curaduría: fuera ${e.cve}/${key} ${it.nombre}`) });
+    }
+  }
 
   // Escritura.
   rmSync(STATES_DIR, { recursive: true, force: true });

@@ -512,18 +512,6 @@
     "fuente": "https://www.wikidata.org/wiki/Q27826408"
    },
    {
-    "id": "Q6940478",
-    "nombre": "Museo Interactivo de Xalapa",
-    "tipo": "Museo",
-    "descripcion": "El Museo Interactivo de Xalapa fue un centro cultural con exposición científica y tecnológica. Fue diseñado por el arquitecto Francisco López-Guerra Almada e inaugurado el 12 de noviembre de 1992.",
-    "lat": 19.518,
-    "lon": -96.89415,
-    "imagen": null,
-    "wiki": "Museo Interactivo de Xalapa",
-    "municipio": "Xalapa",
-    "fuente": "https://www.wikidata.org/wiki/Q6940478"
-   },
-   {
     "id": "Q24550728",
     "nombre": "Museo de Sitio de El Tajín",
     "tipo": "Museo",

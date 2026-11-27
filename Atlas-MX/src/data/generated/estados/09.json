@@ -496,17 +496,6 @@
   ],
   "destinos": [
    {
-    "id": "Q1489",
-    "nombre": "Ciudad de México",
-    "tipo": "Ciudad",
-    "descripcion": "La Ciudad de México, antes denominada también México, Distrito Federal (México, D. F.), es la capital de los Estados Unidos Mexicanos, sede de los Poderes de la Unión y una de las entidades federativas que, junto con los treinta y un estados, conforman el país. Está dividida en dieciséis demarcaciones territoriales.",
-    "lat": 19.35377,
-    "lon": -99.13589,
-    "imagen": "Sobrevuelos CDMX HJ2A5091 (40386338731).jpg",
-    "wiki": "Ciudad de México",
-    "fuente": "https://www.wikidata.org/wiki/Q1489"
-   },
-   {
     "id": "Q15401946",
     "nombre": "Isla de las muñecas",
     "tipo": "Isla",
@@ -607,17 +596,6 @@
     "wiki": "Parque nacional Cerro de la Estrella",
     "municipio": "Iztapalapa",
     "fuente": "https://www.wikidata.org/wiki/Q4274872"
-   },
-   {
-    "id": "Q1811321",
-    "nombre": "La Feria de Chapultepec",
-    "tipo": "Atractivo turístico",
-    "descripcion": "La Feria de Chapultepec fue un parque de diversiones localizado en la Segunda Sección del Bosque de Chapultepec en la Ciudad de México.",
-    "lat": 19.41561,
-    "lon": -99.19578,
-    "imagen": "La Feria Chapultepec Mágico.JPG",
-    "wiki": "La Feria de Chapultepec",
-    "fuente": "https://www.wikidata.org/wiki/Q1811321"
    },
    {
     "id": "Q3375717",
@@ -820,17 +798,6 @@
     "wiki": "Aztlán Parque Urbano",
     "municipio": "Miguel Hidalgo",
     "fuente": "https://www.wikidata.org/wiki/Q125261430"
-   },
-   {
-    "id": "Q7310407",
-    "nombre": "Reino Aventura",
-    "tipo": "Atractivo turístico",
-    "descripcion": "Reino Aventura fue un parque de atracciones localizado en la alcaldía Tlalpan, en la parte suroeste de la Ciudad de México, inaugurado en 1982, cerca de la zona del Ajusco, sobre la Autopista Picacho-Ajusco.",
-    "lat": 19.295,
-    "lon": -99.209,
-    "imagen": null,
-    "wiki": "Reino Aventura",
-    "fuente": "https://www.wikidata.org/wiki/Q7310407"
    }
   ],
   "cocina": [
