@@ -14,7 +14,7 @@ import { fetchWithTimeout } from './http.js';
 
 const photoCache = new Map();
 const galleryCache = new Map();
-const PHOTO_WIDTH = 1200;
+const PHOTO_WIDTH = 1280;
 
 // Placeholder neutro en la paleta del sitio (sin texto, para no chocar con lo que va encima).
 const PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent(`

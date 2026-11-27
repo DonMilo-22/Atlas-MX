@@ -3,6 +3,7 @@ import { ArrowRight, Map as MapIcon } from 'lucide-react';
 import { vecinos, estado as getEstadoByCve } from '@webrek/mx-geo';
 import { formatArea, formatPopulation } from '../utils/map';
 import { CATEGORY_META, commonsThumb } from '../data/tourism';
+import { retryCommons } from '../utils/commons';
 import useStateTourism from '../hooks/useStateTourism';
 import StatePhoto from './StatePhoto';
 import { getTravelSeason } from '../data/travelSeasons';
@@ -32,7 +33,7 @@ function GuideButton({ state, onOpen }) {
   return (
     <button type="button" className="guide-cta" onClick={() => onOpen?.()} aria-label={`Qué visitar en ${state.nombre}: pueblos mágicos, historia, destinos y cocina`}>
       <span className={`guide-cta-photos n${photos.length}`} aria-hidden="true">
-        {photos.length ? photos.map((item) => <img key={item.id} src={commonsThumb(item.imagen, 360)} alt="" loading="lazy" decoding="async" />) : <span className="guide-cta-empty" />}
+        {photos.length ? photos.map((item) => <img key={item.id} src={commonsThumb(item.imagen, 330)} alt="" loading="lazy" decoding="async" onError={(event) => { if (!retryCommons(event.currentTarget)) event.currentTarget.style.visibility = 'hidden'; }} />) : <span className="guide-cta-empty" />}
       </span>
       <span className="guide-cta-text">
         <strong>Qué visitar en {state.nombreCorto}</strong>

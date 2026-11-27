@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchStatePhoto } from '../services/wikiService';
 import { PLACEHOLDER } from '../services/photoService';
+import { retryCommons } from '../utils/commons';
 
 /** Foto del propio estado (su artículo de Wikipedia o su elemento de Wikidata); nunca una imagen de otro lugar. */
 export default function StatePhoto({ stateCode, stateName }) {
@@ -24,7 +25,7 @@ export default function StatePhoto({ stateCode, stateName }) {
         src={photo?.url || PLACEHOLDER}
         alt={photo ? `Fotografía de ${stateName}` : ''}
         className={loading ? 'is-loading' : ''}
-        onError={() => setFailed(true)}
+        onError={(event) => { if (!retryCommons(event.currentTarget)) setFailed(true); }}
       />
       {photo && <a className="photo-credit" href={photo.page} target="_blank" rel="noopener noreferrer">Foto: {/commons\.wikimedia/.test(photo.page) ? 'Wikimedia Commons' : 'Wikipedia'}</a>}
     </>

@@ -5,6 +5,7 @@
  */
 import { ESTADOS, estadoDeCoordenada } from '@webrek/mx-geo';
 import { fetchWithTimeout } from './http.js';
+import { commonsThumbUrl } from '../utils/commons';
 // v3: se descartan resultados guardados con la regla de relevancia anterior (fotos y resúmenes de otros lugares).
 const STORAGE_KEY = 'atlas-mx:wiki:v3';
 const TTL_MS = 3 * 24 * 60 * 60 * 1000;
@@ -310,10 +311,9 @@ const STATE_QIDS = {
   '25': 'Q80252', '26': 'Q46422', '27': 'Q80914', '28': 'Q80007', '29': 'Q82681', '30': 'Q60130', '31': 'Q60176', '32': 'Q80269'
 };
 
-/** URL de un archivo de Wikimedia Commons al ancho pedido (sin pasar por la API). */
+/** Miniatura de un archivo de Wikimedia Commons al ancho pedido (sin pasar por la API). */
 export function commonsFileUrl(file, width = 1200) {
-  const name = String(file || '').replace(/^(File|Archivo):/i, '').replace(/ /g, '_');
-  return name ? `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(name)}?width=${width}` : '';
+  return commonsThumbUrl(file, width);
 }
 // Archivos que no son fotografías del lugar: mapas, escudos, banderas, logotipos, gráficas…
 // También imágenes de satélite (ISS, ESA, Landsat…): no son una vista del lugar.

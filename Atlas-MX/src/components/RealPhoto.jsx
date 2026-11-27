@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useRealPhoto } from '../hooks/useRealPhoto';
 import { PLACEHOLDER } from '../services/photoService';
+import { retryCommons } from '../utils/commons';
 
 /** Foto real de un lugar. `image` (archivo de Commons) y `placeId` (QID) son datos verificados opcionales. */
 export default function RealPhoto({ name, stateName = '', fallback = '', alt = '', className = '', image = null, placeId = null, ...props }) {
@@ -15,7 +16,7 @@ export default function RealPhoto({ name, stateName = '', fallback = '', alt = '
       loading="lazy"
       decoding="async"
       data-real-photo={isLoading ? 'loading' : 'ready'}
-      onError={() => { if (photoUrl !== PLACEHOLDER) setFailedUrl(photoUrl); }}
+      onError={(event) => { if (photoUrl !== PLACEHOLDER && !retryCommons(event.currentTarget)) setFailedUrl(photoUrl); }}
       {...props}
     />
   );

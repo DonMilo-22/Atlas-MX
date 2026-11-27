@@ -4,6 +4,7 @@ import useDialog from '../hooks/useDialog';
 import useStateTourism from '../hooks/useStateTourism';
 import { CATEGORY_META, commonsThumb, toPlace, wikipediaUrl } from '../data/tourism';
 import { CAPITAL_COORDS } from '../data/capitals';
+import { retryCommons } from '../utils/commons';
 import '../styles/guide.css';
 
 const fold = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
@@ -19,7 +20,7 @@ const CATEGORY_BY_KEY = Object.fromEntries(GUIDE_CATEGORIES.map((c) => [c.key, c
 function Photo({ file, width, alt = '', className = '' }) {
   const [failed, setFailed] = useState(false);
   if (!file || failed) return <span className={`guide-photo-empty ${className}`} aria-hidden="true" />;
-  return <img className={className} src={commonsThumb(file, width)} alt={alt} loading="lazy" decoding="async" onError={() => setFailed(true)} />;
+  return <img className={className} src={commonsThumb(file, width)} alt={alt} loading="lazy" decoding="async" onError={(event) => { if (!retryCommons(event.currentTarget)) setFailed(true); }} />;
 }
 
 function names(list, max = 3) {

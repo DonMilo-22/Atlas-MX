@@ -1,6 +1,7 @@
 // Catálogo turístico verificado (generado por scripts/build-tourism-data.mjs a partir de
 // Wikidata, Wikipedia en español y el listado oficial de Pueblos Mágicos de SECTUR).
 import { ESTADOS } from '@webrek/mx-geo';
+import { commonsThumbUrl } from '../utils/commons';
 
 // Carga perezosa por estado (code splitting de Vite)
 const loaders = import.meta.glob('./generated/estados/*.json');
@@ -35,8 +36,7 @@ export const CATEGORY_META = {
 };
 
 export function commonsThumb(fileName, width = 640) {
-  if (!fileName) return null;
-  return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=${width}`;
+  return fileName ? commonsThumbUrl(fileName, width) : null;
 }
 
 export function wikipediaUrl(title) {

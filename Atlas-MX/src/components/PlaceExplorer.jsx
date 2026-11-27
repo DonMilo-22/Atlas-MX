@@ -11,6 +11,7 @@ import PlaceMap from './PlaceMap';
 import WikiSummary from './WikiSummary';
 import WeatherIcon from './WeatherIcon';
 import PhotoLightbox from './PhotoLightbox';
+import { retryCommons } from '../utils/commons';
 
 const TABS = [
   { id: 'resumen', label: 'Resumen', icon: MapPin },
@@ -173,7 +174,7 @@ export default function PlaceExplorer({ isOpen, onClose, placeName, stateName, c
             {tab === 'resumen' && (
               <>
                 <button type="button" className={`explorer-photo ${photosLoading ? 'is-loading' : ''}`} onClick={() => photos.length && setLightboxIndex(0)} disabled={!photos.length} aria-label={photos.length ? `Ver ${photos.length} fotos de ${placeName}` : 'Sin fotografías'}>
-                  <img src={heroPhoto} alt="" onError={() => { if (heroPhoto !== PLACEHOLDER) setBrokenPhoto(heroPhoto); }} />
+                  <img src={heroPhoto} alt="" onError={(event) => { if (heroPhoto !== PLACEHOLDER && !retryCommons(event.currentTarget)) setBrokenPhoto(heroPhoto); }} />
                   {photos.length > 1 && <span><Images size={13} aria-hidden="true" /> {photos.length} fotos</span>}
                 </button>
                 <WikiSummary

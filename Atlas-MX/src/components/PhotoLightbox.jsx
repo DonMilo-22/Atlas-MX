@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Images, X } from 'lucide-react';
 import useDialog from '../hooks/useDialog';
+import { retryCommons } from '../utils/commons';
 
 // Las miniaturas de Commons tienen la forma .../commons/thumb/a/ab/Archivo.jpg/1200px-Archivo.jpg;
 // los archivos verificados llegan como .../wiki/Special:FilePath/Archivo.jpg?width=1200
@@ -32,9 +33,9 @@ export default function PhotoLightbox({ photos, initialIndex = 0, placeName, onC
     </div>
     <div className="photo-lightbox-stage">
       {photos.length > 1 && <button type="button" onClick={() => setIndex((current) => (current - 1 + photos.length) % photos.length)} aria-label="Fotografía anterior"><ChevronLeft size={30} /></button>}
-      <img src={photos[index]} alt={`${placeName}, fotografía ${index + 1}`} />
+      <img src={photos[index]} alt={`${placeName}, fotografía ${index + 1}`} onError={(event) => retryCommons(event.currentTarget)} />
       {photos.length > 1 && <button type="button" onClick={() => setIndex((current) => (current + 1) % photos.length)} aria-label="Fotografía siguiente"><ChevronRight size={30} /></button>}
     </div>
-    {photos.length > 1 && <div className="photo-lightbox-thumbs">{photos.map((photo, photoIndex) => <button key={photo} type="button" className={photoIndex === index ? 'active' : ''} onClick={() => setIndex(photoIndex)} aria-label={`Ver fotografía ${photoIndex + 1}`}><img src={photo} alt="" /></button>)}</div>}
+    {photos.length > 1 && <div className="photo-lightbox-thumbs">{photos.map((photo, photoIndex) => <button key={photo} type="button" className={photoIndex === index ? 'active' : ''} onClick={() => setIndex(photoIndex)} aria-label={`Ver fotografía ${photoIndex + 1}`}><img src={photo} alt="" onError={(event) => retryCommons(event.currentTarget)} /></button>)}</div>}
   </div>;
 }
