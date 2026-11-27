@@ -1,0 +1,515 @@
+{
+ "cve": "24",
+ "estado": "San Luis Potosí",
+ "wikidata": "Q78980",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q3311830",
+    "nombre": "Aquismón",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Aquismón (del huasteco: Akichmom ‘Manantial de aquiche’) es una población perteneciente al estado de San Luis Potosí en México; se encuentra en la denominada Huasteca Potosina al oriente del estado y es cabecera del municipio homónimo.",
+    "lat": 21.6225,
+    "lon": -99.02,
+    "imagen": "Templo de San Miguel Arcángel - Aquismón, SLP.jpg",
+    "wiki": "Aquismón",
+    "municipio": "Aquismón",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3311830"
+   },
+   {
+    "id": "Q20275842",
+    "nombre": "Ciudad del Maíz",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ciudad del Maíz es una localidad del estado mexicano de San Luis Potosí, cabecera del municipio homónimo.",
+    "lat": 22.40194,
+    "lon": -99.60472,
+    "imagen": "Iglesia del Pueblo, cd del Maiz.jpg",
+    "wiki": "Ciudad del Maíz",
+    "municipio": "Ciudad del Maíz",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20275842"
+   },
+   {
+    "id": "Q1027749",
+    "nombre": "Real de Catorce",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Real de Catorce (conocida como Wirikuta en lengua huichol) es un antiguo pueblo minero y Pueblo Mágico ubicado cerca de Matehuala, en el corazón de la Sierra de Catorce, al norte del estado de San Luis Potosí, en México.",
+    "lat": 23.69,
+    "lon": -100.88611,
+    "imagen": "Panorámica de Real de Catorce.jpg",
+    "wiki": "Real de Catorce",
+    "municipio": "Catorce",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1027749"
+   },
+   {
+    "id": "Q20261020",
+    "nombre": "Santa María del Río",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Santa María del Río es una localidad del estado mexicano de San Luis Potosí, cabecera del municipio homónimo.",
+    "lat": 21.79693,
+    "lon": -100.73684,
+    "imagen": "SantaMariadelRio038.jpg",
+    "wiki": "Santa María del Río (México)",
+    "municipio": "Santa María del Río",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20261020"
+   },
+   {
+    "id": "Q20288653",
+    "nombre": "Tierra Nueva",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tierra Nueva es una localidad del estado mexicano de San Luis Potosí, cabecera del municipio homónimo.",
+    "lat": 21.66797,
+    "lon": -100.57274,
+    "imagen": null,
+    "wiki": "Tierra Nueva (San Luis Potosí)",
+    "municipio": "Tierra Nueva",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.gob.mx/sectur/prensa/mexico-con-45-nuevos-pueblos-magicos"
+   },
+   {
+    "id": "Q2313212",
+    "nombre": "Xilitla",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Xilitla es una localidad del estado mexicano de San Luis Potosí. Es la cabecera del municipio de Xilitla.",
+    "lat": 21.38519,
+    "lon": -98.98957,
+    "imagen": "XilitlaSLP.jpg",
+    "wiki": "Xilitla (San Luis Potosí)",
+    "municipio": "Xilitla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2313212"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q5694278",
+    "nombre": "Catedral de San Luis Potosí",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Metropolitana de San Luis Potosí, oficialmente Catedral de Nuestra Señora de la Expectación, es la sede de la arquidiócesis de San Luis Potosí y uno de los principales templos de la Iglesia católica en México.",
+    "lat": 22.15172,
+    "lon": -100.97553,
+    "imagen": "Metropolitan Cathedral - San Luis Potosi - Mexico (32486136258).jpg",
+    "wiki": "Catedral metropolitana de San Luis Potosí",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5694278"
+   },
+   {
+    "id": "Q24199776",
+    "nombre": "Centro histórico de San Luis Potosí",
+    "tipo": "Centro histórico",
+    "descripcion": "El centro histórico de San Luis Potosí es la zona de monumentos históricos de la ciudad mexicana de San Luis Potosí en el estado homónimo declarado por el Instituto Nacional de Antropología e Historia (INAH) como Patrimonio de la nación.",
+    "lat": 22.15167,
+    "lon": -100.97639,
+    "imagen": "Catedral de San Luis Potosi.jpg",
+    "wiki": "Centro histórico de San Luis Potosí",
+    "municipio": "San Luis Potosí",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q24199776"
+   },
+   {
+    "id": "Q6138574",
+    "nombre": "Tamtoc",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tamtoc, Tamtok o Tamohí (téenek para \"lugar de las nubes de agua\") es un yacimiento arqueológico de la cultura huasteca, se encuentra en el municipio de Tamuín en el estado mexicano de San Luis Potosí, en lo que hoy en día se conoce como la región Huasteca.",
+    "lat": 21.925,
+    "lon": -98.815,
+    "imagen": "Tamtoc - panoramio.jpg",
+    "wiki": "Tamtoc",
+    "fuente": "https://www.wikidata.org/wiki/Q6138574"
+   },
+   {
+    "id": "Q11688402",
+    "nombre": "Las Pozas",
+    "tipo": "Museo",
+    "descripcion": "Las Pozas, también conocido como Jardín Escultórico Edward James, Las Pozas, es un conjunto artístico arquitectónico y escultórico surrealista creado por Edward James en el municipio de Xilitla (San Luis Potosí, México).",
+    "lat": 21.397,
+    "lon": -98.997,
+    "imagen": "Xilitla Las Pozas 0407 036.jpg",
+    "wiki": "Las Pozas",
+    "municipio": "Xilitla",
+    "fuente": "https://www.wikidata.org/wiki/Q11688402"
+   },
+   {
+    "id": "Q5758495",
+    "nombre": "Catedral de Matehuala",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de la Inmaculada Concepción de Matehuala es un templo católico elevado al rango de catedral situado en la ciudad mexicana de Matehuala, en el estado de San Luis Potosí. Aunque el templo se encuentra abierto al culto, aún se halla en fase de construcción.",
+    "lat": 23.64643,
+    "lon": -100.64438,
+    "imagen": "Catderal de Matehuala, S.L.P.jpg",
+    "wiki": "Catedral de Matehuala",
+    "fuente": "https://www.wikidata.org/wiki/Q5758495"
+   },
+   {
+    "id": "Q25412475",
+    "nombre": "Catedral Basílica Santuario de Nuestra Señora de Guadalupe",
+    "tipo": "Templo",
+    "descripcion": "La Basílica Santuario de Nuestra Señora de Guadalupe es un edificio católico ubicado en la Calzada de Guadalupe del centro histórico de la ciudad de San Luis Potosí, San Luis Potosí, México.",
+    "lat": 22.13626,
+    "lon": -100.9709,
+    "imagen": "Basílica Santuario de Nuestra Señora de Guadalupe (San Luis Potosí).jpg",
+    "wiki": "Basílica Santuario de Nuestra Señora de Guadalupe (San Luis Potosí)",
+    "fuente": "https://www.wikidata.org/wiki/Q25412475"
+   },
+   {
+    "id": "Q25409771",
+    "nombre": "Museo Regional Potosino",
+    "tipo": "Museo",
+    "descripcion": "El museo Regional Potosino fue inaugurado el 20 de noviembre de 1952. Se encuentra ubicado en parte de lo que fue el convento de San Francisco construido en 1586.",
+    "lat": 22.14963,
+    "lon": -100.97809,
+    "imagen": "Capilla de Aranzazú.JPG",
+    "wiki": "Museo Regional Potosino",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q25409771"
+   },
+   {
+    "id": "Q66257728",
+    "nombre": "Museo Leonora Carrington",
+    "tipo": "Museo",
+    "descripcion": "El Museo Leonora Carrington es un museo con sedes en las ciudades de San Luis Potosí y Xilitla, en el estado de San Luis Potosí, México.",
+    "lat": 22.1385,
+    "lon": -100.97287,
+    "imagen": "Entrada invetora atole.jpg",
+    "wiki": "Museo Leonora Carrington",
+    "fuente": "https://www.wikidata.org/wiki/Q66257728"
+   },
+   {
+    "id": "Q24203801",
+    "nombre": "Templo de San Agustín",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Agustín es un edificio católico ubicado en el centro histórico de la ciudad de San Luis Potosí, San Luis Potosí, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 22.14944,
+    "lon": -100.97417,
+    "imagen": "Iglesia san agustin.JPG",
+    "wiki": "Templo de San Agustín (San Luis Potosí)",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q24203801"
+   },
+   {
+    "id": "Q42565888",
+    "nombre": "Templo de Nuestra Señora del Carmen",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Nuestra Señora del Carmen es un edificio católico ubicado en la Plaza del Carmen del centro histórico de la ciudad de San Luis Potosí, San Luis Potosí, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 22.15164,
+    "lon": -100.97361,
+    "imagen": "Nuestra señora del Carmen in SLP2018.jpg",
+    "wiki": "Templo de Nuestra Señora del Carmen (San Luis Potosí)",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q42565888"
+   },
+   {
+    "id": "Q115664734",
+    "nombre": "Iglesia Nacional Presbiteriana",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia Nacional Presbiteriana o Iglesia Sion es un edificio presbiteriano ubicado en el Jardín Guerrero en el centro histórico de la ciudad de San Luis Potosí, San Luis Potosí, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 22.14894,
+    "lon": -100.97742,
+    "imagen": "PresbiterianaSLP01.JPG",
+    "wiki": "Iglesia Nacional Presbiteriana (San Luis Potosí)",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q115664734"
+   },
+   {
+    "id": "Q9047131",
+    "nombre": "Museo del Virreinato",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Virreinato está ubicado en un edificio del siglo XVIII; el entonces Convento de Carmelitas Descalzos en la ciudad de San Luis Potosí, San Luis Potosí, México. En 1998 se propuso ante el Gobierno del Estado de San Luis Potosí la creación de un museo dedicado al arte virreinal mexicano.",
+    "lat": 22.15144,
+    "lon": -100.97374,
+    "imagen": "Convento_del_Carmen_de_San_Luis_Potosí.jpg",
+    "wiki": "Museo del Virreinato",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q9047131"
+   },
+   {
+    "id": "Q10940266",
+    "nombre": "Museo Interactivo Laberinto de las Ciencias y las Artes",
+    "tipo": "Museo",
+    "descripcion": "El Museo Interactivo Laberinto de las Ciencias y las Artes es un museo ubicado en la ciudad de San Luis Potosí, en México. Fue edificado en el Parque Tangamanga I de esta ciudad e inaugurado el 4 de septiembre de 2008.",
+    "lat": 22.11738,
+    "lon": -100.99909,
+    "imagen": "Dsc03649dk9.jpg",
+    "wiki": "Museo Interactivo Laberinto de las Ciencias y las Artes",
+    "fuente": "https://www.wikidata.org/wiki/Q10940266"
+   },
+   {
+    "id": "Q25411212",
+    "nombre": "Museo Federico Silva",
+    "tipo": "Museo",
+    "descripcion": "El Museo Federico Silva está ubicado en el centro histórico de la ciudad de San Luis Potosí, San Luis Potosí, México. Inaugurado el 18 de septiembre de 2003, se dedica exclusivamente al arte escultórico, el primer museo de su tipo en toda Hispanoamérica.",
+    "lat": 22.15313,
+    "lon": -100.97444,
+    "imagen": "Federico Silva Museum.jpg",
+    "wiki": "Museo Federico Silva",
+    "fuente": "https://www.wikidata.org/wiki/Q25411212"
+   },
+   {
+    "id": "Q28502429",
+    "nombre": "Museo del Ferrocarril en San Luis Potosí",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Ferrocarril Jesús García Corona está ubicado en el Barrio del Montecillo de la ciudad de San Luis Potosí, San Luis Potosí, México.",
+    "lat": 22.15294,
+    "lon": -100.97128,
+    "imagen": "Museo_del_Ferrocarril_de_SLP.jpg",
+    "wiki": "Museo del Ferrocarril Jesús García Corona",
+    "fuente": "https://www.wikidata.org/wiki/Q28502429"
+   },
+   {
+    "id": "Q28663460",
+    "nombre": "Centro de las Artes de San Luis Potosí",
+    "tipo": "Museo",
+    "descripcion": "El Centro de las Artes de San Luis Potosí Centenario (CEART) es un centro cultural de estilo ecléctico ubicado en la Calzada de Guadalupe de la ciudad de San Luis Potosí, San Luis Potosí, México.",
+    "lat": 22.13895,
+    "lon": -100.97082,
+    "imagen": "Centre des Arts de San Luis Potosí Centenario.png",
+    "wiki": "Centro de las Artes de San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q28663460"
+   },
+   {
+    "id": "Q28517680",
+    "nombre": "Capilla de Loreto",
+    "tipo": "Templo",
+    "descripcion": "La Capilla de Loreto es un edificio católico ubicado en la Plaza Fundadores de la ciudad de San Luis Potosí, San Luis Potosí, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 22.15262,
+    "lon": -100.97832,
+    "imagen": "Iglesia de la Compañía de Jesús y Capilla de Loreto, SLP. Feb. 2011.JPG",
+    "wiki": "Capilla de Loreto (San Luis Potosí)",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q28517680"
+   },
+   {
+    "id": "Q36334383",
+    "nombre": "Cineteca Alameda",
+    "tipo": "Museo",
+    "descripcion": "La Cineteca Alameda es una cineteca ubicada en la ciudad de San Luis Potosí, en el estado de ese mismo nombre, en México. Está dedicada a la exhibición de cine de México y otros países y ocupa el edificio del Teatro Alameda, un recinto construido en los años 40 frente a la Alameda Juan Sarabia de esa ciudad.",
+    "lat": 22.1504,
+    "lon": -100.97312,
+    "imagen": "Cineteca Alameda - San Luis Potosí.jpg",
+    "wiki": "Cineteca Alameda",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q36334383"
+   },
+   {
+    "id": "Q115618642",
+    "nombre": "Casa Mariano Jiménez",
+    "tipo": "Museo",
+    "descripcion": "La Casa Museo Mariano Jiménez es un espacio cultural ubicado en el centro histórico de la ciudad de San Luis Potosí, México. La casa museo es catalogada como monumentos histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 22.14949,
+    "lon": -100.97607,
+    "imagen": "Museo_de_las_revoluciones.JPG",
+    "wiki": "Casa Mariano Jiménez",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q115618642"
+   },
+   {
+    "id": "Q115618643",
+    "nombre": "Casa Museo Manuel José Othón",
+    "tipo": "Museo",
+    "descripcion": "La Casa Museo Manuel José Othón está ubicada cerca de la Plaza del Carmen de la ciudad de San Luis Potosí, San Luis Potosí, México. Inaugurado el 28 de noviembre de 1966, se dedica a tratar sobre la vida y la obra del poeta potosino Manuel José Othón, quien nació en la casa.",
+    "lat": 22.15184,
+    "lon": -100.97496,
+    "imagen": "Museo_Othoniano_(Casa_de_Othón).jpg",
+    "wiki": "Casa Museo Manuel José Othón",
+    "fuente": "https://www.wikidata.org/wiki/Q115618643"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q204271",
+    "nombre": "San Luis Potosí",
+    "tipo": "Ciudad",
+    "descripcion": "San Luis Potosí es una ciudad mexicana, siendo esta la capital y ciudad más poblada del estado de San Luis Potosí y la cabecera del municipio homónimo. Se encuentra ubicada en el poniente del estado en la llamada Zona centro y es sede de los poderes ejecutivo, legislativo y judicial del estado.",
+    "lat": 22.14972,
+    "lon": -100.975,
+    "imagen": "Montage San Luis Potosi.jpg",
+    "wiki": "San Luis Potosí (México)",
+    "municipio": "San Luis Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q204271"
+   },
+   {
+    "id": "Q1002537",
+    "nombre": "Ciudad Valles",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Valles es una ciudad del estado mexicano de San Luis Potosí, es cabecera del Municipio de Ciudad Valles. Se localiza en el oriente del estado, en la región de la Huasteca Potosina, a orillas del Río Valles afluente de Río Tampaón.",
+    "lat": 21.98654,
+    "lon": -99.01872,
+    "imagen": "CVALSLPCOL.jpg",
+    "wiki": "Ciudad Valles",
+    "municipio": "Ciudad Valles",
+    "fuente": "https://www.wikidata.org/wiki/Q1002537"
+   },
+   {
+    "id": "Q1962080",
+    "nombre": "Soledad de Graciano Sánchez",
+    "tipo": "Ciudad",
+    "descripcion": "Soledad de Graciano Sánchez es una ciudad del centro de México, localizada en el estado de San Luis Potosí, y cabecera del municipio homónimo.",
+    "lat": 22.18306,
+    "lon": -100.94083,
+    "imagen": "Parroquia Nuestra Señora de la Soledad, Soledad de Graciano Sánchez, San Luis Potosí.jpg",
+    "wiki": "Soledad de Graciano Sánchez",
+    "municipio": "Soledad de Graciano Sánchez",
+    "fuente": "https://www.wikidata.org/wiki/Q1962080"
+   },
+   {
+    "id": "Q1688770",
+    "nombre": "Sótano de las Golondrinas",
+    "tipo": "Gruta",
+    "descripcion": "El Sótano de Las Golondrinas es un abismo natural localizado en el poblado de Aquismón perteneciente al estado mexicano de San Luis Potosí.",
+    "lat": 21.59972,
+    "lon": -99.09889,
+    "imagen": "Golondrinas Entrance Rappelling.png",
+    "wiki": "Sótano de las Golondrinas",
+    "fuente": "https://www.wikidata.org/wiki/Q1688770"
+   },
+   {
+    "id": "Q1925390",
+    "nombre": "Rioverde",
+    "tipo": "Ciudad",
+    "descripcion": "Rioverde es una ciudad del estado mexicano de San Luis Potosí, cabecera del Municipio de Rioverde. Es el centro agrícola, económico, turístico y demográfico más importante de la 'Zona Media.",
+    "lat": 21.93032,
+    "lon": -99.99169,
+    "imagen": "Iglesia Santa catarina, Rioverde.jpg",
+    "wiki": "Rioverde (San Luis Potosí)",
+    "municipio": "Rioverde",
+    "fuente": "https://www.wikidata.org/wiki/Q1925390"
+   },
+   {
+    "id": "Q2471832",
+    "nombre": "Tamazunchale",
+    "tipo": "Ciudad",
+    "descripcion": "Tamazunchale (del huasteco: Tam Uxum Tsꞌalej ‘Lugar de la mujer gobernante’) es una Ciudad del estado de San Luis Potosí, cabecera del municipio de Tamazunchale. Se fundó en 1826.",
+    "lat": 21.2625,
+    "lon": -98.79167,
+    "imagen": "Tamazunchale S.L.P.jpg",
+    "wiki": "Tamazunchale",
+    "municipio": "Tamazunchale",
+    "fuente": "https://www.wikidata.org/wiki/Q2471832"
+   },
+   {
+    "id": "Q2655761",
+    "nombre": "Tamuín",
+    "tipo": "Ciudad",
+    "descripcion": "Tamuín (del huasteco: Tam Inik ‘Lugar de los hombres’) es una población del estado mexicano de San Luis Potosí y cabecera municipal del Municipio de Tamuín. Cuenta con importantes recursos naturales como el Río Tampaón y la sierra del Abra-Tanchipa, así como una población principalmente indígena y mestiza.",
+    "lat": 22.00554,
+    "lon": -98.77972,
+    "imagen": "Immaculate Conception of Mary Church, Tamuin, San Luis Potosi state, Mexico .jpg",
+    "wiki": "Tamuín",
+    "municipio": "Tamuín",
+    "fuente": "https://www.wikidata.org/wiki/Q2655761"
+   },
+   {
+    "id": "Q1997557",
+    "nombre": "Salinas de Hidalgo",
+    "tipo": "Ciudad",
+    "descripcion": "Salinas de Hidalgo es una ciudad del estado mexicano de San Luis Potosí y cabecera del municipio de Salinas, localizado en el Altiplano de San Luis Potosí, en el oeste del territorio. La localidad llevaba el mismo nombre que el municipio hasta 1960, fecha en que se modifica a su nombre actual.",
+    "lat": 22.62802,
+    "lon": -101.71557,
+    "imagen": null,
+    "wiki": "Salinas de Hidalgo",
+    "municipio": "Salinas",
+    "fuente": "https://www.wikidata.org/wiki/Q1997557"
+   },
+   {
+    "id": "Q3364414",
+    "nombre": "Parque Nacional Gogorrón",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Gogorrón es un parque nacional de México situado en el estado de San Luis Potosí. Esta área protegida de 250 km² fue creada en 1936.",
+    "lat": 21.8029,
+    "lon": -100.931,
+    "imagen": null,
+    "wiki": "Parque nacional Gogorrón",
+    "fuente": "https://www.wikidata.org/wiki/Q3364414"
+   },
+   {
+    "id": "Q3364410",
+    "nombre": "Parque Nacional El Potosí",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional El Potosí es un parque nacional de México situado en el estado de San Luis Potosí. Tiene una superficie de 20 km² y fue creado el 15 de septiembre de 1936.",
+    "lat": 21.90361,
+    "lon": -100.33806,
+    "imagen": null,
+    "wiki": "Parque nacional El Potosí",
+    "fuente": "https://www.wikidata.org/wiki/Q3364410"
+   },
+   {
+    "id": "Q5755932",
+    "nombre": "Cascada de Tamul",
+    "tipo": "Cascada",
+    "descripcion": "La cascada de Tamul es un salto de agua de México, el salto de agua más grande del estado de San Luis Potosí, en la cima del cañón del río Santa María, de 300 m de profundidad. La cascada del Tamul tiene 105 metros de altura.",
+    "lat": 21.80139,
+    "lon": -99.17944,
+    "imagen": "Cascada de Tamul vista desdes abajo.jpg",
+    "wiki": "Cascada de Tamul",
+    "fuente": "https://www.wikidata.org/wiki/Q5755932"
+   },
+   {
+    "id": "Q31690533",
+    "nombre": "Sierra El Tizú",
+    "tipo": "Montaña",
+    "descripcion": "La Sierra El Tizú es una montaña en los municipios de Guadalcázar, San Luis Potosí y Mier y Noriega y Doctor Arroyo, Nuevo León; en México, la cima alcanza los 2,100 metros sobre el nivel del mar, forma parte de una región constituida por sierras bajas alargadas paralelas con orientación noroeste a sureste, que…",
+    "lat": 23.23861,
+    "lon": -100.32556,
+    "imagen": null,
+    "wiki": "Sierra El Tizú",
+    "fuente": "https://www.wikidata.org/wiki/Q31690533"
+   },
+   {
+    "id": "Q5823243",
+    "nombre": "El Salto",
+    "tipo": "Cascada",
+    "descripcion": "El Salto es una cascada que se encuentra localizada en el municipio de El Naranjo, 171.5 km al E-NE de la capital de estado de San Luis Potosí, en México en las coordenadas geográficas 22°35′12″N 99°23′00″O. Tiene una altura de 70 metros.",
+    "lat": 22.58667,
+    "lon": -99.38353,
+    "imagen": "Rio El Salto SLP, Verano 2002.jpg",
+    "wiki": "El Salto (San Luis Potosí)",
+    "municipio": "El Naranjo",
+    "fuente": "https://www.wikidata.org/wiki/Q5823243"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5782568",
+    "nombre": "Condoches",
+    "tipo": "Pan",
+    "descripcion": "Los condoches son un pan mexicano, típico de la Mesa Central de México, especialmente en los estados de Aguascalientes, Zacatecas y San Luis Potosí.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Festival_del_Condoche_03.jpg",
+    "wiki": "Condoches",
+    "fuente": "https://www.wikidata.org/wiki/Q5782568"
+   },
+   {
+    "id": "Q141182209",
+    "nombre": "Enchilada potosina",
+    "tipo": "Platillo",
+    "descripcion": "La enchilada potosina es un antojito tradicional de la gastronomía mexicana, originario del municipio de Soledad de Graciano Sánchez, en el estado de San Luis Potosí, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "EnchiladasPotosinas.JPG",
+    "wiki": "Enchilada potosina",
+    "fuente": "https://www.wikidata.org/wiki/Q141182209"
+   }
+  ]
+ }
+}

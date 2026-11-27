@@ -1,0 +1,1007 @@
+{
+ "cve": "31",
+ "estado": "Yucatán",
+ "wikidata": "Q60176",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2448265",
+    "nombre": "Espita",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Espita es una localidad cabecera del municipio homónimo, siendo uno de los 7 pueblos mágicos de Yucatán; ubicada en la región noreste del estado de Yucatán, en México.",
+    "lat": 21.01278,
+    "lon": -88.30472,
+    "imagen": "Espita 17.07.19.jpg",
+    "wiki": "Espita",
+    "municipio": "Espita",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2448265"
+   },
+   {
+    "id": "Q1020762",
+    "nombre": "Izamal",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Izamal (del maya: Itzmal ‘Rocío del cielo’) es una ciudad cabecera del municipio homónimo ubicada en la región centro del estado mexicano de Yucatán, a una distancia de aproximadamente 70 kilómetros al este de Mérida, la capital del estado.",
+    "lat": 20.93139,
+    "lon": -89.01778,
+    "imagen": "Izamal, Yucatán (72).jpg",
+    "wiki": "Izamal",
+    "municipio": "Izamal",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1020762"
+   },
+   {
+    "id": "Q957947",
+    "nombre": "Maní",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Maní es una pequeña ciudad del estado de Yucatán, en México. Es la cabecera del municipio del mismo nombre.",
+    "lat": 20.38639,
+    "lon": -89.39028,
+    "imagen": "Convento Maní Yucatán 6.jpg",
+    "wiki": "Maní (Yucatán)",
+    "municipio": "Maní",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q957947"
+   },
+   {
+    "id": "Q944292",
+    "nombre": "Motul",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Motul (del maya: Mutul: toponímico, “el ave ‘mut’”; también puede significar “nudo”), oficialmente Motul de Carrillo Puerto, es la ciudad cabecera del municipio de Motul ubicada en la región litoral centro del estado mexicano de Yucatán, a una distancia aproximada de 45 kilómetros en dirección noreste de la ciudad de…",
+    "lat": 21.095,
+    "lon": -89.28306,
+    "imagen": "Portada wiki.jpg",
+    "wiki": "Motul de Carrillo Puerto",
+    "municipio": "Motul",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q944292"
+   },
+   {
+    "id": "Q517463",
+    "nombre": "Sisal",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Sisal es un puerto mexicano ubicado en el litoral nor-poniente del Estado de Yucatán, en el Golfo de México y localizado en el municipio de Hunucmá. En el pasado fue llamado también Santa María de Zizal.",
+    "lat": 21.16528,
+    "lon": -90.03056,
+    "imagen": "Parque principal de Sisal, Yucatán, México. - panoramio.jpg",
+    "wiki": "Sisal (Yucatán)",
+    "municipio": "Hunucmá",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q517463"
+   },
+   {
+    "id": "Q1880859",
+    "nombre": "Tekax",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tekax (del maya: Kʼáax), oficialmente Tekax de Álvaro Obregón es una ciudad cabecera del municipio del mismo nombre, ubicada en el estado mexicano de Yucatán.",
+    "lat": 20.20194,
+    "lon": -89.28806,
+    "imagen": "TEAX Yucatan 2017.jpg",
+    "wiki": "Tekax de Álvaro Obregón",
+    "municipio": "Tekax",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1880859"
+   },
+   {
+    "id": "Q1024731",
+    "nombre": "Valladolid",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Valladolid (en maya: Sakiꞌ) es una ciudad del estado de Yucatán, en México, así como la cabecera del municipio del mismo nombre. Se ubica al sureste del país, en la región oriente del estado, a 170 km de Mérida.",
+    "lat": 20.68944,
+    "lon": -88.20167,
+    "imagen": "Valladolid iglesia 2.jpg",
+    "wiki": "Valladolid (México)",
+    "municipio": "Valladolid",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1024731"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q5859",
+    "nombre": "Chichén Itzá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chichén Itzá es uno de los principales sitios arqueológicos mayas de la península de Yucatán en México. Se encuentra a escasos 2.5 km de la localidad de Pisté, en el municipio de Tinum, en el estado de Yucatán, al sureste de México.",
+    "lat": 20.68306,
+    "lon": -88.56861,
+    "imagen": "Chichen Itza 3.jpg",
+    "wiki": "Chichén Itzá",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5859"
+   },
+   {
+    "id": "Q213232",
+    "nombre": "Uxmal",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Uxmal (del maya yucateco: Óoxmáal ‘Tres veces’) (AFI: [óˑʃmáˑl]) es una antigua ciudad maya del periodo clásico. Está localizada en el municipio de Santa Elena, en el estado de Yucatán, México.",
+    "lat": 20.35944,
+    "lon": -89.77139,
+    "imagen": "Panoramica Uxmal.jpg",
+    "wiki": "Uxmal",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q213232"
+   },
+   {
+    "id": "Q1128327",
+    "nombre": "Templo de Kukulcán",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Kukulcán (también conocido con el nombre de «El Castillo»), es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre.",
+    "lat": 20.68289,
+    "lon": -88.56861,
+    "imagen": "Chichen Itza 3.jpg",
+    "wiki": "Templo de Kukulcán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1128327"
+   },
+   {
+    "id": "Q325468",
+    "nombre": "Kabáh",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Kabáh es un yacimiento arqueológico maya, ubicado en el municipio de Santa Elena, en el estado de Yucatán, México, al sureste de Uxmal, que forma parte de la denominada ruta Puuc.",
+    "lat": 20.24843,
+    "lon": -89.6473,
+    "imagen": "KabahMasksCatherwood.jpg",
+    "wiki": "Kabah (sitio arqueológico)",
+    "municipio": "Santa Elena",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q325468"
+   },
+   {
+    "id": "Q1522451",
+    "nombre": "Labná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Labná es un yacimiento arqueológico de la civilización maya en el estado de Yucatán, México.",
+    "lat": 20.1725,
+    "lon": -89.579,
+    "imagen": "Labná.JPG",
+    "wiki": "Labná",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1522451"
+   },
+   {
+    "id": "Q1419214",
+    "nombre": "Sayil",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Sayil es un yacimiento arqueológico maya, ubicado en el suroeste del Estado de Yucatán, en el municipio de Santa Elena, México, muy cerca del también yacimiento maya de Uxmal.",
+    "lat": 20.17776,
+    "lon": -89.65218,
+    "imagen": "Palacio Sayil.jpg",
+    "wiki": "Sayil",
+    "municipio": "Oxkutzcab",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1419214"
+   },
+   {
+    "id": "Q567966",
+    "nombre": "Mayapán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El sitio arqueológico de Mayapán (del maya yucateco: Máayapaan) fue una ciudad maya del período posclásico. Se localiza en el noroeste del estado de Yucatán, en el municipio de Tecoh, a unos 40 kilómetros de distancia de la ciudad de Mérida, la capital del estado.",
+    "lat": 20.62944,
+    "lon": -89.46056,
+    "imagen": "Mayapan perspectiva 1.jpg",
+    "wiki": "Mayapán",
+    "municipio": "Tecoh",
+    "fuente": "https://www.wikidata.org/wiki/Q567966"
+   },
+   {
+    "id": "Q26596",
+    "nombre": "Dzibilchaltún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Dzibilchaltún (originalmente llamado Ich Kaan Ti'Ho) es una antigua zona arqueológica maya localizada en el estado de Yucatán, México, la cual constituyó una gran ciudad maya integrada por diversos grupos arquitectónicos ceremoniales conformados por pirámides, templos, plazas, y estelas, abarca aproximadamente 25…",
+    "lat": 21.091,
+    "lon": -89.5903,
+    "imagen": "Dzibilchaltun.jpg",
+    "wiki": "Dzibilchaltún (zona arqueológica)",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q26596"
+   },
+   {
+    "id": "Q988570",
+    "nombre": "Ek Balam",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ek' Balam (del maya yucateco: Éekꞌ Báalam ‘Estrella jaguar’) es un sitio arqueológico y antigua ciudad maya en el estado de Yucatán, México. Ek' Balam fue la capital del reino maya de Talol que gobernó una parte del noreste de Yucatán.",
+    "lat": 20.89109,
+    "lon": -88.13626,
+    "imagen": "Ekbalam-Wall-Round-Building.png",
+    "wiki": "Ek Balam",
+    "municipio": "Temozón",
+    "fuente": "https://www.wikidata.org/wiki/Q988570"
+   },
+   {
+    "id": "Q3034708",
+    "nombre": "Pirámide del Adivino",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Pirámide del Adivino, también llamada del Hechicero, del Enano o del gran Chilán, es una gran construcción maya de 35 metros de altura ubicada en el complejo de la antigua ciudad de Uxmal, englobado en la región Puuc del estado de Yucatán en México.",
+    "lat": 20.36082,
+    "lon": -89.76964,
+    "imagen": "2002.12.29 32 Pirámide Adivino Uxmal Yucatán México.jpg",
+    "wiki": "Pirámide del adivino",
+    "fuente": "https://www.wikidata.org/wiki/Q3034708"
+   },
+   {
+    "id": "Q1329183",
+    "nombre": "Oxkintok",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Oxkintok es un yacimiento arqueológico, que se localiza en el municipio de Maxcanú, en el estado de Yucatán, en México.",
+    "lat": 20.56034,
+    "lon": -89.95385,
+    "imagen": "Oxkintoc Canul 9.jpg",
+    "wiki": "Oxkintok",
+    "fuente": "https://www.wikidata.org/wiki/Q1329183"
+   },
+   {
+    "id": "Q30610",
+    "nombre": "Aké",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Aké (Ruinas de Aké), (del maya: Toponímico y patronímico. Ak'é: lugar de bejucos) es un yacimiento arqueológico maya precolombino.",
+    "lat": 20.94722,
+    "lon": -89.30028,
+    "imagen": "Aké Säulenpalast.jpg",
+    "wiki": "Aké",
+    "municipio": "Tixkokob",
+    "fuente": "https://www.wikidata.org/wiki/Q30610"
+   },
+   {
+    "id": "Q337677",
+    "nombre": "Acanceh",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Acanceh (pronúnciase Acanqué) es un yacimiento arqueológico maya en México, localizado en la ciudad moderna de Acanceh, en el municipio homónimo, que recibe el mismo toponímico, cuyo significado en español es \"lamento del venado\" (del maya: Akan Keej: el lamento del venado (por extensión: venado que muere)).",
+    "lat": 20.81333,
+    "lon": -89.45222,
+    "imagen": "Acanceh1.jpg",
+    "wiki": "Acanceh (zona arqueológica)",
+    "municipio": "Acanceh",
+    "fuente": "https://www.wikidata.org/wiki/Q337677"
+   },
+   {
+    "id": "Q2664375",
+    "nombre": "Chunchucmil",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chunchucmil es un yacimiento arqueológico maya localizado en la región poniente de la Península de Yucatán, en el municipio de Maxcanú del estado de Yucatán, México.",
+    "lat": 20.63856,
+    "lon": -90.19022,
+    "imagen": "Chunchucmil-mounds.jpg",
+    "wiki": "Chunchucmil (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q2664375"
+   },
+   {
+    "id": "Q113197",
+    "nombre": "Kulubá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Kulubá es un yacimiento arqueológico maya situado a 37 kilómetros al sureste de Tizimín, siguiendo la carretera a la colonia Yucatán, al noreste del estado de Yucatán, en México.",
+    "lat": 21.11481,
+    "lon": -87.84617,
+    "imagen": "Culuba2.jpg",
+    "wiki": "Kulubá",
+    "fuente": "https://www.wikidata.org/wiki/Q113197"
+   },
+   {
+    "id": "Q1156198",
+    "nombre": "Balankanché",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Balankanché es una extensa gruta con mantos acuíferos utilizada durante la época prehispánica como un centro ceremonial maya y un lugar sagrado de culto dedicado al dios Cháak' deidad relacionada con la lluvia, cuya ubicación en la proximidad de la gran ciudad maya de Chichén Itzá, en el municipio de Tinum en…",
+    "lat": 20.65861,
+    "lon": -88.535,
+    "imagen": "Balankanche2 cyark.jpg",
+    "wiki": "Balankanché",
+    "fuente": "https://www.wikidata.org/wiki/Q1156198"
+   },
+   {
+    "id": "Q1058412",
+    "nombre": "Chacmultún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chacmultún (maya: cerro de piedra roja) es un yacimiento arqueológico de la cultura maya situado en la localidad moderna de Chacmultun. Se localiza a aproximadamente 120 km al sureste de Mérida, capital del estado de Yucatán, en México.",
+    "lat": 20.17267,
+    "lon": -89.34494,
+    "imagen": "Chacmultun Cabalpak.png",
+    "wiki": "Chacmultún",
+    "fuente": "https://www.wikidata.org/wiki/Q1058412"
+   },
+   {
+    "id": "Q3275800",
+    "nombre": "Xlapak",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xlapak, o Xlabpak (en lengua maya lugar viejo, también, paredes viejas), es un yacimiento arqueológico perteneciente a la cultura maya, situado a 110 km de la ciudad de Mérida, en el estado de Yucatán, (México), dentro de la denominada región Puuc, entre los sitios de Sayil y Labná.",
+    "lat": 20.17361,
+    "lon": -89.60833,
+    "imagen": "Xlapak 1.jpg",
+    "wiki": "Xlapak",
+    "municipio": "Oxkutzcab",
+    "fuente": "https://www.wikidata.org/wiki/Q3275800"
+   },
+   {
+    "id": "Q2598418",
+    "nombre": "Xkipché",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xkipché es una zona arqueológica de la cultura maya ubicada en la región Puuc al suroeste del estado de Yucatán en México.",
+    "lat": 20.29861,
+    "lon": -89.82611,
+    "imagen": "Xkipche-W4.jpg",
+    "wiki": "Xkipché",
+    "fuente": "https://www.wikidata.org/wiki/Q2598418"
+   },
+   {
+    "id": "Q5960865",
+    "nombre": "Kukab",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Kukab es el nombre de un yacimiento arqueológico maya precolombino que se encuentra cerca del poblado de Tixpéhual, en Yucatán, México.",
+    "lat": 20.92639,
+    "lon": -89.41208,
+    "imagen": "Kukab, Yucatán (01).jpg",
+    "wiki": "Kukab",
+    "fuente": "https://www.wikidata.org/wiki/Q5960865"
+   },
+   {
+    "id": "Q114574262",
+    "nombre": "Xiol",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xiol es un yacimiento arqueológico maya ubicado en el noroeste de la península de Yucatán, en lo que actualmente es el municipio de Kanasín, a unos 10 kilómetros de la moderna ciudad de Mérida, capital del estado de Yucatán, en México.",
+    "lat": 20.91333,
+    "lon": -89.50222,
+    "imagen": "Xiol_Norther_Structure.jpg",
+    "wiki": "Xiol",
+    "fuente": "https://www.wikidata.org/wiki/Q114574262"
+   },
+   {
+    "id": "Q136113128",
+    "nombre": "Ichmul de Morley",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ichmul de Morley, originalmente llamado Mut'ul, es un sitio arqueológico de la cultura maya ubicado en el municipio de Uayma al oriente del estado de Yucatán en México.",
+    "lat": 20.84477,
+    "lon": -88.36306,
+    "imagen": "Board_with_two_ball_players,_Ichmul,_Yucatan.jpg",
+    "wiki": "Ichmul de Morley",
+    "fuente": "https://www.wikidata.org/wiki/Q136113128"
+   },
+   {
+    "id": "Q130393987",
+    "nombre": "X'baatún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "X’baatún es una zona arqueológica y antigua ciudad maya edificada alrededor de una laguna en el estado de Yucatán en México.",
+    "lat": 21.0545,
+    "lon": -88.76826,
+    "imagen": null,
+    "wiki": "X'baatún",
+    "fuente": "https://www.wikidata.org/wiki/Q130393987"
+   },
+   {
+    "id": "Q136788522",
+    "nombre": "Tzemé",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tzemé es un sitio arqueológico de la cultura maya localizado en el municipio de Kinchil del estado mexicano de Yucatán.",
+    "lat": 20.9156,
+    "lon": -90.02337,
+    "imagen": null,
+    "wiki": "Tzemé",
+    "fuente": "https://www.wikidata.org/wiki/Q136788522"
+   },
+   {
+    "id": "Q5758629",
+    "nombre": "Catedral de Yucatán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de San Ildefonso en Mérida, Yucatán, es la catedral más antigua de México y la primera construida en la América continental, a diferencia de la Catedral de Santo Domingo, en República Dominicana, catedral más antigua de América. También es la sede de la arquidiócesis de Yucatán.",
+    "lat": 20.96712,
+    "lon": -89.62259,
+    "imagen": "Merida-cathedral.jpg",
+    "wiki": "Catedral de San Ildefonso (Mérida)",
+    "fuente": "https://www.wikidata.org/wiki/Q5758629"
+   },
+   {
+    "id": "Q3844745",
+    "nombre": "Templo de Mérida",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Mérida, Yucatán, es uno de los templos construidos y operados por la Iglesia de Jesucristo de los Santos de los Últimos Días, el número 92 en operaciones de la iglesia y el número 11 construido en México, haciéndolo el país con más templos SUD después de los Estados Unidos.",
+    "lat": 20.96578,
+    "lon": -89.63106,
+    "imagen": "Merida Mexico Temple 2 by Renegade of Funk - Andy Funk cropped.jpg",
+    "wiki": "Templo de Mérida (México)",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q3844745"
+   },
+   {
+    "id": "Q5884390",
+    "nombre": "Gran Museo del Mundo Maya",
+    "tipo": "Museo",
+    "descripcion": "El Gran Museo del Mundo Maya de Mérida es un museo ubicado en la ciudad de Mérida, Yucatán, México. Fue inaugurado el 21 de diciembre de 2012, con motivo del fin de la cuenta larga conforme al calendario maya.",
+    "lat": 21.03465,
+    "lon": -89.62831,
+    "imagen": "GMMM Atardecer 2.jpg",
+    "wiki": "Gran Museo del Mundo Maya",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q5884390"
+   },
+   {
+    "id": "Q3689424",
+    "nombre": "Convento de San Antonio de Padua",
+    "tipo": "Convento",
+    "descripcion": "El Convento de San Antonio de Padua ubicado en Izamal (etimología idioma maya, Itzmal: Rocío del cielo), Yucatán, fue el quinto convento construido en el actual estado de Yucatán, México. Fue edificado entre los años 1549 y 1561 en la población yucateca fundada en el siglo IV, dedicada a Zamná.",
+    "lat": 20.93262,
+    "lon": -89.01862,
+    "imagen": "ConventodeIzamalYucatan.jpg",
+    "wiki": "Convento de San Antonio de Padua (Yucatán)",
+    "municipio": "Izamal",
+    "fuente": "https://www.wikidata.org/wiki/Q3689424"
+   },
+   {
+    "id": "Q6057602",
+    "nombre": "Palacio Cantón",
+    "tipo": "Museo",
+    "descripcion": "El Palacio Cantón en la ciudad de Mérida, Yucatán, México, es un edificio porfirista que fue residencia de la familia Cantón Rosado, aunque fue perdido haciendo una mala gestión de apuestas. Construido en la primera década del siglo XX y que en la actualidad alberga el Museo Regional de Antropología de Yucatán.",
+    "lat": 20.97819,
+    "lon": -89.61951,
+    "imagen": "Palacio Cantòn - Mérida.jpg",
+    "wiki": "Palacio Cantón",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q6057602"
+   },
+   {
+    "id": "Q15260374",
+    "nombre": "Museo de la Luz",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Luz es un museo temático de la Dirección General de Divulgación de la Ciencia de la Universidad Nacional Autónoma de México (UNAM), inaugurado el 18 de noviembre de 1996. En este museo se exploran las distintas facetas del fenómeno de la luz y su relación con la ciencia, el arte y la historia.",
+    "lat": 20.97694,
+    "lon": -89.61366,
+    "imagen": "Exterior museo de la luz.jpg",
+    "wiki": "Museo de la Luz",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q15260374"
+   },
+   {
+    "id": "Q6141050",
+    "nombre": "Templo de San José de Espita",
+    "tipo": "Templo",
+    "descripcion": "La iglesia de San José de Espita es una iglesia católica ubicada en la villa de Espita, en Yucatán, México.",
+    "lat": 21.01011,
+    "lon": -88.30722,
+    "imagen": "Iglesia de San José de Espita.jpg",
+    "wiki": "Iglesia de San José de Espita",
+    "municipio": "Espita",
+    "fuente": "https://www.wikidata.org/wiki/Q6141050"
+   },
+   {
+    "id": "Q109312490",
+    "nombre": "Palacio de la Música Mexicana",
+    "tipo": "Museo",
+    "descripcion": "El Palacio de la Música es un recinto museístico moderno dedicado principalmente a la conservación y difusión de la música mexicana e indígena, ubicado en el Centro histórico de Mérida, ciudad capital del estado de Yucatán, en México.",
+    "lat": 20.96868,
+    "lon": -89.6218,
+    "imagen": "Vista del Palacio de la Música, Mérida, Yucatán 12.jpg",
+    "wiki": "Palacio de la Música Mexicana",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q109312490"
+   },
+   {
+    "id": "Q136384571",
+    "nombre": "Hacienda Uayalceh",
+    "tipo": "Hacienda",
+    "descripcion": "La hacienda Uayalceh (también conocida como Uayalceh de Peón) es un conjunto histórico ubicado en el municipio de Abalá, México. Fundada en el siglo XVI, destaca como uno de los ejemplos mejor conservados de las haciendas henequeneras del estado de Yucatán.",
+    "lat": 20.6937,
+    "lon": -89.5943,
+    "imagen": "Uayalceh, Yucatán (11).JPG",
+    "wiki": "Hacienda Uayalceh",
+    "municipio": "Abalá",
+    "fuente": "https://www.wikidata.org/wiki/Q136384571"
+   },
+   {
+    "id": "Q136389837",
+    "nombre": "Hacienda Sotuta de Peón",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda Sotuta de Peón es una hacienda henequenera ubicada en el municipio de Tecoh, en el estado de Yucatán, México. Fundada a mediados del siglo XIX, destaca como una de las pocas haciendas henequeneras que aún conservan procesos de producción tradicionales en operación.",
+    "lat": 20.74183,
+    "lon": -89.57531,
+    "imagen": "Casa Principal.jpg",
+    "wiki": "Hacienda Sotuta de Peón",
+    "municipio": "Tecoh",
+    "fuente": "https://www.wikidata.org/wiki/Q136389837"
+   },
+   {
+    "id": "Q136394105",
+    "nombre": "Hacienda San Lorenzo Aké",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda San Lorenzo Aké es una hacienda henequenera ubicada en el municipio de Tixkokob, en el estado de Yucatán, México. El casco de la hacienda se encuentra sobre una extensa plataforma arqueológica en la zona de Aké, lo que la convierte en un sitio de singular valor histórico y cultural.",
+    "lat": 20.94901,
+    "lon": -89.30044,
+    "imagen": "Aké, Yucatán (19).JPG",
+    "wiki": "Hacienda San Lorenzo Aké",
+    "municipio": "Tixkokob",
+    "fuente": "https://www.wikidata.org/wiki/Q136394105"
+   },
+   {
+    "id": "Q24511290",
+    "nombre": "Museo del Pueblo Maya Dzibilchaltún",
+    "tipo": "Museo",
+    "descripcion": "El museo de sitio de la zona arqueológica de Dzibilchaltún se convirtió en 1994 en el Museo del Pueblo Maya de Dzibilchaltún',",
+    "lat": 21.09264,
+    "lon": -89.59615,
+    "imagen": "Paginaschilam.JPG",
+    "wiki": "Museo del Pueblo Maya Dzibilchaltún",
+    "fuente": "https://www.wikidata.org/wiki/Q24511290"
+   },
+   {
+    "id": "Q135473791",
+    "nombre": "Museo del Meteorito El origen de la nueva vida",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Meteorito El origen de la nueva vida es un espacio museístico ubicado en Progreso.",
+    "lat": 21.28873,
+    "lon": -89.65617,
+    "imagen": "Museo del Meteorito El origen de la nueva vida, Yucatán 2025 01.jpg",
+    "wiki": "Museo del Meteorito El origen de la nueva vida",
+    "fuente": "https://www.wikidata.org/wiki/Q135473791"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q165204",
+    "nombre": "Mérida",
+    "tipo": "Ciudad",
+    "descripcion": "Mérida (en maya: Joꞌ) es la capital y ciudad más poblada del estado mexicano de Yucatán, así como la cabecera del municipio homónimo. Se ubica al noroeste del estado en el sureste del país, región de la que es el área urbana más habitada y su principal centro social, cultural, educativo y financiero.",
+    "lat": 20.97,
+    "lon": -89.62,
+    "imagen": "Collage Merida Yucatan.jpg",
+    "wiki": "Mérida (México)",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q165204"
+   },
+   {
+    "id": "Q657637",
+    "nombre": "Progreso de Castro",
+    "tipo": "Ciudad",
+    "descripcion": "Progreso, oficialmente Progreso de Castro, es una ciudad portuaria del estado mexicano de Yucatán, y la cabecera del municipio homónimo. Se ubica al noroeste de la entidad sobre la costa del Golfo de México, a unos 35 km al norte de Mérida, la capital del estado.",
+    "lat": 21.28278,
+    "lon": -89.66361,
+    "imagen": "Progreso, Yucatan, Mexico - panoramio.jpg",
+    "wiki": "Progreso de Castro",
+    "municipio": "Progreso",
+    "fuente": "https://www.wikidata.org/wiki/Q657637"
+   },
+   {
+    "id": "Q613003",
+    "nombre": "Kanasín",
+    "tipo": "Ciudad",
+    "descripcion": "Kanasín es una ciudad (desde el 3 de octubre de 2007) del estado de Yucatán, México, ubicada en la parte centro-oeste de dicho estado peninsular. Forma parte de la zona metropolitana de Mérida, la capital del estado.",
+    "lat": 20.93444,
+    "lon": -89.55778,
+    "imagen": "Kanasín, Yucatán (01).JPG",
+    "wiki": "Kanasín",
+    "municipio": "Kanasín",
+    "fuente": "https://www.wikidata.org/wiki/Q613003"
+   },
+   {
+    "id": "Q2085590",
+    "nombre": "Tizimín",
+    "tipo": "Ciudad",
+    "descripcion": "Tizimín (del maya: ti'tsimín ‘lugar del tapir’) es una ciudad del noreste de Yucatán, en México, y cabecera del municipio del mismo nombre.",
+    "lat": 21.1375,
+    "lon": -88.15,
+    "imagen": "Tizimín 15.07.24.jpg",
+    "wiki": "Tizimín",
+    "municipio": "Tizimín",
+    "fuente": "https://www.wikidata.org/wiki/Q2085590"
+   },
+   {
+    "id": "Q1997462",
+    "nombre": "Ticul",
+    "tipo": "Ciudad",
+    "descripcion": "Ticul (del maya: ti' kul ‘allá quedó sentado’) es una ciudad cabecera del municipio homónimo en el estado mexicano de Yucatán. Se localiza en la región sur de dicho estado a una distancia de 85 km de Mérida, la capital de la entidad.",
+    "lat": 20.39528,
+    "lon": -89.53389,
+    "imagen": "Ticul Yucatan Church 2002.12.30 05.jpg",
+    "wiki": "Ticul",
+    "municipio": "Ticul",
+    "fuente": "https://www.wikidata.org/wiki/Q1997462"
+   },
+   {
+    "id": "Q2597058",
+    "nombre": "Cenote sagrado de Chichén Itzá",
+    "tipo": "Cenote",
+    "descripcion": "El Cenote Sagrado es un cenote del tipo abierto (a cielo abierto) ubicado en Yucatán, México, que se muestra como una depresión circular rellena de agua, de 60 m de diámetro, con paredes verticales que miden 15 m del nivel del acceso a la superficie de agua.",
+    "lat": 20.68771,
+    "lon": -88.56769,
+    "imagen": "2014-01-03 Chichén Itzá, Cenote Sagrado 01 anagoria.JPG",
+    "wiki": "Cenote sagrado de Chichén Itzá",
+    "municipio": "Tinum",
+    "fuente": "https://www.wikidata.org/wiki/Q2597058"
+   },
+   {
+    "id": "Q1949370",
+    "nombre": "Peto",
+    "tipo": "Ciudad",
+    "descripcion": "Peto es una pequeña ciudad mexicana perteneciente al Estado de Yucatán en la Región Sur, ubicada a 180 km de la ciudad de Mérida, capital del Estado. Es la cabecera del Municipio de Peto.",
+    "lat": 20.12556,
+    "lon": -88.92139,
+    "imagen": "Peto Yucatan 2017 02.jpg",
+    "wiki": "Peto",
+    "municipio": "Peto",
+    "fuente": "https://www.wikidata.org/wiki/Q1949370"
+   },
+   {
+    "id": "Q2199354",
+    "nombre": "Oxkutzcab",
+    "tipo": "Ciudad",
+    "descripcion": "Oxkutzcab (del maya: Oox k'úuts kaab ‘Lugar del Ramón, tabaco y miel ’) es una ciudad cabecera del municipio del mismo nombre ubicada en el sur del estado mexicano de Yucatán, a unos 111 km de Mérida, la capital de la entidad.",
+    "lat": 20.30278,
+    "lon": -89.41833,
+    "imagen": "Plaza principal de Oxkutzcab.jpg",
+    "wiki": "Oxkutzcab",
+    "municipio": "Oxkutzcab",
+    "fuente": "https://www.wikidata.org/wiki/Q2199354"
+   },
+   {
+    "id": "Q3548253",
+    "nombre": "Umán",
+    "tipo": "Ciudad",
+    "descripcion": "Umán es una ciudad del noroeste del estado de Yucatán, en México, y cabecera del municipio homónimo. Junto con Kanasín forma parte de la zona metropolitana de Mérida, la capital del estado.",
+    "lat": 20.88333,
+    "lon": -89.75,
+    "imagen": "Centro de Umán, Yucatán. - panoramio.jpg",
+    "wiki": "Umán (Yucatán)",
+    "municipio": "Umán",
+    "fuente": "https://www.wikidata.org/wiki/Q3548253"
+   },
+   {
+    "id": "Q2061976",
+    "nombre": "Loltún",
+    "tipo": "Gruta",
+    "descripcion": "Las grutas de Loltún (del maya \"flor de piedra\") forman parte del extenso sistema cavernoso localizado en el sur del estado de Yucatán, México. Se encuentran 6 km al sursudoeste de Oxkutzcab y 110 km al sureste de Mérida, la capital del estado.",
+    "lat": 20.2528,
+    "lon": -89.4564,
+    "imagen": "Loltun cave, Mexico.jpg",
+    "wiki": "Loltún",
+    "municipio": "Oxkutzcab",
+    "fuente": "https://www.wikidata.org/wiki/Q2061976"
+   },
+   {
+    "id": "Q6081491",
+    "nombre": "Isla Pérez",
+    "tipo": "Isla",
+    "descripcion": "La isla Pérez es una isla mexicana en el golfo de México, se encuentra frente al litoral norte de la península de Yucatán y pertenece al Parque nacional Arrecife Alacranes, siendo la principal isla de tal arrecife.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Isla Perez Alacranes.JPG",
+    "wiki": "Isla Pérez",
+    "fuente": "https://www.wikidata.org/wiki/Q6081491"
+   },
+   {
+    "id": "Q64504436",
+    "nombre": "Parque nacional Arrecife Alacranes",
+    "tipo": "Parque nacional",
+    "descripcion": "El Arrecife Alacranes es un conjunto de pequeñas islas de origen coralino localizadas en el golfo de México a una distancia aproximada de 130 km de la costa del municipio mexicano de Progreso, Yucatán. Fue decretado parque nacional el 6 de junio de 1994.",
+    "lat": 22.47454,
+    "lon": -89.69506,
+    "imagen": "Arrecife Alacranes (37600880995).jpg",
+    "wiki": "Parque nacional Arrecife Alacranes",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q64504436"
+   },
+   {
+    "id": "Q15117024",
+    "nombre": "Reserva de la Biosfera Ría Celestún",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "Reserva de la Biosfera Ría Celestún es una reserva de biosfera en México. Está ubicada en la península de Yucatán noroccidental en los estados de Yucatán y Campeche.",
+    "lat": 20.72139,
+    "lon": -90.38222,
+    "imagen": "American_Flamingoes_(Phoenicopterus_ruber)_-_Celestun_Biosphere_Reserve.jpg",
+    "wiki": "Reserva de la Biosfera Ría Celestún",
+    "fuente": "https://www.wikidata.org/wiki/Q15117024"
+   },
+   {
+    "id": "Q5891146",
+    "nombre": "Hacienda de Dzoyaxché",
+    "tipo": "Área natural protegida",
+    "descripcion": "La reserva ecológica Cuxtal (proviene de la lengua Maya que significa nacimiento o vida.) se localiza en el sur del municipio de Mérida en el estado de Yucatán en el sureste de México, entre los 20°47' y 20°55' de latitud norte y los 89°33' y 89°40' de longitud oeste.",
+    "lat": 20.8606,
+    "lon": -89.6242,
+    "imagen": "Dzoyaxché (Mérida), Yucatán (06).jpg",
+    "wiki": "Reserva ecológica Cuxtal",
+    "municipio": "Mérida",
+    "fuente": "https://www.wikidata.org/wiki/Q5891146"
+   },
+   {
+    "id": "Q6449617",
+    "nombre": "Isla Cerritos",
+    "tipo": "Isla",
+    "descripcion": "La isla Cerritos se ubica frente al litoral norte del estado de Yucatán, en el Golfo de México, 5 kilómetros al oeste del puerto de San Felipe, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Isla Cerritos",
+    "fuente": "https://www.wikidata.org/wiki/Q6449617"
+   },
+   {
+    "id": "Q6106219",
+    "nombre": "Reserva de la biosfera de Los Petenes",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La reserva de la biosfera Los Petenes es un área natural protegida de México. Se trata de una selva húmeda en buen estado de conservación ubicada en el estado de Campeche.",
+    "lat": 20.8583,
+    "lon": -90.3333,
+    "imagen": "LOS PETENCAMP.JPG",
+    "wiki": "Reserva de la biosfera de Los Petenes",
+    "fuente": "https://www.wikidata.org/wiki/Q6106219"
+   },
+   {
+    "id": "Q9332552",
+    "nombre": "Cenote Sabak-Há",
+    "tipo": "Cenote",
+    "descripcion": "Sabak-Há (del maya, lit. Agua Oscura) es un cenote abierto ubicado en el municipio de Sacalum, Yucatán; a aproximadamente 52 kilómetros de Mérida.",
+    "lat": 20.58011,
+    "lon": -89.58814,
+    "imagen": null,
+    "wiki": "Cenote Sabak-Há",
+    "fuente": "https://www.wikidata.org/wiki/Q9332552"
+   },
+   {
+    "id": "Q6062597",
+    "nombre": "Parque Zoológico del Centenario",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Parque Zoológico del Centenario, conocido coloquialmente como El Centenario, es el zoológico más importante de la ciudad de Mérida, Yucatán, México. Se localiza al poniente de dicha ciudad, sobre la avenida de los Itzaes y las calles 59, 84 y 65.",
+    "lat": 20.9777,
+    "lon": -89.64082,
+    "imagen": "Entrada del centenario.jpg",
+    "wiki": "Parque Zoológico del Centenario",
+    "fuente": "https://www.wikidata.org/wiki/Q6062597"
+   },
+   {
+    "id": "Q28028806",
+    "nombre": "Anillo de Cenotes",
+    "tipo": "Área natural protegida",
+    "descripcion": "El anillo de cenotes es un área natural con protección estatal en Yucatán, México consistente en una alineación semicircular de cenotes relacionada con la teoría del impacto, hace unos 65 a 70 millones de años, del asteroide que produjo el cráter de Chicxulub al chocar contra el planeta en lo que hoy es la península…",
+    "lat": 20.7225,
+    "lon": -89.32306,
+    "imagen": "Yokdzonot Cenote by ovedc 08.jpg",
+    "wiki": "Anillo de cenotes",
+    "fuente": "https://www.wikidata.org/wiki/Q28028806"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q4804467",
+    "nombre": "Cochinita pibil",
+    "tipo": "Platillo",
+    "descripcion": "La cochinita pibil es un guiso mexicano correspondiente a la gastronomía de Yucatán.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cochinita pibil 2.jpg",
+    "wiki": "Cochinita pibil",
+    "fuente": "https://www.wikidata.org/wiki/Q4804467"
+   },
+   {
+    "id": "Q21004069",
+    "nombre": "Relleno negro",
+    "tipo": "Platillo",
+    "descripcion": "El relleno negro es un plato caliente típico de la península de Yucatán. Se compone de carne de pavo y de cerdo, un sofrito y una mezcla de chiles secos llamada «chilmole» o «recado negro», la cual da nombre al plato.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Relleno_negro_del_Museo_de_la_Gastronomía_01.jpg",
+    "wiki": "Relleno negro",
+    "fuente": "https://www.wikidata.org/wiki/Q21004069"
+   },
+   {
+    "id": "Q17630839",
+    "nombre": "Escabeche oriental yucateco",
+    "tipo": "Platillo",
+    "descripcion": "El escabeche oriental yucateco es un plato de la gastronomía de Yucatán, México. Deriva su nombre de la técnica española de hacer conservas en escabeche y específicamente se llama \"oriental\" porque es un platillo típico de la región oriental del estado de Yucatán, específicamente la ciudad de Valladolid.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Escabeche oriental",
+    "fuente": "https://www.wikidata.org/wiki/Q17630839"
+   },
+   {
+    "id": "Q7302262",
+    "nombre": "Recado rojo",
+    "tipo": "Salsa",
+    "descripcion": "El recaudo o recado rojo o colorado es una mezcla de especias popular en Guatemala y en México, donde está estrechamente ligada a la cocina de Yucatán. El ingrediente principal es la pasta de achiote, una semilla que tiñe de color rojo el plato y que le aporta un sabor apimentado y ligeramente picante, ahumado y dulce.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Achiote paste ingredients.jpg",
+    "wiki": "Recado rojo",
+    "fuente": "https://www.wikidata.org/wiki/Q7302262"
+   },
+   {
+    "id": "Q15010030",
+    "nombre": "Poc Chuc",
+    "tipo": "Platillo",
+    "descripcion": "El poc chuc (del maya yucateco, póok «tostar» y chúuk «carbón») es un platillo típico de la península de Yucatán, en México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Poc_chuc.jpg",
+    "wiki": "Poc chuc",
+    "fuente": "https://www.wikidata.org/wiki/Q15010030"
+   },
+   {
+    "id": "Q28155493",
+    "nombre": "Sopa de lima",
+    "tipo": "Sopa",
+    "descripcion": "La sopa de lima es una preparación culinaria tradicional de la gastronomía yucateca.Se trata de un caldo ligero de pavo o pollo, aderezado con diversas especias como el orégano, clavo y comino (entre otras) y destacándose el uso de una variedad local yucateca de cítrico conocido como lima agria.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Sopa de lima.jpg",
+    "wiki": "Sopa de lima",
+    "fuente": "https://www.wikidata.org/wiki/Q28155493"
+   },
+   {
+    "id": "Q5929345",
+    "nombre": "Huevos motuleños",
+    "tipo": "Platillo",
+    "descripcion": "Los huevos motuleños son un desayuno mexicano, típico de la ciudad de Motul, Yucatán.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Huevos motuleños servidos en Tabasco.jpg",
+    "wiki": "Huevos motuleños",
+    "fuente": "https://www.wikidata.org/wiki/Q5929345"
+   },
+   {
+    "id": "Q9055140",
+    "nombre": "Panucho",
+    "tipo": "Platillo",
+    "descripcion": "El panucho es un platillo mexicano típico muy popular en el sureste de México, se consume en Yucatán, Quintana Roo, Campeche, Chiapas, Tabasco y parte de Veracruz. El panucho consiste en una tortilla rellena de frijol con la carne (pavo, pollo, res, cochinita, etc.) y demás ingredientes en la parte superior.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Panucho yucateco.jpg",
+    "wiki": "Panucho",
+    "fuente": "https://www.wikidata.org/wiki/Q9055140"
+   },
+   {
+    "id": "Q106864701",
+    "nombre": "Píib",
+    "tipo": "Platillo",
+    "descripcion": "El pib, en maya yucateco píib, es un horno de tierra típico de la península de Yucatán, en México. Esta técnica de origen prehispánico consiste en excavar un hoyo, encender un fogón con leña y piedras, y cocinar la comida (tradicionalmente cerdo o pollo) a fuego lento, todo tapado con más tierra.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Encendido de horno maya.jpg",
+    "wiki": "Píib",
+    "fuente": "https://www.wikidata.org/wiki/Q106864701"
+   },
+   {
+    "id": "Q3571052",
+    "nombre": "Xtabentún",
+    "tipo": "Bebida",
+    "descripcion": "El xtabentún es un licor de origen maya, que se produce en el estado de Yucatán, a partir de miel de abejas alimentadas con la flor del xtabentún que tiene características organolépticas similares al anís.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Xtabentún.jpg",
+    "wiki": "Xtabentún (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q3571052"
+   },
+   {
+    "id": "Q77501769",
+    "nombre": "Marquesitas",
+    "tipo": "Dulce",
+    "descripcion": "Las marquesitas son un postre mexicano originario del estado de Yucatán, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Marquesita tradicional, Malecón de Progreso, Yucatan, Mexico.jpg",
+    "wiki": "Marquesitas",
+    "fuente": "https://www.wikidata.org/wiki/Q77501769"
+   },
+   {
+    "id": "Q5815478",
+    "nombre": "Dzotobichay",
+    "tipo": "Producto típico",
+    "descripcion": "El dzotobilchay, dzotobichay (del maya Ts'o Tobil Chay «masa de maíz cocida con chaya») o Brazo de Reina es una variedad de tamales, alimento tradicional de la cultura gastronómica yucateca. Se componen del tamal (arrollado de masa de maíz) con salsa de tomate, semilla de calabaza molida, envueltas en hojas de chaya.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Brazo de reina.jpg",
+    "wiki": "Dzotobilchay",
+    "fuente": "https://www.wikidata.org/wiki/Q5815478"
+   },
+   {
+    "id": "Q98278042",
+    "nombre": "Chile habanero de Yucatán",
+    "tipo": "Producto típico",
+    "descripcion": "El chile habanero de Yucatán es una denominación de origen mexicana que protege e identifica al chile habanero (Capsicum chinense) producido en la península de Yucatán, estados de Campeche, Quintana Roo y Yucatán.",
+    "lat": null,
+    "lon": null,
+    "imagen": "ARS-habanero.jpg",
+    "wiki": "Chile habanero de Yucatán",
+    "fuente": "https://www.wikidata.org/wiki/Q98278042"
+   },
+   {
+    "id": "Q97171917",
+    "nombre": "Frijol con puerco",
+    "tipo": "Platillo",
+    "descripcion": "El frijol con puerco es un platillo tradicional de la gastronomía de la península de Yucatán, en México. Se trata de un plato sencillo de carne de cerdo troceada, la cual se guisa en un caldo de frijol negro, epazote, especias (finas hierbas).",
+    "lat": null,
+    "lon": null,
+    "imagen": "Frijol_con_puerco_(closeup).JPG",
+    "wiki": "Frijol con puerco",
+    "fuente": "https://www.wikidata.org/wiki/Q97171917"
+   },
+   {
+    "id": "Q5975188",
+    "nombre": "Licor del henequén",
+    "tipo": "Bebida",
+    "descripcion": "El licor de henequén o de sisal es un destilado que se obtiene de a partir del Agave fourcroydes (henequén), que es usado principalmente en la Industria textil. El destilado es originario del Estado de Yucatán, México, produciéndose mayoritariamente en el municipio de Izamal.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Licor de henequén",
+    "fuente": "https://www.wikidata.org/wiki/Q5975188"
+   },
+   {
+    "id": "Q136722956",
+    "nombre": "Lomitos de Valladolid",
+    "tipo": "Platillo",
+    "descripcion": "Lomitos de Valladolid es un platillo tiene como origen la ciudad Mexicana de Valladolid, en Yucatán, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Lomitos de valladolid.jpg",
+    "wiki": "Lomitos de Valladolid",
+    "fuente": "https://www.wikidata.org/wiki/Q136722956"
+   },
+   {
+    "id": "Q19950521",
+    "nombre": "Queso relleno",
+    "tipo": "Queso",
+    "descripcion": "El queso relleno es un platillo popular en la Península de Yucatán. Consiste en una pieza de queso de bola (Tipo Edam) ahuecada y rellena de picadillo de carne, y presentada en una salsa de harina de trigo llamada en maya kol y salsa de jitomate.",
+    "lat": null,
+    "lon": null,
+    "imagen": "QuesoRelleno.jpg",
+    "wiki": "Queso relleno",
+    "fuente": "https://www.wikidata.org/wiki/Q19950521"
+   },
+   {
+    "id": "Q65163701",
+    "nombre": "Tsi'ik de venado",
+    "tipo": "Platillo",
+    "descripcion": "El tsi'ik de venado (del maya tsi’ik, 'deshebrar carne') es un platillo perteneciente a la gastronomía de Yucatán. Se trata de un salpicón que usa carne de venado (ya sea venado cola blanca o yuk, ambos abundantes en Yucatán) como su ingrediente principal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tsi'ik.jpg",
+    "wiki": "Tsi'ik de venado",
+    "fuente": "https://www.wikidata.org/wiki/Q65163701"
+   },
+   {
+    "id": "Q60823329",
+    "nombre": "Janal Pixán",
+    "tipo": "Platillo",
+    "descripcion": "Janal Pixan (pronunciado /hanal piʃan/; del maya janal, 'comida' y pixan, 'ánima (alma o espíritu)', «comida para las almas\") (anteriormente Hanal Pixán) o Finados (como es nombrado en diversas partes del sureste mexicano) es una tradición yucateca variante del Día de Muertos en México, celebrada en muchos pueblos y…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Altar_Janal_3.jpg",
+    "wiki": "Janal Pixan",
+    "fuente": "https://www.wikidata.org/wiki/Q60823329"
+   },
+   {
+    "id": "Q5657318",
+    "nombre": "Mukbil Pollo",
+    "tipo": "Platillo",
+    "descripcion": "El mukbil pollo, mucbipollo, pibipollo es un plato tradicional de la península de Yucatán, México, preparado a partir de masa de maíz, manteca de cerdo, carne de pollo y diversos condimentos, formando una especie de tamal grande, envuelto en hojas de plátano y cocido lentamente bajo la tierra en un horno maya.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pibipollo paso 5.jpg",
+    "wiki": "Mukbil Pollo",
+    "fuente": "https://www.wikidata.org/wiki/Q5657318"
+   }
+  ]
+ }
+}

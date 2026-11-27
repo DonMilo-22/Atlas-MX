@@ -1,0 +1,674 @@
+{
+ "cve": "22",
+ "estado": "Querétaro",
+ "wikidata": "Q79754",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q3849668",
+    "nombre": "Amealco de Bonfil",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Amealco es la cabecera del municipio homónimo, está localizada al sur del estado de Querétaro y muy cerca del municipio de San Juan del Río. Fue incluido en el programa turístico Pueblos Mágicos en 2018.",
+    "lat": 20.18806,
+    "lon": -100.14389,
+    "imagen": "Muñecos Amealco.jpg",
+    "wiki": "Amealco de Bonfil",
+    "municipio": "Amealco de Bonfil",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3849668"
+   },
+   {
+    "id": "Q822193",
+    "nombre": "Bernal",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Bernal es un pueblo del estado mexicano de Querétaro, localizado en el municipio de Ezequiel Montes, es conocido por estar localizado al pie de la Peña de Bernal, el cual es considerado el tercer monolito más grande del mundo. Es parte del Bajío.",
+    "lat": 20.74083,
+    "lon": -99.94111,
+    "imagen": "San Sebastian Bernal.jpg",
+    "wiki": "Bernal (Querétaro)",
+    "municipio": "Ezequiel Montes",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.gob.mx/sectur/articulos/pueblos-magicos-206528"
+   },
+   {
+    "id": "Q2878559",
+    "nombre": "Cadereyta de Montes",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cadereyta de Montes es una localidad mexicana, cabecera del Municipio de Cadereyta de Montes, el más extenso de los 18 que conforman el estado de Querétaro, en México, con casi el 10 % del área del estado.",
+    "lat": 20.691,
+    "lon": -99.819,
+    "imagen": "Cadereyta.JPG",
+    "wiki": "Cadereyta (Querétaro)",
+    "municipio": "Cadereyta de Montes",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2878559"
+   },
+   {
+    "id": "Q2282743",
+    "nombre": "Jalpan de Serra",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jalpan de Serra es la población cabecera del municipio de Jalpan de Serra, situado al norte del estado de Querétaro, México. Según el censo de 2020, tiene una población de 13 950 habitantes.",
+    "lat": 21.21694,
+    "lon": -99.47444,
+    "imagen": "Misión Santiago de Jalpan.jpg",
+    "wiki": "Jalpan de Serra",
+    "municipio": "Jalpan de Serra",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2282743"
+   },
+   {
+    "id": "Q20163791",
+    "nombre": "Pinal de Amoles",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Pinal de Amoles es una población y cabecera municipal del municipio de Pinal de Amoles, ubicada al oriente del estado de Querétaro, en el centro de México. Es una localidad forestal y fue minera y se ubica dentro de la Reserva de la Biosfera de Sierra Gorda.",
+    "lat": 21.1353,
+    "lon": -99.62754,
+    "imagen": "StreetPinalAmoles3.JPG",
+    "wiki": "Pinal de Amoles",
+    "municipio": "Pinal de Amoles",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20163791"
+   },
+   {
+    "id": "Q15274825",
+    "nombre": "San Joaquín",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Joaquín, es una población y cabecera municipal del municipio de San Joaquín, está ubicada al oriente del estado de Querétaro, en México. Es una localidad forestal y fue minera y se ubica dentro de la reserva de la biosfera de Sierra Gorda.",
+    "lat": 20.91583,
+    "lon": -99.56611,
+    "imagen": "San Joaquín, Querétaro (32514215823).jpg",
+    "wiki": "San Joaquín (Querétaro)",
+    "municipio": "San Joaquín",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q15274825"
+   },
+   {
+    "id": "Q1636457",
+    "nombre": "Tequisquiapan",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tequisquiapan (Tequixquiapan en náhuatl y Nthe en otomí) es una ciudad localizada en México considerado como Pueblo Mágico, situado en el Estado de Querétaro y cabecera del municipio homónimo.",
+    "lat": 20.52056,
+    "lon": -99.89583,
+    "imagen": "KioskTequis.jpg",
+    "wiki": "Tequisquiapan",
+    "municipio": "Tequisquiapan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1636457"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q751146",
+    "nombre": "Misiones franciscanas de la Sierra Gorda de Querétaro",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "Las misiones franciscanas de la Sierra Gorda de Querétaro en México, son cinco misiones construidas entre 1750 y 1760, la fundación de las misiones es atribuida a Junípero Serra, quién también fundó las más importantes misiones de California. Fueron declaradas Patrimonio de la Humanidad por la Unesco en el año 2003.",
+    "lat": 21.20389,
+    "lon": -99.46389,
+    "imagen": "Sierra gorda.jpg",
+    "wiki": "Misiones franciscanas de la Sierra Gorda de Querétaro",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q751146"
+   },
+   {
+    "id": "Q20246727",
+    "nombre": "Hacienda de Chichimequillas",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Chichimequillas es un conjunto arquitectónico ubicado en el estado de Querétaro, México. Desde agosto de 2010 es considerada como Patrimonio de la Humanidad por la Unesco como parte del Camino Real de Tierra Adentro.",
+    "lat": 20.76083,
+    "lon": -100.34139,
+    "imagen": "Hacienda_de_Chichimequillas,_Querétaro_(23914610553).jpg",
+    "wiki": "Hacienda de Chichimequillas",
+    "municipio": "El Marqués",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20246727"
+   },
+   {
+    "id": "Q3848141",
+    "nombre": "Centro histórico de Santiago de Querétaro",
+    "tipo": "Centro histórico",
+    "descripcion": "La Zona de Monumentos Históricos de Querétaro, declarada Patrimonio de la Humanidad por la UNESCO desde 1996, se ubica en el estado de Querétaro, México.",
+    "lat": 20.58333,
+    "lon": -100.36667,
+    "imagen": "Ex convento de San Francisco.JPG",
+    "wiki": "Centro histórico de Santiago de Querétaro",
+    "municipio": "Querétaro",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3848141"
+   },
+   {
+    "id": "Q5755124",
+    "nombre": "Casa de la Corregidora",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "La Casa de la Corregidora es un edificio y Monumento histórico del centro de Santiago de Querétaro construido en el siglo XVIII, que se utilizó como Casa Real y Cárcel. Desde 1981 es el Palacio de Gobierno de Querétaro, sede del Poder Ejecutivo del Estado de Querétaro, México.",
+    "lat": 20.59336,
+    "lon": -100.38999,
+    "imagen": "Corregidora1.jpg",
+    "wiki": "Casa de la Corregidora",
+    "municipio": "Querétaro",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5755124"
+   },
+   {
+    "id": "Q65460837",
+    "nombre": "Misión de Nuestra Señora de la Luz de Tancoyol",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Nuestra Señora de la Luz de Tancoyol es un conjunto arquitectónico mexicano ubicado en Jalpan de Serra, Querétaro. Está integrado por un convento y una iglesia, construidas en estilo churrigueresco por la orden Franciscana en el siglo XVIII.",
+    "lat": 21.4004,
+    "lon": -99.328,
+    "imagen": "MissionTanyocol2.JPG",
+    "wiki": "Misión de Nuestra Señora de la Luz de Tancoyol",
+    "municipio": "Jalpan de Serra",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65460837"
+   },
+   {
+    "id": "Q65460899",
+    "nombre": "Misión de San Miguel Concá",
+    "tipo": "Misión",
+    "descripcion": "La Misión de San Miguel Concá es un conjunto arquitectónico mexicano ubicado en Arroyo Seco, Querétaro. Está integrado por un convento y una iglesia, construidas en estilo churrigueresco por la Orden Franciscana en el siglo XVIII.",
+    "lat": 21.4447,
+    "lon": -99.6369,
+    "imagen": "MissionConcáView1.JPG",
+    "wiki": "Misión de San Miguel Concá",
+    "municipio": "Arroyo Seco",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65460899"
+   },
+   {
+    "id": "Q65460718",
+    "nombre": "Misión de Santa María del Agua de Landa",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Santa María de la Purísima Concepción del Agua de Landa es un conjunto arquitectónico mexicano ubicado en Landa de Matamoros, Querétaro. Fue construida en el siglo XVIII por la Orden Franciscana en estilo churrigueresco.",
+    "lat": 21.1692,
+    "lon": -99.3108,
+    "imagen": "Misión de Landa.JPG",
+    "wiki": "Misión de Santa María del Agua de Landa",
+    "municipio": "Landa de Matamoros",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65460718"
+   },
+   {
+    "id": "Q65460598",
+    "nombre": "Misión de Santiago de Jalpan",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Santiago de Jalpan es un conjunto arquitectónico religioso ubicado en Jalpan de Serra, en la Sierra Gorda de Querétaro, México. Fue construida entre 1751 y 1758 bajo la supervisión del fraile franciscano Junípero Serra, y constituye la primera de las cinco misiones franciscanas erigidas en la región.",
+    "lat": 21.2044,
+    "lon": -99.4641,
+    "imagen": "FacadeMissionJalpan2.JPG",
+    "wiki": "Misión de Santiago de Jalpan",
+    "municipio": "Jalpan de Serra",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65460598"
+   },
+   {
+    "id": "Q6018547",
+    "nombre": "Misión de San Francisco de Asís del Valle de Tilaco",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Francisco de Asís del Valle de Tilaco es uno de los monumentos históricos más importantes del municipio de Landa de Matamoros y de la región de la Sierra Gorda de Querétaro.",
+    "lat": 21.16119,
+    "lon": -99.19264,
+    "imagen": "San Francisco del Valle de Tilaco.jpg",
+    "wiki": "Misión de San Francisco de Asís del Valle de Tilaco",
+    "municipio": "Jalpan de Serra",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6018547"
+   },
+   {
+    "id": "Q5350993",
+    "nombre": "El Cerrito",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Cerrito es un yacimiento arqueológico que se encuentra en el municipio de Corregidora, a 7 km del centro de la ciudad de Santiago de Querétaro, en el Estado de Querétaro, en el centro de México.",
+    "lat": 20.55083,
+    "lon": -100.4425,
+    "imagen": "Piramide de El pueblito.jpg",
+    "wiki": "El Cerrito (Querétaro)",
+    "municipio": "Corregidora",
+    "fuente": "https://www.wikidata.org/wiki/Q5350993"
+   },
+   {
+    "id": "Q10378054",
+    "nombre": "Tancama",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tancama es un sitio arqueológico ubicado en el estado de Querétaro en México. El nombre \"Tancama\" proviene de la lengua huasteca y significa en español \"colina de fuego.\"",
+    "lat": 21.15986,
+    "lon": -99.39667,
+    "imagen": "Tancama.JPG",
+    "wiki": "Tancama",
+    "fuente": "https://www.wikidata.org/wiki/Q10378054"
+   },
+   {
+    "id": "Q4425966",
+    "nombre": "Catedral de Querétaro",
+    "tipo": "Catedral",
+    "descripcion": "El Antiguo Oratorio de San Felipe Neri hoy designado como La catedral de Querétaro (a petición del historiador Francisco Benegas y Galván), fue construido por la Congregación del Oratorio de San Felipe Neri. Está ubicado en el centro de la ciudad de Santiago de Querétaro.",
+    "lat": 20.5914,
+    "lon": -100.39663,
+    "imagen": "Catedral de Querétaro (México).jpg",
+    "wiki": "Catedral de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q4425966"
+   },
+   {
+    "id": "Q5657059",
+    "nombre": "Acueducto de Querétaro",
+    "tipo": "Acueducto",
+    "descripcion": "El acueducto de Querétaro es una monumental edificación, actualmente de 74 arcos, que alcanzan una altura promedio de 28.5 m, y una longitud de 1280 m. Este acueducto, construido durante el reinado de Felipe V de España, es símbolo de la ciudad de Querétaro y uno de los más grandes de México.",
+    "lat": 20.5955,
+    "lon": -100.37412,
+    "imagen": "Acueducto de Querétaro 2.JPG",
+    "wiki": "Acueducto de Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q5657059"
+   },
+   {
+    "id": "Q5146830",
+    "nombre": "Templo y exconvento de la Cruz",
+    "tipo": "Convento",
+    "descripcion": "El Santuario y Convento de la Santísima Cruz de los Milagros es un santuario religioso de época novohispana del siglo XVII, que comprende la iglesia de la Santísima Cruz de los Milagros, un convento y actualmente un Colegio Universitario, situado en Santiago de Querétaro, Querétaro, México.",
+    "lat": 20.59306,
+    "lon": -100.38333,
+    "imagen": "Convento de la Cruz Querétaro.JPG",
+    "wiki": "Templo y exconvento de la Cruz",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q5146830"
+   },
+   {
+    "id": "Q38619605",
+    "nombre": "Capilla de Maximiliano",
+    "tipo": "Templo",
+    "descripcion": "La Capilla de Maximiliano de Habsburgo es un pequeño templo católico situado en el cerro de las Campanas, en la ciudad de Santiago de Querétaro, México.",
+    "lat": 20.59313,
+    "lon": -100.40958,
+    "imagen": "Capilla de Maximiliano de Habsburgo, Cerro de las Campanas, Querétaro - Escaleras.jpg",
+    "wiki": "Capilla de Maximiliano de Habsburgo",
+    "fuente": "https://www.wikidata.org/wiki/Q38619605"
+   },
+   {
+    "id": "Q56354202",
+    "nombre": "Templo de Santa Rosa de Viterbo",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Santa Rosa de Viterbo es una iglesia católica ubicada en Santiago de Querétaro, capital del estado de Querétaro, dedicada a Santa Rosa de Viterbo (1233–1252), santa italiana de la Tercera orden de San Francisco. Se considera uno de los ejemplos más representativos del barroco novohispano en México.",
+    "lat": 20.58805,
+    "lon": -100.39657,
+    "imagen": "Santa Rosa del Viterbo, Queretaro.JPG",
+    "wiki": "Templo de Santa Rosa de Viterbo",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q56354202"
+   },
+   {
+    "id": "Q6141098",
+    "nombre": "Templo y exconvento de San Francisco de Asís de Querétaro",
+    "tipo": "Convento",
+    "descripcion": "El templo de San Francisco es una antigua iglesia conventual de México que durante un tiempo fungió como catedral de Querétaro. El convento se comenzó en 1589, aunque el templo fue concluido en 1640 y el claustro en 1698.",
+    "lat": 20.59297,
+    "lon": -100.39138,
+    "imagen": "TempleSanFranciscoQRO02.JPG",
+    "wiki": "Templo y exconvento de San Francisco de Asís de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q6141098"
+   },
+   {
+    "id": "Q136281852",
+    "nombre": "Templo de la Congregación de Guadalupe",
+    "tipo": "Templo",
+    "descripcion": "El templo de la Congregación de Guadalupe, conocido popularmente como La Congregación y oficialmente como Templo de San Felipe Neri, es una iglesia católica ubicada en el Centro histórico de Santiago de Querétaro, México.",
+    "lat": 20.59439,
+    "lon": -100.38984,
+    "imagen": "Templo de la Congregación 001.jpg",
+    "wiki": "Templo de la Congregación de Guadalupe (Querétaro)",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q136281852"
+   },
+   {
+    "id": "Q5748316",
+    "nombre": "Capilla de Nuestra Señora de los Dolores",
+    "tipo": "Templo",
+    "descripcion": "La Capilla de Nuestra Señora de Los Dolores es un templo de culto católico, dedicado a la Virgen María bajo la advocación de la Virgen de las Angustias o de los Dolores, ubicado en la parte sur centro de la ciudad de Santiago de Querétaro.",
+    "lat": 20.58183,
+    "lon": -100.37835,
+    "imagen": "Capilla De Nuestra Señora De Los Dolores De Villas Del Sol.jpg",
+    "wiki": "Capilla de Nuestra Señora de los Dolores (Querétaro)",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q5748316"
+   },
+   {
+    "id": "Q20013404",
+    "nombre": "Basilica de Soriano",
+    "tipo": "Templo",
+    "descripcion": "La basílica del Santuario de Nuestra Señora de los Dolores, o simplemente, basílica de Soriano, es un santuario católico ubicado en la cabecera municipal del municipio de Colón (Querétaro).",
+    "lat": 20.77961,
+    "lon": -100.0528,
+    "imagen": "Basilica de la Virgen de Soriano.JPG",
+    "wiki": "Basílica del Santuario de Nuestra Señora de los Dolores",
+    "municipio": "Colón",
+    "fuente": "https://www.wikidata.org/wiki/Q20013404"
+   },
+   {
+    "id": "Q136291376",
+    "nombre": "Hacienda de Galindo",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Galindo es una antigua propiedad rural localizada en el municipio de San Juan del Río, en el estado de Querétaro, México. Fundada en el siglo XVI, se le asocia tradicionalmente con Hernán Cortés y La Malinche, aunque esta relación se considera más legendaria que histórica.",
+    "lat": 20.39664,
+    "lon": -100.09465,
+    "imagen": "Hacienda_Galindo,_Querétaro_(33157835662).jpg",
+    "wiki": "Hacienda de Galindo",
+    "municipio": "San Juan del Río",
+    "fuente": "https://www.wikidata.org/wiki/Q136291376"
+   },
+   {
+    "id": "Q24511205",
+    "nombre": "Museo Regional de Querétaro",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Querétaro se encuentra ubicado en el centro histórico de la ciudad capital del estado de Querétaro, Santiago de Querétaro, en lo que se conocía como el antiguo Convento Grande de San Francisco.",
+    "lat": 20.59262,
+    "lon": -100.39329,
+    "imagen": "Convento de San Francisco museo regional de Queretaro.JPG",
+    "wiki": "Museo Regional de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q24511205"
+   },
+   {
+    "id": "Q109741589",
+    "nombre": "Museo de la Ciudad de Querétaro",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Ciudad de Querétaro es un espacio cultural ubicado en el centro histórico de Querétaro, México. Se encuentra en el antiguo convento de las Capuchinas, una construcción barroca del siglo XVIII, y está dedicado a la promoción de las artes visuales contemporáneas, la música, el cine y el teatro.",
+    "lat": 20.58966,
+    "lon": -100.39446,
+    "imagen": "Museo de la Ciudad en Querétaro 14.jpg",
+    "wiki": "Museo de la Ciudad de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q109741589"
+   },
+   {
+    "id": "Q6033916",
+    "nombre": "Museo de Arte de Querétaro",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte de Querétaro es una institución que forma parte del Instituto Queretano de la Cultura y las Artes. El Museo fue fundado el 22 de septiembre de 1988 en el claustro del exconvento de San Agustín.",
+    "lat": 20.59096,
+    "lon": -100.39346,
+    "imagen": "Museo_de_Arte_Querétaro.jpg",
+    "wiki": "Museo de Arte de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q6033916"
+   },
+   {
+    "id": "Q136281811",
+    "nombre": "Templo de Santa Clara de Asís",
+    "tipo": "Convento",
+    "descripcion": "El templo y convento de Santa Clara de Asís es un conjunto religioso situado en el Centro histórico de Santiago de Querétaro, México. Fundado en el siglo XVII, fue uno de los conventos femeninos más importantes de la Nueva España.",
+    "lat": 20.592,
+    "lon": -100.3943,
+    "imagen": "00435-Templo_y_Ex_Convento_de_Santa_Clara.jpg",
+    "wiki": "Templo de Santa Clara de Asís (Querétaro)",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q136281811"
+   },
+   {
+    "id": "Q136365949",
+    "nombre": "Claustro de San Felipe Neri - Palacio Conin",
+    "tipo": "Convento",
+    "descripcion": "El Claustro de San Felipe Neri es un edificio histórico situado en el centro de Santiago de Querétaro, México. Formó parte del conjunto conventual de los Oratorianos y está anexo al Templo de San Felipe Neri, actual catedral de la ciudad.",
+    "lat": 20.5911,
+    "lon": -100.3969,
+    "imagen": "10217-Claustro de San Felipe Neri - Palacio Conin.jpg",
+    "wiki": "Claustro de San Felipe Neri - Palacio Conin",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q136365949"
+   },
+   {
+    "id": "Q136433473",
+    "nombre": "Templo y exconvento de San Antonio de Padua",
+    "tipo": "Templo",
+    "descripcion": "El templo y exconvento de San Antonio de Padua es un conjunto religioso de origen dieguino ubicado en el Centro histórico de Santiago de Querétaro, México. Iniciado en 1613 y concluido alrededor de 1629, constituye uno de los edificios más antiguos del periodo virreinal en la ciudad.",
+    "lat": 20.59476,
+    "lon": -100.39138,
+    "imagen": null,
+    "wiki": "Templo y exconvento de San Antonio de Padua (Querétaro)",
+    "fuente": "https://www.wikidata.org/wiki/Q136433473"
+   },
+   {
+    "id": "Q19950463",
+    "nombre": "Parroquia Santa María de la Asunción",
+    "tipo": "Templo",
+    "descripcion": "El Templo Parroquial Santa María de la Asunción es una iglesia parroquial de México ubicada en la plaza Miguel Hidalgo en la cabecera municipal de Tequisquiapan, Querétaro. Es un templo de culto católico, dedicado a Santa María de la Asunción, y pertenece a la diócesis de Querétaro.",
+    "lat": 20.52312,
+    "lon": -99.89155,
+    "imagen": "Frontispicio, Parroquia Santa María de la Asunción.JPG",
+    "wiki": "Parroquia Santa María de la Asunción (Tequisquiapan)",
+    "municipio": "Tequisquiapan",
+    "fuente": "https://www.wikidata.org/wiki/Q19950463"
+   },
+   {
+    "id": "Q136292112",
+    "nombre": "Hacienda de Amazcala",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Amazcala es una antigua hacienda ubicada en el municipio de El Marqués, en el estado de Querétaro, México. Fundada en el siglo XVI, se originó como una casa fuerte destinada a proteger a las comunidades locales y a las rutas comerciales de la región.",
+    "lat": 20.68889,
+    "lon": -100.25833,
+    "imagen": null,
+    "wiki": "Hacienda de Amazcala",
+    "municipio": "El Marqués",
+    "fuente": "https://www.wikidata.org/wiki/Q136292112"
+   },
+   {
+    "id": "Q136334456",
+    "nombre": "Hacienda de El Batán",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de El Batán es una antigua hacienda ubicada en el municipio de Querétaro, en el estado de Querétaro, México. Fundada en el siglo XVII, se dedicó a la producción agrícola y ganadera, especialmente al cultivo de granos y forrajes.",
+    "lat": 20.56667,
+    "lon": -100.36667,
+    "imagen": null,
+    "wiki": "Hacienda de El Batán (Querétaro)",
+    "fuente": "https://www.wikidata.org/wiki/Q136334456"
+   },
+   {
+    "id": "Q136334463",
+    "nombre": "Hacienda de Buenavista",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Buenavista es una antigua hacienda ubicada en el municipio de San Juan del Río, en el estado de Querétaro, México. Fundada en el siglo XVIII, se dedicó principalmente a la producción agrícola y ganadera.",
+    "lat": 20.36667,
+    "lon": -99.99167,
+    "imagen": null,
+    "wiki": "Hacienda de Buenavista (San Juan del Río)",
+    "fuente": "https://www.wikidata.org/wiki/Q136334463"
+   },
+   {
+    "id": "Q136405288",
+    "nombre": "Ex Hacienda Juriquilla",
+    "tipo": "Hacienda",
+    "descripcion": "La ex hacienda Juriquilla fue una de las fincas agroganaderas y textiles históricas del norte del valle de Santiago de Querétaro, en la actual delegación de Santa Rosa Jáuregui.",
+    "lat": 20.57128,
+    "lon": -100.4123,
+    "imagen": "Capilla de la Ex-Hacienda Juriquilla Retablo Frontal..jpg",
+    "wiki": "Exhacienda Juriquilla",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q136405288"
+   },
+   {
+    "id": "Q136472945",
+    "nombre": "Galería Libertad",
+    "tipo": "Museo",
+    "descripcion": "La Galería Libertad es un espacio público dedicado a la exhibición, promoción y formación en las artes visuales, ubicado en el Centro histórico de Santiago de Querétaro, México. Es administrada por la Secretaría de Cultura del Estado de Querétaro y constituye uno de los recintos expositivos más activos del estado.",
+    "lat": 20.5136,
+    "lon": -99.8958,
+    "imagen": "Galería_Libertad.jpg",
+    "wiki": "Galería Libertad",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q136472945"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q173121",
+    "nombre": "Santiago de Querétaro",
+    "tipo": "Ciudad",
+    "descripcion": "Querétaro (del purépecha: Kꞌerhiretarhu ‘Lugar de la gran ciudad’), oficialmente llamada Santiago de Querétaro, es la ciudad más poblada, así como capital, del estado de Querétaro, además de ser la cabecera del municipio homónimo.",
+    "lat": 20.58806,
+    "lon": -100.38806,
+    "imagen": "Acueducto qro.jpg",
+    "wiki": "Santiago de Querétaro",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q173121"
+   },
+   {
+    "id": "Q1815099",
+    "nombre": "San Juan del Río",
+    "tipo": "Ciudad",
+    "descripcion": "San Juan del Río es una ciudad mexicana ubicada en el estado de Querétaro, a 57 kilómetros de la capital del estado, Santiago de Querétaro. Es cabecera del municipio homónimo.",
+    "lat": 20.38889,
+    "lon": -99.99639,
+    "imagen": "Vista de SJR.JPG",
+    "wiki": "San Juan del Río (Querétaro)",
+    "municipio": "San Juan del Río",
+    "fuente": "https://www.wikidata.org/wiki/Q1815099"
+   },
+   {
+    "id": "Q2500342",
+    "nombre": "Peña de Bernal",
+    "tipo": "Montaña",
+    "descripcion": "La Peña de Bernal es una formación rocosa producto de un volcán extinto.",
+    "lat": 20.74966,
+    "lon": -99.94564,
+    "imagen": "La Peña de Bernal.JPG",
+    "wiki": "Peña de Bernal",
+    "fuente": "https://www.wikidata.org/wiki/Q2500342"
+   },
+   {
+    "id": "Q2448212",
+    "nombre": "Ezequiel Montes",
+    "tipo": "Ciudad",
+    "descripcion": "Ezequiel Montes es una ciudad del estado mexicano de Querétaro. Está ubicada al centro del estado y tiene alrededor de 40,003 habitantes.",
+    "lat": 20.66583,
+    "lon": -99.89806,
+    "imagen": "FountainEMontesPlaza.JPG",
+    "wiki": "Ezequiel Montes (Querétaro)",
+    "municipio": "Ezequiel Montes",
+    "fuente": "https://www.wikidata.org/wiki/Q2448212"
+   },
+   {
+    "id": "Q20246301",
+    "nombre": "El Pueblito",
+    "tipo": "Ciudad",
+    "descripcion": "El Pueblito es una ciudad ubicada en el estado mexicano de Querétaro, es la cabecera municipal de Corregidora. De acuerdo al censo de población realizado por el INEGI en el año 2020, tiene un total de 115 264 habitantes.",
+    "lat": 20.53972,
+    "lon": -100.44139,
+    "imagen": "Santuario Nuestra Señora del Pueblito (Querétaro).jpg",
+    "wiki": "El Pueblito (Querétaro)",
+    "municipio": "Corregidora",
+    "fuente": "https://www.wikidata.org/wiki/Q20246301"
+   },
+   {
+    "id": "Q2687927",
+    "nombre": "Cerro de las Campanas",
+    "tipo": "Parque nacional",
+    "descripcion": "El Cerro de las Campanas es una colina ubicada en la ciudad de Querétaro, Estado de Querétaro, en México. Está protegida por el Parque nacional Cerro de las Campanas, que incluye una superficie de 58 hectáreas.",
+    "lat": 20.5934,
+    "lon": -100.41,
+    "imagen": "Capilla de Maximiliano.jpg",
+    "wiki": "Cerro de las Campanas",
+    "municipio": "Querétaro",
+    "fuente": "https://www.wikidata.org/wiki/Q2687927"
+   },
+   {
+    "id": "Q6062979",
+    "nombre": "Parque nacional El Cimatario",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque Nacional El Cimatario es una reserva natural mexicana ubicada en el estado de Querétaro entre los límites de los municipios de Huimilpan y Querétaro, el parque y el cerro se ubican en lo que alguna vez, hace cerca de 5 millones de años fue un volcán el cual ha permanecido inactivo y no muestra signos de…",
+    "lat": 20.53115,
+    "lon": -100.35934,
+    "imagen": "CerroDelCimatarioAntenasQueretaro.jpg",
+    "wiki": "Parque nacional El Cimatario",
+    "fuente": "https://www.wikidata.org/wiki/Q6062979"
+   },
+   {
+    "id": "Q6106198",
+    "nombre": "Reserva de la biosfera Sierra Gorda",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera Sierra Gorda es un área natural protegida en el centro de México. Se localiza en el noreste del estado de Querétaro, y cubre aproximadamente la tercera parte de éste.",
+    "lat": 21.33333,
+    "lon": -99.66667,
+    "imagen": "Vista-sierra-gorda-queretaro.jpg",
+    "wiki": "Reserva de la biosfera Sierra Gorda",
+    "fuente": "https://www.wikidata.org/wiki/Q6106198"
+   },
+   {
+    "id": "Q115799699",
+    "nombre": "Cerro del Cimatario",
+    "tipo": "Montaña",
+    "descripcion": "El cerro del Cimatario es un volcán extinto que se encuentra sobre la zona de la Mesa del Centro, administrativamente está entre los municipios de Huimilpan, Corregidora y Querétaro, tiene una altura máxima de 2350 metros sobre el nivel del mar.",
+    "lat": 20.52891,
+    "lon": -100.36065,
+    "imagen": "Cerro_cimatario.jpg",
+    "wiki": "Cerro del Cimatario",
+    "fuente": "https://www.wikidata.org/wiki/Q115799699"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q614320",
+    "nombre": "Escamol",
+    "tipo": "Platillo",
+    "descripcion": "Los escamoles (del náhuatl azcatl, ‘hormiga’, y molli, ‘guiso’) son larvas de la hormiga güijera Liometopum apiculatum, muy apreciadas en México desde tiempos prehispánicos, cuando en temporada formaban parte de la alimentación cotidiana de los habitantes de Mesoamérica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "MGSA2018 - Escamoles.jpg",
+    "wiki": "Escamol",
+    "fuente": "https://www.wikidata.org/wiki/Q614320"
+   },
+   {
+    "id": "Q105840963",
+    "nombre": "Queso de tuna",
+    "tipo": "Queso",
+    "descripcion": "El queso de tuna es un producto dulce típico mexicano elaborado a partir de reducir jugo de tuna cardona, el fruto del nopal cardón. A pesar de su nombre, no tiene nada que ver con el queso lácteo.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Queso de tuna",
+    "fuente": "https://www.wikidata.org/wiki/Q105840963"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   }
+  ]
+ }
+}

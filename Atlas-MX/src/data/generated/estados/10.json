@@ -1,0 +1,342 @@
+{
+ "cve": "10",
+ "estado": "Durango",
+ "wikidata": "Q79918",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1892048",
+    "nombre": "Mapimí",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mapimí (del cocoyome: mapeme ‘piedra en alto o cerro elevado’) es una ciudad y cabecera municipal del estado mexicano de Durango, municipio ubicado en la Comarca Lagunera. Da su nombre a la zona desértica denominada Bolsón de Mapimí y es cabecera del municipio del mismo nombre.",
+    "lat": 25.83306,
+    "lon": -103.84778,
+    "imagen": "Mapimicolage.jpg",
+    "wiki": "Mapimí",
+    "municipio": "Mapimí",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1892048"
+   },
+   {
+    "id": "Q3343022",
+    "nombre": "Nombre de Dios",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Nombre de Dios es la población sede del municipio de Nombre de Dios en Durango, México. En 2020 contaba con una población de 19060 habitantes.",
+    "lat": 23.84679,
+    "lon": -104.24342,
+    "imagen": "Parroquia de San Pedro Apóstol, Nombre de Dios, Durango, México 02.jpg",
+    "wiki": "Nombre de Dios (Durango)",
+    "municipio": "Nombre de Dios",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3343022"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q2348655",
+    "nombre": "Municipio de Indé",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El Municipio de Indé es uno de los 39 municipios en que para su régimen interior se encuentra dividido el estado mexicano de Durango, se encuentra al norte del estado. Su cabecera es el pueblo de Indé.",
+    "lat": 25.74,
+    "lon": -104.98,
+    "imagen": null,
+    "wiki": "Municipio de Indé",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2348655"
+   },
+   {
+    "id": "Q6462492",
+    "nombre": "La Ferrería",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Ferrería es una zona arqueológica ubicada a 7 kilómetros al sur del centro de la ciudad de Durango, en el estado de Durango, México, en el cerro de La Ferrería, a la orilla del Río Tunal.",
+    "lat": 23.96083,
+    "lon": -104.64861,
+    "imagen": "Ruinas casi en La Ferrería Zona Artueologica.jpg",
+    "wiki": "Zona arqueológica de La Ferrería",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q6462492"
+   },
+   {
+    "id": "Q5758355",
+    "nombre": "Catedral Basílica de Durango",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Basílica Menor de la Inmaculada Concepción, pertenece a la arquidiócesis de Durango. Se ubica en el centro histórico de la ciudad de Victoria de Durango, frente a la Plaza de Armas.",
+    "lat": 24.0251,
+    "lon": -104.6703,
+    "imagen": "Catedral durango.jpg",
+    "wiki": "Catedral metropolitana de Durango",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q5758355"
+   },
+   {
+    "id": "Q89281029",
+    "nombre": "Museo de Arqueología de Durango, Ganot-Peschard",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arqueología Ganot-Peschard es un museo de arqueología en la Zona Centro, Durango, México. El museo conserva la historia indígena de Norte de México.",
+    "lat": 24.02378,
+    "lon": -104.67192,
+    "imagen": "Ganot-Peschard042.jpg",
+    "wiki": "Museo de Arqueología Ganot-Peschard",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q89281029"
+   },
+   {
+    "id": "Q6141043",
+    "nombre": "Templo de San Agustín",
+    "tipo": "Templo",
+    "descripcion": "San Agustín es un templo católico situado en Victoria de Durango, en el estado de Durango, en México. Fue fundado por el primer obispo de Durango, Fray Gonzalo de Hermosillo, en 1631, y se distingue por su sencillez arquitectónica.",
+    "lat": 24.02469,
+    "lon": -104.67347,
+    "imagen": "Templo de San Agustín, Durango.JPG",
+    "wiki": "Templo de San Agustín (Durango)",
+    "fuente": "https://www.wikidata.org/wiki/Q6141043"
+   },
+   {
+    "id": "Q24532871",
+    "nombre": "Museo Regional de Durango Ángel Rodríguez Solórzano",
+    "tipo": "Museo",
+    "descripcion": "El \"Museo Regional de Durango-UJED Ángel Rodríguez Solórzano\" o también conocido como \"Museo Regional de Durango\" es un museo que se encuentra en Victoria de Durango, en una casona que data de aproximadamente el siglo XIX con estilo francés.",
+    "lat": 24.02672,
+    "lon": -104.66962,
+    "imagen": "Museo Regional de Durango.jpg",
+    "wiki": "Museo Regional de Durango",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q24532871"
+   },
+   {
+    "id": "Q17633544",
+    "nombre": "Hacienda de San Mateo de la Zarca",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de San Mateo de la Zarca está localizada en el norte del Estado de Durango, en México. La capilla de San Mateo de la hacienda forma parte del Camino Real de Tierra Adentro, declarado Patrimonio de la Humanidad por la UNESCO en 2010 (1351-053).",
+    "lat": 25.845,
+    "lon": -104.741,
+    "imagen": null,
+    "wiki": "Hacienda de San Mateo de la Zarca",
+    "fuente": "https://www.wikidata.org/wiki/Q17633544"
+   },
+   {
+    "id": "Q24568885",
+    "nombre": "Museo de Sitio de la Ferrería",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio de la Ferrería es un recinto ubicado en el estado de Durango y en éste se exhiben diferentes piezas provenientes de algunas excavaciones arqueológicas de la zona, así como de otras áreas del estado. Fue inaugurado en el año 2000 y después fue reestructurado entre 2006 y 2007.",
+    "lat": 23.96125,
+    "lon": -104.64648,
+    "imagen": null,
+    "wiki": "Museo de Sitio de la Ferrería",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q24568885"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q3846809",
+    "nombre": "San Pedro del Gallo",
+    "tipo": "Ciudad",
+    "descripcion": "San Pedro del Gallo es una localidad del estado mexicano de Durango, ubicado en el centro-norte del estado y es cabecera del municipio del mismo nombre. Se ubica en la zona conocida como la Comarca Lagunera.",
+    "lat": 25.56639,
+    "lon": -104.29278,
+    "imagen": null,
+    "wiki": "San Pedro del Gallo",
+    "municipio": "San Pedro del Gallo",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3846809"
+   },
+   {
+    "id": "Q112813",
+    "nombre": "Victoria de Durango",
+    "tipo": "Ciudad",
+    "descripcion": "Durango, oficialmente llamada Victoria de Durango, es una ciudad mexicana, capital del estado de Durango, y cabecera del municipio de Durango. Se localiza en el norte de México.",
+    "lat": 24.02278,
+    "lon": -104.65444,
+    "imagen": "Panoramica plaza de armas Durango.jpg",
+    "wiki": "Victoria de Durango",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q112813"
+   },
+   {
+    "id": "Q1775128",
+    "nombre": "Gómez Palacio",
+    "tipo": "Ciudad",
+    "descripcion": "Gómez Palacio es una ciudad mexicana ubicada en el estado de Durango, que en conjunto con las vecinas ciudades de Ciudad Lerdo (en Durango), Torreón, Matamoros y Francisco I. Madero (en Coahuila) conforma la Comarca Lagunera, la cual es la décima zona metropolitana más poblada de México con 1 434 283 habitantes.",
+    "lat": 25.5725,
+    "lon": -103.4945,
+    "imagen": "Parroquia de Nuestra Señora de Guadalupe, Gomez Palacio, Dgo.jpg",
+    "wiki": "Gómez Palacio",
+    "municipio": "Gómez Palacio",
+    "fuente": "https://www.wikidata.org/wiki/Q1775128"
+   },
+   {
+    "id": "Q1961329",
+    "nombre": "Ciudad Lerdo",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Lerdo es una ciudad del estado mexicano de Durango, localizada a 249 km de la capital del estado, Victoria de Durango. Lerdo, junto con Torreón, Coahuila, Gómez Palacio, y otras ciudades y municipios conforman la zona metropolitana de La Laguna.",
+    "lat": 25.53718,
+    "lon": -103.52456,
+    "imagen": "Plaza de armas de lerdo.JPG",
+    "wiki": "Ciudad Lerdo",
+    "municipio": "Lerdo",
+    "fuente": "https://www.wikidata.org/wiki/Q1961329"
+   },
+   {
+    "id": "Q2465593",
+    "nombre": "Santiago Papasquiaro",
+    "tipo": "Ciudad",
+    "descripcion": "Santiago Papasquiaro es una ciudad mexicana ubicada en el estado de Durango, cabecera del municipio homónimo. Es la cuarta ciudad más poblada del estado, tras Durango, Gómez Palacio y Lerdo.",
+    "lat": 25.04389,
+    "lon": -105.41917,
+    "imagen": null,
+    "wiki": "Santiago Papasquiaro",
+    "municipio": "Santiago Papasquiaro",
+    "fuente": "https://www.wikidata.org/wiki/Q2465593"
+   },
+   {
+    "id": "Q10390252",
+    "nombre": "Vicente Guerrero",
+    "tipo": "Ciudad",
+    "descripcion": "Vicente Guerrero es una localidad del estado de Durango, México. Es la cabecera del municipio de Vicente Guerrero.",
+    "lat": 23.73417,
+    "lon": -103.985,
+    "imagen": "Plaza de armas VG.jpg",
+    "wiki": "Vicente Guerrero (Durango)",
+    "municipio": "Vicente Guerrero",
+    "fuente": "https://www.wikidata.org/wiki/Q10390252"
+   },
+   {
+    "id": "Q5124149",
+    "nombre": "Guadalupe Victoria",
+    "tipo": "Ciudad",
+    "descripcion": "El ciudad de Guadalupe Victoria se encuentra situada en el estado mexicano de Durango. Es la principal localidad y cabecera del municipio de Guadalupe Victoria.",
+    "lat": 24.44972,
+    "lon": -104.1225,
+    "imagen": "Cerro_de_la_India.jpg",
+    "wiki": "Ciudad Guadalupe Victoria (Durango)",
+    "municipio": "Guadalupe Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q5124149"
+   },
+   {
+    "id": "Q5352072",
+    "nombre": "El Salto",
+    "tipo": "Ciudad",
+    "descripcion": "La ciudad de El Salto se encuentra situada en el estado mexicano de Durango. Es la principal localidad y cabecera del municipio de Pueblo Nuevo.",
+    "lat": 23.77833,
+    "lon": -105.36056,
+    "imagen": "El Salto - panoramio (2).jpg",
+    "wiki": "El Salto (Durango)",
+    "municipio": "Pueblo Nuevo",
+    "fuente": "https://www.wikidata.org/wiki/Q5352072"
+   },
+   {
+    "id": "Q22680926",
+    "nombre": "RBMapimí",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera Mapimí es un área natural protegida representativa del desierto chihuahuense que comprende parte de los estados de Chihuahua, Coahuila y Durango en México.",
+    "lat": 26.7186,
+    "lon": -103.7206,
+    "imagen": "Alicoche real.jpg",
+    "wiki": "Reserva de la Biósfera Mapimí",
+    "fuente": "https://www.wikidata.org/wiki/Q22680926"
+   },
+   {
+    "id": "Q12765003",
+    "nombre": "Campo Volcánico de Durango",
+    "tipo": "Volcán",
+    "descripcion": "El Campo Volcánico de Durango es un campo volcánico en el centro-norte de México (Durango), en el este de la Sierra Madre Occidental. El campo cubre una superficie de 2100 kilómetros cuadrados.",
+    "lat": 24.15,
+    "lon": -104.45,
+    "imagen": "Durango volcanic field.jpg",
+    "wiki": "Campo Volcánico de Durango",
+    "municipio": "Durango",
+    "fuente": "https://www.wikidata.org/wiki/Q12765003"
+   },
+   {
+    "id": "Q24307671",
+    "nombre": "Reserva de la Biosfera La Michilía",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La reserva de la biosfera La Michilía es un área natural protegida de México. Se localiza a 75 kilómetros al sur de Durango entre la sierra de Michis y la sierra Urica.",
+    "lat": 23.27,
+    "lon": -104.18,
+    "imagen": null,
+    "wiki": "Reserva de la biosfera La Michilía",
+    "fuente": "https://www.wikidata.org/wiki/Q24307671"
+   },
+   {
+    "id": "Q110271099",
+    "nombre": "Parque Estatal Cañón de Fernández",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Estatal Cañón de Fernández (PECF) es un Área Natural Protegida de injerencia Estatal decretado en 2004, se ubica en la parte noroeste de Durango, en el extremo sur del municipio de Lerdo, estado de Durango, México. Comprende una superficie de 17,001 ha.",
+    "lat": 25.32913,
+    "lon": -103.75024,
+    "imagen": "Cañon de Fernandez - panoramio (2).jpg",
+    "wiki": "Parque Estatal Cañón de Fernández",
+    "fuente": "https://www.wikidata.org/wiki/Q110271099"
+   },
+   {
+    "id": "Q31708545",
+    "nombre": "Cerro Mercado",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro de Mercado es una reconocida elevación ubicada al norte del centro histórico de la ciudad de Durango, en México.",
+    "lat": 24.07694,
+    "lon": -103.95278,
+    "imagen": null,
+    "wiki": "Cerro de Mercado",
+    "fuente": "https://www.wikidata.org/wiki/Q31708545"
+   },
+   {
+    "id": "Q111721365",
+    "nombre": "Laguna de Santiaguillo",
+    "tipo": "Laguna",
+    "descripcion": "El 2 de febrero de 2012 se designó al humedal continental Laguna de Santiaguillo como Sitio Ramsar 2046. Posee una superficie de 24,016 ha y se localiza entre los 24°36′ y 25°11′ de latitud Norte y los 104°36′ y 105°20′ de longitud Oeste en el estado de Durango.",
+    "lat": 24.84204,
+    "lon": -104.86539,
+    "imagen": "Santiaguillo Sur.jpg",
+    "wiki": "Laguna de Santiaguillo",
+    "fuente": "https://www.wikidata.org/wiki/Q111721365"
+   },
+   {
+    "id": "Q136721629",
+    "nombre": "Volcán el Jagüey",
+    "tipo": "Volcán",
+    "descripcion": "El complejo de maares «El Jagüey» y «La Breña», son dos Estratovolcánes los cuales posiblemente se formaron durante el Holoceno.",
+    "lat": 24.42056,
+    "lon": -104.53167,
+    "imagen": "Volcan el Jagüey.jpg",
+    "wiki": "Volcán el Jagüey",
+    "municipio": "Canatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q136721629"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q16860886",
+    "nombre": "Chile pasado",
+    "tipo": "Producto típico",
+    "descripcion": "El chile pasado es un platillo tradicional del norte de México, particularmente de los estados de Durango y Chihuahua. El chile pasado se elabora a partir del chile mirasol o también llamado chile verde o de la tierra y del chile chilaca en Chihuahua.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chile Pasado 1.jpg",
+    "wiki": "Chile pasado",
+    "fuente": "https://www.wikidata.org/wiki/Q16860886"
+   },
+   {
+    "id": "Q62018789",
+    "nombre": "Discada",
+    "tipo": "Platillo",
+    "descripcion": "La discada es un platillo mexicano típico en los estados del norte, caracterizado por ser una abundante mezcla de carnes, embutidos y verduras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "DISCADA.JPG",
+    "wiki": "Discada",
+    "fuente": "https://www.wikidata.org/wiki/Q62018789"
+   }
+  ]
+ }
+}

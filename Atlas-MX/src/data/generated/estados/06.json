@@ -1,0 +1,334 @@
+{
+ "cve": "06",
+ "estado": "Colima",
+ "wikidata": "Q61309",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1113251",
+    "nombre": "Comala",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Comala es una localidad del estado mexicano de Colima, situado al norte del mismo, entre las coordenadas 19°18′ y 19°32′ latitud norte y entre los 103°37′ y 103°57′ longitud oeste. Es la cabecera del municipio homónimo.",
+    "lat": 19.3232,
+    "lon": -103.7588,
+    "imagen": "Plaza de Comala.jpg",
+    "wiki": "Comala",
+    "municipio": "Comala",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1113251"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q2659127",
+    "nombre": "Cultura de Capacha",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Capacha es un sitio arqueológico ubicado a unos 6 kilómetros al noreste del municipio de Colima, en el estado mexicano de Colima. Este sitio es el corazón de la antigua cultura Capacha Mesoamericana.",
+    "lat": 19.28167,
+    "lon": -103.69111,
+    "imagen": "Vasija capacha.jpg",
+    "wiki": "Cultura capacha",
+    "fuente": "https://www.wikidata.org/wiki/Q2659127"
+   },
+   {
+    "id": "Q2034574",
+    "nombre": "La Campana",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Campana es un yacimiento arqueológico considerado en la lista del patrimonio arqueológico mexicano desde 1917. Se localiza en la ciudad de Villa de Álvarez, Colima.",
+    "lat": 19.26778,
+    "lon": -103.72583,
+    "imagen": "Campana.JPG",
+    "wiki": "La Campana (Colima)",
+    "fuente": "https://www.wikidata.org/wiki/Q2034574"
+   },
+   {
+    "id": "Q1323957",
+    "nombre": "El Chanal",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Chanal es una zona arqueológica localizada en el poblado El Chanal, 4 kilómetros al norte de la Ciudad de Colima, en el estado de Colima.",
+    "lat": 19.29278,
+    "lon": -103.70556,
+    "imagen": "Zona_Arqueológica_de_El_Chanal_en_Colima,_México_(15-01-2003).jpg",
+    "wiki": "El Chanal",
+    "municipio": "Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q1323957"
+   },
+   {
+    "id": "Q5758353",
+    "nombre": "Catedral Basílica de Nuestra Señora de Guadalupe",
+    "tipo": "Catedral",
+    "descripcion": "La catedral basílica menor de Colima fue designada el 12 de octubre de 1998 por el papa Juan Pablo II, como Basílica Menor, ya que es la primera consagrada a la Virgen de Guadalupe en América Latina. Ubicada en una de las esquinas del Jardín Libertad, en el centro de la ciudad de Colima, Colima, México.",
+    "lat": 19.24313,
+    "lon": -103.72779,
+    "imagen": "Catedral de Colima.jpg",
+    "wiki": "Catedral basílica menor de Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q5758353"
+   },
+   {
+    "id": "Q5390356",
+    "nombre": "Museo Comunitario de la Sal",
+    "tipo": "Museo",
+    "descripcion": "Museo Comunitario de la Sal es un museo ubicado entre las calles Elías Ávalos del Progreso y Benito Juárez en el centro de la localidad de Cuyutlán, población perteneciente al municipio de Armería en el estado de Colima, México.",
+    "lat": 18.92104,
+    "lon": -104.06908,
+    "imagen": "Museo de la Sal.JPG",
+    "wiki": "Museo Comunitario de la Sal",
+    "municipio": "Armería",
+    "fuente": "https://www.wikidata.org/wiki/Q5390356"
+   },
+   {
+    "id": "Q5493986",
+    "nombre": "Museo Regional de Historia de Colima",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Historia de Colima, inaugurado en 1988, es un museo de México ubicado en las calle Reforma y Miguel Hidalgo de la ciudad de Colima. Este museo se encuentra alojado en una gran casa del siglo XIX, contando con un patio estilo colonial en el centro del recinto.",
+    "lat": 19.24279,
+    "lon": -103.72868,
+    "imagen": "Museo Regional de Historia de Colima.JPG",
+    "wiki": "Museo Regional de Historia de Colima",
+    "municipio": "Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q5493986"
+   },
+   {
+    "id": "Q5675425",
+    "nombre": "Pinacoteca Universitaria Alfonso Michel",
+    "tipo": "Museo",
+    "descripcion": "La Pinacoteca Universitaria Alfonso Michel es un museo ubicado en el centro de Colima, en el municipio de Colima en Colima para honrar la memoria del pintor Alfonso Michel.",
+    "lat": 19.24491,
+    "lon": -103.72624,
+    "imagen": "Pinacoteca Alfonso Michel.JPG",
+    "wiki": "Pinacoteca Universitaria Alfonso Michel",
+    "municipio": "Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q5675425"
+   },
+   {
+    "id": "Q6033725",
+    "nombre": "Museo Regional de la Cristiada",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de la Cristiada es un pequeño museo de México ubicado en la ciudad de Colima, en el municipio de Colima en Colima. Fue inaugurado en 2004.",
+    "lat": 19.24746,
+    "lon": -103.73021,
+    "imagen": "Museo Regional Cristero.JPG",
+    "wiki": "Museo Regional de la Cristiada (Colima)",
+    "municipio": "Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q6033725"
+   },
+   {
+    "id": "Q6033779",
+    "nombre": "Museo Universitario Alejandro Rangel Hidalgo",
+    "tipo": "Museo",
+    "descripcion": "El Museo Universitario Alejandro Rangel Hidalgo es un museo ubicado en el poblado de Nogueras, en el municipio de Comala, Colima, México. Fue fundado en 1996 para honrar la memoria del pintor Alejandro Rangel Hidalgo.",
+    "lat": 19.32344,
+    "lon": -103.73995,
+    "imagen": "Museo_Alejandro_Rangel.JPG",
+    "wiki": "Museo Universitario Alejandro Rangel Hidalgo",
+    "municipio": "Comala",
+    "fuente": "https://www.wikidata.org/wiki/Q6033779"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q1361324",
+    "nombre": "Isla Socorro",
+    "tipo": "Volcán",
+    "descripcion": "La isla Socorro, anteriormente llamada isla Santo Tomás, es una isla volcánica en el archipiélago de Revillagigedo, que se encuentra al oeste de la costa mexicana. El tamaño es 16.5 por 11.5 km, con un área 132 km².",
+    "lat": 18.78444,
+    "lon": -110.975,
+    "imagen": "Socorro Island.jpg",
+    "wiki": "Isla Socorro",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1361324"
+   },
+   {
+    "id": "Q1095657",
+    "nombre": "Isla Clarión",
+    "tipo": "Isla",
+    "descripcion": "La isla Clarión, antiguamente llamada isla de Santa Rosa, es la segunda isla más extensa y la más occidental de las islas Revillagigedo (actualmente pertenecientes a México, específicamente al estado de Colima), 314 km al oeste de la isla Socorro. La isla tiene 8,54 km por 3,68 km de tamaño, con un área de 19,80 km².",
+    "lat": 18.35889,
+    "lon": -114.72194,
+    "imagen": "SATELLITE PICTURE OF CLARION ISLAND.jpg",
+    "wiki": "Isla Clarión",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1095657"
+   },
+   {
+    "id": "Q61320",
+    "nombre": "Colima",
+    "tipo": "Ciudad",
+    "descripcion": "Colima es una ciudad mexicana, capital del estado de Colima, y su ciudad más poblada, es una de las ciudades con mejor calidad de vida del país y la cabecera del municipio homónimo.",
+    "lat": 19.24292,
+    "lon": -103.72812,
+    "imagen": "Colima Colima collage.JPG",
+    "wiki": "Colima (Colima)",
+    "municipio": "Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q61320"
+   },
+   {
+    "id": "Q739908",
+    "nombre": "Manzanillo",
+    "tipo": "Ciudad",
+    "descripcion": "Manzanillo es una ciudad portuaria del estado mexicano de Colima y la cabecera del municipio homónimo. Se ubica al oeste de la entidad sobre la costa del Pacífico en la región occidente de México.",
+    "lat": 19.05321,
+    "lon": -104.31638,
+    "imagen": "Montaje de Manzanillo.jpg",
+    "wiki": "Manzanillo",
+    "municipio": "Manzanillo",
+    "fuente": "https://www.wikidata.org/wiki/Q739908"
+   },
+   {
+    "id": "Q1853445",
+    "nombre": "Villa de Álvarez",
+    "tipo": "Ciudad",
+    "descripcion": "Villa de Álvarez, oficialmente Ciudad de Villa de Álvarez, es una ciudad ubicada en el estado mexicano de Colima, cabecera del municipio homónimo. Es parte de la zona metropolitana de Colima-Villa de Álvarez.",
+    "lat": 19.26478,
+    "lon": -103.73676,
+    "imagen": "Villa d Alvarez.JPG",
+    "wiki": "Villa de Álvarez",
+    "municipio": "Villa de Álvarez",
+    "fuente": "https://www.wikidata.org/wiki/Q1853445"
+   },
+   {
+    "id": "Q1619095",
+    "nombre": "Tecomán",
+    "tipo": "Ciudad",
+    "descripcion": "Tecomán es una ciudad mexicana situada en el estado de Colima, siendo la cabecera del municipio homónimo. Se ubica en el valle de Tecomán.",
+    "lat": 18.9106,
+    "lon": -103.87379,
+    "imagen": "Vista panorámica de la Ciudad de Tecomán,Colima.jpg",
+    "wiki": "Tecomán",
+    "municipio": "Tecomán",
+    "fuente": "https://www.wikidata.org/wiki/Q1619095"
+   },
+   {
+    "id": "Q5124173",
+    "nombre": "Ciudad de Armería",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad de Armería es una ciudad situada en el estado mexicano de Colima, de acuerdo al censo del año 2020, tiene 15 368 habitantes. Es cabecera del municipio de Armería y forma parte de la zona metropolitana de Tecomán.",
+    "lat": 18.93707,
+    "lon": -103.965,
+    "imagen": null,
+    "wiki": "Ciudad de Armería",
+    "municipio": "Armería",
+    "fuente": "https://www.wikidata.org/wiki/Q5124173"
+   },
+   {
+    "id": "Q20021863",
+    "nombre": "Reserva de la Biosfera Sierra de Manantlán",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera Sierra de Manantlán es un área natural declarada reserva de la biosfera en 1988 por la UNESCO, ubicada dentro los estados de Jalisco y de Colima, en el occidente de México.",
+    "lat": 19.32,
+    "lon": -103.88,
+    "imagen": "Parte_alta_de_la_Reserva_de_la_Biósfera_Sierra_de_Manantlán_\"Capillas\".jpg",
+    "wiki": "Reserva de la biosfera Sierra de Manantlán",
+    "fuente": "https://www.wikidata.org/wiki/Q20021863"
+   },
+   {
+    "id": "Q6078320",
+    "nombre": "Playa Campos",
+    "tipo": "Playa",
+    "descripcion": "La Playa Campos se encuentra en el municipio de Manzanillo, en Colima, México. Desde aquí es posible recorrer una franja de la costa que va paralela a las aguas de la Laguna de Cuyutlán.",
+    "lat": 19.0137,
+    "lon": -104.29737,
+    "imagen": null,
+    "wiki": "Playa Campos",
+    "fuente": "https://www.wikidata.org/wiki/Q6078320"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q104665688",
+    "nombre": "Bate",
+    "tipo": "Bebida",
+    "descripcion": "El bate es una bebida espesa y fría, de origen indígena mexicano, a base de semillas de chan o chía tostadas y molidas, similar a un atole. Es típico de los estados de Colima, Jalisco y Nayarit, en donde se pueden encontrar vendedores de bate a pie de calle.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bate en colima.jpg",
+    "wiki": "Bate (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q104665688"
+   },
+   {
+    "id": "Q12007834",
+    "nombre": "Tuba",
+    "tipo": "Bebida",
+    "descripcion": "La tuba es una bebida que consiste en savia de palma fermentada, particularmente palma de coco (Cocos nucifera) por lo que tiene una ligera graduación alcohólica. También se puede tomar del mismo día, sin fermentar, y por lo tanto no será una bebida alcohólica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tuba Colima.JPG",
+    "wiki": "Tuba (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q12007834"
+   },
+   {
+    "id": "Q7695264",
+    "nombre": "Tejuino",
+    "tipo": "Bebida",
+    "descripcion": "El tejuino (del náhuatl: texwinoh ‘bebida de masa’) o tesgüino es una bebida fermentada de maíz de origen mexicano, específicamente de las antiguas culturas de occidente, la cual se consume en regiones de los estados de Jalisco, Sinaloa, Colima, Nayarit, Baja California Sur y Oaxaca.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tejuino.JPG",
+    "wiki": "Tejuino",
+    "fuente": "https://www.wikidata.org/wiki/Q7695264"
+   },
+   {
+    "id": "Q5775620",
+    "nombre": "Coachala",
+    "tipo": "Platillo",
+    "descripcion": "La Cuaxala o cuachala es un platillo típico mexicano, originario de Tuxpan Jalisco y distribuido en los vecinos estados de Colima y Nayarit, consiste en pollo desmenuzado y/o carne de puerco desmenuzada en caldo de jitomate, chiles (que pueden ser pasilla o cascabel), manteca y masa de maíz, que caracteriza a este…",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Coachala",
+    "fuente": "https://www.wikidata.org/wiki/Q5775620"
+   },
+   {
+    "id": "Q87920812",
+    "nombre": "Minguichi",
+    "tipo": "Sopa",
+    "descripcion": "El menguiche es una sopa típica de la cocina de Michoacán, en México, que consiste en leche, tomate verde, cebolla, ajo, elote y chile poblano. También es popular en Colima, donde se le agrega jitomate, y en Jalisco, donde se usa jocoque y maicena.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Minguichi_a_la_olla.jpg",
+    "wiki": "Minguichi",
+    "fuente": "https://www.wikidata.org/wiki/Q87920812"
+   },
+   {
+    "id": "Q85877422",
+    "nombre": "Sal de Cuyutlán",
+    "tipo": "Platillo",
+    "descripcion": "La sal de Cuyutlán es una sal marina natural, sin refinar, sin aditivos y secada al sol, procedente de la laguna de Cuyutlán, en Colima, México. Los salares ocupan alrededor de 3 500 ha entre Manzanillo y Armería, que producen 39 000 toneladas anuales (2019).",
+    "lat": null,
+    "lon": null,
+    "imagen": "FCJ_6278.jpg",
+    "wiki": "Sal de Cuyutlán",
+    "fuente": "https://www.wikidata.org/wiki/Q85877422"
+   },
+   {
+    "id": "Q6132482",
+    "nombre": "Sopitos",
+    "tipo": "Platillo",
+    "descripcion": "Los sopitos colimenses son un platillo típico mexicano originario del municipio de Colima (Colima).",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Sopitos",
+    "fuente": "https://www.wikidata.org/wiki/Q6132482"
+   },
+   {
+    "id": "Q9012336",
+    "nombre": "Jocoque",
+    "tipo": "Bebida",
+    "descripcion": "El jocoque o crema refinada es un producto lácteo cuya base es leche refinada de vaca, muy habitual en la gastronomía mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jocoque_para_acompañar_tacos_árabes,_Puebla.jpg",
+    "wiki": "Jocoque",
+    "fuente": "https://www.wikidata.org/wiki/Q9012336"
+   }
+  ]
+ }
+}

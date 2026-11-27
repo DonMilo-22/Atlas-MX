@@ -1,0 +1,407 @@
+{
+ "cve": "18",
+ "estado": "Nayarit",
+ "wikidata": "Q79920",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q4072347",
+    "nombre": "Ahuacatlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ahuacatlán es una localidad mexicana, cabecera del municipio homónimo, ubicada en el estado de Nayarit. Ahuacatlán etimológicamente significa \"Lugar de Aguacates\" (del náhuatl āhuac- aguacate y -tlan 'lugar, sitio').",
+    "lat": 21.05444,
+    "lon": -104.48444,
+    "imagen": "Ahuacatlan de Noche.jpg",
+    "wiki": "Ahuacatlán (Nayarit)",
+    "municipio": "Ahuacatlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q4072347"
+   },
+   {
+    "id": "Q20135544",
+    "nombre": "Amatlán de Cañas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Amatlán de Cañas es una localidad del estado mexicano de Nayarit. Es la cabecera del municipio de Amatlán de Cañas.",
+    "lat": 20.80694,
+    "lon": -104.40417,
+    "imagen": "PLAZA PRINCIPAL DE AMATLÁN DE CAÑAS.jpg",
+    "wiki": "Amatlán de Cañas",
+    "municipio": "Amatlán de Cañas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20135544"
+   },
+   {
+    "id": "Q20133103",
+    "nombre": "Compostela de Indias",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Compostela es una localidad mexicana, cabecera del municipio homónimo. Fue fundada por disposición de doña Isabel de Portugal [cita requerida]; gobernadora del Reino de Castilla en nombre de su esposo el monarca Carlos I, el 25 de julio de 1532.",
+    "lat": 21.2372,
+    "lon": -104.901,
+    "imagen": "AsdeOros07.JPG",
+    "wiki": "Compostela (Nayarit)",
+    "municipio": "Compostela",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20133103"
+   },
+   {
+    "id": "Q20148129",
+    "nombre": "Ixtlán del Río",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ixtlán del Río es una localidad del estado mexicano de Nayarit. Es la cabecera del municipio de Ixtlán del Río.",
+    "lat": 21.03917,
+    "lon": -104.37111,
+    "imagen": "Idrn.jpg",
+    "wiki": "Ixtlán del Río",
+    "municipio": "Ixtlán del Río",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20148129"
+   },
+   {
+    "id": "Q2447536",
+    "nombre": "Jala",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jala es una localidad mexicana, cabecera del municipio homónimo, ubicada en el estado de Nayarit. Jala etimológicamente significa \"lugar donde abunda la arena (del náhuatl xali- arena, y tla- 'lugar, sitio').",
+    "lat": 21.10472,
+    "lon": -104.4375,
+    "imagen": "Jala Nayarit.jpg",
+    "wiki": "Jala",
+    "municipio": "Jala",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2447536"
+   },
+   {
+    "id": "Q1049346",
+    "nombre": "Mexcaltitán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mexcaltitán (del náhuatl: Mexkaltitlan ‘lugar entre agaves’‘mexkalli «agave», titlan «lugar entre»’) es una localidad mexicana del municipio de Santiago Ixcuintla, en el estado de Nayarit. La localidad se asienta sobre una isla que recibe el mismo nombre.",
+    "lat": 21.90583,
+    "lon": -105.47528,
+    "imagen": "Isla Mexcaltitan.jpg",
+    "wiki": "Mexcaltitán",
+    "municipio": "Santiago Ixcuintla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1049346"
+   },
+   {
+    "id": "Q5246953",
+    "nombre": "Puerto Balleto",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Puerto Balleto es una localidad del municipio de San Blas, Nayarit y es una de las pocas ciudades insulares de México. Se localiza en la isla María Madre, la mayor de las islas Marías, fue la principal ciudad de las islas y de la Colonia Penal Federal Islas Marías.",
+    "lat": 21.63389,
+    "lon": -106.53917,
+    "imagen": null,
+    "wiki": "Puerto Balleto",
+    "municipio": "San Blas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5246953"
+   },
+   {
+    "id": "Q5482273",
+    "nombre": "San Blas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Blas es una ciudad y puerto del estado mexicano de Nayarit, ubicada de cara al océano Pacífico. Es la cabecera del municipio de San Blas.",
+    "lat": 21.53972,
+    "lon": -105.28556,
+    "imagen": "San Blas (Mexico).JPG",
+    "wiki": "San Blas (Nayarit)",
+    "municipio": "San Blas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5482273"
+   },
+   {
+    "id": "Q3048851",
+    "nombre": "Sayulita",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Sayulita (del náhuatl: Sayolin ‘Lugar de moscas’) es una pequeña localidad turística localizada en el municipio de Bahía de Banderas en el sur del estado mexicano de Nayarit, en las costas del océano pacífico.",
+    "lat": 20.86889,
+    "lon": -105.44083,
+    "imagen": "Sayulita Nayarit.jpg",
+    "wiki": "Sayulita",
+    "municipio": "Bahía de Banderas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3048851"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q643715",
+    "nombre": "Islas Marías",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "Las islas Marías, también llamadas islas Tres Marías, son un grupo de islas localizadas en el océano Pacífico a 112 km de las costas del estado mexicano de Nayarit, al que administrativamente pertenecen de facto y jurisdiccionalmente son federales (de jure), ya que poseen su propio Estatuto.",
+    "lat": 21.47917,
+    "lon": -106.45556,
+    "imagen": "Islas Marias MODIS.jpg",
+    "wiki": "Islas Marías",
+    "municipio": "San Blas",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q643715"
+   },
+   {
+    "id": "Q5758606",
+    "nombre": "Catedral de Tepic",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Tepic es el templo católico sede de la diócesis de Tepic. Está ubicada frente a la plaza principal, en el centro de la ciudad.",
+    "lat": 21.51181,
+    "lon": -104.89119,
+    "imagen": "Catedral de Nuestra Señora de la Asunción, Tepic.JPG",
+    "wiki": "Catedral de Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q5758606"
+   },
+   {
+    "id": "Q97570366",
+    "nombre": "Museo Regional de Nayarit",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Nayarit se enfoca en las diferentes tradiciones culturales del Nayarit prehispánico y se encuentra localizado en la ciudad de Tepic, en Nayarit, México.",
+    "lat": 21.50998,
+    "lon": -104.89263,
+    "imagen": "Museo_Regional_de_Nayarit.jpg",
+    "wiki": "Museo Regional de Nayarit",
+    "municipio": "Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q97570366"
+   },
+   {
+    "id": "Q24764680",
+    "nombre": "Museo Amado Nervo",
+    "tipo": "Museo",
+    "descripcion": "El museo Amado Nervo es un museo mexicano dedicado al poeta mexicano Amado Nervo, construido en la casa donde este nació el 27 de agosto de 1870, el cual está ubicado en el centro de Tepic en el estado de Nayarit.",
+    "lat": 21.51241,
+    "lon": -104.89042,
+    "imagen": null,
+    "wiki": "Museo Amado Nervo",
+    "municipio": "Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q24764680"
+   },
+   {
+    "id": "Q97466032",
+    "nombre": "Casa Museo Juan Escutia",
+    "tipo": "Museo",
+    "descripcion": "Casa Museo Juan Escutia es un museo mexicano dedicado a Juan Escutia y se ubica en el centro de Tepic en el estado de Nayarit, Juan Escutía fue uno de los combatientes que murió en la defensa del Castillo de Chapultepec durante la Intervención estadounidense en México.",
+    "lat": 21.51047,
+    "lon": -104.89079,
+    "imagen": null,
+    "wiki": "Casa Museo Juan Escutia",
+    "municipio": "Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q97466032"
+   },
+   {
+    "id": "Q112113648",
+    "nombre": "Centro de Arte Contemporáneo del Bicentenario Emilia Ortiz",
+    "tipo": "Museo",
+    "descripcion": "Museo y centro cultural de Nayarit",
+    "lat": 21.51089,
+    "lon": -104.89174,
+    "imagen": null,
+    "wiki": "Centro de Arte Contemporáneo del Bicentenario Emilia Ortiz",
+    "municipio": "Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q112113648"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q207972",
+    "nombre": "Tepic",
+    "tipo": "Ciudad",
+    "descripcion": "Tepic es una ciudad mexicana, capital del estado de Nayarit y cabecera del municipio homónimo. De acuerdo con el censo de Población y Vivienda 2020, es la ciudad más poblada del estado con 371,387 habitantes en su área urbana.",
+    "lat": 21.5,
+    "lon": -104.9,
+    "imagen": "Tepic.png",
+    "wiki": "Tepic",
+    "municipio": "Tepic",
+    "fuente": "https://www.wikidata.org/wiki/Q207972"
+   },
+   {
+    "id": "Q429995",
+    "nombre": "Acaponeta",
+    "tipo": "Ciudad",
+    "descripcion": "Acaponeta es una localidad mexicana ubicada en el estado de Nayarit, cabecera del municipio homónimo.",
+    "lat": 22.49639,
+    "lon": -105.35944,
+    "imagen": "Plaza principal de Acaponeta (2022).jpg",
+    "wiki": "Acaponeta",
+    "municipio": "Acaponeta",
+    "fuente": "https://www.wikidata.org/wiki/Q429995"
+   },
+   {
+    "id": "Q2975290",
+    "nombre": "Ceboruco",
+    "tipo": "Montaña",
+    "descripcion": "El Ceboruco es un volcán del Eje Neovolcánico Mexicano, situado al extremo oeste de la cadena montañosa, en el estado de Nayarit. Alcanza una altitud de 2280 m s. n. m. Según su tipo de erupción el Ceboruco es un estratovolcán.",
+    "lat": 21.12492,
+    "lon": -104.50871,
+    "imagen": "Ceboruco panoramica.jpg",
+    "wiki": "Ceboruco",
+    "fuente": "https://www.wikidata.org/wiki/Q2975290"
+   },
+   {
+    "id": "Q2301531",
+    "nombre": "Santiago Ixcuintla",
+    "tipo": "Ciudad",
+    "descripcion": "Santiago Ixcuintla (del náhuatl: Itzcuintle, tlan ‘perro, lugar’‘ lugar de perros’), es una ciudad del estado mexicano de Nayarit, cabecera del municipio de Santiago Ixcuintla.",
+    "lat": 21.81102,
+    "lon": -105.20789,
+    "imagen": "Vista del centro.JPG",
+    "wiki": "Santiago Ixcuintla",
+    "municipio": "Santiago Ixcuintla",
+    "fuente": "https://www.wikidata.org/wiki/Q2301531"
+   },
+   {
+    "id": "Q2449144",
+    "nombre": "Xalisco",
+    "tipo": "Ciudad",
+    "descripcion": "Xalisco (pronunciación: Jalisco) es una ciudad del estado mexicano de Nayarit y cabecera del municipio homónimo. De acuerdo a datos del Censo de Población y Vivienda 2020 del INEGI, cuenta con 48,170 habitantes, siendo la segunda ciudad por población del estado.",
+    "lat": 21.44417,
+    "lon": -104.90167,
+    "imagen": "Hura polyandra.jpg",
+    "wiki": "Xalisco (Nayarit)",
+    "municipio": "Xalisco",
+    "fuente": "https://www.wikidata.org/wiki/Q2449144"
+   },
+   {
+    "id": "Q4982521",
+    "nombre": "Bucerías",
+    "tipo": "Ciudad",
+    "descripcion": "Bucerías es una localidad situada en el estado mexicano de Nayarit, dentro del municipio de Bahía de Banderas. De acuerdo con el censo de población del año 2020 hay alrededor de 16 161 habitantes en la localidad.",
+    "lat": 20.75502,
+    "lon": -105.33422,
+    "imagen": "Bucerias_Beach.jpg",
+    "wiki": "Bucerías",
+    "municipio": "Bahía de Banderas",
+    "fuente": "https://www.wikidata.org/wiki/Q4982521"
+   },
+   {
+    "id": "Q8538561",
+    "nombre": "Sangangüey",
+    "tipo": "Montaña",
+    "descripcion": "El Volcán Sangangüey es un estratovolcán inactivo y presenta una forma erosionada, forma parte del Eje volcánico transversal de México. Su altitud es de 2,340 m s. n. m. Es un importante emblema tanto del municipio de Tepic como del estado de Nayarit.",
+    "lat": 21.4504,
+    "lon": -104.733,
+    "imagen": "Nayarit.jpg",
+    "wiki": "Sangangüey",
+    "fuente": "https://www.wikidata.org/wiki/Q8538561"
+   },
+   {
+    "id": "Q18168443",
+    "nombre": "Playa de Guayabitos",
+    "tipo": "Playa",
+    "descripcion": "Rincón de Guayabitos (también conocido como Guayabitos) es una playa popular localizada en el municipio de Compostela, en el estado de Nayarit, México.",
+    "lat": 21.0253,
+    "lon": -105.269,
+    "imagen": "BeachGuayabitos05.JPG",
+    "wiki": "Rincón de Guayabitos",
+    "municipio": "Compostela",
+    "fuente": "https://www.wikidata.org/wiki/Q18168443"
+   },
+   {
+    "id": "Q5778585",
+    "nombre": "Bahía de Banderas",
+    "tipo": "Bahía",
+    "descripcion": "Bahía de Banderas es una bahía natural de México localizada en la costa del océano Pacífico, entre los estados de Jalisco y Nayarit, y da su nombre a uno de los municipios de Nayarit, Bahía de Banderas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Nuevo Vallarta 2.JPG",
+    "wiki": "Bahía de Banderas (bahía)",
+    "fuente": "https://www.wikidata.org/wiki/Q5778585"
+   },
+   {
+    "id": "Q5969240",
+    "nombre": "Laguna de Santa María del Oro",
+    "tipo": "Lago",
+    "descripcion": "El Lago Cráter de Santa María del Oro ubicado en la parte nor-occidental de la Faja Volcánica Trans-Mexicana (FVT), en la localidad de Santa María del Oro, en el estado de Nayarit, México. Se denomina lago cráter, porque básicamente el lago se encuentra dentro de una caldera de un volcán.",
+    "lat": 21.36981,
+    "lon": -104.56925,
+    "imagen": "Lag samao.JPG",
+    "wiki": "Laguna de Santa María del Oro",
+    "fuente": "https://www.wikidata.org/wiki/Q5969240"
+   },
+   {
+    "id": "Q27780103",
+    "nombre": "Volcán San Juan",
+    "tipo": "Volcán",
+    "descripcion": "La sierra de San Juan, también conocida como Reserva Ecológica de San Juan o Volcán de San Juan, ubicada en el centro del estado mexicano de Nayarit, forma parte del Eje Neovolcánico Mexicano, su altitud máxima es de 2240 m s. n. m. Es parte de la Sierra Madre Occidental.",
+    "lat": 21.49471,
+    "lon": -104.93169,
+    "imagen": "Cerro de San Juan - Tepic, Nayarit, MEXICO.jpg",
+    "wiki": "Sierra de San Juan (Nayarit)",
+    "fuente": "https://www.wikidata.org/wiki/Q27780103"
+   },
+   {
+    "id": "Q4694426",
+    "nombre": "Laguna de Agua Brava",
+    "tipo": "Laguna",
+    "descripcion": "Agua Brava es un estero y laguna de la costa mexicana del océano Pacífico, en el estado de Nayarit. Es pantanosa y tiene un perfil irregular, con un litoral de 3 kilómetros.",
+    "lat": 22.106,
+    "lon": -105.533,
+    "imagen": null,
+    "wiki": "Laguna de Agua Brava",
+    "fuente": "https://www.wikidata.org/wiki/Q4694426"
+   },
+   {
+    "id": "Q27779106",
+    "nombre": "Cerro El Vigia",
+    "tipo": "Montaña",
+    "descripcion": "El cerro El Vigía es un cerro ubicado en el sureste de Nayarit, México. Tiene una altitud de 2760 m s. n. m., lo que lo convierte en el punto más alto del estado.",
+    "lat": 21.27194,
+    "lon": -104.0725,
+    "imagen": "Cerro El Vigía, punto mas alto en Nayarit.jpg",
+    "wiki": "Cerro El Vigía",
+    "fuente": "https://www.wikidata.org/wiki/Q27779106"
+   },
+   {
+    "id": "Q28664128",
+    "nombre": "Laguna de San Pedro Lagunillas",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de San Pedro Lagunillas se ubica en el municipio de San Pedro Lagunillas, en el estado de Nayarit, México. Esta laguna tiene 1.6 km de ancho y 1.9 km de largo, con una profundidad aproximada de 9 metros.",
+    "lat": 21.20528,
+    "lon": -104.73,
+    "imagen": "Lagunillasan.jpg",
+    "wiki": "Laguna de San Pedro Lagunillas (Nayarit)",
+    "fuente": "https://www.wikidata.org/wiki/Q28664128"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5922980",
+    "nombre": "Istete",
+    "tipo": "Dulce",
+    "descripcion": "El Istete o Ixtete es un dulce regional del estado de Nayarit (México).",
+    "lat": null,
+    "lon": null,
+    "imagen": "Istete dulce tradicional de Nayarit.jpg",
+    "wiki": "Istete",
+    "fuente": "https://www.wikidata.org/wiki/Q5922980"
+   },
+   {
+    "id": "Q104665688",
+    "nombre": "Bate",
+    "tipo": "Bebida",
+    "descripcion": "El bate es una bebida espesa y fría, de origen indígena mexicano, a base de semillas de chan o chía tostadas y molidas, similar a un atole. Es típico de los estados de Colima, Jalisco y Nayarit, en donde se pueden encontrar vendedores de bate a pie de calle.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bate en colima.jpg",
+    "wiki": "Bate (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q104665688"
+   }
+  ]
+ }
+}

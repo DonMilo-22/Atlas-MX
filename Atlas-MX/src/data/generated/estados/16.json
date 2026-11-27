@@ -1,0 +1,979 @@
+{
+ "cve": "16",
+ "estado": "Michoacán de Ocampo",
+ "wikidata": "Q79861",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2411306",
+    "nombre": "Cotija",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cotija de la Paz es la cabecera del municipio homónimo, ubicada en el occidente del estado mexicano de Michoacán, en los límites de Jalisco.",
+    "lat": 19.81,
+    "lon": -102.70472,
+    "imagen": "Cotija de la Paz Michoacan (2014).jpg",
+    "wiki": "Cotija de la Paz",
+    "municipio": "Cotija",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2411306"
+   },
+   {
+    "id": "Q3381253",
+    "nombre": "Cuitzeo del Porvenir",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cuitzeo del Porvenir es una población mexicana del estado de Michoacán enclavada a orillas del Lago de Cuitzeo en el límite del estado de Michoacán y el estado de Guanajuato. Es cabecera del municipio de Cuitzeo.",
+    "lat": 19.96821,
+    "lon": -101.13958,
+    "imagen": "SantaMariaMagdalenaCuitzeo02.JPG",
+    "wiki": "Cuitzeo del Porvenir",
+    "municipio": "Cuitzeo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3381253"
+   },
+   {
+    "id": "Q6202949",
+    "nombre": "Jiquilpan de Juárez",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jiquilpan de Juárez es una ciudad mexicana, ubicada al noroeste del estado de Michoacán, cabecera municipal del municipio de Jiquilpan. Por ser un colectivo muy antiguo y rico en cultura y en naturaleza, la ciudad de Jiquilpan fue inscrita en el Programa Federal de Pueblos Mágicos el 27 de noviembre de 2012.",
+    "lat": 19.98972,
+    "lon": -102.71861,
+    "imagen": "Jiquilpan, Michoacán, México..jpg",
+    "wiki": "Jiquilpan de Juárez",
+    "municipio": "Jiquilpan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6202949"
+   },
+   {
+    "id": "Q3844842",
+    "nombre": "Mineral de Angangueo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mineral de Angangueo es una población del estado de Michoacán, en México, y la cabecera del municipio de Angangueo. El pueblo es famoso por su cercanía al santuario de mariposas, lugar que visitan como actividad recreativa, de entretenimiento y educativa.",
+    "lat": 19.61778,
+    "lon": -100.28556,
+    "imagen": "MainStreetAngang.JPG",
+    "wiki": "Mineral de Angangueo",
+    "municipio": "Angangueo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3844842"
+   },
+   {
+    "id": "Q2447258",
+    "nombre": "Paracho de Verduzco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Paracho de Verduzco, comúnmente conocido simplemente como Paracho, es una comunidad indígena purhepecha ubicada en el estado de Michoacán, cabecera del municipio de Paracho.",
+    "lat": 19.6473,
+    "lon": -102.04847,
+    "imagen": "ParachoMainstreet.jpg",
+    "wiki": "Paracho de Verduzco",
+    "municipio": "Paracho",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2447258"
+   },
+   {
+    "id": "Q1021051",
+    "nombre": "Pátzcuaro",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Pátzcuaro es una localidad del estado mexicano de Michoacán y cabecera del municipio homónimo. En la antigüedad era parte del señorío de los uacúsechas, la tierra de los purépechas.",
+    "lat": 19.51639,
+    "lon": -101.60972,
+    "imagen": "Plaza Vasco de Quiroga.JPG",
+    "wiki": "Pátzcuaro",
+    "municipio": "Pátzcuaro",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1021051"
+   },
+   {
+    "id": "Q2991575",
+    "nombre": "Santa Clara del Cobre",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Santa Clara del Cobre es una localidad y cabecera del municipio de Salvador Escalante, del estado de Michoacán, México, famosa por sus refinadas artesanías fabricadas a partir de ese metal, las cuales han obtenido varios reconocimientos a nivel local, nacional e internacional, como el Premio Nacional de Ciencias y…",
+    "lat": 19.40528,
+    "lon": -101.63833,
+    "imagen": "Plaza1Cobre.JPG",
+    "wiki": "Santa Clara del Cobre",
+    "municipio": "Salvador Escalante",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2991575"
+   },
+   {
+    "id": "Q20285962",
+    "nombre": "Tacámbaro",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tacámbaro de Codallos, oficialmente Heroica Tacámbaro de Codallos, es un pueblo mágico ubicado en el estado mexicano de Michoacán de Ocampo, se localiza al centro del estado y es la cabecera municipal de Tacámbaro.",
+    "lat": 19.23514,
+    "lon": -101.45817,
+    "imagen": "Tacámbaro de Codallos.JPG",
+    "wiki": "Tacámbaro de Codallos",
+    "municipio": "Tacámbaro",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20285962"
+   },
+   {
+    "id": "Q2605379",
+    "nombre": "Tlalpujahua de Rayón",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlalpujahua de Rayón es una localidad del estado mexicano de Michoacán, cabecera del municipio de Tlalpujahua.",
+    "lat": 19.80523,
+    "lon": -100.17409,
+    "imagen": "KioskTlalpujahua.JPG",
+    "wiki": "Tlalpujahua de Rayón",
+    "municipio": "Tlalpujahua",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2605379"
+   },
+   {
+    "id": "Q1574289",
+    "nombre": "Tzintzuntzan",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tzintzuntzan, antiguamente Mechuacán (del purépecha: Tsꞌintsuntsani ‘Lugar de los colibríes’), es una localidad mexicana que fue la ciudad más importante del imperio purépecha y posteriormente su capital. La moderna localidad de Tzintzuntzan (zona lacustre) es la cabecera del municipio del mismo nombre.",
+    "lat": 19.62833,
+    "lon": -101.57889,
+    "imagen": "ViewTownRuinstztztz.JPG",
+    "wiki": "Tzintzuntzan",
+    "municipio": "Tzintzuntzan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1574289"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q3848089",
+    "nombre": "Centro histórico de Morelia",
+    "tipo": "Centro histórico",
+    "descripcion": "El Centro Histórico de Morelia se encuentra en el estado mexicano de Michoacán. Es Patrimonio de la Humanidad por la UNESCO desde 1991.",
+    "lat": 19.7,
+    "lon": -101.18333,
+    "imagen": "CatedralMorelia.jpg",
+    "wiki": "Centro histórico de Morelia",
+    "municipio": "Morelia",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3848089"
+   },
+   {
+    "id": "Q14237615",
+    "nombre": "Tzintzuntzan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tzintzuntzan fue el centro ceremonial de la capital purépecha precolombina del mismo nombre. El nombre proviene de la palabra purépecha Ts'intsuntsani, que significa ‘lugar de colibríes’.",
+    "lat": 19.6236,
+    "lon": -101.574,
+    "imagen": "4thYacatatztztz.JPG",
+    "wiki": "Zona arqueológica de Tzintzuntzan",
+    "fuente": "https://www.wikidata.org/wiki/Q14237615"
+   },
+   {
+    "id": "Q49165512",
+    "nombre": "Angamuco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Angamuco es una antigua ciudad purépecha, ubicada en el actual estado mexicano de Michoacán (centro-occidente de México), que fue habitada por los purépechas hasta el final del período postclásico (alrededor de 1530) y redescubierta por arqueólogos en 2009.",
+    "lat": 19.58403,
+    "lon": -101.49489,
+    "imagen": null,
+    "wiki": "Angamuco",
+    "fuente": "https://www.wikidata.org/wiki/Q49165512"
+   },
+   {
+    "id": "Q3050145",
+    "nombre": "El Opeño",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Opeño es un yacimiento que se localiza en Jacona de Plancarte, un municipio del estado mexicano de Michoacán enclavado en el Valle de Zamora.",
+    "lat": 19.93417,
+    "lon": -102.30722,
+    "imagen": null,
+    "wiki": "El Opeño",
+    "fuente": "https://www.wikidata.org/wiki/Q3050145"
+   },
+   {
+    "id": "Q5925419",
+    "nombre": "Huandacareo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Huandacareo es un yacimiento arqueológico ubicado a unos 60 kilómetros al norte de la ciudad de Morelia, en el estado de Michoacán.",
+    "lat": 19.9947,
+    "lon": -101.289,
+    "imagen": "Huandacareo, south west structure burials.JPG",
+    "wiki": "Zona arqueológica de Huandacareo",
+    "fuente": "https://www.wikidata.org/wiki/Q5925419"
+   },
+   {
+    "id": "Q15228114",
+    "nombre": "Ihuatzio",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ihuatzio es un sitio arqueológico en el estado de Michoacán, México. Se encuentra en la vertiente sur del cerro Tariaqueri, justo al norte del poblado de Ihuatzio, en el municipio de Tzintzuntzan.",
+    "lat": 19.57806,
+    "lon": -101.62222,
+    "imagen": "Ihuatzio1.jpg",
+    "wiki": "Zona arqueológica de Ihuatzio",
+    "municipio": "Tzintzuntzan",
+    "fuente": "https://www.wikidata.org/wiki/Q15228114"
+   },
+   {
+    "id": "Q2329558",
+    "nombre": "Catedral de Morelia",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Metropolitana de Morelia o Catedral de la Transfiguración del Señor de Morelia es un recinto religioso sede de la arquidiócesis de Morelia de la Iglesia católica en México. Se encuentra ubicada como su nombre propiamente lo dice en la ciudad de Morelia, capital del estado de Michoacán, México.",
+    "lat": 19.70239,
+    "lon": -101.19239,
+    "imagen": "Morelia Cathedral DSC 0524 AD.JPG",
+    "wiki": "Catedral metropolitana de Morelia",
+    "municipio": "Morelia",
+    "fuente": "https://www.wikidata.org/wiki/Q2329558"
+   },
+   {
+    "id": "Q616513",
+    "nombre": "Santuario Guadalupano",
+    "tipo": "Catedral",
+    "descripcion": "El Santuario Diocesano de Nuestra Señora de Guadalupe o Santuario Guadalupano es un santuario católico dedicado a la Virgen de Guadalupe, ubicado en la ciudad mexicana de Zamora de Hidalgo en el estado de Michoacán.",
+    "lat": 19.98365,
+    "lon": -102.28082,
+    "imagen": "Santuario deGuadalupe Mexico.jpg",
+    "wiki": "Santuario Diocesano de Nuestra Señora de Guadalupe",
+    "fuente": "https://www.wikidata.org/wiki/Q616513"
+   },
+   {
+    "id": "Q5758420",
+    "nombre": "Catedral de Apatzingán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Nuestra Señora de la Asunción de la ciudad de Apatzingán, Michoacán, México es un edificio de corte modernista y es la sede de la diócesis de Apatzingán. Fue construido en la segunda mitad del siglo XX.",
+    "lat": 19.08639,
+    "lon": -102.35417,
+    "imagen": "Catedral de Apatzingan 2019.jpg",
+    "wiki": "Catedral de Apatzingán",
+    "municipio": "Apatzingán",
+    "fuente": "https://www.wikidata.org/wiki/Q5758420"
+   },
+   {
+    "id": "Q5758636",
+    "nombre": "Catedral de Zamora de Hidalgo",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de la Inmaculada Concepción de Zamora de Hidalgo es un edificio levantado en la segunda mitad del siglo XIX, en la ciudad michoacana de Zamora de Hidalgo, por Nicolás Luna, discípulo del arquitecto Eduardo Tresguerras.",
+    "lat": 19.98364,
+    "lon": -102.28503,
+    "imagen": "Catedral Zamora-Mich.jpg",
+    "wiki": "Catedral de Zamora de Hidalgo",
+    "municipio": "Zamora",
+    "fuente": "https://www.wikidata.org/wiki/Q5758636"
+   },
+   {
+    "id": "Q2889993",
+    "nombre": "Basílica de Nuestra Señora de la Salud",
+    "tipo": "Templo",
+    "descripcion": "La basílica de Nuestra Señora de la Salud es el principal edificio religioso de Pátzcuaro, Michoacán, México, edificado sobre un pirámide purépecha. Actuó como catedral hasta el traslado de la sede de la diócesis a Morelia en 1580, donde se construyó otra catedral.",
+    "lat": 19.51511,
+    "lon": -101.60615,
+    "imagen": "FacadeSaludPatz1.JPG",
+    "wiki": "Basílica de Nuestra Señora de la Salud (Pátzcuaro)",
+    "fuente": "https://www.wikidata.org/wiki/Q2889993"
+   },
+   {
+    "id": "Q123740796",
+    "nombre": "Catedral de Tacámbaro",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Tacámbaro, oficialmente Catedral de San Jerónimo es un templo católico elevado al rango de catedral, siendo sede de la diócesis de Tacámbaro. Está ubicada en la ciudad de Tacámbaro, del municipio homónimo, en el estado de Michoacán.",
+    "lat": 19.23569,
+    "lon": -101.45756,
+    "imagen": "Tacámbaro de Codallos.JPG",
+    "wiki": "Catedral de Tacámbaro",
+    "municipio": "Tacámbaro",
+    "fuente": "https://www.wikidata.org/wiki/Q123740796"
+   },
+   {
+    "id": "Q769932",
+    "nombre": "Acueducto de Morelia",
+    "tipo": "Acueducto",
+    "descripcion": "El acueducto de Morelia es uno de los acueductos más importantes de Estado de Michoacán localizado en la ciudad conocida entonces como Valladolid, y ahora como Morelia, Michoacán. Levantado durante el periodo colonial, a lo largo de su historia sufrió numerosas remodelaciones y reconstrucciones.",
+    "lat": 19.7,
+    "lon": -101.18333,
+    "imagen": "Morelia4.jpg",
+    "wiki": "Acueducto de Morelia",
+    "municipio": "Morelia",
+    "fuente": "https://www.wikidata.org/wiki/Q769932"
+   },
+   {
+    "id": "Q25409600",
+    "nombre": "Museo de Artes e Industrias Populares",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Artes e Industrias Populares de Pátzcuaro, Michoacán. Es un espacio que se encarga de optimizar la identidad y la vida social de sus habitantes, por medio de su inmueble y de la apropiación de sus artesanías.",
+    "lat": 19.51381,
+    "lon": -101.60715,
+    "imagen": "Ex templo san agustin, Pátzcuaro.jpg",
+    "wiki": "Museo de Artes e Industrias Populares",
+    "municipio": "Pátzcuaro",
+    "fuente": "https://www.wikidata.org/wiki/Q25409600"
+   },
+   {
+    "id": "Q5785803",
+    "nombre": "Convento de Santa Ana de Tzintzuntzan",
+    "tipo": "Convento",
+    "descripcion": "El convento de Santa Ana de Tzintzuntzan es un ex convento franciscano del siglo XVI ubicado en la población de Tzintzuntzan, en el municipio del mismo nombre, en el estado de Michoacán, México.",
+    "lat": 19.62613,
+    "lon": -101.57954,
+    "imagen": "Tzintzuntzan.jpg",
+    "wiki": "Convento de Santa Ana de Tzintzuntzan",
+    "municipio": "Tzintzuntzan",
+    "fuente": "https://www.wikidata.org/wiki/Q5785803"
+   },
+   {
+    "id": "Q6141011",
+    "nombre": "Templo Expiatorio del Sagrado Corazón de Jesús",
+    "tipo": "Templo",
+    "descripcion": "El Templo Expiatorio del Sagrado Corazón de Jesús es una iglesia histórica ubicada en la ciudad mexicana de Zamora de Hidalgo en el estado de Michoacán de Ocampo. El recinto presenta el estilo neogótico y fue construido a finales del siglo XIX.",
+    "lat": 19.98725,
+    "lon": -102.28428,
+    "imagen": null,
+    "wiki": "Templo Expiatorio del Sagrado Corazón de Jesús (Zamora de Hidalgo)",
+    "fuente": "https://www.wikidata.org/wiki/Q6141011"
+   },
+   {
+    "id": "Q6113598",
+    "nombre": "Ruinas del Santuario del Señor de los Milagros",
+    "tipo": "Templo",
+    "descripcion": "El Santuario del Señor de los Milagros es un templo católico cuyos restos se encuentran en lo que fue San Juan Parangaricutiro, en el actual municipio de Nuevo Parangaricutiro en el estado de Michoacán de Ocampo.",
+    "lat": 19.53325,
+    "lon": -102.24733,
+    "imagen": "ParicutinMichoacan011.JPG",
+    "wiki": "Santuario del Señor de los Milagros (Michoacán)",
+    "municipio": "Uruapan",
+    "fuente": "https://www.wikidata.org/wiki/Q6113598"
+   },
+   {
+    "id": "Q5761135",
+    "nombre": "Centro Cultural Clavijero",
+    "tipo": "Templo",
+    "descripcion": "El Centro Cultural Clavijero es un recinto cultural público ubicado en la ciudad de Morelia, Michoacán, México, el cual depende de la Secretaria de Cultura de Michoacán.",
+    "lat": 19.70333,
+    "lon": -101.1957,
+    "imagen": "Fachada del Centro Cultural Clavijero 409.jpg",
+    "wiki": "Centro Cultural Clavijero",
+    "municipio": "Morelia",
+    "fuente": "https://www.wikidata.org/wiki/Q5761135"
+   },
+   {
+    "id": "Q6033701",
+    "nombre": "Museo Regional Michoacano",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional Michoacano se ubica en el Centro Histórico de Morelia, Michoacán, México. Enfocado en la historia de Michoacán el museo es uno de los más antiguos de México y el más longevo fuera de la capital del país.",
+    "lat": 19.70185,
+    "lon": -101.19443,
+    "imagen": "Museo Regional Michoacano 040.jpg",
+    "wiki": "Museo Regional Michoacano",
+    "fuente": "https://www.wikidata.org/wiki/Q6033701"
+   },
+   {
+    "id": "Q6033845",
+    "nombre": "Museo de Arte Contemporáneo Alfredo Zalce",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte Contemporáneo Alfredo Zalce (MACAZ) se ubica en la ciudad de Morelia, Michoacán, México.",
+    "lat": 19.70019,
+    "lon": -101.17971,
+    "imagen": "Museo_de_Arte_Contemporáneo_\"Alfredo_Zalce\"_Morelia_4.jpg",
+    "wiki": "Museo de Arte Contemporáneo Alfredo Zalce",
+    "fuente": "https://www.wikidata.org/wiki/Q6033845"
+   },
+   {
+    "id": "Q106314643",
+    "nombre": "Parroquia de La Inmaculada Concepción",
+    "tipo": "Templo",
+    "descripcion": "Artículo principal: Anexo: Monumentos de MichoacánEl templo de La Inmaculada Concepción es considerado por el INAH monumento histórico del estado de Michoacán ID 09560 ubicado en Patzímaro de Aviña.",
+    "lat": 20.13968,
+    "lon": -102.12719,
+    "imagen": "Parroquia de nuestra señora de la Inmaculada concepción.jpg",
+    "wiki": "Parroquia de La Inmaculada Concepción (Patzímaro de Aviña)",
+    "municipio": "Churintzio",
+    "fuente": "https://www.wikidata.org/wiki/Q106314643"
+   },
+   {
+    "id": "Q105902909",
+    "nombre": "Templo de Santiago Apóstol",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Santiago Apóstol en la comunidad de Nurio, Michoacán en México, fue el principal templo católico de dicha comunidad de la meseta Purépecha.",
+    "lat": 19.65561,
+    "lon": -102.13053,
+    "imagen": "Church in a lost pueblito (cropped).jpg",
+    "wiki": "Templo de Santiago Apóstol (Nurio)",
+    "fuente": "https://www.wikidata.org/wiki/Q105902909"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q200252",
+    "nombre": "Morelia",
+    "tipo": "Ciudad",
+    "descripcion": "Morelia es una ciudad del occidente de México, capital del estado de Michoacán y cabecera del municipio homónimo. La urbe está situada en el valle de Guayangareo, formado por un repliegue del Eje Neovolcánico, en la región Morelia del estado, a una altitud de referencia en el centro de 1920 m s. n. m.",
+    "lat": 19.70278,
+    "lon": -101.19222,
+    "imagen": "Morelia panorama DSC 0400 ed AD.jpg",
+    "wiki": "Morelia",
+    "municipio": "Morelia",
+    "fuente": "https://www.wikidata.org/wiki/Q200252"
+   },
+   {
+    "id": "Q231620",
+    "nombre": "Paricutín",
+    "tipo": "Volcán",
+    "descripcion": "El Paricutín (en purépecha Parhíkutini, 'lugar al otro lado') es un volcán inactivo situado en el estado de Michoacán, México, entre el poblado de San Juan Parangaricutiro (actualmente Nuevo San Juan Parangaricutiro) y el poblado de Angahuan.",
+    "lat": 19.493,
+    "lon": -102.251,
+    "imagen": "Paricutín volcano.jpg",
+    "wiki": "Paricutín",
+    "fuente": "https://www.wikidata.org/wiki/Q231620"
+   },
+   {
+    "id": "Q399270",
+    "nombre": "Uruapan del Progreso",
+    "tipo": "Ciudad",
+    "descripcion": "Uruapan del Progreso o simplemente Uruapan es una ciudad ubicada en el estado de Michoacán, México, cabecera del municipio de Uruapan.",
+    "lat": 19.4122,
+    "lon": -102.0526,
+    "imagen": "Fuente del parque Nacional Uruapan.JPG",
+    "wiki": "Uruapan del Progreso",
+    "municipio": "Uruapan",
+    "fuente": "https://www.wikidata.org/wiki/Q399270"
+   },
+   {
+    "id": "Q145865",
+    "nombre": "Zamora de Hidalgo",
+    "tipo": "Ciudad",
+    "descripcion": "Zamora de Hidalgo, conocida simplemente como Zamora, es una ciudad del estado de Michoacán, México y cabecera del municipio de Zamora. Cuenta con una población de 154 546 habitantes según datos del Censo de Población y Vivienda del año 2020 llevado a cabo por el INEGI.",
+    "lat": 19.98333,
+    "lon": -102.28333,
+    "imagen": "Zamora recop.png",
+    "wiki": "Zamora de Hidalgo",
+    "municipio": "Zamora",
+    "fuente": "https://www.wikidata.org/wiki/Q145865"
+   },
+   {
+    "id": "Q1785340",
+    "nombre": "Lázaro Cárdenas",
+    "tipo": "Ciudad",
+    "descripcion": "Lázaro Cárdenas, de manera abreviada L.C., es una ciudad mexicana, cabecera del municipio homónimo, en el estado de Michoacán. Se ubica al sur del estado, justo en la frontera con el estado de Guerrero, que está delimitada por el río Balsas.",
+    "lat": 17.95611,
+    "lon": -102.19222,
+    "imagen": "3 foto aérea de la Catedral de Cristo Rey.jpg",
+    "wiki": "Lázaro Cárdenas (Michoacán)",
+    "municipio": "Lázaro Cárdenas",
+    "fuente": "https://www.wikidata.org/wiki/Q1785340"
+   },
+   {
+    "id": "Q94758",
+    "nombre": "Apatzingán de la Constitución",
+    "tipo": "Ciudad",
+    "descripcion": "Apatzingán de la Constitución es una ciudad mexicana ubicada en el estado de Michoacán de Ocampo. Fue fundada en 1617 por monjes franciscanos y agustinos, permaneciendo como un pueblo hasta 1883, fecha en que oficialmente se le concedió el rango de ciudad.",
+    "lat": 19.08861,
+    "lon": -102.35083,
+    "imagen": "Catedral de Apatzingan 2019.jpg",
+    "wiki": "Apatzingán de la Constitución",
+    "municipio": "Apatzingán",
+    "fuente": "https://www.wikidata.org/wiki/Q94758"
+   },
+   {
+    "id": "Q1962272",
+    "nombre": "Zitácuaro",
+    "tipo": "Ciudad",
+    "descripcion": "Zitácuaro, oficialmente Heroica Zitácuaro, es una ciudad mexicana del estado de Michoacán, situada en la entrada de la Región Oriente, y dentro del Valle de Quencio. Es la cabecera del municipio de Zitácuaro.",
+    "lat": 19.43611,
+    "lon": -100.35722,
+    "imagen": "Mexico.Mich.Zitacuaro.01.jpg",
+    "wiki": "Zitácuaro",
+    "municipio": "Zitácuaro",
+    "fuente": "https://www.wikidata.org/wiki/Q1962272"
+   },
+   {
+    "id": "Q1352646",
+    "nombre": "Lago de Pátzcuaro",
+    "tipo": "Lago",
+    "descripcion": "El lago de Pátzcuaro es un cuerpo de agua situado en el estado mexicano de Michoacán, ubicado a 63 km al oeste de la ciudad de Morelia. Se encuentra dividido entre los municipios de Erongarícuaro, Quiroga, Tzintzuntzan y Pátzcuaro, de este último del cual recibe su nombre.",
+    "lat": 19.615,
+    "lon": -101.65,
+    "imagen": "PatzcuaroLakeIslands fromTheTopOfJanitzioIsland PatzcuaroLake MichoacanMexico.jpg",
+    "wiki": "Lago de Pátzcuaro",
+    "municipio": "Quiroga",
+    "fuente": "https://www.wikidata.org/wiki/Q1352646"
+   },
+   {
+    "id": "Q1962248",
+    "nombre": "Ciudad Hidalgo",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Hidalgo es una ciudad y cabecera del municipio de Hidalgo en el extremo noreste del estado de Michoacán, México. Es una ciudad situada en una zona rural y montañosa.",
+    "lat": 19.69229,
+    "lon": -100.55739,
+    "imagen": "5MayoCdHidalgo.JPG",
+    "wiki": "Ciudad Hidalgo (Michoacán)",
+    "municipio": "Hidalgo",
+    "fuente": "https://www.wikidata.org/wiki/Q1962248"
+   },
+   {
+    "id": "Q2637479",
+    "nombre": "Janitzio",
+    "tipo": "Isla",
+    "descripcion": "Janitzio es una de las islas del lago de Pátzcuaro, ubicado en el Estado de Michoacán, México. Es la más importante de las cinco islas, seguido de Yunuen, del lago de Pátzcuaro.",
+    "lat": 19.57389,
+    "lon": -101.65194,
+    "imagen": "Janitzio3.jpg",
+    "wiki": "Janitzio",
+    "municipio": "Pátzcuaro",
+    "fuente": "https://www.wikidata.org/wiki/Q2637479"
+   },
+   {
+    "id": "Q964656",
+    "nombre": "Nuevo San Juan Parangaricutiro",
+    "tipo": "Ciudad",
+    "descripcion": "Nuevo San Juan Parangaricutiro es un pueblo de origen purépecha de 16 745 habitantes (INEGI 2020) ubicado en el estado de Michoacán, México, en la meseta Purépecha, muy cerca del volcán Paricutín. Es la cabecera del municipio de Nuevo Parangaricutiro.",
+    "lat": 19.41667,
+    "lon": -102.12944,
+    "imagen": "San juan nuevo.jpg",
+    "wiki": "Nuevo San Juan Parangaricutiro",
+    "municipio": "Nuevo Parangaricutiro",
+    "fuente": "https://www.wikidata.org/wiki/Q964656"
+   },
+   {
+    "id": "Q3242376",
+    "nombre": "El Jorullo",
+    "tipo": "Montaña",
+    "descripcion": "El Jorullo es un volcán de tipo cono de ceniza en Michoacán, México, ubicado en la ladera sudoeste de la meseta central, 53 kilómetros al sudeste de Uruapan, y unos 10 kilómetros al estenordeste de La Huacana, también conocido por estar situado en el campo volcánico Michoacán - Guanajuato.",
+    "lat": 18.972,
+    "lon": -101.718,
+    "imagen": "Jorullo.jpg",
+    "wiki": "El Jorullo",
+    "municipio": "La Huacana",
+    "fuente": "https://www.wikidata.org/wiki/Q3242376"
+   },
+   {
+    "id": "Q81291",
+    "nombre": "Lago de Cuitzeo",
+    "tipo": "Lago",
+    "descripcion": "El lago de Cuitzeo es un lago endorreico que se localiza en un valle del Eje Neovolcánico de México, mayormente en el estado de Michoacán, con una pequeña porción en el estado de Guanajuato. Toma su nombre de la localidad de Cuitzeo del Porvenir, que se encuentra a sus orillas.",
+    "lat": 19.93333,
+    "lon": -101.08333,
+    "imagen": "El inmenso Lago de Cuitzeo.jpg",
+    "wiki": "Lago de Cuitzeo",
+    "fuente": "https://www.wikidata.org/wiki/Q81291"
+   },
+   {
+    "id": "Q27782475",
+    "nombre": "La Pacanda",
+    "tipo": "Isla",
+    "descripcion": "La isla de Pacanda es una isla ubicada en el lago de Pátzcuaro. La misma se encuentra en la región occidental del estado de Michoacán de Ocampo, en México.",
+    "lat": 19.60639,
+    "lon": -101.64917,
+    "imagen": "Facade1PacandaCh.JPG",
+    "wiki": "La Pacanda",
+    "municipio": "Tzintzuntzan",
+    "fuente": "https://www.wikidata.org/wiki/Q27782475"
+   },
+   {
+    "id": "Q5405712",
+    "nombre": "Puerto Lázaro Cárdenas",
+    "tipo": "Bahía",
+    "descripcion": "El Puerto Lázaro Cárdenas es un puerto marítimo joven y dinámico ubicado en la costa del Pacífico Mexicano en el estado de Michoacán, con un potencial de crecimiento y la mejor alternativa de negocios e inversión del país[cita requerida], sustentado en sus ventajas competitivas y el gran trabajo de su comunidad…",
+    "lat": 17.927,
+    "lon": -102.169,
+    "imagen": "Terrestre.JPG",
+    "wiki": "Puerto Lázaro Cárdenas",
+    "fuente": "https://www.wikidata.org/wiki/Q5405712"
+   },
+   {
+    "id": "Q8538745",
+    "nombre": "Pico de Tancítaro",
+    "tipo": "Montaña",
+    "descripcion": "El pico de Tancítaro es un volcán en el estado mexicano de Michoacán en el municipio de Tancítaro.",
+    "lat": 19.41633,
+    "lon": -102.3195,
+    "imagen": "Tancitaro.jpeg",
+    "wiki": "Pico de Tancítaro",
+    "municipio": "Tancítaro",
+    "fuente": "https://www.wikidata.org/wiki/Q8538745"
+   },
+   {
+    "id": "Q1765257",
+    "nombre": "Parque nacional Cerro de Garnica",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Cerro de Garnica es un parque nacional protegido situado en los municipios de Hidalgo y Queréndaro, en la cordillera Neovolcánica, estado de Michoacán, México. Se declaró parque nacional el 5 de septiembre de 1936.",
+    "lat": 19.6688,
+    "lon": -100.817,
+    "imagen": null,
+    "wiki": "Parque nacional Cerro de Garnica",
+    "fuente": "https://www.wikidata.org/wiki/Q1765257"
+   },
+   {
+    "id": "Q6062990",
+    "nombre": "Parque nacional Insurgente José María Morelos",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Insurgente José María Morelos es un área natural protegida de sierra de bosque de pino y encino localizada al sur del municipio de Charo, Michoacán. El área fue decretada parque nacional desde 1939 por el presidente de México Lázaro Cárdenas del Río.",
+    "lat": 19.6253,
+    "lon": -100.998,
+    "imagen": "Charo, Mich., Mexico - panoramio.jpg",
+    "wiki": "Parque nacional Insurgente José María Morelos",
+    "municipio": "Tzitzio",
+    "fuente": "https://www.wikidata.org/wiki/Q6062990"
+   },
+   {
+    "id": "Q6472304",
+    "nombre": "Parque Nacional Lago de Camécuaro",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Lago de Camécuaro se ubica en la ciudad de Tangancícuaro de Arista en el estado de Michoacán. El parque consta de 9,65 hectáreas de área protegida incluyendo el lago Camécuaro el cual se abastece por una serie de manantiales naturales.",
+    "lat": 19.90278,
+    "lon": -102.21083,
+    "imagen": "Lago de Camecuaro 2.jpg",
+    "wiki": "Parque nacional Lago de Camécuaro",
+    "fuente": "https://www.wikidata.org/wiki/Q6472304"
+   },
+   {
+    "id": "Q3650787",
+    "nombre": "Lago de Zirahuén",
+    "tipo": "Lago",
+    "descripcion": "El lago de Zirahuén es un pequeño lago endorreico en el municipio de Salvador Escalante, en el estado mexicano de Michoacán. Es un lago de montaña profundo con fondo arenoso parcialmente cubierto de barro.",
+    "lat": 19.43589,
+    "lon": -101.7395,
+    "imagen": "Zirahuen.JPG",
+    "wiki": "Lago de Zirahuén",
+    "municipio": "Salvador Escalante",
+    "fuente": "https://www.wikidata.org/wiki/Q3650787"
+   },
+   {
+    "id": "Q6837962",
+    "nombre": "Campo volcánico Michoacán - Guanajuato",
+    "tipo": "Volcán",
+    "descripcion": "El campo volcánico Michoacán-Guanajuato es un campo volcánico ubicado en los estados de Michoacán y Guanajuato; en el centro de México, que presenta numerosos conos de ceniza, volcanes de escudo y maares.",
+    "lat": 19.85,
+    "lon": -101.75,
+    "imagen": "Paricutín volcano.jpg",
+    "wiki": "Campo volcánico Michoacán-Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q6837962"
+   },
+   {
+    "id": "Q8341896",
+    "nombre": "Cascada de la Tzaráracua",
+    "tipo": "Cascada",
+    "descripcion": "La cascada de la Tzaráracua se encuentra a unos 10 kilómetros de Uruapan en el estado mexicano de Michoacán.",
+    "lat": 19.35222,
+    "lon": -102.07861,
+    "imagen": "Tzararacua.jpg",
+    "wiki": "Cascada de la Tzaráracua",
+    "fuente": "https://www.wikidata.org/wiki/Q8341896"
+   },
+   {
+    "id": "Q15304751",
+    "nombre": "Parque nacional Rayón",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Rayón (también denominado Campo del Gallo) se encuentra en el estado de Michoacán, México. El parque fue inaugurado en 1952.",
+    "lat": 19.80016,
+    "lon": -100.1844,
+    "imagen": null,
+    "wiki": "Parque nacional Rayón",
+    "fuente": "https://www.wikidata.org/wiki/Q15304751"
+   },
+   {
+    "id": "Q108619170",
+    "nombre": "Alberca de Los Espinos",
+    "tipo": "Lago",
+    "descripcion": "La Alberca de Los Espinos o Alberca de Santa Teresa es un lago de cráter volcánico que se ubica en un área protegida estatal que comprende 142 hectáreas",
+    "lat": 19.90711,
+    "lon": -101.76791,
+    "imagen": "Alberca_de_Los_Espinos2.jpg",
+    "wiki": "Alberca de Los Espinos",
+    "fuente": "https://www.wikidata.org/wiki/Q108619170"
+   },
+   {
+    "id": "Q27780975",
+    "nombre": "Cerro San Andrés",
+    "tipo": "Montaña",
+    "descripcion": "El volcán San Andrés; también llamado “cerro San Andrés”, es un estratovolcán que forma parte del Eje Neovolcánico. En algunas fuentes es referido como “Sierra de Jerahuaro”, se encuentra en el Municipio de Hidalgo, en el estado de Michoacán, México.",
+    "lat": 19.80528,
+    "lon": -100.59722,
+    "imagen": null,
+    "wiki": "Volcán San Andrés",
+    "fuente": "https://www.wikidata.org/wiki/Q27780975"
+   },
+   {
+    "id": "Q27782641",
+    "nombre": "Cerro Patamban",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro Patamban también llamado Cerro Grande es un volcán de tipo cono de ceniza ubicado en Tangancícuaro y en Los Reyes en Michoacán, México. Se encuentra aproximadamente a 24 km al suroeste de Tangancícuaro de Arista y a 41 km al noreste de Los Reyes de Salgado por carretera.",
+    "lat": 19.75,
+    "lon": -102.33333,
+    "imagen": "Cerro_Patamban.jpg",
+    "wiki": "Cerro Patamban",
+    "fuente": "https://www.wikidata.org/wiki/Q27782641"
+   },
+   {
+    "id": "Q18391178",
+    "nombre": "Parque Zoológico Benito Juárez",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Zoológico Benito Juárez también conocido como Zoológico de Morelia, de la ciudad homónima, en el estado de Michoacán, es el parque zoológico más importante del estado, el segundo más visitado del país y el segundo más importante de América Latina por su número de especies y de individuos.",
+    "lat": 19.68528,
+    "lon": -101.19361,
+    "imagen": null,
+    "wiki": "Parque Zoológico Benito Juárez",
+    "municipio": "Morelia",
+    "fuente": "https://www.wikidata.org/wiki/Q18391178"
+   },
+   {
+    "id": "Q124208731",
+    "nombre": "Alberca de Teremendo",
+    "tipo": "Lago",
+    "descripcion": "La Alberca de Teremendo es un maar localizado al oeste de la comunidad de La Alberca y a 3.5 km al noreste de la comunidad de Teremendo de los Reyes en el municipio de Morelia.",
+    "lat": 19.80785,
+    "lon": -101.45374,
+    "imagen": "Alberca_de_Teremendo.jpg",
+    "wiki": "Alberca de Teremendo",
+    "fuente": "https://www.wikidata.org/wiki/Q124208731"
+   },
+   {
+    "id": "Q62706961",
+    "nombre": "Cerro Las Conchas",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro Las Conchas es un volcán de tipo cono de ceniza ubicado aproximadamente 20.5 km al este de la cabecera municipal de Coalcomán, Michoacán, México.",
+    "lat": 18.72161,
+    "lon": -102.97418,
+    "imagen": null,
+    "wiki": "Cerro Las Conchas (Coalcomán)",
+    "municipio": "Coalcomán de Vázquez Pallares",
+    "fuente": "https://www.wikidata.org/wiki/Q62706961"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q131387128",
+    "nombre": "Bolas de Pedernales",
+    "tipo": "Platillo",
+    "descripcion": "Las Bolas de Pedernales son un platillo típico mexicano cuyo origen se remonta a la etapa conocida como el Porfiriato.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Platillo típico, La Bola de Pedernales.jpg",
+    "wiki": "Bolas de Pedernales",
+    "fuente": "https://www.wikidata.org/wiki/Q131387128"
+   },
+   {
+    "id": "Q87920812",
+    "nombre": "Minguichi",
+    "tipo": "Sopa",
+    "descripcion": "El menguiche es una sopa típica de la cocina de Michoacán, en México, que consiste en leche, tomate verde, cebolla, ajo, elote y chile poblano. También es popular en Colima, donde se le agrega jitomate, y en Jalisco, donde se usa jocoque y maicena.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Minguichi_a_la_olla.jpg",
+    "wiki": "Minguichi",
+    "fuente": "https://www.wikidata.org/wiki/Q87920812"
+   },
+   {
+    "id": "Q3694877",
+    "nombre": "Corunda",
+    "tipo": "Platillo",
+    "descripcion": "La corunda es un platillo mexicano, un tipo de tamal preparado a base de maíz, típico de la zona lacustre y norte del estado de Michoacán.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Corundas.jpg",
+    "wiki": "Corunda",
+    "fuente": "https://www.wikidata.org/wiki/Q3694877"
+   },
+   {
+    "id": "Q5073924",
+    "nombre": "Charanda",
+    "tipo": "Bebida",
+    "descripcion": "La charanda es una bebida alcohólica regional mexicana, anteriormente denominada aguardiente, típica del estado de Michoacán, obtenida por destilación y rectificación de mostos fermentados, preparados a partir de jugo de caña o de sus derivados, como el melao (jugo concentrado por evaporación), el piloncillo, la…",
+    "lat": null,
+    "lon": null,
+    "imagen": "CharandaJanitzio.JPG",
+    "wiki": "Charanda",
+    "fuente": "https://www.wikidata.org/wiki/Q5073924"
+   },
+   {
+    "id": "Q94955287",
+    "nombre": "Sopa tarasca",
+    "tipo": "Sopa",
+    "descripcion": "La sopa tarasca es una sopa mexicana caliente típica de la gastronomía del estado de Michoacán.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Sopa tarasca",
+    "fuente": "https://www.wikidata.org/wiki/Q94955287"
+   },
+   {
+    "id": "Q5739906",
+    "nombre": "Caldo michi",
+    "tipo": "Sopa",
+    "descripcion": "El caldo michi es una sopa mexicana de pescado cocido en su jugo, originaria de La Barca, Jalisco, en particular de la ciénega del lago de Chapala, aunque podría pensarse que el nombre proviene del estado de Michoacán, es del vocablo náhuatl michi que significa pescado.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Caldo_Michi.jpg",
+    "wiki": "Caldo michi",
+    "fuente": "https://www.wikidata.org/wiki/Q5739906"
+   },
+   {
+    "id": "Q2718594",
+    "nombre": "Queso Cotija",
+    "tipo": "Queso",
+    "descripcion": "El queso Cotija es un tipo de queso mexicano. El queso Cotija se produce en piezas cilíndricas con un diámetro de entre 40- 18 cm.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cotija (5200441615).jpg",
+    "wiki": "Queso Cotija",
+    "fuente": "https://www.wikidata.org/wiki/Q2718594"
+   },
+   {
+    "id": "Q2890326",
+    "nombre": "Fresas con crema",
+    "tipo": "Dulce",
+    "descripcion": "Las fresas con nata o crema son un postre y una merienda de origen inglés, que incluye las citadas frutas que se sirven troceadas y bañadas en nata montada con azúcar o bien con nata montada y azúcar moreno salpicada al gusto.[cita requerida]",
+    "lat": null,
+    "lon": null,
+    "imagen": "Fresas_con_crema.jpg",
+    "wiki": "Fresas con crema (postre)",
+    "fuente": "https://www.wikidata.org/wiki/Q2890326"
+   },
+   {
+    "id": "Q6155199",
+    "nombre": "Uchepo",
+    "tipo": "Platillo",
+    "descripcion": "El tamal de elote o uchepo es un plato típico de la gastronomía mexicana originario de la región de Tierra Caliente de los estados de Michoacán y Guerrero en México. Consiste en un tamal elaborado con maíz tierno (elote) molido, al cual se le agrega un poco de sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tamales_Mexicanos_sweet_corn_tamales_01.jpg",
+    "wiki": "Tamal de elote",
+    "fuente": "https://www.wikidata.org/wiki/Q6155199"
+   },
+   {
+    "id": "Q5794822",
+    "nombre": "Cupiches",
+    "tipo": "Platillo",
+    "descripcion": "Cupiches (en el Estado de México), chamas (en Pátzcuaro, Michoacán), huenches (en Zitácuaro, Michoacán), conduchas (en el resto del estado de Michoacán) son los nombres comunes dados en México a las larvas de la mariposa del madroño. Se recolectan siendo capullos y se comen las crisálidas tostadas en el comal.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Cupiches",
+    "fuente": "https://www.wikidata.org/wiki/Q5794822"
+   },
+   {
+    "id": "Q24961090",
+    "nombre": "Aguacata",
+    "tipo": "Pan",
+    "descripcion": "La aguacata es uno de los panes típicos de la gastronomía mexicana y de los tradicionales del estado de Michoacán. Su forma es similar al de una tortilla pero un poco más gruesa y en su interior tiene pequeños trozos de piloncillo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Aguacata.jpg",
+    "wiki": "Aguacata",
+    "fuente": "https://www.wikidata.org/wiki/Q24961090"
+   },
+   {
+    "id": "Q96031363",
+    "nombre": "Atápakua",
+    "tipo": "Platillo",
+    "descripcion": "El atápacua o atápakua es una preparación culinaria similar a un mole (salsa espesa), típica de la gastronomía michoacana, en México, en la que se guisan carnes y verduras. Se trata de un plato fuertemente aromatizado.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Atapacua_verde2.jpg",
+    "wiki": "Atápakua",
+    "fuente": "https://www.wikidata.org/wiki/Q96031363"
+   },
+   {
+    "id": "Q96314778",
+    "nombre": "De mi rancho a tu cocina",
+    "tipo": "Platillo",
+    "descripcion": "De mi rancho a tu cocina es un canal mexicano de recetas de YouTube creado por Doña Ángela, originaria del municipio Ario de Rosales, Michoacán, México, lugar desde donde se transmite.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "De mi rancho a tu cocina",
+    "fuente": "https://www.wikidata.org/wiki/Q96314778"
+   },
+   {
+    "id": "Q12007834",
+    "nombre": "Tuba",
+    "tipo": "Bebida",
+    "descripcion": "La tuba es una bebida que consiste en savia de palma fermentada, particularmente palma de coco (Cocos nucifera) por lo que tiene una ligera graduación alcohólica. También se puede tomar del mismo día, sin fermentar, y por lo tanto no será una bebida alcohólica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tuba Colima.JPG",
+    "wiki": "Tuba (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q12007834"
+   },
+   {
+    "id": "Q7695264",
+    "nombre": "Tejuino",
+    "tipo": "Bebida",
+    "descripcion": "El tejuino (del náhuatl: texwinoh ‘bebida de masa’) o tesgüino es una bebida fermentada de maíz de origen mexicano, específicamente de las antiguas culturas de occidente, la cual se consume en regiones de los estados de Jalisco, Sinaloa, Colima, Nayarit, Baja California Sur y Oaxaca.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tejuino.JPG",
+    "wiki": "Tejuino",
+    "fuente": "https://www.wikidata.org/wiki/Q7695264"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q207968",
+    "nombre": "Guacamole",
+    "tipo": "Salsa",
+    "descripcion": "El guacamole es una salsa de origen mexicano preparada a base de aguacate, cebolla, jugo de limón y alguna variedad de chile verde, que generalmente es chile serrano o jalapeño.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Guacamole amb \"nachos\".jpg",
+    "wiki": "Guacamole",
+    "fuente": "https://www.wikidata.org/wiki/Q207968"
+   },
+   {
+    "id": "Q177564",
+    "nombre": "Pico de gallo",
+    "tipo": "Platillo",
+    "descripcion": "El pico de gallo es una salsa o ensalada típica de la gastronomía mexicana. Se trata de una de las preparaciones más clásicas de este país, y se encuentra en casi todas las regiones en multitud de variantes.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pico de Gallo Homemade 2014.JPG",
+    "wiki": "Pico de gallo",
+    "fuente": "https://www.wikidata.org/wiki/Q177564"
+   },
+   {
+    "id": "Q1888644",
+    "nombre": "Tepache",
+    "tipo": "Bebida",
+    "descripcion": "El tepache es una bebida fermentada mexicana, normalmente tiene un muy bajo nivel alcohólico por su forma de elaboración (menos de 1% Alc. Vol.).",
+    "lat": null,
+    "lon": null,
+    "imagen": "TepacheStraw.JPG",
+    "wiki": "Tepache (bebida alcohólica)",
+    "fuente": "https://www.wikidata.org/wiki/Q1888644"
+   },
+   {
+    "id": "Q5044066",
+    "nombre": "Carnitas",
+    "tipo": "Platillo",
+    "descripcion": "En México, se le llama carnitas a la carne de puerco de diferentes porciones, incluyendo carne que son fritas en manteca de puerco. Para su preparación, se emplean enormes ollas de cobre, o cazos de acero inoxidable.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carnitas in Mexico.jpg",
+    "wiki": "Carnitas",
+    "fuente": "https://www.wikidata.org/wiki/Q5044066"
+   }
+  ]
+ }
+}

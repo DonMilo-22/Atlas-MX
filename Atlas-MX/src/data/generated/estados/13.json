@@ -1,0 +1,1142 @@
+{
+ "cve": "13",
+ "estado": "Hidalgo",
+ "wikidata": "Q80903",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q20241139",
+    "nombre": "Acaxochitlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Acaxochitlán (del náhuatl: Acaxochitl ‘lugar en que abunda el Acaxochitl’) es una localidad mexicana, cabecera del municipio de Acaxochitlán en el estado de Hidalgo.",
+    "lat": 20.15833,
+    "lon": -98.20222,
+    "imagen": "Centro histórico de Acaxochitlán 1.jpg",
+    "wiki": "Acaxochitlán",
+    "municipio": "Acaxochitlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20241139"
+   },
+   {
+    "id": "Q2475217",
+    "nombre": "Huasca de Ocampo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo, véase Municipio de Huasca de Ocampo",
+    "lat": 20.20361,
+    "lon": -98.57639,
+    "imagen": "HuascaTowardsChurch.JPG",
+    "wiki": "Huasca de Ocampo",
+    "municipio": "Huasca de Ocampo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2475217"
+   },
+   {
+    "id": "Q27769230",
+    "nombre": "Huichapan",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo véase Municipio de Huichapan",
+    "lat": 20.37528,
+    "lon": -99.65056,
+    "imagen": "Parroquía de San Mateo Apostol, Huichapan, Hidalgo, México. 01.jpg",
+    "wiki": "Huichapan",
+    "municipio": "Huichapan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q27769230"
+   },
+   {
+    "id": "Q1465498",
+    "nombre": "Metztitlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo véase Municipio de Metztitlán",
+    "lat": 20.595,
+    "lon": -98.76278,
+    "imagen": "Convento de los Reyes Magos.jpg",
+    "wiki": "Metztitlán",
+    "municipio": "Metztitlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1465498"
+   },
+   {
+    "id": "Q3844631",
+    "nombre": "Mineral del Chico",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo véase Municipio de Mineral del Chico",
+    "lat": 20.21472,
+    "lon": -98.73056,
+    "imagen": "Parroquia Mineral del Chico desde entrada.JPG",
+    "wiki": "Mineral del Chico",
+    "municipio": "Mineral del Chico",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3844631"
+   },
+   {
+    "id": "Q9033309",
+    "nombre": "Real de Monte",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo véase Municipio de Mineral del Monte",
+    "lat": 20.13917,
+    "lon": -98.67167,
+    "imagen": "Mineral del Monte.jpg",
+    "wiki": "Mineral del Monte",
+    "municipio": "Mineral del Monte",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q9033309"
+   },
+   {
+    "id": "Q20244144",
+    "nombre": "Tecozautla",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Esta página se refiere a una localidad. Para el municipio homónimo véase Municipio de Tecozautla",
+    "lat": 20.53359,
+    "lon": -99.63449,
+    "imagen": "Tecozautla Hidalgo. 02.jpg",
+    "wiki": "Tecozautla",
+    "municipio": "Tecozautla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20244144"
+   },
+   {
+    "id": "Q9046602",
+    "nombre": "Zempoala",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Zempoala es una localidad mexicana, cabecera del municipio de Zempoala en el estado de Hidalgo. El 1 de diciembre del 2020 fue declarado como uno de los Pueblos Mágicos de Hidalgo.",
+    "lat": 19.91556,
+    "lon": -98.67,
+    "imagen": "Templo y antiguo convento de Todos los Santos.JPG",
+    "wiki": "Zempoala (Hidalgo)",
+    "municipio": "Zempoala",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q9046602"
+   },
+   {
+    "id": "Q20244520",
+    "nombre": "Zimapán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Zimapán es una localidad mexicana, cabecera del municipio de Zimapán, en el estado de Hidalgo. El 11 de octubre de 2018 fue declarado como uno de los Pueblos Mágicos de Hidalgo.",
+    "lat": 20.73814,
+    "lon": -99.3818,
+    "imagen": "Plaza principal ZImapán.jpg",
+    "wiki": "Zimapán",
+    "municipio": "Zimapán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20244520"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q2840764",
+    "nombre": "Acueducto del Padre Tembleque",
+    "tipo": "Acueducto",
+    "descripcion": "El acueducto del Padre Tembleque o acueducto de Tembleque, en México, es un acueducto ubicado en los municipios de Nopaltepec, Axapúsco y Otumba del Estado de México y el municipio de Zempoala y Tlanalapa del Estado de Hidalgo.",
+    "lat": 19.83639,
+    "lon": -98.66222,
+    "imagen": "Zempoala Aqueduct, Acueducto del Padre Tembleque, Tepeyahualco Aqueduct 2.jpg",
+    "wiki": "Acueducto del Padre Tembleque",
+    "municipio": "Zempoala",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2840764"
+   },
+   {
+    "id": "Q93169359",
+    "nombre": "Templo y exconvento de Todos los Santos",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de Todos los Santos se encuentra localizado en la ciudad de Zempoala en el estado de Hidalgo, México. Fue construido por la Orden Franciscana, en el año 1570 se inició la construcción de la iglesia y convento, los que para 1585 ya estaban terminados.",
+    "lat": 19.91528,
+    "lon": -98.66935,
+    "imagen": "Templo y antiguo convento de Todos los Santos.JPG",
+    "wiki": "Templo y exconvento de Todos los Santos (Zempoala)",
+    "municipio": "Zempoala",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q93169359"
+   },
+   {
+    "id": "Q67794917",
+    "nombre": "Templo y exconvento de San Francisco",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Francisco se encuentra localizado en la ciudad de Tepeji del Río, Hidalgo, México. Pertenece al conjunto de edificaciones mendicantes levantadas por los franciscanos en el siglo XVI.",
+    "lat": 19.90461,
+    "lon": -99.34193,
+    "imagen": "Templo_y_exconvento_de_San_Francisco_en_Tepeji_del_Río,_Hidalgo_(México)._02.jpg",
+    "wiki": "Templo y exconvento de San Francisco (Tepeji del Río)",
+    "municipio": "Tepeji del Río de Ocampo",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q67794917"
+   },
+   {
+    "id": "Q568672",
+    "nombre": "Tollan-Xicocotitlan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tollan-Xicocotitlan (en náhuatl clásico: Tōllān Xīcohcotitlan, AFI: [ˈtoːlːaːn̥ ʃiːkohkoˈtit͡ɬan̥], «Lugar de tules-Cerca del lugar de los jicotes», «Gran Ciudad cerca del cerro Xicoco»)—conocida como Tula, forma castellanizada de Tollan— fue la capital del Estado tolteca, que se desarrolló en el centro de México…",
+    "lat": 20.06347,
+    "lon": -99.34114,
+    "imagen": "Telamones Tula.jpg",
+    "wiki": "Tollan-Xicocotitlan",
+    "municipio": "Tula de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q568672"
+   },
+   {
+    "id": "Q548096",
+    "nombre": "Laguna de los Cerros",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Laguna de los Cerros es un yacimiento arqueológico de reciente excavación del período clásico mesoamericano de la cultura olmeca. Está situado en el estado mexicano de Veracruz, en las colinas al Sur de la Sierra de los Tuxtlas.",
+    "lat": 20.13333,
+    "lon": -98.36667,
+    "imagen": null,
+    "wiki": "Laguna de los Cerros",
+    "fuente": "https://www.wikidata.org/wiki/Q548096"
+   },
+   {
+    "id": "Q5926105",
+    "nombre": "Huapalcalco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de Huapalcalco se encuentra en Tulancingo de Bravo, estado de Hidalgo, México. Huapalcalco viene del vocablo náhuatl huapalli o huapálitl, ‘tabla o viga pequeña’; calli, ‘casa’; y co, posposición locativa; por lo que significa ‘lugar de la casa de madera’.",
+    "lat": 20.13333,
+    "lon": -98.36667,
+    "imagen": "Huapalcalco1.jpg",
+    "wiki": "Huapalcalco",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q5926105"
+   },
+   {
+    "id": "Q25239324",
+    "nombre": "Pahñú",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Pahñú o Pañhú (“Camino caliente” en otomí) es un sitio arqueológico localizado en la comunidad de La Mesilla, Municipio de Tecozautla en el estado de Hidalgo, México.",
+    "lat": 20.50543,
+    "lon": -99.68465,
+    "imagen": "Zona arqueológica de Pahñú. 02.jpg",
+    "wiki": "Pahñú",
+    "municipio": "Tecozautla",
+    "fuente": "https://www.wikidata.org/wiki/Q25239324"
+   },
+   {
+    "id": "Q5493405",
+    "nombre": "Catedral de Tulancingo",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Tulancingo, dedicada a San Juan Bautista, es una obra de la arquitectura religiosa del México colonial construida a partir de 1528 por la Orden Franciscana. Imponente y a la vez sencilla destaca en el centro Histórico de Tulancingo, Hidalgo, frente a la plaza principal La Floresta.",
+    "lat": 20.08056,
+    "lon": -98.36778,
+    "imagen": "CathTulancingo.JPG",
+    "wiki": "Catedral de Tulancingo",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q5493405"
+   },
+   {
+    "id": "Q1146949",
+    "nombre": "Templo y exconvento de San Nicolás de Tolentino",
+    "tipo": "Templo",
+    "descripcion": "El Templo y exconvento de San Nicolás de Tolentino es un antiguo convento agustino del siglo XVI; es considerado como uno de los monumentos históricos más importantes del estado de Hidalgo.",
+    "lat": 20.2684,
+    "lon": -98.943,
+    "imagen": "Convento actopan 10.jpg",
+    "wiki": "Templo y exconvento de San Nicolás de Tolentino (Actopan)",
+    "fuente": "https://www.wikidata.org/wiki/Q1146949"
+   },
+   {
+    "id": "Q5758616",
+    "nombre": "Catedral de Tula",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de San José localizada en la ciudad de Tula de Allende, Hidalgo en México,",
+    "lat": 20.055,
+    "lon": -99.343,
+    "imagen": "Catedral de tula.jpg",
+    "wiki": "Catedral de Tula",
+    "municipio": "Tula de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q5758616"
+   },
+   {
+    "id": "Q5721926",
+    "nombre": "Basílica Menor de Nuestra Señora de Guadalupe",
+    "tipo": "Templo",
+    "descripcion": "La Basílica Menor de Nuestra Señora de Guadalupe comúnmente denominada La Villita, se encuentra en Pachuca de Soto, Hidalgo, México.",
+    "lat": 20.11944,
+    "lon": -98.74139,
+    "imagen": "Fachada 3. Basílica de Santa María de Guadalupe de Pachuca, México..jpg",
+    "wiki": "Basílica Menor de Nuestra Señora de Guadalupe (Pachuca)",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q5721926"
+   },
+   {
+    "id": "Q93398397",
+    "nombre": "Catedral de Huejutla",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Huejutla, dedicada a Cristo Rey, es una obra de la arquitectura religiosa ubicada en Huejutla en el estado de Hidalgo, México.",
+    "lat": 21.13953,
+    "lon": -98.42167,
+    "imagen": "Catedral de Huejutla. 06.jpg",
+    "wiki": "Catedral de Huejutla",
+    "fuente": "https://www.wikidata.org/wiki/Q93398397"
+   },
+   {
+    "id": "Q16911300",
+    "nombre": "Capilla de Santa María Xoxoteco",
+    "tipo": "Templo",
+    "descripcion": "La Capilla de Santa María Xoxoteco es una capilla dedicada a la Purísima Concepción, localizada en la localidad de Santa María Xoxoteco perteneciente al municipio de San Agustín Metzquititlán en el estado de Hidalgo, México.",
+    "lat": 20.51607,
+    "lon": -98.62515,
+    "imagen": "Templo de la Purísima Concepción, Municipio de San Agustín Metzquititlán en la comunidad de Santa María Xoxoteco.JPG",
+    "wiki": "Capilla de Santa María Xoxoteco",
+    "municipio": "San Agustín Metzquititlán",
+    "fuente": "https://www.wikidata.org/wiki/Q16911300"
+   },
+   {
+    "id": "Q6063774",
+    "nombre": "Parroquia de la Asunción",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia de la Asunción es una parroquia ubicada en la ciudad de Pachuca de Soto, en el estado de Hidalgo, México.",
+    "lat": 20.12922,
+    "lon": -98.73011,
+    "imagen": "FacadeAsuncionPachuca.JPG",
+    "wiki": "Parroquia de la Asunción (Pachuca)",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q6063774"
+   },
+   {
+    "id": "Q6117947",
+    "nombre": "Salón de la Fama del Fútbol",
+    "tipo": "Museo",
+    "descripcion": "El Salón de la Fama del Fútbol es un museo y Salón de la Fama localizado en Pachuca de Soto, estado de Hidalgo (México).",
+    "lat": 20.09583,
+    "lon": -98.77306,
+    "imagen": "Salón de la Fama del Fútbol (México).jpg",
+    "wiki": "Salón de la Fama del Fútbol Internacional",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q6117947"
+   },
+   {
+    "id": "Q3816228",
+    "nombre": "Reloj Monumental de Pachuca",
+    "tipo": "Monumento",
+    "descripcion": "El Reloj Monumental de Pachuca, también comúnmente conocido con el nombre de Reloj de Pachuca, es un reloj de torre ubicado en la ciudad de Pachuca de Soto, en el estado de Hidalgo, México.",
+    "lat": 20.1275,
+    "lon": -98.73194,
+    "imagen": "Reloj Monumental, Pachuca, Hidalgo, México, 2013-10-10, DD 02.JPG",
+    "wiki": "Reloj Monumental de Pachuca",
+    "fuente": "https://www.wikidata.org/wiki/Q3816228"
+   },
+   {
+    "id": "Q68402412",
+    "nombre": "Antiguo convento La Comunidad",
+    "tipo": "Convento",
+    "descripcion": "El Convento La Comunidad es una antigua construcción religiosa ubicada en Metztitlán, Hidalgo, México.",
+    "lat": 20.59479,
+    "lon": -98.76445,
+    "imagen": "Edifico La Comunidad en Metztitlán. 01.jpg",
+    "wiki": "Antiguo convento La Comunidad (Metztitlán)",
+    "municipio": "Metztitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q68402412"
+   },
+   {
+    "id": "Q6141101",
+    "nombre": "Templo y exconvento de San Francisco de Pachuca",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Francisco se encuentra localizado en la ciudad de Pachuca de Soto en el estado de Hidalgo, México.",
+    "lat": 20.1211,
+    "lon": -98.7311,
+    "imagen": "Frente del Ex Convento de San Francisco.JPG",
+    "wiki": "Templo y exconvento de San Francisco (Pachuca)",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q6141101"
+   },
+   {
+    "id": "Q9085782",
+    "nombre": "Templo y exconvento de los Santos Reyes",
+    "tipo": "Convento",
+    "descripcion": "El templo y convento de los Santos Reyes se encuentra localizado en la ciudad de Metztitlán, Hidalgo, México. Es considerado uno de los monumentos históricos más importantes del Estado de Hidalgo.",
+    "lat": 20.59458,
+    "lon": -98.76384,
+    "imagen": "Convento de los Reyes Magos.jpg",
+    "wiki": "Templo y exconvento de los Santos Reyes (Metztitlán)",
+    "municipio": "Metztitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q9085782"
+   },
+   {
+    "id": "Q43147815",
+    "nombre": "Templo y exconvento de San Miguel Arcángel",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Miguel Arcángel se encuentra localizado en la ciudad de Ixmiquilpan, Hidalgo (México). Pertenece al conjunto de edificaciones del tipo fortaleza levantadas por los agustinos en el siglo XVI.",
+    "lat": 20.48275,
+    "lon": -99.21886,
+    "imagen": "EXCONVENTO IXMIQUILPAN.JPG",
+    "wiki": "Templo y exconvento de San Miguel Arcángel (Ixmiquilpan)",
+    "municipio": "Ixmiquilpan",
+    "fuente": "https://www.wikidata.org/wiki/Q43147815"
+   },
+   {
+    "id": "Q47834028",
+    "nombre": "Templo y exconvento de San Francisco",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Francisco se encuentra localizado en la ciudad de Tepeapulco, Hidalgo (México). Pertenece al conjunto de edificaciones mendicantes levantadas por los franciscanos en el siglo XVI.",
+    "lat": 19.78514,
+    "lon": -98.55225,
+    "imagen": "San Francisco Convent in Tepeapulco, Hidalgo, Mexico.jpg",
+    "wiki": "Templo y exconvento de San Francisco (Tepeapulco)",
+    "municipio": "Tepeapulco",
+    "fuente": "https://www.wikidata.org/wiki/Q47834028"
+   },
+   {
+    "id": "Q66812131",
+    "nombre": "Parroquia del Carmen",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia del Carmen más conocida como El Carmelito, es una parroquia ubicada en el centro histórico de Pachuca de Soto, Hidalgo en México.",
+    "lat": 20.12626,
+    "lon": -98.73531,
+    "imagen": "Parroquia de Nuestra Señora del Carmen, Pachuca (02).jpg",
+    "wiki": "Parroquia del Carmen (Pachuca)",
+    "fuente": "https://www.wikidata.org/wiki/Q66812131"
+   },
+   {
+    "id": "Q93918272",
+    "nombre": "Santuario del Señor de Mapethé",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia del Cristo de Mapethé o Santuario del Señor de Mapethé es una iglesia parroquial localizada en la localidad de Mapethé, municipio de Cardonal, en el estado de Hidalgo, México.",
+    "lat": 20.66318,
+    "lon": -99.13959,
+    "imagen": "Templo de la Cruz de Santa Teresa en Cardonal.jpg",
+    "wiki": "Iglesia del Cristo de Mapethé",
+    "fuente": "https://www.wikidata.org/wiki/Q93918272"
+   },
+   {
+    "id": "Q111749252",
+    "nombre": "Antiguo convento de Chichicaxtla",
+    "tipo": "Templo",
+    "descripcion": "El antiguo convento de Chichicaxtla también conocido como Parroquia de Nuestra Señora de la Asunción, es un convento agustino del siglo XVI, ubicado en la localidad de Chichicaxtla, municipio de Tlahuiltepa en el estado de Hidalgo, México.",
+    "lat": 20.78954,
+    "lon": -99.06454,
+    "imagen": null,
+    "wiki": "Antiguo convento de Chichicaxtla",
+    "fuente": "https://www.wikidata.org/wiki/Q111749252"
+   },
+   {
+    "id": "Q20024589",
+    "nombre": "Museo del Ferrocarril de Tulancingo",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Ferrocarril es un museo y antigua estación ferroviaria,fundada el 5 de mayo de 1981 y cerrada en 1997 en el estado de Hidalgo (México).",
+    "lat": 20.08616,
+    "lon": -98.37374,
+    "imagen": null,
+    "wiki": "Museo del Ferrocarril (Tulancingo)",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q20024589"
+   },
+   {
+    "id": "Q5702991",
+    "nombre": "Archivo Histórico y Museo de Minería de Pachuca",
+    "tipo": "Museo",
+    "descripcion": "El Archivo Histórico y Museo de la Minería de Pachuca es un recinto cultural que se encuentra ubicado en el centro histórico de Pachuca de Soto, en el estado de Hidalgo, en México.",
+    "lat": 20.12543,
+    "lon": -98.73127,
+    "imagen": "Archivo Histórico y Museo de Minería de Pachuca. 03.jpg",
+    "wiki": "Archivo Histórico y Museo de Minería de Pachuca",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q5702991"
+   },
+   {
+    "id": "Q6033302",
+    "nombre": "Museo El Rehilete",
+    "tipo": "Museo",
+    "descripcion": "El Museo Interactivo para la Niñez y Juventud Hidalguense El Rehilete más conocido como Museo El Rehilete, se encuentra ubicado en la ciudad de Pachuca de Soto, en el estado de Hidalgo (México).",
+    "lat": 20.07672,
+    "lon": -98.77714,
+    "imagen": "Museo_El_Rehilete.jpg",
+    "wiki": "Museo El Rehilete",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q6033302"
+   },
+   {
+    "id": "Q9046896",
+    "nombre": "Museo Nacional de la Fotografía",
+    "tipo": "Museo",
+    "descripcion": "El Museo Nacional de Fotografía es un museo dedicado a la fotografía ubicado en la ciudad de Pachuca de Soto, en el estado de Hidalgo, (México).",
+    "lat": 20.12086,
+    "lon": -98.73182,
+    "imagen": "Museo Nacional de la Fotografía en Pachuca, México 01.jpg",
+    "wiki": "Museo Nacional de la Fotografía (México)",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q9046896"
+   },
+   {
+    "id": "Q24213578",
+    "nombre": "Ex convento de San Andres Apostol Epazoyucan",
+    "tipo": "Museo",
+    "descripcion": "El Templo y exconvento de San Andrés Apóstol se encuentra localizado en la ciudad de Epazoyucan, Hidalgo, México. Pertenece al conjunto de edificaciones mendicantes levantadas por los agustinos en el siglo XVI.",
+    "lat": 20.01784,
+    "lon": -98.63511,
+    "imagen": "Epazoyucan, joya del Siglo XVI.jpg",
+    "wiki": "Templo y exconvento de San Andrés Apóstol (Epazoyucan)",
+    "municipio": "Epazoyucan",
+    "fuente": "https://www.wikidata.org/wiki/Q24213578"
+   },
+   {
+    "id": "Q24763853",
+    "nombre": "Museo de Sitio Mina de Acosta",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio Mina de Acosta es un museo dedicado a la historia de la minería ubicado en el Mineral del Monte, en el estado de Hidalgo (México).",
+    "lat": 20.14649,
+    "lon": -98.66778,
+    "imagen": "Mina de Acosta, Real del Monte, Hidalgo, México, 2013-10-10, DD 02.JPG",
+    "wiki": "Museo de Sitio Mina de Acosta",
+    "municipio": "Mineral del Monte",
+    "fuente": "https://www.wikidata.org/wiki/Q24763853"
+   },
+   {
+    "id": "Q66564212",
+    "nombre": "Museo de Sitio y Centro de Interpretación Mina La Dificultad",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio y Centro de Interpretación Mina La Dificultad, es un museo dedicado a la historia hospitalaria y de minería ubicado en el Mineral del Monte, en el estado de Hidalgo (México).",
+    "lat": 20.14541,
+    "lon": -98.67203,
+    "imagen": "Real_del_Monte.jpg",
+    "wiki": "Museo de Sitio y Centro de Interpretación Mina La Dificultad",
+    "municipio": "Mineral del Monte",
+    "fuente": "https://www.wikidata.org/wiki/Q66564212"
+   },
+   {
+    "id": "Q66567539",
+    "nombre": "Museo del Paste",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Paste es un museo gastronómico ubicado en el Mineral del Monte, en el estado de Hidalgo (México). El museo busca difundir y promover el legado gastronómico e histórico del Paste.",
+    "lat": 20.13884,
+    "lon": -98.68457,
+    "imagen": "Museo de Paste en Mineral del Monte, México. 01.jpg",
+    "wiki": "Museo del Paste",
+    "municipio": "Mineral del Monte",
+    "fuente": "https://www.wikidata.org/wiki/Q66567539"
+   },
+   {
+    "id": "Q66581881",
+    "nombre": "Centro Interactivo Mundo Fútbol",
+    "tipo": "Museo",
+    "descripcion": "El Centro Interactivo Mundo Fútbol, es un museo interactivo de fútbol localizado en Pachuca de Soto, estado de Hidalgo (México).",
+    "lat": 20.09477,
+    "lon": -98.774,
+    "imagen": "Centro Interactivo Mundo Fútbol. 002.jpg",
+    "wiki": "Centro Interactivo Mundo Fútbol",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q66581881"
+   },
+   {
+    "id": "Q66606944",
+    "nombre": "Museo del Santo",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Santo es un museo honorífico, en memoria del luchador profesional y actor mexicano conocido como El Santo. Se encuentra localizado en el municipio de Tulancingo de Bravo, Hidalgo, México.",
+    "lat": 20.08608,
+    "lon": -98.3736,
+    "imagen": null,
+    "wiki": "Museo del Santo",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q66606944"
+   },
+   {
+    "id": "Q66672652",
+    "nombre": "Museo Arqueológico Jorge R. Acosta",
+    "tipo": "Museo",
+    "descripcion": "El Museo Arqueológico Jorge R. Acosta es un museo arqueológico, ubicado en Tula de Allende, estado de Hidalgo, México.",
+    "lat": 20.06384,
+    "lon": -99.34046,
+    "imagen": "TulaSite04.JPG",
+    "wiki": "Museo Arqueológico Jorge R. Acosta",
+    "municipio": "Tula de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q66672652"
+   },
+   {
+    "id": "Q66692572",
+    "nombre": "Museo de Datos Históricos",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Datos Históricos, es un museo y antigua estación ferroviaria localizado en Tulancingo de Bravo, estado de Hidalgo (México).",
+    "lat": 20.08448,
+    "lon": -98.37622,
+    "imagen": null,
+    "wiki": "Museo de Datos Históricos",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q66692572"
+   },
+   {
+    "id": "Q67154488",
+    "nombre": "Cuartel del Arte",
+    "tipo": "Museo",
+    "descripcion": "El Cuartel del Arte es una galería de arte ubicada en el centro histórico de Pachuca de Soto, en el estado de Hidalgo, México. Dedicado a presentar exposiciones sobre pintura y escultura de artistas nacionales e internacionales.",
+    "lat": 20.12114,
+    "lon": -98.73194,
+    "imagen": "Cuartel del arte.JPG",
+    "wiki": "Cuartel del Arte",
+    "fuente": "https://www.wikidata.org/wiki/Q67154488"
+   },
+   {
+    "id": "Q30906540",
+    "nombre": "Templo y exconvento de San Agustín",
+    "tipo": "Convento",
+    "descripcion": "El templo y exconvento de San Agustín, en Atotonilco el Grande, estado de Hidalgo, México; está considerado la primera construcción agustina en el Estado de Hidalgo. Su fundación se remonta a 1536, pero la construcción por orden de fray Juan de Sevilla se realizó entre 1542 y 1562.",
+    "lat": 20.28622,
+    "lon": -98.66874,
+    "imagen": "Majestuoso convento de atotonilco el grande.jpg",
+    "wiki": "Templo y exconvento de San Agustín (Atotonilco el Grande)",
+    "municipio": "Atotonilco el Grande",
+    "fuente": "https://www.wikidata.org/wiki/Q30906540"
+   },
+   {
+    "id": "Q47524106",
+    "nombre": "Templo y exconvento de San Francisco",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Francisco se encuentra localizado en la ciudad de Tlahuelilpan, Hidalgo (México). Pertenece al conjunto de edificaciones mendicantes levantadas por los franciscanos en el siglo XVI.",
+    "lat": 20.13178,
+    "lon": -99.23289,
+    "imagen": null,
+    "wiki": "Templo y exconvento de San Francisco (Tlahuelilpan)",
+    "municipio": "Tlahuelilpan",
+    "fuente": "https://www.wikidata.org/wiki/Q47524106"
+   },
+   {
+    "id": "Q21002942",
+    "nombre": "Hacienda de Santa María Regla",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Santa María Regla es un conjunto hacendario del siglo XVIII, asociado históricamente al conde de Regla Pedro Romero de Terreros. Se localiza en Santa María Regla, a 4 km al noreste de Huasca de Ocampo (estado de Hidalgo), México.",
+    "lat": 20.2376,
+    "lon": -98.56173,
+    "imagen": "Santa María Regla (Foto Aérea).JPG",
+    "wiki": "Hacienda de Santa María Regla",
+    "fuente": "https://www.wikidata.org/wiki/Q21002942"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q160750",
+    "nombre": "Pachuca de Soto",
+    "tipo": "Ciudad",
+    "descripcion": "Pachuca ( escuchar) (del náhuatl: Pachyohkan ‘Lugar de heno, Lugar de estrecho’), oficialmente llamada Pachuca de Soto es una ciudad mexicana, cabecera del Municipio de Pachuca de Soto y capital del estado de Hidalgo.",
+    "lat": 20.1225,
+    "lon": -98.73611,
+    "imagen": "Reloj Monumental, Pachuca, Hidalgo, México, 2013-10-10, DD 06.JPG",
+    "wiki": "Pachuca de Soto",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q160750"
+   },
+   {
+    "id": "Q344513",
+    "nombre": "Actopan",
+    "tipo": "Ciudad",
+    "descripcion": "Actopan (del náhuatl: Ātocpan ‘tierra gruesa, húmeda y fértil’) es una ciudad mexicana, cabecera del municipio de Actopan en el estado de Hidalgo.",
+    "lat": 20.26806,
+    "lon": -98.94417,
+    "imagen": "ZocaloActopan.jpg",
+    "wiki": "Actopan (Hidalgo)",
+    "municipio": "Actopan",
+    "fuente": "https://www.wikidata.org/wiki/Q344513"
+   },
+   {
+    "id": "Q2990986",
+    "nombre": "Apan",
+    "tipo": "Ciudad",
+    "descripcion": "Apan es una localidad, cabecera del municipio de Apan en el estado de Hidalgo en México. En 2020 registró una población de 28 792 personas, el 62.60 % de la población municipal.",
+    "lat": 19.71,
+    "lon": -98.45194,
+    "imagen": "Iglesia Apan.JPG",
+    "wiki": "Apan",
+    "municipio": "Apan",
+    "fuente": "https://www.wikidata.org/wiki/Q2990986"
+   },
+   {
+    "id": "Q2002665",
+    "nombre": "Tula de Allende",
+    "tipo": "Ciudad",
+    "descripcion": "Tula de Allende es una ciudad mexicana, cabecera del municipio de Tula de Allende en el estado de Hidalgo. Está ubicada a 70 km de la Ciudad de México, destaca por sus zonas arqueológicas, relativamente cerca de la ciudad homónima.",
+    "lat": 20.05639,
+    "lon": -99.34194,
+    "imagen": "Catedral de tula.jpg",
+    "wiki": "Tula de Allende",
+    "municipio": "Tula de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q2002665"
+   },
+   {
+    "id": "Q20244371",
+    "nombre": "Tulancingo",
+    "tipo": "Ciudad",
+    "descripcion": "Tulancingo es una ciudad mexicana, cabecera del municipio de Tulancingo de Bravo en el estado de Hidalgo. Se encuentra ubicada en la parte centro-oriente de México, dentro del denominado Valle de Tulancingo; Se localiza a 119 km de la Ciudad de México por la autopista 132 y a 40 km de Pachuca de Soto.",
+    "lat": 20.08583,
+    "lon": -98.36333,
+    "imagen": "Tulancingo3.jpg",
+    "wiki": "Tulancingo",
+    "municipio": "Tulancingo de Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q20244371"
+   },
+   {
+    "id": "Q4448363",
+    "nombre": "Ciudad Sahagún",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Sahagún, oficialmente denominada Fray Bernardino de Sahagún, es una ciudad mexicana, ubicada en el municipio de Tepeapulco, en el estado de Hidalgo. Es la octava localidad más poblada de Hidalgo, la localidad más poblada de Tepeapulco; y la localidad más poblada de Hidalgo, sin ser cabecera municipal.",
+    "lat": 19.76972,
+    "lon": -98.57389,
+    "imagen": "Unidad_Habitacional_Dikona.jpg",
+    "wiki": "Ciudad Sahagún",
+    "municipio": "Tepeapulco",
+    "fuente": "https://www.wikidata.org/wiki/Q4448363"
+   },
+   {
+    "id": "Q1633919",
+    "nombre": "Huejutla de Reyes",
+    "tipo": "Ciudad",
+    "descripcion": "Huejutla de Reyes (del náhuatl: Wexotlah ‘Lugar de sauces’), es una ciudad mexicana, cabecera del municipio de Huejutla de Reyes en el estado de Hidalgo.",
+    "lat": 21.14,
+    "lon": -98.41944,
+    "imagen": "Huejutla de Reyes, Hidalgo 1.jpg",
+    "wiki": "Huejutla",
+    "municipio": "Huejutla de Reyes",
+    "fuente": "https://www.wikidata.org/wiki/Q1633919"
+   },
+   {
+    "id": "Q3292893",
+    "nombre": "Sierra Gorda",
+    "tipo": "Área natural protegida",
+    "descripcion": "La Sierra Gorda se ubica en la región orográfica perteneciente a la vertiente del Golfo de México, con un relieve de origen sedimentario caracterizado por sierras altas con altitudes superiores a los 3,000 m s. n. m. y con amplios y profundos cañones labrados por los ríos Santa María, Extóraz y Moctezuma.",
+    "lat": 20.98,
+    "lon": -99.3,
+    "imagen": "SierraGordaQueretaro.JPG",
+    "wiki": "Sierra Gorda (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q3292893"
+   },
+   {
+    "id": "Q3403932",
+    "nombre": "Prismas basálticos de Santa María Regla",
+    "tipo": "Cascada",
+    "descripcion": "Los prismas basálticos de Santa María Regla son unas columnas basálticas, que se localizan en el centro oriente del estado de Hidalgo, México. Son el resultado del enfriamiento lento de coladas de lava hace unos 2.5 millones de años, en el pleistoceno.",
+    "lat": 20.2339,
+    "lon": -98.5629,
+    "imagen": "Prismas Basálticos, Huasca de Ocampo, Hidalgo, México, 2013-10-10, DD 25.JPG",
+    "wiki": "Prismas basálticos de Santa María Regla",
+    "fuente": "https://www.wikidata.org/wiki/Q3403932"
+   },
+   {
+    "id": "Q6378140",
+    "nombre": "Parque nacional El Chico",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional El Chico es un área natural protegida con una superficie de 2739.02 ha, localizada al centro del estado de Hidalgo, México.",
+    "lat": 20.20722,
+    "lon": -98.73111,
+    "imagen": "Panoramica del parque nacional El Chico.jpg",
+    "wiki": "Parque nacional El Chico",
+    "fuente": "https://www.wikidata.org/wiki/Q6378140"
+   },
+   {
+    "id": "Q1842923",
+    "nombre": "Parque nacional Los Mármoles",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Los Mármoles está ubicado al norte del Estado de Hidalgo, México, a 126 kilómetros de la ciudad de Pachuca de Soto su capital. Abarca parte de los municipios de Zimapán, Jacala, Pacula y Nicolás Flores, con un área de 231.5 kilómetros cuadrados.",
+    "lat": 20.9797,
+    "lon": -99.3103,
+    "imagen": "Mexico Hidalgo Encarnacion-003.JPG",
+    "wiki": "Parque nacional Los Mármoles",
+    "fuente": "https://www.wikidata.org/wiki/Q1842923"
+   },
+   {
+    "id": "Q7814093",
+    "nombre": "Tolantongo",
+    "tipo": "Gruta",
+    "descripcion": "Las Grutas de Tolantongo son un conjunto de cuevas y grutas localizadas en el municipio de Cardonal, en el estado de Hidalgo, México.",
+    "lat": 20.65033,
+    "lon": -98.99952,
+    "imagen": "MouthGrottoTolantongo.JPG",
+    "wiki": "Grutas de Tolantongo",
+    "fuente": "https://www.wikidata.org/wiki/Q7814093"
+   },
+   {
+    "id": "Q54828155",
+    "nombre": "Geoparque Comarca Minera",
+    "tipo": "Área natural protegida",
+    "descripcion": "El Geoparque Comarca Minera se localiza en la parte centro-sur del estado de Hidalgo en México y comprende el territorio de los municipios de Atotonilco el Grande, Epazoyucan, Huasca de Ocampo, Mineral del Chico, Mineral de la Reforma, Mineral del Monte, Omitlán de Juárez, Pachuca de Soto y Singuilucan.",
+    "lat": 20.21472,
+    "lon": -98.73056,
+    "imagen": "GEOPMAPA.png",
+    "wiki": "Geoparque Comarca Minera",
+    "fuente": "https://www.wikidata.org/wiki/Q54828155"
+   },
+   {
+    "id": "Q5763360",
+    "nombre": "Cerro de Xihuingo",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro de Xihuingo, también conocido como “Cerro El Jihuingo”, es una montaña ubicada en el municipio de Tepeapulco; Estado de Hidalgo en México. La montaña forma parte del Eje Neovolcánico.",
+    "lat": 19.8167,
+    "lon": -98.5333,
+    "imagen": "Xihuingo.jpg",
+    "wiki": "Cerro de Xihuingo",
+    "municipio": "Tepeapulco",
+    "fuente": "https://www.wikidata.org/wiki/Q5763360"
+   },
+   {
+    "id": "Q9096740",
+    "nombre": "Xoxafi",
+    "tipo": "Gruta",
+    "descripcion": "Xoxafi, es un conjunto de cuevas y grutas que se ubican en el ejido del Palmar en el cerro Teptha en el municipio de Santiago de Anaya, en el estado de Hidalgo, México.",
+    "lat": 20.38832,
+    "lon": -99.02761,
+    "imagen": "René y Karen haciendo tirolesa - panoramio.jpg",
+    "wiki": "Xoxafi",
+    "municipio": "Santiago de Anaya",
+    "fuente": "https://www.wikidata.org/wiki/Q9096740"
+   },
+   {
+    "id": "Q20829827",
+    "nombre": "Reserva de la Biósfera Barranca de Metztitlán",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera de la Barranca de Metztitlán es un área natural protegida con una superficie de 96 042.94 ha, localizada al centro-oriente del estado de Hidalgo, México.",
+    "lat": 20.51616,
+    "lon": -98.72609,
+    "imagen": "CanyonSouthPeñaHuasca.JPG",
+    "wiki": "Reserva de la biósfera Barranca de Metztitlán",
+    "municipio": "Metztitlán",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20829827"
+   },
+   {
+    "id": "Q27907398",
+    "nombre": "Laguna de Tecocomulco",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de Tecocomulco es una laguna en una cuenca de más de 56 000 hectáreas a 29 km de Tulancingo, 39 km de Pachuca y 115 km de la Ciudad de México. Se puede acceder en auto o transporte colectivo en un tiempo de 40 minutos aproximadamente desde Tulancingo.",
+    "lat": 19.8645,
+    "lon": -98.39525,
+    "imagen": "Laguna de Tecocomulco.jpg",
+    "wiki": "Laguna de Tecocomulco",
+    "fuente": "https://www.wikidata.org/wiki/Q27907398"
+   },
+   {
+    "id": "Q82584653",
+    "nombre": "Barranca de Metztitlán",
+    "tipo": "Cañón",
+    "descripcion": "La Barranca de Metztitlán también conocido como Cañón de Metztitlán es una vistosa y escarpada garganta excavada por el río Metztitlán, ubicado en la parte oriente del territorio del estado de Hidalgo, México. Está situado en su mayor parte dentro de la Reserva de la biósfera de la Barranca de Metztitlán.",
+    "lat": 20.467,
+    "lon": -98.67095,
+    "imagen": "CanyonSouthPeñaHuasca.JPG",
+    "wiki": "Barranca de Metztitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q82584653"
+   },
+   {
+    "id": "Q27171013",
+    "nombre": "El Tecajete",
+    "tipo": "Montaña",
+    "descripcion": "El Tecajete es un cerro de origen volcánico ubicado en el municipio de Zempoala, en el estado mexicano de Hidalgo.",
+    "lat": 19.93309,
+    "lon": -98.61029,
+    "imagen": "Zempoala,_Hidalgo.jpg",
+    "wiki": "Cerro El Tecajete",
+    "fuente": "https://www.wikidata.org/wiki/Q27171013"
+   },
+   {
+    "id": "Q27840741",
+    "nombre": "Cerro la Peñuela",
+    "tipo": "Montaña",
+    "descripcion": "El cerro la Peñuela es un cerro de México situado en el municipio de Almoloya, en el estado de Hidalgo, en la parte oriental del país, a 100 km al noreste de la Ciudad de México.",
+    "lat": 19.7587,
+    "lon": -98.2327,
+    "imagen": null,
+    "wiki": "Cerro la Peñuela",
+    "fuente": "https://www.wikidata.org/wiki/Q27840741"
+   },
+   {
+    "id": "Q5399255",
+    "nombre": "Sierra de Pachuca",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra de Pachuca es una sierra, localizada en la parte sur del estado de Hidalgo, en México. Entre las coordenadas 20° 03' 00\" a 20° 14' 00\" de latitud norte y los 98° 18' 00\" a 98° 58' 00\" de longitud oeste.",
+    "lat": 20.05,
+    "lon": -98.3,
+    "imagen": "El chico1.jpg",
+    "wiki": "Sierra de Pachuca",
+    "fuente": "https://www.wikidata.org/wiki/Q5399255"
+   },
+   {
+    "id": "Q20856899",
+    "nombre": "Parque nacional Tula",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional Tula esta, ubicado en el estado de Hidalgo, México, con una superficie de 99.5 ha.",
+    "lat": 20.06569,
+    "lon": -99.33719,
+    "imagen": "BuildingsBandC-Tollan-Xicocotitlan-Hidalgo Mexico.JPG",
+    "wiki": "Parque nacional Tula",
+    "municipio": "Tula de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q20856899"
+   },
+   {
+    "id": "Q86249217",
+    "nombre": "Parque estatal Bosque el Hiloche",
+    "tipo": "Área natural protegida",
+    "descripcion": "El Parque estatal Bosque el Hiloche es un parque estatal ubicado en el municipio de Mineral del Monte, estado de Hidalgo, México. Cuenta con una superficie de 99.88 ha, este parque es considerado como uno de los treinta y un geositios del proyecto del Geoparque Comarca Minera.",
+    "lat": 20.14762,
+    "lon": -98.68344,
+    "imagen": "Real-del-monte-nublado.jpg",
+    "wiki": "Parque estatal Bosque el Hiloche",
+    "fuente": "https://www.wikidata.org/wiki/Q86249217"
+   },
+   {
+    "id": "Q35402476",
+    "nombre": "Laguna de Metztitlán",
+    "tipo": "Lago",
+    "descripcion": "La laguna de Metztitlán es un laguna ubicada en los municipios de Metztitlán, y Eloxochitlán en el estado de Hidalgo, México; localizada a 15 kilómetros al norte del poblado de Metztitlán.",
+    "lat": 20.68333,
+    "lon": -98.86667,
+    "imagen": "La_vega_Metztitlan_-_panoramio.jpg",
+    "wiki": "Laguna de Metztitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q35402476"
+   },
+   {
+    "id": "Q105881992",
+    "nombre": "Barranca de Tolantongo",
+    "tipo": "Cañón",
+    "descripcion": "La Barranca de Tolantongo es un cañón, en el estado de Hidalgo, México; con barrancas de hasta 500 metros de altura. Es más conocido por el conjunto de cuevas y grutas, así como por los complejos turísticos que se ubican en el municipio de Cardonal.",
+    "lat": 20.64725,
+    "lon": -98.96417,
+    "imagen": "Tolantongo (4128914420).jpg",
+    "wiki": "Barranca de Tolantongo",
+    "fuente": "https://www.wikidata.org/wiki/Q105881992"
+   },
+   {
+    "id": "Q69171357",
+    "nombre": "Bioparque de Convivencia Pachuca",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Bioparque de Convivencia Pachuca, es un bioparque y centro de recuperación dedicado al salvamento de especies animales en situación de riesgo y en graves condiciones de maltrato y abandono. Se encuentra ubicado en la ciudad de Pachuca de Soto, Hidalgo, México.",
+    "lat": 20.11685,
+    "lon": -98.74637,
+    "imagen": "Bioparque_de_Convivencia_en_Pachuca,_Hidalgo,_México._02.jpg",
+    "wiki": "Bioparque de Convivencia Pachuca",
+    "municipio": "Pachuca de Soto",
+    "fuente": "https://www.wikidata.org/wiki/Q69171357"
+   },
+   {
+    "id": "Q66350652",
+    "nombre": "Laguna de Atezca",
+    "tipo": "Lago",
+    "descripcion": "La laguna de Atezca es un lago ubicado en el municipio de Molango de Escamilla, en el estado mexicano de Hidalgo.",
+    "lat": 20.80556,
+    "lon": -98.74556,
+    "imagen": "Laguna Azteca, Molango, Hidalgo, México.jpg",
+    "wiki": "Laguna de Atezca",
+    "municipio": "Molango de Escamilla",
+    "fuente": "https://www.wikidata.org/wiki/Q66350652"
+   },
+   {
+    "id": "Q85120177",
+    "nombre": "Laguna de San Antonio de Atocha",
+    "tipo": "Lago",
+    "descripcion": "La laguna de San Antonio de Atocha también conocida como laguna de Tochac, es una laguna ubicada en el municipio de Apan, Hidalgo, México.",
+    "lat": 19.61945,
+    "lon": -98.44876,
+    "imagen": null,
+    "wiki": "Laguna de San Antonio de Atocha",
+    "fuente": "https://www.wikidata.org/wiki/Q85120177"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q614320",
+    "nombre": "Escamol",
+    "tipo": "Platillo",
+    "descripcion": "Los escamoles (del náhuatl azcatl, ‘hormiga’, y molli, ‘guiso’) son larvas de la hormiga güijera Liometopum apiculatum, muy apreciadas en México desde tiempos prehispánicos, cuando en temporada formaban parte de la alimentación cotidiana de los habitantes de Mesoamérica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "MGSA2018 - Escamoles.jpg",
+    "wiki": "Escamol",
+    "fuente": "https://www.wikidata.org/wiki/Q614320"
+   },
+   {
+    "id": "Q6826618",
+    "nombre": "Gusano de maguey",
+    "tipo": "Platillo",
+    "descripcion": "Se conoce como gusano de maguey a 3 especies de larvas de lepidópteros que se crían en las pencas de las especies de la familia del Agave (en especial las especies Agave angustifolia y Agave salmiana). Ambos son ingredientes de la cocina mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Gusanos.jpg",
+    "wiki": "Gusano de maguey",
+    "fuente": "https://www.wikidata.org/wiki/Q6826618"
+   },
+   {
+    "id": "Q7142958",
+    "nombre": "Paste",
+    "tipo": "Platillo",
+    "descripcion": "El paste (del córnico pasti, y en inglés, pasty) es un alimento mexicano tradicional de la Comarca Minera en el estado de Hidalgo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mexico City pastie.JPG",
+    "wiki": "Paste",
+    "fuente": "https://www.wikidata.org/wiki/Q7142958"
+   },
+   {
+    "id": "Q11094093",
+    "nombre": "Ximbó",
+    "tipo": "Platillo",
+    "descripcion": "El ximbó (del otomí: nximbo ‘penca del corazón del maguey’) es un platillo mexicano típico de Actopan, Hidalgo; el cual se ha extendido a diferentes partes del Valle del Mezquital y del centro de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Ximbó_en_Actopan,_Hidalgo._05.jpg",
+    "wiki": "Ximbó",
+    "fuente": "https://www.wikidata.org/wiki/Q11094093"
+   },
+   {
+    "id": "Q3189940",
+    "nombre": "Jumiles",
+    "tipo": "Platillo",
+    "descripcion": "Jumil, chumil (del náhuatl xomilli o xotlinilli), o chinche de monte, son los nombres que se les da en México a varias especies de insectos hemípteros comestibles de la familia Pentatomidae:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jumiles-taxco-mercados.jpg",
+    "wiki": "Jumil",
+    "fuente": "https://www.wikidata.org/wiki/Q3189940"
+   },
+   {
+    "id": "Q2838998",
+    "nombre": "Barbacoa",
+    "tipo": "Platillo",
+    "descripcion": "Barbacoa o asado en barbacoa en México, se refiere al método ancestral de cocinar alimentos en un hoyo u horno de tierra.Generalmente se refiere a carnes, o animales enteros, como de borrego, res, cabezas enteras de res, o chivo, como también de conejo, de pollo, de pescado, o de venado, cocidos a fuego lento en un…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Barbacoa (en Hidalgo).JPG",
+    "wiki": "Barbacoa (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q2838998"
+   },
+   {
+    "id": "Q5067730",
+    "nombre": "Escarabajos comestibles",
+    "tipo": "Platillo",
+    "descripcion": "En la gastronomía mexicana, chahuis, shahuis, shawis, shahues, chagüis, xohues, xahuis, gusanos de los palos, escarabajos rinoceronte, escarabajo de cuernos largos, escarabajos longicornio, gallinas ciegas, titococos, titocos, canalejos o cuauhocuilin (del náhuatl: \"gusanos de la madera\") son nombres que hacen…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chahuis, Tula, Mexico.jpg",
+    "wiki": "Chahui",
+    "fuente": "https://www.wikidata.org/wiki/Q5067730"
+   },
+   {
+    "id": "Q3501262",
+    "nombre": "Tlacoyo",
+    "tipo": "Platillo",
+    "descripcion": "Los tlacoyos (también, clacoyos, clacoyito, tlatloyos, tlayoyos o tlacoyos; del náhuatl tlayoyo, empanada de maíz desgranado) son un platillo de la gastronomía típica mexicana es elaborado con masa de maíz en forma oblonga, romboide o triangular que se rellena de pasta de haba, alverjón, asientos de chicharrón o…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlacoyos en comal.jpg",
+    "wiki": "Tlacoyo",
+    "fuente": "https://www.wikidata.org/wiki/Q3501262"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q4939444",
+    "nombre": "Bolillo",
+    "tipo": "Pan",
+    "descripcion": "El bolillo, pan blanco, barra o pan francés es, en México y Centroamérica, un tipo de pan económico y bastante popular elaborado con harina de trigo, que no es considerado dulce.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bolillos rolls.JPG",
+    "wiki": "Bolillo (pan)",
+    "fuente": "https://www.wikidata.org/wiki/Q4939444"
+   },
+   {
+    "id": "Q5139783",
+    "nombre": "Cocol",
+    "tipo": "Pan",
+    "descripcion": "El cocol es un pan dulce típico de la gastronomía mexicana. Tiene forma romboidal, textura seca y un tanto esponjosa y un sabor fuerte a anís y piloncillo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cocol.jpg",
+    "wiki": "Cocol",
+    "fuente": "https://www.wikidata.org/wiki/Q5139783"
+   },
+   {
+    "id": "Q105812795",
+    "nombre": "Tlapique",
+    "tipo": "Platillo",
+    "descripcion": "El mextlapique (del náhuatl michin, 'pescado', y tlapictli, 'envuelto en hoja') o tlapique, es una preparación mexicana de origen prehispánico que consiste en envolver filetes de pescado con nopales, cebolla y otras verduras y condimentos en hojas secas de maíz (totomoxtles) y tatemándolo en el comal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlapique de pescado.jpg",
+    "wiki": "Mextlapique",
+    "fuente": "https://www.wikidata.org/wiki/Q105812795"
+   },
+   {
+    "id": "Q5794872",
+    "nombre": "Curado",
+    "tipo": "Bebida",
+    "descripcion": "El pulque curado o curado de pulque es una bebida alcohólica preparada a base de pulque, fruta, y algún endulzante como miel o azúcar. Se le tiene como una bebida tradicional mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Curado.jpg",
+    "wiki": "Pulque curado",
+    "fuente": "https://www.wikidata.org/wiki/Q5794872"
+   },
+   {
+    "id": "Q5069084",
+    "nombre": "Chalupa",
+    "tipo": "Platillo",
+    "descripcion": "Las chalupasson un tipo de antojito mexicano originario del estado de Hidalgo, que se consume especialmente los fines de semana por las noches o como comida típica durante la celebración del día de la Independencia Mexicana, el 16 de septiembre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chalupa (comida).jpg",
+    "wiki": "Chalupa (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q5069084"
+   },
+   {
+    "id": "Q5810921",
+    "nombre": "Jamoncillo",
+    "tipo": "Dulce",
+    "descripcion": "El jamoncillo es un dulce tradicional de México, específicamente de los estados de Guanajuato, Querétaro, Nuevo León, Coahuila, Durango, Chihuahua, Sinaloa, Sonora, San Luis Potosí, Jalisco, Michoacán, el Estado de México, Puebla y Veracruz hecho a base de leche y azúcar.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Jamoncillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5810921"
+   },
+   {
+    "id": "Q166128",
+    "nombre": "Picadillo",
+    "tipo": "Platillo",
+    "descripcion": "Se llama picadillo o carbonada a cualquier plato cuyos ingredientes van muy picados y, en particular, a un plato tradicional de muchos países hispanos y las Filipinas (donde se llama giniling) hecho con carne picada (normalmente de ternera), tomate (que puede sustituirse por salsa de tomate) y otros ingredientes, que…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Picadillo and rice.jpg",
+    "wiki": "Picadillo",
+    "fuente": "https://www.wikidata.org/wiki/Q166128"
+   },
+   {
+    "id": "Q5044066",
+    "nombre": "Carnitas",
+    "tipo": "Platillo",
+    "descripcion": "En México, se le llama carnitas a la carne de puerco de diferentes porciones, incluyendo carne que son fritas en manteca de puerco. Para su preparación, se emplean enormes ollas de cobre, o cazos de acero inoxidable.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carnitas in Mexico.jpg",
+    "wiki": "Carnitas",
+    "fuente": "https://www.wikidata.org/wiki/Q5044066"
+   }
+  ]
+ }
+}

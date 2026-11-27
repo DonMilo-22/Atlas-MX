@@ -1,0 +1,460 @@
+{
+ "cve": "32",
+ "estado": "Zacatecas",
+ "wikidata": "Q80269",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1961298",
+    "nombre": "Guadalupe",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Guadalupe es una localidad en el estado de Zacatecas, México. Se encuentra en la región centro del estado y es cabecera del municipio homónimo.",
+    "lat": 22.74667,
+    "lon": -102.51861,
+    "imagen": "Interior del Ex Colegio Apostólico de Propaganda Fide de Nuestra Señora de Guadalupe.jpg",
+    "wiki": "Guadalupe (Zacatecas)",
+    "municipio": "Guadalupe",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1961298"
+   },
+   {
+    "id": "Q2225397",
+    "nombre": "Jerez de García Salinas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jerez de García Salinas es la cabecera del municipio de Jerez en el estado mexicano de Zacatecas. Se encuentra ubicado en el centro del estado, a 56 km al sudoeste de la ciudad de Zacatecas.",
+    "lat": 22.65,
+    "lon": -102.99028,
+    "imagen": "Jerez0010.jpeg",
+    "wiki": "Jerez de García Salinas",
+    "municipio": "Jerez",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2225397"
+   },
+   {
+    "id": "Q10977548",
+    "nombre": "Nochistlán de Mejía",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Nochistlán (del náhuatl: Nochez-tlan “Lugar de grana cochinilla”), oficialmente llamada Nochistlán de Mejía es una ciudad mexicana, cabecera del municipio homónimo ubicada en el sur del estado de Zacatecas.",
+    "lat": 21.3625,
+    "lon": -102.84583,
+    "imagen": "Nochistlan,_Zacatecas.JPG",
+    "wiki": "Nochistlán de Mejía",
+    "municipio": "Nochistlán de Mejía",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q10977548"
+   },
+   {
+    "id": "Q6076294",
+    "nombre": "Pinos",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Pinos es una localidad mexicana ubicada en el estado de Zacatecas, cabecera del Municipio de Pinos. Se localiza dentro del desierto del Gran Tunal.",
+    "lat": 22.29734,
+    "lon": -101.57512,
+    "imagen": "Pueblo de Pinos.jpg",
+    "wiki": "Pinos (Zacatecas)",
+    "municipio": "Pinos",
+    "distinciones": [
+     "Pueblo Mágico",
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6076294"
+   },
+   {
+    "id": "Q2599043",
+    "nombre": "Sombrerete",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Sombrerete es una ciudad mexicana ubicada en el estado de Zacatecas, cabecera del municipio homónimo. Fue fundada en el año 1555 por Juan de Tolosa y en el año de 2020 contaba con una población de 25,068 habitantes.",
+    "lat": 23.63466,
+    "lon": -103.64244,
+    "imagen": "Sombrerete.jpg",
+    "wiki": "Sombrerete",
+    "municipio": "Sombrerete",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2599043"
+   },
+   {
+    "id": "Q979818",
+    "nombre": "Teúl de González Ortega",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Teúl de González Ortega es una localidad situada al sur del estado mexicano de Zacatecas, es la cabecera del municipio homónimo. De acuerdo con el censo de población llevado a cabo por el INEGI en 2020 hay alrededor de 3 461 habitantes en la localidad.",
+    "lat": 21.46194,
+    "lon": -103.46056,
+    "imagen": "SanJuanBautistaTeul08.JPG",
+    "wiki": "Teúl de González Ortega",
+    "municipio": "Teúl de González Ortega",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.gob.mx/sectur/articulos/pueblos-magicos-206528"
+   },
+   {
+    "id": "Q2991562",
+    "nombre": "Villa Nueva",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Villanueva es una población del estado de Zacatecas, México. Es la cabecera municipal del municipio de Villanueva.",
+    "lat": 22.35361,
+    "lon": -102.88306,
+    "imagen": "Parroquiavillanueva.jpg",
+    "wiki": "Villanueva (Zacatecas)",
+    "municipio": "Villanueva",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2991562"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q911953",
+    "nombre": "Camino Real de Tierra Adentro",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El Camino Real de Tierra Adentro, también conocido como el Camino a Santa Fe, fue una monumental ruta comercial de 2,560 kilómetros de longitud que iba desde la Ciudad de México hasta la ciudad de Santa Fe, NM, en uso desde mediados del siglo XVI hasta el siglo XIX.",
+    "lat": 22.60806,
+    "lon": -102.37917,
+    "imagen": "El Camino Real de Tierra Adentro NHT (9445536658).jpg",
+    "wiki": "Camino Real de Tierra Adentro",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q911953"
+   },
+   {
+    "id": "Q3848116",
+    "nombre": "Centro histórico de Zacatecas",
+    "tipo": "Centro histórico",
+    "descripcion": "El centro histórico de Zacatecas se encuentra en el estado mexicano de Zacatecas. Está declarado por la UNESCO Patrimonio de la Humanidad desde el 11 de diciembre de 1993 como ciudad histórica.",
+    "lat": 22.76667,
+    "lon": -102.55,
+    "imagen": "ZacatecasView.JPG",
+    "wiki": "Centro histórico de Zacatecas",
+    "municipio": "Zacatecas",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3848116"
+   },
+   {
+    "id": "Q25414759",
+    "nombre": "Museo de Guadalupe",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Guadalupe es un recinto de fomento de la cultura ubicado en el municipio de Guadalupe, a 7 km de la ciudad de Zacatecas (México).",
+    "lat": 22.74611,
+    "lon": -102.51833,
+    "imagen": "Fachadamudg.JPG",
+    "wiki": "Museo Regional de Guadalupe (Zacatecas)",
+    "municipio": "Guadalupe",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q25414759"
+   },
+   {
+    "id": "Q65494791",
+    "nombre": "Antigua hacienda de San Nicolás de Quijas",
+    "tipo": "Templo",
+    "descripcion": "La Antigua Hacienda de San Nicolás de Quijas es un conjunto arquitectónico mexicano ubicado en el Municipio de Pinos, Zacatecas. En su interior se encuentra la capilla de San Nicolás Tolentino, declarada por la Unesco como Patrimonio de la Humanidad en 2010.",
+    "lat": 22.1531,
+    "lon": -101.8461,
+    "imagen": null,
+    "wiki": "Antigua Hacienda de San Nicolás de Quijas",
+    "municipio": "Villa García",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65494791"
+   },
+   {
+    "id": "Q6121546",
+    "nombre": "Catedral santuario de Plateros",
+    "tipo": "Templo",
+    "descripcion": "La catedral santuario de Plateros es un santuario católico de México donde se venera la pequeña imagen del Santo Niño de Atocha. Plateros se encuentra a 5 km de Fresnillo, Zacatecas, sólo separado por la autopista México-Ciudad Juárez.",
+    "lat": 23.22917,
+    "lon": -102.84083,
+    "imagen": "Santuario del Santo Niño de Atocha 02.JPG",
+    "wiki": "Santuario de Plateros",
+    "municipio": "Fresnillo",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6121546"
+   },
+   {
+    "id": "Q2112520",
+    "nombre": "La Quemada",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Quemada es una zona arqueológica que autores del periodo colonial como fray Juan de Torquemada y Francisco Javier Clavijero asociaron, con base en la historia oral indígena, con el mítico Chicomóztoc o \"Lugar de las Siete Cuevas\", punto de origen o punto de descanso de las migraciones nahuas que llegaron del norte…",
+    "lat": 22.45639,
+    "lon": -102.82111,
+    "imagen": "Votive Pyramid La Quemada.JPG",
+    "wiki": "La Quemada",
+    "fuente": "https://www.wikidata.org/wiki/Q2112520"
+   },
+   {
+    "id": "Q4736203",
+    "nombre": "Altavista",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Altavista, o Chalchihuites, es una importante zona arqueológica cerca del municipio de Chalchihuites, en el estado de Zacatecas, México. Se localiza a 229 kilómetros al norte-noroeste de la ciudad de Zacatecas.",
+    "lat": 23.47806,
+    "lon": -103.94528,
+    "imagen": "Chalchihuites.jpg",
+    "wiki": "Altavista (Zacatecas)",
+    "fuente": "https://www.wikidata.org/wiki/Q4736203"
+   },
+   {
+    "id": "Q5352244",
+    "nombre": "Cerro de El Teúl",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Teúl es una importante zona arqueológica mesoamericana ubicada en el cerro del mismo nombre, en el Municipio de Teúl al sur del estado de Zacatecas, México. Se localiza muy cerca del estado de Jalisco.",
+    "lat": 21.46905,
+    "lon": -103.46759,
+    "imagen": "Teul antiguo.jpg",
+    "wiki": "Cerro de El Teúl",
+    "fuente": "https://www.wikidata.org/wiki/Q5352244"
+   },
+   {
+    "id": "Q16589444",
+    "nombre": "Las Ventanas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las Ventanas es un sitio arqueológico ubicado en el estado mexicano de Zacatecas. Se le denominó de esta manera debido a causa de que el complejo estructural más importante en la zona cuenta con unas cavernas con observatorios parecidos a \"ventanas\".",
+    "lat": 21.39331,
+    "lon": -103.18806,
+    "imagen": null,
+    "wiki": "Las Ventanas (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q16589444"
+   },
+   {
+    "id": "Q2942252",
+    "nombre": "Catedral Basílica de Zacatecas",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Zacatecas, dedicada a la Virgen de la Asunción, es el templo principal de la Diócesis de Zacatecas. Ubicado en centro histórico de la ciudad, declarado Patrimonio Cultural de la Humanidad por la Unesco.",
+    "lat": 22.77558,
+    "lon": -102.57225,
+    "imagen": "Catedral zacatecas.jpg",
+    "wiki": "Catedral basílica de la Asunción de María (Zacatecas)",
+    "municipio": "Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q2942252"
+   },
+   {
+    "id": "Q5657069",
+    "nombre": "Acueducto de Zacatecas",
+    "tipo": "Acueducto",
+    "descripcion": "Ubicado en Zacatecas, Zacatecas, México.",
+    "lat": 22.76889,
+    "lon": -102.57611,
+    "imagen": "Acueductozacs.jpg",
+    "wiki": "Acueducto de Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q5657069"
+   },
+   {
+    "id": "Q16638473",
+    "nombre": "Templo de Nuestra Señora de Fátima",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Fátima, dedicada a la Virgen de Fátima, es un templo parroquial de la Diócesis de Zacatecas. Ubicado en la colonia Sierra de Alica de la ciudad.",
+    "lat": 22.77,
+    "lon": -102.57833,
+    "imagen": "Iglesia de Fatima2.jpg",
+    "wiki": "Templo de Nuestra Señora de Fátima (Zacatecas)",
+    "fuente": "https://www.wikidata.org/wiki/Q16638473"
+   },
+   {
+    "id": "Q21643462",
+    "nombre": "Museo Toma de Zacatecas",
+    "tipo": "Museo",
+    "descripcion": "El Museo Toma de Zacatecas es un recinto museográfico ubicado en la ciudad de Zacatecas.",
+    "lat": 22.77841,
+    "lon": -102.56601,
+    "imagen": "Museo Toma de Zacatecas - Acceso.JPG",
+    "wiki": "Museo Toma de Zacatecas",
+    "municipio": "Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q21643462"
+   },
+   {
+    "id": "Q30902973",
+    "nombre": "Capilla de Mexicapán",
+    "tipo": "Templo",
+    "descripcion": "Es una capilla católica ubicada en la Ciudad de Zacatecas.",
+    "lat": 22.78625,
+    "lon": -102.57064,
+    "imagen": null,
+    "wiki": "Capilla de Mexicapán",
+    "municipio": "Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q30902973"
+   },
+   {
+    "id": "Q6033490",
+    "nombre": "Museo Manuel Felguérez",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte Abstracto Manuel Felguérez Herrera es un museo localizado en la ciudad de Zacatecas, México, enfocado tanto a la difusión de la obra del artista Manuel Felguérez como a la historia del arte abstracto en México.El edificio también alberga la Biblioteca y Centro de Documentación Mercedes Oteyza de…",
+    "lat": 22.78084,
+    "lon": -102.57234,
+    "imagen": "Museo de arte abstracto Manuel Felguérez - panoramio.jpg",
+    "wiki": "Museo de Arte Abstracto Manuel Felguérez",
+    "municipio": "Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q6033490"
+   },
+   {
+    "id": "Q112114244",
+    "nombre": "Museo Comunitario Profr. Arturo Reyes Viramontes",
+    "tipo": "Museo",
+    "descripcion": "El Museo Comunitario Profr. Arturo Reyes Viramontes, es un museo comunitario del municipio de Jalpa, Zacatecas.",
+    "lat": 21.63191,
+    "lon": -102.97485,
+    "imagen": null,
+    "wiki": "Museo Comunitario Profr. Arturo Reyes Viramontes",
+    "municipio": "Jalpa",
+    "fuente": "https://www.wikidata.org/wiki/Q112114244"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q2884459",
+    "nombre": "Parque nacional Sierra de Órganos",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Sierra de Órganos comprende un área que corresponde al municipio de Sombrerete, en el estado mexicano de Zacatecas.",
+    "lat": 23.74944,
+    "lon": -103.76417,
+    "imagen": "SierradeOrganos.jpg",
+    "wiki": "Parque nacional Sierra de Órganos",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2884459"
+   },
+   {
+    "id": "Q139242",
+    "nombre": "Zacatecas",
+    "tipo": "Ciudad",
+    "descripcion": "Zacatecas, oficialmente llamada Ciudad Heroica de Zacatecas, es una ciudad mexicana, capital del estado de Zacatecas y cabecera del municipio homónimo. Llegó a lo que hoy es la ciudad una hueste española el 8 de septiembre de 1546 descubriendo ricas minas de plata por Juan de Tolosa.",
+    "lat": 22.77167,
+    "lon": -102.57528,
+    "imagen": "Zacatecas 20160716.jpg",
+    "wiki": "Zacatecas (Zacatecas)",
+    "municipio": "Zacatecas",
+    "fuente": "https://www.wikidata.org/wiki/Q139242"
+   },
+   {
+    "id": "Q1816543",
+    "nombre": "Fresnillo",
+    "tipo": "Ciudad",
+    "descripcion": "Fresnillo es la segunda ciudad más poblada del estado de Zacatecas, cabecera del municipio del mismo nombre, que se ubica en la región del centro-norte de México. Cuenta con una población de 143 281 habitantes, censo del INEGI en el 2020.",
+    "lat": 23.17489,
+    "lon": -102.86823,
+    "imagen": "Fresnillo - Palacio municipal.jpg",
+    "wiki": "Fresnillo",
+    "municipio": "Fresnillo",
+    "fuente": "https://www.wikidata.org/wiki/Q1816543"
+   },
+   {
+    "id": "Q2996852",
+    "nombre": "Jalpa",
+    "tipo": "Ciudad",
+    "descripcion": "Jalpa es una localidad del estado mexicano de Zacatecas. Es la cabecera del municipio de Jalpa.",
+    "lat": 21.63333,
+    "lon": -102.97778,
+    "imagen": "Parroquia_de_San_Antonio_en_Jalpa,_Zacatecas.jpg",
+    "wiki": "Jalpa (Zacatecas)",
+    "municipio": "Jalpa",
+    "fuente": "https://www.wikidata.org/wiki/Q2996852"
+   },
+   {
+    "id": "Q2481092",
+    "nombre": "Cerro de la Bufa",
+    "tipo": "Montaña",
+    "descripcion": "El cerro de la Bufa es una reconocida elevación ubicada al este del centro histórico de la ciudad de Zacatecas, famosa por librarse en ella una importante batalla de la Revolución Mexicana: la Toma de Zacatecas, ocurrida el 23 de junio de 1914.",
+    "lat": 22.7772,
+    "lon": -102.562,
+    "imagen": "Zacatecas 007.jpg",
+    "wiki": "Cerro de la Bufa",
+    "fuente": "https://www.wikidata.org/wiki/Q2481092"
+   },
+   {
+    "id": "Q8540406",
+    "nombre": "Pico de Teyra",
+    "tipo": "Montaña",
+    "descripcion": "El Pico de Teyra es una montaña de 2790 metros de altitud ubicada en el estado de Zacatecas (una de las más altas de este estado) en México. Ha sido a lo largo de los siglos fuente de inspiración para diversos autores, un ejemplo de ello es una novela del siglo XIX llamada El Solitario del Teyra.",
+    "lat": 24.55597,
+    "lon": -102.17678,
+    "imagen": null,
+    "wiki": "Pico de Teyra",
+    "fuente": "https://www.wikidata.org/wiki/Q8540406"
+   },
+   {
+    "id": "Q27855405",
+    "nombre": "Cerro El Papantón",
+    "tipo": "Montaña",
+    "descripcion": "El cerro El Papantón es una montaña que se encuentra en los municipios de Sombrerete, Zacatecas y Súchil, Durango, México; 5 kilómetros al sureste de Villa Insurgentes, forma parte de la Sierra de Sombrerete.",
+    "lat": 23.71361,
+    "lon": -103.80056,
+    "imagen": "Villa insurgentes6.jpg",
+    "wiki": "Cerro El Papantón (Sombrerete)",
+    "fuente": "https://www.wikidata.org/wiki/Q27855405"
+   },
+   {
+    "id": "Q16631494",
+    "nombre": "Sierra de los Cardos",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra de los Cardos se encuentra en los extremos de la Sierra Madre Occidental y a pocos kilómetros del municipio de Jerez en el Estado de Zacatecas México. Está constituida por formaciones geológicas irregulares.",
+    "lat": 22.67,
+    "lon": -103.16611,
+    "imagen": "Peñascos serranos.JPG",
+    "wiki": "Sierra de Cardos",
+    "fuente": "https://www.wikidata.org/wiki/Q16631494"
+   },
+   {
+    "id": "Q104902601",
+    "nombre": "Cueva del Chiquihuite",
+    "tipo": "Gruta",
+    "descripcion": "La Cueva de Chiquihuite es un yacimiento arqueológico en México, excavado desde 2012 por un equipo integrado por una treintena de investigadores de diferentes países, dirigido por Ciprian Ardelean de la Universidad Autónoma de Zacatecas. Se encuentra a 2.740 m s. n. m. en la Sierra de El Astillero.",
+    "lat": 24.60943,
+    "lon": -101.18782,
+    "imagen": null,
+    "wiki": "Cueva del Chiquihuite",
+    "fuente": "https://www.wikidata.org/wiki/Q104902601"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q93541181",
+    "nombre": "Chile de Yahualica",
+    "tipo": "Producto típico",
+    "descripcion": "El chile de Yahualica, es una denominación de origen mexicana de 11 municipios repartidos entre los estados de Jalisco y Zacatecas para una variedad del chile de árbol.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chile_de_Árbol_seco.JPG",
+    "wiki": "Chile de Yahualica",
+    "fuente": "https://www.wikidata.org/wiki/Q93541181"
+   },
+   {
+    "id": "Q5782568",
+    "nombre": "Condoches",
+    "tipo": "Pan",
+    "descripcion": "Los condoches son un pan mexicano, típico de la Mesa Central de México, especialmente en los estados de Aguascalientes, Zacatecas y San Luis Potosí.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Festival_del_Condoche_03.jpg",
+    "wiki": "Condoches",
+    "fuente": "https://www.wikidata.org/wiki/Q5782568"
+   },
+   {
+    "id": "Q105840963",
+    "nombre": "Queso de tuna",
+    "tipo": "Queso",
+    "descripcion": "El queso de tuna es un producto dulce típico mexicano elaborado a partir de reducir jugo de tuna cardona, el fruto del nopal cardón. A pesar de su nombre, no tiene nada que ver con el queso lácteo.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Queso de tuna",
+    "fuente": "https://www.wikidata.org/wiki/Q105840963"
+   }
+  ]
+ }
+}

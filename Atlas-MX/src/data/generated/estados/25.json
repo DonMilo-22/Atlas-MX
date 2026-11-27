@@ -1,0 +1,492 @@
+{
+ "cve": "25",
+ "estado": "Sinaloa",
+ "wikidata": "Q80252",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1135979",
+    "nombre": "Cosalá",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cosalá es un pueblo del estado mexicano de Sinaloa, en el noroeste de México. Es cabecera del municipio homónimo; y está a una distancia aproximada a Culiacán, la capital estatal, de 165 kilómetros.",
+    "lat": 24.41417,
+    "lon": -106.68861,
+    "imagen": "Cosala.jpg",
+    "wiki": "Cosalá",
+    "municipio": "Cosalá",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1135979"
+   },
+   {
+    "id": "Q1324181",
+    "nombre": "El Fuerte",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "El Fuerte es una ciudad mexicana del estado de Sinaloa, cabecera del municipio del mismo nombre. Cuenta con atractivos naturales, históricos, arquitectónicos, culturales y arraigadas tradiciones yoremes, además de ubicarse dentro del Circuito Ecoturístico Mar de Cortés - Barrancas del Cobre.",
+    "lat": 26.41667,
+    "lon": -108.61667,
+    "imagen": "El Fuerte, Sinaloa, church and plaza, seen from the fort.JPG",
+    "wiki": "El Fuerte (Sinaloa)",
+    "municipio": "El Fuerte",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1324181"
+   },
+   {
+    "id": "Q1858643",
+    "nombre": "El Rosario",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "El Rosario es una pequeña ciudad ubicada en la parte sur del estado de Sinaloa en México. Es cabecera del municipio de Rosario.",
+    "lat": 22.99194,
+    "lon": -105.86139,
+    "imagen": "Iglesia rosario sinaloa mex.jpg",
+    "wiki": "El Rosario (Sinaloa)",
+    "municipio": "Rosario",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1858643"
+   },
+   {
+    "id": "Q2116833",
+    "nombre": "Mocorito",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mocorito es una ciudad del estado de Sinaloa, México. Se ubica en la región noroeste del Estado.",
+    "lat": 25.48111,
+    "lon": -107.92028,
+    "imagen": "Mocorito-Skyline EAL.jpg",
+    "wiki": "Mocorito",
+    "municipio": "Mocorito",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2116833"
+   },
+   {
+    "id": "Q1754752",
+    "nombre": "San Ignacio",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Ignacio, también conocida como San Ignacio de Loyola, es una localidad mexicana situada en el estado de Sinaloa, cabecera del Municipio de San Ignacio.",
+    "lat": 23.94139,
+    "lon": -106.42417,
+    "imagen": "Church in San Ignacio - panoramio.jpg",
+    "wiki": "San Ignacio (Sinaloa)",
+    "municipio": "San Ignacio",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1754752"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q5402637",
+    "nombre": "Las Labradas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las Labradas es un sitio arqueológico de tipo rupestre ubicado en la costa del municipio de San Ignacio, al sur del estado de Sinaloa, México.",
+    "lat": 23.62056,
+    "lon": -106.76667,
+    "imagen": "Petroglifos de Las Labradas 13.jpg",
+    "wiki": "Las Labradas (Sinaloa)",
+    "municipio": "San Ignacio",
+    "fuente": "https://www.wikidata.org/wiki/Q5402637"
+   },
+   {
+    "id": "Q5648854",
+    "nombre": "Catedral de San Miguel Arcángel de Culiacán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Basílica de Nuestra Señora del Rosario en Culiacán Rosales, Sinaloa, es un templo católico que sirve como sede de la diócesis de Culiacán, aunque no es el templo más antiguo del municipio, pues data de 1842. Son más antiguos los templos de Tabalá y Tacuichamona (siglo XVIII).",
+    "lat": 24.8087,
+    "lon": -107.3939,
+    "imagen": "Culiacan,sinaloa..JPG",
+    "wiki": "Catedral de Culiacán",
+    "municipio": "Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q5648854"
+   },
+   {
+    "id": "Q5758361",
+    "nombre": "Catedral Basílica de Mazatlán",
+    "tipo": "Catedral",
+    "descripcion": "La catedral basílica menor de Mazatlán, dedicada a la Purísima Concepción, es el principal edificio religioso de la ciudad de Mazatlán, estado de Sinaloa, México, de estilo barroco, y sede de la diócesis de Mazatlán. Está ubicado en el centro histórico.",
+    "lat": 23.20086,
+    "lon": -106.42186,
+    "imagen": "Catedral Basílica de la Inmaculada Concepción 2012-09-08 18-20-27.jpg",
+    "wiki": "Catedral basílica de Mazatlán",
+    "municipio": "Mazatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q5758361"
+   },
+   {
+    "id": "Q15850240",
+    "nombre": "Teatro Ángela Peralta",
+    "tipo": "Teatro",
+    "descripcion": "El Teatro Ángela Peralta es un edificio teatral de la ciudad de Mazatlán, Sinaloa. Fue erigido en la época porfiriana del puerto y es considerado una de las construcciones de su tipo más bellas e importantes en México.",
+    "lat": 23.19796,
+    "lon": -106.42243,
+    "imagen": "Teatro Angela Peralta (26910810311).jpg",
+    "wiki": "Teatro Ángela Peralta",
+    "municipio": "Mazatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q15850240"
+   },
+   {
+    "id": "Q24533187",
+    "nombre": "Museo Arqueológico de Mazatlán",
+    "tipo": "Museo",
+    "descripcion": "El Museo Arqueológico de Mazatlán es un inmueble histórico que tiene como propósito exponer la cultura prehispánica de Mazatlán, Sinaloa remarcando todo tipo de costumbres ancestrales en especial las funerarias y el famoso juego de pelota conocido como ulama.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Museo Arqueológico de Mazatlán 2012-09-08 18-13-46.jpg",
+    "wiki": "Museo Arqueológico de Mazatlán",
+    "municipio": "Mazatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q24533187"
+   },
+   {
+    "id": "Q124049246",
+    "nombre": "Museo de Arte de Mazatlán",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte de Mazatlán se encuentra en el Centro Histórico de la ciudad y fue inaugurado en 1998. En la sala de exposición permanente se exhiben obras de artistas mexicanos de reconocimiento internacional y en sala temporal cada mes se exhibe una obra de los mejores escultores del país.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Museo de Arte de Mazatlán, 26 de octubre de 2022.jpg",
+    "wiki": "Museo de Arte de Mazatlán",
+    "municipio": "Mazatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q124049246"
+   },
+   {
+    "id": "Q5909034",
+    "nombre": "Iglesia La Lomita",
+    "tipo": "Templo",
+    "descripcion": "El templo Nuestra Señora de Guadalupe o más conocido como La Lomita es una iglesia católica ubicada en Culiacán Sinaloa, México.",
+    "lat": 24.7893,
+    "lon": -107.39784,
+    "imagen": null,
+    "wiki": "Iglesia La Lomita",
+    "municipio": "Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q5909034"
+   },
+   {
+    "id": "Q24557500",
+    "nombre": "Museo de Arte de Sinaloa",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte de Sinaloa es un museo ubicado en Culiacán Rosales, fue creado para resguardar una de las más importantes colecciones plásticas del noroeste de México y se considera que es uno de los edificios más emblemáticos para la exposición de colecciones de artes visuales en Culiacán tal como exhibiciones de…",
+    "lat": 24.81117,
+    "lon": -107.39396,
+    "imagen": null,
+    "wiki": "Museo de Arte de Sinaloa",
+    "municipio": "Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q24557500"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q211760",
+    "nombre": "Culiacán",
+    "tipo": "Ciudad",
+    "descripcion": "Culiacán (del náhuatl: Kolwahkan ‘Lugar de los colhuas’), oficialmente Culiacán Rosales, es una ciudad del noroeste de México. Es capital y ciudad más poblada del estado de Sinaloa y cabecera del municipio homónimo.",
+    "lat": 24.79028,
+    "lon": -107.38778,
+    "imagen": "Vista panorámica de Culiacán.jpg",
+    "wiki": "Culiacán",
+    "municipio": "Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q211760"
+   },
+   {
+    "id": "Q40194",
+    "nombre": "Mazatlán",
+    "tipo": "Ciudad",
+    "descripcion": "Mazatlán (del náhuatl: Masatlan ‘Tierra de venados’) es una ciudad ubicada en el estado mexicano de Sinaloa, cabecera del municipio del mismo nombre. Es apodada «La perla del Pacífico».",
+    "lat": 23.21667,
+    "lon": -106.40833,
+    "imagen": "Mazatlan El Faro 2.jpg",
+    "wiki": "Mazatlán",
+    "municipio": "Mazatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q40194"
+   },
+   {
+    "id": "Q752460",
+    "nombre": "Los Mochis",
+    "tipo": "Ciudad",
+    "descripcion": "Los Mochis (del cahíta: mochim, pl. de mochic, 'tortuga terrestre') es una ciudad del noroeste de México, ubicada en el estado de Sinaloa. Es la cabecera del municipio de Ahome.",
+    "lat": 25.79361,
+    "lon": -108.99694,
+    "imagen": "Casa condado espinoza de Los Mochis.jpg",
+    "wiki": "Los Mochis",
+    "municipio": "Ahome",
+    "fuente": "https://www.wikidata.org/wiki/Q752460"
+   },
+   {
+    "id": "Q1124584",
+    "nombre": "Sierra Madre Occidental",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra Madre Occidental es una cadena montañosa que abarca todo el noroeste mexicano y el extremo suroccidental de los Estados Unidos.",
+    "lat": 26.74572,
+    "lon": -108.05786,
+    "imagen": "Sierra Madre Occidental.jpg",
+    "wiki": "Sierra Madre Occidental",
+    "fuente": "https://www.wikidata.org/wiki/Q1124584"
+   },
+   {
+    "id": "Q588515",
+    "nombre": "Guasave",
+    "tipo": "Ciudad",
+    "descripcion": "Guasave es una ciudad mexicana situada en el estado de Sinaloa, cabecera del municipio homónimo. Fue fundada hace más de 400 años y es considerado como la frontera norte de Mesoamérica con Aridoamérica.",
+    "lat": 25.56555,
+    "lon": -108.47182,
+    "imagen": "Iglesias Guasave (18678139318).jpg",
+    "wiki": "Guasave",
+    "municipio": "Guasave",
+    "fuente": "https://www.wikidata.org/wiki/Q588515"
+   },
+   {
+    "id": "Q615661",
+    "nombre": "Navolato",
+    "tipo": "Ciudad",
+    "descripcion": "Navolato es una ciudad mexicana ubicada en el estado de Sinaloa, siendo cabecera del municipio del mismo nombre. Se encuentra a 34 km de la capital del estado, Culiacán.",
+    "lat": 24.76556,
+    "lon": -107.70194,
+    "imagen": "Navolato, Sinaloa.jpg",
+    "wiki": "Navolato",
+    "municipio": "Navolato",
+    "fuente": "https://www.wikidata.org/wiki/Q615661"
+   },
+   {
+    "id": "Q1124139",
+    "nombre": "Concordia",
+    "tipo": "Ciudad",
+    "descripcion": "Concordia es una pequeña ciudad del estado de Sinaloa, México. Es cabecera del municipio homónimo, se ubica a la orilla del Río Presidio y junto a la carretera que va de Villa Unión a la ciudad y estado de Durango.",
+    "lat": 23.28694,
+    "lon": -106.06389,
+    "imagen": "Parqueconcordia3.jpg",
+    "wiki": "Concordia (Sinaloa)",
+    "municipio": "Concordia",
+    "fuente": "https://www.wikidata.org/wiki/Q1124139"
+   },
+   {
+    "id": "Q1552698",
+    "nombre": "Guamúchil",
+    "tipo": "Ciudad",
+    "descripcion": "Guamúchil es una ciudad del estado de Sinaloa, México y es la quinta ciudad más grande de la entidad. Igualmente, es la cabecera del municipio de Salvador Alvarado y de la región llamada \"valle del Évora\", que incluye los municipios de Mocorito, Angostura y parte de Badiraguato.",
+    "lat": 25.4587,
+    "lon": -108.07732,
+    "imagen": null,
+    "wiki": "Guamúchil (Sinaloa)",
+    "municipio": "Salvador Alvarado",
+    "fuente": "https://www.wikidata.org/wiki/Q1552698"
+   },
+   {
+    "id": "Q2012391",
+    "nombre": "La Cruz",
+    "tipo": "Ciudad",
+    "descripcion": "La Cruz, su nombre oficial, o La Cruz de Elota, su nombre común, es una localidad mexicana situada en el estado de Sinaloa, cabecera del municipio de Elota; donde residen los poderes municipales encabezado por el presidente municipal, seguido de un diputado representante de distrito que comprende a la demarcación…",
+    "lat": 23.92139,
+    "lon": -106.89194,
+    "imagen": "Elota (18899795565).jpg",
+    "wiki": "La Cruz (Sinaloa)",
+    "municipio": "Elota",
+    "fuente": "https://www.wikidata.org/wiki/Q2012391"
+   },
+   {
+    "id": "Q5921368",
+    "nombre": "Isla Altamura",
+    "tipo": "Isla",
+    "descripcion": "La isla Altamura o de Altamura es una isla de México en el mar de Cortés. Se ubica en la bahía de Santa María, en la costa del estado de Sinaloa, al suroeste de la isla Saliaca, de la que lo separa un bajo.",
+    "lat": 24.97351,
+    "lon": -108.18984,
+    "imagen": null,
+    "wiki": "Isla Altamura",
+    "fuente": "https://www.wikidata.org/wiki/Q5921368"
+   },
+   {
+    "id": "Q5926384",
+    "nombre": "Jardín Botánico Culiacán",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Botánico Culiacán es un espacio público de 10 hectáreas ubicado en Culiacán, México, cuyas principales funciones son la conservación de especies botánicas, la investigación científica, la educación ambiental y la promoción cultural.",
+    "lat": 24.82376,
+    "lon": -107.38497,
+    "imagen": "Jardín botanico de culiacan.jpg",
+    "wiki": "Jardín Botánico Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q5926384"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5099176",
+    "nombre": "Chilorio",
+    "tipo": "Platillo",
+    "descripcion": "El chilorio es un platillo guisado mexicano, típico de la gastronomía del estado de Sinaloa en la región del noroeste de México, elaborado a base de carne de puerco desmenuzada finamente, que se condimenta con chile ancho, chile pasilla, ajo, comino, orégano y sal. Luego, es cocido con algo de manteca de puerco.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chilorio Tacos.jpg",
+    "wiki": "Chilorio",
+    "fuente": "https://www.wikidata.org/wiki/Q5099176"
+   },
+   {
+    "id": "Q19949631",
+    "nombre": "Aguachile",
+    "tipo": "Platillo",
+    "descripcion": "El aguachile es un platillo típico de la costa occidental de México, se consume principalmente en el noroeste, en un área que comprende los estados de Sinaloa, Michoacán, Colima, Nayarit, Jalisco, Sonora, Baja California, y Baja California Sur.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Aguachile Verde.jpg",
+    "wiki": "Aguachile",
+    "fuente": "https://www.wikidata.org/wiki/Q19949631"
+   },
+   {
+    "id": "Q368910",
+    "nombre": "Capirotada",
+    "tipo": "Dulce",
+    "descripcion": "La capirotada es un postre típico del centro y norte de México, así como también en Nuevo México, Estados Unidos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Capirotada in Mexican pottery.jpg",
+    "wiki": "Capirotada (postre)",
+    "fuente": "https://www.wikidata.org/wiki/Q368910"
+   },
+   {
+    "id": "Q550325",
+    "nombre": "Cahuamanta",
+    "tipo": "Platillo",
+    "descripcion": "La caguamanta o cahuamanta es un estofado marinero típico de los estados de Sonora y Sinaloa, en el noroeste de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Caguamanta_Checo_5_(6566697479).jpg",
+    "wiki": "Cahuamanta",
+    "fuente": "https://www.wikidata.org/wiki/Q550325"
+   },
+   {
+    "id": "Q105635905",
+    "nombre": "Tacos gobernador",
+    "tipo": "Platillo",
+    "descripcion": "Los tacos gobernador son una variedad de tacos típicos del estado mexicano de Sinaloa",
+    "lat": null,
+    "lon": null,
+    "imagen": "Taco Gobernador.jpg",
+    "wiki": "Taco gobernador",
+    "fuente": "https://www.wikidata.org/wiki/Q105635905"
+   },
+   {
+    "id": "Q6076472",
+    "nombre": "Pinturitas",
+    "tipo": "Platillo",
+    "descripcion": "Las biscotelas-bizcotelas sinaloenses son un plato típico de México. Del estado de Sinaloa, de la región de Mocorito principalmente y municipios como Salvador Alvarado en la ciudad de Guamúchil y Culiacán.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Pinturitas",
+    "fuente": "https://www.wikidata.org/wiki/Q6076472"
+   },
+   {
+    "id": "Q2666603",
+    "nombre": "Chimichanga",
+    "tipo": "Platillo",
+    "descripcion": "La chimichanga es un platillo hecho a base de una tortilla de harina frita, rellena de carne y otros ingredientes, consumido principalmente en el norte de México y en el estado de Arizona, en los Estados Unidos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chimichangas.jpg",
+    "wiki": "Chimichanga",
+    "fuente": "https://www.wikidata.org/wiki/Q2666603"
+   },
+   {
+    "id": "Q5788535",
+    "nombre": "Corico",
+    "tipo": "Dulce",
+    "descripcion": "Los coricos (también tacuarines, coricos de harinillas, biscochos en Sinaloa; coricos, coricochis, bizcochos y bizcochuelos, en Sonora, maizcrudos, en Durango) son unas galletas mexicanas de maíz populares en los estados mexicanos de Baja California, Baja California Sur, Sinaloa, Sonora y Durango.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Productos_regionales_de_Sonora_16.jpg",
+    "wiki": "Corico",
+    "fuente": "https://www.wikidata.org/wiki/Q5788535"
+   },
+   {
+    "id": "Q152336",
+    "nombre": "Machacado con huevo",
+    "tipo": "Platillo",
+    "descripcion": "El machacado con huevo o huevo con machaca es un platillo mexicano típico en algunas zonas del norte de México. Consiste de un preparado con carne seca de res desmenuzada, huevos y en ocasiones salsa picante.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Machacado con huevo.jpg",
+    "wiki": "Machacado con huevo",
+    "fuente": "https://www.wikidata.org/wiki/Q152336"
+   },
+   {
+    "id": "Q5753018",
+    "nombre": "Carne en su jugo",
+    "tipo": "Sopa",
+    "descripcion": "La carne en su jugo es una receta mexicana representativa de la gastronomía del estado de Jalisco. Desde hace algunos años, su popularidad se ha extendido por otros estados de la República Mexicana, influyendo en las gastronomías de los estados de Aguascalientes, Michoacán y Guanajuato.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carne En Su Jugo .jpg",
+    "wiki": "Carne en su jugo",
+    "fuente": "https://www.wikidata.org/wiki/Q5753018"
+   },
+   {
+    "id": "Q97185157",
+    "nombre": "Pan de mujer",
+    "tipo": "Pan",
+    "descripcion": "El pan de mujer, también denominado pan de vieja, pan de rancho, pan ranchero o pan de Carboneras, es un tipo de pan dulce artesanal asociado principalmente con la gastronomía del estado mexicano de Sinaloa.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Productos_regionales_de_Sonora_01.jpg",
+    "wiki": "Pan de mujer",
+    "fuente": "https://www.wikidata.org/wiki/Q97185157"
+   },
+   {
+    "id": "Q87919415",
+    "nombre": "Colache",
+    "tipo": "Platillo",
+    "descripcion": "El colache (del yaqui, colachi) es un salteado mexicano de calabazas típico del noroeste de México, principalmente en los estados de Baja California, Jalisco, Sinaloa y Sonora. Se suele servir caliente como primer plato, o también como plato fuerte.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cubo_de_colache.jpg",
+    "wiki": "Colache",
+    "fuente": "https://www.wikidata.org/wiki/Q87919415"
+   },
+   {
+    "id": "Q5810921",
+    "nombre": "Jamoncillo",
+    "tipo": "Dulce",
+    "descripcion": "El jamoncillo es un dulce tradicional de México, específicamente de los estados de Guanajuato, Querétaro, Nuevo León, Coahuila, Durango, Chihuahua, Sinaloa, Sonora, San Luis Potosí, Jalisco, Michoacán, el Estado de México, Puebla y Veracruz hecho a base de leche y azúcar.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Jamoncillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5810921"
+   },
+   {
+    "id": "Q9012336",
+    "nombre": "Jocoque",
+    "tipo": "Bebida",
+    "descripcion": "El jocoque o crema refinada es un producto lácteo cuya base es leche refinada de vaca, muy habitual en la gastronomía mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jocoque_para_acompañar_tacos_árabes,_Puebla.jpg",
+    "wiki": "Jocoque",
+    "fuente": "https://www.wikidata.org/wiki/Q9012336"
+   },
+   {
+    "id": "Q5412364",
+    "nombre": "Birote",
+    "tipo": "Pan",
+    "descripcion": "Birote es el nombre que se le ha asignado a una variedad de pan de origen mexicano que se hornea hasta quedar dorado. Es de consistencia semejante al bolillo y su forma es muy parecida a la de la baguette de origen francés.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Birotes_Salado.jpg",
+    "wiki": "Birote",
+    "fuente": "https://www.wikidata.org/wiki/Q5412364"
+   },
+   {
+    "id": "Q62018789",
+    "nombre": "Discada",
+    "tipo": "Platillo",
+    "descripcion": "La discada es un platillo mexicano típico en los estados del norte, caracterizado por ser una abundante mezcla de carnes, embutidos y verduras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "DISCADA.JPG",
+    "wiki": "Discada",
+    "fuente": "https://www.wikidata.org/wiki/Q62018789"
+   }
+  ]
+ }
+}

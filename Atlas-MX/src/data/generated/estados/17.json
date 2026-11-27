@@ -1,0 +1,667 @@
+{
+ "cve": "17",
+ "estado": "Morelos",
+ "wikidata": "Q66117",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1020785",
+    "nombre": "Tepoztlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tepoztlán es un pueblo del estado de Morelos, en el centro-sur de México. El pueblo funciona como asiento gubernamental del municipio de Tepoztlán.",
+    "lat": 18.98622,
+    "lon": -99.10051,
+    "imagen": "Montaje de Tepoztlán.jpg",
+    "wiki": "Tepoztlán",
+    "municipio": "Tepoztlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1020785"
+   },
+   {
+    "id": "Q2651781",
+    "nombre": "Tlaltizapán de Zapata",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlaltizapán es una localidad del estado mexicano de Morelos. Es cabecera del municipio de Tlaltizapán.",
+    "lat": 18.68594,
+    "lon": -99.11982,
+    "imagen": "Cuartel del Ejército Libertador del Sur, Tlaltizapan.JPG",
+    "wiki": "Tlaltizapán",
+    "municipio": "Tlaltizapán de Zapata",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2651781"
+   },
+   {
+    "id": "Q2604992",
+    "nombre": "Tlayacapan",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlayacapan es una localidad del estado mexicano de Morelos. Es la cabecera del municipio de Tlayacapan.",
+    "lat": 18.95556,
+    "lon": -98.98111,
+    "imagen": "FacadeBautistaTlayacapan01.JPG",
+    "wiki": "Tlayacapan",
+    "municipio": "Tlayacapan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2604992"
+   },
+   {
+    "id": "Q20264959",
+    "nombre": "Xochitepec",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Xochitepec es una localidad del estado mexicano de Morelos. Es la cabecera del municipio de Xochitepec.",
+    "lat": 18.7808,
+    "lon": -99.23049,
+    "imagen": "Xochitepec - San Juan Evangelista 0239.jpg",
+    "wiki": "Xochitepec (Morelos)",
+    "municipio": "Xochitepec",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20264959"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q797120",
+    "nombre": "Xochicalco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xochicalco es un sitio arqueológico que se ubica entre los límites de los municipios de Miacatlan y Temixco en el estado de Morelos, México, a 38 km al suroeste de la ciudad de Cuernavaca. Fue declarado Patrimonio de la Humanidad por la Unesco en 1999.",
+    "lat": 18.80431,
+    "lon": -99.29664,
+    "imagen": "Mexico xochicalco pyramids.JPG",
+    "wiki": "Zona arqueológica de Xochicalco",
+    "municipio": "Miacatlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q797120"
+   },
+   {
+    "id": "Q1141009",
+    "nombre": "Monasterios en las faldas del Popocatépetl",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "Los Primeros monasterios del siglo XVI en las faldas del Popocatépetl son quince monasterios del siglo XVI que fueron construidos por los agustinos, los franciscanos y los dominicos para evangelizar las zonas al sur y al este del Popocatépetl, un volcán en el centro de México.",
+    "lat": 18.93472,
+    "lon": -98.89778,
+    "imagen": "FacadeCatCV2.JPG",
+    "wiki": "Monasterios en las faldas del Popocatépetl",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1141009"
+   },
+   {
+    "id": "Q5192604",
+    "nombre": "Catedral de Cuernavaca",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Cuernavaca es la sede de la diócesis católica del mismo nombre en México. Es un edificio del siglo XVI, lo que la convierte en una de las catedrales más antiguas del país.",
+    "lat": 18.92021,
+    "lon": -99.23678,
+    "imagen": "02564 COPIA CATEDRAL CUERNAVACA.jpg",
+    "wiki": "Catedral de Cuernavaca",
+    "municipio": "Cuernavaca",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5192604"
+   },
+   {
+    "id": "Q65331250",
+    "nombre": "Templo y Exconvento de San Mateo Apóstol",
+    "tipo": "Convento",
+    "descripcion": "El Templo y Exconvento de San Mateo Apóstol es un monumento arquitectónico mexicano ubicado en el municipio de Atlatlahucan, Morelos. Fue construido por la Orden de San Agustín en el siglo XVI.",
+    "lat": 18.9347,
+    "lon": -98.8978,
+    "imagen": "Templo y convento de San Mateo Apóstol.JPG",
+    "wiki": "Templo y Exconvento de San Mateo Apóstol",
+    "municipio": "Atlatlahucan",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65331250"
+   },
+   {
+    "id": "Q24961740",
+    "nombre": "Museo y Centro de Documentación Histórica Ex Convento de Tepoztlán",
+    "tipo": "Convento",
+    "descripcion": "El Museo y Centro de Documentación Histórica Ex Convento de Tepoztlán es un edificio histórico representativo de la arquitectura religiosa en Nueva España. Fue construido por los indígenas tepoztecos bajo las órdenes de los frailes dominicos entre 1555 a 1580, dedicado a la Virgen de la Natividad.",
+    "lat": 18.98664,
+    "lon": -99.09974,
+    "imagen": "ExConventoDominicodelaNatividadTepotzlan.JPG",
+    "wiki": "Museo y Centro de Documentación Histórica Ex Convento de Tepoztlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q24961740"
+   },
+   {
+    "id": "Q65335267",
+    "nombre": "Convento de San Juan Bautista",
+    "tipo": "Convento",
+    "descripcion": "El convento de San Juan Bautista de Tetela del Volcán se ubica en el actual Municipio de Tetela del Volcán en Morelos, México. Fue fundado en el siglo XVI por la Orden Religiosa de los Dominicos con el fraile dominico Juan de la Cruz.",
+    "lat": 18.8919,
+    "lon": -98.7294,
+    "imagen": "Convento de San Juan Bautista.JPG",
+    "wiki": "Convento de San Juan Bautista (Tetela del Volcán)",
+    "municipio": "Tetela del Volcán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65335267"
+   },
+   {
+    "id": "Q65336432",
+    "nombre": "Templo y exconvento de San Guillermo",
+    "tipo": "Convento",
+    "descripcion": "El Templo y exconvento de San Guillermo es un monumento arquitectónico mexicano ubicado en el municipio de Totolapan, Morelos. Fue construido por la Orden de San Agustín en el siglo XVI.",
+    "lat": 18.99,
+    "lon": -98.9183,
+    "imagen": "ConventoSanGuillermoTotolapan ohs03.jpg",
+    "wiki": "Templo y exconvento de San Guillermo",
+    "municipio": "Totolapan",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65336432"
+   },
+   {
+    "id": "Q65335758",
+    "nombre": "Templo y Exconvento de San Juan Bautista de Tlayacapan",
+    "tipo": "Convento",
+    "descripcion": "El Templo y Exconvento de San Juan Bautista de Tlayacapan es un monumento arquitectónico mexicano ubicado en el municipio de Tlayacapan, Morelos. Fue construido por la Orden de San Agustín en el siglo XVI.",
+    "lat": 18.9556,
+    "lon": -98.9811,
+    "imagen": "Tlayacapan i01.jpg",
+    "wiki": "Templo y Exconvento de San Juan Bautista de Tlayacapan",
+    "municipio": "Tlayacapan",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65335758"
+   },
+   {
+    "id": "Q65334605",
+    "nombre": "Templo y Exconvento de Santiago Apóstol de Ocuituco",
+    "tipo": "Convento",
+    "descripcion": "El Templo y Exconvento de Santiago Apóstol es un monumento arquitectónico mexicano ubicado en el municipio de Ocuituco, Morelos. Fue construido por la Orden de San Agustín en el siglo XVI.",
+    "lat": 18.8769,
+    "lon": -98.7756,
+    "imagen": "Ex convento Santiago apostol Ocuituco vista frontal.JPG",
+    "wiki": "Templo y Exconvento de Santiago Apóstol de Ocuituco",
+    "municipio": "Ocuituco",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65334605"
+   },
+   {
+    "id": "Q65337340",
+    "nombre": "Templo y Exconvento de San Juan Bautista de Yecapixtla",
+    "tipo": "Convento",
+    "descripcion": "El Templo y Exconvento de San Juan Bautista de Yecapixtla es un monumento arquitectónico mexicano ubicado en el municipio de Yecapixtla, Morelos. Fue construido por la Orden de San Agustín en el siglo XVI.",
+    "lat": 18.8842,
+    "lon": -98.8631,
+    "imagen": "Templo y Antiguo convento de San Juan Bautista en Yecapixtla.JPG",
+    "wiki": "Templo y Exconvento de San Juan Bautista de Yecapixtla",
+    "municipio": "Yecapixtla",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65337340"
+   },
+   {
+    "id": "Q21781592",
+    "nombre": "Exconvento de Santo Domingo de Guzmán",
+    "tipo": "Convento",
+    "descripcion": "El Exconvento de Santo Domingo de Guzmán se encuentra ubicado en la población de Oaxtepec, municipio de Yautepec al norte del estado de Morelos. Está considerado como Patrimonio de la Humanidad por la Unesco y uno de los conventos del siglo XVI ubicados en las faldas del volcán Popocatépetl mejor conservados de México.",
+    "lat": 18.907,
+    "lon": -98.971,
+    "imagen": "Ex Convento de Santo Domingo de Guzmán Oaxtepec - Portada.JPG",
+    "wiki": "Exconvento de Santo Domingo de Guzmán (Oaxtepec)",
+    "municipio": "Yautepec",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q21781592"
+   },
+   {
+    "id": "Q16565564",
+    "nombre": "Ex Convento de Santo Domingo de Guzmán",
+    "tipo": "Convento",
+    "descripcion": "En la localidad de San Andrés Hueyapan en el municipio de Tetela del Volcán en el estado de Morelos, México, un poblado cercano a las faldas del Popocatépetl, que poco ha cambiado su fisonomía y rasgos culturales: casas de adobe, tejidos de lana y lengua náhuatl, se localiza este convento dominico, fundado en 1539.",
+    "lat": 18.88611,
+    "lon": -98.69028,
+    "imagen": "Templo y Antiguo convento de San Juan Bautista en Yecapixtla.JPG",
+    "wiki": "Templo y exconvento de Santo Domingo de Guzmán (Hueyapan)",
+    "municipio": "Hueyapan",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q16565564"
+   },
+   {
+    "id": "Q1059465",
+    "nombre": "Chalcatzingo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chalcatzingo es un yacimiento arqueológico localizado en el valle de Morelos, en el estado mexicano homónimo. Chalcatzingo tuvo su época de apogeo durante el período Preclásico Medio y Tardío de la cronología mesoamericana.",
+    "lat": 18.67675,
+    "lon": -98.77081,
+    "imagen": "Chalcatzingo zona arqueológica 02.JPG",
+    "wiki": "Chalcatzingo",
+    "fuente": "https://www.wikidata.org/wiki/Q1059465"
+   },
+   {
+    "id": "Q2352495",
+    "nombre": "El Tepozteco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Tepozteco es una zona arqueológica mexicana situada en el municipio de Tepoztlán, estado de Morelos. Se localiza alrededor de los 2,050 metros sobre el nivel del mar y a casi 330 metros sobre el valle de Tepoztlán.",
+    "lat": 19.00091,
+    "lon": -99.10116,
+    "imagen": "Piramidedeltepozteco.jpg",
+    "wiki": "El Tepozteco",
+    "fuente": "https://www.wikidata.org/wiki/Q2352495"
+   },
+   {
+    "id": "Q2404076",
+    "nombre": "Teopanzolco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Teopanzolco es un sitio arqueológico que se ubica en la ciudad de Cuernavaca, Morelos, México. Teopanzolco es una palabra del idioma náhuatl que se interpreta como El lugar del templo viejo.",
+    "lat": 18.93045,
+    "lon": -99.22201,
+    "imagen": "Teopanzolco1.jpg",
+    "wiki": "Teopanzolco",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q2404076"
+   },
+   {
+    "id": "Q1104450",
+    "nombre": "Coatetelco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Coatetelco es un sitio arqueológico prehispánico, localizado junto a la Laguna de Coatetelco, se encuentra a 2 kilómetros del poblado de Alpuyeca, en el municipio de Coatetelco, Morelos, México, cerca de Xochicalco. Tuvo un importante auge entre los años 500 a. C. y 150 a. C.",
+    "lat": 18.72639,
+    "lon": -99.32611,
+    "imagen": "Coatetelco2.jpg",
+    "wiki": "Zona arqueológica de Coatetelco",
+    "fuente": "https://www.wikidata.org/wiki/Q1104450"
+   },
+   {
+    "id": "Q1556262",
+    "nombre": "Hacienda Cocoyoc",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Antigua Hacienda Cocoyoc es un hacienda ubicada en el estado de Morelos, México. En los siglos XVII y XVIII llegó a ser una de las Haciendas más importantes del país y está declarado como monumento histórico por el INAH",
+    "lat": 18.8838,
+    "lon": -98.9849,
+    "imagen": "TrapicheNocheHaciendaCocoyoc.png",
+    "wiki": "Hacienda Cocoyoc",
+    "fuente": "https://www.wikidata.org/wiki/Q1556262"
+   },
+   {
+    "id": "Q5970707",
+    "nombre": "Las Pilas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las Pilas es una zona arqueológica que se encuentra en el valle de Amilpas, municipio de Jonacatepec, Morelos, México. Ubicada en las instalaciones del balneario del mismo nombre, fue levantada entre los años del 500 y 650 d. C. con influencias teotihuacanas.",
+    "lat": 18.68761,
+    "lon": -98.79981,
+    "imagen": "Vista_panorámica_de_la_zona_arqueológica_de_Las_Pilas,_Joacatepec,_Morelos,_México.jpg",
+    "wiki": "Las Pilas (zona arqueológica)",
+    "fuente": "https://www.wikidata.org/wiki/Q5970707"
+   },
+   {
+    "id": "Q7126230",
+    "nombre": "Palacio de Cortés",
+    "tipo": "Fortificación",
+    "descripcion": "El palacio de Cortés es un palacio civil novohispano del siglo XVI, un monumento histórico ubicado en Cuernavaca, Morelos (México), ordenado construir por el español Hernán Cortés en los años inmediatos a la conquista de México.",
+    "lat": 18.92134,
+    "lon": -99.23337,
+    "imagen": "Cuernavaca Palacio Cortes.JPG",
+    "wiki": "Palacio de Cortés",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q7126230"
+   },
+   {
+    "id": "Q97169963",
+    "nombre": "Templo y exconvento de San Diego",
+    "tipo": "Ex convento",
+    "descripcion": "El Templo y exconvento de San Diego es un monumento histórico que se encuentra en Cuautla, Morelos. Su construcción data del siglo XVI.",
+    "lat": 18.81606,
+    "lon": -98.95408,
+    "imagen": "Ex Convento Franciscano San Diego de Alcalá,Cuautla,Morelos,México. (5907194636).jpg",
+    "wiki": "Templo y exconvento de San Diego (Cuautla)",
+    "municipio": "Cuautla",
+    "fuente": "https://www.wikidata.org/wiki/Q97169963"
+   },
+   {
+    "id": "Q113935459",
+    "nombre": "Acueducto de Gualupita",
+    "tipo": "Acueducto",
+    "descripcion": "El Acueducto de Gualupita es una obra arquitectónica ubicada en Cuernavaca, México. También es conocido como Arcos de Gualupita o Arcos de Carlos Cuaglia.",
+    "lat": 18.93008,
+    "lon": -99.23414,
+    "imagen": "ORA_8552.JPG",
+    "wiki": "Acueducto de Gualupita",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q113935459"
+   },
+   {
+    "id": "Q24961761",
+    "nombre": "Museo de sitio de Xochicalco",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio Xochicalco es un inmueble adjunto a la zona arqueológica del mismo nombre, ubicado en el estado de Morelos, en México. Se encuentra en la carretera Federal Xochicalco-Tetlama sin número, en la Col. Xochicalco, en Miacatlán.",
+    "lat": 18.80208,
+    "lon": -99.29092,
+    "imagen": "Museo_de_Xochicalco.jpg",
+    "wiki": "Museo de sitio de Xochicalco",
+    "municipio": "Xochitepec",
+    "fuente": "https://www.wikidata.org/wiki/Q24961761"
+   },
+   {
+    "id": "Q24511181",
+    "nombre": "Museo Fotográfico de Cuernavaca",
+    "tipo": "Museo",
+    "descripcion": "El Museo Fotográfico de Cuernavaca es un recinto que se asemeja a un castillo de estilo francés ubicado en Cuernavaca, Morelos. En él se exhiben fotografías antiguas de la ciudad, población y también algunos muebles de la época.",
+    "lat": 18.92892,
+    "lon": -99.23771,
+    "imagen": "CastillitoCV.JPG",
+    "wiki": "Museo Fotográfico de Cuernavaca (El Castillito)",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q24511181"
+   },
+   {
+    "id": "Q139375140",
+    "nombre": "Exconvento franciscano de Nuestra Señora de la Asunción",
+    "tipo": "Ex convento",
+    "descripcion": "El ex-convento franciscano de Nuestra Señora de la Asunción es un conjunto de edificios religiosos ubicado en Cuernavaca, México. Se trata de uno de los primeros conjuntos religiosos construidos dentro del territorio de Nueva España, fundado por los franciscanos, desde 1525.",
+    "lat": 18.9202,
+    "lon": -99.23653,
+    "imagen": "Atractiva arquitectura - panoramio.jpg",
+    "wiki": "Exconvento franciscano de Nuestra Señora de la Asunción",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q139375140"
+   },
+   {
+    "id": "Q6033197",
+    "nombre": "Museo Carlos Pellicer",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte Prehispánico «Carlos Pellicer» se encuentra localizado en Tepoztlán, Morelos.",
+    "lat": 18.98583,
+    "lon": -99.09889,
+    "imagen": null,
+    "wiki": "Museo Carlos Pellicer",
+    "fuente": "https://www.wikidata.org/wiki/Q6033197"
+   },
+   {
+    "id": "Q9047114",
+    "nombre": "Museo del Oriente de Morelos \"Casa de Morelos\"",
+    "tipo": "Museo",
+    "descripcion": "El Museo Histórico del Oriente de Morelos \"Casa de Morelos\", más conocido como \"Museo Casa de Morelos\", se encuentra ubicado en el centro de la ciudad de Cuautla, Morelos a un costado del palacio municipal.",
+    "lat": 18.81219,
+    "lon": -98.95541,
+    "imagen": "6 Museo Histórico del Oriente Casa e Morelos.jpg",
+    "wiki": "Museo Histórico del Oriente de Morelos \"Casa de Morelos\"",
+    "municipio": "Cuautla",
+    "fuente": "https://www.wikidata.org/wiki/Q9047114"
+   },
+   {
+    "id": "Q48784756",
+    "nombre": "Museo Ex Convento de Tepoztlán",
+    "tipo": "Museo",
+    "descripcion": "El museo Ex convento de Tepoztlán también conocido como Museo de la Natividad es un museo ubicado en el estado de Morelos, fundado el 1 de enero de 1993.",
+    "lat": 18.98767,
+    "lon": -99.09949,
+    "imagen": "Ex Convento Dominico Siglo XVI.jpg",
+    "wiki": "Museo Ex Convento de Tepoztlán",
+    "municipio": "Tepoztlán",
+    "fuente": "https://www.wikidata.org/wiki/Q48784756"
+   },
+   {
+    "id": "Q142167376",
+    "nombre": "Museo Morelense de Arte Contemporáneo Juan Soriano",
+    "tipo": "Museo",
+    "descripcion": "El Museo Morelense de Arte Contemporáneo Juan Soriano, también conocido como MMAC Juan Soriano es un museo ubicado en Cuernavaca, México; dedicado al arte moderno y contemporáneo a nivel nacional e internacional.",
+    "lat": 18.92324,
+    "lon": -99.23088,
+    "imagen": "Museo Morelense de Arte Contemporáneo Juan Soriano.jpg",
+    "wiki": "Museo Morelense de Arte Contemporáneo Juan Soriano",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q142167376"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q204245",
+    "nombre": "Cuernavaca",
+    "tipo": "Ciudad",
+    "descripcion": "Cuernavaca (del náhuatl: Cuauhnahuac ‘Al lado del bosque’) (del tlahuica: Ñunzaa ‘En el bosque’) es una ciudad mexicana, capital y ciudad más poblada del estado de Morelos y cabecera del municipio homónimo, ubicada a aproximadamente 80 km al sur de la Ciudad de México y a aproximadamente 300 km al norte de Acapulco…",
+    "lat": 18.91861,
+    "lon": -99.23417,
+    "imagen": "Montaje de Cuernavaca.jpg",
+    "wiki": "Cuernavaca",
+    "municipio": "Cuernavaca",
+    "fuente": "https://www.wikidata.org/wiki/Q204245"
+   },
+   {
+    "id": "Q939959",
+    "nombre": "Cuautla de Morelos",
+    "tipo": "Ciudad",
+    "descripcion": "Cuautla (del náhuatl: Cuāuhtlan o Kwāwtlan ‘Lugar de las águilas’), oficialmente llamada Heroica e Histórica Ciudad de Cuautla de Morelos, es una ciudad mexicana, cabecera del municipio de Cuautla y ciudad central de la zona metropolitana de Cuautla.",
+    "lat": 18.828,
+    "lon": -98.943,
+    "imagen": "Mexicopictures 193 0001.jpg",
+    "wiki": "Cuautla (Morelos)",
+    "municipio": "Cuautla",
+    "fuente": "https://www.wikidata.org/wiki/Q939959"
+   },
+   {
+    "id": "Q602729",
+    "nombre": "Temixco",
+    "tipo": "Ciudad",
+    "descripcion": "Temixco es una localidad del estado mexicano de Morelos. Es la cabecera del municipio de Temixco.",
+    "lat": 18.8438,
+    "lon": -99.223,
+    "imagen": "Temixco.JPG",
+    "wiki": "Temixco",
+    "municipio": "Temixco",
+    "fuente": "https://www.wikidata.org/wiki/Q602729"
+   },
+   {
+    "id": "Q2991369",
+    "nombre": "Puente de Ixtla",
+    "tipo": "Ciudad",
+    "descripcion": "Puente de Ixtla es una pequeña ciudad del estado de Morelos en México. Es cabecera del municipio del mismo nombre.",
+    "lat": 18.61667,
+    "lon": -99.31972,
+    "imagen": "Puente de ixtla.JPG",
+    "wiki": "Puente de Ixtla",
+    "municipio": "Puente de Ixtla",
+    "fuente": "https://www.wikidata.org/wiki/Q2991369"
+   },
+   {
+    "id": "Q2651949",
+    "nombre": "Axochiapan",
+    "tipo": "Ciudad",
+    "descripcion": "Axochiapan es una localidad en México que representa la cabecera del municipio homónimo del estado de Morelos, que se localiza al sureste del estado.",
+    "lat": 18.50307,
+    "lon": -98.75219,
+    "imagen": "Axochiapan2.JPG",
+    "wiki": "Axochiapan",
+    "municipio": "Axochiapan",
+    "fuente": "https://www.wikidata.org/wiki/Q2651949"
+   },
+   {
+    "id": "Q6169338",
+    "nombre": "Xoxocotla",
+    "tipo": "Ciudad",
+    "descripcion": "Xoxocotla es una localidad del estado mexicano de Morelos. Es la cabecera del municipio de Xoxocotla.",
+    "lat": 18.68502,
+    "lon": -99.24608,
+    "imagen": "Crucero_de_xoxocotla_-_panoramio.jpg",
+    "wiki": "Xoxocotla (Morelos)",
+    "municipio": "Xoxocotla",
+    "fuente": "https://www.wikidata.org/wiki/Q6169338"
+   },
+   {
+    "id": "Q2837136",
+    "nombre": "Laguna de Tequesquitengo",
+    "tipo": "Lago",
+    "descripcion": "El Lago de Tequesquitengo, está situado en México, es el principal almacenamiento hídrico del estado de Morelos, es una cuenca cerrada de 28 km², con una superficie de inundación de 8 km².",
+    "lat": 18.61667,
+    "lon": -99.26667,
+    "imagen": "Globo Aerostatico Tequesquitengo.jpg",
+    "wiki": "Laguna de Tequesquitengo",
+    "fuente": "https://www.wikidata.org/wiki/Q2837136"
+   },
+   {
+    "id": "Q5969047",
+    "nombre": "Laguna El Rodeo",
+    "tipo": "Lago",
+    "descripcion": "La laguna El Rodeo está ubicada en el municipio de Miacatlán en el estado de Morelos en México; se ubica geográficamente en el poniente del estado.",
+    "lat": 18.76806,
+    "lon": -99.32194,
+    "imagen": null,
+    "wiki": "Laguna El Rodeo",
+    "fuente": "https://www.wikidata.org/wiki/Q5969047"
+   },
+   {
+    "id": "Q27096812",
+    "nombre": "El Chumil",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro de los Halcones, también llamado cerro Gordo, o informalmente, Cerro del Chumil por su abundante presencia de este insecto o Cabeza de Mono, es un monte ubicado en Jantetelco, en el estado mexicano de Morelos.",
+    "lat": 18.70522,
+    "lon": -98.75066,
+    "imagen": "Cerro del Hombre 2.JPG",
+    "wiki": "El Chumil",
+    "municipio": "Jantetelco",
+    "fuente": "https://www.wikidata.org/wiki/Q27096812"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5664615",
+    "nombre": "Alegría",
+    "tipo": "Dulce",
+    "descripcion": "Alegría es un dulce mexicano fabricado con semillas de amaranto y miel o azúcar que se elabora principalmente en el poblado de Santiago Tulyehualco en la alcaldía Xochimilco de la Ciudad de México y desde el siglo XVI se le conoce con ese nombre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Alegrias03.JPG",
+    "wiki": "Alegría (dulce)",
+    "fuente": "https://www.wikidata.org/wiki/Q5664615"
+   },
+   {
+    "id": "Q93506818",
+    "nombre": "Arroz de Morelos",
+    "tipo": "Platillo",
+    "descripcion": "El arroz del Estado de Morelos es una denominación de origen mexicana que protege e identifica el cultivo de arroz (Oryza sativa) en el estado de Morelos, en el centro de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Arrozjojutla_deMorelos.jpg",
+    "wiki": "Arroz de Morelos",
+    "fuente": "https://www.wikidata.org/wiki/Q93506818"
+   },
+   {
+    "id": "Q94449001",
+    "nombre": "Caldo de hongos de cazahuate",
+    "tipo": "Platillo",
+    "descripcion": "El caldo o sopa de hongos de cazahuate es un plato típico del estado de Morelos, en el centro de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pleurotus_ostreatus_JPG6.jpg",
+    "wiki": "Caldo de hongos de cazahuate",
+    "fuente": "https://www.wikidata.org/wiki/Q94449001"
+   },
+   {
+    "id": "Q5869890",
+    "nombre": "Fruta de horno de tlayacapan",
+    "tipo": "Platillo",
+    "descripcion": "La Fruta de horno de Tlayacapan es un conjunto de productos de repostería, elaborados de manera tradicional y familiar en el municipio de Tlayacapan en el estado de Morelos, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Fruta de horno de Tlayacapan",
+    "fuente": "https://www.wikidata.org/wiki/Q5869890"
+   },
+   {
+    "id": "Q65164763",
+    "nombre": "Rompope Tehuixtla",
+    "tipo": "Platillo",
+    "descripcion": "El rompope de Tehuixtla es un estilo de rompope elaborado en Tehuixtla, Morelos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Rompope2.jpg",
+    "wiki": "Rompope de Tehuixtla",
+    "fuente": "https://www.wikidata.org/wiki/Q65164763"
+   },
+   {
+    "id": "Q3189940",
+    "nombre": "Jumiles",
+    "tipo": "Platillo",
+    "descripcion": "Jumil, chumil (del náhuatl xomilli o xotlinilli), o chinche de monte, son los nombres que se les da en México a varias especies de insectos hemípteros comestibles de la familia Pentatomidae:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jumiles-taxco-mercados.jpg",
+    "wiki": "Jumil",
+    "fuente": "https://www.wikidata.org/wiki/Q3189940"
+   },
+   {
+    "id": "Q11699481",
+    "nombre": "Pipián",
+    "tipo": "Platillo",
+    "descripcion": "Pipián es el nombre dado a una receta originaria de la gastronomía mexicana prehispánica. Países como Bolivia y Colombia han adoptado esta receta.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Pipián (gastronomía)",
+    "fuente": "https://www.wikidata.org/wiki/Q11699481"
+   },
+   {
+    "id": "Q5766381",
+    "nombre": "Chileatole",
+    "tipo": "Platillo",
+    "descripcion": "El chileatole puede referirse a dos clases de comidas mexicanas:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chileatole_en_Veracruz.jpg",
+    "wiki": "Chileatole",
+    "fuente": "https://www.wikidata.org/wiki/Q5766381"
+   },
+   {
+    "id": "Q20814407",
+    "nombre": "Clemole",
+    "tipo": "Sopa",
+    "descripcion": "El clemole o tlemole es un platillo de la gastronomía de México. Consiste en un caldo donde se combina carne, verduras y elementos saborizantes fuertes.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Clemole",
+    "fuente": "https://www.wikidata.org/wiki/Q20814407"
+   },
+   {
+    "id": "Q20856260",
+    "nombre": "Chileajo de cerdo",
+    "tipo": "Platillo",
+    "descripcion": "El chileajo de cerdo es un platillo de comida de Oaxaca, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "ChileajoOax.JPG",
+    "wiki": "Chileajo",
+    "fuente": "https://www.wikidata.org/wiki/Q20856260"
+   },
+   {
+    "id": "Q5044066",
+    "nombre": "Carnitas",
+    "tipo": "Platillo",
+    "descripcion": "En México, se le llama carnitas a la carne de puerco de diferentes porciones, incluyendo carne que son fritas en manteca de puerco. Para su preparación, se emplean enormes ollas de cobre, o cazos de acero inoxidable.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carnitas in Mexico.jpg",
+    "wiki": "Carnitas",
+    "fuente": "https://www.wikidata.org/wiki/Q5044066"
+   }
+  ]
+ }
+}

@@ -1,0 +1,757 @@
+{
+ "cve": "23",
+ "estado": "Quintana Roo",
+ "wikidata": "Q80245",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1709140",
+    "nombre": "Bacalar",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Bacalar (del maya: Bakhalal ‘Cerca o rodeado de carrizos’) es una población del estado mexicano de Quintana Roo, situada en el sur de su territorio a unos 40 km al norte de la capital, Chetumal.",
+    "lat": 18.67615,
+    "lon": -88.38935,
+    "imagen": "Kiosko, Bacalar. - panoramio.jpg",
+    "wiki": "Bacalar",
+    "municipio": "Bacalar",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1709140"
+   },
+   {
+    "id": "Q929946",
+    "nombre": "Cozumel",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Miguel de Cozumel (del maya: Kosom lumil ‘Tierra de las golondrinas’) es la mayor y principal ciudad de la isla de Cozumel, siendo cabecera del municipio del mismo nombre y la segunda cabecera municipal más antigua del estado mexicano de Quintana Roo.",
+    "lat": 20.50378,
+    "lon": -86.95759,
+    "imagen": "Cozumel Aerial View.jpg",
+    "wiki": "San Miguel de Cozumel",
+    "municipio": "Cozumel",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q929946"
+   },
+   {
+    "id": "Q20238448",
+    "nombre": "Isla Mujeres",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cabecera del municipio de Isla Mujeres, Quintana Roo, México",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mexican island Isla Mujeres (42882051294).jpg",
+    "wiki": null,
+    "municipio": "Isla Mujeres",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20238448"
+   },
+   {
+    "id": "Q277408",
+    "nombre": "Tulum",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tulum (conocida también como Tulum Pueblo para diferenciarla de la zona arqueológica) es una ciudad del estado mexicano de Quintana Roo. Es desde el 13 de marzo de 2008 cabecera del municipio del mismo nombre.",
+    "lat": 20.21078,
+    "lon": -87.4632,
+    "imagen": "Tulum QR.JPG",
+    "wiki": "Tulum (Quintana Roo)",
+    "municipio": "Tulum",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q277408"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q725883",
+    "nombre": "Tulum",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tulum, o antiguamente llamado Zamá, fue una ciudad amurallada de la cultura maya ubicada en el Estado de Quintana Roo, en el sureste de México, en la costa del mar Caribe. En la actualidad es un gran atractivo turístico de la Riviera Maya y junto a ella se encuentra la moderna población del mismo nombre, Tulum.",
+    "lat": 20.21472,
+    "lon": -87.42889,
+    "imagen": "Tulum 2006 2.jpg",
+    "wiki": "Tulum",
+    "municipio": "Tulum",
+    "fuente": "https://www.wikidata.org/wiki/Q725883"
+   },
+   {
+    "id": "Q1104936",
+    "nombre": "Cobá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Cobá es un yacimiento arqueológico de la cultura maya precolombina, localizado en el sureste de México, en el territorio que hoy es el estado de Quintana Roo, unos noventa kilómetros al este de Chichén Itzá y unos cuarenta al noroeste de Tulum.",
+    "lat": 20.4898,
+    "lon": -87.7251,
+    "imagen": "Coba El Castillo.JPG",
+    "wiki": "Cobá",
+    "fuente": "https://www.wikidata.org/wiki/Q1104936"
+   },
+   {
+    "id": "Q785823",
+    "nombre": "Kohunlich",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Kohunlich es una antigua ciudad y centro ceremonial maya, ubicado en el municipio de Othón P. Blanco en las selvas de Quintana Roo, México dentro de la región maya de Río Bec.Constituyó un gran asentamiento prehispánico maya dividido en varios grupos y complejos arquitectónicos de carácter ceremonial y habitacional…",
+    "lat": 18.41667,
+    "lon": -88.78333,
+    "imagen": "Kohunlich 17.JPG",
+    "wiki": "Kohunlich",
+    "fuente": "https://www.wikidata.org/wiki/Q785823"
+   },
+   {
+    "id": "Q928886",
+    "nombre": "Chacchobén",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chacchobén es un yacimiento arqueológico maya ubicado cerca del homónimo poblado de Chacchobén, a 70 km de la ciudad mexicana de Chetumal. Al no haber evidencias epigrafia acerca del nombre original del sitio, se utiliza el del Ejido donde se ubica, el cual hace alusión al \"maíz colorado\".",
+    "lat": 19.00083,
+    "lon": -88.2325,
+    "imagen": "Chacchoben.JPG",
+    "wiki": "Chacchobén",
+    "fuente": "https://www.wikidata.org/wiki/Q928886"
+   },
+   {
+    "id": "Q847614",
+    "nombre": "Dzibanché",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Dzibanché, a veces escrito Tz'ibanche, originalmente llamado Kaanu'l, es un extenso sitio arqueológico y antigua ciudad maya localizada al sur del estado de Quintana Roo en México, la cual destaca como un gran asentamiento de dimensiones monumentales y cuna de la poderosa dinastía maya Kaanu'l (serpiente) que llegó a…",
+    "lat": 18.6375,
+    "lon": -88.75903,
+    "imagen": "Dzibanche1.jpg",
+    "wiki": "Dzibanché",
+    "municipio": "Bacalar",
+    "fuente": "https://www.wikidata.org/wiki/Q847614"
+   },
+   {
+    "id": "Q1526776",
+    "nombre": "Xel-Há",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xel Há (pronunciado [ʃel xa]) (en maya: Xel Ja', \"entrada de agua\") es un sitio arqueológico maya, ubicado en una caleta de agua cristalina sobre la costa oriental de la Península de Yucatán, México, al norte del estado de Quintana Roo, conformado por diversos adoratorios, plataformas, templos y palacios, también…",
+    "lat": 20.31972,
+    "lon": -87.36694,
+    "imagen": "Ruinas Xel Ha.jpg",
+    "wiki": "Xel Há (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q1526776"
+   },
+   {
+    "id": "Q1435909",
+    "nombre": "Xcaret",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xcaret (pronunciado [ʃkaˈɾet], /shkarét/), antiguamente Polé, fue una importante ciudad comercial de la cultura maya antes de la llegada de los conquistadores españoles en el siglo XVIII.",
+    "lat": 20.57806,
+    "lon": -87.11917,
+    "imagen": "Xcaret Mayan Ruins.jpg",
+    "wiki": "Xcaret",
+    "municipio": "Playa del Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q1435909"
+   },
+   {
+    "id": "Q1548550",
+    "nombre": "Muyil",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Muyil (también se le conoce por Chunyaxché) es el nombre de un yacimiento arqueológico maya ubicado en el estado de Quintana Roo, en la península de Yucatán, México, cerca del sitio de Tulum y dentro de la reserva de la biosfera de Sian Ka'an en el municipio de Felipe Carrillo Puerto.",
+    "lat": 20.07889,
+    "lon": -87.61389,
+    "imagen": "Muyil1.jpg",
+    "wiki": "Muyil",
+    "fuente": "https://www.wikidata.org/wiki/Q1548550"
+   },
+   {
+    "id": "Q601383",
+    "nombre": "San Gervasio",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de San Gervasio es un yacimiento arqueológico ubicado en el Municipio de Cozumel, estado de Quintana Roo en México.",
+    "lat": 20.50035,
+    "lon": -86.8483,
+    "imagen": "Los Murcielagos, San Gervasio.JPG",
+    "wiki": "Zona arqueológica de San Gervasio",
+    "municipio": "Cozumel",
+    "fuente": "https://www.wikidata.org/wiki/Q601383"
+   },
+   {
+    "id": "Q1324550",
+    "nombre": "El Rey",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Rey es un yacimiento arqueológico de la cultura maya precolombina, localizado en el sureste de México, en el territorio que hoy ocupa el estado de Quintana Roo, precisamente en el centro turístico de Cancún.",
+    "lat": 21.06083,
+    "lon": -86.78111,
+    "imagen": "CancunRuins2002.jpg",
+    "wiki": "El Rey (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q1324550"
+   },
+   {
+    "id": "Q1324311",
+    "nombre": "El Meco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Meco, originalmente llamado Beel'maan, es un yacimiento arqueológico de la cultura maya precolombina, localizado en la costa del mar Caribe al norte del estado de Quintana Roo en el sureste de México, a ocho kilómetros al norte del centro de Cancún.",
+    "lat": 21.21083,
+    "lon": -86.80417,
+    "imagen": "El Meco Site Cancun, Mexico (8950893633).jpg",
+    "wiki": "Zona arqueológica de El Meco",
+    "fuente": "https://www.wikidata.org/wiki/Q1324311"
+   },
+   {
+    "id": "Q5908062",
+    "nombre": "Ichkabal",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ichkabal es el nombre de un yacimiento arqueológico de la cultura maya, precolombina, ubicado unos 40 kilómetros al poniente de la laguna de Bacalar, en el estado de Quintana Roo, México, 9 km al noreste del sitio de Dzibanché y muy cerca también del yacimiento de Kohunlich.",
+    "lat": 18.68444,
+    "lon": -88.66861,
+    "imagen": "ICHKABAL QUINTANA ROO.png",
+    "wiki": "Ichkabal",
+    "fuente": "https://www.wikidata.org/wiki/Q5908062"
+   },
+   {
+    "id": "Q3925731",
+    "nombre": "Punta Sur",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Punta Sur (también se llama Punta Celaráin) es el extremo sur de la isla de Cozumel en el estado de Quintana Roo, en México. Es el cabo yuxtapuesto en la isla de Cozumel, al de Punta Molas, en el extremo nor-oriental.",
+    "lat": 20.28,
+    "lon": -86.99,
+    "imagen": "Isla Mujeres Mexico.jpg",
+    "wiki": "Punta Sur (Cozumel)",
+    "fuente": "https://www.wikidata.org/wiki/Q3925731"
+   },
+   {
+    "id": "Q4022792",
+    "nombre": "Yo'okop",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yo'okop (Yocop) (del maya: Okoop: Hoyo, barranco; Yok'oopil haa: Charco de agua), es el nombre de un yacimiento arqueológico maya localizado en la jurisdicción de Cochuah en el actual estado de Quintana Roo, México.",
+    "lat": 19.9331,
+    "lon": -88.4832,
+    "imagen": null,
+    "wiki": "Yo'okop",
+    "fuente": "https://www.wikidata.org/wiki/Q4022792"
+   },
+   {
+    "id": "Q137601650",
+    "nombre": "Chakanbakán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chakanbakán es una zona arqueológica y antigua ciudad de la cultura maya ubicada en la selva del sur del estado de Quintana Roo en México cuya ocupación prehispánica se remonta al 700 a. C., tuvo su apogeo durante el periodo preclásico tardío de la civilización maya entre el 400 al 50 a. C. desarrollándose como un…",
+    "lat": 18.45213,
+    "lon": -89.0896,
+    "imagen": "Chakanbakan_Pyramid_of_the_Masks_(Pirámide_de_los_mascarones).jpg",
+    "wiki": "Chakanbakán",
+    "fuente": "https://www.wikidata.org/wiki/Q137601650"
+   },
+   {
+    "id": "Q14549493",
+    "nombre": "Chakalal",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chakalal o Chac-hal-al es un pequeño sitio arqueológico de ruinas mayas ubicado en la costa del caribe al noreste de la Península de Yucatán en el estado de Quintana Roo, México, el cual consta de un adoratorio principal frente a una pequeña caleta que da acceso al mar.",
+    "lat": 20.49417,
+    "lon": -87.23472,
+    "imagen": "Chakalal.jpg",
+    "wiki": "Chakalal",
+    "fuente": "https://www.wikidata.org/wiki/Q14549493"
+   },
+   {
+    "id": "Q14213023",
+    "nombre": "Kinichná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Kinichná (en maya: K'iinich naj, \"Casa del Dios Sol\") es una zona arqueológica de la cultura maya localizada al sur del estado de Quintana Roo en México, la cual consta de una acrópolis con una pirámide de estilo tríadico integrada por varios templos, la zona se conecta por medio de un camino prehispánico de sacbé y…",
+    "lat": 18.65972,
+    "lon": -88.76694,
+    "imagen": "Kinichna_I.JPG",
+    "wiki": "Kinichná",
+    "fuente": "https://www.wikidata.org/wiki/Q14213023"
+   },
+   {
+    "id": "Q123092050",
+    "nombre": "San Miguelito",
+    "tipo": "Zona arqueológica",
+    "descripcion": "San Miguelito es un yacimiento arqueológico perteneciente a la cultura maya,localizado en el municipio de Cancún, en el estado mexicano de Quintana Roo.",
+    "lat": 21.07104,
+    "lon": -86.77889,
+    "imagen": "San Miguelito La pirámide.jpg",
+    "wiki": "San Miguelito (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q123092050"
+   },
+   {
+    "id": "Q135922902",
+    "nombre": "Pok Ta Pok",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Pok Ta Pok es un yacimiento arqueológico de la cultura maya ubicado próximo a la laguna Nichupté, en la zona hotelera de Cancún, al norte del estado de Quintana Roo, México, que data del periodo posclásico tardío.",
+    "lat": 21.12539,
+    "lon": -86.76647,
+    "imagen": null,
+    "wiki": "Pok Ta Pok",
+    "fuente": "https://www.wikidata.org/wiki/Q135922902"
+   },
+   {
+    "id": "Q136337561",
+    "nombre": "Rancho Ina",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Rancho Ina es como se le conoce a un yacimiento arqueológico de la cultura maya perteneciente al periodo posclásico tardío ubicado en la región de la Costa Oriental de Quintana Roo en México.",
+    "lat": 20.58044,
+    "lon": -87.1381,
+    "imagen": "Maya_painting_of_the_Casa_Azul,_Rancho_Ina,_Mexico_(Pintura_de_la_Casa_Azul,_Rancho_Ina).jpg",
+    "wiki": "Rancho Ina",
+    "fuente": "https://www.wikidata.org/wiki/Q136337561"
+   },
+   {
+    "id": "Q140826495",
+    "nombre": "Ni'Ku'",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ni'Ku' (o Ni'Kú) es un yacimiento arqueológico maya de la región de la Costa Oriental de Quintana Roo en México ubicado frente al mar Caribe en la Punta Cancún (nombre con el que también se le conoce al yacimiento arqueológico), dentro de lo que actualmente es la Zona Hotelera de Cancún.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Ni'Ku'",
+    "fuente": "https://www.wikidata.org/wiki/Q140826495"
+   },
+   {
+    "id": "Q130300949",
+    "nombre": "Limones",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Limones es un yacimiento arqueológico de la cultura maya ubicado dentro de la localidad de Limones en el municipio de Bacalar del estado de Quintana Roo en México, en el sitio sobresale una pirámide escalonada que data del periodo Clásico mientras que el resto de montículos prehispánicos permanecen enterrados.",
+    "lat": 19.02136,
+    "lon": -88.11013,
+    "imagen": "Limones,_Quintana_Roo,_México._-_panoramio.jpg",
+    "wiki": "Limones (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q130300949"
+   },
+   {
+    "id": "Q130646498",
+    "nombre": "Noh Kah",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Noh Kah (del maya: Noj Kaaj, \"gran ciudad\") es una antigua ciudad y sitio arqueológico de la cultura maya ubicada en la selva al sur del estado de Quintana Roo en México.",
+    "lat": 18.11028,
+    "lon": -88.80783,
+    "imagen": null,
+    "wiki": "Noh Kah",
+    "fuente": "https://www.wikidata.org/wiki/Q130646498"
+   },
+   {
+    "id": "Q133255351",
+    "nombre": "Xlahpak",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xlahpak, también conocido como Vigía del Lago, es un yacimiento arqueológico de la cultura maya ubicado en la orilla de la laguna Chunyaxché dentro de la Reserva de la Biosfera Sian Ka'an del estado de Quintana Roo en México.",
+    "lat": 20.06681,
+    "lon": -87.56045,
+    "imagen": "México_-_Sian_Ka'an,_Xlahpak_temple_of_the_watch_of_the_lake.JPG",
+    "wiki": "Vigía del Lago-Xlahpak",
+    "fuente": "https://www.wikidata.org/wiki/Q133255351"
+   },
+   {
+    "id": "Q130332172",
+    "nombre": "Pol Box",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Pol Box es un sitio arqueológico maya ubicado en el estado de Quintana Roo, México.",
+    "lat": 18.54556,
+    "lon": -88.81361,
+    "imagen": null,
+    "wiki": "Pol Box",
+    "fuente": "https://www.wikidata.org/wiki/Q130332172"
+   },
+   {
+    "id": "Q5031539",
+    "nombre": "Museo Subacuático de Arte",
+    "tipo": "Museo",
+    "descripcion": "El Museo Subacuático de Arte o MUSA es un museo ubicado bajo las aguas del mar Caribe mexicano, en las aguas que rodean Cancún, Isla Mujeres y Punta Nizuc.",
+    "lat": 21.0763,
+    "lon": -86.8463,
+    "imagen": "Musa 2 (13752167685).jpg",
+    "wiki": "Museo Subacuático de Arte",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q5031539"
+   },
+   {
+    "id": "Q14825940",
+    "nombre": "Museo Maya de Cancún",
+    "tipo": "Museo",
+    "descripcion": "El Museo Maya de Cancún es un espacio de exhibición destinado a la cultura maya que se encuentra en el kilómetro 16.5 del Bulevar Kukulcán, en la Zona Hotelera de Cancún en Quintana Roo, México.",
+    "lat": 21.07403,
+    "lon": -86.77727,
+    "imagen": "Museo Maya de Cancun.jpg",
+    "wiki": "Museo Maya de Cancún",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q14825940"
+   },
+   {
+    "id": "Q123560921",
+    "nombre": "Catedral de la Santa Cruz y la Santísima Trinidad",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Cancún, oficialmente Catedral de la Santa Cruz y la Santísima Trinidad es un templo católico elevado al rango de catedral, siendo sede la Diócesis de Cancún-Chetumal. Está ubicada en la ciudad de Cancún, del municipio de Benito Juárez, en el estado mexicano de Quintana Roo.",
+    "lat": 21.15719,
+    "lon": -86.84256,
+    "imagen": null,
+    "wiki": "Catedral de Cancún",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q123560921"
+   },
+   {
+    "id": "Q131837610",
+    "nombre": "Templo de los Cormoranes",
+    "tipo": "Templo",
+    "descripcion": "El Templo de los Cormoranes es un templo ceremonial maya ubicado en la antigua ciudad de Dzibanché al sur del estado de Quintana Roo en México.",
+    "lat": 18.63875,
+    "lon": -88.75941,
+    "imagen": null,
+    "wiki": "Templo de los Cormoranes",
+    "fuente": "https://www.wikidata.org/wiki/Q131837610"
+   },
+   {
+    "id": "Q16569808",
+    "nombre": "Fuerte de San Felipe de Bacalar",
+    "tipo": "Fuerte",
+    "descripcion": "El Fuerte de San Felipe de Bacalar o Castillo de San Felipe de Bacalar fue un presidio novohispano del siglo XVIII situado en Bacalar, estado de Quintana Roo, en México.",
+    "lat": 18.67694,
+    "lon": -88.39528,
+    "imagen": "SanFelipeBacalarNHMDF.JPG",
+    "wiki": "Fuerte de San Felipe de Bacalar",
+    "municipio": "Bacalar",
+    "fuente": "https://www.wikidata.org/wiki/Q16569808"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q559789",
+    "nombre": "Sian Ka'an",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera de Sian Ka'an (del maya: Sian Ka'an ‘puerta del cielo’‘lugar donde empieza el cielo’) es un espacio natural protegido que se localiza en la costa caribeña del estado de Quintana Roo, México.",
+    "lat": 19.38333,
+    "lon": -87.79167,
+    "imagen": "México - Sian Ka'an, Boat Tour.JPG",
+    "wiki": "Sian Ka'an",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)",
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q559789"
+   },
+   {
+    "id": "Q8969",
+    "nombre": "Cancún",
+    "tipo": "Ciudad",
+    "descripcion": "Cancún (del maya: Kaan kuum ‘olla o nido de serpientes’) es una ciudad turística mexicana ubicada en la península de Yucatánen el estado de Quintana Roo, cabecera del municipio de Benito Juárez.",
+    "lat": 21.16142,
+    "lon": -86.82481,
+    "imagen": "CancúnCollage.jpg",
+    "wiki": "Cancún",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q8969"
+   },
+   {
+    "id": "Q459553",
+    "nombre": "Chetumal",
+    "tipo": "Ciudad",
+    "descripcion": "Chetumal (del maya: Cháak te' éemal ‘Allí donde bajan las lluvias’) es una ciudad mexicana, capital del estado de Quintana Roo y cabecera del municipio de Othón P. Blanco, ubicada en la península de Yucatán a orillas de la bahía de Chetumal.",
+    "lat": 18.49389,
+    "lon": -88.2979,
+    "imagen": "Parque de los Caimanes, Chetumal, Q. Roo. - panoramio.jpg",
+    "wiki": "Chetumal",
+    "municipio": "Othón P. Blanco",
+    "fuente": "https://www.wikidata.org/wiki/Q459553"
+   },
+   {
+    "id": "Q20119933",
+    "nombre": "Isla Cozumel",
+    "tipo": "Isla",
+    "descripcion": "Cozumel (del maya: Kosom lumil ‘Golondrina, Tierra de las golondrinas’) es una isla mexicana, la tercera más grande y la segunda más poblada del país. Se ubica a 19 kilómetros de la costa, en el mar Caribe, a 62 km al sur de Cancún.",
+    "lat": 20.41667,
+    "lon": -86.91667,
+    "imagen": "Cozumel Aerial View.jpg",
+    "wiki": "Isla de Cozumel",
+    "municipio": "Cozumel",
+    "fuente": "https://www.wikidata.org/wiki/Q20119933"
+   },
+   {
+    "id": "Q989988",
+    "nombre": "Playa del Carmen",
+    "tipo": "Ciudad",
+    "descripcion": "Playa del Carmen es una ciudad mexicana, cabecera del municipio homónimo, en Quintana Roo.",
+    "lat": 20.62814,
+    "lon": -87.0755,
+    "imagen": "Aerial of Playa del Carmen, Mexico (28708057347).jpg",
+    "wiki": "Playa del Carmen",
+    "municipio": "Playa del Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q989988"
+   },
+   {
+    "id": "Q1020769",
+    "nombre": "Isla Mujeres",
+    "tipo": "Isla",
+    "descripcion": "Isla Mujeres es una ciudad que se encuentra en la isla del mismo nombre, ubicada en el mar Caribe, muy cerca de la península de Yucatán, al sureste de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mexico-12-06-07 057.jpg",
+    "wiki": "Isla Mujeres",
+    "municipio": "Isla Mujeres",
+    "fuente": "https://www.wikidata.org/wiki/Q1020769"
+   },
+   {
+    "id": "Q2117481",
+    "nombre": "Puerto Morelos",
+    "tipo": "Ciudad",
+    "descripcion": "Puerto Morelos es el principal puerto del estado mexicano de Quintana Roo y cabecera del municipio homónimo. Se encuentra al norte del estado, 33 km al sur de Cancún.",
+    "lat": 20.85361,
+    "lon": -86.87528,
+    "imagen": "Puerto-Morelos-plaza.jpg",
+    "wiki": "Puerto Morelos",
+    "municipio": "Puerto Morelos",
+    "fuente": "https://www.wikidata.org/wiki/Q2117481"
+   },
+   {
+    "id": "Q1403187",
+    "nombre": "Felipe Carrillo Puerto",
+    "tipo": "Ciudad",
+    "descripcion": "Felipe Carrillo Puerto (en maya: Noj Kaaj Santa Cruz) es una ciudad del estado mexicano de Quintana Roo, cabecera del municipio de Felipe Carrillo Puerto, situada en el centro del estado, en la denominada zona maya.",
+    "lat": 19.57851,
+    "lon": -88.04659,
+    "imagen": "Felipe Carrillo Puerto Quintana Roo Centro.jpg",
+    "wiki": "Felipe Carrillo Puerto (Quintana Roo)",
+    "municipio": "Felipe Carrillo Puerto",
+    "fuente": "https://www.wikidata.org/wiki/Q1403187"
+   },
+   {
+    "id": "Q998959",
+    "nombre": "Bahía de Chetumal",
+    "tipo": "Bahía",
+    "descripcion": "La bahía de Chetumal es una gran entrada del mar Caribe en el sur de la península de Yucatán, entre México y Belice.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Gulf of Honduras.jpg",
+    "wiki": "Bahía de Chetumal",
+    "fuente": "https://www.wikidata.org/wiki/Q998959"
+   },
+   {
+    "id": "Q1419105",
+    "nombre": "Sistema Ox Bel Ha",
+    "tipo": "Gruta",
+    "descripcion": "El sistema Ox Bel Ha (del maya que significa \"Tres Caminos del Agua\"; corto Ox Bel Ha) es un sistema de cuevas en Quintana Roo, México. Es la cueva submarina explorada más larga del mundo y ocupa el secundo lugar, incluidas las cuevas secas.",
+    "lat": 20.16028,
+    "lon": -87.4875,
+    "imagen": null,
+    "wiki": "Sistema Ox Bel Ha",
+    "fuente": "https://www.wikidata.org/wiki/Q1419105"
+   },
+   {
+    "id": "Q2290344",
+    "nombre": "Sistema Sac Actun",
+    "tipo": "Gruta",
+    "descripcion": "Sistema Sac Actun ( Maya Yucateco: sak aktun, que significa: ' cueva blanca') es un sistema de cuevas submarinas situado a lo largo de la costa caribeña de la península de Yucatán, con pasajes al norte y al oeste de la ciudad de Tulum.",
+    "lat": 20.24656,
+    "lon": -87.46411,
+    "imagen": "Grand Cenote 20101006.jpg",
+    "wiki": "Sistema Sac Actun",
+    "municipio": "Tulum",
+    "fuente": "https://www.wikidata.org/wiki/Q2290344"
+   },
+   {
+    "id": "Q912409",
+    "nombre": "Isla Contoy",
+    "tipo": "Isla",
+    "descripcion": "Isla Contoy es una pequeña isla mexicana, perteneciente al municipio de Isla Mujeres, se encuentra en el estado de Quintana Roo, aproximadamente a 30 km al norte de la ínsula. La isla tiene 8.75 km de largo, y de 200 a 700 m, 500 m en promedio de ancho, cuenta con una área de 230 ha. de superficie terrestre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "IslaContoy-PeterMaas.JPG",
+    "wiki": "Isla Contoy",
+    "fuente": "https://www.wikidata.org/wiki/Q912409"
+   },
+   {
+    "id": "Q4795893",
+    "nombre": "Parque nacional Arrecifes de Cozumel",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Arrecifes de Cozumel se considera como parte de la barrera arrecifal denominada “Gran Cinturón de Arrecifes del Atlántico Occidental” (también conocido como “Gran Arrecife Maya” y pertenece al “Sistema Arrecifal Mesoamericano”).",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cozumel Western Shore Sunset-27527.jpg",
+    "wiki": "Parque nacional Arrecifes de Cozumel",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q4795893"
+   },
+   {
+    "id": "Q3570845",
+    "nombre": "Parque Xcaret",
+    "tipo": "Parque temático",
+    "descripcion": "Xcaret (pronunciado [ʃkaˈɾet], /shkarét/), antiguamente Polé, fue una importante ciudad comercial de la cultura maya antes de la llegada de los conquistadores españoles en el siglo XVIII.",
+    "lat": 20.57806,
+    "lon": -87.11917,
+    "imagen": "XcaretMexico.jpg",
+    "wiki": "Xcaret",
+    "municipio": "Playa del Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q3570845"
+   },
+   {
+    "id": "Q2881167",
+    "nombre": "Laguna de Bacalar",
+    "tipo": "Lago",
+    "descripcion": "La laguna de Bacalar está localizada al sur del estado mexicano de Quintana Roo, compartida por los municipios de Bacalar y Othón P. Blanco. Se encuentra 35 km al norte de la capital del estado (Chetumal) y a un costado de la ciudad de Bacalar, por la cual recibe su nombre.",
+    "lat": 18.75,
+    "lon": -88.315,
+    "imagen": "Laguna de Bacalar.JPG",
+    "wiki": "Laguna de Bacalar",
+    "fuente": "https://www.wikidata.org/wiki/Q2881167"
+   },
+   {
+    "id": "Q41597660",
+    "nombre": "Choo-Ha",
+    "tipo": "Gruta",
+    "descripcion": "Choo-Ha, Tamcach-Ha and Multun-Ha son tres cenotes cerca del lugar Maya de Cobá en la península mexicana de Yucatán. Los tres cenotes tienen acceso al público.",
+    "lat": 20.46885,
+    "lon": -87.76776,
+    "imagen": "Cenote Choo-Ha - Cobá-3.jpg",
+    "wiki": "Choo-Ha",
+    "fuente": "https://www.wikidata.org/wiki/Q41597660"
+   },
+   {
+    "id": "Q6378151",
+    "nombre": "Parque nacional Arrecife de Puerto Morelos",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Arrecife de Puerto Morelos forma parte de la barrera arrecifal denominada «Gran Cinturón de Arrecifes del Atlántico Occidental» (también conocido como «Gran Arrecife Maya» y pertenece al Sistema Arrecifal Mesoamericano) considerada como la segunda barrera arrecifal más grande del mundo, así mismo…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Faro y arrecife Pto.Morelos.jpg",
+    "wiki": "Parque nacional Arrecife de Puerto Morelos",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6378151"
+   },
+   {
+    "id": "Q6378133",
+    "nombre": "Santuario Isla Contoy",
+    "tipo": "Parque nacional",
+    "descripcion": "El Santuario Isla Contoy es uno de los 18 santuarios naturales de México (a julio de 2016), establecido en febrero de 1998 y que protege la totalidad de la isla Contoy y 4900 ha del mar próximo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "IslaContoy-PeterMaas.JPG",
+    "wiki": "Parque nacional Isla Contoy",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6378133"
+   },
+   {
+    "id": "Q8043423",
+    "nombre": "Xel-Há",
+    "tipo": "Parque temático",
+    "descripcion": "Xel-Há es un parque acuático ubicado en el estado de Quintana Roo, México y perteneciente al municipio de Cozumel. Se caracteriza por la caleta en la que el agua subterránea de la península de Yucatán se integra al Mar Caribe, conformando un espacio para la convivencia de diversas especies marinas y de agua dulce.",
+    "lat": 20.3173,
+    "lon": -87.3568,
+    "imagen": "Xel-ha-inlet.jpg",
+    "wiki": "Xel-Há",
+    "fuente": "https://www.wikidata.org/wiki/Q8043423"
+   },
+   {
+    "id": "Q6062968",
+    "nombre": "Parque nacional Costa Occidental de Isla Mujeres, Punta Cancún y Punta Nizuc",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Costa Occidental de Isla Mujeres, Punta Cancún y Punta Nizuc forma parte de la barrera arrecifal denominada “Gran Cinturón de Arrecifes del Atlántico Occidental” (también conocido como “Gran Arrecife Maya”) y pertenece al “Sistema Arrecifal Mesoamericano”, considerada como la segunda barrera…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Landsat Cancun Mexico parque.jpg",
+    "wiki": "Parque nacional Costa Occidental de Isla Mujeres, Punta Cancún y Punta Nizuc",
+    "fuente": "https://www.wikidata.org/wiki/Q6062968"
+   },
+   {
+    "id": "Q6173852",
+    "nombre": "Área de protección de flora y fauna Yum Balam",
+    "tipo": "Área natural protegida",
+    "descripcion": "El Área de Protección de Flora y Fauna Yum Balam es, desde 1994, un espacio natural protegido situado en el sureste de México; concretamente en el extremo nororiental de la península de Yucatán, al norte del estado de Quintana Roo, en los municipios de Lázaro Cárdenas e Isla Mujeres.",
+    "lat": 21.40361,
+    "lon": -87.11278,
+    "imagen": "Flamingo Holbox island Mexico (19556796804).jpg",
+    "wiki": "Área de protección de flora y fauna Yum Balam",
+    "fuente": "https://www.wikidata.org/wiki/Q6173852"
+   },
+   {
+    "id": "Q134996543",
+    "nombre": "Zona Hotelera",
+    "tipo": "Playa",
+    "descripcion": "La Zona Hotelera es un distrito turístico designado y una franja de tierra en la costa de Cancún. Consiste en una variedad de negocios, tales como resorts, playas, tiendas, discotecas y restaurantes, orientados específicamente a atraer a los turistas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Skyline cancun mexico. (24209557802).jpg",
+    "wiki": "Zona Hotelera",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q134996543"
+   },
+   {
+    "id": "Q40363242",
+    "nombre": "Lago Cobá",
+    "tipo": "Lago",
+    "descripcion": "El Lago Cobá es un lago localizada cerca de la antigua ciudad Maya de Cobá en el centro del estado mexicano de Quintana Roo. El lago de forma casi circular tiene una zona de caña, en donde se encuentran cocodrilos.",
+    "lat": 20.49238,
+    "lon": -87.73827,
+    "imagen": "Lago Coba.jpg",
+    "wiki": "Lago Cobá",
+    "municipio": "Tulum",
+    "fuente": "https://www.wikidata.org/wiki/Q40363242"
+   },
+   {
+    "id": "Q40463688",
+    "nombre": "Laguna Boca Paila",
+    "tipo": "Lago",
+    "descripcion": "La Laguna Boca Paila es una laguna localizada al sur de Tulum al sur del estado mexicano de Quintana Roo.",
+    "lat": 20.066,
+    "lon": -87.529,
+    "imagen": "Boca Paila,east.jpg",
+    "wiki": "Laguna Boca Paila",
+    "fuente": "https://www.wikidata.org/wiki/Q40463688"
+   },
+   {
+    "id": "Q20829845",
+    "nombre": "Isla Tamalcab",
+    "tipo": "Isla",
+    "descripcion": "Tamalcab es una isla de México en el mar Caribe, ubicada en el estado de Quintana Roo. Tiene una superficie de 2,4 km2 y está deshabitada.",
+    "lat": 18.6075,
+    "lon": -88.19944,
+    "imagen": null,
+    "wiki": "Isla Tamalcab",
+    "fuente": "https://www.wikidata.org/wiki/Q20829845"
+   },
+   {
+    "id": "Q1792186",
+    "nombre": "Punta Nizuc",
+    "tipo": "Área natural protegida",
+    "descripcion": "Punta Nizuc en el estado de Quintana Roo, México, es una saliente de tierra ubicada en el extremo sur de la Isla Cancún.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Landsat Cancun Mexico parque.jpg",
+    "wiki": "Punta Nizuc",
+    "fuente": "https://www.wikidata.org/wiki/Q1792186"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q106864701",
+    "nombre": "Píib",
+    "tipo": "Platillo",
+    "descripcion": "El pib, en maya yucateco píib, es un horno de tierra típico de la península de Yucatán, en México. Esta técnica de origen prehispánico consiste en excavar un hoyo, encender un fogón con leña y piedras, y cocinar la comida (tradicionalmente cerdo o pollo) a fuego lento, todo tapado con más tierra.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Encendido de horno maya.jpg",
+    "wiki": "Píib",
+    "fuente": "https://www.wikidata.org/wiki/Q106864701"
+   },
+   {
+    "id": "Q6169294",
+    "nombre": "Xnipec",
+    "tipo": "Salsa",
+    "descripcion": "El xnipec (del maya 'hocico de perro'; pronúnciese «shnipék»), también llamado de manera genérica salsa yucateca o cebollas encurtidas es una salsa picante originaria de la península de Yucatán, en México, elaborada con chile habanero, cebolla morada, jugo de naranja agria y sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Xnipec yucateco.jpg",
+    "wiki": "Xnipec",
+    "fuente": "https://www.wikidata.org/wiki/Q6169294"
+   },
+   {
+    "id": "Q77501769",
+    "nombre": "Marquesitas",
+    "tipo": "Dulce",
+    "descripcion": "Las marquesitas son un postre mexicano originario del estado de Yucatán, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Marquesita tradicional, Malecón de Progreso, Yucatan, Mexico.jpg",
+    "wiki": "Marquesitas",
+    "fuente": "https://www.wikidata.org/wiki/Q77501769"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1043 @@
+{
+ "cve": "07",
+ "estado": "Chiapas",
+ "wikidata": "Q60123",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2085574",
+    "nombre": "Chiapa de Corzo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Chiapa de Corzo es una ciudad mexicana ubicada a la orilla del río Grijalva y cabecera del municipio homónimo, el Municipio de Chiapa de Corzo, en la Región I o Zona Metropolitana del estado de Chiapas, al sureste de México.",
+    "lat": 16.70796,
+    "lon": -93.01596,
+    "imagen": "ChiapadeCorzoFuenteColonial.jpg",
+    "wiki": "Chiapa de Corzo",
+    "municipio": "Chiapa de Corzo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2085574"
+   },
+   {
+    "id": "Q1961680",
+    "nombre": "Comitán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Comitán de Domínguez, o solamente Comitán, es una ciudad mexicana situada en el estado de Chiapas, cabecera del municipio homónimo.",
+    "lat": 16.25111,
+    "lon": -92.13417,
+    "imagen": "Comitán Central Plaza.jpg",
+    "wiki": "Comitán de Domínguez",
+    "municipio": "Comitán de Domínguez",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1961680"
+   },
+   {
+    "id": "Q27769953",
+    "nombre": "Copainalá",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Copainalá (del Náhuatl: Cohuatl, painalli, lan ‘Culebra, corredor, locativo’‘ lugar de las culebras que corrieron’). Es una población del noroeste del estado mexicano de Chiapas, cabecera del municipio del mismo nombre.",
+    "lat": 17.09361,
+    "lon": -93.21056,
+    "imagen": "Copainala.jpg",
+    "wiki": "Copainalá",
+    "municipio": "Copainalá",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q27769953"
+   },
+   {
+    "id": "Q27768283",
+    "nombre": "Ocozocoautla de Espinosa",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ocozocoautla de Espinosa es la novena ciudad por habitantes del estado de Chiapas, cabecera municipal de uno de los 124 municipios.",
+    "lat": 16.7625,
+    "lon": -93.375,
+    "imagen": "Ermita de San Bernabé 3.jpg",
+    "wiki": "Ocozocoautla de Espinosa",
+    "municipio": "Ocozocoautla de Espinosa",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q27768283"
+   },
+   {
+    "id": "Q1573453",
+    "nombre": "Palenque",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Palenque es una ciudad mexicana situada en el estado de Chiapas, cabecera del municipio homónimo. De origen maya, es una ciudad ubicada cerca del río Usumacinta, y su principal atractivo turístico es la zona arqueológica de Palenque.",
+    "lat": 17.50917,
+    "lon": -91.98222,
+    "imagen": "PalenqueLetters2020p2.jpg",
+    "wiki": "Palenque (Chiapas)",
+    "municipio": "Palenque",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1573453"
+   },
+   {
+    "id": "Q524894",
+    "nombre": "San Cristóbal de las Casas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Cristóbal de Las Casas es una ciudad mexicana, sede del poder administrativo del municipio homónimo, ubicada en la Región de Los Altos en el estado de Chiapas a aproximadamente 2,200 metros sobre el nivel del mar.",
+    "lat": 16.73702,
+    "lon": -92.63756,
+    "imagen": "Montaje de San Cristóbal de Las Casas.jpg",
+    "wiki": "San Cristóbal de Las Casas",
+    "municipio": "San Cristóbal de Las Casas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q524894"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q181427",
+    "nombre": "Palenque",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Palenque (en maya: Bàak' y también conocida como Lakam Há) es una zona arqueológica enclavada en el centro de la selva tropical del municipio de Palenque, ubicada al noreste del estado mexicano de Chiapas, a 282 km de Tuxtla Gutiérrez y a 117 km de Ocosingo, cerca del río Usumacinta.",
+    "lat": 17.48417,
+    "lon": -92.04639,
+    "imagen": "055 Palenque Pakal Maji (29).JPG",
+    "wiki": "Zona arqueológica de Palenque",
+    "municipio": "Palenque",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q181427"
+   },
+   {
+    "id": "Q2559153",
+    "nombre": "Templo de las Inscripciones",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "B'lunt Yej Teʼ Naah (Pronunciación en maya: [blunt jex teʔ naːh]) “Casa de las Nueve Lanzas Afiladas”[1] o Templo I es la edificación más alta y de más importancia de la antigua ciudad de Lakam Ha, capital del reino de B'aakal perteneciente a la cultura maya, durante el período del Clásico tardío, situada en el…",
+    "lat": 17.4836,
+    "lon": -92.0468,
+    "imagen": "Palenque temple 1.jpg",
+    "wiki": "Templo de las Inscripciones (Palenque)",
+    "municipio": "Palenque",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2559153"
+   },
+   {
+    "id": "Q662263",
+    "nombre": "Yaxchilán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yaxchilán (AFI: [ʝaʃtʃiˈlan], en maya: Pa' Chan) es una antigua ciudad de la cultura maya situada en la orilla del Río Usumacinta, en lo que hoy es el municipio de Ocosingo del estado de Chiapas en México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Yaxchilan 1.jpg",
+    "wiki": "Yaxchilán",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q662263"
+   },
+   {
+    "id": "Q605455",
+    "nombre": "Bonampak",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Bonampak que significa \"Muros pintados\", conocido antiguamente como Ak'e y en sus inmediaciones como Usiij Witz, \"Cerro del Zopilote\", es un sitio arqueológico de la cultura maya en la Selva Lacandona del estado de Chiapas, México.",
+    "lat": 16.704,
+    "lon": -91.065,
+    "imagen": "Stairs bonampak.jpg",
+    "wiki": "Bonampak",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q605455"
+   },
+   {
+    "id": "Q1042074",
+    "nombre": "Toniná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Toniná es una zona arqueológica perteneciente a la cultura maya, que contiene abundantes restos arqueológicos, así como edificios singulares, correspondientes a dicha cultura.",
+    "lat": 16.90122,
+    "lon": -92.00967,
+    "imagen": "Toniná (17).jpg",
+    "wiki": "Toniná",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q1042074"
+   },
+   {
+    "id": "Q2334607",
+    "nombre": "Izapa",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Izapa es un antiguo y extenso yacimiento arqueológico localizado en la región del Soconusco del estado mexicano de Chiapas, en el municipio de Tuxtla Chico.",
+    "lat": 14.92341,
+    "lon": -92.17982,
+    "imagen": "Vista_de_las_pirámides_de_Izapa.jpg",
+    "wiki": "Izapa",
+    "fuente": "https://www.wikidata.org/wiki/Q2334607"
+   },
+   {
+    "id": "Q655127",
+    "nombre": "Chinkultic",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chinkultic es un yacimiento arqueológico precolombino de la cultura maya ubicado a 55 kilómetros de Comitán, en el estado de Chiapas, México, construido originalmente por el pueblo maya como una ciudad lacustre durante el periodo preclásico.",
+    "lat": 16.129,
+    "lon": -91.785,
+    "imagen": "Estructura 1 Chinkultic.JPEG",
+    "wiki": "Chinkultic",
+    "municipio": "La Trinitaria",
+    "fuente": "https://www.wikidata.org/wiki/Q655127"
+   },
+   {
+    "id": "Q2867454",
+    "nombre": "Tenam Puente",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Zona Arqueológica de Tenam Puente es un sitio arqueológico de la cultura maya localizado en el valle de Balum Canan, en el municipio de La Trinitaria, a 12 kilómetros al sur de Comitán, Chiapas, en México. Se accede a él por una desviación de la carretera panamericana n.º 190 que conduce a La Trinitaria.",
+    "lat": 16.13306,
+    "lon": -92.09722,
+    "imagen": "Estructura 7-Tenam Puente.JPG",
+    "wiki": "Tenam Puente",
+    "fuente": "https://www.wikidata.org/wiki/Q2867454"
+   },
+   {
+    "id": "Q4384315",
+    "nombre": "Zona Arqueológica de Chiapa de Corzo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Napiniacá (del chiapaneco napijuá 'pueblo', yaka 'grande', 'Pueblo grande') es el nombre que tuvo en el período posclásico el asentamiento precolombino que hoy constituye la zona arqueológica de Chiapa de Corzo. Se ubica al oriente de la actual ciudad de Chiapa de Corzo, en el centro del estado de Chiapas (México).",
+    "lat": 16.70315,
+    "lon": -93.00373,
+    "imagen": "Mound 1.JPG",
+    "wiki": "Zona arqueológica de Chiapa de Corzo",
+    "municipio": "Chiapa de Corzo",
+    "fuente": "https://www.wikidata.org/wiki/Q4384315"
+   },
+   {
+    "id": "Q2309062",
+    "nombre": "Paso de la Amada",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Paso de la Amada es un antiguo sitio arqueológico ubicado en el municipio de Mazatán, en el estado mexicano de Chiapas, en la región de Soconusco.",
+    "lat": 14.87653,
+    "lon": -92.49072,
+    "imagen": "Paso de la amada figurine.PNG",
+    "wiki": "Paso de la Amada",
+    "fuente": "https://www.wikidata.org/wiki/Q2309062"
+   },
+   {
+    "id": "Q1800215",
+    "nombre": "El Lagartero",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Lagartero es una zona arqueológica de la cultura maya prehispánica localizada sobre un grupo de islas selváticas en los Lagos de Colón del municipio de La Trinitaria en el estado de Chiapas, México.",
+    "lat": 15.8275,
+    "lon": -91.88389,
+    "imagen": "El_Hombre_y_la_Naturaleza.jpg",
+    "wiki": "El Lagartero",
+    "fuente": "https://www.wikidata.org/wiki/Q1800215"
+   },
+   {
+    "id": "Q1394781",
+    "nombre": "Plan de Ayutla",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Plan de Ayutla, posible ‘Ak’e’ es un sitio arqueológico de la precolombina civilización maya. Se ubica en el municipio de Ocosingo del estado mexicano de Chiapas.",
+    "lat": 16.785,
+    "lon": -91.27994,
+    "imagen": "PlanAyutla2.JPG",
+    "wiki": "Plan de Ayutla (zona arqueológica)",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q1394781"
+   },
+   {
+    "id": "Q3392976",
+    "nombre": "Santa Elena Poco Uinic",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Santa Elena Poco Uinic o simplemente Poco Uinic, es un sitio arqueológico del periodo clásico de la cultura maya localizado en el estado de Chiapas al sur de México conocido principalmente por el hallazgo de una estela de piedra que documenta un eclipse solar que de acuerdo a la inscripción jeroglífica de la cuenta…",
+    "lat": 16.58748,
+    "lon": -91.73902,
+    "imagen": null,
+    "wiki": "Santa Elena Poco Uinic",
+    "fuente": "https://www.wikidata.org/wiki/Q3392976"
+   },
+   {
+    "id": "Q16242410",
+    "nombre": "Jolja'",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Jolja’, también conocido como la Cueva de Jolja’, es un yacimiento arqueológico prehispánico que alberga una gran cantidad de pintura rupestre de la cultura maya ubicado al interior de un grupo de cavernas sobre la afluencia del río Ixteljá del municipio de Tumbalá al norte del estado de Chiapas en México.",
+    "lat": 17.33333,
+    "lon": -92.31667,
+    "imagen": null,
+    "wiki": "Jolja'",
+    "fuente": "https://www.wikidata.org/wiki/Q16242410"
+   },
+   {
+    "id": "Q125849002",
+    "nombre": "Lacanhá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Lacanhá (o Lacanjá) es un sitio arqueológico de la cultura maya ubicado al interior de la Selva Lacandona del estado de Chiapas, México sobre la ribera del río Lacanjá.",
+    "lat": 16.603,
+    "lon": -90.9141,
+    "imagen": "Lacanja 01.JPG",
+    "wiki": "Lacanhá",
+    "fuente": "https://www.wikidata.org/wiki/Q125849002"
+   },
+   {
+    "id": "Q131107370",
+    "nombre": "El Chicozapote",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Chicozapote es un sitio arqueológico de la cultura maya en la región de la Cuenca del Usumacinta del estado de Chiapas, México. El Chicozapote fue durante el periodo clásico mesoamericano un estado maya subordinado al reino de Yaxchilán.",
+    "lat": 16.96667,
+    "lon": -93.36667,
+    "imagen": null,
+    "wiki": "El Chicozapote",
+    "fuente": "https://www.wikidata.org/wiki/Q131107370"
+   },
+   {
+    "id": "Q132327592",
+    "nombre": "Tenam Rosario",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tenam Rosario es un sitio arqueológico de la cultura maya ubicado en el municipio de La Trinitaria al sur del estado de Chiapas en México.",
+    "lat": 15.99928,
+    "lon": -91.98024,
+    "imagen": "Terracotta_Figurine_Fragment,_Chiapas,_Late_Classic,_600-900_AD.jpg",
+    "wiki": "Tenam Rosario",
+    "fuente": "https://www.wikidata.org/wiki/Q132327592"
+   },
+   {
+    "id": "Q133286165",
+    "nombre": "Chancalá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chancalá (también conocido como La Cascada-Chancalá), originalmente llamado Chak K'uh, es una zona arqueológica de la cultura maya ubicada en el municipio de Palenque del estado de Chiapas en México.",
+    "lat": 17.31905,
+    "lon": -91.72274,
+    "imagen": null,
+    "wiki": "Chancalá",
+    "fuente": "https://www.wikidata.org/wiki/Q133286165"
+   },
+   {
+    "id": "Q133620366",
+    "nombre": "Ijik Xajlel",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ijik Xajlel es un yacimiento arqueológico de la cultura maya ubicado al margen del río Usumacinta en el estado de Chiapas en México.",
+    "lat": 17.11244,
+    "lon": -91.27069,
+    "imagen": null,
+    "wiki": "Ijik Xajlel",
+    "fuente": "https://www.wikidata.org/wiki/Q133620366"
+   },
+   {
+    "id": "Q125989657",
+    "nombre": "Yaxún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yaxún es un yacimiento arqueológico de la cultura maya ubicado entre el río Lacantún y el río Usumacinta en el municipio de Benemérito de las Américas del estado de Chiapas, México.",
+    "lat": 16.463,
+    "lon": -90.66958,
+    "imagen": null,
+    "wiki": "Yaxún",
+    "municipio": "Benemérito de las Américas",
+    "fuente": "https://www.wikidata.org/wiki/Q125989657"
+   },
+   {
+    "id": "Q126122537",
+    "nombre": "Chinikihá",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chinikihá (“boca donde el agua desaparece”) es una extensa zona arqueológica de la cultura maya localizada en el municipio de Palenque del estado de Chiapas, México que durante el periodo clásico mesoamericano constituyó un gran centro político maya y la capital de una dinastía mayor de la subregión de Palenque con…",
+    "lat": 17.41981,
+    "lon": -91.65183,
+    "imagen": null,
+    "wiki": "Chinikihá",
+    "fuente": "https://www.wikidata.org/wiki/Q126122537"
+   },
+   {
+    "id": "Q126694605",
+    "nombre": "El Cayo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Cayo, originalmente llamado Yax Niil y de forma extendida Yax Akul Ha’ Yax Nil (“río de tortugas verdes”), es una zona arqueológica de la cultura maya datada en el periodo clásico ubicada en la Cuenca del Usumacinta del estado de Chiapas, México.",
+    "lat": 17.06,
+    "lon": -91.21671,
+    "imagen": null,
+    "wiki": "El Cayo (sitio arqueológico)",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q126694605"
+   },
+   {
+    "id": "Q130525783",
+    "nombre": "El Palma",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Palma, originalmente llamado Lakamtuun, es un sitio arqueológico de la cultura maya ubicado sobre el río Lacantún en el municipio de Marqués de Comillas del estado de Chiapas, en México.",
+    "lat": 16.36721,
+    "lon": -90.74472,
+    "imagen": null,
+    "wiki": "El Palma",
+    "fuente": "https://www.wikidata.org/wiki/Q130525783"
+   },
+   {
+    "id": "Q9024025",
+    "nombre": "Los Horcones",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica Los Horcones, está situada en el lado norte del Cerro de Bernal, en lo alto de una pequeña cordillera situada en el lado sur de una planicie costera. Perteneciente al municipio de Tonalá, Chiapas.",
+    "lat": 16.12917,
+    "lon": -93.74472,
+    "imagen": "Los_Horcones_04871.jpg",
+    "wiki": "Los Horcones (zona arqueológica)",
+    "fuente": "https://www.wikidata.org/wiki/Q9024025"
+   },
+   {
+    "id": "Q131298211",
+    "nombre": "Saknatún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Saknatún es un sitio arqueológico de la cultura maya ubicado cerca del curso del río Lacantún al sur de la Reserva de la Biósfera Montes Azules en el municipio de Ocosingo del estado de Chiapas, México.",
+    "lat": 16.10756,
+    "lon": -91.00819,
+    "imagen": null,
+    "wiki": "Saknatún",
+    "fuente": "https://www.wikidata.org/wiki/Q131298211"
+   },
+   {
+    "id": "Q5758577",
+    "nombre": "Catedral de San Marcos Evangelista",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Metropolitana de San Marcos Evangelista de Tuxtla Gutiérrez, también llamada simplemente como Catedral de San Marcos o Catedral de Tuxtla, es la sede de la arquidiócesis de Tuxtla Gutiérrez. Está ubicada en el lado sur de la Plaza Central de la ciudad capital del estado de Chiapas.",
+    "lat": 16.7533,
+    "lon": -93.1158,
+    "imagen": "Tuxtla06.jpg",
+    "wiki": "Catedral metropolitana de Tuxtla",
+    "fuente": "https://www.wikidata.org/wiki/Q5758577"
+   },
+   {
+    "id": "Q121537",
+    "nombre": "Na Bolom",
+    "tipo": "Museo",
+    "descripcion": "Na Bolom es un museo en San Cristóbal de las Casas en el estado mexicano de Chiapas. El nombre viene del idioma maya tzotzil y quiere decir ‘Casa del Jaguar’.",
+    "lat": 16.74163,
+    "lon": -92.6298,
+    "imagen": "Casa nah bolom.JPG",
+    "wiki": "Na Bolom",
+    "municipio": "San Cristóbal de Las Casas",
+    "fuente": "https://www.wikidata.org/wiki/Q121537"
+   },
+   {
+    "id": "Q5912183",
+    "nombre": "Iglesia de Santo Domingo",
+    "tipo": "Templo",
+    "descripcion": "El Templo y antiguo convento de Santo Domingo es un edificio ubicado en San Cristóbal de las Casas, México.",
+    "lat": 16.74164,
+    "lon": -92.63728,
+    "imagen": "Sancris08.jpg",
+    "wiki": "Iglesia de Santo Domingo (San Cristóbal de Las Casas)",
+    "fuente": "https://www.wikidata.org/wiki/Q5912183"
+   },
+   {
+    "id": "Q16243151",
+    "nombre": "Reina Roja",
+    "tipo": "Monumento",
+    "descripcion": "Se conoce como la Reina Roja a la osamenta encontrada en 1994 en el Templo XIII de las ruinas arqueológicas de Palenque. Aunque su identidad todavía no se ha confirmado, las investigaciones sugieren que podría tratarse de Tz'akbu Ajaw, también conocida como Ahpo-Hel, quien era esposa del ahau Pakal “el Grande”.",
+    "lat": 17.4837,
+    "lon": -92.0473,
+    "imagen": "Ajuar funerario de la Reina Roja - 4.jpg",
+    "wiki": "Reina Roja (Palenque)",
+    "fuente": "https://www.wikidata.org/wiki/Q16243151"
+   },
+   {
+    "id": "Q6940551",
+    "nombre": "Exconvento de Santo Domingo",
+    "tipo": "Museo",
+    "descripcion": "El Exconvento de Santo Domingo de Guzmán se encuentra localizado en la ciudad de Chiapa de Corzo en el estado de Chiapas, México.",
+    "lat": 16.70635,
+    "lon": -93.01794,
+    "imagen": "FirstDisplayMuseoLaca2.jpg",
+    "wiki": "Exconvento de Santo Domingo",
+    "fuente": "https://www.wikidata.org/wiki/Q6940551"
+   },
+   {
+    "id": "Q7857215",
+    "nombre": "Templo de Tuxtla Gutiérrez",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Tuxtla Gutiérrez es el templo número 75 operado por la Iglesia de Jesucristo de los Santos de los Últimos Días (Iglesia SUD). Tuxtla Gutiérrez es la capital de Chiapas, el estado más sureño de México y una región famosa por sus muchas ruinas arqueológicas.",
+    "lat": 16.7642,
+    "lon": -93.1592,
+    "imagen": "Tuxtla Gutiérrez México Temple.JPG",
+    "wiki": "Templo de Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q7857215"
+   },
+   {
+    "id": "Q2964915",
+    "nombre": "Cristo de Chiapas",
+    "tipo": "Monumento",
+    "descripcion": "El Glorioso Cristo de Chiapas es un monumento colosal representativo de Jesucristo, ubicado en la ciudad de Tuxtla Gutiérrez, Chiapas.",
+    "lat": 16.7176,
+    "lon": -93.121,
+    "imagen": "Cristo de Copoya - panoramio (1).jpg",
+    "wiki": "Glorioso Cristo de Chiapas",
+    "municipio": "Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q2964915"
+   },
+   {
+    "id": "Q7309108",
+    "nombre": "Museo Regional de Antropología e Historia de Chiapas",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Chiapas es un museo ubicado en Tuxtla Gutiérrez que se construyó entre 1979 y 1982 y se inauguró en 1984. Esta dedicado al estudio de la arqueología, la antropología y la historia de Chiapas.",
+    "lat": 16.75984,
+    "lon": -93.10673,
+    "imagen": "PatioMuseoRegTuxtla.jpg",
+    "wiki": "Museo Regional de Chiapas",
+    "municipio": "Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q7309108"
+   },
+   {
+    "id": "Q118469385",
+    "nombre": "Catedral de San Cristóbal de las Casas",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de San Cristóbal de Las Casas, también llamada simplemente Catedral de San Cristóbal es la sede de la Diócesis de San Cristóbal de Las Casas. Se ubica en el lado norte de la plaza 31 de marzo o parque central de la ciudad de San Cristóbal de Las Casas, en el estado mexicano de Chiapas.",
+    "lat": 16.73754,
+    "lon": -92.63774,
+    "imagen": "Cathedral Facade - San Cristobal de las Casas - Chiapas - Mexico (15651815701).jpg",
+    "wiki": "Catedral de San Cristóbal de Las Casas",
+    "municipio": "San Cristóbal de Las Casas",
+    "fuente": "https://www.wikidata.org/wiki/Q118469385"
+   },
+   {
+    "id": "Q6033103",
+    "nombre": "Museo Alberto Ruz Lhuillier",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio de Palenque “Alberto Ruz Lhuillier” se encuentra en la zona arqueológica de Palenque en el estado mexicano de Chiapas, en el kilómetro 6.5 de la carretera ramal Palenque-Zona arqueológica.",
+    "lat": 17.48873,
+    "lon": -92.04206,
+    "imagen": "Palenque - El Palacio - Rekonstruktion.jpg",
+    "wiki": "Museo Alberto Ruz Lhuillier",
+    "fuente": "https://www.wikidata.org/wiki/Q6033103"
+   },
+   {
+    "id": "Q24509625",
+    "nombre": "Museo de Medicina Maya",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Medicina Maya es un recinto museográfico ubicado en San Cristóbal de Las Casas, Chiapas. Su propósito es la difusión de las prácticas curativas tsotsil-tseltal en el estado de Chiapas.",
+    "lat": 16.7504,
+    "lon": -92.63857,
+    "imagen": "Museo de la Medicina Maya 4.jpg",
+    "wiki": "Museo de Medicina Maya",
+    "municipio": "San Cristóbal de Las Casas",
+    "fuente": "https://www.wikidata.org/wiki/Q24509625"
+   },
+   {
+    "id": "Q6464417",
+    "nombre": "La Pila",
+    "tipo": "Monumento",
+    "descripcion": "La Pila o La Corona es una fuente situada en el parque Central de Chiapa de Corzo, Chiapas, México. Fue construida en 1562 en estilo mudéjar, de ladrillo en forma de un diamante.",
+    "lat": 16.70783,
+    "lon": -93.01696,
+    "imagen": "ChiapadeCorzoFuenteColonial.jpg",
+    "wiki": "La Pila (Chiapa de Corzo)",
+    "municipio": "Chiapa de Corzo",
+    "fuente": "https://www.wikidata.org/wiki/Q6464417"
+   },
+   {
+    "id": "Q131601662",
+    "nombre": "Templo del Sol",
+    "tipo": "Templo",
+    "descripcion": "El Templo del Sol es un templo ceremonial de la civilización maya dedicado al dios solar K'inich Taj Wayib' (dios GIII) también asociado al jaguar del inframundo y la guerra ubicado en la antigua ciudad maya de Palenque en el estado de Chiapas al sur de México.",
+    "lat": 17.48278,
+    "lon": -92.04589,
+    "imagen": "Mayan Temple of the Sun.jpg",
+    "wiki": "Templo del Sol (Palenque)",
+    "fuente": "https://www.wikidata.org/wiki/Q131601662"
+   },
+   {
+    "id": "Q16609687",
+    "nombre": "Museo Botánico de Tuxtla Gutiérrez",
+    "tipo": "Museo",
+    "descripcion": "El Museo Botánico de Tuxtla Gutiérrez también conocido como Museo de las Maderas, es un museo ubicado en Tuxtla Gutiérrez que se fundó en 1951 junto con el Jardín Botánico Faustino Miranda bajo la tutela de Faustino Miranda,y que está dedicado al estudio, enseñanza y divulgación de la riqueza vegetal de Chiapas.",
+    "lat": 16.75914,
+    "lon": -93.10815,
+    "imagen": "Museo Botanico. Dr. Faustino Miranda - panoramio.jpg",
+    "wiki": "Museo Botánico de Tuxtla Gutiérrez",
+    "municipio": "Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q16609687"
+   },
+   {
+    "id": "Q16609809",
+    "nombre": "Museo Mesoamericano del Jade",
+    "tipo": "Museo",
+    "descripcion": "El Museo Mesoamericano del Jade se encuentra en San Cristóbal de Las Casas de México, el espacio utilizado como museo está situado en la Casa del Jade, centro cultural y empresa líder en el conocimiento y manejo del Jade en Mesoamérica.",
+    "lat": 16.74121,
+    "lon": -92.6321,
+    "imagen": "EntranceMuseoJadeSanCris.JPG",
+    "wiki": "Museo Mesoamericano del Jade",
+    "municipio": "San Cristóbal de Las Casas",
+    "fuente": "https://www.wikidata.org/wiki/Q16609809"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q6378098",
+    "nombre": "Parque nacional Palenque",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Palenque es un espacio natural protegido ubicado en la zona arqueológica de Palenque, Chiapas, este parque nacional ocupa una superficie aproximada de 1,772 hectáreas, fue creado mediante un decreto expedido el 20 de julio de 1981 por el entonces presidente de México, José López Portillo.",
+    "lat": 17.48417,
+    "lon": -92.04639,
+    "imagen": "Panoramica de Palenke Mexico.jpg",
+    "wiki": "Parque nacional Palenque",
+    "municipio": "Palenque",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6378098"
+   },
+   {
+    "id": "Q207429",
+    "nombre": "Tuxtla Gutiérrez",
+    "tipo": "Ciudad",
+    "descripcion": "Tuxtla Gutiérrez, también conocida como Tuxtla, es la capital del estado mexicano de Chiapas y la ciudad más poblada de este.",
+    "lat": 16.75306,
+    "lon": -93.11556,
+    "imagen": "Tuxtla Gutiérrez - Mosaico Fotográfico.png",
+    "wiki": "Tuxtla Gutiérrez",
+    "municipio": "Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q207429"
+   },
+   {
+    "id": "Q988225",
+    "nombre": "Tapachula de Córdova y Ordóñez",
+    "tipo": "Ciudad",
+    "descripcion": "Tapachula de Córdova y Ordóñez, también conocida simplemente como Tapachula (en mam: Tapaxlan) es una ciudad de la frontera sur, cabecera del municipio de Tapachula, ubicada en la Región del Soconusco en el estado de Chiapas, situada entre la vertiente sur de la Sierra Madre de Chiapas y la estrecha llanura de la…",
+    "lat": 14.91107,
+    "lon": -92.26432,
+    "imagen": "EnteringTapachula.JPG",
+    "wiki": "Tapachula de Córdova y Ordóñez",
+    "municipio": "Tapachula",
+    "fuente": "https://www.wikidata.org/wiki/Q988225"
+   },
+   {
+    "id": "Q841189",
+    "nombre": "Chichonal",
+    "tipo": "Volcán",
+    "descripcion": "El volcán El Chichón, más conocido como Chichonalen las regiones cercanas (Chiapas, Tabasco, Sur de Veracruz), es un volcán estratificado activo que se localiza en la región montañosa que colinda con los municipios de Pichucalco, Francisco León y Chapultenango, en el noroeste del estado mexicano de Chiapas, a unos 15…",
+    "lat": 17.36,
+    "lon": -93.22778,
+    "imagen": "El Chichón.jpg",
+    "wiki": "El Chichón",
+    "municipio": "Francisco León",
+    "fuente": "https://www.wikidata.org/wiki/Q841189"
+   },
+   {
+    "id": "Q27036",
+    "nombre": "Sierra Madre de Chiapas",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra Madre (también denominada Cordillera Central, y conocida en Guatemala como Sierra Madre) es una cordillera en Centroamérica que atraviesa el sureste de México, Guatemala, y partes de El Salvador y Honduras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Central american mountains.jpg",
+    "wiki": "Sierra Madre de Chiapas",
+    "fuente": "https://www.wikidata.org/wiki/Q27036"
+   },
+   {
+    "id": "Q2571410",
+    "nombre": "Pijijiapan",
+    "tipo": "Ciudad",
+    "descripcion": "Pijijiapan es una población del estado mexicano de Chiapas. Localizado en el Istmo-Costa, en la región costa del estado.",
+    "lat": 15.69167,
+    "lon": -93.20932,
+    "imagen": "Presidencia municipal pijijiapan.JPG",
+    "wiki": "Pijijiapan",
+    "municipio": "Pijijiapan",
+    "fuente": "https://www.wikidata.org/wiki/Q2571410"
+   },
+   {
+    "id": "Q775138",
+    "nombre": "Cañón del Sumidero",
+    "tipo": "Área natural protegida",
+    "descripcion": "El cañón del Sumidero es un estrecho cañón de gran profundidad situado a 5 km de Tuxtla Gutiérrez, capital del estado de Chiapas, México; dentro del municipio de Chiapa de Corzo.",
+    "lat": 16.84833,
+    "lon": -93.10556,
+    "imagen": "Canon del Sumideiro 2.jpg",
+    "wiki": "Cañón del Sumidero",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q775138"
+   },
+   {
+    "id": "Q577886",
+    "nombre": "Cascadas de Agua Azul",
+    "tipo": "Cascada",
+    "descripcion": "El área de protección de flora y fauna Cascadas de Agua Azul, también de la Catarata de Agua Azul, es una área de protección de flora y fauna de México localizada en el estado de Chiapas de reconocimiento internacional.",
+    "lat": 17.2557,
+    "lon": -92.11595,
+    "imagen": "Cascadas de Agua Azul 4.jpg",
+    "wiki": "Cascadas de Agua Azul",
+    "municipio": "Tumbalá",
+    "fuente": "https://www.wikidata.org/wiki/Q577886"
+   },
+   {
+    "id": "Q1962619",
+    "nombre": "Las Margaritas",
+    "tipo": "Ciudad",
+    "descripcion": "Las Margaritas es la cabecera del municipio homónimo, localizado en la región de La Selva de Chiapas (México). Esta ciudad concentra aproximadamente al 20 % de los habitantes del municipio y se localiza en el extremo noroeste del mismo, muy cerca del límite con Comitán.",
+    "lat": 16.31595,
+    "lon": -91.98157,
+    "imagen": null,
+    "wiki": "Las Margaritas (Chiapas)",
+    "municipio": "Las Margaritas",
+    "fuente": "https://www.wikidata.org/wiki/Q1962619"
+   },
+   {
+    "id": "Q538031",
+    "nombre": "Frontera Comalapa",
+    "tipo": "Ciudad",
+    "descripcion": "Frontera Comalapa es una ciudad del estado de Chiapas, México. Es cabecera del municipio homónimo.",
+    "lat": 15.66016,
+    "lon": -92.14105,
+    "imagen": "FronteraComalapaCenter.jpg",
+    "wiki": "Frontera Comalapa",
+    "municipio": "Frontera Comalapa",
+    "fuente": "https://www.wikidata.org/wiki/Q538031"
+   },
+   {
+    "id": "Q53543",
+    "nombre": "Ocosingo",
+    "tipo": "Ciudad",
+    "descripcion": "Ocosingo es una ciudad localizada en el norte del estado mexicano de Chiapas. Es cabecera del municipio homónimo —el más extenso de Chiapas por mucho ocupando la práctica totalidad del oriente del estado— y la octava ciudad por población de Chiapas.",
+    "lat": 16.90722,
+    "lon": -92.09611,
+    "imagen": "EnteringOcosingo1.JPG",
+    "wiki": "Ocosingo",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q53543"
+   },
+   {
+    "id": "Q20254830",
+    "nombre": "Cacahoatán",
+    "tipo": "Ciudad",
+    "descripcion": "Cacahoatán es una localidad del estado mexicano de Chiapas, cabecera del municipio homónimo.",
+    "lat": 14.98979,
+    "lon": -92.16811,
+    "imagen": "Parque Cacahoatán.jpg",
+    "wiki": "Cacahoatán",
+    "municipio": "Cacahoatán",
+    "fuente": "https://www.wikidata.org/wiki/Q20254830"
+   },
+   {
+    "id": "Q27769785",
+    "nombre": "Escuintla",
+    "tipo": "Ciudad",
+    "descripcion": "Escuintla es una pequeña ciudad mexicana que se ubica al sur del estado mexicano de Chiapas. Su cabecera municipal es del mismo nombre.",
+    "lat": 15.31927,
+    "lon": -92.65856,
+    "imagen": "Parque Central de Escuintla.jpg",
+    "wiki": "Escuintla (Chiapas)",
+    "municipio": "Escuintla",
+    "fuente": "https://www.wikidata.org/wiki/Q27769785"
+   },
+   {
+    "id": "Q1968860",
+    "nombre": "Parque nacional Lagunas de Montebello",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "El Parque Nacional Lagunas de Montebello, Ubicado en el municipio de La Trinitaria, Chiapas, México, [lugar caracterizado por sus atracciones turísticas naturales, históricas y arqueológicas], belleza natural única en su tipo, por sus lagos de distintos colores, provocado por la misma naturaleza que lo rodea…",
+    "lat": 16.11859,
+    "lon": -91.74341,
+    "imagen": "Montebello 01.jpg",
+    "wiki": "Parque nacional Lagunas de Montebello",
+    "municipio": "La Independencia",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1968860"
+   },
+   {
+    "id": "Q1938854",
+    "nombre": "Misol-Ha",
+    "tipo": "Cascada",
+    "descripcion": "Misol-Ha (en chol: misol ha 'agua que cae') es una cascada ubicada en Chiapas, México. Se formó en suelo calcáreo y es fue una de las locaciones de Depredador (1987).",
+    "lat": 17.39077,
+    "lon": -91.99848,
+    "imagen": "Misol Ha.JPG",
+    "wiki": "Misol-Ha",
+    "fuente": "https://www.wikidata.org/wiki/Q1938854"
+   },
+   {
+    "id": "Q1538249",
+    "nombre": "Parque nacional Cañón del Sumidero",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Cañón del Sumidero es una de las principales atracciones turísticas de Chiapas (México), de gran riqueza ecológica y uno de los cañones más imponentes del mundo. Se decretó parque nacional el 8 de diciembre de 1980.",
+    "lat": 16.83194,
+    "lon": -93.09389,
+    "imagen": "Canondelsumiderogv.JPG",
+    "wiki": "Parque nacional Cañón del Sumidero",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1538249"
+   },
+   {
+    "id": "Q7231113",
+    "nombre": "Puerto Chiapas",
+    "tipo": "Bahía",
+    "descripcion": "Puerto Chiapas, anteriormente conocido como San Benito y aún denominado Puerto Madero, es una población y puerto ubicado en el estado mexicano de Chiapas, sobre la costa del océano Pacífico en la zona sur de Soconusco, pertenece al municipio de Tapachula.",
+    "lat": 14.7163,
+    "lon": -92.4213,
+    "imagen": "Puertochis1.JPG",
+    "wiki": "Puerto Chiapas",
+    "municipio": "Tapachula",
+    "fuente": "https://www.wikidata.org/wiki/Q7231113"
+   },
+   {
+    "id": "Q22680930",
+    "nombre": "Reserva de la Biósfera de Montes Azules",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera Montes Azules es un área natural protegida que se encuentra en el extremo oriental del estado de Chiapas, en México. Fue decretada como reserva por el gobierno de México en 1978.",
+    "lat": 16.39527,
+    "lon": -90.99838,
+    "imagen": "Laguna Miramar.jpg",
+    "wiki": "Reserva de la biosfera Montes Azules",
+    "fuente": "https://www.wikidata.org/wiki/Q22680930"
+   },
+   {
+    "id": "Q22673914",
+    "nombre": "Reserva de la biosfera Selva El Ocote",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La reserva de la biosfera Selva El Ocote es un área natural declarada reserva de la biosfera en 2006 por la UNESCO.",
+    "lat": 16.77,
+    "lon": -92.88,
+    "imagen": "Wikiexpediciónsima5.jpg",
+    "wiki": "Reserva de la biosfera Selva El Ocote",
+    "municipio": "Ixtapa",
+    "fuente": "https://www.wikidata.org/wiki/Q22673914"
+   },
+   {
+    "id": "Q16302404",
+    "nombre": "Reserva de la Biósfera La Encrucijada",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera La Encrucijada es una reserva territorial situada en el sur de México en el estado de Chiapas. Se encuentra en el puente natural entre la región neártica y la neotropical por lo que tiene una amplia variedad biótica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Sistema_silvopastoril_en_cuenca_alta_del_río_Coapa,_Pijijiapan,_Chiapas_20.jpg",
+    "wiki": "Reserva de la biósfera La Encrucijada",
+    "fuente": "https://www.wikidata.org/wiki/Q16302404"
+   },
+   {
+    "id": "Q5763309",
+    "nombre": "Cerro de Bernal",
+    "tipo": "Montaña",
+    "descripcion": "El cerro de Bernal es un cerro ubicado en la margen sur de la Llanura Costera de Chiapas, en el municipio de Tonalá en Chiapas.",
+    "lat": 15.90417,
+    "lon": -93.59778,
+    "imagen": "Cerro de Bernal Norte.JPG",
+    "wiki": "Cerro de Bernal",
+    "fuente": "https://www.wikidata.org/wiki/Q5763309"
+   },
+   {
+    "id": "Q16631902",
+    "nombre": "Sima de las Cotorras",
+    "tipo": "Gruta",
+    "descripcion": "La Sima de las Cotorras es una depresión geológica situada al oeste del estado mexicano de Chiapas, dentro de la reserva de la biósfera “El Ocote”.",
+    "lat": 16.80806,
+    "lon": -93.47444,
+    "imagen": "SemanaiNataliaTejeda005.jpg",
+    "wiki": "Sima de las Cotorras",
+    "municipio": "Ocozocoautla de Espinosa",
+    "fuente": "https://www.wikidata.org/wiki/Q16631902"
+   },
+   {
+    "id": "Q5438314",
+    "nombre": "Jardín Botánico Faustino Miranda",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Botánico Faustino Miranda es un jardín botánico de unas 4,4 hectáreas de extensión que alberga especies vegetales del estado de Chiapas, México, de diferentes zonas bioclimáticas.",
+    "lat": 16.758,
+    "lon": -93.107,
+    "imagen": "Starr 020630-0010 Delonix regia.jpg",
+    "wiki": "Jardín Botánico Faustino Miranda",
+    "fuente": "https://www.wikidata.org/wiki/Q5438314"
+   },
+   {
+    "id": "Q8074133",
+    "nombre": "Zoológico Miguel Álvarez del Toro",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Zoológico Miguel Álvarez del Toro es un zoológico ubicado en Tuxtla Gutiérrez, Chiapas, México.",
+    "lat": 16.7254,
+    "lon": -93.0935,
+    "imagen": "Zoomat1.jpg",
+    "wiki": "Zoológico Miguel Álvarez del Toro",
+    "municipio": "Tuxtla Gutiérrez",
+    "fuente": "https://www.wikidata.org/wiki/Q8074133"
+   },
+   {
+    "id": "Q22806743",
+    "nombre": "Reserva de la Biosfera La Sepultura",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera La Sepultura es una reserva natural ubicada en el suroeste del Estado de Chiapas, México, dentro de la zona noroeste de la Sierra Madre de Chiapas.",
+    "lat": 16.15,
+    "lon": -93.66,
+    "imagen": "Montaña_La_Sepultura,_Chiapas-_La_Sepultura_mountain_(21707949469).jpg",
+    "wiki": "Reserva de la Biosfera La Sepultura",
+    "municipio": "Tonalá",
+    "fuente": "https://www.wikidata.org/wiki/Q22806743"
+   },
+   {
+    "id": "Q25409410",
+    "nombre": "Reserva de la Biosfera Lacan-Tun",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biósfera Lacan-Tun es un área natural protegida localizada en el municipio de Ocosingo, Chiapas en México.",
+    "lat": 16.565,
+    "lon": -91.118,
+    "imagen": null,
+    "wiki": "Reserva de la biosfera Lacan-Tun",
+    "fuente": "https://www.wikidata.org/wiki/Q25409410"
+   },
+   {
+    "id": "Q6173850",
+    "nombre": "Área de protección de flora y fauna Chan-Kin",
+    "tipo": "Área natural protegida",
+    "descripcion": "El área de protección de flora y fauna Chan-Kin es un área de protección de flora y fauna ubicado en el municipio de Ocosingo, en el sector oriental del estado de Chiapas (México).",
+    "lat": 16.70501,
+    "lon": -90.79411,
+    "imagen": "Mexico-12-06-07_134.jpg",
+    "wiki": "Área de protección de flora y fauna Chan-Kin",
+    "municipio": "Ocosingo",
+    "fuente": "https://www.wikidata.org/wiki/Q6173850"
+   },
+   {
+    "id": "Q12185299",
+    "nombre": "Área de protección de flora y fauna Nahá-Metzabok",
+    "tipo": "Área natural protegida",
+    "descripcion": "El área de protección de flora y fauna Nahá-Metzabok es un área protegida de México formada por dos áreas protegidas declaradas en el estado de Chiapas el 23 de septiembre de 1998, Metzabok (n.º ref. 23) y Nahá (n.º ref.",
+    "lat": 17.05,
+    "lon": -91.6,
+    "imagen": null,
+    "wiki": "Área de protección de flora y fauna Nahá-Metzabok",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q12185299"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q6094575",
+    "nombre": "Queso bola",
+    "tipo": "Queso",
+    "descripcion": "Es un queso artesanal originario del municipio de Ocosingo en el Estado de Chiapas, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "WikiCheese - Queso Bola de Ocosingo 01.jpg",
+    "wiki": "Queso bola",
+    "fuente": "https://www.wikidata.org/wiki/Q6094575"
+   },
+   {
+    "id": "Q21001887",
+    "nombre": "Cultivo del café en Chiapas",
+    "tipo": "Bebida",
+    "descripcion": "El café de Chiapas es una denominación de origen (DO) que regula y protege el café (Coffea arabica) producido en el estado de Chiapas, al sur de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "03.- Patio de café.jpg",
+    "wiki": "Café de Chiapas",
+    "fuente": "https://www.wikidata.org/wiki/Q21001887"
+   },
+   {
+    "id": "Q25414118",
+    "nombre": "Comiteco",
+    "tipo": "Bebida",
+    "descripcion": "El Comiteco es una bebida alcohólica destilada de origen mexicano, producida en el Estado de Chiapas, a partir de la Fermentación alcohólica y posterior destilación, de aguamiel (jugos o jarabe) del maguey o agave comiteco (Agave americana L.) y enriquecidos con piloncillo o panela de caña en una proporción de al…",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Comiteco (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q25414118"
+   },
+   {
+    "id": "Q7237064",
+    "nombre": "Pozol",
+    "tipo": "Bebida",
+    "descripcion": "El pozol (del náhuatl: pozolli ‘espumoso’) es una bebida de origen precolombino preparada con masa de maíz nixtamalizada, en ocasiones fermentada, generalmente con cacao tostado y disuelta en agua. Se consume en el sureste de México y en Centroamérica, principalmente en el área de influencia maya.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tabasco_Pozol.jpg",
+    "wiki": "Pozol",
+    "fuente": "https://www.wikidata.org/wiki/Q7237064"
+   },
+   {
+    "id": "Q7236952",
+    "nombre": "Pox",
+    "tipo": "Bebida",
+    "descripcion": "El pox o posh (/ˈpoʃ/) es una bebida alcohólica destilada de un fermento de piloncillo y maíz originaria de Chiapas. Históricamente se ha elaborado destilando de forma artesanal y casera en alambiques rupestres un fermento base piloncillo de caña saborizado con maíz.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pox Siglo Cero.jpg",
+    "wiki": "Pox",
+    "fuente": "https://www.wikidata.org/wiki/Q7236952"
+   },
+   {
+    "id": "Q5102129",
+    "nombre": "Chirmol",
+    "tipo": "Salsa",
+    "descripcion": "El chirmol o chilmole es una salsa típica de Guatemala, Honduras, El Salvador, Nicaragua y varios estados del sur de México, como Tabasco, Chiapas, Oaxaca y Campeche. Se sirve como acompañamiento de ciertos platillos de carne o pescado.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chirmol con Chaya.jpg",
+    "wiki": "Chirmol",
+    "fuente": "https://www.wikidata.org/wiki/Q5102129"
+   },
+   {
+    "id": "Q5098719",
+    "nombre": "Chile relleno",
+    "tipo": "Platillo",
+    "descripcion": "Los chiles rellenos son un platillo mexicano que consiste principalmente en chiles poblanos «con algo adentro», sin importar su decoración exterior. Son consumidos y preparados en México, Guatemala y Costa Rica, aunque su preparación y relleno puede variar y diferenciar en los tres países.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chile Rellenos.jpg",
+    "wiki": "Chile relleno",
+    "fuente": "https://www.wikidata.org/wiki/Q5098719"
+   },
+   {
+    "id": "Q3515927",
+    "nombre": "Tascalate",
+    "tipo": "Bebida",
+    "descripcion": "Tascasalate o Taxcalate es una bebida preparada a base de maíz, cacao, achiote, azúcar y canela que es tradicional del estado de Chiapas en México, cuyo consumo data desde la época prehispánica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "TaxcalatePalenque.JPG",
+    "wiki": "Tascalate",
+    "fuente": "https://www.wikidata.org/wiki/Q3515927"
+   },
+   {
+    "id": "Q3666125",
+    "nombre": "Chanfaina",
+    "tipo": "Platillo",
+    "descripcion": "La chanfaina es una receta tradicional típica de algunos puntos de España (Extremadura, región leonesa —Salamanca, León, Zamora— o Elche, entre otros), y de países y regiones de tradición hispánica como Perú, Bolivia, Colombia, Guatemala, Ecuador, El Salvador, México, Nicaragua, Chile, Honduras y Argentina.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Navas del Madroño Plato de chanfaina.jpg",
+    "wiki": "Chanfaina",
+    "fuente": "https://www.wikidata.org/wiki/Q3666125"
+   },
+   {
+    "id": "Q16491100",
+    "nombre": "Cochi parda",
+    "tipo": "Platillo",
+    "descripcion": "El Cochito horneado o Cochito como se le llama localmente, es un platillo originario de la ciudad de Chiapa de Corzo, y uno de los guisos principales en la fiesta de Enero en Chiapa de Corzo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cochi al horno.jpg",
+    "wiki": "Cochito",
+    "fuente": "https://www.wikidata.org/wiki/Q16491100"
+   },
+   {
+    "id": "Q16481902",
+    "nombre": "Pepita con Tasajo",
+    "tipo": "Platillo",
+    "descripcion": "La pepita con tasajo es un platillo originario de la ciudad mexicana de Chiapa de Corzo, y que consiste en tiras de carne de res saladas y secadas (tasajo) cocidas y bañadas en una especie de mole de pepita de calabaza y arroz molidos, manteca y achiote.",
+    "lat": null,
+    "lon": null,
+    "imagen": "PepitacnTasajoCorzo.jpg",
+    "wiki": "Pepita con tasajo",
+    "fuente": "https://www.wikidata.org/wiki/Q16481902"
+   },
+   {
+    "id": "Q5067730",
+    "nombre": "Escarabajos comestibles",
+    "tipo": "Platillo",
+    "descripcion": "En la gastronomía mexicana, chahuis, shahuis, shawis, shahues, chagüis, xohues, xahuis, gusanos de los palos, escarabajos rinoceronte, escarabajo de cuernos largos, escarabajos longicornio, gallinas ciegas, titococos, titocos, canalejos o cuauhocuilin (del náhuatl: \"gusanos de la madera\") son nombres que hacen…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chahuis, Tula, Mexico.jpg",
+    "wiki": "Chahui",
+    "fuente": "https://www.wikidata.org/wiki/Q5067730"
+   }
+  ]
+ }
+}

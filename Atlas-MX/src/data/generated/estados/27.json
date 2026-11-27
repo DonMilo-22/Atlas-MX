@@ -1,0 +1,560 @@
+{
+ "cve": "27",
+ "estado": "Tabasco",
+ "wikidata": "Q80914",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2448297",
+    "nombre": "Frontera",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Frontera es una ciudad mexicana situada en el estado de Tabasco, cabecera del municipio de Centla. Es uno de los dos puertos más importantes del área, pues cuenta con tráfico marítimo y comercial, además del atractivo turístico de los paisajes: es allí donde el río Grijalva se junta con el mar.",
+    "lat": 18.53011,
+    "lon": -92.65219,
+    "imagen": "Plaza Civica de Frontera Centla 02.jpg",
+    "wiki": "Frontera (Tabasco)",
+    "municipio": "Centla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2448297"
+   },
+   {
+    "id": "Q2080118",
+    "nombre": "Tapijulapa",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tapijulapa es una población enclavada en la sierra del estado mexicano de Tabasco perteneciente al municipio de Tacotalpa. La población, se encuentra asentada en la confluencia de los ríos Oxolotán y Amatán, cuyas aguas en distintas tonalidades de verde conforman un paisaje único.",
+    "lat": 17.45988,
+    "lon": -92.77897,
+    "imagen": "Tapijulapa. Parque.jpg",
+    "wiki": "Tapijulapa",
+    "municipio": "Tacotalpa",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.gob.mx/sectur/articulos/pueblos-magicos-206528"
+   },
+   {
+    "id": "Q4407951",
+    "nombre": "Teapa",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Santiago de Teapa (del náhuatl: Tetl apan ‘Rivera de piedras’), simplemente conocida como Teapa, es una ciudad mexicana, cabecera del municipio homónimo, en el estado de Tabasco. Es una de las poblaciones más antiguas del estado, que nació de la unión de las poblaciones indígenas Teapan y Tecomaxiacan.",
+    "lat": 17.5557,
+    "lon": -92.9479,
+    "imagen": "Parroquia de Santiago Apóstol Teapa Tabasco.jpg",
+    "wiki": "Santiago de Teapa",
+    "municipio": "Teapa",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q4407951"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q913166",
+    "nombre": "La Venta",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Venta es una zona arqueológica ubicada en el extremo noroeste del estado mexicano de Tabasco en el municipio de Huimanguillo, a unos escasos quince kilómetros de la costa del golfo de México.",
+    "lat": 18.10528,
+    "lon": -94.03167,
+    "imagen": "La Venta Pirámide cara norte.jpg",
+    "wiki": "La Venta",
+    "municipio": "Huimanguillo",
+    "fuente": "https://www.wikidata.org/wiki/Q913166"
+   },
+   {
+    "id": "Q12907186",
+    "nombre": "Zona arqueológica de Comalcalco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Comalcalco (del náhuatl: \"Comalli\" comal, \"calli\" casa y \"co\" lugar; \"Lugar de la casa de los comales\") es un sitio arqueológico de la civilización maya que se localiza en el municipio de Comalcalco; en el estado mexicano de Tabasco, a unos 60 km de Villahermosa.",
+    "lat": 18.27944,
+    "lon": -93.20111,
+    "imagen": "Comalcalco.jpg",
+    "wiki": "Comalcalco (zona arqueológica)",
+    "municipio": "Comalcalco",
+    "fuente": "https://www.wikidata.org/wiki/Q12907186"
+   },
+   {
+    "id": "Q96059496",
+    "nombre": "Aguada Fénix",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Aguada Fénix es un yacimiento arqueológico de la cultura maya localizado en el municipio de Balancán en el estado mexicano de Tabasco.",
+    "lat": 17.8,
+    "lon": -91.15,
+    "imagen": "Aguada Fénix 1.jpg",
+    "wiki": "Aguada Fénix",
+    "municipio": "Balancán",
+    "fuente": "https://www.wikidata.org/wiki/Q96059496"
+   },
+   {
+    "id": "Q602376",
+    "nombre": "Pomoná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Pomoná (en maya: Pakbul) es un sitio arqueológico de la civilización maya que se localiza en México; en el municipio de Tenosique en el estado de Tabasco.",
+    "lat": 17.48472,
+    "lon": -91.57025,
+    "imagen": "Pomoná.jpg",
+    "wiki": "Pomoná",
+    "municipio": "Tenosique",
+    "fuente": "https://www.wikidata.org/wiki/Q602376"
+   },
+   {
+    "id": "Q1234439",
+    "nombre": "Moral Reforma",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica Moral-Reforma es un sitio maya del Período Clásico. Se encuentra en el municipio de Balancán, en el estado mexicano de Tabasco, sobre las llanuras inundables del río San Pedro Mártir, cerca de su desembocadura en el río Usumacinta.",
+    "lat": 17.76908,
+    "lon": -91.29817,
+    "imagen": "LaReforma1.JPG",
+    "wiki": "Moral Reforma (zona arqueológica)",
+    "fuente": "https://www.wikidata.org/wiki/Q1234439"
+   },
+   {
+    "id": "Q1383296",
+    "nombre": "Tortuguero",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tortuguero (en maya: B'aaku'l') es un yacimiento arqueológico de la cultura maya, localizado en el municipio de Macuspana, en el estado mexicano de Tabasco.",
+    "lat": 17.6869,
+    "lon": -92.5681,
+    "imagen": "Stela Fragment with Glyphs MET DT10173.jpg",
+    "wiki": "Tortuguero (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q1383296"
+   },
+   {
+    "id": "Q5990678",
+    "nombre": "Malpasito",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Zona Arqueológica de Malpasito es el sitio arqueológico y centro ceremonial de la cultura zoque más importante del valle de Las Flores, y es la zona arqueológica zoque más importante abierta al público.",
+    "lat": 17.34058,
+    "lon": -93.59969,
+    "imagen": "Malpasito 01.jpg",
+    "wiki": "Malpasito",
+    "municipio": "Huimanguillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5990678"
+   },
+   {
+    "id": "Q6059696",
+    "nombre": "Panhalé",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Panhalé, o también llamado Panjalé, es un sitio arqueológico de la cultura maya precolombina localizado en el municipio de Tenosique en el estado mexicano de Tabasco.",
+    "lat": 17.5192,
+    "lon": -91.409,
+    "imagen": null,
+    "wiki": "Panhalé",
+    "fuente": "https://www.wikidata.org/wiki/Q6059696"
+   },
+   {
+    "id": "Q6407543",
+    "nombre": "Catedral del Señor de Tabasco",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral del Señor de Tabasco, en la ciudad de Villahermosa, es la iglesia central de la Diócesis de Tabasco.",
+    "lat": 17.98917,
+    "lon": -92.92806,
+    "imagen": "Catedral de Villahermosa 6.JPG",
+    "wiki": "Catedral del Señor de Tabasco",
+    "fuente": "https://www.wikidata.org/wiki/Q6407543"
+   },
+   {
+    "id": "Q7930807",
+    "nombre": "Templo de Villahermosa",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Villahermosa, México es uno de los templos construidos y operados por La Iglesia de Jesucristo de los Santos de los Últimos Días, el número 85 construido por la iglesia y el séptimo en México, ubicado en la ciudad de Villahermosa.",
+    "lat": 17.9813,
+    "lon": -92.9374,
+    "imagen": "Villahermosa Temple by Jairo Hernandez.jpg",
+    "wiki": "Templo de Villahermosa (México)",
+    "municipio": "Centro",
+    "fuente": "https://www.wikidata.org/wiki/Q7930807"
+   },
+   {
+    "id": "Q6033706",
+    "nombre": "Museo Regional de Antropología Carlos Pellicer Cámara",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Antropología «Carlos Pellicer Cámara» se localiza en la ciudad de Villahermosa, en el estado de Tabasco, México, y su colección arqueológica que consta de 10 mil piezas, es considerada la segunda más importante del país, solo superada por el Museo Nacional de Antropología.",
+    "lat": 17.9791,
+    "lon": -92.9234,
+    "imagen": "Tabasco. Museo Carlos Pellicer.JPG",
+    "wiki": "Museo Regional de Antropología Carlos Pellicer Cámara",
+    "fuente": "https://www.wikidata.org/wiki/Q6033706"
+   },
+   {
+    "id": "Q101444713",
+    "nombre": "Iglesia del Señor de Tila",
+    "tipo": "Templo",
+    "descripcion": "El Templo el Señor de Tila, es un templo católico ubicado en la Ranchería Leona Vicario en el municipio de Balancán, Tabasco.",
+    "lat": 17.71043,
+    "lon": -91.54551,
+    "imagen": "Iglesia del Señor de Tila p4.jpg",
+    "wiki": "Iglesia del Señor de Tila",
+    "fuente": "https://www.wikidata.org/wiki/Q101444713"
+   },
+   {
+    "id": "Q20921749",
+    "nombre": "Santuario La Asunción de María",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia y Santuario de La Asunción, o más conocida como Iglesia de Cupilco, se localiza en el poblado de Cupilco, municipio de Comalcalco, estado de Tabasco, México.",
+    "lat": 18.23806,
+    "lon": -93.1275,
+    "imagen": "Iglesia de Cupilco.jpg",
+    "wiki": "Santuario La Asunción de María (Cupilco)",
+    "fuente": "https://www.wikidata.org/wiki/Q20921749"
+   },
+   {
+    "id": "Q20921757",
+    "nombre": "Templo Padre Jesús de Nazaret",
+    "tipo": "Templo",
+    "descripcion": "El Templo Padre Jesús de Nazaret o Cristo Rey, conocido popularmente como Iglesia “Las Mirandillas”, es un templo católico que se localiza en el municipio de Cunduacán, en el estado de Tabasco, México.",
+    "lat": 18.08386,
+    "lon": -93.23311,
+    "imagen": "Templo de Las Mirandillas 002.JPG",
+    "wiki": "Templo Padre Jesús de Nazaret (Las Mirandillas)",
+    "fuente": "https://www.wikidata.org/wiki/Q20921757"
+   },
+   {
+    "id": "Q5755263",
+    "nombre": "Casa de los Azulejos",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Historia de Tabasco se localiza en el centro histórico de la ciudad de Villahermosa, Tabasco, México. Es un edificio de dos plantas, conocido popularmente con el nombre de \"Casa de los Azulejos\", y es un monumento nacional arquitectónico que data del siglo XIX.",
+    "lat": 17.98834,
+    "lon": -92.91834,
+    "imagen": "Villahermosa Centro histórico 2.jpg",
+    "wiki": "Casa de los Azulejos (Museo de Historia de Tabasco)",
+    "fuente": "https://www.wikidata.org/wiki/Q5755263"
+   },
+   {
+    "id": "Q6033933",
+    "nombre": "Museo de Balancán Dr. José Gómez Panaco",
+    "tipo": "Museo",
+    "descripcion": "El museo arqueológico de Balancán Dr. José Gómez Panaco se localiza en la ciudad de Balancán de Domínguez, en el estado de Tabasco, México.",
+    "lat": 17.80062,
+    "lon": -91.53357,
+    "imagen": "Museo Dr. Jose Goméz Panaco.jpg",
+    "wiki": "Museo de Balancán Dr. José Gómez Panaco",
+    "fuente": "https://www.wikidata.org/wiki/Q6033933"
+   },
+   {
+    "id": "Q20921706",
+    "nombre": "Iglesia de la Natividad de María",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de la Natividad de María o también llamada Iglesia de Nuestra Señora de la Natividad, es un templo religioso de culto católico, localizado en la ciudad de Cunduacán, estado de Tabasco, México.",
+    "lat": 18.06583,
+    "lon": -93.17417,
+    "imagen": "Cunducacan.Iglesia.jpg",
+    "wiki": "Iglesia de la Natividad de María (Cunduacán)",
+    "municipio": "Cunduacán",
+    "fuente": "https://www.wikidata.org/wiki/Q20921706"
+   },
+   {
+    "id": "Q25411513",
+    "nombre": "Iglesia de Nuestra Señora de la Asunción",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de Nuestra Señora de la Asunción es una iglesia católica localizado en la ciudad de Tacotalpa, estado de Tabasco, México. Es la iglesia más antigua de Tabasco ya que se terminó de construir en 1710.",
+    "lat": 17.59164,
+    "lon": -92.82538,
+    "imagen": "Tacotalpa Iglesia de la Asunción 2.JPG",
+    "wiki": "Iglesia de Nuestra Señora de la Asunción (Tacotalpa)",
+    "fuente": "https://www.wikidata.org/wiki/Q25411513"
+   },
+   {
+    "id": "Q20921755",
+    "nombre": "Templo de Santiago Apóstol",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de Santiago Apóstol, es un templo católico localizado en el Pueblo mágico de Tapijulapa, municipio de Tacotalpa, estado de Tabasco, México. Es una de las iglesias más antigua de Tabasco ya que su construcción data del siglo XVII.",
+    "lat": 17.45972,
+    "lon": -92.77917,
+    "imagen": "Tapijulapa. Iglesia.jpg",
+    "wiki": "Templo de Santiago Apóstol (Tapijulapa)",
+    "fuente": "https://www.wikidata.org/wiki/Q20921755"
+   },
+   {
+    "id": "Q20921759",
+    "nombre": "Templo Señor de Esquipulas",
+    "tipo": "Templo",
+    "descripcion": "El Templo Señor de Esquipulas, conocido popularmente como Templo de Esquipulas, es un templo católico que se localiza en la ciudad de Teapa, estado de Tabasco, México.",
+    "lat": 17.5475,
+    "lon": -92.94972,
+    "imagen": "Iglesia del Señor de Esquipulas Teapa Tabasco..jpg",
+    "wiki": "Templo Señor de Esquipulas (Teapa)",
+    "fuente": "https://www.wikidata.org/wiki/Q20921759"
+   },
+   {
+    "id": "Q5677940",
+    "nombre": "Museo de Historia Natural José Narciso Rovirosa",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Historia Natural «José Narciso Rovirosa» fue inaugurado el 27 de diciembre de 1988 en la ciudad de Villahermosa, en el estado de Tabasco, México, y desde 1999 lleva el nombre de José Narciso Rovirosa, en honor a quien fuera el más grande científico, naturalista, botánico y cartógrafo tabasqueño, que…",
+    "lat": 17.98917,
+    "lon": -92.92806,
+    "imagen": null,
+    "wiki": "Museo de Historia Natural José Narciso Rovirosa",
+    "fuente": "https://www.wikidata.org/wiki/Q5677940"
+   },
+   {
+    "id": "Q5754378",
+    "nombre": "Casa Museo Carlos Pellicer Cámara",
+    "tipo": "Museo",
+    "descripcion": "La Casa Museo de Carlos Pellicer Cámara es la casa en donde nació el gran poeta tabasqueño Carlos Pellicer Cámara, llamado también \"el poeta de América\", y es considerado como la \"voz más alta\" de la poesía mexicana del siglo XX.",
+    "lat": 17.98917,
+    "lon": -92.91834,
+    "imagen": "Villahermosa Centro histórico 4.JPG",
+    "wiki": "Casa Museo Carlos Pellicer Cámara",
+    "fuente": "https://www.wikidata.org/wiki/Q5754378"
+   },
+   {
+    "id": "Q5754381",
+    "nombre": "Casa Museo Cnel. Gregorio Méndez Magaña",
+    "tipo": "Museo",
+    "descripcion": "La Casa Museo del Coronel Gregorio Méndez Magaña se localiza en la ciudad de Jalpa de Méndez, estado de Tabasco, México, en la casa en donde nació el 27 de marzo de 1836 el \"Benemérito de Tabasco\" y héroe de la lucha contra la intervención francesa en el estado.",
+    "lat": 17.98917,
+    "lon": -92.92806,
+    "imagen": "Casa Museo Coronel Gregorio Méndez Magaña.JPG",
+    "wiki": "Casa Museo Cnel. Gregorio Méndez Magaña",
+    "fuente": "https://www.wikidata.org/wiki/Q5754381"
+   },
+   {
+    "id": "Q18590527",
+    "nombre": "Museo Comunitario de la Virgen de Cupilco",
+    "tipo": "Museo",
+    "descripcion": "Museo Comunitario de la Virgen de Cupilco es un proyecto comunitario que promueve el rescate y protección de la tradición y testimonios orales, las leyendas, fotografías y objetos de toda la herencia material e inmaterial del pasado del pueblo de Cupilco, en el estado mexicano de Tabasco.",
+    "lat": 18.23829,
+    "lon": -93.12752,
+    "imagen": "Museo de Cupilco-noche.jpg",
+    "wiki": "Museo Comunitario de la Virgen de Cupilco",
+    "fuente": "https://www.wikidata.org/wiki/Q18590527"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q210886",
+    "nombre": "Villahermosa",
+    "tipo": "Ciudad",
+    "descripcion": "Villahermosa es la capital y ciudad más poblada del estado mexicano de Tabasco, así como la cabecera del municipio de Centro. Según el último censo del INEGI, la ciudad contaba en 2020 con 340,060 habitantes, mientras que la zona metropolitana de Villahermosa agrupó un total de 833,907 habitantes.",
+    "lat": 17.98784,
+    "lon": -92.91942,
+    "imagen": "Villahermosa collage.jpg",
+    "wiki": "Villahermosa (Tabasco)",
+    "municipio": "Centro",
+    "fuente": "https://www.wikidata.org/wiki/Q210886"
+   },
+   {
+    "id": "Q868423",
+    "nombre": "Comalcalco",
+    "tipo": "Ciudad",
+    "descripcion": "Comalcalco es una ciudad, cabecera del municipio del mismo nombre, en el estado mexicano de Tabasco; es la tercera ciudad en importancia económica, académica, política y la tercera aglomeración urbana más grande del estado, así como la decimocuarta más poblada del sureste de México, cuenta con una importante…",
+    "lat": 18.26605,
+    "lon": -93.22502,
+    "imagen": "Comalcalco.Iglesia y Palacio.jpg",
+    "wiki": "Comalcalco",
+    "municipio": "Comalcalco",
+    "fuente": "https://www.wikidata.org/wiki/Q868423"
+   },
+   {
+    "id": "Q1962471",
+    "nombre": "Heroica Cárdenas",
+    "tipo": "Ciudad",
+    "descripcion": "Heroica Cárdenas, oficialmente Heroica Ciudad de Cárdenas o simplemente Cárdenas, es una ciudad mexicana situada en el estado de Tabasco, cabecera del municipio homónimo. Es la segunda ciudad más poblada del estado, tras la capital, Villahermosa.",
+    "lat": 17.98943,
+    "lon": -93.37686,
+    "imagen": "Cárdenas Parque Independencia.jpg",
+    "wiki": "Heroica Cárdenas (Tabasco)",
+    "municipio": "Cárdenas",
+    "fuente": "https://www.wikidata.org/wiki/Q1962471"
+   },
+   {
+    "id": "Q1962453",
+    "nombre": "Macuspana",
+    "tipo": "Ciudad",
+    "descripcion": "Macuspana es una ciudad en el estado mexicano de Tabasco, cabecera del municipio homónimo, perteneciente a la región del Usumacinta y a la subregión de los Pantanos.",
+    "lat": 17.75643,
+    "lon": -92.59407,
+    "imagen": "Macuspana Reloj.jpg",
+    "wiki": "Macuspana",
+    "municipio": "Macuspana",
+    "fuente": "https://www.wikidata.org/wiki/Q1962453"
+   },
+   {
+    "id": "Q2656511",
+    "nombre": "Tenosique de Pino Suárez",
+    "tipo": "Ciudad",
+    "descripcion": "Tenosique, oficialmente Tenosique de Pino Suárez es una ciudad mexicana cabecera del municipio del mismo nombre, en el estado de Tabasco. Se localiza a orillas del río Usumacinta.",
+    "lat": 17.47083,
+    "lon": -91.42083,
+    "imagen": "Montaje de Tenosique de Pino Suárez 2026.jpg",
+    "wiki": "Tenosique de Pino Suárez",
+    "municipio": "Tenosique",
+    "fuente": "https://www.wikidata.org/wiki/Q2656511"
+   },
+   {
+    "id": "Q2072540",
+    "nombre": "Paraíso",
+    "tipo": "Ciudad",
+    "descripcion": "La ciudad de Paraíso es la cabecera del municipio homónimo de Paraíso en el estado mexicano de Tabasco. Está ubicada dentro de la región del Grijalva y pertenece a la subregión de la Chontalpa.",
+    "lat": 18.39577,
+    "lon": -93.21424,
+    "imagen": "Plaza principal de Paraíso Tabasco.jpg",
+    "wiki": "Paraíso (Tabasco)",
+    "municipio": "Paraíso",
+    "fuente": "https://www.wikidata.org/wiki/Q2072540"
+   },
+   {
+    "id": "Q4495185",
+    "nombre": "Jalpa de Méndez",
+    "tipo": "Ciudad",
+    "descripcion": "Jalpa de Méndez es una ciudad, cabecera del municipio homónimo, en el estado mexicano de Tabasco. Se localiza a 29 km de la ciudad de Villahermosa, capital del estado.",
+    "lat": 18.17685,
+    "lon": -93.0626,
+    "imagen": "Jalpa de Méndez.Parque principal.JPG",
+    "wiki": "Jalpa de Méndez",
+    "municipio": "Jalpa de Méndez",
+    "fuente": "https://www.wikidata.org/wiki/Q4495185"
+   },
+   {
+    "id": "Q3942968",
+    "nombre": "Huimanguillo",
+    "tipo": "Ciudad",
+    "descripcion": "La ciudad de Huimanguillo es la cabecera municipal del Municipio de Huimanguillo, el cual es el más grande por extensión territorial del estado mexicano de Tabasco. Se encuentra a una distancia de 67 km de la ciudad de Villahermosa, capital del estado.",
+    "lat": 17.83517,
+    "lon": -93.39077,
+    "imagen": "Huimanguillo Parque Juárez.jpg",
+    "wiki": "Huimanguillo",
+    "municipio": "Huimanguillo",
+    "fuente": "https://www.wikidata.org/wiki/Q3942968"
+   },
+   {
+    "id": "Q5759660",
+    "nombre": "Cañón del Usumacinta",
+    "tipo": "Cañón",
+    "descripcion": "El Área de protección de flora y fauna Cañón del Usumacinta es una área de protección de flora y fauna de México que se localiza en el municipio de Tenosique, en el estado de Tabasco, y que protege una extensión de 46 128 ha.",
+    "lat": 17.45,
+    "lon": -91.51667,
+    "imagen": "Río Usumacinta a la altura de Boca del Cerro 02.jpg",
+    "wiki": "Cañón del Usumacinta",
+    "fuente": "https://www.wikidata.org/wiki/Q5759660"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q7237064",
+    "nombre": "Pozol",
+    "tipo": "Bebida",
+    "descripcion": "El pozol (del náhuatl: pozolli ‘espumoso’) es una bebida de origen precolombino preparada con masa de maíz nixtamalizada, en ocasiones fermentada, generalmente con cacao tostado y disuelta en agua. Se consume en el sureste de México y en Centroamérica, principalmente en el área de influencia maya.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tabasco_Pozol.jpg",
+    "wiki": "Pozol",
+    "fuente": "https://www.wikidata.org/wiki/Q7237064"
+   },
+   {
+    "id": "Q115804034",
+    "nombre": "Guarapo",
+    "tipo": "Bebida",
+    "descripcion": "El guarapo es una bebida obtenida del jugo de la caña de azúcar ya sea fermentado o sin fermentar. En general, se trata del líquido extraído a partir de prensar caña de azúcar, también llamada «cañaduz» en algunas regiones.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Guarapo_30062011.jpg",
+    "wiki": "Guarapo",
+    "fuente": "https://www.wikidata.org/wiki/Q115804034"
+   },
+   {
+    "id": "Q5764438",
+    "nombre": "Chanchamito",
+    "tipo": "Platillo",
+    "descripcion": "El chanchamito (del maya: chan ‘pequeño’) o tobijoloch (del maya: to'obil ‘tamal’ y del maya: holoch ‘hoja de maíz’) es un tamal de masa de maíz pequeño y de forma ovalada envuelto en hojas de maíz con nudos en ambos extremos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chanchamitos de Minatitlán 01.jpg",
+    "wiki": "Chanchamito",
+    "fuente": "https://www.wikidata.org/wiki/Q5764438"
+   },
+   {
+    "id": "Q6155289",
+    "nombre": "Uliche",
+    "tipo": "Platillo",
+    "descripcion": "El uliche o huliche que en maya chontal significa «mole», es un platillo mexicano típico del estado de Tabasco, México, y se prepara principalmente para el Día de muertos y en rezos, en las comunidades rurales del estado, aunque puede ser consumido cualquier otro día, y consiste en caldo elaborado de masa batida y…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tabasco Uliche.jpg",
+    "wiki": "Uliche",
+    "fuente": "https://www.wikidata.org/wiki/Q6155289"
+   },
+   {
+    "id": "Q5991334",
+    "nombre": "Manea",
+    "tipo": "Platillo",
+    "descripcion": "La manea es un tamal grande, típico del estado de Tabasco, México, el cual está elaborado de masa revuelta con cilantro, perejil, tomate, cebolla, y con carne de res, de peppa, o pollo deshebrada.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Manea",
+    "fuente": "https://www.wikidata.org/wiki/Q5991334"
+   },
+   {
+    "id": "Q66817770",
+    "nombre": "Carne polaca",
+    "tipo": "Platillo",
+    "descripcion": "La carne polaca es un platillo mexicano típico de los estados de Veracruz y Tabasco. Consiste en carne desmenuzada revuelta en salsa cátsup, repollo, chile y otros ingredientes, que habitualmente se acompaña con galleta de soda, o se sirve en tostadas o como relleno para el pan o los tacos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carne polaca.jpg",
+    "wiki": "Carne polaca",
+    "fuente": "https://www.wikidata.org/wiki/Q66817770"
+   },
+   {
+    "id": "Q93521172",
+    "nombre": "Cacao de Grijalva",
+    "tipo": "Platillo",
+    "descripcion": "El cacao de Grijalva es una denominación de origen que se cultiva en el occidente del estado de Tabasco, al sur de México. La denominación comprende la región de La Chontalpa, bañada por las aguas del río Grijalva.",
+    "lat": null,
+    "lon": null,
+    "imagen": "SplitCacaoPod.JPG",
+    "wiki": "Cacao Grijalva",
+    "fuente": "https://www.wikidata.org/wiki/Q93521172"
+   },
+   {
+    "id": "Q6082021",
+    "nombre": "Polvillo",
+    "tipo": "Bebida",
+    "descripcion": "El polvillo es una bebida típica del estado del sureste de México, la cual se elabora con harina de maíz tostado, a la que se le adiciona cacao molido. Se puede tomar simple o con azúcar, y se sirve frío o caliente.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tabasco Polvillo con agua.jpg",
+    "wiki": "Polvillo (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q6082021"
+   },
+   {
+    "id": "Q6160575",
+    "nombre": "Verdín",
+    "tipo": "Bebida",
+    "descripcion": "Verdín es un licor con sabor a anís y yerbabuena propio del estado mexicano de Tabasco. La yerbabuena le confiere el particular color verde que le da nombre.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Verdín",
+    "fuente": "https://www.wikidata.org/wiki/Q6160575"
+   },
+   {
+    "id": "Q7205916",
+    "nombre": "Plátanos rellenos",
+    "tipo": "Platillo",
+    "descripcion": "Los plátanos rellenos son un plato de las cocinas colombiana, cubana y mexicana, en este último caso particularmente en las zonas del país donde se produce plátano, como Veracruz, Tabasco o Chiapas. Dependiendo del lugar, varían los ingredientes del relleno y las técnicas de preparación.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Plátanos_rellenos_en_Paraíso,_Tabasco.jpg",
+    "wiki": "Plátanos rellenos",
+    "fuente": "https://www.wikidata.org/wiki/Q7205916"
+   },
+   {
+    "id": "Q5067730",
+    "nombre": "Escarabajos comestibles",
+    "tipo": "Platillo",
+    "descripcion": "En la gastronomía mexicana, chahuis, shahuis, shawis, shahues, chagüis, xohues, xahuis, gusanos de los palos, escarabajos rinoceronte, escarabajo de cuernos largos, escarabajos longicornio, gallinas ciegas, titococos, titocos, canalejos o cuauhocuilin (del náhuatl: \"gusanos de la madera\") son nombres que hacen…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chahuis, Tula, Mexico.jpg",
+    "wiki": "Chahui",
+    "fuente": "https://www.wikidata.org/wiki/Q5067730"
+   }
+  ]
+ }
+}

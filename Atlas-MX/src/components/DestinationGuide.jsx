@@ -2,18 +2,17 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, BookOpen, ExternalLink, Heart, Landmark, MapPin, Mountain, Search, Sparkles, UtensilsCrossed, X } from 'lucide-react';
 import useDialog from '../hooks/useDialog';
 import useStateTourism from '../hooks/useStateTourism';
-import { commonsThumb, toPlace, wikipediaUrl } from '../data/tourism';
+import { CATEGORY_META, commonsThumb, toPlace, wikipediaUrl } from '../data/tourism';
 import { CAPITAL_COORDS } from '../data/capitals';
 import '../styles/guide.css';
 
 const fold = (value = '') => value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
-const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 
 export const GUIDE_CATEGORIES = [
-  { key: 'pueblos', label: 'Pueblos Mágicos', icon: Sparkles, count: (n) => plural(n, 'pueblo mágico', 'pueblos mágicos'), empty: 'Este estado aún no tiene localidades en el programa Pueblos Mágicos.', source: 'Localidades con nombramiento del programa Pueblos Mágicos de la Secretaría de Turismo.' },
-  { key: 'historia', label: 'Historia', icon: Landmark, count: (n) => plural(n, 'sitio histórico', 'sitios históricos'), empty: 'No encontramos sitios históricos con información verificable.', source: 'Zonas arqueológicas, patrimonio de la humanidad, templos, museos y monumentos registrados en Wikidata.' },
-  { key: 'destinos', label: 'Destinos', icon: Mountain, count: (n) => plural(n, 'destino', 'destinos'), empty: 'No encontramos destinos con información verificable.', source: 'Ciudades, playas y áreas naturales protegidas registradas en Wikidata, ordenadas por relevancia.' },
-  { key: 'cocina', label: 'Cocina', icon: UtensilsCrossed, count: (n) => plural(n, 'platillo típico', 'platillos típicos'), empty: 'No encontramos platillos con información verificable.', source: 'Platillos, bebidas y dulces vinculados al estado en Wikipedia y Wikidata.' }
+  { key: 'pueblos', label: 'Pueblos Mágicos', icon: Sparkles, count: CATEGORY_META.pueblos.count, empty: 'Este estado aún no tiene localidades en el programa Pueblos Mágicos.', source: 'Localidades con nombramiento del programa Pueblos Mágicos de la Secretaría de Turismo.' },
+  { key: 'historia', label: 'Historia', icon: Landmark, count: CATEGORY_META.historia.count, empty: 'No encontramos sitios históricos con información verificable.', source: 'Zonas arqueológicas, patrimonio de la humanidad, templos, museos y monumentos registrados en Wikidata.' },
+  { key: 'destinos', label: 'Destinos', icon: Mountain, count: CATEGORY_META.destinos.count, empty: 'No encontramos destinos con información verificable.', source: 'Ciudades, playas y áreas naturales protegidas registradas en Wikidata, ordenadas por relevancia.' },
+  { key: 'cocina', label: 'Cocina', icon: UtensilsCrossed, count: CATEGORY_META.cocina.count, empty: 'No encontramos platillos con información verificable.', source: 'Platillos, bebidas y dulces vinculados al estado en Wikipedia y Wikidata.' }
 ];
 const CATEGORY_BY_KEY = Object.fromEntries(GUIDE_CATEGORIES.map((c) => [c.key, c]));
 

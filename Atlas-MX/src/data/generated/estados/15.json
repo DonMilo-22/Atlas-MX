@@ -1,0 +1,1237 @@
+{
+ "cve": "15",
+ "estado": "México",
+ "wikidata": "Q82112",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q20615904",
+    "nombre": "Aculco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Aculco de Espinoza, antiguamente San Jerónimo Aculco (Ahcolco en náhuatl y N'dome en otomí), es una población mexicana y cabecera del municipio de Aculco. Se encuentra en la región norte del Estado de México y fue una localidad ubicada sobre el Camino Real de Adentro.",
+    "lat": 20.09833,
+    "lon": -99.82694,
+    "imagen": "Templo de san Jeronimo.JPG",
+    "wiki": "Aculco de Espinoza",
+    "municipio": "Aculco",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20615904"
+   },
+   {
+    "id": "Q27785387",
+    "nombre": "El Oro",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "El Oro de hidalgo es un pueblo mexicano y cabecera municipal de El Oro, en el Estado de México. Se ubica al noroeste del estado y limita al norte con el estado de Michoacán y el municipio de Temascalcingo.",
+    "lat": 19.8026,
+    "lon": -100.13062,
+    "imagen": "PalMunicipalElOro.JPG",
+    "wiki": "El Oro de Hidalgo",
+    "municipio": "El Oro",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q27785387"
+   },
+   {
+    "id": "Q20148035",
+    "nombre": "Ixtapan de la Sal",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ixtapan de la Sal es una población mexicana y cabecera del municipio homónimo, (Ixtapan, proviene del Náhuatl y se compone de Iztatl que significa sal y pan que significa en o sobre y su significado es \"en la sal\" o \"salinas\".",
+    "lat": 18.84361,
+    "lon": -99.67667,
+    "imagen": "PlazaChurchIxtapan.JPG",
+    "wiki": "Ixtapan de la Sal",
+    "municipio": "Ixtapan de la Sal",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20148035"
+   },
+   {
+    "id": "Q20149297",
+    "nombre": "Jilotepec",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jilotepec de Molina Enríquez es una ciudad mexicana con una rica historia y un profundo arraigo cultural, es cabecera municipal del municipio homónimo, en el Estado de México. Es un destino con gran potencial turístico debido a su arquitectura colonial, tradiciones y paisajes naturales.",
+    "lat": 19.95194,
+    "lon": -99.53278,
+    "imagen": "Jilotepec, Estado de México (34313918300).jpg",
+    "wiki": "Jilotepec de Molina Enríquez",
+    "municipio": "Jilotepec",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20149297"
+   },
+   {
+    "id": "Q1584311",
+    "nombre": "Malinalco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Malinalco (del tlahuica: Ñumxu) es una población mexicana del estado de México, es cabecera del municipio del mismo nombre ubicado al sur de la ciudad de Toluca de Lerdo y a 52 km de la ciudad de Cuernavaca.",
+    "lat": 18.95,
+    "lon": -99.5,
+    "imagen": "Mexico.Mex.Malinalco.Panorama.01.jpg",
+    "wiki": "Malinalco",
+    "municipio": "Malinalco",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1584311"
+   },
+   {
+    "id": "Q1798671",
+    "nombre": "Metepec",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Metepec (en náhuatl, Metepec; en otomí, Ntaguada y en matlatzinca, Nepinta Tuji) es una ciudad mexicana del Estado de México. Es la cabecera del municipio de Metepec y colinda con Toluca de Lerdo y San Mateo Atenco, así como con varios pueblos dentro del mismo municipio homónimo.",
+    "lat": 19.25226,
+    "lon": -99.60467,
+    "imagen": "PanMetepecMX.JPG",
+    "wiki": "Metepec (Estado de México)",
+    "municipio": "Metepec",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1798671"
+   },
+   {
+    "id": "Q16242828",
+    "nombre": "Otumba",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Otumba de Gómez Farías es una población y cabecera municipal del municipio de Otumba, está ubicada al centro del municipio, al noreste del Estado de México, México. Cuenta con 34.232 habitantes.",
+    "lat": 19.69694,
+    "lon": -98.75472,
+    "imagen": "PlazaOtumbaMX.JPG",
+    "wiki": "Otumba de Gómez Farías",
+    "municipio": "Otumba",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q16242828"
+   },
+   {
+    "id": "Q20146091",
+    "nombre": "San Juan Teotihuacán y San Martín de las Pirámides",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Martín de las Pirámides es una población mexicana y cabecera municipal de San Martín de las Pirámides; esta localidad ubicada al noreste del estado de México, tiene una población de 7,546 habitantes.",
+    "lat": 19.70582,
+    "lon": -98.83554,
+    "imagen": "Parroquia de San Martín Obispo, amanecer.jpg",
+    "wiki": "San Martín de las Pirámides",
+    "municipio": "San Martín de las Pirámides",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20146091"
+   },
+   {
+    "id": "Q1905161",
+    "nombre": "Tepotzotlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Pedro Tepotzotlán, o simplemente Tepotzotlán, es una ciudad mexicana ubicada al norte del Estado de México. El municipio forma parte de la zona metropolitana del Valle de México.",
+    "lat": 19.71611,
+    "lon": -99.22361,
+    "imagen": "Tepotzotlan.jpeg",
+    "wiki": "Tepotzotlán",
+    "municipio": "Tepotzotlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1905161"
+   },
+   {
+    "id": "Q20289664",
+    "nombre": "Tonatico",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tonatico o Santa María Tonatico es una población mexicana y cabecera municipal del municipio de Tonatico. Es uno de los pueblos pintorescos más sureños del estado de México, ubicado en la Región de Tierra Caliente y ha sido asignado a categoría de Pueblo Mágico.",
+    "lat": 18.80202,
+    "lon": -99.67093,
+    "imagen": "Parroquia Tonatico.jpg",
+    "wiki": "Tonatico",
+    "municipio": "Tonatico",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20289664"
+   },
+   {
+    "id": "Q3058725",
+    "nombre": "Valle de Bravo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Valle de Bravo es una ciudad mexicana del Estado de México, ubicada a 156 km al suroeste de la Ciudad de México. Su fundación hispánica fue en 1530 por frailes franciscanos.",
+    "lat": 19.1925,
+    "lon": -100.13056,
+    "imagen": "PanVBravoSpires3.JPG",
+    "wiki": "Valle de Bravo",
+    "municipio": "Valle de Bravo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3058725"
+   },
+   {
+    "id": "Q29045241",
+    "nombre": "Villa del Carbón",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Villa del Carbón es la cabecera del municipio de Villa del Carbón, está ubicada al centro del municipio, sobre la Sierra de Monte Alto, Estado de México. Villa del Carbón se encuentra a 2,600 m s. n. m. (msnm: metros sobre el nivel del mar).",
+    "lat": 19.72875,
+    "lon": -99.46362,
+    "imagen": "CultCenterVillaCarbon.JPG",
+    "wiki": "Villa del Carbón",
+    "municipio": "Villa del Carbón",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q29045241"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q172613",
+    "nombre": "Teotihuacan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Teotihuacan o Teotihuacán (en náhuatl: Teōtīhuacān, 'lugar donde los hombres se convierten en dioses, lugar de la apoteosis, lugar de los dioses', AFI: /te.oː.tiː.ˈwá.kaːn/, ), que, según nuevas investigaciones, también pudo haber sido conocida como Teohuacan (en náhuatl: Teōhuahcān, 'ciudad/lugar del sol, lugar de…",
+    "lat": 19.6925,
+    "lon": -98.84389,
+    "imagen": "ZA77 Teotihuacán edo de mex Herberto de la rosa.jpg",
+    "wiki": "Teotihuacán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q172613"
+   },
+   {
+    "id": "Q2278207",
+    "nombre": "Municipio de Aculco",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El municipio de Aculco es uno de los 125 municipios del Estado de México, México. Se ubica en el altiplano mexicano, a una hora por carretera de Ciudad de México; forma parte del Estado de México y su cabecera municipal lleva el nombre oficial de Aculco de Espinoza (antes San Jerónimo Aculco).",
+    "lat": 20.11667,
+    "lon": -99.83333,
+    "imagen": "Templo de san Jeronimo.JPG",
+    "wiki": "Municipio de Aculco",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2278207"
+   },
+   {
+    "id": "Q16638480",
+    "nombre": "Templo de San Francisco Javier",
+    "tipo": "Templo",
+    "descripcion": "El templo de San Francisco Javier forma parte del actual Museo Nacional del Virreinato y antiguo Colegio Jesuita de San Francisco Javier, ubicado en Tepotzotlán, Estado de México. Esta edificación se atribuye a los arquitectos Diego de la Sierra (c. 1656-c. 1709/11) y José Durán de Almendranejo (1652-pos.",
+    "lat": 19.71297,
+    "lon": -99.22219,
+    "imagen": "Museo Nacional del Virreinato 3.jpg",
+    "wiki": "Templo de San Francisco Javier (Tepotzotlán)",
+    "municipio": "Tepotzotlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q16638480"
+   },
+   {
+    "id": "Q65465058",
+    "nombre": "Puente de Atongo",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El Puente de Atongo es una estructura ubicada en el municipio de Soyaniquilpan de Juárez, Estado de México. Desde agosto de 2010 es considerada como Patrimonio de la Humanidad por la Unesco como parte del Camino Real de Tierra Adentro.",
+    "lat": 19.9867,
+    "lon": -99.4444,
+    "imagen": null,
+    "wiki": "Puente de Atongo",
+    "municipio": "Soyaniquilpan de Juárez",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65465058"
+   },
+   {
+    "id": "Q29238",
+    "nombre": "Pirámide del Sol",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El basamento piramidal del Sol es la edificación más grande de Teotihuacán y una de las más grandes de Mesoamérica. Se encuentra entre la pirámide de la Luna y la antigua ciudad de Teotihuacán.",
+    "lat": 19.6925,
+    "lon": -98.8438,
+    "imagen": "2020-02-11 Teotihuacan la Avenida de los Muertos y la Pirámide del Sol.jpg",
+    "wiki": "Pirámide del Sol",
+    "fuente": "https://www.wikidata.org/wiki/Q29238"
+   },
+   {
+    "id": "Q29240",
+    "nombre": "Pirámide de la Luna",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La pirámide de la Luna es un basamento piramidal truncado dedicado al culto público durante la época prehispánica.",
+    "lat": 19.6996,
+    "lon": -98.844,
+    "imagen": "Pirámide de la Luna, 2020.jpg",
+    "wiki": "Pirámide de la Luna",
+    "fuente": "https://www.wikidata.org/wiki/Q29240"
+   },
+   {
+    "id": "Q1027061",
+    "nombre": "Calixtlahuaca",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Calixtlahuaca (palabra náhuatl compuesta, calli significa casa, e ixtlahuatl significa “llano” o “llanura”, lo que se traduciría como \"casa en el llano\"; pero está también la palabra ixtlahuacan, lugar desprovisto de árboles y viviendas, por lo que calixtlahuacan haría referencia a una casa situada en un páramo) es…",
+    "lat": 19.33361,
+    "lon": -99.69306,
+    "imagen": "Calixtlahuaca-Structure3.jpg",
+    "wiki": "Zona arqueológica de Calixtlahuaca",
+    "municipio": "Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q1027061"
+   },
+   {
+    "id": "Q1929180",
+    "nombre": "Tlatilco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tlatilco fue una civilización del valle de México, una de las primeras en asentarse en la Cuenca de México, en las orillas del lago de Texcoco al noroeste de la actual Ciudad de México. Su ubicación histórica se encuentra en el Período Preclásico Medio, entre 2500 a. C. y 500 a. C.",
+    "lat": 19.5,
+    "lon": -99.25,
+    "imagen": "Acróbata de Tlatilco.JPG",
+    "wiki": "Tlatilco",
+    "municipio": "Naucalpan de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q1929180"
+   },
+   {
+    "id": "Q647989",
+    "nombre": "Tenayuca",
+    "tipo": "Zona arqueológica",
+    "descripcion": "San Bartolo Tenayuca o simplemente Tenayuca es una localidad mexicana que se ubica al pie del Cerro del Tenayo perteneciente a la Sierra de Guadalupe, en el municipio de Tlalnepantla de Baz, estado de México, a 10 kilómetros al noroeste del centro de la Ciudad de México.",
+    "lat": 19.53252,
+    "lon": -99.16852,
+    "imagen": "Tenayuca.jpg",
+    "wiki": "Tenayuca",
+    "municipio": "Tlalnepantla de Baz",
+    "fuente": "https://www.wikidata.org/wiki/Q647989"
+   },
+   {
+    "id": "Q27345266",
+    "nombre": "Monte Tláloc",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Tláloc o Tlalocatépetl (del náhuatl: monte de Tlalocan) es un volcán y un yacimiento arqueológico ubicado en el Eje Neovolcánico de México, específicamente en el límite entre los municipios de Ixtapaluca y Texcoco, al oriente del Estado de México.",
+    "lat": 19.41226,
+    "lon": -98.71251,
+    "imagen": "Monte Tláloc.jpg",
+    "wiki": "Monte Tláloc",
+    "municipio": "Ixtapaluca",
+    "fuente": "https://www.wikidata.org/wiki/Q27345266"
+   },
+   {
+    "id": "Q2725918",
+    "nombre": "Santa Cecilia Acatitlán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Santa Cecilia Acatitlán es una zona arqueológica probablemente iniciada por la cultura tolteca o chichimeca, y se ubica en el pueblo de Santa Cecilia, municipio de Tlalnepantla de Baz en el Estado de México, a 3 kilómetros de Tenayuca y a 15 minutos de la cabecera municipal, con una población de 3 mil habitantes aprox.",
+    "lat": 19.55258,
+    "lon": -99.17333,
+    "imagen": "Santa Cecilia Acatitlan.jpg",
+    "wiki": "Santa Cecilia Acatitlán",
+    "municipio": "Tlalnepantla de Baz",
+    "fuente": "https://www.wikidata.org/wiki/Q2725918"
+   },
+   {
+    "id": "Q2142587",
+    "nombre": "Tlapacoya",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tlapacoya (del náhuatl: Tlapācōyān o Tlapakoyan ‘lugar donde se lava, lavadero’) (pronunciación: /t͡ɬaːpaːkoːyaːn/) es el nombre que recibe el conjunto de dieciocho sectores arqueológicos excavados a cielo abierto con diferentes marcos cronológicos.",
+    "lat": 19.30167,
+    "lon": -98.91278,
+    "imagen": "4 Tlapacoya figurines.jpg",
+    "wiki": "Zona arqueológica de Tlapacoya",
+    "fuente": "https://www.wikidata.org/wiki/Q2142587"
+   },
+   {
+    "id": "Q1133169",
+    "nombre": "Tezcutzingo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Texcotzingo (alternativamente, Tetzcotzingo, Tezcutzingo o Tetzcotzinco). Es un topónimo que procede del diminutivo de Tetzcoco y por lo cual vendría a traducirse como ’pequeño Tetzcoco’.",
+    "lat": 19.49708,
+    "lon": -98.81833,
+    "imagen": "05-12-MX Tetz Baño Rey.jpg",
+    "wiki": "Tezcutzingo",
+    "fuente": "https://www.wikidata.org/wiki/Q1133169"
+   },
+   {
+    "id": "Q2793476",
+    "nombre": "Acozac",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Acozac es un yacimiento arqueológico habitado de 650 a. C. a 152 a. C. Fue habitado tanto por aztecas como por chichimecas, acolhuas y tepanecas.",
+    "lat": 19.32854,
+    "lon": -98.8926,
+    "imagen": "Acozac.JPG",
+    "wiki": "Zona arqueológica de Acozac",
+    "municipio": "Ixtapaluca",
+    "fuente": "https://www.wikidata.org/wiki/Q2793476"
+   },
+   {
+    "id": "Q21503942",
+    "nombre": "Zona Arqueológica de Malinalco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de Malinalco se ubica en el municipio de Malinalco, es la única estructura arquitectónica monolítica de grandes dimensiones en el país. La construcción de esta estructura se remonta al periodo clásico tardío, fue una templo de ritos de preparación militar de la civilización mexica.",
+    "lat": 18.95333,
+    "lon": -99.50306,
+    "imagen": "TemploCerroIdolos.jpg",
+    "wiki": "Zona arqueológica de Malinalco",
+    "municipio": "Malinalco",
+    "fuente": "https://www.wikidata.org/wiki/Q21503942"
+   },
+   {
+    "id": "Q5099292",
+    "nombre": "Chimalhuacán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Los Pochotes es una zona arqueológica mexicana ubicada en la cabecera municipal de Chimalhuacán, al este de la Zona Metropolitana del Valle de México, en el Estado de México.",
+    "lat": 19.41823,
+    "lon": -98.94684,
+    "imagen": "Explanada \"Los Pochotes\".jpg",
+    "wiki": "Zona arqueológica de Chimalhuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q5099292"
+   },
+   {
+    "id": "Q5761051",
+    "nombre": "Centro Ceremonial Otomí",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Centro Ceremonial Otomí es un centro ceremonial de reciente construcción del pueblo otomí ubicado en Temoaya, Estado de México, este centro es utilizado para ceremonias ancestrales y sagradas del pueblo otomí.",
+    "lat": 19.53042,
+    "lon": -99.52381,
+    "imagen": "Centro Ceremonial Otomi.JPG",
+    "wiki": "Centro Ceremonial Otomí",
+    "municipio": "Temoaya",
+    "fuente": "https://www.wikidata.org/wiki/Q5761051"
+   },
+   {
+    "id": "Q7414966",
+    "nombre": "Zona arqueológica de San Miguel Ixtapan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de San Miguel Ixtapan se encuentra localizada en el municipio de Tejupilco en el estado de México. El municipio de Tejupilco se encuentra alrededor de 100 km al suroeste de la ciudad de Toluca.",
+    "lat": 18.8075,
+    "lon": -100.15528,
+    "imagen": "SMI_Basement_3,_north_side.JPG",
+    "wiki": "Zona arqueológica de San Miguel Ixtapan",
+    "fuente": "https://www.wikidata.org/wiki/Q7414966"
+   },
+   {
+    "id": "Q2884045",
+    "nombre": "Cerrito de Los Melones",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica del palacio del rey Nezahualcóyotl \"Ahuehuetitlán\" (Los Melones) toma el nombre del lugar en el que se ubica Cerrito de los Melones. Es una de las pocas evidencias exploradas de lo que fuera la gran ciudad prehispánica de Acolhuacan.",
+    "lat": 19.5095,
+    "lon": -98.88224,
+    "imagen": null,
+    "wiki": "Cerrito de Los Melones",
+    "fuente": "https://www.wikidata.org/wiki/Q2884045"
+   },
+   {
+    "id": "Q5350765",
+    "nombre": "El Arbolillo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Arbolillo es un yacimiento arqueológico que se encuentra en el territorio del actual municipio de Tlalnepantla de Baz, Se trata de los restos de una antigua aldea agrícola que se desarrolló durante el Período Preclásico en la ribera occidental del lago de Texcoco: de acuerdo con los datos disponibles, la ocupación…",
+    "lat": 19.5321,
+    "lon": -99.1684,
+    "imagen": null,
+    "wiki": "El Arbolillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5350765"
+   },
+   {
+    "id": "Q732343",
+    "nombre": "Parroquia de Santiago Apóstol",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia de Santiago Apóstol es el templo católico del pueblo de Santiago Tequixquiac, en el municipio de Tequixquiac, perteneciente a la Diócesis de Cuautitlán, en el estado de México. Esta iglesia se encuentra en la cabecera municipal, junto a la plaza principal o zócalo del pueblo.",
+    "lat": 19.91031,
+    "lon": -99.14745,
+    "imagen": null,
+    "wiki": "Parroquia de Santiago Apóstol (Tequixquiac)",
+    "municipio": "Tequixquiac",
+    "fuente": "https://www.wikidata.org/wiki/Q732343"
+   },
+   {
+    "id": "Q5758613",
+    "nombre": "Catedral de Toluca",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Metropolitana de Toluca (también, Catedral de Toluca San José, Catedral de San José o Catedral de Toluca) es una iglesia catedral de culto cristiano católico, levantada sobre lo que fue el convento franciscano de la Asunción.",
+    "lat": 19.29139,
+    "lon": -99.65722,
+    "imagen": "CatTolucaMexSt.JPG",
+    "wiki": "Catedral Metropolitana de Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q5758613"
+   },
+   {
+    "id": "Q25414344",
+    "nombre": "Catedral de San Buenaventura",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de San Buenaventura, comúnmente conocida como Catedral de Cuautitlán, es un templo católico, parte del conjunto conventual del mismo nombre en el Municipio de Cuautitlán, Estado de México. Fue designada como catedral el 5 de febrero de 1979 con la erección de la Diócesis de Cuautitlán.",
+    "lat": 19.66889,
+    "lon": -99.17869,
+    "imagen": "Catedral de Cuautitlán.jpg",
+    "wiki": "Catedral de San Buenaventura (Cuautitlán)",
+    "municipio": "Cuautitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q25414344"
+   },
+   {
+    "id": "Q5758464",
+    "nombre": "Catedral de Ecatepec",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Ecatepec es la sede de la diócesis de Ecatepec. Está dedicada al Sagrado Corazón de Jesús.",
+    "lat": 19.59944,
+    "lon": -99.04667,
+    "imagen": "Catedral del Sagrado Corazón de Jesús de Ecatepec (2024).jpg",
+    "wiki": "Catedral de Ecatepec",
+    "municipio": "Ecatepec de Morelos",
+    "fuente": "https://www.wikidata.org/wiki/Q5758464"
+   },
+   {
+    "id": "Q431309",
+    "nombre": "Cosmovitral",
+    "tipo": "Museo",
+    "descripcion": "El Cosmovitral Jardín Botánico es un espacio que se encuentra en la ciudad de Toluca capital del Estado de México, en México.",
+    "lat": 19.29354,
+    "lon": -99.65371,
+    "imagen": "Jardín Botánico Cosmovitral en Toluca Estado de México.jpg",
+    "wiki": "Cosmovitral Jardín Botánico",
+    "municipio": "Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q431309"
+   },
+   {
+    "id": "Q5758393",
+    "nombre": "Catedral Metropolitana de Tlalnepantla",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Tlalnepantla, o Catedral de Corpus Christi, fue consagrada el 23 de agosto de 1964.",
+    "lat": 19.5378,
+    "lon": -99.1941,
+    "imagen": "Catedral de Corpus Christi.JPG",
+    "wiki": "Catedral metropolitana de Tlalnepantla",
+    "municipio": "Tlalnepantla de Baz",
+    "fuente": "https://www.wikidata.org/wiki/Q5758393"
+   },
+   {
+    "id": "Q5758610",
+    "nombre": "Catedral de Texcoco",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Texcoco, dedicada a la Inmaculada Concepción de María, se ubica en el otrora conjunto conventual que los franciscanos levantaron en la villa de Texcoco, hacia el siglo XVI.",
+    "lat": 19.51347,
+    "lon": -98.88375,
+    "imagen": "TexcocoCathFacade2.JPG",
+    "wiki": "Catedral de Texcoco",
+    "fuente": "https://www.wikidata.org/wiki/Q5758610"
+   },
+   {
+    "id": "Q96626831",
+    "nombre": "Catedral de Atlacomulco",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Atlacomulco es la sede de la diócesis de Atlacomulco. Está dedicada a la Divina Providencia.",
+    "lat": 19.79978,
+    "lon": -99.87339,
+    "imagen": "CathedralDivineProvidenceAtlacomulco.JPG",
+    "wiki": "Catedral de Atlacomulco",
+    "municipio": "Atlacomulco",
+    "fuente": "https://www.wikidata.org/wiki/Q96626831"
+   },
+   {
+    "id": "Q2048532",
+    "nombre": "Museo Paleontológico de Tocuila",
+    "tipo": "Museo",
+    "descripcion": "El Museo Paleontológico de Tocuila exhibe una destacada muestra de uno de los yacimientos de fauna más ricos de América, principalmente con restos de mamut que datan del Pleistoceno tardío.",
+    "lat": 19.52065,
+    "lon": -98.90793,
+    "imagen": "Museo paleontologico de Tocuila-interiores2.JPG",
+    "wiki": "Museo Paleontológico de Tocuila",
+    "municipio": "Texcoco",
+    "fuente": "https://www.wikidata.org/wiki/Q2048532"
+   },
+   {
+    "id": "Q112124342",
+    "nombre": "Museo Militar de Aviación",
+    "tipo": "Museo",
+    "descripcion": "El Museo Militar de Aviación \"Teniente Piloto Aviador José Espinoza Fuentes\" (MUMA) se ubica en las instalaciones de la Base Aérea de Santa Lucía, Estado de México, es dependiente de la Secretaría de la Defensa Nacional y se enfoca principalmente en la exhibición de material histórico de la Fuerza Aérea Mexicana.",
+    "lat": 19.74263,
+    "lon": -98.98697,
+    "imagen": "TNCA_Serie_C_2.jpg",
+    "wiki": "Museo Militar de Aviación (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q112124342"
+   },
+   {
+    "id": "Q6940569",
+    "nombre": "Museo Nacional del Virreinato",
+    "tipo": "Museo",
+    "descripcion": "El Museo Nacional del Virreinato es un recinto museográfico de México ubicado en el antiguo Colegio de San Francisco Javier en Tepotzotlán, Estado de México. Está dedicado a la exhibición, difusión e investigación del virreinato de la Nueva España.",
+    "lat": 19.71338,
+    "lon": -99.22151,
+    "imagen": "Templo de San Francisco Javier y Museo Nacional del Virreinato desde un dron 01.png",
+    "wiki": "Museo Nacional del Virreinato",
+    "municipio": "Tepotzotlán",
+    "fuente": "https://www.wikidata.org/wiki/Q6940569"
+   },
+   {
+    "id": "Q28155501",
+    "nombre": "Quetzalpapálotl",
+    "tipo": "Palacio",
+    "descripcion": "El Quetzalpapálotl es un complejo en ruinas localizado en Teotihuacán. El complejo es más conocido como el Palacio de Quetzalpapálot.",
+    "lat": 19.69782,
+    "lon": -98.8455,
+    "imagen": "Wiki Loves Pyramids, Wikimania15, ArmAg (16).JPG",
+    "wiki": "Quetzalpapálotl",
+    "municipio": "Teotihuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q28155501"
+   },
+   {
+    "id": "Q25405276",
+    "nombre": "Catedral de Nezahualcóyotl",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Nezahualcóyotl, \"Jesús, Señor de la Misericordia\", es el templo católico sede de la Diócesis de Nezahualcóyotl, México. Fue construida en el año 2000 bajo el liderazgo del obispo José María Hernández González, siendo consagrada el 20 de noviembre de ese año.",
+    "lat": 19.40918,
+    "lon": -99.00076,
+    "imagen": "Catedral de Nezahualcóyotl, México I.jpg",
+    "wiki": "Catedral de Nezahualcóyotl",
+    "fuente": "https://www.wikidata.org/wiki/Q25405276"
+   },
+   {
+    "id": "Q117006958",
+    "nombre": "Catedral basílica de Tenancingo",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral basílica de Tenancingo, oficialmente Catedral basílica de San Clemente es una basílica menor elevada al rango de catedral, siendo sede de la Diócesis de Tenancingo. Está ubicada en la ciudad de Tenancingo de Degollado, del municipio homónimo, en el Estado de México.",
+    "lat": 18.96549,
+    "lon": -99.59351,
+    "imagen": "Cathedral Basilica of Saint Clement, Tenancingo, Mexico State, Mexico .jpg",
+    "wiki": "Catedral basílica de Tenancingo",
+    "municipio": "Tenancingo",
+    "fuente": "https://www.wikidata.org/wiki/Q117006958"
+   },
+   {
+    "id": "Q121508594",
+    "nombre": "Catedral de Teotihuacán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Teotihuacán, oficialmente Catedral Santuario del Divino Redentor es una iglesia católica elevada al rango de catedral, siendo sede de la Diócesis de Teotihuacán. Está ubicada en la ciudad de Teotihuacán de Arista, cabecera del Municipio de Teotihuacán, en el Estado de México.",
+    "lat": 19.68194,
+    "lon": -98.87019,
+    "imagen": "Catedral del divino redentor San Juan teotihuacan.jpg",
+    "wiki": "Catedral de Teotihuacán",
+    "municipio": "Teotihuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q121508594"
+   },
+   {
+    "id": "Q6888405",
+    "nombre": "Museo Modelo de Ciencias e Industria",
+    "tipo": "Museo",
+    "descripcion": "El Museo Modelo de Ciencias e Industria, por su acrónimo, MUMCI, se encontraba en Toluca, capital del Estado de México. Su objetivo principal era fomentar el interés por la industria y las ciencias relacionadas con esta.",
+    "lat": 19.29033,
+    "lon": -99.65228,
+    "imagen": "MuseoCienciasIndusTOL.JPG",
+    "wiki": "Museo Modelo de Ciencias e Industria",
+    "municipio": "Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q6888405"
+   },
+   {
+    "id": "Q107564272",
+    "nombre": "Museo de Bellas Artes de Toluca",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Bellas Artes de Toluca es un museo ubicado en Toluca, México. Es considerado uno de los museos más importantes del Estado de México por su patrimonio arquitectónico y por ser uno de los museos más antiguos de la ciudad de Toluca.",
+    "lat": 19.29431,
+    "lon": -99.65622,
+    "imagen": "Bellas artes de Toluca - panoramio.jpg",
+    "wiki": "Museo de Bellas Artes de Toluca",
+    "municipio": "Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q107564272"
+   },
+   {
+    "id": "Q5791678",
+    "nombre": "Cristo Rey",
+    "tipo": "Monumento",
+    "descripcion": "El Cristo Rey, también conocido como Cristo Resucitado, es una estatua colosal ubicada en el cerro Cola de Caballo, una de las laderas montañosas de la Sierra de Guadalupe, en el municipio de Tlalnepantla de Baz, Estado de México, dentro del panteón Jardines del Recuerdo.",
+    "lat": 19.56206,
+    "lon": -99.18443,
+    "imagen": "Christ Tlalnepantla.jpg",
+    "wiki": "Cristo Rey (Jardines del Recuerdo)",
+    "municipio": "Tlalnepantla de Baz",
+    "fuente": "https://www.wikidata.org/wiki/Q5791678"
+   },
+   {
+    "id": "Q60854014",
+    "nombre": "Guerrero Chimalli",
+    "tipo": "Monumento",
+    "descripcion": "Guerrero Chimalli es una escultura de acero al aire libre de Enrique «Sebastián» Carbajal, instalada sobre la Avenida Bordo de Xochiaca, en Chimalhuacán, Estado de México. Es una obra de arte de 60 metros que representa a un guerrero indígena mexicano que sostiene un Chimalli (un tipo de escudo) y una maza.",
+    "lat": 19.41306,
+    "lon": -98.98389,
+    "imagen": "Guerrero Chimalli - 2026 - 01.jpg",
+    "wiki": "Guerrero Chimalli",
+    "municipio": "Chimalhuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q60854014"
+   },
+   {
+    "id": "Q56811416",
+    "nombre": "Basílica de Nuestra Señora de los Remedios",
+    "tipo": "Templo",
+    "descripcion": "La Basílica de Nuestra Señora de los Remedios, Santuario de los Remedios o Nuestra Señora de los Remedios extramuros de México es un santuario de la Iglesia católica dedicado a la Virgen María, en su advocación de los Remedios, imagen que fue traída por Hernán Cortés.",
+    "lat": 19.47228,
+    "lon": -99.25149,
+    "imagen": "Los Remedios - panoramio (8).jpg",
+    "wiki": "Basílica de Nuestra Señora de los Remedios",
+    "municipio": "Naucalpan de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q56811416"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q852546",
+    "nombre": "Reserva de la biosfera de la Mariposa Monarca",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera de la Mariposa Monarca está localizada en la parte este del estado de Michoacán y parte del oeste del Estado de México, en la zona centro sur de la República Mexicana.",
+    "lat": 19.60639,
+    "lon": -100.24167,
+    "imagen": "Santuario de la Mariposa Monarca (3088019191).jpg",
+    "wiki": "Reserva de la Biosfera de la Mariposa Monarca",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q852546"
+   },
+   {
+    "id": "Q209034",
+    "nombre": "Toluca de Lerdo",
+    "tipo": "Ciudad",
+    "descripcion": "Toluca de Lerdo es una ciudad mexicana, cabecera del municipio de Toluca y capital del Estado de México.",
+    "lat": 19.29222,
+    "lon": -99.65389,
+    "imagen": "Toluca a los pies del nevado.jpg",
+    "wiki": "Toluca de Lerdo",
+    "municipio": "Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q209034"
+   },
+   {
+    "id": "Q210307",
+    "nombre": "Ciudad Nezahualcóyotl",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Nezahualcóyotl es una localidad mexicana del Estado de México, cabecera del Municipio de Nezahualcóyotl, al cual integra junto a las delegaciones Neza II y Carlos Hank González.",
+    "lat": 19.40061,
+    "lon": -99.01483,
+    "imagen": "Coyote en ayuno (Nezahualcóyotl, Edomex).jpg",
+    "wiki": "Ciudad Nezahualcóyotl",
+    "municipio": "Nezahualcóyotl",
+    "fuente": "https://www.wikidata.org/wiki/Q210307"
+   },
+   {
+    "id": "Q195769",
+    "nombre": "Santa María Chimalhuacán",
+    "tipo": "Ciudad",
+    "descripcion": "Santa María Chimalhuacán es una localidad del Estado de México, México. Es la cabecera del municipio de Chimalhuacán.",
+    "lat": 19.4375,
+    "lon": -98.95417,
+    "imagen": "Guerrero Chimalli en Chimalhuacán, Estado de México.jpg",
+    "wiki": "Santa María Chimalhuacán",
+    "municipio": "Chimalhuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q195769"
+   },
+   {
+    "id": "Q13700",
+    "nombre": "Lago de Texcoco",
+    "tipo": "Lago",
+    "descripcion": "El lago de Texcoco es parte del sistema de lagos del noroeste del valle de México. La historia ha llevado a la desecación de buena parte de la superficie de las masas acuosas que formaban parte del sistema.",
+    "lat": 19.5,
+    "lon": -98.99,
+    "imagen": "Lake Texcoco (Lago de Texcoco) December 1855 map from Harper's New Monthly Magazine Volume 12 December 1855 to May 1856 (IA harpersnew12harper) (page 34 crop).jpg",
+    "wiki": "Lago de Texcoco",
+    "fuente": "https://www.wikidata.org/wiki/Q13700"
+   },
+   {
+    "id": "Q1130484",
+    "nombre": "Ixtapaluca",
+    "tipo": "Ciudad",
+    "descripcion": "Ixtapaluca es una localidad del Estado de México, México. Es la cabecera del municipio de Ixtapaluca.",
+    "lat": 19.31861,
+    "lon": -98.88222,
+    "imagen": "FIESTA SAN JACINTO IXTAPALUCA 2011.JPG",
+    "wiki": "Ixtapaluca",
+    "municipio": "Ixtapaluca",
+    "fuente": "https://www.wikidata.org/wiki/Q1130484"
+   },
+   {
+    "id": "Q844166",
+    "nombre": "Santiago Tequixquiac",
+    "tipo": "Ciudad",
+    "descripcion": "Santiago Tequixquiac, o simplemente llamada Tequixquiac (Tequixquiac en náhuatl y Nthehe en otomí) es la localidad mexicana más poblada del municipio de Tequixquiac, se ubica al noreste del Estado de México, es también la cabecera municipal o sede del ayuntamiento.",
+    "lat": 19.9,
+    "lon": -99.13333,
+    "imagen": null,
+    "wiki": "Santiago Tequixquiac",
+    "municipio": "Tequixquiac",
+    "fuente": "https://www.wikidata.org/wiki/Q844166"
+   },
+   {
+    "id": "Q278070",
+    "nombre": "Eje Neovolcánico",
+    "tipo": "Sierra",
+    "descripcion": "El Eje Neovolcánico —también llamado Eje Volcánico Transversal, sierra Volcánica Transversal o cordillera Neovolcánica— es una cadena de volcanes ubicada en México.",
+    "lat": 19.5,
+    "lon": -100,
+    "imagen": "Citlaltepetl o Pico de Orizaba.JPG",
+    "wiki": "Eje Neovolcánico",
+    "fuente": "https://www.wikidata.org/wiki/Q278070"
+   },
+   {
+    "id": "Q1141799",
+    "nombre": "Texcoco de Mora",
+    "tipo": "Ciudad",
+    "descripcion": "Texcoco de Mora es una ciudad mexicana, es la cabecera del municipio de Texcoco y de la región Texcoco, en el Estado de México. Se ubica a 28 km de la Ciudad de México y a 99 km de la ciudad de Toluca de Lerdo.",
+    "lat": 19.51194,
+    "lon": -98.88293,
+    "imagen": "MainPlazaTexcoco3.JPG",
+    "wiki": "Texcoco de Mora",
+    "municipio": "Texcoco",
+    "fuente": "https://www.wikidata.org/wiki/Q1141799"
+   },
+   {
+    "id": "Q673994",
+    "nombre": "Nevado de Toluca",
+    "tipo": "Volcán",
+    "descripcion": "El Nevado de Toluca, aunque aún referido como Xinantécatl (Hombre desnudo en náhuatl), es un volcán mexicano ubicado en Estado de México, en el Valle de Toluca. Se localiza a 22 km al suroeste de la capital estatal, Toluca de Lerdo.",
+    "lat": 19.10876,
+    "lon": -99.75561,
+    "imagen": "Vista del Nevado de Toluca.jpg",
+    "wiki": "Nevado de Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q673994"
+   },
+   {
+    "id": "Q1321216",
+    "nombre": "Cuautitlán Izcalli",
+    "tipo": "Ciudad",
+    "descripcion": "Cuautitlán Izcalli, también conocida como Izcalli, es una ciudad del Estado de México, que tiene como cabecera al municipio homónimo fundado en 1973. Tras su concepción, ese mismo año se estableció Infonavit Norte, la primera colonia formalmente instituida en la localidad.",
+    "lat": 19.64388,
+    "lon": -99.21598,
+    "imagen": "Cuautitlan Izcalli letters in 2023 (1).jpg",
+    "wiki": "Cuautitlán Izcalli",
+    "municipio": "Cuautitlán Izcalli",
+    "fuente": "https://www.wikidata.org/wiki/Q1321216"
+   },
+   {
+    "id": "Q1963483",
+    "nombre": "Ciudad López Mateos",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad López Mateos es la cabecera municipal de Atizapán de Zaragoza, uno de los municipios del Estado de México en México.",
+    "lat": 19.56111,
+    "lon": -99.24694,
+    "imagen": "Puente_de_autopista_Sobre_Col._Adolfo_Lopez_Mateos._-_panoramio.jpg",
+    "wiki": "Ciudad López Mateos",
+    "municipio": "Atizapán de Zaragoza",
+    "fuente": "https://www.wikidata.org/wiki/Q1963483"
+   },
+   {
+    "id": "Q3364418",
+    "nombre": "Parque nacional Iztaccíhuatl-Popocatépetl",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Iztaccíhuatl-Popocatépetl (a veces denominado parque nacional Iztaccíhuatl-Popocatépetl Zoquiapan y parque nacional Iztaccíhuatl-Popocatépetl, Zoquiapan y Anexas ), es una de las primeras áreas naturales protegidas por el gobierno de México.",
+    "lat": 19.2362,
+    "lon": -98.6634,
+    "imagen": "Mexico-Popocatepetl.jpg",
+    "wiki": "Parque nacional Iztaccíhuatl-Popocatépetl",
+    "fuente": "https://www.wikidata.org/wiki/Q3364418"
+   },
+   {
+    "id": "Q6169317",
+    "nombre": "Jocotitlán",
+    "tipo": "Volcán",
+    "descripcion": "El Jocotitlan o Xocotépetl es un volcán localizado en el Estado de México, en México. Con sus 3953 metros sobre el nivel del mar, se trata de una de las principales cimas mexiquenses.",
+    "lat": 19.74169,
+    "lon": -99.7603,
+    "imagen": "Jocotitlán.jpg",
+    "wiki": "Xocotépetl",
+    "fuente": "https://www.wikidata.org/wiki/Q6169317"
+   },
+   {
+    "id": "Q1842907",
+    "nombre": "Parque nacional Lagunas de Zempoala",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Lagunas de Zempoala (del idioma náhuatl: veinte lagunas o muchas lagunas) es un área natural protegida de México por decreto oficial del 27 de noviembre de 1936 el cual se modificó el 19 de mayo de 1947, ubicada en el Estado de México y en el Estado de Morelos. Consta de una superficie de 4790 ha.",
+    "lat": 19.05587,
+    "lon": -99.3201,
+    "imagen": "ZempoalaLakeNationalParkMexico.jpg",
+    "wiki": "Parque nacional Lagunas de Zempoala",
+    "fuente": "https://www.wikidata.org/wiki/Q1842907"
+   },
+   {
+    "id": "Q13583478",
+    "nombre": "Parque Nacional Bosencheve",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Bosencheve es un parque nacional de México situado en el estado de México(municipios Villa de Allende, Villa Victoria, y San José del Rincón) y Michoacán (municipio de Zitácuaro).",
+    "lat": 19.4155,
+    "lon": -100.109,
+    "imagen": "Parque bosencheve.jpg",
+    "wiki": "Parque nacional Bosencheve",
+    "fuente": "https://www.wikidata.org/wiki/Q13583478"
+   },
+   {
+    "id": "Q1965730",
+    "nombre": "Área de protección de flora y fauna Nevado de Toluca",
+    "tipo": "Área natural protegida",
+    "descripcion": "El área de protección de flora y fauna Nevado de Toluca es un área natural protegida de México que quiere preservar un espacio natural ubicado en las faldas del Nevado de Toluca.",
+    "lat": 19.17861,
+    "lon": -99.82111,
+    "imagen": "Nevado de Toluca Peak, December 2005.JPG",
+    "wiki": "Área de protección de flora y fauna Nevado de Toluca",
+    "fuente": "https://www.wikidata.org/wiki/Q1965730"
+   },
+   {
+    "id": "Q3019501",
+    "nombre": "Parque Nacional Molino de Flores Nezahualcóyotl",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Molino de Flores Nezahualcóyotl es un Parque Nacional de México de situado en el Estado de México. Tiene una superficie de 50 ha y fue decretada como Área Natural Protegida Federal el 5 de noviembre de 1937 por el entonces presidente Lázaro Cárdenas.",
+    "lat": 19.514,
+    "lon": -98.839,
+    "imagen": "Molino de FloresTexcoco.jpg",
+    "wiki": "Parque nacional Molino de Flores Nezahualcóyotl",
+    "fuente": "https://www.wikidata.org/wiki/Q3019501"
+   },
+   {
+    "id": "Q16668926",
+    "nombre": "Parque nacional Sacromonte",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional Sacromonte es un parque nacional de México situado en el Estado de México. Tiene una superficio de 45 ha y fue creado en 1939.",
+    "lat": 19.12887,
+    "lon": -98.77485,
+    "imagen": "Santuario_del_Señor_del_Sacromonte,_Amecameca.jpg",
+    "wiki": "Parque nacional Sacromonte",
+    "fuente": "https://www.wikidata.org/wiki/Q16668926"
+   },
+   {
+    "id": "Q6063011",
+    "nombre": "Parque nacional Los Remedios",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional \"Los Remedios\" se encuentra en el extremo oeste del municipio de Naucalpan en el Estado de México al noroeste de la Ciudad de México. Este parque fue creado por decreto en 1938 por el gobierno federal con un área de 400 hectáreas.",
+    "lat": 19.4752,
+    "lon": -99.2539,
+    "imagen": "Santuario de los Remedios Lateral y Sagrario.JPG",
+    "wiki": "Parque nacional Los Remedios",
+    "municipio": "Naucalpan de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q6063011"
+   },
+   {
+    "id": "Q594619",
+    "nombre": "Lago de Zumpango",
+    "tipo": "Lago",
+    "descripcion": "La laguna de Zumpango como se conoce hoy en día, es técnicamente un vaso regulador, con una capacidad de 100 millones de metros cúbicos de agua y una superficie aproximada de 1853 hectáreas.",
+    "lat": 19.79028,
+    "lon": -99.13083,
+    "imagen": "Laguna de Zumpango.jpg",
+    "wiki": "Lago de Zumpango",
+    "fuente": "https://www.wikidata.org/wiki/Q594619"
+   },
+   {
+    "id": "Q2839296",
+    "nombre": "Parque nacional Desierto del Carmen",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Desierto del Carmen es un Parque nacional de los Estados Unidos Mexicanos, ubicado en el municipio de Tenancingo, Estado de México. Fue declarado como Parque nacional el 10 de octubre de 1942.",
+    "lat": 18.90841,
+    "lon": -99.55162,
+    "imagen": "Santo_Desierto_del_Carmen,_Tenancingo,_Mexico.JPG",
+    "wiki": "Parque nacional Desierto del Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q2839296"
+   },
+   {
+    "id": "Q2146425",
+    "nombre": "Telapón",
+    "tipo": "Montaña",
+    "descripcion": "El Telapón (del náhuatl Tetlapan, «en el río de piedras») es un volcán ubicado en el Eje Neovolcánico de México, específicamente en el municipio de Ixtapaluca, en el Estado de México. Con una altitud oficial de 4080 metros sobre el nivel del mar, se trata de una de las cumbres más altas del país.",
+    "lat": 19.38333,
+    "lon": -98.71667,
+    "imagen": "Telapón.jpg",
+    "wiki": "Telapón",
+    "fuente": "https://www.wikidata.org/wiki/Q2146425"
+   },
+   {
+    "id": "Q5671213",
+    "nombre": "Altzomoni",
+    "tipo": "Montaña",
+    "descripcion": "El Altzomoni es un pico volcánico de 4200 m s. n. m. situado entre los volcanes Popocatépetl e Iztaccíhuatl al norte de la Región Paso de Cortés en el municipio de Amecameca, Estado de México.",
+    "lat": 19.12,
+    "lon": -98.654,
+    "imagen": "Altzomoni,_con_Iztaccihuatl_de_fondo.jpg",
+    "wiki": "Altzomoni",
+    "fuente": "https://www.wikidata.org/wiki/Q5671213"
+   },
+   {
+    "id": "Q5763020",
+    "nombre": "Cerro Gordo",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro Gordo es un cerro de baja altura y poca vegetación de origen volcánico perteneciente pero un poco separado de la Sierra de Guadalupe en México. El uso de este cerro era principalmente la extracción de roca.",
+    "lat": 19.5469,
+    "lon": -99.0597,
+    "imagen": "CerroGordo.jpg",
+    "wiki": "Cerro Gordo (Sierra de Guadalupe)",
+    "fuente": "https://www.wikidata.org/wiki/Q5763020"
+   },
+   {
+    "id": "Q27777605",
+    "nombre": "Cerro Paula",
+    "tipo": "Montaña",
+    "descripcion": "El cerro de Paula es una elevación ubicada en el municipio de Temascalapa, al noreste del estado de México, en México. Recibe su nombre por haber formado parte de la antigua Hacienda de San Francisco de Paula.",
+    "lat": 19.79028,
+    "lon": -98.91722,
+    "imagen": null,
+    "wiki": "Cerro de Paula",
+    "municipio": "Temascalapa",
+    "fuente": "https://www.wikidata.org/wiki/Q27777605"
+   },
+   {
+    "id": "Q27767589",
+    "nombre": "Cerro Xico",
+    "tipo": "Montaña",
+    "descripcion": "El Volcán Xico, Cerro de Xico o Cráter Xico, es una montaña situada en la Faja Volcánica Transmexicana (FVTM), en el municipio Valle de Chalco Solidaridad, Estado de México. Por sus características, un cráter circular casi perfecto (anillo de toba), desde la antigüedad se le conoce como \"ombligo del mundo\".",
+    "lat": 19.25762,
+    "lon": -98.93867,
+    "imagen": "Cerro de Xico.JPG",
+    "wiki": "Volcán Xico",
+    "fuente": "https://www.wikidata.org/wiki/Q27767589"
+   },
+   {
+    "id": "Q107349037",
+    "nombre": "Parque Ecológico Lago de Texcoco",
+    "tipo": "Área natural protegida",
+    "descripcion": "El parque ecológico Lago de Texcoco, oficialmente proyecto ecológico Lago de Texcoco (PELT), es un parque urbano en el Estado de México —en su frontera noroeste con la Ciudad de México— ubicado al lado de la zona metropolitana del valle de México.",
+    "lat": 19.5,
+    "lon": -98.99,
+    "imagen": "Parque_ecológico_Lago_de_Texcoco_y_Lago_Nabor_Carrillo_desde_el_aire_03.jpg",
+    "wiki": "Parque ecológico Lago de Texcoco",
+    "fuente": "https://www.wikidata.org/wiki/Q107349037"
+   },
+   {
+    "id": "Q108391249",
+    "nombre": "Ciénegas del Lerma",
+    "tipo": "Área natural protegida",
+    "descripcion": "Las Ciénegas del Lerma es un humedal localizado en el centro de Estado de México, México. Está formado por tres lagos en el Valle de Toluca, la cuenca alta del río Lerma, cerca de la ciudad de Toluca.",
+    "lat": 19.21667,
+    "lon": -99.5,
+    "imagen": null,
+    "wiki": "Ciénegas del Lerma",
+    "fuente": "https://www.wikidata.org/wiki/Q108391249"
+   },
+   {
+    "id": "Q76823680",
+    "nombre": "Sierra de Nanchititla",
+    "tipo": "Área natural protegida",
+    "descripcion": "El Parque Natural de Recreación Popular denominado \"Sierra de Nanchititla\" es un área natural protegida en México ubicada en Luvianos, al sur del Estado de México.",
+    "lat": 18.84106,
+    "lon": -100.4139,
+    "imagen": "Luvianos Cañadas, Nachititla, Estado de México- Luvianos Cañadas, Nachititla, State of Mexico (22861633327).jpg",
+    "wiki": "Sierra de Nanchititla",
+    "fuente": "https://www.wikidata.org/wiki/Q76823680"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q11094093",
+    "nombre": "Ximbó",
+    "tipo": "Platillo",
+    "descripcion": "El ximbó (del otomí: nximbo ‘penca del corazón del maguey’) es un platillo mexicano típico de Actopan, Hidalgo; el cual se ha extendido a diferentes partes del Valle del Mezquital y del centro de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Ximbó_en_Actopan,_Hidalgo._05.jpg",
+    "wiki": "Ximbó",
+    "fuente": "https://www.wikidata.org/wiki/Q11094093"
+   },
+   {
+    "id": "Q3501262",
+    "nombre": "Tlacoyo",
+    "tipo": "Platillo",
+    "descripcion": "Los tlacoyos (también, clacoyos, clacoyito, tlatloyos, tlayoyos o tlacoyos; del náhuatl tlayoyo, empanada de maíz desgranado) son un platillo de la gastronomía típica mexicana es elaborado con masa de maíz en forma oblonga, romboide o triangular que se rellena de pasta de haba, alverjón, asientos de chicharrón o…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlacoyos en comal.jpg",
+    "wiki": "Tlacoyo",
+    "fuente": "https://www.wikidata.org/wiki/Q3501262"
+   },
+   {
+    "id": "Q614320",
+    "nombre": "Escamol",
+    "tipo": "Platillo",
+    "descripcion": "Los escamoles (del náhuatl azcatl, ‘hormiga’, y molli, ‘guiso’) son larvas de la hormiga güijera Liometopum apiculatum, muy apreciadas en México desde tiempos prehispánicos, cuando en temporada formaban parte de la alimentación cotidiana de los habitantes de Mesoamérica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "MGSA2018 - Escamoles.jpg",
+    "wiki": "Escamol",
+    "fuente": "https://www.wikidata.org/wiki/Q614320"
+   },
+   {
+    "id": "Q3631314",
+    "nombre": "Axayácatl",
+    "tipo": "Platillo",
+    "descripcion": "El término axayácatl (del idioma náhuatl: ɑʃɑˈjɑkɑt͡ɬ, \"ashayácatl\"; la forma plural, ɑːʃɑʃɑˈjɑkɑt͡ɬ, \"ashashayácatl\", que no se ocupa en el habla cotidiana; y a su vez en idioma español: \"la faz del agua\" o \"al ras del agua\") es el nombre genérico con el que se conocen 8 especies del orden Hemiptera de las zonas…",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Axayácatl (insecto)",
+    "fuente": "https://www.wikidata.org/wiki/Q3631314"
+   },
+   {
+    "id": "Q105812795",
+    "nombre": "Tlapique",
+    "tipo": "Platillo",
+    "descripcion": "El mextlapique (del náhuatl michin, 'pescado', y tlapictli, 'envuelto en hoja') o tlapique, es una preparación mexicana de origen prehispánico que consiste en envolver filetes de pescado con nopales, cebolla y otras verduras y condimentos en hojas secas de maíz (totomoxtles) y tatemándolo en el comal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlapique de pescado.jpg",
+    "wiki": "Mextlapique",
+    "fuente": "https://www.wikidata.org/wiki/Q105812795"
+   },
+   {
+    "id": "Q6024593",
+    "nombre": "Mosco",
+    "tipo": "Bebida",
+    "descripcion": "El mosco es un licor fermentado y destilado de caña de azúcar y naranja, fabricado y distribuido por la marca homónima. Es originario de la ciudad de Toluca de Lerdo, capital del estado de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Moscos bebida.jpg",
+    "wiki": "Mosco (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q6024593"
+   },
+   {
+    "id": "Q87923314",
+    "nombre": "Obispo",
+    "tipo": "Platillo",
+    "descripcion": "El obispo es un embutido elaborado de carne de cerdo y originario del municipio de Tenancingo, en el Estado de México, al sur de la capital, Toluca.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Obispo (embutido)",
+    "fuente": "https://www.wikidata.org/wiki/Q87923314"
+   },
+   {
+    "id": "Q102214461",
+    "nombre": "Pepeto",
+    "tipo": "Sopa",
+    "descripcion": "El pepeto es una sopa típica del Estado de México, particularmente de Coatepec Harinas. Incluye chilacayote, habas verdes o amarillas, elote, carne de cerdo (costilla o codillo aportan buen sabor) o de pollo, cebolla, ajo, epazote y chile manzano.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Caldo pepeto.jpg",
+    "wiki": "Pepeto (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q102214461"
+   },
+   {
+    "id": "Q94842134",
+    "nombre": "Tecuí",
+    "tipo": "Bebida",
+    "descripcion": "El tecuí (del nahua, tekuini 'latir [el corazón]', 'palpitar') es una bebida alcohólica que se prepara con frutas frescas y frutos secos, típica del Valle de Toluca, México, particularmente de Calimaya, de donde es originaria.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cazuela_de_tecuí.jpg",
+    "wiki": "Tecuí",
+    "fuente": "https://www.wikidata.org/wiki/Q94842134"
+   },
+   {
+    "id": "Q5673771",
+    "nombre": "Pambazo",
+    "tipo": "Platillo",
+    "descripcion": "El pambazo es un emparedado mexicano, cuyo relleno varía según la región en la que se consuma, siendo los rellenos tradicionales de frijoles con chorizo, queso fresco, papa, y de papa con chorizo. El nombre proviene del pan que usa, el pan bazo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pambazo.jpg",
+    "wiki": "Pambazo",
+    "fuente": "https://www.wikidata.org/wiki/Q5673771"
+   },
+   {
+    "id": "Q138789368",
+    "nombre": "Chicharrón preparado",
+    "tipo": "Platillo",
+    "descripcion": "El chicharrón preparado es un platillo mexicano, original de la Ciudad de México y extendido a diversos estados de la república. Consiste en un rectángulo de harina de trigo cocido y de estructura tiesa, sobre la que se agregan ingredientes.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chicharrón_preparado.jpg",
+    "wiki": "Chicharrón preparado",
+    "fuente": "https://www.wikidata.org/wiki/Q138789368"
+   },
+   {
+    "id": "Q5766381",
+    "nombre": "Chileatole",
+    "tipo": "Platillo",
+    "descripcion": "El chileatole puede referirse a dos clases de comidas mexicanas:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chileatole_en_Veracruz.jpg",
+    "wiki": "Chileatole",
+    "fuente": "https://www.wikidata.org/wiki/Q5766381"
+   },
+   {
+    "id": "Q111687586",
+    "nombre": "Dorada toluqueña",
+    "tipo": "Platillo",
+    "descripcion": "La dorada toluqueña o huarache toluqueño es un platillo típico de la cocina mexicana, originario de Toluca. Es popular en el Estado de México y la Ciudad de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "TlayudaMexico City.JPG",
+    "wiki": "Dorada toluqueña",
+    "fuente": "https://www.wikidata.org/wiki/Q111687586"
+   },
+   {
+    "id": "Q5794872",
+    "nombre": "Curado",
+    "tipo": "Bebida",
+    "descripcion": "El pulque curado o curado de pulque es una bebida alcohólica preparada a base de pulque, fruta, y algún endulzante como miel o azúcar. Se le tiene como una bebida tradicional mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Curado.jpg",
+    "wiki": "Pulque curado",
+    "fuente": "https://www.wikidata.org/wiki/Q5794872"
+   },
+   {
+    "id": "Q5069084",
+    "nombre": "Chalupa",
+    "tipo": "Platillo",
+    "descripcion": "Las chalupasson un tipo de antojito mexicano originario del estado de Hidalgo, que se consume especialmente los fines de semana por las noches o como comida típica durante la celebración del día de la Independencia Mexicana, el 16 de septiembre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chalupa (comida).jpg",
+    "wiki": "Chalupa (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q5069084"
+   },
+   {
+    "id": "Q5810921",
+    "nombre": "Jamoncillo",
+    "tipo": "Dulce",
+    "descripcion": "El jamoncillo es un dulce tradicional de México, específicamente de los estados de Guanajuato, Querétaro, Nuevo León, Coahuila, Durango, Chihuahua, Sinaloa, Sonora, San Luis Potosí, Jalisco, Michoacán, el Estado de México, Puebla y Veracruz hecho a base de leche y azúcar.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Jamoncillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5810921"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q865325",
+    "nombre": "Quesadilla mexicana",
+    "tipo": "Platillo",
+    "descripcion": "La quesadilla es un platillo mexicano que consiste en una tortilla de maíz, o también de trigo, doblada por la mitad que, dependiendo de la región, puede estar rellena de queso o de otros ingredientes y que se come caliente, ya sea frita o cocida en el comal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Quesadilles de Blanes amb salses.jpg",
+    "wiki": "Quesadilla (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q865325"
+   },
+   {
+    "id": "Q2681008",
+    "nombre": "Huevos rancheros",
+    "tipo": "Platillo",
+    "descripcion": "Los huevos rancheros son un desayuno mexicano tradicional, que consiste en huevos estrellados sobre tortillas de maíz, bañados con una salsa hecha de tomates, chiles y otros vegetales finamente picados y sofritos en aceite, y como guarnición frijoles refritos o guacamole y pico de gallo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Huevos rancheros.jpg",
+    "wiki": "Huevos rancheros",
+    "fuente": "https://www.wikidata.org/wiki/Q2681008"
+   },
+   {
+    "id": "Q5044066",
+    "nombre": "Carnitas",
+    "tipo": "Platillo",
+    "descripcion": "En México, se le llama carnitas a la carne de puerco de diferentes porciones, incluyendo carne que son fritas en manteca de puerco. Para su preparación, se emplean enormes ollas de cobre, o cazos de acero inoxidable.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carnitas in Mexico.jpg",
+    "wiki": "Carnitas",
+    "fuente": "https://www.wikidata.org/wiki/Q5044066"
+   }
+  ]
+ }
+}

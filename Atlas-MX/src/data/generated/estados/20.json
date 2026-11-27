@@ -1,0 +1,1077 @@
+{
+ "cve": "20",
+ "estado": "Oaxaca",
+ "wikidata": "Q34110",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q590948",
+    "nombre": "Capulálpam de Méndez",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Capulálpam de Méndez es una localidad con rango de Municipio Libre y Soberano perteneciente al distrito de Ixtlán de Juárez, en la Sierra Norte del estado de Oaxaca, en México. Fue incluida en el programa turístico Pueblos Mágicos en 2007.",
+    "lat": 17.30639,
+    "lon": -96.44611,
+    "imagen": "Capulalpam24.JPG",
+    "wiki": "Capulálpam de Méndez",
+    "municipio": "Capulálpam de Méndez",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q590948"
+   },
+   {
+    "id": "Q20145546",
+    "nombre": "Huautla de Jiménez",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Huautla de Jiménez es una población del estado mexicano de Oaxaca. Que es parte del municipio de Huautla de Jiménez y el Distrito de Teotitlán, dentro de la Región Sierra de Flores Magón.",
+    "lat": 18.1315,
+    "lon": -96.84088,
+    "imagen": "Huautla de Jimenez.jpg",
+    "wiki": "Huautla de Jiménez",
+    "municipio": "Huautla de Jiménez",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20145546"
+   },
+   {
+    "id": "Q6799043",
+    "nombre": "Mazunte",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mazunte es un pequeño pueblo sobre la costa del Pacífico en Oaxaca, México. Está localizado a 22 km del suroeste de San Pedro Pochutla sobre la carretera costera 200, a unos 10 km al oeste de Puerto Ángel y sólo a 1 km de San Agustinillo y a 264 km al sur de la capital de Oaxaca.",
+    "lat": 15.66783,
+    "lon": -96.55344,
+    "imagen": "Mazunte and Punta Cometa.jpg",
+    "wiki": "Mazunte",
+    "municipio": "Santa María Tonameca",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6799043"
+   },
+   {
+    "id": "Q2396153",
+    "nombre": "San Pablo Villa de Mitla",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Pablo Villa de Mitla es un pueblo y cabecera municipal situado al este de las regiones de los Valles Centrales del estado de Oaxaca, a 46 km de la ciudad de Oaxaca, en el Distrito de Tlacolula.",
+    "lat": 16.92083,
+    "lon": -96.36167,
+    "imagen": "Eglise San Paolo Mitla.jpg",
+    "wiki": "San Pablo Villa de Mitla",
+    "municipio": "San Pablo Villa de Mitla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2396153"
+   },
+   {
+    "id": "Q61277273",
+    "nombre": "San Pedro y San Pablo Teposcolula",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Pedro y San Pablo Teposcolula es una localidad del estado mexicano de Oaxaca, y cabecera del municipio de San Pedro y San Pablo Teposcolula.",
+    "lat": 17.51056,
+    "lon": -97.48833,
+    "imagen": "San Pedro y San Pablo Teposcolula 2.jpg",
+    "wiki": "San Pedro y San Pablo Teposcolula",
+    "municipio": "San Pedro y San Pablo Teposcolula",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q61277273"
+   },
+   {
+    "id": "Q3890910",
+    "nombre": "Santa Catarina Juquila",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Santa Catarina Juquila es una localidad situada en el estado mexicano de Oaxaca. Según el censo de 2020, tiene una población de 8 084 habitantes.",
+    "lat": 16.23639,
+    "lon": -97.29194,
+    "imagen": "Calle de Santa Catarina Juquila, Oaxaca. - panoramio.jpg",
+    "wiki": "Santa Catarina Juquila",
+    "municipio": "Santa Catarina Juquila",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.gob.mx/sectur/articulos/pueblos-magicos-206528"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q464899",
+    "nombre": "Monte Albán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Monte Albán es un sitio arqueológico localizado a 8 km de la ciudad de Oaxaca de Juárez. Fue la antigua capital de los zapotecos y una de las primeras ciudades de Mesoamérica, y de las más populosas durante su auge.",
+    "lat": 17.04389,
+    "lon": -96.76778,
+    "imagen": "Monte Albán archeological site, Oaxaca.jpg",
+    "wiki": "Monte Albán",
+    "municipio": "Santa Cruz Xoxocotlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q464899"
+   },
+   {
+    "id": "Q8343763",
+    "nombre": "Centro Histórico de Oaxaca de Juárez",
+    "tipo": "Centro histórico",
+    "descripcion": "El Centro Histórico de Oaxaca se encuentra en el estado de Oaxaca en la ciudad de Oaxaca de Juárez, México. En unión con el sitio arqueológico de Monte Albán es Patrimonio de la Humanidad declarado por la Unesco desde 1987, debido a la belleza de Oaxaca y su buen ejemplo de urbanismo colonial español.",
+    "lat": 17.06194,
+    "lon": -96.72167,
+    "imagen": "Oaxaca1848.gif",
+    "wiki": "Centro histórico de Oaxaca de Juárez",
+    "municipio": "Oaxaca de Juárez",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q8343763"
+   },
+   {
+    "id": "Q15661566",
+    "nombre": "Cuevas prehistóricas de Yagul y Mitla",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las Cuevas Prehistóricas de Yagul y Mitla son un área arqueológica situada en el Valle de Tlacolula (subprovincia de los Valles Centrales de Oaxaca), en el estado de Oaxaca, México, más propiamente llamadas \"Cuevas Prehistóricas del Valle de Tlacolula\".",
+    "lat": 16.95083,
+    "lon": -96.42111,
+    "imagen": "YagulPanorama.jpg",
+    "wiki": "Cuevas Prehistóricas de Yagul y Mitla",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q15661566"
+   },
+   {
+    "id": "Q1366027",
+    "nombre": "Mitla",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Mitla ( Mictlan / Miktlan o lugar de muertos en náhuatl, Yooꞌ Baꞌ o lugar de descanso en zapoteco, Ñuu Ntìì o lugar de muertos en mixteco) es una zona arqueológica de la cultura zapoteca localizada en el municipio de San Pablo Villa de Mitla, en el estado mexicano de Oaxaca, a 40 km de la capital por la carretera…",
+    "lat": 16.91667,
+    "lon": -96.4,
+    "imagen": "BestConservedBuilding-Mitla-Oaxaca-Mexico.jpg",
+    "wiki": "Mitla",
+    "fuente": "https://www.wikidata.org/wiki/Q1366027"
+   },
+   {
+    "id": "Q1479363",
+    "nombre": "Yagul",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yagul es una zona arqueológica mexicana fortificada. Se ubica en el valle de Tlacolula, en el estado de Oaxaca.",
+    "lat": 16.95836,
+    "lon": -96.45014,
+    "imagen": "Zona Arqueológica de Yagul.jpg",
+    "wiki": "Yagul",
+    "fuente": "https://www.wikidata.org/wiki/Q1479363"
+   },
+   {
+    "id": "Q2535980",
+    "nombre": "San José Mogote",
+    "tipo": "Zona arqueológica",
+    "descripcion": "San José Mogote es una zona arqueológica del estado de Oaxaca, en el sureste de México.",
+    "lat": 17.1675,
+    "lon": -96.80333,
+    "imagen": "San Jose Mogote Pyramid.jpg",
+    "wiki": "San José Mogote",
+    "municipio": "Guadalupe Etla",
+    "fuente": "https://www.wikidata.org/wiki/Q2535980"
+   },
+   {
+    "id": "Q1189077",
+    "nombre": "Tututepec",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Señorío de Tututepec o Yucudza (del mixteco: Yukú Saa ‘Cerro del pájaro’‘yukú, 'monte'; saa, pájaro’) constituía uno de los cuatro reinos mayores (Coixtlahuaca, Nuu Tnoo Huahui Andehui, Tlaxiaco y Tututepec) de la Región Mixteca, enclavado en la llamada Costa Chica o Mixteca Costera.",
+    "lat": 16.1167,
+    "lon": -97.6,
+    "imagen": "Tututepec.JPG",
+    "wiki": "Señorío de Tututepec",
+    "fuente": "https://www.wikidata.org/wiki/Q1189077"
+   },
+   {
+    "id": "Q1494721",
+    "nombre": "Guiengola",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Guiengola es un sitio arqueológico zapoteca del Posclásico Tardío (ca. siglos XIV–inicios del XVI) ubicado en las cercanías de Santo Domingo Tehuantepec, en el Istmo de Tehuantepec, Oaxaca, México.",
+    "lat": 16.38597,
+    "lon": -95.32325,
+    "imagen": "Guiengola3.jpg",
+    "wiki": "Guiengola",
+    "municipio": "Santo Domingo Tehuantepec",
+    "fuente": "https://www.wikidata.org/wiki/Q1494721"
+   },
+   {
+    "id": "Q3117782",
+    "nombre": "Tilantongo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tilantongo es el nombre del principal centro político de la Mixteca Alta (Oaxaca) durante el Posclásico mesoamericano. La ocupación del área cercana al sitio muestra indicios de ocupación desde el Preclásico Medio, como lo demostraron las excavaciones de Alfonso Caso Andrade en Monte Negro.",
+    "lat": 17.25,
+    "lon": -97.28333,
+    "imagen": "Iya Nacuaa Teyusi Ñaña.jpg",
+    "wiki": "Señorío de Tilantongo",
+    "fuente": "https://www.wikidata.org/wiki/Q3117782"
+   },
+   {
+    "id": "Q1157643",
+    "nombre": "Dainzú",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Dainzú (en zapoteco: Dannizhú o Quiebelagayo) es un sitio arqueológico de la cultura zapoteca, localizado en el brazo oriental de los Valles Centrales de Oaxaca en el municipio de San Jerónimo Tlacochahuaya, a 19 kilómetros sobre la carretera panamericana 190, al sur-este de la ciudad de Oaxaca de Juárez, capital del…",
+    "lat": 17.00356,
+    "lon": -96.55686,
+    "imagen": "Dainzú 1.jpg",
+    "wiki": "Dainzú",
+    "fuente": "https://www.wikidata.org/wiki/Q1157643"
+   },
+   {
+    "id": "Q1103348",
+    "nombre": "Zaachila",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de Zaachila (1200 y 1521 d. C.) fue una ciudad-estado, y una de las pocas capitales mixteco-zapotecas todavía habitadas a la llegada de los españoles.",
+    "lat": 16.95267,
+    "lon": -96.74883,
+    "imagen": "Zaachila Panorama.JPG",
+    "wiki": "Zaachila",
+    "fuente": "https://www.wikidata.org/wiki/Q1103348"
+   },
+   {
+    "id": "Q3120596",
+    "nombre": "Guilá Naquitz",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Guilá Naquitz —o Güilá Naquitz— es una caverna localizada en el extremo oriental de los Valles Centrales de Oaxaca (México).",
+    "lat": 16.97528,
+    "lon": -96.30889,
+    "imagen": "Guila Naquitz cave.jpg",
+    "wiki": "Guilá Naquitz",
+    "fuente": "https://www.wikidata.org/wiki/Q3120596"
+   },
+   {
+    "id": "Q1771321",
+    "nombre": "Lambityeco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Lambityeco es un sitio arqueológico localizado a unos 25 km al sureste de la ciudad de Oaxaca. Los monumentos arqueológicos explorados y expuestos a la vista incluyen dos conjuntos palaciegos.",
+    "lat": 16.97167,
+    "lon": -96.49194,
+    "imagen": "Lambityeco2.jpg",
+    "wiki": "Lambityeco",
+    "fuente": "https://www.wikidata.org/wiki/Q1771321"
+   },
+   {
+    "id": "Q1771263",
+    "nombre": "Yucuita",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yucuita es un sitio arqueológico localizado en el municipio mixteco de San Juan Yucuita (poniente de Oaxaca, México). Fue fundado por los mixtecos durante el Período Preclásico como una pequeña aldea dedicada a la agricultura y al comercio de la obsidiana.",
+    "lat": 17.5,
+    "lon": -97.2667,
+    "imagen": "Yucuito.jpg",
+    "wiki": "Yucuita",
+    "fuente": "https://www.wikidata.org/wiki/Q1771263"
+   },
+   {
+    "id": "Q3665160",
+    "nombre": "Cerro de las Minas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El cerro de las Minas es un sitio arqueológico ubicado en el actual estado de Oaxaca, justo al norte de la ciudad de Huajuapan de León.",
+    "lat": 17.81833,
+    "lon": -97.77333,
+    "imagen": "Lapida2MinasRMH.JPG",
+    "wiki": "Cerro de las Minas",
+    "municipio": "Heroica Ciudad de Huajuapan de León",
+    "fuente": "https://www.wikidata.org/wiki/Q3665160"
+   },
+   {
+    "id": "Q6171622",
+    "nombre": "Monte Negro, Tilantongo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Monte Negro es una zona arqueológica mexicana localizada en la Mixteca Alta del estado de Oaxaca, al sur del poblado de Santiago Tilantongo, en la cima del Cerro Negro.",
+    "lat": 17.26306,
+    "lon": -97.35083,
+    "imagen": "Monte_Negro_-_Tilantongo,_Oaxaca.jpg",
+    "wiki": "Zona arqueológica de Monte Negro",
+    "municipio": "Santiago Tilantongo",
+    "fuente": "https://www.wikidata.org/wiki/Q6171622"
+   },
+   {
+    "id": "Q5556243",
+    "nombre": "Gheo Shih",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Gheo Shih es el nombre con que se conoce uno de los asentamientos humanos más antiguos de México. Se localiza en el extremo oriental del valle de Tlacolula, uno de los Valles Centrales de Oaxaca.",
+    "lat": 16.95083,
+    "lon": -96.42111,
+    "imagen": null,
+    "wiki": "Gheo Shih",
+    "fuente": "https://www.wikidata.org/wiki/Q5556243"
+   },
+   {
+    "id": "Q5925328",
+    "nombre": "Huamelulpan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Huamelulpan es el nombre de una zona arqueológica mixteca localizada en el noroeste del estado mexicano de Oaxaca. Por sus dimensiones debió ser una de las mayores urbes mesoamericanas de su tiempo, y también fue una de las que presenta una más larga ocupación, desde el Preclásico hasta el Posclásico.",
+    "lat": 17.39806,
+    "lon": -97.59944,
+    "imagen": "Huamelulpan1.jpg",
+    "wiki": "Huamelulpan",
+    "fuente": "https://www.wikidata.org/wiki/Q5925328"
+   },
+   {
+    "id": "Q7632907",
+    "nombre": "Huijazoo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Huijazoo es un yacimiento arqueológico mesoamericano ubicado en el Municipio de Santiago Suchilquitongo, a 30 kilómetros de la ciudad de Oaxaca de Juárez.",
+    "lat": 17.25,
+    "lon": -96.8833,
+    "imagen": null,
+    "wiki": "Huijazoo",
+    "fuente": "https://www.wikidata.org/wiki/Q7632907"
+   },
+   {
+    "id": "Q106513175",
+    "nombre": "Zona Arqueológica de Atzompa",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Atzompa es un sitio arqueológico localizado a unos 8 km al oeste de la ciudad de Oaxaca en el Cerro del Bonete, en la localidad de Santa María Atzompa. El sitio fue un conjunto monumental perteneciente a la cercana Monte Albán.",
+    "lat": 17.07899,
+    "lon": -96.78253,
+    "imagen": "Sitio Arqueológico de Atzompa.jpg",
+    "wiki": "Zona Arqueológica de Atzompa",
+    "municipio": "Santa María Atzompa",
+    "fuente": "https://www.wikidata.org/wiki/Q106513175"
+   },
+   {
+    "id": "Q2942237",
+    "nombre": "Catedral de Nuestra Señora de la Asunción",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Nuestra Señora de la Asunción de la ciudad de Oaxaca de Juárez, Oaxaca, México, es la sede de la Arquidiócesis de Antequera. Su construcción fue iniciada en 1535, siendo consagrado el templo el 12 de julio de 1733.",
+    "lat": 17.06152,
+    "lon": -96.72509,
+    "imagen": "FacadeOaxCathedral.jpg",
+    "wiki": "Catedral metropolitana de Oaxaca",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q2942237"
+   },
+   {
+    "id": "Q2779092",
+    "nombre": "Templo de Santo Domingo de Guzmán",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Santo Domingo de Guzmán de la ciudad de Oaxaca de Juárez (México) es un ejemplo de la arquitectura barroca novohispana.",
+    "lat": 17.06556,
+    "lon": -96.72306,
+    "imagen": "Templo de Santo Domingo de Guzmán- 2023.jpg",
+    "wiki": "Templo de Santo Domingo de Guzmán (Oaxaca)",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q2779092"
+   },
+   {
+    "id": "Q4867365",
+    "nombre": "Basílica de Nuestra Señora de la Soledad",
+    "tipo": "Templo",
+    "descripcion": "La Basílica de Nuestra Señora de la Soledad se localiza en la ciudad de Oaxaca de Juárez, al sureste de México. Fue construida entre 1682 y 1690, y es un santuario dedicado a la Virgen de la Soledad, patrona de la ciudad de Oaxaca.",
+    "lat": 17.06361,
+    "lon": -96.73028,
+    "imagen": "BasilicaVirgenSoledadOaxaca.jpg",
+    "wiki": "Basílica de Nuestra Señora de la Soledad (Oaxaca)",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q4867365"
+   },
+   {
+    "id": "Q5758476",
+    "nombre": "Catedral de Huajuapan de León",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Huajuapan de León es la sede de la Diócesis de Huajuapan de León, popularmente con dos torres desde el año de 1903. El edificio se ubica en el centro de la ciudad de Huajuapan de León, en el estado mexicano de Oaxaca.",
+    "lat": 17.80717,
+    "lon": -97.77531,
+    "imagen": "CathedralHuajuapan2.JPG",
+    "wiki": "Catedral de Huajuapan de León",
+    "municipio": "Heroica Ciudad de Huajuapan de León",
+    "fuente": "https://www.wikidata.org/wiki/Q5758476"
+   },
+   {
+    "id": "Q5597133",
+    "nombre": "Instituto de Artes Gráficas de Oaxaca",
+    "tipo": "Museo",
+    "descripcion": "El Instituto de Artes Gráficas de Oaxaca (IAGO) se encuentra localizado en el Centro Histórico de la ciudad de Oaxaca, México. El instituto fue fundado por el artista Francisco Toledo conjuntamente con el INBA, el Gobierno del estado de Oaxaca y la Asociación Civil \"José F. Gómez\".",
+    "lat": 17.06656,
+    "lon": -96.72377,
+    "imagen": "Centro-fotografico-in-oaxaca-founded-by-toledo.jpg",
+    "wiki": "Instituto de Artes Gráficas de Oaxaca",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q5597133"
+   },
+   {
+    "id": "Q5552229",
+    "nombre": "Templo de Oaxaca",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Oaxaca, México es uno de los templos construidos y operados por La Iglesia de Jesucristo de los Santos de los Últimos Días, el número 74 construido por la iglesia y el quinto construido en México, ubicado en el Fraccionamiento Real de Candiani de la ciudad de Oaxaca de Juárez.",
+    "lat": 17.04155,
+    "lon": -96.7135,
+    "imagen": "Oaxaca Temple by Henok Montoya.jpg",
+    "wiki": "Templo de Oaxaca (SUD)",
+    "fuente": "https://www.wikidata.org/wiki/Q5552229"
+   },
+   {
+    "id": "Q6940476",
+    "nombre": "Museo Estatal de Arte Popular de Oaxaca",
+    "tipo": "Museo",
+    "descripcion": "El Museo Estatal de Arte Popular de Oaxaca o MEAPO es un pequeño museo situado en el municipio de San Bartolo Coyotepec, justo al sur de la ciudad de Oaxaca en México.",
+    "lat": 16.95823,
+    "lon": -96.70782,
+    "imagen": "CourtyardMEAPO.JPG",
+    "wiki": "Museo Estatal de Arte Popular de Oaxaca",
+    "municipio": "San Bartolo Coyotepec",
+    "fuente": "https://www.wikidata.org/wiki/Q6940476"
+   },
+   {
+    "id": "Q6940515",
+    "nombre": "Museo de Arte Prehispánico de México Rufino Tamayo",
+    "tipo": "Museo",
+    "descripcion": "El Museo Rufino Tamayo (Oaxaca) o también conocido como Museo de Arte Prehispánico de México Rufino Tamayo fue creado por el pintor oaxaqueño del mismo nombre Rufino Tamayo y tiene como propósito dar a conocer todas aquellas fuentes de inspiración del artista, de esta forma todas las piezas dentro de este recinto…",
+    "lat": 17.06344,
+    "lon": -96.72694,
+    "imagen": "Museo de Arte Prehispánico de México Rufino Tamayo.jpg",
+    "wiki": "Museo Rufino Tamayo (Oaxaca)",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q6940515"
+   },
+   {
+    "id": "Q5419136",
+    "nombre": "Convento de Cuilapan",
+    "tipo": "Convento",
+    "descripcion": "El convento de Cuilápam fue un antiguo convento de México, hoy abandonado y en ruina, que se encontraba en el municipio de Cuilápam de Guerrero, en la región de los Valles Centrales de Oaxaca. Se trata de un edificio del siglo XVI, de impresionantes dimensiones, pero que nunca fue concluido.",
+    "lat": 16.99228,
+    "lon": -96.77907,
+    "imagen": "Santiago Apóstol Oaxaca.jpg",
+    "wiki": "Templo y exconvento de Santiago apóstol de Cuilápam",
+    "municipio": "Cuilápam de Guerrero",
+    "fuente": "https://www.wikidata.org/wiki/Q5419136"
+   },
+   {
+    "id": "Q24554100",
+    "nombre": "Museo de Arte Contemporáneo de Oaxaca",
+    "tipo": "Museo",
+    "descripcion": "Este museo fue fundado el 28 de febrero de 1992 por la Asociación Civil Amigos del Museo de Arte Contemporáneo de Oaxaca A.C. con el apoyo del gobierno del estado, así como la colaboración del Instituto Nacional de Bellas Artes.",
+    "lat": 17.06347,
+    "lon": -96.72405,
+    "imagen": "MACO02.JPG",
+    "wiki": "Museo de Arte Contemporáneo de Oaxaca",
+    "fuente": "https://www.wikidata.org/wiki/Q24554100"
+   },
+   {
+    "id": "Q25409671",
+    "nombre": "Museo de la Filatelia de Oaxaca",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Flilatelia de Oaxaca (MUFI) es un recinto museográfico de la ciudad de Oaxaca, Oaxaca, dedicado a la difusión de la filatelia y el coleccionismo.",
+    "lat": 17.06597,
+    "lon": -96.72147,
+    "imagen": "Museo de la filatelia de Oaxaca.jpg",
+    "wiki": "Museo de la Filatelia de Oaxaca",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q25409671"
+   },
+   {
+    "id": "Q96758037",
+    "nombre": "Museo Textil de Oaxaca",
+    "tipo": "Museo",
+    "descripcion": "El Museo Textil de Oaxaca es un museo textil ubicado en el Centro Histórico de Oaxaca de Juaréz en la Avenida Hidalgo 917. El museo es albergado en la Casa Antelo.",
+    "lat": 17.06077,
+    "lon": -96.72292,
+    "imagen": "Museo Textil de Oaxaca (MTO).jpg",
+    "wiki": "Museo Textil de Oaxaca",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q96758037"
+   },
+   {
+    "id": "Q108202409",
+    "nombre": "Iglesia de San Pablo",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de San Pablo es un templo católico del siglo xvi ubicado en San Pablo Villa de Mitla, en el estado de Oaxaca, México.",
+    "lat": 16.92814,
+    "lon": -96.35942,
+    "imagen": "San Pablo Mitla.jpg",
+    "wiki": "Iglesia de San Pablo (Mitla)",
+    "fuente": "https://www.wikidata.org/wiki/Q108202409"
+   },
+   {
+    "id": "Q24961725",
+    "nombre": "Museo de Sitio de Monte Albán",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio de la Zona Arqueológica de Monte Albán está localizado afuera de la zona arqueológica de Monte Albán. Su principal tema es la cultura Zapoteca, abarcando aspectos como escritura, arquitectura, cronología, comercio y prácticas funerarias.",
+    "lat": 17.04705,
+    "lon": -96.76591,
+    "imagen": "Esqueleto Monte Albán Museo.jpg",
+    "wiki": "Museo de Sitio de Monte Albán",
+    "municipio": "Santa Cruz Xoxocotlán",
+    "fuente": "https://www.wikidata.org/wiki/Q24961725"
+   },
+   {
+    "id": "Q24764407",
+    "nombre": "Museo de los Pintores Oaxaqueños",
+    "tipo": "Museo",
+    "descripcion": "El Museo de los Pintores Oaxaqueños es un museo de arte de México creado en 2004 para exhibir las creaciones de artistas oaxaqueños en México y el extranjero.",
+    "lat": 17.06226,
+    "lon": -96.72567,
+    "imagen": "SanJuandeDiosOaxaca17.JPG",
+    "wiki": "Museo de los Pintores Oaxaqueños",
+    "fuente": "https://www.wikidata.org/wiki/Q24764407"
+   },
+   {
+    "id": "Q25409668",
+    "nombre": "Museo del Ferrocarril Mexicano del Sur",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Ferrocarril Mexicano del Sur es un recinto museográfico ubicado en Oaxaca, Oaxaca, alojado en la antigua estación de ferrocarril de dicha ciudad construida a finales del siglo XIX. Fue reinaugurada como sitio de exhibición en 2003.",
+    "lat": 17.06896,
+    "lon": -96.737,
+    "imagen": null,
+    "wiki": "Museo del Ferrocarril Mexicano del Sur",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q25409668"
+   },
+   {
+    "id": "Q21573641",
+    "nombre": "Planetario Nundehui",
+    "tipo": "Museo",
+    "descripcion": "El Planetario Nundehui (del mixteco \"Mirando al cielo\" o \"de cara al cielo\") inició su construcción en el año 1973; mediante un convenio firmado entre las ciudades hermanas de Palo Alto, California y Oaxaca de Juárez; e inaugurando en 1976.",
+    "lat": 17.07241,
+    "lon": -96.73306,
+    "imagen": null,
+    "wiki": "Planetario Nundehui",
+    "fuente": "https://www.wikidata.org/wiki/Q21573641"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q131429",
+    "nombre": "Oaxaca de Juárez",
+    "tipo": "Ciudad",
+    "descripcion": "Oaxaca (del náhuatl: Huāxyacac o Waxyakak ‘En la punta del huaje’), oficialmente llamada Oaxaca de Juárez es una ciudad mexicana, capital del estado de Oaxaca, así como cabecera del municipio homónimo.",
+    "lat": 17.06056,
+    "lon": -96.72528,
+    "imagen": "Oaxaca centro.jpg",
+    "wiki": "Oaxaca de Juárez",
+    "municipio": "Oaxaca de Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q131429"
+   },
+   {
+    "id": "Q1640261",
+    "nombre": "Salina Cruz",
+    "tipo": "Ciudad",
+    "descripcion": "Salina Cruz es una ciudad y puerto del estado de Oaxaca, ubicado en el Istmo de Tehuantepec, al sureste de México. La actual ciudad de Salina Cruz fue construida y poblada durante el Porfiriato, principalmente por inmigrantes chinos, sirios, filipinos, italianos e ingleses.",
+    "lat": 16.1825,
+    "lon": -95.19583,
+    "imagen": "Salina Cruz Bay.jpg",
+    "wiki": "Salina Cruz",
+    "municipio": "Salina Cruz",
+    "fuente": "https://www.wikidata.org/wiki/Q1640261"
+   },
+   {
+    "id": "Q1963359",
+    "nombre": "San Juan Bautista Tuxtepec",
+    "tipo": "Ciudad",
+    "descripcion": "San Juan Bautista Tuxtepec es una ciudad del estado de Oaxaca y es la cabecera del municipio homónimo. Se ubica como la segunda entre las ciudades más pobladas del estado de Oaxaca, en México.",
+    "lat": 18.0883,
+    "lon": -96.12535,
+    "imagen": "Catedral Tuxtepec.JPG",
+    "wiki": "San Juan Bautista Tuxtepec",
+    "municipio": "San Juan Bautista Tuxtepec",
+    "fuente": "https://www.wikidata.org/wiki/Q1963359"
+   },
+   {
+    "id": "Q1752991",
+    "nombre": "Puerto Escondido",
+    "tipo": "Ciudad",
+    "descripcion": "Puerto Escondido es una ciudad y puerto mexicano perteneciente al estado de Oaxaca y cuyos habitantes nativos son la cultura mixteca. Se localiza a unos 800 km al sureste de la Ciudad de México y a 290 km de la capital, Oaxaca de Juárez, entre Acapulco y Huatulco, en la Región Costa.",
+    "lat": 15.86194,
+    "lon": -97.07167,
+    "imagen": "Mexico-PuertoEscondido-Airview.jpg",
+    "wiki": "Puerto Escondido (Oaxaca)",
+    "municipio": "San Pedro Mixtepec Distrito 22",
+    "fuente": "https://www.wikidata.org/wiki/Q1752991"
+   },
+   {
+    "id": "Q2272405",
+    "nombre": "Golfo de Tehuantepec",
+    "tipo": "Bahía",
+    "descripcion": "El golfo de Tehuantepec es un amplio golfo del océano Pacífico oriental, localizado al sureste de México, al sur de la región del istmo de Tehuantepec, entre los estados de Oaxaca y Chiapas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Salina Cruz Bay.jpg",
+    "wiki": "Golfo de Tehuantepec",
+    "fuente": "https://www.wikidata.org/wiki/Q2272405"
+   },
+   {
+    "id": "Q1710837",
+    "nombre": "Juchitán de Zaragoza",
+    "tipo": "Ciudad",
+    "descripcion": "Heroica Ciudad de Juchitán de Zaragoza, (en Zapoteco Guidxi Guie': Lugar de las Flores, o también Xhavizende: A los Pies de San Vicente ( en honor a su santo patrón)) conocida simplemente como Juchitán, es una ciudad ubicada en el estado de Oaxaca, México.",
+    "lat": 16.43333,
+    "lon": -95.01944,
+    "imagen": "Juchitán.jpg",
+    "wiki": "Juchitán de Zaragoza",
+    "municipio": "Juchitán de Zaragoza",
+    "fuente": "https://www.wikidata.org/wiki/Q1710837"
+   },
+   {
+    "id": "Q1005759",
+    "nombre": "Huajuapan de León",
+    "tipo": "Ciudad",
+    "descripcion": "Huajuapan de León, oficialmente Heroica Ciudad de Huajuapan de León es una ciudad del estado mexicano de Oaxaca, dentro del municipio homónimo del cual es cabecera. Forma parte de la Región Mixteca Oaxaqueña.",
+    "lat": 17.80967,
+    "lon": -97.77643,
+    "imagen": "CathedralHuajuapan1.JPG",
+    "wiki": "Huajuapan de León",
+    "municipio": "Heroica Ciudad de Huajuapan de León",
+    "fuente": "https://www.wikidata.org/wiki/Q1005759"
+   },
+   {
+    "id": "Q629479",
+    "nombre": "Santo Domingo Tehuantepec",
+    "tipo": "Ciudad",
+    "descripcion": "Santo Domingo Tehuantepec, conocida simplemente como Tehuantepec (ésta del náhuatl Tecuantepec, \"en la colina de la fiera cruel / devoradora / venenosa / feroz\"), es una ciudad del estado mexicano de Oaxaca, ubicada en el istmo de Tehuantepec. Es la cabecera del municipio homónimo.",
+    "lat": 16.31841,
+    "lon": -95.24783,
+    "imagen": "MainSquareTehuantepec.jpg",
+    "wiki": "Santo Domingo Tehuantepec",
+    "municipio": "Santo Domingo Tehuantepec",
+    "fuente": "https://www.wikidata.org/wiki/Q629479"
+   },
+   {
+    "id": "Q528875",
+    "nombre": "Ciudad Ixtepec",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Ixtepec (antes villa de san Jerónimo) es una población dentro del municipio homónimo en el estado de Oaxaca, México; localizado en la región del Istmo de Tehuantepec.",
+    "lat": 16.56278,
+    "lon": -95.1,
+    "imagen": "Palacio ixtepec.jpg",
+    "wiki": "Ciudad Ixtepec",
+    "municipio": "Ciudad Ixtepec",
+    "fuente": "https://www.wikidata.org/wiki/Q528875"
+   },
+   {
+    "id": "Q155246",
+    "nombre": "Hierve el Agua",
+    "tipo": "Cascada",
+    "descripcion": "Hierve el Agua es un sistema de cascadas petrificadas, formadas por carbonato de calcio. Las cascadas son de origen natural y se formaron hace miles de años por el escurrimiento de agua con alto contenido de minerales.",
+    "lat": 16.86552,
+    "lon": -96.276,
+    "imagen": "Hierve el agua.JPG",
+    "wiki": "Hierve el Agua",
+    "municipio": "San Lorenzo Albarradas",
+    "fuente": "https://www.wikidata.org/wiki/Q155246"
+   },
+   {
+    "id": "Q2688361",
+    "nombre": "Parque nacional Benito Juárez",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Benito Juárez es un parque nacional de México localizado al norte de la ciudad de Oaxaca de Juárez, en el Estado de Oaxaca; en la sierra San Felipe, parte de la sierra Madre de Oaxaca en las comunidades de San Felipe del Agua, Donají, San Luis Beltrán, y San Andrés Huyapam.",
+    "lat": 17.13003,
+    "lon": -96.64954,
+    "imagen": "Oaxaqa (41).jpg",
+    "wiki": "Parque nacional Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q2688361"
+   },
+   {
+    "id": "Q3847579",
+    "nombre": "Sierra Madre de Oaxaca",
+    "tipo": "Sierra",
+    "descripcion": "La sierra madre de Oaxaca es una extensión de la Sierra Madre Oriental, al sur de su unión con el eje Volcánico Transversal corre de noroeste a sureste, desde el noroeste de Oaxaca, en la Sierra Mazateca, hasta las últimas estribaciones de la Sierra Mixe que bajan hacia la planicie del Istmo de Tehuantepec",
+    "lat": 17,
+    "lon": -96.5,
+    "imagen": "Yagila.JPG",
+    "wiki": "Sierra Madre de Oaxaca",
+    "municipio": "Tlacolula de Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q3847579"
+   },
+   {
+    "id": "Q3020673",
+    "nombre": "Parque nacional Lagunas de Chacahua",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Lagunas del Chacahua, creado el 9 de julio de 1937,",
+    "lat": 15.9671,
+    "lon": -97.68683,
+    "imagen": "Chacahua Pier.jpg",
+    "wiki": "Parque nacional Lagunas de Chacahua",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3020673"
+   },
+   {
+    "id": "Q2946767",
+    "nombre": "Cerro Nube Flane",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro Nube Flane es una gran montaña ubicada en los municipios de San Pedro Mixtepec -Distrito 26-, San Juan Ozolotepec y Santo Domingo Ozolotepec, al sur del estado de Oaxaca, México.",
+    "lat": 16.21402,
+    "lon": -96.18237,
+    "imagen": null,
+    "wiki": "Cerro Nube Flane",
+    "fuente": "https://www.wikidata.org/wiki/Q2946767"
+   },
+   {
+    "id": "Q4468500",
+    "nombre": "Sistema Huautla",
+    "tipo": "Gruta",
+    "descripcion": "El Sistema Huautla es un sistema de cuevas en las montañas de la Sierra Mazateca del estado de Oaxaca, en el sur de México. En abril de 2021, era el sistema de cuevas más profundo del hemisferio occidental, 1560 m de arriba abajo, con más de 88 kilómetros de pasajes mapeados.",
+    "lat": 18.12121,
+    "lon": -96.80001,
+    "imagen": "Sistema Huautla.jpg",
+    "wiki": "Sistema Huautla",
+    "fuente": "https://www.wikidata.org/wiki/Q4468500"
+   },
+   {
+    "id": "Q1539251",
+    "nombre": "Jardín Etnobotánico de Oaxaca",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Etnobotánico de Oaxaca es un jardín botánico de 2.3 hectáreas de extensión, en Oaxaca de Juárez, México. Está administrado por el Gobierno del Estado de Oaxaca, adscrito a la Secretaría de Cultura.",
+    "lat": 17.06656,
+    "lon": -96.72252,
+    "imagen": "Jardín etnobotánico de Oaxaca1.jpg",
+    "wiki": "Jardín Etnobotánico de Oaxaca",
+    "fuente": "https://www.wikidata.org/wiki/Q1539251"
+   },
+   {
+    "id": "Q5926326",
+    "nombre": "Parque nacional Huatulco",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional Huatulco es un área natural protegida de carácter federal, con ecosistemas prioritarios para conservar, representativos de la biodiversidad mexicana. La reserva fue decretada el 24 de julio de 1998 por el Presidente de México, Dr. Ernesto Zedillo Ponce de León.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bahías de Huatulco (8045934464).jpg",
+    "wiki": "Parque nacional Huatulco",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5926326"
+   },
+   {
+    "id": "Q3483447",
+    "nombre": "Sierra de Juárez",
+    "tipo": "Montaña",
+    "descripcion": "La Sierra de Juárez (también llamada Sierra de Ixtlán) forma parte de la Sierra Madre del Sur ubicada al norte del Estado de Oaxaca, al sur de México.",
+    "lat": 17.58333,
+    "lon": -96.66667,
+    "imagen": "Yagila.JPG",
+    "wiki": "Sierra de Juárez (Oaxaca)",
+    "fuente": "https://www.wikidata.org/wiki/Q3483447"
+   },
+   {
+    "id": "Q6472995",
+    "nombre": "Laguna de Manialtepec",
+    "tipo": "Laguna",
+    "descripcion": "La laguna Manialtepec es una laguna costera a 18 km al oeste de Puerto Escondido, rumbo a Pinotepa Nacional en el Estado de Oaxaca, México.",
+    "lat": 15.94583,
+    "lon": -97.19444,
+    "imagen": "Laguna de Maniltepec.JPG",
+    "wiki": "Laguna de Manialtepec",
+    "fuente": "https://www.wikidata.org/wiki/Q6472995"
+   },
+   {
+    "id": "Q1422329",
+    "nombre": "Laguna Superior",
+    "tipo": "Lago",
+    "descripcion": "Laguna Superior es una laguna costera de México que se encuentra en el sureste del estado Oaxaca. Se ubica en el golfo de Tehuantepec y se conecta mediante un estrecho con el océano Pacífico.",
+    "lat": 16.33068,
+    "lon": -94.89441,
+    "imagen": null,
+    "wiki": "Laguna Superior",
+    "fuente": "https://www.wikidata.org/wiki/Q1422329"
+   },
+   {
+    "id": "Q3755542",
+    "nombre": "Cerro de Algodón",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro de Algodón es una elevación montañosa localizada en la Sierra Madre del Sur, en el municipio de Totontepec Villa de Morelos, entre las comunidades de San José Chinantequilla y Santa María Tonaguía al norte del estado de Oaxaca, México; con una altitud de 1610m es el punto geográfico más destacado de esta…",
+    "lat": 17.30778,
+    "lon": -95.99028,
+    "imagen": "Cerro de algodon.jpg",
+    "wiki": "Cerro de Algodón",
+    "municipio": "Totontepec Villa de Morelos",
+    "fuente": "https://www.wikidata.org/wiki/Q3755542"
+   },
+   {
+    "id": "Q6078541",
+    "nombre": "Playa Zicatela",
+    "tipo": "Playa",
+    "descripcion": "La playa Zicatela está ubicada en la localidad de Brisas de Zicatela, al oriente de Puerto Escondido, en el estado mexicano de Oaxaca su fama se debe a la práctica del surfing ya que año con año se realizan torneos nacionales e internacionales de surfing.",
+    "lat": 15.85025,
+    "lon": -97.05534,
+    "imagen": "Lifeguard house Playa Zicatela Mexico.jpg",
+    "wiki": "Playa Zicatela",
+    "municipio": "San Pedro Mixtepec Distrito 22",
+    "fuente": "https://www.wikidata.org/wiki/Q6078541"
+   },
+   {
+    "id": "Q54828168",
+    "nombre": "Geoparque Mixteca Alta",
+    "tipo": "Área natural protegida",
+    "descripcion": "El Geoparque Mixteca Alta tiene la finalidad de dar a conocer el patrimonio natural y social-histórico de la región, está localizado en el municipio de Yanhuitlán en el estado de Oaxaca, México.",
+    "lat": 17.51806,
+    "lon": -97.34222,
+    "imagen": "Geositio Vista Hermosa.jpg",
+    "wiki": "Geoparque Mixteca Alta",
+    "fuente": "https://www.wikidata.org/wiki/Q54828168"
+   },
+   {
+    "id": "Q5645440",
+    "nombre": "Cerro Rabón",
+    "tipo": "Montaña",
+    "descripcion": "El cerro Rabón, con una altura de 1228 m, es una montaña que forma parte de la Sierra Madre Oriental. Se sitúa en los municipios de San Felipe Jalapa de Díaz y de San José Tenango enclavado la Sierra Mazateca del estado de Oaxaca, a 300 kilómetros al sureste del Distrito Federal.",
+    "lat": 18.0747,
+    "lon": -96.5878,
+    "imagen": "Jalapa de Díaz.jpg",
+    "wiki": "Cerro Rabón",
+    "fuente": "https://www.wikidata.org/wiki/Q5645440"
+   },
+   {
+    "id": "Q31741794",
+    "nombre": "Cerro del Aguila",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro del Águila es una montaña ubicada en el estado de Oaxaca, México, se localiza en los municipios de Tlaxiaco, Santa Cruz Nundaco, San Esteban Atatlahuca y San Miguel el Grande; tiene una altura de 3,380 m s. n. m.",
+    "lat": 17.13556,
+    "lon": -97.66389,
+    "imagen": null,
+    "wiki": "Cerro del Águila",
+    "fuente": "https://www.wikidata.org/wiki/Q31741794"
+   },
+   {
+    "id": "Q130300342",
+    "nombre": "Playa Unión",
+    "tipo": "Playa",
+    "descripcion": "Playa Unión o Raa Bidxi es una localidad que se encuentra localizado en el Istmo de Tehuantepec, directamente al norte de la Laguna Superior en Oaxaca, México en las Coordenadas 16°25′46.6″N 94°50′33.9″O.",
+    "lat": 16.42961,
+    "lon": -94.84275,
+    "imagen": "Atardecer en Playa Unión.jpg",
+    "wiki": "Playa Unión (Raa Bidxi)",
+    "municipio": "Juchitán de Zaragoza",
+    "fuente": "https://www.wikidata.org/wiki/Q130300342"
+   },
+   {
+    "id": "Q48795860",
+    "nombre": "Laguna Inferior",
+    "tipo": "Laguna",
+    "descripcion": "La laguna Inferior es una laguna costera en Oaxaca, México. La misma se localiza a 200 m s. n. m., abarca unas 27 000 hectáreas (270 km²).",
+    "lat": 16.28745,
+    "lon": -94.69254,
+    "imagen": null,
+    "wiki": "Laguna Inferior",
+    "fuente": "https://www.wikidata.org/wiki/Q48795860"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q1389341",
+    "nombre": "Tejate",
+    "tipo": "Bebida",
+    "descripcion": "El tejate es una bebida preparada a base de maíz y cacao que es tradicional del estado de Oaxaca en México y proviene de la época prehispánica, donde se cree que se usaba con fines ceremoniales.",
+    "lat": null,
+    "lon": null,
+    "imagen": "TejateReady3.JPG",
+    "wiki": "Tejate",
+    "fuente": "https://www.wikidata.org/wiki/Q1389341"
+   },
+   {
+    "id": "Q726413",
+    "nombre": "Mezcal",
+    "tipo": "Bebida",
+    "descripcion": "El término mezcal o mescal (del náhuatl mexcalli, 'maguey cocido', de metl 'maguey' e ixcalli 'cocido') tiene tres acepciones, en la actualidad:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mezcal.jpg",
+    "wiki": "Mezcal",
+    "fuente": "https://www.wikidata.org/wiki/Q726413"
+   },
+   {
+    "id": "Q5414737",
+    "nombre": "Queso de hebra",
+    "tipo": "Queso",
+    "descripcion": "El queso Oaxaca, quesillo o queso de hebra es un queso, fresco y suave, originario de los Valles Centrales del estado de Oaxaca. Se presenta en hebras que se enrollan en forma de bola.",
+    "lat": null,
+    "lon": null,
+    "imagen": "01 Queso Mexicano Oaxaca.jpg",
+    "wiki": "Queso Oaxaca",
+    "fuente": "https://www.wikidata.org/wiki/Q5414737"
+   },
+   {
+    "id": "Q7810735",
+    "nombre": "Tlayuda",
+    "tipo": "Platillo",
+    "descripcion": "La tlayuda, también conocida como clayuda (ya preparada), es una tortilla de maíz típica del estado de Oaxaca, en México. Suele tener un diámetro de 30 centímetros o más; se dora sobre un comal, lo que le brinda mayor dureza que una tortilla convencional y le confiere además una consistencia quebradiza y correosa.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlayuda12-05oaxaca013x.jpg",
+    "wiki": "Tlayuda",
+    "fuente": "https://www.wikidata.org/wiki/Q7810735"
+   },
+   {
+    "id": "Q71298639",
+    "nombre": "Tasajo",
+    "tipo": "Platillo",
+    "descripcion": "El tasajo es carne que ha sido secada para facilitar su conservación.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tasajo.jpg",
+    "wiki": "Tasajo",
+    "fuente": "https://www.wikidata.org/wiki/Q71298639"
+   },
+   {
+    "id": "Q6747205",
+    "nombre": "Manchamanteles",
+    "tipo": "Platillo",
+    "descripcion": "Manchamanteles es un platillo mexicano. Se trata de un guiso con una variedad de carnes, vegetales y frutas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Manchamanteles - Puebla.jpg",
+    "wiki": "Manchamanteles",
+    "fuente": "https://www.wikidata.org/wiki/Q6747205"
+   },
+   {
+    "id": "Q7030707",
+    "nombre": "Nicuatole",
+    "tipo": "Dulce",
+    "descripcion": "El nicuatole (del náhuatl necuatl o necutli, 'miel', y atolli, 'atole') es un postre mexicano gelatinoso, típico del estado de Oaxaca, y se elabora con maíz criollo, azúcar, canela y agua.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Nicuatole de Oaxaca.jpg",
+    "wiki": "Nicuatole",
+    "fuente": "https://www.wikidata.org/wiki/Q7030707"
+   },
+   {
+    "id": "Q429739",
+    "nombre": "Mole oaxaqueño",
+    "tipo": "Salsa",
+    "descripcion": "El mole oaxaqueño es un conjunto de moles de la gastronomía del estado de Oaxaca, en México. El mole es un tipo de salsa que combina chiles y especias, espesada con masa de maíz, y que se agrega a diversos platos de carne y vegetales.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mole negro de Oaxaca con arroz.jpg",
+    "wiki": "Moles oaxaqueños",
+    "fuente": "https://www.wikidata.org/wiki/Q429739"
+   },
+   {
+    "id": "Q100700840",
+    "nombre": "Sopa de guías",
+    "tipo": "Sopa",
+    "descripcion": "La sopa de guías o caldo de guías es una sopa típica de Oaxaca, en el sur de México, cuyo ingrediente principal son las guías de calabaza, que son los tallos finales y tiernos de la planta de la calabaza (Cucurbita pepo).",
+    "lat": null,
+    "lon": null,
+    "imagen": "Sopa de guías.jpg",
+    "wiki": "Sopa de guías",
+    "fuente": "https://www.wikidata.org/wiki/Q100700840"
+   },
+   {
+    "id": "Q83931",
+    "nombre": "Langostas",
+    "tipo": "Platillo",
+    "descripcion": "Una langosta es una fase de ciertas especies de saltamontes o chapulines, la mayoría pertenecientes a la familia Acrididae, en la cual se observan cambios morfológicos y conductuales.",
+    "lat": null,
+    "lon": null,
+    "imagen": "SGR laying.jpg",
+    "wiki": "Langosta (insecto)",
+    "fuente": "https://www.wikidata.org/wiki/Q83931"
+   },
+   {
+    "id": "Q5766381",
+    "nombre": "Chileatole",
+    "tipo": "Platillo",
+    "descripcion": "El chileatole puede referirse a dos clases de comidas mexicanas:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chileatole_en_Veracruz.jpg",
+    "wiki": "Chileatole",
+    "fuente": "https://www.wikidata.org/wiki/Q5766381"
+   },
+   {
+    "id": "Q21002598",
+    "nombre": "Bupu",
+    "tipo": "Bebida",
+    "descripcion": "Bupu, significa espuma en zapoteco del Istmo, y es el nombre que se le da a una bebida mexicana espumosa, sin alcohol, tradicional y consumida por los zapotecas de la ciudad de Juchitán, Oaxaca. Se prepara a partir de atole blanco, cacao y flor de guie' chachi, conocida como localmente como flor de mayo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bupu.jpg",
+    "wiki": "Bupu (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q21002598"
+   },
+   {
+    "id": "Q5832771",
+    "nombre": "Enfrijoladas",
+    "tipo": "Platillo",
+    "descripcion": "Las enfrijoladas son un platillo mexicano elaborado a base de dos ingredientes esenciales en su gastronomía: tortillas de maíz y frijoles. Generalmente, se fríe la tortilla y luego se sumergen en un caldo espeso de frijoles molidos, enrolladas o dobladas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Desayuno Veracruzano.jpg",
+    "wiki": "Enfrijoladas",
+    "fuente": "https://www.wikidata.org/wiki/Q5832771"
+   },
+   {
+    "id": "Q109311523",
+    "nombre": "Sal de gusano",
+    "tipo": "Producto típico",
+    "descripcion": "Sal de gusano es una especia tradicional de la gastronomía de Oaxaca. Está hecha de sal marina, gusanos de maguey tostados y molidos y una variedad de chiles secos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mezcal con naranja y sal de gusano.jpg",
+    "wiki": "Sal de gusano",
+    "fuente": "https://www.wikidata.org/wiki/Q109311523"
+   },
+   {
+    "id": "Q6147584",
+    "nombre": "Titococos",
+    "tipo": "Sopa",
+    "descripcion": "Los titocos, canalejos o cuauhocuilin son larvas barrenadoras o \"gusanos de la madera\" de encino. En el sur de México, se comen tostados en comal o bien en un caldo preparado con hoja de aguacate, epazote y maíz molido.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Titococos",
+    "fuente": "https://www.wikidata.org/wiki/Q6147584"
+   },
+   {
+    "id": "Q1062847",
+    "nombre": "Chapulín",
+    "tipo": "Platillo",
+    "descripcion": "Chapulín (del náhuatl chapōlin, de chapā[nia] ‘rebotar’, y ōlli ‘’, ‘insecto que brinca\") es el nombre común de algunos insectos ortópteros nativos de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chapulines de Oaxaca.jpg",
+    "wiki": "Chapulín",
+    "fuente": "https://www.wikidata.org/wiki/Q1062847"
+   },
+   {
+    "id": "Q7205916",
+    "nombre": "Plátanos rellenos",
+    "tipo": "Platillo",
+    "descripcion": "Los plátanos rellenos son un plato de las cocinas colombiana, cubana y mexicana, en este último caso particularmente en las zonas del país donde se produce plátano, como Veracruz, Tabasco o Chiapas. Dependiendo del lugar, varían los ingredientes del relleno y las técnicas de preparación.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Plátanos_rellenos_en_Paraíso,_Tabasco.jpg",
+    "wiki": "Plátanos rellenos",
+    "fuente": "https://www.wikidata.org/wiki/Q7205916"
+   },
+   {
+    "id": "Q96314848",
+    "nombre": "Texmole",
+    "tipo": "Platillo",
+    "descripcion": "El tesmole o texmole es un guiso típico del centro de México que se elabora con alguna carne, generalmente de pollo, hortalizas y condimentos. Frecuentemente se incluyen chochoyones, que son bolitas de masa.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tesmole_de_pollo_con_arroz_típico_de_Orizaba.jpg",
+    "wiki": "Tesmole",
+    "fuente": "https://www.wikidata.org/wiki/Q96314848"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q207968",
+    "nombre": "Guacamole",
+    "tipo": "Salsa",
+    "descripcion": "El guacamole es una salsa de origen mexicano preparada a base de aguacate, cebolla, jugo de limón y alguna variedad de chile verde, que generalmente es chile serrano o jalapeño.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Guacamole amb \"nachos\".jpg",
+    "wiki": "Guacamole",
+    "fuente": "https://www.wikidata.org/wiki/Q207968"
+   }
+  ]
+ }
+}

@@ -200,8 +200,9 @@ const ABBREV = new Set(['a', 'c', 'd', 'aprox', 'etc', 'sr', 'sra', 'dr', 'gral'
 function firstSentences(text, max = 320) {
   if (!text) return '';
   const para = text
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
     .split('\n')
-    .map((s) => s.replace(/\(\s*[;,:]?\s*\)/g, '').replace(/\s+([,.;:])/g, '$1').replace(/\s{2,}/g, ' ').trim())
+    .map((s) => s.replace(/\s*\([^()]{0,60}?:\s*[;,]?\s*\)/g, '').replace(/\(\s*[;,:]?\s*\)/g, '').replace(/\s+([,.;:])/g, '$1').replace(/\s{2,}/g, ' ').trim())
     .find((s) => s.length > 20);
   if (!para) return '';
   const sentences = [];
@@ -354,20 +355,70 @@ function coordsInState(detail, cve) {
 // ---------------------------------------------------------------------------
 // Wikipedia: extractos, imagen de página y título final.
 // ---------------------------------------------------------------------------
-const wikiInfo = new Map(); // título solicitado -> { title, extract, pageimage, qid }
+const wikiInfo = new Map(); // título solicitado -> { title, extract, pageimage, qid, disambiguation } | null
+
+// Caché persistente por título (independiente de cómo se agrupen las peticiones de 20 títulos).
+const WIKI_STORE_FILE = new URL('wikiinfo-es.json', CACHE_DIR);
+const wikiStore = { alias: {}, pages: {} };
+function ingestQueryResponse(asked, json) {
+  const map = new Map(asked.map((t) => [t, t]));
+  for (const n of json.query?.normalized || []) for (const [k, v] of map) if (v === n.from) map.set(k, n.to);
+  for (const r of json.query?.redirects || []) for (const [k, v] of map) if (v === r.from) map.set(k, r.to);
+  const present = new Set();
+  for (const p of json.query?.pages || []) {
+    present.add(p.title);
+    if (p.missing || p.invalid) continue;
+    const prev = wikiStore.pages[p.title] || { title: p.title, extract: '', pageimage: null, qid: null, disambiguation: false };
+    if (p.extract) prev.extract = p.extract;
+    if (p.pageimage) prev.pageimage = p.pageimage;
+    if (p.pageprops?.wikibase_item) prev.qid = p.pageprops.wikibase_item;
+    if (p.pageprops && 'disambiguation' in p.pageprops) prev.disambiguation = true;
+    wikiStore.pages[p.title] = prev;
+  }
+  for (const [k, v] of map) if (present.has(v) || wikiStore.pages[v]) wikiStore.alias[k] = wikiStore.pages[v] ? v : null;
+}
+function seedWikiStore() {
+  if (FRESH) return;
+  try {
+    if (existsSync(WIKI_STORE_FILE) && Date.now() - statSync(WIKI_STORE_FILE).mtimeMs < CACHE_TTL_MS) Object.assign(wikiStore, JSON.parse(readFileSync(WIKI_STORE_FILE, 'utf8')));
+  } catch {}
+  // Respuestas crudas en caché de ejecuciones anteriores.
+  for (const f of readdirSync(CACHE_DIR)) {
+    if (!/^[0-9a-f]{40}\.json$/.test(f)) continue;
+    const file = new URL(f, CACHE_DIR);
+    if (Date.now() - statSync(file).mtimeMs > CACHE_TTL_MS) continue;
+    try {
+      const { url, text } = JSON.parse(readFileSync(file, 'utf8'));
+      if (!url?.includes('es.wikipedia.org') || !url.includes('prop=extracts')) continue;
+      const asked = new URL(url).searchParams.get('titles').split('|');
+      ingestQueryResponse(asked, JSON.parse(text));
+    } catch {}
+  }
+}
+seedWikiStore();
 
 async function loadWikiInfo(titles) {
-  const todo = [...new Set(titles.filter(Boolean))].filter((t) => !wikiInfo.has(t));
+  const todo = [];
+  for (const t of new Set(titles.filter(Boolean))) {
+    if (wikiInfo.has(t)) continue;
+    if (t in wikiStore.alias && (wikiStore.alias[t] === null || wikiStore.pages[wikiStore.alias[t]]?.extract !== undefined)) {
+      const a = wikiStore.alias[t];
+      wikiInfo.set(t, a ? wikiStore.pages[a] : null);
+    } else todo.push(t);
+  }
   for (const part of chunk(todo, 20)) {
-    const res = await wikiQueryAll({ titles: part.join('|'), prop: 'extracts|pageimages|pageprops', exintro: '1', explaintext: '1', exlimit: '20', piprop: 'name', ppprop: 'wikibase_item|disambiguation', redirects: '1' });
-    const map = new Map(part.map((t) => [t, t]));
-    for (const n of res.normalized) for (const [k, v] of map) if (v === n.from) map.set(k, n.to);
-    for (const r of res.redirects) for (const [k, v] of map) if (v === r.from) map.set(k, r.to);
-    const byTitle = new Map(res.pages.map((p) => [p.title, p]));
-    for (const [asked, final] of map) {
-      const p = byTitle.get(final);
-      wikiInfo.set(asked, p && !p.missing ? { title: p.title, extract: p.extract || '', pageimage: p.pageimage || null, qid: p.pageprops?.wikibase_item || null, disambiguation: p.pageprops && 'disambiguation' in p.pageprops } : null);
+    let cont = {};
+    for (let i = 0; i < 20; i++) {
+      const json = await wikiApi({ action: 'query', titles: part.join('|'), prop: 'extracts|pageimages|pageprops', exintro: '1', explaintext: '1', exlimit: '20', piprop: 'name', ppprop: 'wikibase_item|disambiguation', redirects: '1', ...cont });
+      ingestQueryResponse(part, json);
+      if (!json.continue) break;
+      cont = json.continue;
     }
+    for (const t of part) {
+      const a = wikiStore.alias[t];
+      wikiInfo.set(t, a ? wikiStore.pages[a] : null);
+    }
+    writeFileSync(WIKI_STORE_FILE, JSON.stringify(wikiStore));
   }
 }
 
@@ -467,7 +518,7 @@ async function buildPueblos(sectur, states) {
     const search = await wikiApi({ action: 'query', list: 'search', srsearch: `${r.s.nombre} ${e.nombreCorto}`, srlimit: '5', srnamespace: '0' });
     for (const h of search.query?.search || []) cands.push(h.title);
     await loadWikiInfo(cands);
-    const qids = [...new Set(cands.map((t) => wikiInfo.get(t)).filter((w) => w?.qid && !w.disambiguation && nameSimilarity(w.title, r.s.nombre) >= 0.99).map((w) => w.qid))];
+    const qids = [...new Set(cands.map((t) => wikiInfo.get(t)).filter((w) => w?.qid && !w.disambiguation && compact(w.title) === compact(r.s.nombre)).map((w) => w.qid))];
     const settle = await isSettlement(qids);
     const dets = await wikidataDetails(qids, states.qidToCve);
     let pick = null;
@@ -515,6 +566,7 @@ async function buildPueblos(sectur, states) {
 // ---------------------------------------------------------------------------
 const HISTORIA_ROOTS = [
   ['Q839954', 'Zona arqueológica'],
+  ['Q15661340', 'Zona arqueológica'], // ciudad antigua
   ['Q676050', 'Centro histórico'],
   ['Q2977', 'Catedral'],
   ['Q94483283', 'Ex convento'],
@@ -561,8 +613,12 @@ const DESTINOS_ROOTS = [
   ['Q167346', 'Jardín botánico'],
   ['Q570116', 'Atractivo turístico'],
 ];
+// Peso relativo (sobre enlaces interwiki) de las clases secundarias de «historia».
+const HISTORIA_WEIGHT = { Museo: 0.9, Teatro: 0.5, Monumento: 0.45, Palacio: 0.9 };
 // Ciudades: localidades/ciudades con artículo y ≥ 12 enlaces interwiki (notoriedad).
 const CITY_MIN_SITELINKS = 12;
+const CITY_MIN_POP = 15000;
+const EXCLUDE_CLASSES = new Set(['Q1907114', 'Q2479824', 'Q133442', 'Q204832', 'Q2389789', 'Q1640829', 'Q1314535']);
 const NATURAL_TIPOS = new Set(DESTINOS_ROOTS.map(([, t]) => t));
 
 async function pool(root, extra = '') {
@@ -619,7 +675,7 @@ function assignState(o) {
 async function buildHistoriaDestinos(items, states, pueblosIds) {
   const historia = Object.fromEntries(ESTADOS.map((e) => [e.cve, []]));
   const destinos = Object.fromEntries(ESTADOS.map((e) => [e.cve, []]));
-  const rejected = { border: 0, outside: 0 };
+  const rejected = { border: 0, outside: 0, notPlace: 0, smallCity: 0 };
   // Asignación de estado por coordenada (y concordancia con P131 cuando Wikidata lo tiene).
   for (const o of items.values()) o.state = assignState(o);
   const all = [...items.values()].filter((o) => o.state && !pueblosIds.has(o.id));
@@ -635,7 +691,7 @@ async function buildHistoriaDestinos(items, states, pueblosIds) {
     const hPri = list.filter((o) => o.unesco || o.tiposH.includes('Zona arqueológica'));
     const hRest = list.filter((o) => o.tiposH.length && !hPri.includes(o)).slice(0, 80);
     const dNat = list.filter((o) => o.tiposD.length).slice(0, 90);
-    const dCity = list.filter((o) => o.city && !o.tiposD.length).slice(0, 15);
+    const dCity = list.filter((o) => o.city && !o.tiposD.length && !o.tiposH.length).slice(0, 30);
     candidates.push(...new Set([...hPri, ...hRest, ...dNat, ...dCity]));
   }
   const details = await wikidataDetails(candidates.map((o) => o.id), states.qidToCve);
@@ -647,23 +703,42 @@ async function buildHistoriaDestinos(items, states, pueblosIds) {
     const cve = o.state.cve;
     // Si Wikidata ubica el elemento (P131) en otro estado, la coordenada es dudosa: se descarta.
     if (d.states.size && !d.states.has(cve)) { rejected.border++; continue; }
+    // Lo que no es un lugar a visitar: áreas metropolitanas, altépetl/ciudades-estado desaparecidas,
+    // atracciones mecánicas, muros fronterizos; esculturas menores (pocos enlaces interwiki).
+    if ([...d.classes].some((c) => EXCLUDE_CLASSES.has(c))) { rejected.notPlace++; continue; }
+    if (!o.unesco && d.classes.has('Q860861') && o.sl < 5) { rejected.notPlace++; continue; }
+    if (!o.unesco && o.tiposH.length && o.tiposH.every((t) => t === 'Monumento' || t === 'Teatro') && o.sl < 4) { rejected.notPlace++; continue; }
     o.d = d;
     o.cve = cve;
     ok.push(o);
+  }
+  // Ciudades: sólo las de ≥ 15 000 habitantes (P1082) o con declaratoria UNESCO; evita localidades
+  // pequeñas con muchos enlaces interwiki generados por bots.
+  const cityIds = ok.filter((o) => o.city && !o.tiposH.length && !o.tiposD.length).map((o) => o.id);
+  const pop = new Map();
+  for (const part of chunk(cityIds, 200)) {
+    const rows = await sparql(`SELECT ?x (MAX(?p) AS ?pop) WHERE { VALUES ?x { ${part.map((q) => 'wd:' + q).join(' ')} } ?x wdt:P1082 ?p . } GROUP BY ?x`);
+    for (const r of rows) pop.set(r.x, +r.pop);
+  }
+  for (let i = ok.length - 1; i >= 0; i--) {
+    const o = ok[i];
+    if (cityIds.includes(o.id) && !o.unesco && !((pop.get(o.id) || 0) >= CITY_MIN_POP)) { ok.splice(i, 1); rejected.smallCity++; }
   }
   // Clasificación: patrimonio natural UNESCO y áreas protegidas → destinos; el resto del patrimonio → historia.
   for (const e of ESTADOS) {
     const list = ok.filter((o) => o.cve === e.cve);
     const isNatural = (o) => o.tiposD.length && !o.tiposH.length;
-    const hAll = list.filter((o) => (o.tiposH.length || o.unesco) && !isNatural(o) && !o.city);
+    const isCity = (o) => o.city && !o.tiposH.length; // «ciudad antigua» (zona arqueológica) no cuenta como ciudad
+    const hAll = list.filter((o) => (o.tiposH.length || o.unesco) && !isNatural(o) && !isCity(o));
     const pri = hAll.filter((o) => o.unesco || o.tiposH.includes('Zona arqueológica')).sort((a, b) => (b.unesco - a.unesco) || (b.sl - a.sl));
-    const rest = hAll.filter((o) => !pri.includes(o)).sort((a, b) => b.sl - a.sl);
+    const weight = (o) => o.sl * Math.max(...o.tiposH.map((t) => HISTORIA_WEIGHT[t] ?? 1), o.unesco ? 1 : 0);
+    const rest = hAll.filter((o) => !pri.includes(o)).sort((a, b) => weight(b) - weight(a));
     const nPri = Math.min(pri.length, LIMITS.historiaPrioritarios);
     const nRest = Math.max(LIMITS.historia - nPri, LIMITS.historiaMinOtros);
     const hSel = [...pri.slice(0, nPri), ...rest.slice(0, nRest)];
     const hIds = new Set(hSel.map((o) => o.id));
-    const dCand = list.filter((o) => !hIds.has(o.id) && (o.tiposD.length || o.city || (o.unesco && isNatural(o))));
-    const cities = dCand.filter((o) => o.city && !o.tiposD.length).sort((a, b) => b.sl - a.sl).slice(0, LIMITS.destinosCiudades);
+    const dCand = list.filter((o) => !hIds.has(o.id) && (o.tiposD.length || isCity(o) || (o.unesco && isNatural(o))));
+    const cities = dCand.filter((o) => isCity(o) && !o.tiposD.length).sort((a, b) => b.sl - a.sl).slice(0, LIMITS.destinosCiudades);
     const natural = dCand.filter((o) => o.tiposD.length).sort((a, b) => (b.unesco - a.unesco) || (b.sl - a.sl));
     const dSel = [...cities, ...natural].sort((a, b) => (b.unesco - a.unesco) || (b.sl - a.sl)).slice(0, LIMITS.destinos);
     historia[e.cve] = hSel;
@@ -675,7 +750,7 @@ async function buildHistoriaDestinos(items, states, pueblosIds) {
       bucket[e.cve] = bucket[e.cve]
         .map((o) => {
           const tipo = kind === 'historia'
-            ? o.tiposH[0] || (o.unesco ? 'Patrimonio de la Humanidad' : 'Sitio histórico')
+            ? (o.tiposH.includes('Zona arqueológica') ? 'Zona arqueológica' : o.tiposH[0]) || (o.unesco ? 'Patrimonio de la Humanidad' : 'Sitio histórico')
             : o.tiposD.length ? o.tiposD[0] : 'Ciudad';
           const it = buildItem(o.d, { cve: e.cve, tipo });
           // Punto en el mar/costa según el polígono simplificado: se conserva el lugar sin coordenada.
@@ -694,12 +769,14 @@ async function buildHistoriaDestinos(items, states, pueblosIds) {
 // gastronomía del artículo del estado y propiedades de origen en Wikidata; filtrado a alimentos/bebidas.
 // ---------------------------------------------------------------------------
 const FOOD_ROOTS = ['Q2095', 'Q746549', 'Q40050', 'Q19861951', 'Q5159627', 'Q182940', 'Q185583', 'Q7802', 'Q178359', 'Q10943', 'Q41415', 'Q154'];
-const NOT_FOOD = ['Q16521', 'Q4886', 'Q1968435', 'Q11707', 'Q4830453', 'Q43229', 'Q5', 'Q13406463', 'Q4167410', 'Q17537576'];
+const NOT_FOOD = ['Q16521', 'Q4886', 'Q11707', 'Q4830453', 'Q783794', 'Q43229', 'Q5', 'Q13406463', 'Q4167410', 'Q17537576', 'Q132241', 'Q1656682', 'Q13271470', 'Q2385804', 'Q3918', 'Q431289', 'Q167270', 'Q1190554', 'Q15632617', 'Q1968435'];
 const TIPO_FOOD = [
   ['Q154', 'Bebida'], ['Q40050', 'Bebida'],
   ['Q182940', 'Dulce'], ['Q5159627', 'Dulce'], ['Q185583', 'Dulce'],
-  ['Q7802', 'Pan'], ['Q178359', 'Salsa'], ['Q10943', 'Queso'], ['Q41415', 'Sopa'],
+  ['Q7802', 'Pan'], ['Q10943', 'Queso'], ['Q41415', 'Sopa'], ['Q746549', 'Platillo'], ['Q178359', 'Salsa'],
 ];
+const NOT_FOOD_TITLE = /^(Gastronomía|Cocina|Viticultura|Anexo:|Historia de|Festival|Feria|Muestra|Salsas de|Fiesta|Concurso)/i;
+const EVENT_ROOTS = ['Q1656682', 'Q132241', 'Q43229', 'Q2385804'];
 
 function gastroArticleCandidates(e) {
   const names = [...new Set([e.nombre, e.nombreCorto])];
@@ -728,7 +805,7 @@ async function mwapiGenerator(generator, inputParam, inputs, extra = {}) {
         mwapi:generator "${generator}" ; mwapi:${inputParam} ?src ; ${params}
         wikibase:limit "once" .
       ?title wikibase:apiOutput mwapi:title .
-      OPTIONAL { ?item wikibase:apiOutputItem mwapi:item . }
+      ?item wikibase:apiOutputItem mwapi:item .
     }
   }`);
   return rows;
@@ -773,19 +850,47 @@ async function titlesToQids(titles) {
   return m;
 }
 
-async function foodFilter(qids) {
-  const out = new Map(); // qid -> tipo
-  for (const part of chunk([...new Set(qids)], 150)) {
-    const rows = await sparql(`SELECT ?x ?root WHERE {
+const DISH_ROOTS = new Set(FOOD_ROOTS.filter((q) => q !== 'Q2095'));
+async function foodInfo(qids) {
+  const out = new Map(); // qid -> { roots:Set, bad:boolean, mex:boolean }
+  for (const part of chunk([...new Set(qids)], 120)) {
+    const rows = await sparql(`SELECT ?x ?root ?bad ?mex WHERE {
       VALUES ?x { ${part.map((q) => 'wd:' + q).join(' ')} }
-      ?x (wdt:P31|wdt:P279)/wdt:P279* ?root . VALUES ?root { ${FOOD_ROOTS.map((q) => 'wd:' + q).join(' ')} }
-      FILTER NOT EXISTS { ?x wdt:P31 ?bad . VALUES ?bad { ${NOT_FOOD.map((q) => 'wd:' + q).join(' ')} } }
+      OPTIONAL { ?x (wdt:P31|wdt:P279)/wdt:P279* ?root . VALUES ?root { ${FOOD_ROOTS.map((q) => 'wd:' + q).join(' ')} } }
+      OPTIONAL { { ?x wdt:P31 ?bad . VALUES ?bad { ${NOT_FOOD.map((q) => 'wd:' + q).join(' ')} } }
+        UNION { ?x wdt:P31/wdt:P279* ?bad . VALUES ?bad { ${EVENT_ROOTS.map((q) => 'wd:' + q).join(' ')} } } }
+      BIND(EXISTS { { ?x wdt:P495 wd:Q96 } UNION { ?x wdt:P2012 wd:Q207965 } UNION { ?x wdt:P361 wd:Q207965 } } AS ?mex)
     }`);
-    const roots = new Map();
-    for (const r of rows) roots.set(r.x, (roots.get(r.x) || new Set()).add(r.root));
-    for (const [x, rs] of roots) out.set(x, (TIPO_FOOD.find(([q]) => rs.has(q)) || [, 'Platillo'])[1]);
+    for (const r of rows) {
+      const o = out.get(r.x) || { roots: new Set(), bad: false, mex: false };
+      if (r.root) o.roots.add(r.root);
+      if (r.bad) o.bad = true;
+      if (r.mex === 'true') o.mex = true;
+      out.set(r.x, o);
+    }
   }
   return out;
+}
+
+// Tipo: por clase de Wikidata; si no la tiene, por las palabras de su propia descripción en Wikipedia.
+function foodTipo(info, text) {
+  const byClass = TIPO_FOOD.find(([q]) => info?.roots.has(q));
+  if (byClass) return byClass[1];
+  // Sin clase en Wikidata: el primer sustantivo definitorio que aparece en su descripción de Wikipedia.
+  const t = ' ' + norm(text).slice(0, 220) + ' ';
+  const groups = [
+    ['Platillo', /\b(platillo|plato|guiso|guisado|comida|antojito|ensalada|taco|tamal|botana)s?\b/],
+    ['Bebida', /\b(bebida|licor|aguardiente|destilado|fermentado|refresco|cerveza|vino|mezcal|atole|cafe)s?\b/],
+    ['Dulce', /\b(dulce|postre|golosina|confitura|cajeta|mazapan)s?\b/],
+    ['Pan', /\b(pan|panes|bolillo)\b/],
+    ['Salsa', /\b(salsa|recado|aderezo|condimento)s?\b/],
+    ['Queso', /\b(queso|lacteo)s?\b/],
+    ['Sopa', /\b(sopa|caldo)s?\b/],
+    ['Producto típico', /\b(chile|variedad|cultivar|fruto|vainilla)s?\b/],
+  ];
+  let best = ['Platillo', Infinity];
+  for (const [tipo, re] of groups) { const m = re.exec(t); if (m && m.index < best[1]) best = [tipo, m.index]; }
+  return best[0];
 }
 
 async function wikidataOriginFoods(states) {
@@ -827,7 +932,10 @@ async function buildCocina(states) {
     report[e.cve] = { categoria: cat.found[0] || null, articulo: art.found[0] || null, seccion: t2q.size > 0 };
   }
   const allQ = [...new Set(Object.values(sources).flatMap((m) => [...m.keys()]))];
-  const food = await foodFilter(allQ);
+  const food = await foodInfo(allQ);
+  // Vínculo mexicano: categoría «Gastronomía de México» o de cualquier estado, o P495/P2012 en Wikidata.
+  const mexCat = new Set((await categoryMembers(['Categoría:Gastronomía de México'])).members.map((r) => r.item));
+  for (const m of Object.values(sources)) for (const [q, s] of m) if (s.cat) mexCat.add(q);
   // Frecuencia entre estados de los enlaces "sueltos" (artículo/sección): los muy repetidos son genéricos.
   const df = new Map();
   for (const m of Object.values(sources)) for (const q of m.keys()) df.set(q, (df.get(q) || 0) + 1);
@@ -836,23 +944,38 @@ async function buildCocina(states) {
   for (const e of ESTADOS) {
     const list = [];
     for (const [q, s] of sources[e.cve]) {
-      if (!food.has(q)) continue;
-      const strong = s.cat || s.wd;
-      const both = s.art && s.sec;
-      if (!strong && !both && (df.get(q) || 0) > 6) continue; // genérico nacional (tortilla, frijol…)
+      const f = food.get(q) || { roots: new Set(), bad: false, mex: false };
+      if (f.bad) continue;
+      const strong = s.cat || s.wd; // la categoría del estado o el origen en Wikidata bastan
+      if (!strong) {
+        // Enlaces del artículo/sección: sólo platillos/bebidas/dulces con vínculo mexicano y no genéricos.
+        if (![...f.roots].some((r) => DISH_ROOTS.has(r))) continue;
+        if (!(f.mex || mexCat.has(q))) continue;
+        if ((df.get(q) || 0) > 3) continue; // genérico o de otra región (tortilla, taco, tequila…)
+      } else if (!f.roots.size && !s.cat) continue;
       const score = (s.cat ? 4 : 0) + (s.wd ? 4 : 0) + (s.art ? 2 : 0) + (s.sec ? 2 : 0) - Math.max(0, (df.get(q) || 1) - 3) * 0.5;
-      list.push({ q, score, tipo: food.get(q) });
+      list.push({ q, score, info: f });
     }
     picked[e.cve] = list;
+    if (process.env.DEBUG_COCINA) {
+      const c = [...sources[e.cve].values()];
+      log(`  ${e.cve}: cat ${c.filter((x) => x.cat).length} · art ${c.filter((x) => x.art).length} · sec ${c.filter((x) => x.sec).length} · wd ${c.filter((x) => x.wd).length} → ${list.length}`);
+    }
   }
   const dets = await wikidataDetails([...new Set(Object.values(picked).flat().map((x) => x.q))], states.qidToCve);
   const det = new Map(dets.filter(Boolean).map((d) => [d.id, d]));
   for (const e of ESTADOS) {
-    const ranked = picked[e.cve].filter((x) => det.get(x.q)?.title).sort((a, b) => b.score - a.score || det.get(b.q).sitelinks - det.get(a.q).sitelinks).slice(0, LIMITS.cocina);
+    const ranked = picked[e.cve].filter((x) => det.get(x.q)?.title && !NOT_FOOD_TITLE.test(det.get(x.q).title)).sort((a, b) => b.score - a.score || det.get(b.q).sitelinks - det.get(a.q).sitelinks).slice(0, LIMITS.cocina);
     picked[e.cve] = ranked;
   }
   await loadWikiInfo(Object.values(picked).flat().map((x) => det.get(x.q).title));
-  for (const e of ESTADOS) cocina[e.cve] = picked[e.cve].map((x) => buildItem(det.get(x.q), { cve: e.cve, tipo: x.tipo, withCoords: false }));
+  for (const e of ESTADOS) {
+    cocina[e.cve] = picked[e.cve].map((x) => {
+      const d = det.get(x.q);
+      const text = wikiInfo.get(d.title)?.extract || d.desc || '';
+      return buildItem(d, { cve: e.cve, tipo: foodTipo(x.info, text), withCoords: false });
+    });
+  }
   return { cocina, report };
 }
 
@@ -918,7 +1041,7 @@ async function main() {
   log(`TOTAL                      ${sum('pueblos')} (${sum('sectur')})     ${sum('historia')}     ${sum('destinos')}   ${sum('cocina')}`);
   log(`\nPueblos Mágicos: ${sum('pueblos')} en catálogo · ${sectur.length} en SECTUR · ${pm.wdCount} con P1435 en Wikidata`);
   log(`Elementos: ${totalItems} · sin imagen: ${missingImg} · sin descripción: ${missingDesc}`);
-  log(`Historia/destinos: ${hd.rejected.border} candidatos descartados por P131 en otro estado; ${hd.rejected.outside} conservados sin coordenada (punto costero fuera del polígono)`);
+  log(`Historia/destinos: ${hd.rejected.border} candidatos descartados por P131 en otro estado, ${hd.rejected.notPlace} por no ser lugar visitable, ${hd.rejected.smallCity} localidades < ${CITY_MIN_POP} hab.; ${hd.rejected.outside} conservados sin coordenada (punto costero fuera del polígono)`);
   if (pm.coordsDropped.length) log(`Pueblos Mágicos con coordenada anulada (cae fuera del polígono simplificado): ${pm.coordsDropped.join(', ')}`);
   log('\n=== Discrepancias Wikidata vs SECTUR ===');
   for (const d of pm.discrepancies) log(' - ' + d);

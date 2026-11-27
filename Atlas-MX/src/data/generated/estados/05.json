@@ -1,0 +1,728 @@
+{
+ "cve": "05",
+ "estado": "Coahuila de Zaragoza",
+ "wikidata": "Q53079",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2447743",
+    "nombre": "Arteaga",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Arteaga es una población en el estado de Coahuila, México, forma parte de la Zona metropolitana de Saltillo. Tiene una población de 15,534 habitantes (2020), la actividad agrícola más representativa es el cultivo de manzana, el clima en la cabecera municipal es muy similar al de Saltillo.",
+    "lat": 25.44528,
+    "lon": -100.84667,
+    "imagen": "Esquina Presidencia Municipal.JPG",
+    "wiki": "Arteaga (Coahuila)",
+    "municipio": "Arteaga",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2447743"
+   },
+   {
+    "id": "Q8261827",
+    "nombre": "Candela",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Candela es un Pueblo Mágico del estado mexicano de Coahuila, localizado en la zona este del estado. Es cabecera del municipio de Candela.",
+    "lat": 26.84028,
+    "lon": -100.66389,
+    "imagen": "Stella nombre Candela, Coahuila.jpg",
+    "wiki": "Candela (Coahuila)",
+    "municipio": "Candela",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q8261827"
+   },
+   {
+    "id": "Q992866",
+    "nombre": "Cuatro Ciénegas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cuatro Ciénegas de Carranza es una ciudad del estado mexicano de Coahuila. Es cabecera del municipio de Cuatro Ciénegas y lugar natal del héroe revolucionario Venustiano Carranza, en honor de quién lleva el nombre.",
+    "lat": 26.98694,
+    "lon": -102.06722,
+    "imagen": "Calles que acompañan la Capilla de San José en Cuatrociénegas.JPG",
+    "wiki": "Cuatro Ciénegas de Carranza",
+    "municipio": "Cuatro Ciénegas",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q992866"
+   },
+   {
+    "id": "Q5531764",
+    "nombre": "General Cepeda",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "General Cepeda es una población del estado mexicano de Coahuila de Zaragoza, se encuentra ubicada en el sureste del estado, es cabecera del municipio de General Cepeda y colinda al oeste con el municipio de Parras, al norte con el municipio de Ramos Arizpe, y al sudeste y sur con el municipio de Saltillo, capital del…",
+    "lat": 25.37639,
+    "lon": -101.475,
+    "imagen": "Plaza de Miguel Hidalgo en General Cepeda.jpg",
+    "wiki": "General Cepeda",
+    "municipio": "General Cepeda",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5531764"
+   },
+   {
+    "id": "Q1301146",
+    "nombre": "Guerrero",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Guerrero es una población del estado mexicano de Coahuila de Zaragoza, cabecera del municipio del mismo nombre localizada a unos 20 km al sureste Piedras Negras en la frontera entre Estados Unidos y México, denominada inicialmente como San Juan Bautista del Río Grande en época novohispana, hasta la independencia de…",
+    "lat": 28.30842,
+    "lon": -100.37873,
+    "imagen": "Misión de San Bernardo, Guerrero, Coahuila (22323729824).jpg",
+    "wiki": "Guerrero (Coahuila)",
+    "municipio": "Guerrero",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1301146"
+   },
+   {
+    "id": "Q20251740",
+    "nombre": "Melchor Múzquiz",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ciudad Melchor Múzquiz es una localidad del estado mexicano de Coahuila. Es la cabecera del municipio de Múzquiz.",
+    "lat": 27.8775,
+    "lon": -101.51639,
+    "imagen": "Stella nombre Melchor Múzquiz, Coahuila.jpg",
+    "wiki": "Ciudad Melchor Múzquiz",
+    "municipio": "Múzquiz",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20251740"
+   },
+   {
+    "id": "Q1861513",
+    "nombre": "Parras de la Fuente",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Parras es una ciudad en el estado mexicano de Coahuila y cabecera del municipio homónimo, localizado en la región sur del estado. Fue fundada en 1598 bajo el nombre de Santa María de las Parras, siendo poblada por nahuas tlaxcaltecas.",
+    "lat": 25.43694,
+    "lon": -102.18361,
+    "imagen": "Stella nombre Parras, Coahuila.jpg",
+    "wiki": "Parras de la Fuente",
+    "municipio": "Parras",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1861513"
+   },
+   {
+    "id": "Q1999618",
+    "nombre": "Viesca",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Viesca es una localidad en el estado mexicano de Coahuila, está ubicado a 70 km de la ciudad de Torreón por lo cual es considerado como un municipio de la Comarca Lagunera. Actualmente cuenta con 3,610 habitantes.",
+    "lat": 25.34361,
+    "lon": -102.80639,
+    "imagen": "Centro en Viesca, Coahuila.jpg",
+    "wiki": "Viesca",
+    "municipio": "Viesca",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1999618"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q509023",
+    "nombre": "Cueva de La Candelaria",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La cueva de La Candelaria es un yacimiento arqueológico ubicado en el estado de Coahuila (México). Se trata de una cueva que fue empleada por los pobladores nómadas del lugar como cementerio.",
+    "lat": 25.42111,
+    "lon": -100.96111,
+    "imagen": "Museo_Nacional_de_Antropología_de_Mexico_I.jpg",
+    "wiki": "Cueva de La Candelaria",
+    "fuente": "https://www.wikidata.org/wiki/Q509023"
+   },
+   {
+    "id": "Q24502406",
+    "nombre": "Museo del Desierto",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Desierto es un museo ubicado en la ciudad mexicana de Saltillo, Coahuila, institución que busca fomentar una cultura ecológica. Fue construido bajo el diseño del arquitecto Francisco López Guerra, e inaugurado el 25 de noviembre de 1999.",
+    "lat": 25.41404,
+    "lon": -100.96374,
+    "imagen": "Museo del Desierto, Saltillo, Coahuila.jpg",
+    "wiki": "Museo del Desierto",
+    "municipio": "Saltillo",
+    "fuente": "https://www.wikidata.org/wiki/Q24502406"
+   },
+   {
+    "id": "Q5758554",
+    "nombre": "Catedral de Saltillo",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Santiago apóstol, conocida como catedral de Saltillo, es el principal templo religioso de la ciudad. Con sus 81 metros de altura, es la catedral más alta del norte de México y la 2.ª más alta del país.",
+    "lat": 25.42167,
+    "lon": -101,
+    "imagen": "Catedral Santiago Saltillo Coah Mex Front.JPG",
+    "wiki": "Catedral de Saltillo",
+    "fuente": "https://www.wikidata.org/wiki/Q5758554"
+   },
+   {
+    "id": "Q5758540",
+    "nombre": "Catedral de Piedras Negras",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Piedras Negras, conocida como catedral \"Mártires de Cristo Rey\", es la catedral de la Diócesis de Piedras Negras. Está ubicada dentro del Residencial Tecnológico",
+    "lat": 28.68719,
+    "lon": -100.56306,
+    "imagen": "Catedral de P.Negras (Interior).jpg",
+    "wiki": "Catedral de Piedras Negras",
+    "fuente": "https://www.wikidata.org/wiki/Q5758540"
+   },
+   {
+    "id": "Q252535",
+    "nombre": "Cristo de las Noas",
+    "tipo": "Monumento",
+    "descripcion": "El Cristo de las Noas es una escultura de Jesús de Nazaret ubicada en el Cerro de las Noas, en la ciudad de Torreón, Coahuila, al noreste de México. Es obra de la artista Vladimir Alvarado, quien quiso inmortalizar el gesto de un Cristo protector.",
+    "lat": 25.5253,
+    "lon": -103.4556,
+    "imagen": "Santuario del Cerro de las noas 03 (crop).jpg",
+    "wiki": "Cristo de las Noas",
+    "fuente": "https://www.wikidata.org/wiki/Q252535"
+   },
+   {
+    "id": "Q107643583",
+    "nombre": "Museo del Ferrocarril de Torreón",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Ferrocarril de Torreón es un espacio de exhibición del patrimonio ferroviario de Torreón. Fue inaugurado el 7 de noviembre de 1997, con el objetivo de rescatar y difundir la historia del ferrocarril en la Comarca Lagunera y su relevancia para la historia nacional de los ferrocarriles.",
+    "lat": 25.53521,
+    "lon": -103.46166,
+    "imagen": "Museo del Ferrocarril Torreón-1.jpg",
+    "wiki": "Museo del Ferrocarril de Torreón",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q107643583"
+   },
+   {
+    "id": "Q5858558",
+    "nombre": "Museo Arocena",
+    "tipo": "Museo",
+    "descripcion": "El Museo Arocena es un museo de Torreón, México, inaugurado en 2006.",
+    "lat": 25.53864,
+    "lon": -103.46198,
+    "imagen": "Fachada del Museo Arocena vista desde Av. Juárez.jpg",
+    "wiki": "Museo Arocena",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q5858558"
+   },
+   {
+    "id": "Q6139756",
+    "nombre": "Teatro Isauro Martínez",
+    "tipo": "Teatro",
+    "descripcion": "El teatro Isauro Martínez es un teatro ubicado en la ciudad mexicana de Torreón, Coahuila. Su arquitectura es una mezcla de estilos neogótico, bizantino y morisco.",
+    "lat": 25.54061,
+    "lon": -103.45231,
+    "imagen": "Teatro Isauro Martinez 2.jpg",
+    "wiki": "Teatro Isauro Martínez",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q6139756"
+   },
+   {
+    "id": "Q6034329",
+    "nombre": "Museo de las Aves de México",
+    "tipo": "Museo",
+    "descripcion": "El Museo de las Aves de México, en la ciudad de Saltillo, en el Estado de Coahuila, se inauguró el 15 de noviembre de 1993.",
+    "lat": 25.41646,
+    "lon": -101.00249,
+    "imagen": "MUSAVE Frente.jpg",
+    "wiki": "Museo de las Aves de México",
+    "municipio": "Saltillo",
+    "fuente": "https://www.wikidata.org/wiki/Q6034329"
+   },
+   {
+    "id": "Q24568882",
+    "nombre": "Museo Regional de la Laguna",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de la Laguna es un recinto museográfico que se encuentra en la Comarca Lagunera (la cual es una región entre dos estados de México: Coahuila y Durango) está adscrito al Instituto Nacional de Antropología e e Historia –INAH – y particularmente dedicado a temas de arqueología.",
+    "lat": 25.53889,
+    "lon": -103.43278,
+    "imagen": "Bosque Venustiano Carranza 9.JPG",
+    "wiki": "Museo Regional de la Laguna",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q24568882"
+   },
+   {
+    "id": "Q112180377",
+    "nombre": "Museo de la Moneda",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Moneda (Torreón) es un recinto museístico que conserva y exhibe colecciones de billetes y monedas de la historia de México, el único en su tipo en la zona norte del país.",
+    "lat": 25.5393,
+    "lon": -103.46222,
+    "imagen": "Fachada_del_Museo_de_la_Moneda_en_Torreón.jpg",
+    "wiki": "Museo de la Moneda",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q112180377"
+   },
+   {
+    "id": "Q135418141",
+    "nombre": "Museo de la Revolución de Torreón",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Revolución es un recinto museográfico dedicado a la Revolución mexicana ubicado en esa ciudad. Narra de manera panorámica el proceso revolucionario con un énfasis en las veces en que la ciudad fue tomada por Pancho Villa.",
+    "lat": 25.555,
+    "lon": -103.43698,
+    "imagen": "Museo de la Revolución (Torreón) 02.jpg",
+    "wiki": "Museo de la Revolución (Torreón)",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q135418141"
+   },
+   {
+    "id": "Q115618645",
+    "nombre": "Museo de los Metales",
+    "tipo": "Museo",
+    "descripcion": "El Museo de los Metales es un museo localizado en Torreón (Coahuila de Zaragoza) cuyo discurso museográfico está involucrado con el conocimiento de la Tierra y de los recursos minerales que la integran.",
+    "lat": 25.52265,
+    "lon": -103.4445,
+    "imagen": null,
+    "wiki": "Museo de los Metales",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q115618645"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q53077",
+    "nombre": "Saltillo",
+    "tipo": "Ciudad",
+    "descripcion": "Saltillo es la capital y ciudad más poblada del estado mexicano de Coahuila de Zaragoza, además de ser la cabecera del Municipio de Saltillo.",
+    "lat": 25.42306,
+    "lon": -100.99194,
+    "imagen": "Saltillo, mexico(3).jpg",
+    "wiki": "Saltillo",
+    "municipio": "Saltillo",
+    "fuente": "https://www.wikidata.org/wiki/Q53077"
+   },
+   {
+    "id": "Q386991",
+    "nombre": "Torreón",
+    "tipo": "Ciudad",
+    "descripcion": "Torreón es una ciudad mexicana del noreste del país y cabecera del municipio homónimo. Es la segunda ciudad más poblada del estado de Coahuila con 690 194 habitantes, lo que la convierte en la vigésimo quinta ciudad más poblada de México y la segunda más poblada del estado de Coahuila.",
+    "lat": 25.54389,
+    "lon": -103.41898,
+    "imagen": "Plaza Mayor Torreón 05.jpg",
+    "wiki": "Torreón (Coahuila)",
+    "municipio": "Torreón",
+    "fuente": "https://www.wikidata.org/wiki/Q386991"
+   },
+   {
+    "id": "Q990007",
+    "nombre": "Monclova",
+    "tipo": "Ciudad",
+    "descripcion": "Monclova es una ciudad en la región central del estado de Coahuila, al norte de México. En el año de 2025 hay alrededor de 246,391 habitantes en la ciudad.",
+    "lat": 26.90111,
+    "lon": -101.41722,
+    "imagen": "Panoramica de monclova.jpg",
+    "wiki": "Monclova",
+    "municipio": "Monclova",
+    "fuente": "https://www.wikidata.org/wiki/Q990007"
+   },
+   {
+    "id": "Q144040",
+    "nombre": "Sierra Madre Oriental",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra Madre Oriental es una extensa cordillera mexicana, ubicada en el noreste y centronorte del país, de aproximadamente más de 1300 kilómetros de longitud con un eje orográfico que corre en dirección noroeste-sureste y se extiende desde el río Bravo, cerca de la frontera con los Estados Unidos, hasta unirse con…",
+    "lat": 25.36667,
+    "lon": -100.55,
+    "imagen": "La m 2.jpg",
+    "wiki": "Sierra Madre Oriental",
+    "fuente": "https://www.wikidata.org/wiki/Q144040"
+   },
+   {
+    "id": "Q179841",
+    "nombre": "Ciudad Acuña",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Acuña es una ciudad mexicana localizada en el estado de Coahuila, cabecera del municipio de Acuña, se encuentra a una altitud de 280 m s. n. m. Fue nombrada en honor al escritor Manuel Acuña.",
+    "lat": 29.3188,
+    "lon": -100.9465,
+    "imagen": "Entrada a Ciudad Acuña.jpg",
+    "wiki": "Ciudad Acuña",
+    "municipio": "Acuña",
+    "fuente": "https://www.wikidata.org/wiki/Q179841"
+   },
+   {
+    "id": "Q1856408",
+    "nombre": "Piedras Negras",
+    "tipo": "Ciudad",
+    "descripcion": "Piedras Negras es una ciudad fronteriza del noreste de México, en el estado de Coahuila, ubicada frente a la ciudad de Eagle Pass, Texas, Estados Unidos, a orillas del río Bravo. Es la cabecera del municipio homónimo.",
+    "lat": 28.70806,
+    "lon": -100.52833,
+    "imagen": "Stella nombre Piedras Negras, Coahuila.jpg",
+    "wiki": "Piedras Negras",
+    "municipio": "Piedras Negras",
+    "fuente": "https://www.wikidata.org/wiki/Q1856408"
+   },
+   {
+    "id": "Q2010445",
+    "nombre": "Sabinas",
+    "tipo": "Ciudad",
+    "descripcion": "Sabinas es una ciudad mexicana, cabecera del municipio homónimo, situada en el noreste del estado de Coahuila, en el norte del país.",
+    "lat": 27.86,
+    "lon": -101.12,
+    "imagen": "Sabinas 2.jpg",
+    "wiki": "Sabinas (Coahuila)",
+    "municipio": "Sabinas",
+    "fuente": "https://www.wikidata.org/wiki/Q2010445"
+   },
+   {
+    "id": "Q1962172",
+    "nombre": "Matamoros",
+    "tipo": "Ciudad",
+    "descripcion": "Matamoros es una ciudad ubicada en el estado mexicano de Coahuila. Es la cabecera del municipio de Matamoros y tiene una población de 59 763 habitantes, de acuerdo con el censo de 2020.",
+    "lat": 25.52806,
+    "lon": -103.23028,
+    "imagen": "Centro en Matamoros, Coahuila.jpg",
+    "wiki": "Matamoros (Coahuila)",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q1962172"
+   },
+   {
+    "id": "Q1013930",
+    "nombre": "Ramos Arizpe",
+    "tipo": "Ciudad",
+    "descripcion": "Ramos Arizpe es una ciudad y cabecera municipal del municipio del mismo nombre en el estado de Coahuila, México que forma parte de la zona metropolitana de Saltillo. Es una de las ciudades progresistas del estado, pues la industria manufacturera ha marcado un ámbito muy importante en esta región.",
+    "lat": 25.54361,
+    "lon": -100.95028,
+    "imagen": "Coahuila (22760482889).jpg",
+    "wiki": "Ramos Arizpe",
+    "municipio": "Ramos Arizpe",
+    "fuente": "https://www.wikidata.org/wiki/Q1013930"
+   },
+   {
+    "id": "Q65327584",
+    "nombre": "El Coahuilón",
+    "tipo": "Sierra",
+    "descripcion": "El Coahuilón; antiguamente llamado “Cerro Ciriales”, es una Montaña ubicada en los municipios de Arteaga; Coahuila y Rayones; Nuevo León, México; al noreste del poblado Mesa de las Tablas. La montaña forma parte de la Sierra Madre Oriental.",
+    "lat": 25.245,
+    "lon": -100.34861,
+    "imagen": "Montaña el Coahuilon..jpg",
+    "wiki": "El Coahuilón",
+    "fuente": "https://www.wikidata.org/wiki/Q65327584"
+   },
+   {
+    "id": "Q27803916",
+    "nombre": "Área de protección de flora y fauna Maderas del Carmen",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "El Área de protección de flora y fauna Maderas del Carmen es un área protegida de 208,381 hectáreas en el área conocida como “Maderas del Carmen”, en los municipios de Múzquiz, Acuña y Ocampo, estado de Coahuila, México; que comprende la Sierra del Carmen y la Sierra el Jardín.",
+    "lat": 29.14924,
+    "lon": -102.6735,
+    "imagen": "Boquillas_del_Carmen,_Coahuila_(22730773718).jpg",
+    "wiki": "Área de protección de flora y fauna Maderas del Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q27803916"
+   },
+   {
+    "id": "Q27779102",
+    "nombre": "Cerro de la Viga",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro de la Viga es un gran macizo montañoso ubicado en los municipios de Arteaga de Coahuila y el de Santiago de Nuevo León en México.",
+    "lat": 25.35,
+    "lon": -100.55,
+    "imagen": "La viga desde rancho nuevo.jpg",
+    "wiki": "Cerro de la Viga",
+    "fuente": "https://www.wikidata.org/wiki/Q27779102"
+   },
+   {
+    "id": "Q6378123",
+    "nombre": "Parque nacional Los Novillos",
+    "tipo": "Parque nacional",
+    "descripcion": "La extensión que conforma al Parque Nacional Los Novillos comprende una gran área boscosa en la cual predominan principalmente las especies de nogal y encino, creando así uno de los más hermosos paisajes dentro de una porción del llamado altiplano mexicano, cercano a la Sierra Madre Oriental.",
+    "lat": 29.25797,
+    "lon": -100.96458,
+    "imagen": null,
+    "wiki": "Parque nacional Los Novillos",
+    "fuente": "https://www.wikidata.org/wiki/Q6378123"
+   },
+   {
+    "id": "Q27822330",
+    "nombre": "Sierra de Zapalinamé",
+    "tipo": "Sierra",
+    "descripcion": "La sierra de Zapalinamé es una sierra en los municipios de Saltillo y Arteaga, estado de Coahuila, México; está conformada por 27 351,189 ha de sierra y por 58 324,577 ha de valles intermontanos, dentro de la Zona sujeta a conservación ecológica Sierra de Zapalinamé y forma parte de la Sierra Madre Oriental; está…",
+    "lat": 25.36186,
+    "lon": -100.90706,
+    "imagen": "Vista_del_Cerro_del_Penitente,_Sierra_de_Zapalinamé.jpg",
+    "wiki": "Sierra de Zapalinamé",
+    "fuente": "https://www.wikidata.org/wiki/Q27822330"
+   },
+   {
+    "id": "Q5969213",
+    "nombre": "Laguna de Mayrán",
+    "tipo": "Laguna",
+    "descripcion": "La laguna de Mayrán es una laguna seca ubicada en el municipio mexicano de San Pedro, Coahuila. La laguna de Mayrán es un sistema endorreico (sin salida al mar) y es donde desemboca el río Nazas, originado en la Sierra Madre Occidental en el estado de Durango.",
+    "lat": 25.86092,
+    "lon": -102.52764,
+    "imagen": "Coahuila, Parras Laguna Mayran Talia (16548797886).jpg",
+    "wiki": "Laguna de Mayrán",
+    "fuente": "https://www.wikidata.org/wiki/Q5969213"
+   },
+   {
+    "id": "Q27783876",
+    "nombre": "Sierra de la Marta",
+    "tipo": "Montaña",
+    "descripcion": "La sierra de la Marta es una montaña ubicada en los municipios de Arteaga Coahuila; Rayones y Galeana Nuevo León, México. La cresta de la montaña es el límite entre los estados de Coahuila y Nuevo León.",
+    "lat": 25.20237,
+    "lon": -100.3835,
+    "imagen": "Sierra La Marta (12992441625).jpg",
+    "wiki": "Sierra de la Marta",
+    "fuente": "https://www.wikidata.org/wiki/Q27783876"
+   },
+   {
+    "id": "Q27787488",
+    "nombre": "Sierra Las Alazanas",
+    "tipo": "Sierra",
+    "descripcion": "La sierra Las Alazanas; también llamada “Sierra San Antonio de las Alazanas”, es una montaña en el municipio de Arteaga, estado de Coahuila, México; forma parte de la Sierra Madre Oriental. La cima está a 3,405 metros sobre el nivel del mar.",
+    "lat": 25.27763,
+    "lon": -100.50217,
+    "imagen": null,
+    "wiki": "Sierra Las Alazanas",
+    "fuente": "https://www.wikidata.org/wiki/Q27787488"
+   },
+   {
+    "id": "Q27788964",
+    "nombre": "Cerro Rancho Nuevo",
+    "tipo": "Sierra",
+    "descripcion": "El Cerro Rancho Nuevo; también conocido como “Cerro San Juan de los Dolores” es una montaña en el municipio de Arteaga; estado de Coahuila, México. La cima está a 3,289 metros sobre el nivel del mar, la cresta tiene aproximadamente 18 km de largo con orientación de este a oeste.",
+    "lat": 25.40028,
+    "lon": -100.51722,
+    "imagen": "Rancho nuevo arteaga.jpg",
+    "wiki": "Cerro Rancho Nuevo",
+    "fuente": "https://www.wikidata.org/wiki/Q27788964"
+   },
+   {
+    "id": "Q7511699",
+    "nombre": "Sierra del Burro",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra del Burro, también llamada Serranías del Burro, es una subprovincia fisiográfica de la Sierra Madre Oriental en su extremo norte, en el estado de Coahuila, México.",
+    "lat": 28.96176,
+    "lon": -101.77205,
+    "imagen": null,
+    "wiki": "Sierra del Burro",
+    "fuente": "https://www.wikidata.org/wiki/Q7511699"
+   },
+   {
+    "id": "Q27785978",
+    "nombre": "Sierra Catana",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra Catana es una montaña en el municipio de Saltillo, estado de Coahuila; México, está 12 km al sur del poblado San Juan de la Vaquería. La cumbre alcanza los 3131 metros sobre el nivel del mar.",
+    "lat": 25.15188,
+    "lon": -101.20166,
+    "imagen": "Sierracatana.jpg",
+    "wiki": "Sierra Catana",
+    "fuente": "https://www.wikidata.org/wiki/Q27785978"
+   },
+   {
+    "id": "Q27784178",
+    "nombre": "Sierra de Las Bayas",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra de Las Bayas es una montaña en los municipios de Arteaga y Ramos Arizpe, estado de Coahuila, México, forma parte de la Sierra Madre Oriental. La cumbre está a 2,731 metros sobre el nivel del mar.",
+    "lat": 25.5,
+    "lon": -100.78333,
+    "imagen": null,
+    "wiki": "Sierra de Las Bayas",
+    "fuente": "https://www.wikidata.org/wiki/Q27784178"
+   },
+   {
+    "id": "Q27784840",
+    "nombre": "Sierra La Fragua",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra La Fragua, es una sierra y una Región Terrestre Prioritaria (RTP) en los municipios de Cuatrociénegas y San Pedro, estado de Coahuila, México; tiene una superficie de 3,400 km² y la cima está a 2,282 m s. n. m..",
+    "lat": 26.78808,
+    "lon": -102.37241,
+    "imagen": null,
+    "wiki": "Sierra La Fragua",
+    "fuente": "https://www.wikidata.org/wiki/Q27784840"
+   },
+   {
+    "id": "Q27783781",
+    "nombre": "Sierra La Madera",
+    "tipo": "Montaña",
+    "descripcion": "La Sierra La Madera es una Sierra y una Región Terrestre Prioritaria (RTP) en los municipios de Cuatrociénegas y Ocampo, estado de Coahuila, México; tiene una superficie de 928 km², la cima está a 3,040 m s. n. m. con 1,890 metros de prominencia; por lo que es un pico ultraprominente, y tiene 217.97 kilómetros de…",
+    "lat": 27.01245,
+    "lon": -102.38779,
+    "imagen": null,
+    "wiki": "Sierra La Madera",
+    "fuente": "https://www.wikidata.org/wiki/Q27783781"
+   },
+   {
+    "id": "Q27822805",
+    "nombre": "Sierra La Concordia",
+    "tipo": "Montaña",
+    "descripcion": "La sierra La Concordia es sierra en los municipios de Saltillo y General Cepeda, estado de Coahuila, México.",
+    "lat": 25.17734,
+    "lon": -101.40738,
+    "imagen": null,
+    "wiki": "Sierra La Concordia (Saltillo)",
+    "fuente": "https://www.wikidata.org/wiki/Q27822805"
+   },
+   {
+    "id": "Q27835626",
+    "nombre": "Cerro El Centinela",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro El Centinela es una montaña en el polígono sur del Municipio de Torreón, estado de Coahuila, México; es la mayor elevación de la Sierra de Jimulco.",
+    "lat": 25.1375,
+    "lon": -103.2304,
+    "imagen": null,
+    "wiki": "Cerro El Centinela (Torreón)",
+    "fuente": "https://www.wikidata.org/wiki/Q27835626"
+   },
+   {
+    "id": "Q27784550",
+    "nombre": "Sierra de Jimulco",
+    "tipo": "Sierra",
+    "descripcion": "La Reserva Ecológica Sierra y Cañón de Jimulco es una sierra y una reserva ecológica protegida localizada en el polígono sur del municipio de Torreón, Coahuila, México. La mayor elevación de la sierra es el Cerro El Centinela; también llamado “Cerro Las Nopaleras”, con 3146 metros sobre el nivel del mar.",
+    "lat": 25.15703,
+    "lon": -103.21974,
+    "imagen": "Cañón de Jimulco.jpg",
+    "wiki": "Reserva Ecológica Sierra y Cañón de Jimulco",
+    "fuente": "https://www.wikidata.org/wiki/Q27784550"
+   },
+   {
+    "id": "Q6173835",
+    "nombre": "Área de Protección de la Flora y Fauna Cuatrociénegas",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "El Área de Protección de la Flora y Fauna Cuatro Ciénegas se ubica en la parte central del estado de Coahuila.",
+    "lat": 26.91667,
+    "lon": -102.06667,
+    "imagen": "Poza_Azul_en_Cuatro_Ciénegas,_Coahuila,_México.jpg",
+    "wiki": "Área de protección de flora y fauna Cuatrociénegas",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6173835"
+   },
+   {
+    "id": "Q5685626",
+    "nombre": "Sierra de las Cruces",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra de las Cruces, o popularmente llamada Sierra del Monte de las Cruces, es una sierra de México, en su región centro sur, que delimita a los valles de México y Cuautitlán en la Cuenca de México, con el Valle y Cuenca de Toluca así como una parte de la Cuenca del Lerma.",
+    "lat": 27.96667,
+    "lon": -103.7,
+    "imagen": null,
+    "wiki": "Sierra de las Cruces",
+    "fuente": "https://www.wikidata.org/wiki/Q5685626"
+   },
+   {
+    "id": "Q134788807",
+    "nombre": "Rincón Colorado",
+    "tipo": "Área natural protegida",
+    "descripcion": "La zona paleontológica Rincón Colorado es un yacimiento paleontológico ubicado en el estado de Coahuila en México, que data del periodo Cretácico Tardío en el que se han encontrado restos fósiles de apropiadamente 72 millones de años (Maastrichtiano) y donde se descubrió la especie de dinosaurio Velafrons…",
+    "lat": 25.51709,
+    "lon": -101.32633,
+    "imagen": "Rincon_Colorado,_General_Cepeda,_Coahuila_-_panoramio_(46).jpg",
+    "wiki": "Rincón Colorado",
+    "fuente": "https://www.wikidata.org/wiki/Q134788807"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q466430",
+    "nombre": "Nachos",
+    "tipo": "Platillo",
+    "descripcion": "Los nachos son un platillo de origen mexicano, que consiste en freír trozos de tortilla de maíz cubiertos con un queso especial llamado «queso para nachos».",
+    "lat": null,
+    "lon": null,
+    "imagen": "The Beanery Nachos.jpg",
+    "wiki": "Nachos",
+    "fuente": "https://www.wikidata.org/wiki/Q466430"
+   },
+   {
+    "id": "Q112944304",
+    "nombre": "Cortadillo norteño",
+    "tipo": "Platillo",
+    "descripcion": "El cortadillo al estilo norteño es un guiso de carne de res y jitomate típico de los estados de Coahuila, Nuevo León y Tamaulipas, en el norte de México. El cortadillo es el nombre que recibe las puntas de filete o la pulpa de res en cubos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cortadillo Santiago NL. Consejo para la Cultura y las Artes de Nuevo León.jpg",
+    "wiki": "Cortadillo norteño",
+    "fuente": "https://www.wikidata.org/wiki/Q112944304"
+   },
+   {
+    "id": "Q6015936",
+    "nombre": "Miguitas Norteñas",
+    "tipo": "Platillo",
+    "descripcion": "Miguitas norteñas también conocido como Migas con huevo en Nuevo León, es un platillo que tiene popularidad en el norte de México, que representa costumbres muy particulares de la región. El término es mayor y generalmente conocido solo por los mismos habitantes y originarios del norte.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Miguitas norteñas",
+    "fuente": "https://www.wikidata.org/wiki/Q6015936"
+   },
+   {
+    "id": "Q112158357",
+    "nombre": "Reliquia",
+    "tipo": "Platillo",
+    "descripcion": "La reliquia (comida), es una tradición popular religiosa y gastronómica de Zacatecas, Durango, Torreón y la Comarca Lagunera en México, que consiste en la preparación y obsequio de un guiso tipo asado de puerco, acompañado de una guarnición de siete sopas de pasta.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Reliquia (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q112158357"
+   },
+   {
+    "id": "Q62018789",
+    "nombre": "Discada",
+    "tipo": "Platillo",
+    "descripcion": "La discada es un platillo mexicano típico en los estados del norte, caracterizado por ser una abundante mezcla de carnes, embutidos y verduras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "DISCADA.JPG",
+    "wiki": "Discada",
+    "fuente": "https://www.wikidata.org/wiki/Q62018789"
+   },
+   {
+    "id": "Q152336",
+    "nombre": "Machacado con huevo",
+    "tipo": "Platillo",
+    "descripcion": "El machacado con huevo o huevo con machaca es un platillo mexicano típico en algunas zonas del norte de México. Consiste de un preparado con carne seca de res desmenuzada, huevos y en ocasiones salsa picante.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Machacado con huevo.jpg",
+    "wiki": "Machacado con huevo",
+    "fuente": "https://www.wikidata.org/wiki/Q152336"
+   },
+   {
+    "id": "Q932877",
+    "nombre": "Sotol",
+    "tipo": "Bebida",
+    "descripcion": "El sotol es una bebida alcohólica mexicana, elaborada a partir de la destilación de la planta homónima. Cuenta con una graduación alcohólica que varía entre los 35 y 55 grados, dependiendo del productor.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Sotol_tradicional.jpg",
+    "wiki": "Sotol",
+    "fuente": "https://www.wikidata.org/wiki/Q932877"
+   },
+   {
+    "id": "Q204251",
+    "nombre": "Tortilla de trigo",
+    "tipo": "Pan",
+    "descripcion": "En México y Centroamérica, una tortilla de harina o tortilla de trigo es un pan aplanado de harina de trigo, con manteca o mantequilla y sin levadura. Forma parte del repertorio alimenticio diario en el norte del México, a diferencia del centro y el sur, donde se acostumbra más las tortillas de maíz.",
+    "lat": null,
+    "lon": null,
+    "imagen": "NCI flour tortillas.jpg",
+    "wiki": "Tortilla de harina de trigo",
+    "fuente": "https://www.wikidata.org/wiki/Q204251"
+   },
+   {
+    "id": "Q5878377",
+    "nombre": "Cabrito",
+    "tipo": "Platillo",
+    "descripcion": "Se le nombra cabrito a la cría de la cabra de hasta 4 meses de edad. La carne del cabrito se asemeja a la carne de la cría de borrego, al cordero de leche.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cabrito - Monterrey.JPG",
+    "wiki": "Cabrito",
+    "fuente": "https://www.wikidata.org/wiki/Q5878377"
+   },
+   {
+    "id": "Q109423540",
+    "nombre": "Asado de puerco",
+    "tipo": "Platillo",
+    "descripcion": "El asado de puerco es un platillo mexicano, típico de la región noreste de México, que forma parte de la gastronomía tradicional de Nuevo León, y que bien puede encontrarse en una boda tradicional o en un puesto de tacos de guisados en un mercado rodante.",
+    "lat": null,
+    "lon": null,
+    "imagen": "PAGA asadodepuerco 02.jpg",
+    "wiki": "Asado de puerco",
+    "fuente": "https://www.wikidata.org/wiki/Q109423540"
+   }
+  ]
+ }
+}

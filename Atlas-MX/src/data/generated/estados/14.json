@@ -1,0 +1,1250 @@
+{
+ "cve": "14",
+ "estado": "Jalisco",
+ "wikidata": "Q13160",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2775275",
+    "nombre": "Ajijic",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ajijic es una localidad mexicana ubicada en el municipio de Chapala, en el estado de Jalisco. Se encuentra en los alrededores del lago de Chapala.",
+    "lat": 20.30028,
+    "lon": -103.27222,
+    "imagen": "Ajijic Malecon Sunset.jpg",
+    "wiki": "Ajijic",
+    "municipio": "Chapala",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2775275"
+   },
+   {
+    "id": "Q20241676",
+    "nombre": "Cocula",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cocula es una localidad del estado mexicano de Jalisco, cabecera del municipio homónimo. El 26 de junio de 2023 fue nombrada como parte del programa turístico «Pueblos Mágicos» por la Secretaría de Turismo.",
+    "lat": 20.36528,
+    "lon": -103.82278,
+    "imagen": "Plazacocula01.JPG",
+    "wiki": "Cocula (Jalisco)",
+    "municipio": "Cocula",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20241676"
+   },
+   {
+    "id": "Q1962295",
+    "nombre": "Lagos de Moreno",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Lagos de Moreno es una ciudad ubicada en la región Altos Norte, del estado mexicano de Jalisco. Es la cabecera del municipio homónimo.",
+    "lat": 21.36139,
+    "lon": -101.935,
+    "imagen": "Lagos de Moreno (20250620)5.jpg",
+    "wiki": "Lagos de Moreno",
+    "municipio": "Lagos de Moreno",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1962295"
+   },
+   {
+    "id": "Q20247052",
+    "nombre": "Mascota",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mascota es una población situada en el estado de Jalisco, México, siendo la cabecera del municipio homónimo. Fue un cacicazgo que tenía bajo su jurisdicción a los poblados de Talpa, El Tuito y Chacala.",
+    "lat": 20.52556,
+    "lon": -104.78222,
+    "imagen": "2631931.jpg",
+    "wiki": "Mascota (Jalisco)",
+    "municipio": "Mascota",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20247052"
+   },
+   {
+    "id": "Q1020745",
+    "nombre": "Mazamitla",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mazamitla es una localidad del estado mexicano de Jalisco. Es cabecera del municipio de Mazamitla.",
+    "lat": 19.91611,
+    "lon": -103.02056,
+    "imagen": "TemploMazamicla.jpg",
+    "wiki": "Mazamitla",
+    "municipio": "Mazamitla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1020745"
+   },
+   {
+    "id": "Q155277",
+    "nombre": "San Pedro Tlaquepaque",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlaquepaque es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de San Pedro Tlaquepaque.",
+    "lat": 20.6369,
+    "lon": -103.3096,
+    "imagen": "Tlaquepaque. Town square (plaza).jpg",
+    "wiki": "Tlaquepaque",
+    "municipio": "San Pedro Tlaquepaque",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q155277"
+   },
+   {
+    "id": "Q50009828",
+    "nombre": "San Sebastián del Oeste",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "San Sebastián del Oeste es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de San Sebastián del Oeste.",
+    "lat": 20.76083,
+    "lon": -104.85167,
+    "imagen": "San Sebastian del Oeste.jpg",
+    "wiki": "San Sebastián del Oeste",
+    "municipio": "San Sebastián del Oeste",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q50009828"
+   },
+   {
+    "id": "Q20248948",
+    "nombre": "Sayula",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Sayula es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de Sayula.",
+    "lat": 19.88444,
+    "lon": -103.59944,
+    "imagen": "Sayula (20250128)1.jpg",
+    "wiki": "Sayula (Jalisco)",
+    "municipio": "Sayula",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20248948"
+   },
+   {
+    "id": "Q20249027",
+    "nombre": "Talpa de Allende",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Talpa de Allende es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de Talpa de Allende.",
+    "lat": 20.38139,
+    "lon": -104.81806,
+    "imagen": "Basilica Talpa 2.JPG",
+    "wiki": "Talpa de Allende",
+    "municipio": "Talpa de Allende",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20249027"
+   },
+   {
+    "id": "Q2270558",
+    "nombre": "Tapalpa",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tapalpa es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de Tapalpa.",
+    "lat": 19.945,
+    "lon": -103.75778,
+    "imagen": "Templo de la Inmaculada Concepción Tapalpa 1.JPG",
+    "wiki": "Tapalpa",
+    "municipio": "Tapalpa",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2270558"
+   },
+   {
+    "id": "Q17393094",
+    "nombre": "Temacapulín",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Temacapulín (del náhuatl: Temaxcalli ‘Baño termal’) también conocido por el apócope Temaca; es una localidad del estado mexicano de Jalisco, que forma parte del municipio de Cañadas de Obregón en la región de los Altos de Jalisco.",
+    "lat": 21.18861,
+    "lon": -102.70664,
+    "imagen": "Temacapulín 04.jpg",
+    "wiki": "Temacapulín",
+    "municipio": "Cañadas de Obregón",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q17393094"
+   },
+   {
+    "id": "Q847764",
+    "nombre": "Tequila",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tequila es una ciudad mexicana ubicada en el estado de Jalisco, cabecera del municipio homónimo. Se ubica a unos 60 km de la ciudad de Guadalajara.",
+    "lat": 20.88194,
+    "lon": -103.83611,
+    "imagen": "Plaza principal de Tequila.jpg",
+    "wiki": "Tequila (Jalisco)",
+    "municipio": "Tequila",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q847764"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q28416",
+    "nombre": "Hospicio Cabañas",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El Hospicio Cabañas, también conocido como Instituto Cultural Cabañas, es un museo ubicado en barrio de San Juan de Dios de la ciudad de Guadalajara, Jalisco, México. En 1810 el edificio abrió sus puertas como “Casa de la Caridad y la Misericordia”, como Instituto Cultural Cabañas el 13 de noviembre de 1980.",
+    "lat": 20.6769,
+    "lon": -103.33733,
+    "imagen": "Hospicio Cabañas, Guadalajara, Jalisco - 14.jpg",
+    "wiki": "Hospicio Cabañas",
+    "municipio": "Guadalajara",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q28416"
+   },
+   {
+    "id": "Q2104675",
+    "nombre": "Paisaje agavero y antiguas instalaciones industriales de Tequila",
+    "tipo": "Monumento",
+    "descripcion": "El paisaje agavero y antiguas instalaciones industriales de Tequila, en México fue declarado como Patrimonio de la Humanidad por la UNESCO en el año 2006.",
+    "lat": 20.62829,
+    "lon": -103.76999,
+    "imagen": "Paisaje agavero de Jose Cuervo en Tequila, Jalisco.jpg",
+    "wiki": "Paisaje agavero y antiguas instalaciones industriales de Tequila",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2104675"
+   },
+   {
+    "id": "Q2989048",
+    "nombre": "Guachimontones",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Guachimontones es el nombre de un antiguo asentamiento prehispánico ubicado en la ciudad y municipio de Teuchitlán, aproximadamente a una hora al oeste de la ciudad de Guadalajara en el estado de Jalisco.",
+    "lat": 20.69515,
+    "lon": -103.83572,
+    "imagen": "Guachimontones Jalisco - Esteban Tucci.jpg",
+    "wiki": "Guachimontones",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2989048"
+   },
+   {
+    "id": "Q65494575",
+    "nombre": "Antigua hacienda de Ciénega de Mata",
+    "tipo": "Hacienda",
+    "descripcion": "La Antigua Hacienda de Ciénega de Mata es un conjunto arquitectónico mexicano ubicado en el municipio de Lagos de Moreno, Jalisco. En agosto de 2010 fue declarado Patrimonio de la Humanidad por la Unesco como parte del Camino Real de Tierra Adentro.",
+    "lat": 21.7397,
+    "lon": -102.0264,
+    "imagen": null,
+    "wiki": "Antigua Hacienda de Ciénega de Mata",
+    "municipio": "Lagos de Moreno",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q65494575"
+   },
+   {
+    "id": "Q7126316",
+    "nombre": "Palacio de Ocomo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Palacio de Ocomo, zona arqueológica ubicada en Oconahua, municipio de Etzatlán, en el estado de Jalisco (México), es un sitio que fue construido entre el año 350 y el 900; a partir de la última fecha comenzó a decaer.",
+    "lat": 20.74556,
+    "lon": -104.16472,
+    "imagen": "MaquetaPalacioOcomo.jpg",
+    "wiki": "Palacio de Ocomo",
+    "municipio": "Etzatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q7126316"
+   },
+   {
+    "id": "Q6427175",
+    "nombre": "El Ixtépete",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El sitio arqueológico El Ixtépete o Iztépete está ubicado al sur del municipio de Zapopan, Jalisco, México. La zona protegida es de 13 hectáreas, pero se piensa que el área total del asentamiento, con todo y zonas habitacionales, fue mucho mayor, extendiéndose por toda el área de El Colli y Santa Ana Tepetitlan.",
+    "lat": 20.63194,
+    "lon": -103.44056,
+    "imagen": null,
+    "wiki": "El Ixtépete",
+    "municipio": "San Pedro Tlaquepaque",
+    "fuente": "https://www.wikidata.org/wiki/Q6427175"
+   },
+   {
+    "id": "Q140048525",
+    "nombre": "Sitio Arqueológico de Teocaltitán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Sitio Arqueológico de Teocaltitán es un vestigio arqueológico prehispánico ubicado en la localidad de Teocaltitán de Guadalupe, en el municipio de Jalostotitlán, en la región de Los Altos de Jalisco, México.",
+    "lat": 21.14109,
+    "lon": -102.38683,
+    "imagen": "Teocaltitlan de Guadalupe.jpg",
+    "wiki": "Sitio Arqueológico de Teocaltitán",
+    "fuente": "https://www.wikidata.org/wiki/Q140048525"
+   },
+   {
+    "id": "Q1706069",
+    "nombre": "Catedral de Guadalajara",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Metropolitana de Guadalajara, oficialmente Catedral Basílica de la Asunción de María Santísima, es la sede de la arquidiócesis de Guadalajara y uno de los principales templos de la Iglesia católica en México.",
+    "lat": 20.67697,
+    "lon": -103.347,
+    "imagen": "Catedral metropolitana de Guadalajara 01.jpg",
+    "wiki": "Catedral metropolitana de Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q1706069"
+   },
+   {
+    "id": "Q4867367",
+    "nombre": "Basílica de Zapopan",
+    "tipo": "Templo",
+    "descripcion": "La Basílica de Zapopan y el Convento de Nuestra Señora de la Expectación de Zapopan es un santuario franciscano ubicado en el corazón de Zapopan en el estado de Jalisco, México, es el segundo recinto mariano más visitado del estado, seguido solo por la Catedral Basílica de Nuestra Señora de San Juan de los Lagos.",
+    "lat": 20.72128,
+    "lon": -103.39231,
+    "imagen": "Basilica de Zapopan atrio.jpg",
+    "wiki": "Basílica de Zapopan",
+    "municipio": "Zapopan",
+    "fuente": "https://www.wikidata.org/wiki/Q4867367"
+   },
+   {
+    "id": "Q5758365",
+    "nombre": "Catedral Basílica de Nuestra Señora de San Juan de los Lagos",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Basílica de Nuestra Señora de San Juan de los Lagos es una iglesia católica ubicada en la ciudad de San Juan de los Lagos, en el estado de Jalisco, México, sede de la diócesis de San Juan de los Lagos.",
+    "lat": 21.24545,
+    "lon": -102.33402,
+    "imagen": "Basílica de San Juan de los Lagos.jpg",
+    "wiki": "Catedral basílica de Nuestra Señora de San Juan de los Lagos",
+    "municipio": "San Juan de los Lagos",
+    "fuente": "https://www.wikidata.org/wiki/Q5758365"
+   },
+   {
+    "id": "Q5758423",
+    "nombre": "Catedral de Autlán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Autlán es la sede de la Diócesis de Autlán. Construida a fines del siglo XIX, el templo ha llevado una lenta construcción.",
+    "lat": 19.77275,
+    "lon": -104.36439,
+    "imagen": "02204 Catedral de la Santísima Trinidad Autlán de Navarro01.jpg",
+    "wiki": "Catedral de Autlán",
+    "municipio": "Autlán de Navarro",
+    "fuente": "https://www.wikidata.org/wiki/Q5758423"
+   },
+   {
+    "id": "Q1923990",
+    "nombre": "Iglesia de Nuestra Señora de Guadalupe",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de Nuestra Señora de Guadalupe es un lugar de culto católico en Puerto Vallarta en la costa del Pacífico de México. Está abierta todos los días, con servicios en inglés disponibles los sábados y misa en español e inglés los domingos.",
+    "lat": 20.6083,
+    "lon": -105.235,
+    "imagen": "Puerto Vallarta cathedral 1.jpg",
+    "wiki": "Iglesia de Nuestra Señora de Guadalupe (Puerto Vallarta)",
+    "fuente": "https://www.wikidata.org/wiki/Q1923990"
+   },
+   {
+    "id": "Q583726",
+    "nombre": "Museo Guggenheim de Guadalajara",
+    "tipo": "Museo",
+    "descripcion": "El Museo Guggenheim Guadalajara habría sido el sexto Museo Guggenheim en el mundo, con sede en la ciudad mexicana de Guadalajara, con ubicación en el parque mirador Independencia, la barranca de Huentitán, en la Zona Metropolitana de Guadalajara.",
+    "lat": 20.66667,
+    "lon": -103.35,
+    "imagen": "Guggenheim Guadalajara.jpg",
+    "wiki": "Museo Guggenheim Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q583726"
+   },
+   {
+    "id": "Q5758449",
+    "nombre": "Catedral de Ciudad Guzmán",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de San José es una catedral ubicada en Ciudad Guzmán, Zapotlán el Grande (Jalisco, México). Es la sede de la Diócesis de Ciudad Guzmán y el principal templo de la misma.",
+    "lat": 19.70361,
+    "lon": -103.46306,
+    "imagen": "Catedral de Cd. Guzmán.JPG",
+    "wiki": "Catedral de Ciudad Guzmán",
+    "municipio": "Zapotlán el Grande",
+    "fuente": "https://www.wikidata.org/wiki/Q5758449"
+   },
+   {
+    "id": "Q112867720",
+    "nombre": "Basílica de San Felipe Neri",
+    "tipo": "Templo",
+    "descripcion": "La Basílica de San Felipe Neri es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1752 y finalizó en 1802, mandado a construir con un estilo barroco por el alarife Pedro José Ciprés.",
+    "lat": 20.67971,
+    "lon": -103.35116,
+    "imagen": "00281 templo de san felipe neri.jpg",
+    "wiki": "Basílica de San Felipe Neri",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q112867720"
+   },
+   {
+    "id": "Q5613189",
+    "nombre": "Templo de Guadalajara",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Guadalajara, México es uno de los templos construidos y operados por La Iglesia de Jesucristo de los Santos de los Últimos Días, el número 105 construido por la Iglesia y el número 11 de México, ubicado en el municipio de Zapopan al noroeste de la Zona Metropolitana de Guadalajara.",
+    "lat": 20.66155,
+    "lon": -103.42307,
+    "imagen": "Guadalajara México Temple 2.jpeg",
+    "wiki": "Templo de Guadalajara (México)",
+    "municipio": "Zapopan",
+    "fuente": "https://www.wikidata.org/wiki/Q5613189"
+   },
+   {
+    "id": "Q3936203",
+    "nombre": "Panteón de Belén",
+    "tipo": "Museo",
+    "descripcion": "El Panteón de Belén o Panteón de Santa Paula es un cementerio histórico ubicado en Guadalajara, Jalisco, México. El ingreso se encuentra en calle Belén 684, en el centro histórico de Guadalajara.",
+    "lat": 20.6878,
+    "lon": -103.34535,
+    "imagen": "Atardecer en el panteón de Belén hacia la Capilla de Santa Paula.jpg",
+    "wiki": "Panteón de Belén",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q3936203"
+   },
+   {
+    "id": "Q6033624",
+    "nombre": "Museo Nacional del Tequila",
+    "tipo": "Museo",
+    "descripcion": "El Museo Nacional del Tequila (MUNAT) está ubicado en la Ciudad de Tequila, Jalisco.",
+    "lat": 20.88435,
+    "lon": -103.83951,
+    "imagen": "Museo Nacional del Tequila (Tequila, Jalisco) I.jpg",
+    "wiki": "Museo Nacional del Tequila",
+    "municipio": "Tequila",
+    "fuente": "https://www.wikidata.org/wiki/Q6033624"
+   },
+   {
+    "id": "Q2398791",
+    "nombre": "Teatro Degollado",
+    "tipo": "Teatro",
+    "descripcion": "El Teatro Santos Degollado es un edificio de mediados del siglo XIX, ubicado en la ciudad mexicana de Guadalajara. El inmueble es escenario habitual de recitales, conciertos, espectáculos de danza clásica y contemporánea.",
+    "lat": 20.67703,
+    "lon": -103.34444,
+    "imagen": "Teatro Degollado.JPG",
+    "wiki": "Teatro Degollado",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q2398791"
+   },
+   {
+    "id": "Q7698848",
+    "nombre": "Templo Expiatorio del Santísimo Sacramento",
+    "tipo": "Templo",
+    "descripcion": "La Basílica del Santísimo Sacramento o conocido como Templo Expiatorio de Guadalajara es un templo católico dedicado al Santísimo Sacramento, ubicado en Guadalajara, Jalisco, en México. Es de estilo neogótico.",
+    "lat": 20.67344,
+    "lon": -103.35906,
+    "imagen": "Templo Expiatorio de GDL.jpg",
+    "wiki": "Templo Expiatorio del Santísimo Sacramento",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q7698848"
+   },
+   {
+    "id": "Q110373047",
+    "nombre": "Templo de Nuestra Señora del Carmen",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Nuestra Señora del Carmen es un edificio católico ubicado en el centro histórico de la ciudad de Guadalajara, en el estado de Jalisco, México.",
+    "lat": 20.6747,
+    "lon": -103.3533,
+    "imagen": "TEMPLO DEL CARMEN-7395.jpg",
+    "wiki": "Templo de Nuestra Señora del Carmen (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q110373047"
+   },
+   {
+    "id": "Q110782943",
+    "nombre": "Templo de San Agustín",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Agustín es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1574 y finalizó en 1674, encargado en estilo barroco por Pedro del Toro.",
+    "lat": 20.67617,
+    "lon": -103.34479,
+    "imagen": "00287 templo de san agustín 2.jpg",
+    "wiki": "Templo de San Agustín (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q110782943"
+   },
+   {
+    "id": "Q109645996",
+    "nombre": "San Pedro Apóstol",
+    "tipo": "Templo",
+    "descripcion": "San Pedro Apóstol es una parroquia ubicada en Zapopan, un municipio en el estado de Jalisco, México. Es uno de los muchos lugares de culto en la región.",
+    "lat": 20.7219,
+    "lon": -103.3908,
+    "imagen": "Zapopan, Jalisco, Mexico, 2021 - 053.jpg",
+    "wiki": "Parroquia de San Pedro Apóstol (Zapopan)",
+    "fuente": "https://www.wikidata.org/wiki/Q109645996"
+   },
+   {
+    "id": "Q110307298",
+    "nombre": "Templo de Jesús María",
+    "tipo": "Templo",
+    "descripcion": "El Santuario de Nuestra Señora del Rayo, conocida como el Templo de Jesús María, es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 20.6766,
+    "lon": -103.3517,
+    "imagen": "A) 00284 templo de jesús maría.jpg",
+    "wiki": "Templo de Jesús María",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q110307298"
+   },
+   {
+    "id": "Q110307266",
+    "nombre": "Templo de Santa Teresa de Jesús",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Santa Teresa de Jesús es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1690 y finalizó en 1720, mandado a construir con un estilo renacentista por el obispo Juan de Santiago y León Garabito.",
+    "lat": 20.6764,
+    "lon": -103.3501,
+    "imagen": "Templo de Santa Teresa de Jesús, Guadalajara, Jal. 01.JPG",
+    "wiki": "Templo de Santa Teresa de Jesús",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q110307266"
+   },
+   {
+    "id": "Q24532749",
+    "nombre": "Museo de las Artes Universidad de Guadalajara",
+    "tipo": "Museo",
+    "descripcion": "El Museo de las Artes de la Universidad de Guadalajara, también conocido como MUSA, está ubicado en la ciudad de Guadalajara, Jalisco, México. Fue inaugurado el 10 de octubre de 1994 y ampliado en 2013.",
+    "lat": 20.67428,
+    "lon": -103.35893,
+    "imagen": "Fachada del Museo de las Artes de la Universidad de Guadalajara.jpg",
+    "wiki": "Museo de las Artes Universidad de Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q24532749"
+   },
+   {
+    "id": "Q24579036",
+    "nombre": "Museo de Paleontología de Guadalajara",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Paleontología de Guadalajara –uno de los cinco museos especializados en la ciencia de la Paleontología en México– se ubica dentro del Parque Agua Azul en Guadalajara, Jalisco, México.",
+    "lat": 20.6591,
+    "lon": -103.34628,
+    "imagen": null,
+    "wiki": "Museo de Paleontología de Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q24579036"
+   },
+   {
+    "id": "Q3302696",
+    "nombre": "Auditorio Telmex",
+    "tipo": "Teatro",
+    "descripcion": "El Auditorio Telmex es un espacio para espectáculos ubicado en la zona metropolitana de Guadalajara, México. Es parte del proyecto cultural más ambicioso y trascendente de la Universidad de Guadalajara.",
+    "lat": 20.7331,
+    "lon": -103.381,
+    "imagen": "Pantalla inflable en el Auditorio Telmex en Guadalajara México.JPG",
+    "wiki": "Auditorio Telmex",
+    "municipio": "Zapopan",
+    "fuente": "https://www.wikidata.org/wiki/Q3302696"
+   },
+   {
+    "id": "Q7203633",
+    "nombre": "Plaza de toros Nuevo Progreso",
+    "tipo": "Teatro",
+    "descripcion": "La Plaza de toros Nuevo Progreso es un coso taurino ubicado en Guadalajara en el Estado de Jalisco en México.",
+    "lat": 20.70206,
+    "lon": -103.32531,
+    "imagen": "Plaza de Toros Nuevo Progreso de Guadalajara.jpg",
+    "wiki": "Plaza de Toros Nuevo Progreso",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q7203633"
+   },
+   {
+    "id": "Q29908262",
+    "nombre": "Convento de Nuestra Señora del Perpetuo Socorro",
+    "tipo": "Convento",
+    "descripcion": "Convento de Nuestra Señora del Perpetuo Socorro o comúnmente conocido como Templo del Perpetuo Socorro o El Perpetuo Socorro es una célebre Iglesia de la ciudad de Guadalajara (Jalisco), sede de un convento pasionista donde tienen a los religiosos postulantes de la Provincia Mexicana de la Congregación de la Pasión…",
+    "lat": 20.66271,
+    "lon": -103.35442,
+    "imagen": "Convento del Perpetuo Socorro Fachada.png",
+    "wiki": "Convento de Nuestra Señora del Perpetuo Socorro (Guadalajara, Jalisco)",
+    "fuente": "https://www.wikidata.org/wiki/Q29908262"
+   },
+   {
+    "id": "Q7698850",
+    "nombre": "Templo de San Francisco de Asís",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Francisco de Asís es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1668 y finalizó en 1692, mandado a construir con un estilo barroco novohispano por el fray Antonio de Avellaneda.",
+    "lat": 20.67221,
+    "lon": -103.34682,
+    "imagen": "San Francisco de Asís - Fachada.jpg",
+    "wiki": "Templo de San Francisco de Asís (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q7698850"
+   },
+   {
+    "id": "Q115662538",
+    "nombre": "Sagrario Metropolitano de Guadalajara",
+    "tipo": "Templo",
+    "descripcion": "El Sagrario Metropolitano de Guadalajara es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1808 y finalizó en 1843, mandado a construir con un estilo neoclásico por el obispo Juan Cruz Ruiz de Cabañas.",
+    "lat": 20.67665,
+    "lon": -103.34715,
+    "imagen": "Sagrario Metropolitano.jpg",
+    "wiki": "Sagrario Metropolitano de Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q115662538"
+   },
+   {
+    "id": "Q115662574",
+    "nombre": "Templo de Santa Mónica",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Santa Mónica es un edificio católico de la ciudad de Guadalajara, ubicado en el centro del estado de Jalisco, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 20.68001,
+    "lon": -103.34934,
+    "imagen": "00286 templo de santa mónica.jpg",
+    "wiki": "Templo de Santa Mónica (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q115662574"
+   },
+   {
+    "id": "Q6063725",
+    "nombre": "Iglesia de San Miguel Arcángel",
+    "tipo": "Templo",
+    "descripcion": "La parroquia de San Miguel Arcángel es un amplio templo de cantera ubicado en el centro religioso de la ciudad de San Miguel el Alto. Tiene forma de cruz latina y una elegante cúpula.",
+    "lat": 21.03103,
+    "lon": -102.40308,
+    "imagen": "ParroquiaSMA4.jpg",
+    "wiki": "Parroquia de San Miguel Arcángel (San Miguel el Alto)",
+    "municipio": "San Miguel el Alto",
+    "fuente": "https://www.wikidata.org/wiki/Q6063725"
+   },
+   {
+    "id": "Q6121508",
+    "nombre": "Santuario de Nuestra Señora de Guadalupe",
+    "tipo": "Templo",
+    "descripcion": "El Santuario de Nuestra Señora de Guadalupe es un templo católico de estilo herreriano localizado en el Paseo Alcalde de la ciudad de Guadalajara, Jalisco, México, dedicado (como su nombre lo indica) a la advocación mariana de Nuestra Señora de Guadalupe.",
+    "lat": 20.68444,
+    "lon": -103.34806,
+    "imagen": "Santuario de Guadalupe - GDL JAL.jpg",
+    "wiki": "Santuario de Nuestra Señora de Guadalupe (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q6121508"
+   },
+   {
+    "id": "Q113799457",
+    "nombre": "Templo de Nuestra Señora de la Merced",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Nuestra Señora de la Merced es un edificio católico de la ciudad de Guadalajara, ubicada en el centro del estado de Jalisco, México. Su construcción inició en 1650 y finalizó en 1721, mandado a construir con un estilo barroco por Francisco de Pineda.",
+    "lat": 20.67767,
+    "lon": -103.34841,
+    "imagen": "Templo de Nuestra Señora de las Mercedes-5.jpg",
+    "wiki": "Templo de Nuestra Señora de la Merced (Guadalajara, Jalisco)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q113799457"
+   },
+   {
+    "id": "Q122979557",
+    "nombre": "Santuario de los Mártires de Cristo Rey",
+    "tipo": "Templo",
+    "descripcion": "Santuario de los Mártires de Cristo Rey es recinto religioso y templo monumental para la oración, reflexión y encuentro comunitario, erigido para preservar la memoria y honor de los 25 mártires mexicanos que entregaron su vida por la fe, durante el conflicto armado denominado Guerra Cristera, en el centro geográfico…",
+    "lat": 20.61509,
+    "lon": -103.40573,
+    "imagen": "Santuario De Los Mártires Mexicanos GDL.jpg",
+    "wiki": "Santuario de los Mártires de Cristo Rey",
+    "fuente": "https://www.wikidata.org/wiki/Q122979557"
+   },
+   {
+    "id": "Q1577816",
+    "nombre": "Arcos de Guadalajara",
+    "tipo": "Monumento",
+    "descripcion": "Los Arcos de Guadalajara son un monumento representativo de la Ciudad de Guadalajara, en el estado de Jalisco, México.",
+    "lat": 20.67445,
+    "lon": -103.3848,
+    "imagen": "Los Arcos de Guadalajara.jpg",
+    "wiki": "Arcos de Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q1577816"
+   },
+   {
+    "id": "Q42908056",
+    "nombre": "Museo Cabañas",
+    "tipo": "Museo",
+    "descripcion": "El Instituto Cultural Cabañas (actualmente Museo Cabañas) es un organismo público descentralizado del gobierno del estado de Jalisco, creado en 1983 para la promoción y difusión cultural. Tiene su sede en el Hospicio Cabañas de la ciudad de Guadalajara, recinto declarado Patrimonio de la Humanidad en 1997.",
+    "lat": 20.67655,
+    "lon": -103.3376,
+    "imagen": "Hospicio Cabañas.JPG",
+    "wiki": "Instituto Cultural Cabañas",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q42908056"
+   },
+   {
+    "id": "Q2917489",
+    "nombre": "Museo Regional de Guadalajara",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Guadalajara está ubicado en el centro de la ciudad de Guadalajara, capital del Estado de Jalisco, México. Más precisamente en la manzana delimitada por las calles Hidalgo, Pino Suárez, Liceo e Independencia, frente a la Rotonda de los Jaliscienses Ilustres.",
+    "lat": 20.67772,
+    "lon": -103.34632,
+    "imagen": "Fachada del Museo Regional de Guadalajara, Jal., Méx. 01 (cropped).JPG",
+    "wiki": "Museo Regional de Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q2917489"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q9022",
+    "nombre": "Guadalajara",
+    "tipo": "Ciudad",
+    "descripcion": "Guadalajara es una ciudad mexicana, capital del estado de Jalisco y cabecera del municipio homónimo. Está ubicada en el occidente del país, en la zona geográfica conocida como Valle de Atemajac.",
+    "lat": 20.67639,
+    "lon": -103.34222,
+    "imagen": "Panorámica Guadalajara desde edificio Bansi hacia norte (cropped).jpg",
+    "wiki": "Guadalajara (México)",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q9022"
+   },
+   {
+    "id": "Q147402",
+    "nombre": "Zapopan",
+    "tipo": "Ciudad",
+    "descripcion": "Zapopan es una ciudad mexicana ubicada en el estado de Jalisco, cabecera del municipio homónimo. Es la segunda ciudad más poblada del estado y es parte de la zona metropolitana de Guadalajara.",
+    "lat": 20.72083,
+    "lon": -103.39111,
+    "imagen": "Zapopan, Jalisco, Mexico, 2021 - 012.jpg",
+    "wiki": "Zapopan",
+    "municipio": "Zapopan",
+    "fuente": "https://www.wikidata.org/wiki/Q147402"
+   },
+   {
+    "id": "Q853258",
+    "nombre": "Puerto Vallarta",
+    "tipo": "Ciudad",
+    "descripcion": "Puerto Vallarta es una ciudad y puerto mexicano ubicado en el estado de Jalisco, en la región Costa Sierra Occidental de la entidad, a 196 km de Guadalajara, la capital del estado; siendo la cabecera del municipio homónimo.",
+    "lat": 20.6413,
+    "lon": -105.2233,
+    "imagen": "Collage Puerto Vallarta.jpg",
+    "wiki": "Puerto Vallarta",
+    "fuente": "https://www.wikidata.org/wiki/Q853258"
+   },
+   {
+    "id": "Q825347",
+    "nombre": "Volcán de Colima",
+    "tipo": "Montaña",
+    "descripcion": "El Volcán de Colima, a veces llamado Volcán de Fuego de Colima para diferenciarlo del cercano Volcán Nevado de Colima, es un estratovolcán activo ubicado en los límites de los estados de Colima y Jalisco, en México. Su altitud oficial es de 3860 m sobre el nivel del mar.",
+    "lat": 19.51139,
+    "lon": -103.61806,
+    "imagen": "Colima Landsat image.jpg",
+    "wiki": "Volcán de Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q825347"
+   },
+   {
+    "id": "Q318350",
+    "nombre": "Lago de Chapala",
+    "tipo": "Lago",
+    "descripcion": "El lago de Chapala es el embalse natural más grande de México, al contar con 1112 km².",
+    "lat": 20.33333,
+    "lon": -103,
+    "imagen": "Lake chapala.png",
+    "wiki": "Lago de Chapala",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q318350"
+   },
+   {
+    "id": "Q1798559",
+    "nombre": "Tonalá",
+    "tipo": "Ciudad",
+    "descripcion": "Tonalá es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio de Tonalá.",
+    "lat": 20.62333,
+    "lon": -103.24556,
+    "imagen": "Santo Santiago Apostol.jpg",
+    "wiki": "Tonalá (Jalisco)",
+    "municipio": "Tonalá",
+    "fuente": "https://www.wikidata.org/wiki/Q1798559"
+   },
+   {
+    "id": "Q1094355",
+    "nombre": "Ciudad Guzmán",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Guzmán es una ciudad del estado mexicano de Jalisco. Ubicada a 123 km al sur de Guadalajara, a una altitud de 1507 metros sobre el nivel del mar.",
+    "lat": 19.70472,
+    "lon": -103.4625,
+    "imagen": "Catedral de Cd. Guzmán.JPG",
+    "wiki": "Ciudad Guzmán",
+    "municipio": "Zapotlán el Grande",
+    "fuente": "https://www.wikidata.org/wiki/Q1094355"
+   },
+   {
+    "id": "Q1709669",
+    "nombre": "San Juan de los Lagos",
+    "tipo": "Ciudad",
+    "descripcion": "San Juan de los Lagos es una ciudad en la Región Altos Norte del estado de Jalisco, México. Fue parte de la Provincia de Nueva Galicia, actual Aguascalientes y Jalisco, en el Reino de Nueva Galicia por casi 300 años.",
+    "lat": 21.24528,
+    "lon": -102.33472,
+    "imagen": "San Juan de los Lagos (20250724)2.jpg",
+    "wiki": "San Juan de los Lagos",
+    "municipio": "San Juan de los Lagos",
+    "fuente": "https://www.wikidata.org/wiki/Q1709669"
+   },
+   {
+    "id": "Q20249102",
+    "nombre": "Tepatitlán de Morelos",
+    "tipo": "Ciudad",
+    "descripcion": "Tepatitlán de Morelos es una localidad del estado mexicano de Jalisco. Es la cabecera del municipio homónimo.Forma parte de la región de los Altos Sur.",
+    "lat": 20.815,
+    "lon": -102.75861,
+    "imagen": "Tepatitlán de Morelos (20250425)1.jpg",
+    "wiki": "Tepatitlán de Morelos",
+    "municipio": "Tepatitlán de Morelos",
+    "fuente": "https://www.wikidata.org/wiki/Q20249102"
+   },
+   {
+    "id": "Q1962285",
+    "nombre": "Tlajomulco de Zúñiga",
+    "tipo": "Ciudad",
+    "descripcion": "Tlajomulco de Zúñiga es una ciudad de la región Centro del estado de Jalisco, México. Forma parte del Área metropolitana de Guadalajara y se encuentra al suroeste de la misma.",
+    "lat": 20.46667,
+    "lon": -103.43944,
+    "imagen": "Tlajomulco de Zúñiga (20241031)01.jpg",
+    "wiki": "Tlajomulco de Zúñiga",
+    "municipio": "Tlajomulco de Zúñiga",
+    "fuente": "https://www.wikidata.org/wiki/Q1962285"
+   },
+   {
+    "id": "Q662022",
+    "nombre": "Volcán de Tequila",
+    "tipo": "Montaña",
+    "descripcion": "El volcán de Tequila es un estratovolcán extinto (pero no totalmente muerto) de unos 2,930 m s. n. m. de altitud conformada por microclimas; en su cumbre se puede apreciar una elevación en forma de domo, fabricado por lava situado en las proximidades de Tequila, Jalisco, México.",
+    "lat": 20.787,
+    "lon": -103.847,
+    "imagen": "Volcán de Tequila, Jalisco.jpg",
+    "wiki": "Volcán de Tequila",
+    "fuente": "https://www.wikidata.org/wiki/Q662022"
+   },
+   {
+    "id": "Q1792738",
+    "nombre": "Parque nacional Nevado de Colima",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque Nacional \"Volcán Nevado de Colima\" es un parque natural mexicano, se encuentra ubicado entre los límites de los estados de Jalisco (89 %) y Colima (11 %). El parque alberga al Volcán de Colima y al Nevado de Colima, del cual toma su nombre.",
+    "lat": 19.46667,
+    "lon": -103.55,
+    "imagen": "Monte Nevado, Colima (11932471645).jpg",
+    "wiki": "Parque nacional Nevado de Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q1792738"
+   },
+   {
+    "id": "Q427921",
+    "nombre": "Nevado de Colima",
+    "tipo": "Montaña",
+    "descripcion": "El volcán Nevado de Colima es un antiguo macizo volcánico ubicado en el estado de Jalisco (no confundir con el parque nacional homónimo), en el occidente de la República Mexicana. Su altura es de 4260m s. n. m. y no presenta actividad volcánica.",
+    "lat": 19.5636,
+    "lon": -103.608,
+    "imagen": "Nevado de Colima.JPG",
+    "wiki": "Nevado de Colima",
+    "fuente": "https://www.wikidata.org/wiki/Q427921"
+   },
+   {
+    "id": "Q3457139",
+    "nombre": "Reserva de la Biósfera Chamela-Cuixmala",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera Chamela-Cuixmala (RBCC) es una de las primeras reservas naturales de México en constituirse en la costa del Pacífico del estado de Jalisco. Esta área fue declarada mediante Decreto Presencial el 30 de diciembre de 1993, comprendiendo 13.142,78,25 hectáreas.",
+    "lat": 19.48806,
+    "lon": -104.99556,
+    "imagen": "Chamela-Cuixmala DryForest.JPG",
+    "wiki": "Reserva de la Biósfera Chamela-Cuixmala",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3457139"
+   },
+   {
+    "id": "Q8251051",
+    "nombre": "Bosque de la Primavera",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "El bosque La Primavera es una amplia zona forestal, que alberga en su interior una caldera volcánica con un IEV de 6.4. Se ubica en México, en el Estado de Jalisco.",
+    "lat": 20.63528,
+    "lon": -103.56889,
+    "imagen": "Bosque de la Primavera, Jalisco.jpg",
+    "wiki": "Bosque de la Primavera",
+    "fuente": "https://www.wikidata.org/wiki/Q8251051"
+   },
+   {
+    "id": "Q3390881",
+    "nombre": "Playa Los Muertos",
+    "tipo": "Playa",
+    "descripcion": "La Playa los Muertos se ubica en Puerto Vallarta, municipio y ciudad del Estado de Jalisco, México.",
+    "lat": 20.59863,
+    "lon": -105.23931,
+    "imagen": "Playa de Los Muertos.jpg",
+    "wiki": "Playa los Muertos",
+    "fuente": "https://www.wikidata.org/wiki/Q3390881"
+   },
+   {
+    "id": "Q7911832",
+    "nombre": "Jardín botánico de Vallarta",
+    "tipo": "Jardín botánico",
+    "descripcion": "Los Jardines Botánicos de Vallarta, es un jardín botánico de 26 hectáreas de extensión que está administrado por la Asociación Civil sin Fines de Lucro y apoyado por otra asociación no lucrativa norteamericana llamada Friends of Vallarta Botanical Gardens, A.C. Se encuentra cerca de Puerto Vallarta, Jalisco, México.",
+    "lat": 20.4658,
+    "lon": -105.293,
+    "imagen": "VBG Visitor Center.jpg",
+    "wiki": "Jardín botánico de Vallarta",
+    "fuente": "https://www.wikidata.org/wiki/Q7911832"
+   },
+   {
+    "id": "Q6380241",
+    "nombre": "Laguna de Sayula",
+    "tipo": "Área natural protegida",
+    "descripcion": "La laguna de Sayula es una laguna salada ubicada en la región Sur de Jalisco, aproximadamente a 60 km de Guadalajara. Se ubica enclavada en los municipios de Sayula, Zacoalco de Torres, Amacueca, Teocuitatlán de Corona, Atoyac y Techaluta de Montenegro.",
+    "lat": 20.03028,
+    "lon": -103.53472,
+    "imagen": "Laguna de Sayula.jpg",
+    "wiki": "Laguna de Sayula",
+    "municipio": "Amacueca",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6380241"
+   },
+   {
+    "id": "Q7511660",
+    "nombre": "Sierra de Quila",
+    "tipo": "Área natural protegida",
+    "descripcion": "La sierra de Quila es un área natural protegida situada en las cercanías de la comunidad de Quila el Grande, perteneciente a los municipios de Tecolotlan, Tenamaxtlan, Ameca y San Martín Hidalgo en el estado de Jalisco, a unos 100 kilómetros al Suroeste de la ciudad de Guadalajara y está situada entre las coordenadas…",
+    "lat": 20.3,
+    "lon": -104.01667,
+    "imagen": "Phlebia_incarnata_112685.jpg",
+    "wiki": "Sierra de Quila",
+    "fuente": "https://www.wikidata.org/wiki/Q7511660"
+   },
+   {
+    "id": "Q5922265",
+    "nombre": "Isla del río Cuale",
+    "tipo": "Área natural protegida",
+    "descripcion": "La Isla del Río Cuale (también conocida como Isla Cuale) es un parque público ubicado en Puerto Vallarta, en el estado mexicano de Jalisco. Recibe su nombre del río que pasa por la zona, el cual nace a unos 40 kilómetros.",
+    "lat": 20.60583,
+    "lon": -105.23472,
+    "imagen": "Puerto Vallarta, MX (2023) - 066.jpg",
+    "wiki": "Isla del río Cuale",
+    "fuente": "https://www.wikidata.org/wiki/Q5922265"
+   },
+   {
+    "id": "Q6301485",
+    "nombre": "Cataratas de Juanacatlán",
+    "tipo": "Cascada",
+    "descripcion": "Las cataratas de Juanacatlán son unas cataratas sobre el río Grande de Santiago en el estado de Jalisco, México. Se encuentran en cercanías de la ciudad de Guadalajara y a unos 15 km aguas abajo del importante lago de Chapala.",
+    "lat": 20.5132,
+    "lon": -103.1752,
+    "imagen": "El_Salto_de_Juanacatlán_1909.jpeg",
+    "wiki": "Cataratas de Juanacatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q6301485"
+   },
+   {
+    "id": "Q24940833",
+    "nombre": "Isla de Mezcala",
+    "tipo": "Isla",
+    "descripcion": "La isla de Mezcala (también conocida como “La Isla del Presidio”) es el nombre de una pequeña isla ubicada un kilómetro frente al poblado de Mezcala de la Asunción. Se encuentra localizada en el lago de Chapala dentro del municipio de Poncitlán y en los límites del territorio de Jalisco y Michoacán.",
+    "lat": 20.29122,
+    "lon": -103.02419,
+    "imagen": "La Isla de Mezcala.JPG",
+    "wiki": "Isla de Mezcala",
+    "municipio": "Poncitlán",
+    "fuente": "https://www.wikidata.org/wiki/Q24940833"
+   },
+   {
+    "id": "Q3576044",
+    "nombre": "Zoológico Guadalajara",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Zoológico Guadalajara es el principal zoológico metropolitano de la ciudad de Guadalajara (México), está ubicado en Paseo del Zoológico 600 a la altura de Calzada Independencia Norte al oriente de la Zona Metropolitana de Guadalajara en el municipio de Guadalajara.",
+    "lat": 20.72838,
+    "lon": -103.30833,
+    "imagen": "Guadalajara, Jalisco, Mexico (2021) - 371.jpg",
+    "wiki": "Zoológico Guadalajara",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q3576044"
+   },
+   {
+    "id": "Q6081549",
+    "nombre": "Isla de los Alacranes",
+    "tipo": "Isla",
+    "descripcion": "La isla de los Alacranes se encuentra ubicada en el lago de Chapala, en el estado de Jalisco. Pertenece al municipio de Chapala.",
+    "lat": 20.25111,
+    "lon": -103.17028,
+    "imagen": null,
+    "wiki": "Isla de los Alacranes",
+    "municipio": "Chapala",
+    "fuente": "https://www.wikidata.org/wiki/Q6081549"
+   },
+   {
+    "id": "Q5969182",
+    "nombre": "Laguna de Cajititlán",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de Cajititlán formó parte del gran lago del estado de Jalisco en México. Se encuentra en el municipio de Tlajomulco de Zúñiga en la zona metropolitana a 25 minutos del periférico de Guadalajara por la carretera a Chapala.",
+    "lat": 20.42391,
+    "lon": -103.323,
+    "imagen": "Cajititlan.jpg",
+    "wiki": "Laguna de Cajititlán",
+    "fuente": "https://www.wikidata.org/wiki/Q5969182"
+   },
+   {
+    "id": "Q27785399",
+    "nombre": "Cerro El Petacal",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro El Petacal, también conocido como Cerro del Petacal, es una montaña ubicada en Puerta del Petacal, municipio de Tolimán del estado de Jalisco. Originalmente, la formación se conocía como petacaltepetl que en nahuatl se significa «cerro del cofre».",
+    "lat": 19.60139,
+    "lon": -103.85306,
+    "imagen": "El Cerro del Petacal.jpg",
+    "wiki": "Cerro El Petacal",
+    "fuente": "https://www.wikidata.org/wiki/Q27785399"
+   },
+   {
+    "id": "Q47495764",
+    "nombre": "La Mesa Redonda",
+    "tipo": "Montaña",
+    "descripcion": "La Mesa Redonda o el Cerro de la Mesa Redonda es una meseta que se encuentra en el valle de Lagos de Moreno, Jalisco. Es parte de la Sierra Madre Occidental y tiene una altitud de 2080 metros sobre el nivel del mar.",
+    "lat": 21.28417,
+    "lon": -102.00972,
+    "imagen": "El Cerro de la Mesa desde la carretera a Lagos de Moreno 24 (cropped).jpg",
+    "wiki": "Mesa Redonda (montaña)",
+    "fuente": "https://www.wikidata.org/wiki/Q47495764"
+   },
+   {
+    "id": "Q109875161",
+    "nombre": "Acuario Michín Guadalajara",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Acuario Michin Guadalajara es un acuario ubicado en la ciudad de Guadalajara, en el estado mexicano de Jalisco.",
+    "lat": 20.69292,
+    "lon": -103.35139,
+    "imagen": null,
+    "wiki": "Acuario Michín Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q109875161"
+   },
+   {
+    "id": "Q6062388",
+    "nombre": "Parque Mirador Independencia",
+    "tipo": "Atractivo turístico",
+    "descripcion": "El Parque Mirador Independencia es un parque recreativo y cultural construido a finales de 1970 a la orilla de la Barranca de Huentitán con el objetivo de brindar espacios recreativos, de esparcimiento, deportivos y culturales a la sociedad tapatía, el parque es también un mirador panorámico hacia la Barranca de…",
+    "lat": 20.74154,
+    "lon": -103.3108,
+    "imagen": "Parque_Mirador_Independencia_(cropped).jpg",
+    "wiki": "Parque Mirador Independencia",
+    "municipio": "Guadalajara",
+    "fuente": "https://www.wikidata.org/wiki/Q6062388"
+   },
+   {
+    "id": "Q123218413",
+    "nombre": "Cerro del Cuatro",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro del Cuatro, es una elevación montañosa ubicada en el municipio de San Pedro Tlaquepaque.",
+    "lat": 20.59991,
+    "lon": -103.36397,
+    "imagen": "CerroDelCuatro.jpg",
+    "wiki": "Cerro del Cuatro",
+    "fuente": "https://www.wikidata.org/wiki/Q123218413"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5412364",
+    "nombre": "Birote",
+    "tipo": "Pan",
+    "descripcion": "Birote es el nombre que se le ha asignado a una variedad de pan de origen mexicano que se hornea hasta quedar dorado. Es de consistencia semejante al bolillo y su forma es muy parecida a la de la baguette de origen francés.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Birotes_Salado.jpg",
+    "wiki": "Birote",
+    "fuente": "https://www.wikidata.org/wiki/Q5412364"
+   },
+   {
+    "id": "Q7827283",
+    "nombre": "Torta Ahogada",
+    "tipo": "Platillo",
+    "descripcion": "La torta ahogada es uno de los platillos mexicanos más típicos y representativos del estado de Jalisco, particularmente de la ciudad de Guadalajara, la capital del estado; aunque en la actualidad su popularidad se ha extendido a diferentes regiones del país, siendo más común encontrarlo en otras ciudades y…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Torta Ahogada & Radish.jpg",
+    "wiki": "Torta ahogada",
+    "fuente": "https://www.wikidata.org/wiki/Q7827283"
+   },
+   {
+    "id": "Q5753018",
+    "nombre": "Carne en su jugo",
+    "tipo": "Sopa",
+    "descripcion": "La carne en su jugo es una receta mexicana representativa de la gastronomía del estado de Jalisco. Desde hace algunos años, su popularidad se ha extendido por otros estados de la República Mexicana, influyendo en las gastronomías de los estados de Aguascalientes, Michoacán y Guanajuato.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carne En Su Jugo .jpg",
+    "wiki": "Carne en su jugo",
+    "fuente": "https://www.wikidata.org/wiki/Q5753018"
+   },
+   {
+    "id": "Q21529370",
+    "nombre": "Pachola",
+    "tipo": "Platillo",
+    "descripcion": "La pacholas son un platillo de carne preparada en la cocina mexicana, originarias de Lagos de Moreno Jalisco, México. Consiste en una tortita de carne picada o molida, aplanada y condimentada, la cual es hecha tradicionalmente usando un metate.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pachol.jpg",
+    "wiki": "Pachola",
+    "fuente": "https://www.wikidata.org/wiki/Q21529370"
+   },
+   {
+    "id": "Q7283706",
+    "nombre": "Raicillla",
+    "tipo": "Bebida",
+    "descripcion": "La raicilla es un destilado mexicano de agave, como el mezcal, obtenida de la destilación que se obtiene de diversos tipos de agave, como son Agave maximiliana, Agave inaequidens, Agave valenciana, Agave angustifolia y Agave rhodacantha entre otros, agaves que son cosechados en el territorio comprendido por la…",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Raicilla (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q7283706"
+   },
+   {
+    "id": "Q5929336",
+    "nombre": "Jericalla",
+    "tipo": "Dulce",
+    "descripcion": "La jericalla, jericaya o chiricaya es un postre mexicano, típico de la gastronomía del estado de Jalisco, originario de la ciudad de Guadalajara, Jalisco, y que también se puede disfrutar en diversos países de Centroamérica. Está hecho a base de leche, huevos, vainilla, canela y azúcar.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jericalla.jpg",
+    "wiki": "Jericalla",
+    "fuente": "https://www.wikidata.org/wiki/Q5929336"
+   },
+   {
+    "id": "Q5739906",
+    "nombre": "Caldo michi",
+    "tipo": "Sopa",
+    "descripcion": "El caldo michi es una sopa mexicana de pescado cocido en su jugo, originaria de La Barca, Jalisco, en particular de la ciénega del lago de Chapala, aunque podría pensarse que el nombre proviene del estado de Michoacán, es del vocablo náhuatl michi que significa pescado.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Caldo_Michi.jpg",
+    "wiki": "Caldo michi",
+    "fuente": "https://www.wikidata.org/wiki/Q5739906"
+   },
+   {
+    "id": "Q87920812",
+    "nombre": "Minguichi",
+    "tipo": "Sopa",
+    "descripcion": "El menguiche es una sopa típica de la cocina de Michoacán, en México, que consiste en leche, tomate verde, cebolla, ajo, elote y chile poblano. También es popular en Colima, donde se le agrega jitomate, y en Jalisco, donde se usa jocoque y maicena.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Minguichi_a_la_olla.jpg",
+    "wiki": "Minguichi",
+    "fuente": "https://www.wikidata.org/wiki/Q87920812"
+   },
+   {
+    "id": "Q130101790",
+    "nombre": "Pajarete",
+    "tipo": "Bebida",
+    "descripcion": "El pajarete es una bebida alcohólica mexicana originaria del sureste del estado de Jalisco, México. El pajarete consiste en leche bronca (generalmente de vaca, pero también puede ser de chiva), chocolate y alcohol de caña de 96 grados.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pajarete de leche de vaca.jpg",
+    "wiki": "Pajarete (bebida jalisciense)",
+    "fuente": "https://www.wikidata.org/wiki/Q130101790"
+   },
+   {
+    "id": "Q4916959",
+    "nombre": "Birria",
+    "tipo": "Platillo",
+    "descripcion": "Birria es una variación regional de la barbacoa del occidente de México, hecha principalmente de chivo, carnero, o res. La carne se marina en un adobo hecho de vinagre, chiles secos, ajos, hierbas, y sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Plato de birria.jpg",
+    "wiki": "Birria",
+    "fuente": "https://www.wikidata.org/wiki/Q4916959"
+   },
+   {
+    "id": "Q87919415",
+    "nombre": "Colache",
+    "tipo": "Platillo",
+    "descripcion": "El colache (del yaqui, colachi) es un salteado mexicano de calabazas típico del noroeste de México, principalmente en los estados de Baja California, Jalisco, Sinaloa y Sonora. Se suele servir caliente como primer plato, o también como plato fuerte.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cubo_de_colache.jpg",
+    "wiki": "Colache",
+    "fuente": "https://www.wikidata.org/wiki/Q87919415"
+   },
+   {
+    "id": "Q7695264",
+    "nombre": "Tejuino",
+    "tipo": "Bebida",
+    "descripcion": "El tejuino (del náhuatl: texwinoh ‘bebida de masa’) o tesgüino es una bebida fermentada de maíz de origen mexicano, específicamente de las antiguas culturas de occidente, la cual se consume en regiones de los estados de Jalisco, Sinaloa, Colima, Nayarit, Baja California Sur y Oaxaca.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tejuino.JPG",
+    "wiki": "Tejuino",
+    "fuente": "https://www.wikidata.org/wiki/Q7695264"
+   },
+   {
+    "id": "Q122195",
+    "nombre": "Tequila",
+    "tipo": "Bebida",
+    "descripcion": "El tequila es una bebida alcohólica obtenida del destilado, originaria de Tequila, en el estado de Jalisco, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tequilas.JPG",
+    "wiki": "Tequila",
+    "fuente": "https://www.wikidata.org/wiki/Q122195"
+   },
+   {
+    "id": "Q9012336",
+    "nombre": "Jocoque",
+    "tipo": "Bebida",
+    "descripcion": "El jocoque o crema refinada es un producto lácteo cuya base es leche refinada de vaca, muy habitual en la gastronomía mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jocoque_para_acompañar_tacos_árabes,_Puebla.jpg",
+    "wiki": "Jocoque",
+    "fuente": "https://www.wikidata.org/wiki/Q9012336"
+   },
+   {
+    "id": "Q104665688",
+    "nombre": "Bate",
+    "tipo": "Bebida",
+    "descripcion": "El bate es una bebida espesa y fría, de origen indígena mexicano, a base de semillas de chan o chía tostadas y molidas, similar a un atole. Es típico de los estados de Colima, Jalisco y Nayarit, en donde se pueden encontrar vendedores de bate a pie de calle.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bate en colima.jpg",
+    "wiki": "Bate (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q104665688"
+   },
+   {
+    "id": "Q93541181",
+    "nombre": "Chile de Yahualica",
+    "tipo": "Producto típico",
+    "descripcion": "El chile de Yahualica, es una denominación de origen mexicana de 11 municipios repartidos entre los estados de Jalisco y Zacatecas para una variedad del chile de árbol.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chile_de_Árbol_seco.JPG",
+    "wiki": "Chile de Yahualica",
+    "fuente": "https://www.wikidata.org/wiki/Q93541181"
+   },
+   {
+    "id": "Q5775620",
+    "nombre": "Coachala",
+    "tipo": "Platillo",
+    "descripcion": "La Cuaxala o cuachala es un platillo típico mexicano, originario de Tuxpan Jalisco y distribuido en los vecinos estados de Colima y Nayarit, consiste en pollo desmenuzado y/o carne de puerco desmenuzada en caldo de jitomate, chiles (que pueden ser pasilla o cascabel), manteca y masa de maíz, que caracteriza a este…",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Coachala",
+    "fuente": "https://www.wikidata.org/wiki/Q5775620"
+   },
+   {
+    "id": "Q6817675",
+    "nombre": "Menudo",
+    "tipo": "Sopa",
+    "descripcion": "El menudo, conocido también como pancita, callos o mondongo, es un platillo típico de la gastronomía Española que se prepara tanto en España como también en otros países de Hispanoámerica, los Estados Unidos y las Filipinas y se le identifica con diferentes nombres (tales como callos, guatitas o mondongo) según el…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Menudo (sopa de México).JPG",
+    "wiki": "Menudo (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q6817675"
+   },
+   {
+    "id": "Q12007834",
+    "nombre": "Tuba",
+    "tipo": "Bebida",
+    "descripcion": "La tuba es una bebida que consiste en savia de palma fermentada, particularmente palma de coco (Cocos nucifera) por lo que tiene una ligera graduación alcohólica. También se puede tomar del mismo día, sin fermentar, y por lo tanto no será una bebida alcohólica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tuba Colima.JPG",
+    "wiki": "Tuba (bebida)",
+    "fuente": "https://www.wikidata.org/wiki/Q12007834"
+   },
+   {
+    "id": "Q19029",
+    "nombre": "Arroz con leche",
+    "tipo": "Dulce",
+    "descripcion": "El arroz con leche es un postre típico de la gastronomía de múltiples países, elaborado a partir de la cocción lenta de arroz, leche y azúcar. Se sirve frío o caliente y se le suele espolvorear canela, vainilla y/o cáscara de limón por encima para aromatizarlo y brindarle matices adicionales a su sabor.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Arroz con leche.png",
+    "wiki": "Arroz con leche",
+    "fuente": "https://www.wikidata.org/wiki/Q19029"
+   }
+  ]
+ }
+}

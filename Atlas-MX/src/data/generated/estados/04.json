@@ -1,0 +1,696 @@
+{
+ "cve": "04",
+ "estado": "Campeche",
+ "wikidata": "Q80908",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q28056717",
+    "nombre": "Candelaria",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Candelaria es una ciudad mexicana situada en el estado mexicano de Campeche. Es la cabecera del municipio de Candelaria. y uno de los principales centros urbanos en la región suroeste del estado.",
+    "lat": 18.18345,
+    "lon": -91.04629,
+    "imagen": "MALECON DE CANDELARIA CAMPECHE - panoramio.jpg",
+    "wiki": "Candelaria (Campeche)",
+    "municipio": "Candelaria",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q28056717"
+   },
+   {
+    "id": "Q20258362",
+    "nombre": "Isla Aguada",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Isla Aguada es una localidad mexicana situada en el estado de Campeche, dentro del municipio de Carmen. Fue incluida en el programa turístico Pueblos Mágicos en 2020.",
+    "lat": 18.78302,
+    "lon": -91.48346,
+    "imagen": "Malecón Isla Aguada - panoramio.jpg",
+    "wiki": "Isla Aguada",
+    "municipio": "Carmen",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20258362"
+   },
+   {
+    "id": "Q1951053",
+    "nombre": "Palizada",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Palizada es una localidad del estado mexicano de Campeche, cabecera del municipio de Palizada; está localizada al suroeste del estado, en la región de los ríos, cercana a la Laguna de Términos. Cuenta con una extensión territorial de 2071 kilómetros cuadrados.",
+    "lat": 18.25444,
+    "lon": -92.09083,
+    "imagen": "Palizada centro.jpg",
+    "wiki": "Palizada (Campeche)",
+    "municipio": "Palizada",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1951053"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q272771",
+    "nombre": "Calakmul",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Calakmul (del maya yucateco: Kaꞌaláakꞌmúul ‘Dos pirámides adyacentes’), Chiik Naab' u Oxtetún (del maya clásico: Uxteꞌ Tuun ‘Tres piedras’) es un yacimiento arqueológico prehispánico maya, situado en el sureste del estado mexicano de Campeche, en la región del Petén, en el núcleo de la reserva de la biosfera de…",
+    "lat": 18.105,
+    "lon": -89.81056,
+    "imagen": "In Calakmul, Mexico (8726963632).jpg",
+    "wiki": "Calakmul",
+    "municipio": "Calakmul",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q272771"
+   },
+   {
+    "id": "Q5762131",
+    "nombre": "Centro histórico de San Francisco de Campeche",
+    "tipo": "Centro histórico",
+    "descripcion": "El casco histórico de San Francisco de Campeche, se encuentra la ciudad de San Francisco de Campeche ubicada frente al Golfo de México, y su fundación fue en 1531.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Bahía de Campeche Cart Siglo XVI.jpg",
+    "wiki": "Centro histórico de San Francisco de Campeche",
+    "municipio": "Campeche",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5762131"
+   },
+   {
+    "id": "Q774512",
+    "nombre": "Edzná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Edzná es un sitio arqueológico maya, ubicado en el estado mexicano de Campeche, en el Valle de Edzná. Se mantuvo como ciudad de importancia regional entre los años 300 y 1000 d. C.",
+    "lat": 19.59678,
+    "lon": -90.22908,
+    "imagen": "15-07-14-Edzna-Campeche-Mexico-RalfR-WMA 0700-edit.jpg",
+    "wiki": "Edzná",
+    "fuente": "https://www.wikidata.org/wiki/Q774512"
+   },
+   {
+    "id": "Q813784",
+    "nombre": "Becán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Becán es un sitio arqueológico maya ubicado en el estado mexicano de Campeche.",
+    "lat": 18.51667,
+    "lon": -89.46667,
+    "imagen": "Becán - Structure IX.jpg",
+    "wiki": "Becán",
+    "fuente": "https://www.wikidata.org/wiki/Q813784"
+   },
+   {
+    "id": "Q283573",
+    "nombre": "Isla de Jaina",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La isla de Jaina se encuentra en el litoral de la península de Yucatán y pertenece al estado mexicano de Campeche. Es una pequeña isla de naturaleza calcárea y construida artificialmente ubicada unos cuarenta kilómetros al norte de San Francisco de Campeche y alrededor de quince al sur de la isla de Piedras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jaina figurine 3.jpg",
+    "wiki": "Isla de Jaina",
+    "fuente": "https://www.wikidata.org/wiki/Q283573"
+   },
+   {
+    "id": "Q1630717",
+    "nombre": "Río Bec",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Río Bec (del maya: Beek: Ehretia tinifolia, localmente conocido como roble, Río del Roble), es el nombre de un yacimiento arqueológico maya precolombino, localizado en el sur del estado de Campeche, México, en el municipio de Calakmul, muy cercano a los yacimientos mayas de Xpujil, Chicanná y Hormiguero, a unos…",
+    "lat": 18.37333,
+    "lon": -89.35889,
+    "imagen": "Rio Bec B.jpg",
+    "wiki": "Río Bec",
+    "fuente": "https://www.wikidata.org/wiki/Q1630717"
+   },
+   {
+    "id": "Q1072052",
+    "nombre": "Chicanná",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chicanná (del maya: Chi'kaannaj: Chi, boca; kaan, serpiente; naj, casa. La casa de la boca de la serpiente.), es una zona arqueológica maya correspondiente al periodo clásico, ubicada en el sureste del estado de Campeche, municipio de Calakmul, en la Península de Yucatán, México.",
+    "lat": 18.50692,
+    "lon": -89.48633,
+    "imagen": "Chicanna.jpg",
+    "wiki": "Chicanná",
+    "fuente": "https://www.wikidata.org/wiki/Q1072052"
+   },
+   {
+    "id": "Q130730158",
+    "nombre": "Valeriana",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Valeriana es un sitio arqueológico de una antigua ciudad maya ubicada dentro de la selva del estado de Campeche en México.",
+    "lat": 18.9025,
+    "lon": -89.3175,
+    "imagen": null,
+    "wiki": "Valeriana (ciudad maya)",
+    "fuente": "https://www.wikidata.org/wiki/Q130730158"
+   },
+   {
+    "id": "Q223397",
+    "nombre": "Acanmul",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Acanmul es un sitio arqueológico situado a 25 km noreste de la ciudad de San Francisco de Campeche y pertenece a la Junta Municipal de Hampolol. Es un antiguo asentamiento maya aún en estudio.",
+    "lat": 19.90361,
+    "lon": -90.32556,
+    "imagen": "Acanmul.jpg",
+    "wiki": "Acanmul",
+    "fuente": "https://www.wikidata.org/wiki/Q223397"
+   },
+   {
+    "id": "Q804617",
+    "nombre": "Balamkú",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Balamkú (del maya: Balamkú: Balam, guardián, protector, ser sobrenatural (también jaguar); k'u, templo; \"Templo del Jaguar\"), es una antigua zona arqueológica maya en el estado de Campeche, en México, localizada dentro de la selva tropical de la Reserva de la Biosfera Balam Kú.",
+    "lat": 18.56019,
+    "lon": -89.94436,
+    "imagen": "Balamku1.jpg",
+    "wiki": "Balamkú",
+    "fuente": "https://www.wikidata.org/wiki/Q804617"
+   },
+   {
+    "id": "Q12912169",
+    "nombre": "Xpujil",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de Xpujil (también se escribe Xpuhil) (del maya: 'Cola de gato'), es el área donde se encuentra un yacimiento arqueológico maya precolombino, localizada en el sureste del estado de Campeche, en la Península de Yucatán, México.",
+    "lat": 18.51003,
+    "lon": -89.40447,
+    "imagen": "XpujilByPhilKonstantin.jpg",
+    "wiki": "Xpujil (zona arqueológica)",
+    "fuente": "https://www.wikidata.org/wiki/Q12912169"
+   },
+   {
+    "id": "Q1817754",
+    "nombre": "Santa Rosa Xtampak",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Santa Rosa Xtampak, o simplemente Xtampak, es una zona arqueológica de la cultura maya ubicada en el municipio de Hopelchén al noreste del estado de Campeche, México.",
+    "lat": 19.77189,
+    "lon": -89.59869,
+    "imagen": "SRX04.JPG",
+    "wiki": "Santa Rosa Xtampak",
+    "fuente": "https://www.wikidata.org/wiki/Q1817754"
+   },
+   {
+    "id": "Q1269435",
+    "nombre": "Dzibilnocac",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Dzibilnocac es un sitio arqueológico maya ubicado en el estado mexicano de Campeche, aledaño a la comunidad de Vicente Guerrero del municipio de Hopelchén a unos 15 kilómetros de la ciudad de Dzibalchén, en la parte central de la región denominada Los Chenes.",
+    "lat": 19.57797,
+    "lon": -89.5945,
+    "imagen": "Dsibilnocac totale.png",
+    "wiki": "Dzibilnocac",
+    "municipio": "Hopelchén",
+    "fuente": "https://www.wikidata.org/wiki/Q1269435"
+   },
+   {
+    "id": "Q3786782",
+    "nombre": "Hormiguero",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Hormiguero es el nombre que ha recibido un yacimiento arqueológico de la cultura maya precolombina, ubicado en el municipio de Calakmul, en el estado de Campeche, México.",
+    "lat": 18.40333,
+    "lon": -89.485,
+    "imagen": "HormigueroII E.jpg",
+    "wiki": "Hormiguero (yacimiento arqueológico)",
+    "municipio": "Calakmul",
+    "fuente": "https://www.wikidata.org/wiki/Q3786782"
+   },
+   {
+    "id": "Q119832660",
+    "nombre": "Ocomtún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Ocomtún (que se traduce como \"columna de piedra\" en maya yucateco), cuyo nombre original pudo ser Maatz', es una antigua ciudad maya y yacimiento arqueológico ubicado dentro de la reserva de la biosfera Balam Kú en el municipio de Calakmul en el estado de Campeche en México.",
+    "lat": 18.83811,
+    "lon": -89.87398,
+    "imagen": null,
+    "wiki": "Ocomtún",
+    "municipio": "Calakmul",
+    "fuente": "https://www.wikidata.org/wiki/Q119832660"
+   },
+   {
+    "id": "Q1770492",
+    "nombre": "Naachtún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Naachtún, que en maya significa ' piedras remotas o distantes ', es un sitio arqueológico precolombino maya. Su nombre original al parecer fue Masuul, situado en la porción noreste de la región de El Mirador, en las tierras bajas mayas de El Petén en Guatemala.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Naachtun site mayan.jpg",
+    "wiki": "Naachtún",
+    "fuente": "https://www.wikidata.org/wiki/Q1770492"
+   },
+   {
+    "id": "Q13518345",
+    "nombre": "Chactún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chactún (del maya: Chactún: Piedra roja) es el nombre de un yacimiento arqueológico de la cultura maya (mesoamericana) ubicado en el actual estado de Campeche, en México.",
+    "lat": 18.455,
+    "lon": -89.50806,
+    "imagen": null,
+    "wiki": "Chactún (yacimiento arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q13518345"
+   },
+   {
+    "id": "Q1621986",
+    "nombre": "Hochob",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Hochob es un sitio arqueológico maya ubicado en el estado mexicano de Campeche, a unos 10 minutos de la ciudad de Dzibalchén, en la región denominada Los Chenes.",
+    "lat": 19.40894,
+    "lon": -89.77058,
+    "imagen": "Hochob II.jpg",
+    "wiki": "Hochob",
+    "fuente": "https://www.wikidata.org/wiki/Q1621986"
+   },
+   {
+    "id": "Q1675361",
+    "nombre": "Itzamkanac",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Itzamkanac, también conocido como El Tigre, es una antigua ciudad y zona arqueológica de la cultura maya ubicada en el municipio de Candelaria del estado de Campeche en México.",
+    "lat": 18.12194,
+    "lon": -90.83692,
+    "imagen": "ElTigre1.JPG",
+    "wiki": "Itzamkanac",
+    "fuente": "https://www.wikidata.org/wiki/Q1675361"
+   },
+   {
+    "id": "Q1455172",
+    "nombre": "Xcalumkín",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xcalumkín es el nombre de un sitio arqueológico precolombino de la cultura maya ubicado en el municipio de Hecelchakán del estado de Campeche, en México, cerca de la población de Bolonchén de Rejón, en la denominada región Puuc, que se desarrolló durante el periodo clásico mesoamericano.",
+    "lat": 20.17214,
+    "lon": -90.01019,
+    "imagen": "Xcalumkin HG-Gruppe Süd.jpg",
+    "wiki": "Xcalumkín",
+    "fuente": "https://www.wikidata.org/wiki/Q1455172"
+   },
+   {
+    "id": "Q1254462",
+    "nombre": "Tabasqueño",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tabasqueño es una zona arqueológica de la cultura maya perteneciente a la región de los Chenes localizada en el municipio de Hopelchén del estado de Campeche, México, cuya característica principal es el refinado estilo artístico y arquitectónico de carácter decorativo en las fachadas de sus edificios propio de la…",
+    "lat": 19.5,
+    "lon": -89.78378,
+    "imagen": "Tabasqueño2005-4.jpg",
+    "wiki": "Tabasqueño (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q1254462"
+   },
+   {
+    "id": "Q5822709",
+    "nombre": "El Palmar",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Palmar, originalmente llamado Wak Piit (Seis Palanquines), es un sitio arqueológico y antigua ciudad de la civilización maya precolombina ubicada dentro de la Reserva de la Biosfera de Calakmul al sureste del estado de Campeche en México.",
+    "lat": 18.07778,
+    "lon": -89.33722,
+    "imagen": "Maya_vase._El_Palmar,_Campeche,_Mexico.jpg",
+    "wiki": "El Palmar (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q5822709"
+   },
+   {
+    "id": "Q133857666",
+    "nombre": "Los Alacranes",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Los Alacranes, de nombre original B’uuk’, es un extenso sitio arqueológico de la cultura maya ubicado al sur del estado de Campeche en México el cual durante la época prehispánica constituyó una ciudad maya ocupada desde el periodo preclásico tardío y se desarrolló en su esplendor durante todo el periodo clásico como…",
+    "lat": 17.98222,
+    "lon": -89.20972,
+    "imagen": "Cylinder_Vessel_with_Pedestal_Base,_Mexico,_Southern_Campeche,_Los_Alacranes,_Maya,_650-850,_Los_Angeles_County_Museum_of_Art.jpg",
+    "wiki": "Los Alacranes",
+    "fuente": "https://www.wikidata.org/wiki/Q133857666"
+   },
+   {
+    "id": "Q134078104",
+    "nombre": "Itzimté",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Itzimté es una zona arqueológica de la cultura maya ubicada en el municipio de Hopelchén al norte del estado de Campeche en México cerca de la localidad de Bolonchén de Rejón. Itzimté pertenece a la región Puuc y se desarrolló entre el periodo clásico tardío y el posclásico temprano.",
+    "lat": 20.02386,
+    "lon": -89.72686,
+    "imagen": null,
+    "wiki": "Itzimté",
+    "fuente": "https://www.wikidata.org/wiki/Q134078104"
+   },
+   {
+    "id": "Q141482379",
+    "nombre": "Altar de los Reyes",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Altar de los Reyes es un sitio arqueológico de la cultura maya ubicado al sureste del estado de Campeche, México en la Reserva de la Biosfera de Calakmul. Fue una antigua ciudad prehispánica maya de gran extensión, desarrollada desde alrededor del periodo preclásico tardío hasta el periodo clásico terminal.",
+    "lat": 17.99042,
+    "lon": -89.40622,
+    "imagen": "Altar_3,_Altar_de_los_Reyes,_Campeche.jpg",
+    "wiki": "Altar de los Reyes (sitio arqueológico)",
+    "fuente": "https://www.wikidata.org/wiki/Q141482379"
+   },
+   {
+    "id": "Q127531821",
+    "nombre": "Nadzca'an",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Nadzca’an (en maya: Naats’ ka’an, “cerca del cielo”) es una zona arqueológica de la cultura maya ubicada dentro de la Reserva de la Biosfera de Balam Kú al sur del estado de Campeche en México.",
+    "lat": 18.60697,
+    "lon": -89.85153,
+    "imagen": null,
+    "wiki": "Nadzca'an",
+    "fuente": "https://www.wikidata.org/wiki/Q127531821"
+   },
+   {
+    "id": "Q129211085",
+    "nombre": "Candzibaantún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Candzibaantún (en maya: “cuatro piedras escritas”) es un sitio arqueológico de la cultura maya ubicado al sureste del estado de Campeche en México dentro de la Reserva de la biosfera de Calakmul.",
+    "lat": 17.85172,
+    "lon": -89.71156,
+    "imagen": null,
+    "wiki": "Candzibaantún",
+    "fuente": "https://www.wikidata.org/wiki/Q129211085"
+   },
+   {
+    "id": "Q130215766",
+    "nombre": "Dzehkabtún",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Dzehkabtún es un sitio arqueológico de la cultura maya ubicado en el municipio de Hopelchén al norte del estado de Campeche en México el cual agrupa una serie de complejos arquitectónicos ceremoniales y habitacionales que constituyeron una gran ciudad maya prehispánica edificada desde el periodo Preclásico y…",
+    "lat": 19.6742,
+    "lon": -89.8983,
+    "imagen": "Ceramic_Tripod_Plate_with_Muwan_Bird,_deity_of_infraworld_..._Dzekabtun,_Late_Classic_(600-800_AD).jpg",
+    "wiki": "Dzehkabtún",
+    "fuente": "https://www.wikidata.org/wiki/Q130215766"
+   },
+   {
+    "id": "Q137659739",
+    "nombre": "Oxpemul",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Oxpemul es una zona arqueológica de la civilización maya ubicada dentro de la densa selva de la reserva de la biosfera de Calakmul en el estado de Campeche, México, fue una antigua ciudad maya amurallada ocupada desde el periodo preclásico medio que tuvo su apogeo y cúspide de desarrollo durante el clásico tardío…",
+    "lat": 18.31564,
+    "lon": -89.77815,
+    "imagen": "Oxpemul_Stele_in_situ.jpg",
+    "wiki": "Oxpemul",
+    "fuente": "https://www.wikidata.org/wiki/Q137659739"
+   },
+   {
+    "id": "Q127946761",
+    "nombre": "Yaxnohcah",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yaxnohcah (en maya: Yaax Noj Kaaj, “primer gran ciudad”) es un sitio arqueológico maya edificado en el periodo preclásico ubicado al sur del municipio de Calakmul en el estado de Campeche, México, dentro de la Reserva de la biosfera de Calakmul.",
+    "lat": 17.93022,
+    "lon": -89.74128,
+    "imagen": null,
+    "wiki": "Yaxnohcah",
+    "fuente": "https://www.wikidata.org/wiki/Q127946761"
+   },
+   {
+    "id": "Q5758434",
+    "nombre": "Catedral de Campeche",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Campeche, dedicada a Nuestra Señora de la Purísima Concepción, se ubica dentro de la ciudad fortificada de Campeche, declarada Patrimonio Cultural de la Humanidad. Es la iglesia principal de la Diócesis del mismo nombre, sede del obispado.",
+    "lat": 19.84608,
+    "lon": -90.53622,
+    "imagen": "Campeche6.jpg",
+    "wiki": "Catedral de Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q5758434"
+   },
+   {
+    "id": "Q5717690",
+    "nombre": "Baluarte de la Soledad",
+    "tipo": "Fuerte",
+    "descripcion": "El Baluarte de la Soledad es un baluarte localizado en la ciudad San Francisco de Campeche, Campeche, México. Adopta su nombre en honor de la Virgen de la Soledad, patrona de los marinos, y por haberse levantado a la orilla del mar.",
+    "lat": 19.84639,
+    "lon": -90.53778,
+    "imagen": "Baluarte_de_la_soledad3.JPG",
+    "wiki": "Baluarte de la Soledad",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q5717690"
+   },
+   {
+    "id": "Q6392849",
+    "nombre": "Fuerte de San Carlos",
+    "tipo": "Fuerte",
+    "descripcion": "El Baluarte de San Carlos se localiza en la ciudad San Francisco de Campeche, Campeche, México.",
+    "lat": 19.84444,
+    "lon": -90.54056,
+    "imagen": "BaluarteSanCarlos2.JPG",
+    "wiki": "Baluarte de San Carlos",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q6392849"
+   },
+   {
+    "id": "Q5870606",
+    "nombre": "Fuerte de San Miguel",
+    "tipo": "Fuerte",
+    "descripcion": "El Fuerte de San Miguel es una fortificación construida en la ciudad de San Francisco de Campeche, Campeche, México y, por sus dimensiones y su historia, es uno de los edificios más representativos de la ciudad.",
+    "lat": 19.82472,
+    "lon": -90.56873,
+    "imagen": "San Miguel Forth Campeche.jpg",
+    "wiki": "Fuerte de San Miguel (Campeche)",
+    "fuente": "https://www.wikidata.org/wiki/Q5870606"
+   },
+   {
+    "id": "Q24512125",
+    "nombre": "Museo de Arqueología Subacuática Fuerte de San José El Alto",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arqueología Subacuática Fuerte de San José el Alto (ex Museo de Barcos y Armas, en el periodo 1995-2016) es un museo ubicado en la ciudad de San Francisco de Campeche, capital del estado de Campeche, en México.",
+    "lat": 19.86056,
+    "lon": -90.51048,
+    "imagen": "Torres del Fuerte San José el Alto.JPG",
+    "wiki": "Museo de Barcos y Armas Fuerte de San José el Alto",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q24512125"
+   },
+   {
+    "id": "Q24531884",
+    "nombre": "Museo arqueológico de Campeche",
+    "tipo": "Museo",
+    "descripcion": "El Museo Arqueológico de Campeche es un recinto representativo de la arquitectura militar de Campeche. Además, fue utilizado primordialmente en las luchas en las que la ciudad de Campeche formó parte a lo largo del siglo XIX.",
+    "lat": 19.82467,
+    "lon": -90.56847,
+    "imagen": "Museo Arqueológico de Campeche.JPG",
+    "wiki": "Museo Arqueológico de Campeche",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q24531884"
+   },
+   {
+    "id": "Q24532060",
+    "nombre": "Museo de Arquitectura Maya Baluarte de la Soledad",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Arquitectura Baluarte de la Soledad es una construcción militar, llamada también Museo de las Estelas se localiza en San Francisco Campeche, Campeche.",
+    "lat": 19.84639,
+    "lon": -90.53787,
+    "imagen": "Baluarte_de_la_Soledad_Campeche.JPG",
+    "wiki": "Museo de Arquitectura Maya Baluarte de la Soledad",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q24532060"
+   },
+   {
+    "id": "Q25409704",
+    "nombre": "Museo de Arqueología Maya del Camino Real de Hecelchakán",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arqueología Maya del Camino Real de Hecelchakán es el único recinto que se encuentra en la región del Camino Real.",
+    "lat": 20.1781,
+    "lon": -90.13302,
+    "imagen": null,
+    "wiki": "Museo de Arqueología Maya del Camino Real de Hecelchakán",
+    "municipio": "Hecelchakán",
+    "fuente": "https://www.wikidata.org/wiki/Q25409704"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q3457136",
+    "nombre": "Reserva de la Biósfera Calakmul",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera de Calakmul es un espacio natural protegido mexicano. Fue declarada como reserva de la biosfera de la UNESCO en 1989.",
+    "lat": 18.612,
+    "lon": -89.548,
+    "imagen": "Calakmul8.jpg",
+    "wiki": "Reserva de la Biósfera Calakmul",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3457136"
+   },
+   {
+    "id": "Q61301",
+    "nombre": "San Francisco de Campeche",
+    "tipo": "Ciudad",
+    "descripcion": "Campeche (del maya: Kaanpech ‘Lugar de serpientes y garrapatas’), oficialmente llamada San Francisco de Campeche, es una ciudad mexicana, capital del estado de Campeche y cabecera del municipio de Campeche. Es una ciudad histórica fortificada ubicada a orillas del golfo de México, en la península de Yucatán.",
+    "lat": 19.84481,
+    "lon": -90.53965,
+    "imagen": "Montaje de San Francisco de Campeche.jpg",
+    "wiki": "San Francisco de Campeche",
+    "municipio": "Campeche",
+    "fuente": "https://www.wikidata.org/wiki/Q61301"
+   },
+   {
+    "id": "Q991435",
+    "nombre": "Ciudad del Carmen",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad del Carmen es una ciudad mexicana, cabecera del municipio de Carmen, en el estado de Campeche. Se localiza al suroeste de la península de Yucatán, en la parte occidente de la isla del Carmen, está situada entre el golfo de México y la laguna de Términos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Monumento del Águila y el León, Campeche (22088511326).jpg",
+    "wiki": "Ciudad del Carmen",
+    "municipio": "Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q991435"
+   },
+   {
+    "id": "Q584115",
+    "nombre": "Champotón",
+    "tipo": "Ciudad",
+    "descripcion": "Champotón, oficialmente Heroica Ciudad de Champotón es una localidad del estado de Campeche en México, está localizada al sur de la capital del estado y es cabecera del municipio del mismo nombre.",
+    "lat": 19.35622,
+    "lon": -90.72389,
+    "imagen": "Campeche, Champotón (11967887144).jpg",
+    "wiki": "Champotón",
+    "municipio": "Champotón",
+    "fuente": "https://www.wikidata.org/wiki/Q584115"
+   },
+   {
+    "id": "Q2312727",
+    "nombre": "Escárcega",
+    "tipo": "Ciudad",
+    "descripcion": "Escárcega es una ciudad del estado mexicano de Campeche, situada en el centro del estado. Es un importante nudo de comunicaciones, tanto de carreteras como de ferrocarril.",
+    "lat": 18.60431,
+    "lon": -90.732,
+    "imagen": "Escárcega.jpg",
+    "wiki": "Escárcega",
+    "municipio": "Escárcega",
+    "fuente": "https://www.wikidata.org/wiki/Q2312727"
+   },
+   {
+    "id": "Q1998779",
+    "nombre": "Calkiní",
+    "tipo": "Ciudad",
+    "descripcion": "Calkíni (del Maya yucateco: Garganta del sol) es una ciudad del estado mexicano de Campeche, situada al norte del territorio cercana a los límites con el Estado de Yucatán, en la región conocida como “Camino Real”. Es cabecera del municipio de Calkiní.",
+    "lat": 20.37123,
+    "lon": -90.05074,
+    "imagen": "Church at Calkiní, Calkiní Municipality, Campeche, Mexico 2.jpg",
+    "wiki": "Calkiní",
+    "municipio": "Calkiní",
+    "fuente": "https://www.wikidata.org/wiki/Q1998779"
+   },
+   {
+    "id": "Q1650280",
+    "nombre": "Laguna de Términos",
+    "tipo": "Área natural protegida",
+    "descripcion": "La laguna de Términos es una laguna costera de México localizada en la costa del golfo de México, específicamente en el golfo de Campeche, en el litoral del estado mexicano del mismo nombre, al suroeste de la península de Yucatán.",
+    "lat": 18.60786,
+    "lon": -91.55583,
+    "imagen": null,
+    "wiki": "Laguna de Términos",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1650280"
+   },
+   {
+    "id": "Q4204014",
+    "nombre": "Isla del Carmen",
+    "tipo": "Isla",
+    "descripcion": "La Isla del Carmen es una isla mexicana localizada en el estado de Campeche, entre la laguna de Términos y el golfo de México. La isla fue denominada durante la dominación española: Isla de Términos, pero como en los mapas se abreviaba \"Términos\" como \"Tris.\", se la conocía más comúnmente como Isla de Tris.",
+    "lat": 18.73719,
+    "lon": -91.58958,
+    "imagen": "Puente_de_la_unidad.jpg",
+    "wiki": "Isla del Carmen (Campeche)",
+    "municipio": "Carmen",
+    "fuente": "https://www.wikidata.org/wiki/Q4204014"
+   },
+   {
+    "id": "Q3547604",
+    "nombre": "Isla Uaymil",
+    "tipo": "Isla",
+    "descripcion": "Isla Uaymil se encuentra situada en el litoral del estado de Campeche de México, aproximadamente a 2,5 km de la costa y 25 km al norte de la Isla de Jaina.",
+    "lat": 20.4549,
+    "lon": -90.4775,
+    "imagen": null,
+    "wiki": "Isla Uaymil",
+    "fuente": "https://www.wikidata.org/wiki/Q3547604"
+   },
+   {
+    "id": "Q2403580",
+    "nombre": "Isla de Piedras",
+    "tipo": "Isla",
+    "descripcion": "Isla de Piedras es un islote de Méxicoubicado en el litoral del golfo de México, perteneciente al municipio de Calkiní, estado de Campeche. Se encuentra aproximadamente a 15 km al norte de la Isla de Jaina.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Isla de Piedras",
+    "fuente": "https://www.wikidata.org/wiki/Q2403580"
+   },
+   {
+    "id": "Q54822583",
+    "nombre": "Grutas de Xtacumbilxunaán",
+    "tipo": "Gruta",
+    "descripcion": "Las grutas de Xtacumbilxunaán cuyo nombre en maya significa mujer escondida eran un lugar sagrado para ellos en México. Las grutas subterráneas cuentan con una extensión de 600 metros y tienen formaciones de estalagmitas y estalactitas.",
+    "lat": 19.99109,
+    "lon": -89.7643,
+    "imagen": "Gruta desde adentro.jpg",
+    "wiki": "Grutas de Xtacumbilxunaán",
+    "municipio": "Hopelchén",
+    "fuente": "https://www.wikidata.org/wiki/Q54822583"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q106864701",
+    "nombre": "Píib",
+    "tipo": "Platillo",
+    "descripcion": "El pib, en maya yucateco píib, es un horno de tierra típico de la península de Yucatán, en México. Esta técnica de origen prehispánico consiste en excavar un hoyo, encender un fogón con leña y piedras, y cocinar la comida (tradicionalmente cerdo o pollo) a fuego lento, todo tapado con más tierra.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Encendido de horno maya.jpg",
+    "wiki": "Píib",
+    "fuente": "https://www.wikidata.org/wiki/Q106864701"
+   },
+   {
+    "id": "Q6169294",
+    "nombre": "Xnipec",
+    "tipo": "Salsa",
+    "descripcion": "El xnipec (del maya 'hocico de perro'; pronúnciese «shnipék»), también llamado de manera genérica salsa yucateca o cebollas encurtidas es una salsa picante originaria de la península de Yucatán, en México, elaborada con chile habanero, cebolla morada, jugo de naranja agria y sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Xnipec yucateco.jpg",
+    "wiki": "Xnipec",
+    "fuente": "https://www.wikidata.org/wiki/Q6169294"
+   },
+   {
+    "id": "Q20822378",
+    "nombre": "Pulpo a la campechana",
+    "tipo": "Platillo",
+    "descripcion": "El pulpo a la campechana es un platillo tradicional de la cocina mexicana. Se compone de pulpo picado que se hierve lentamente en agua con su tinta, el vinagre, la cebolla, el ajo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "C23.jpg",
+    "wiki": "Pulpo a la campechana",
+    "fuente": "https://www.wikidata.org/wiki/Q20822378"
+   },
+   {
+    "id": "Q111995662",
+    "nombre": "Holcatzín",
+    "tipo": "Bebida",
+    "descripcion": "El holcatzín es un licor típico de la península de Yucatán, en México, a base de capulines (un tipo de fruta local parecido a la cereza) macerados en aguardiente de caña.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Capulí.JPG",
+    "wiki": "Holcatzín",
+    "fuente": "https://www.wikidata.org/wiki/Q111995662"
+   },
+   {
+    "id": "Q7205916",
+    "nombre": "Plátanos rellenos",
+    "tipo": "Platillo",
+    "descripcion": "Los plátanos rellenos son un plato de las cocinas colombiana, cubana y mexicana, en este último caso particularmente en las zonas del país donde se produce plátano, como Veracruz, Tabasco o Chiapas. Dependiendo del lugar, varían los ingredientes del relleno y las técnicas de preparación.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Plátanos_rellenos_en_Paraíso,_Tabasco.jpg",
+    "wiki": "Plátanos rellenos",
+    "fuente": "https://www.wikidata.org/wiki/Q7205916"
+   },
+   {
+    "id": "Q4804467",
+    "nombre": "Cochinita pibil",
+    "tipo": "Platillo",
+    "descripcion": "La cochinita pibil es un guiso mexicano correspondiente a la gastronomía de Yucatán.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cochinita pibil 2.jpg",
+    "wiki": "Cochinita pibil",
+    "fuente": "https://www.wikidata.org/wiki/Q4804467"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1217 @@
+{
+ "cve": "21",
+ "estado": "Puebla",
+ "wikidata": "Q79923",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q757401",
+    "nombre": "Atlixco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Atlixco (nahuatl) (del nahuatl: atl, ixtlatl, co ‘agua, valle, lugar’‘Lugar del valle de agua’), también conocida como Atlixco de las Flores,[cita requerida] es una ciudad que se localiza al suroeste de la ciudad de Puebla, en el estado mexicano de Puebla. Es la cabecera del municipio homónimo.",
+    "lat": 18.90815,
+    "lon": -98.43613,
+    "imagen": "Atlixco.jpg",
+    "wiki": "Atlixco",
+    "municipio": "Atlixco",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q757401"
+   },
+   {
+    "id": "Q22826817",
+    "nombre": "Chignahuapan",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Chignahuapan es una ciudad mexicana ubicada en el municipio homónimo en el norte del estado de Puebla, cabecera de dicho municipio.",
+    "lat": 19.83861,
+    "lon": -98.03167,
+    "imagen": null,
+    "wiki": "Chignahuapan",
+    "municipio": "Chignahuapan",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q22826817"
+   },
+   {
+    "id": "Q1007232",
+    "nombre": "Cholula",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Cholula de Rivadavia, también llamada San Pedro Cholula —nombre del municipio —, es una ciudad del estado mexicano de Puebla, que forma parte de la Zona Metropolitana de Puebla y se encuentra prácticamente conurbada con la capital del estado, la ciudad de Puebla de Zaragoza; se localiza en el asentamiento de la…",
+    "lat": 19.06248,
+    "lon": -98.30751,
+    "imagen": "Church at the mountain's foot (Unsplash).jpg",
+    "wiki": "Cholula de Rivadavia",
+    "municipio": "San Pedro Cholula",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1007232"
+   },
+   {
+    "id": "Q2651808",
+    "nombre": "Cuetzalan del Progreso",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "La Ciudad de Cuetzalan es una localidad mexicana enclavada en las estribaciones de la Sierra Norte de Puebla. Según el censo de 2020, tenía una población de 6402 habitantes.",
+    "lat": 20.01861,
+    "lon": -97.52111,
+    "imagen": "Voladors.JPG",
+    "wiki": "Ciudad de Cuetzalan",
+    "municipio": "Cuetzalan del Progreso",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2651808"
+   },
+   {
+    "id": "Q20145539",
+    "nombre": "Huauchinango",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Huauchinango es una ciudad perteneciente al estado de Puebla, México. Es la cabecera del municipio de Huauchinango.",
+    "lat": 20.17389,
+    "lon": -98.055,
+    "imagen": "HUAUCHINANGO.jpg",
+    "wiki": "Huauchinango",
+    "municipio": "Huauchinango",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20145539"
+   },
+   {
+    "id": "Q20204317",
+    "nombre": "Huejotzingo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Huejotzingo es una ciudad mexicana del estado de Puebla, localizada cerca de la falda de la Sierra Nevada. Es la cabecera del municipio de Huejotzingo.",
+    "lat": 19.15945,
+    "lon": -98.40734,
+    "imagen": "FacadeSMAHuejotzingo.JPG",
+    "wiki": "Huejotzingo",
+    "municipio": "Huejotzingo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20204317"
+   },
+   {
+    "id": "Q27768309",
+    "nombre": "Pahuatlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Pahuatlán (del náhuatl: Pahuatlan ‘fruta-lugar’‘Lugar de los frutos’) es una localidad del norte del estado mexicano de Puebla que constituye uno de los principales enclaves de población otomí en el estado, en una zona donde la mayoría de la población indígena es nahua.",
+    "lat": 20.27611,
+    "lon": -98.15028,
+    "imagen": "PanoramicPahuatlan01.JPG",
+    "wiki": "Pahuatlán",
+    "municipio": "Pahuatlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q27768309"
+   },
+   {
+    "id": "Q20232438",
+    "nombre": "Tetela de Ocampo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tetela de Ocampo es una localidad del estado mexicano de Puebla. Es la cabecera del municipio de Tetela de Ocampo.",
+    "lat": 19.8162,
+    "lon": -97.80756,
+    "imagen": "Iglesia de Tetela de Ocampo (5945174990).jpg",
+    "wiki": "Tetela de Ocampo",
+    "municipio": "Tetela de Ocampo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20232438"
+   },
+   {
+    "id": "Q7708625",
+    "nombre": "Teziutlán",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Teziutlán es una ciudad y cabecera municipal del municipio de Teziutlán, ubicado en la región sierra nororiental del estado mexicano de Puebla. El 26 de junio de 2023 recibió el nombramiento de Pueblo Mágico por parte de la Secretaría de Turismo (SECTUR) y es considerada la ciudad con más niebla en México.",
+    "lat": 19.81799,
+    "lon": -97.36088,
+    "imagen": "Centro Escolar Presidente Manuel Ávila Camacho (C.E.P.M.A.C.).jpg",
+    "wiki": "Teziutlán",
+    "municipio": "Teziutlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q7708625"
+   },
+   {
+    "id": "Q20231159",
+    "nombre": "Tlatlauquitepec",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlatlauquitepec es una localidad del estado mexicano de Puebla. Es cabecera del municipio de Tlatlauquitepec.",
+    "lat": 19.85278,
+    "lon": -97.49528,
+    "imagen": "Tlatlauqui5.JPG",
+    "wiki": "Tlatlauquitepec (Puebla)",
+    "municipio": "Tlatlauquitepec",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20231159"
+   },
+   {
+    "id": "Q20232831",
+    "nombre": "Xicotepec",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Xicotepec de Juárez es una localidad del Estado mexicano de Puebla. Es cabecera del municipio de Xicotepec.",
+    "lat": 20.27606,
+    "lon": -97.9611,
+    "imagen": "Xicotepec_de_Juarez,_Puebla_-_panoramio.jpg",
+    "wiki": "Xicotepec de Juárez",
+    "municipio": "Xicotepec",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20232831"
+   },
+   {
+    "id": "Q20204353",
+    "nombre": "Zacatlán de las Manzanas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "La ciudad de Zacatlán (del Nahuatl: Zácatl, tlan ‘zacate, paja; lugar, abundancia’‘ Lugar donde abunda el zacate’)es la cabecera y ciudad más habitada del municipio de Zacatlán, al norte del estado de Puebla, México.",
+    "lat": 19.93333,
+    "lon": -97.96056,
+    "imagen": "Reloj.jpg",
+    "wiki": "Ciudad de Zacatlán",
+    "municipio": "Zacatlán",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20204353"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q3848455",
+    "nombre": "Centro histórico de Puebla",
+    "tipo": "Centro histórico",
+    "descripcion": "El Centro histórico de Puebla o Zona de Monumentos Históricos de Puebla es un polígono de 8.5 km que se considera origen de la capital poblana.",
+    "lat": 19.04722,
+    "lon": -98.20833,
+    "imagen": "Catedral de puebla.jpg",
+    "wiki": "Centro histórico de Puebla",
+    "municipio": "Puebla",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3848455"
+   },
+   {
+    "id": "Q5117179",
+    "nombre": "Templo de Santo Domingo",
+    "tipo": "Templo",
+    "descripcion": "El templo conventual de Santo Domingo de Guzmán es una Iglesia católica que pertenece a la jurisdicción eclesiástica de la Provincia de Santiago de México, de la orden de Predicadores, dentro de la arquidiócesis de la ciudad de Puebla, bajo la advocación de san Miguel Arcángel.",
+    "lat": 19.04694,
+    "lon": -98.19806,
+    "imagen": "Santo Domingo Church in Puebla.jpg",
+    "wiki": "Templo de Santo Domingo (Puebla)",
+    "municipio": "Puebla",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5117179"
+   },
+   {
+    "id": "Q24266864",
+    "nombre": "San Juan Raya",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "San Juan Raya es una localidad de 192 habitantes situada en el municipio de Zapotitlán, Estado de Puebla, México. Este pueblo se encuentra en el valle de Tehuacán-Cuicatlán.",
+    "lat": 18.31611,
+    "lon": -97.615,
+    "imagen": "San Juan Raya Landscape.jpg",
+    "wiki": "San Juan Raya",
+    "municipio": "Zapotitlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q24266864"
+   },
+   {
+    "id": "Q21515108",
+    "nombre": "Exconvento de San Miguel Arcángel",
+    "tipo": "Convento",
+    "descripcion": "El convento de San Miguel Arcángel es un templo católico ubicado en Huejotzingo, dentro del estado mexicano de Puebla. La edificación tiene una arquitectura de tipo colonial con subtipo plateresco y es uno de los cuatro primeros establecimientos franciscanos en México y en Nueva España.",
+    "lat": 19.15855,
+    "lon": -98.40436,
+    "imagen": "Templo y exconvento de San Miguel Arcángel, Huejotzingo, desde un dron 32.png",
+    "wiki": "Convento de Huejotzingo",
+    "municipio": "Huejotzingo",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q21515108"
+   },
+   {
+    "id": "Q5853068",
+    "nombre": "Exconvento de Calpan",
+    "tipo": "Convento",
+    "descripcion": "El exconvento de San Francisco de Asís de Calpan, construido en 1548 bajo la dirección de fray Juan de Alameda, está localizado en San Andrés Calpan, en el estado de Puebla, México.",
+    "lat": 19.1,
+    "lon": -98.465,
+    "imagen": "Ex convento franciscano de San Andrés Calpan.jpg",
+    "wiki": "Exconvento de Calpan",
+    "municipio": "Calpan",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5853068"
+   },
+   {
+    "id": "Q56317315",
+    "nombre": "Presa Purrón",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "La presa Purrón, es una antigua presa hidrológica y zona arqueológica prehispánica, en el sur del estado de Puebla, México, del Periodo Preclásico Mesoamericano, construida aproximadamente entre el siglo VIII y IV a. C., (aún dentro de la Prehistoria de América), al sur del Valle de Tehuacán, y que estuvo en…",
+    "lat": 18.2004,
+    "lon": -97.1188,
+    "imagen": null,
+    "wiki": "Presa Purrón",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q56317315"
+   },
+   {
+    "id": "Q1417475",
+    "nombre": "Gran Pirámide de Cholula",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Gran Pirámide de Cholula o Tlachihualtépetl (del náhuatl que significa cerro hecho a mano) es el basamento piramidal más grande del mundo con 450 metros por lado.",
+    "lat": 19.0575,
+    "lon": -98.30194,
+    "imagen": "Mexico.Pue.Cholula.Pyramid.03.jpg",
+    "wiki": "Gran Pirámide de Cholula",
+    "municipio": "San Pedro Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q1417475"
+   },
+   {
+    "id": "Q388615",
+    "nombre": "Cantona",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Cantona es un importante sitio arqueológico ubicado en el oriente de México, específicamente en el estado de Puebla, cerca de la frontera con el estado de Veracruz.",
+    "lat": 19.55222,
+    "lon": -97.48583,
+    "imagen": "Zona arqueológica de Cantona, Puebla, México, 2013-10-11, DD 43.JPG",
+    "wiki": "Cantona",
+    "fuente": "https://www.wikidata.org/wiki/Q388615"
+   },
+   {
+    "id": "Q7380613",
+    "nombre": "Zona arqueológica de Cholula",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La zona arqueológica de Cholula es un sitio histórico localizado siete kilómetros al oeste de Puebla de Zaragoza, capital del estado mexicano de Puebla.",
+    "lat": 19.05694,
+    "lon": -98.30139,
+    "imagen": "Mexico.Pue.Cholula.Pyramid.03.jpg",
+    "wiki": "Zona arqueológica de Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q7380613"
+   },
+   {
+    "id": "Q2312036",
+    "nombre": "Hueyatlaco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Hueyatlaco es un sitio arqueológico en Valsequillo (Puebla, México) donde fueron descubiertas herramientas hechas por el hombre y fragmentos de huesos grabados, en un estrato geológico que algunos arqueólogos han fechado hacia 250 mil años A.C.",
+    "lat": 18.9199,
+    "lon": -98.173,
+    "imagen": "Valsequillo dam.jpg",
+    "wiki": "Hueyatlaco",
+    "fuente": "https://www.wikidata.org/wiki/Q2312036"
+   },
+   {
+    "id": "Q6492074",
+    "nombre": "Las Bocas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las Bocas es un sitio arqueológico y una comunidad localizada en el municipio de Izúcar de Matamoros (Puebla, México). Está relacionado con varias piezas arqueológicas de estilo olmeca, especialmente figurillas de cerámica y otras obras de alfarería.",
+    "lat": 18.66667,
+    "lon": -98.31667,
+    "imagen": "Las Bocas Olmec baby-face figurine (Bookgrrrl).jpg",
+    "wiki": "Las Bocas",
+    "fuente": "https://www.wikidata.org/wiki/Q6492074"
+   },
+   {
+    "id": "Q18913534",
+    "nombre": "Yohualichan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Yohualichan (del náhuatl: yohualli, ichan ‘noche, casa’‘ ‘La casa de la noche’’) es un yacimiento arqueológico ubicado en Cuetzalan del Progreso, dentro del estado mexicano de Puebla.",
+    "lat": 20.06167,
+    "lon": -97.50278,
+    "imagen": "Zona Arqueológica de Yohualichan.JPG",
+    "wiki": "Yohualichan",
+    "municipio": "Cuetzalan del Progreso",
+    "fuente": "https://www.wikidata.org/wiki/Q18913534"
+   },
+   {
+    "id": "Q5179927",
+    "nombre": "Cueva de Coxcatlán",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La cueva de Coxcatlán es un sitio arqueológico mesoamericano en el Valle de Tehuacán de Puebla, México.",
+    "lat": 18.26722,
+    "lon": -97.14917,
+    "imagen": null,
+    "wiki": "Cueva de Coxcatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q5179927"
+   },
+   {
+    "id": "Q6142105",
+    "nombre": "Tepexi el Viejo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tepexi el Viejo es un yacimiento arqueológico que se localiza en el municipio de Tepexi de Rodríguez, al sur del estado mexicano de Puebla.",
+    "lat": 18.5975,
+    "lon": -97.98306,
+    "imagen": "TepejiViejo.jpg",
+    "wiki": "Tepexi el Viejo",
+    "fuente": "https://www.wikidata.org/wiki/Q6142105"
+   },
+   {
+    "id": "Q27055355",
+    "nombre": "Teotón",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Teotón es un cerro y un yacimiento arqueológico ubicado en las faldas orientales del volcán Popocatépetl, en el estado mexicano de Puebla.",
+    "lat": 19.07922,
+    "lon": -98.46093,
+    "imagen": "Teotón2.jpg",
+    "wiki": "Teotón",
+    "fuente": "https://www.wikidata.org/wiki/Q27055355"
+   },
+   {
+    "id": "Q1994735",
+    "nombre": "Catedral de Puebla",
+    "tipo": "Catedral",
+    "descripcion": "La catedral basílica de Puebla, como se conoce a la catedral de Nuestra Señora de la Inmaculada Concepción de acuerdo a su advocación mariana, es la sede episcopal de la arquidiócesis de Puebla (México). Es uno de los más importantes inmuebles del centro histórico declarado patrimonio de la humanidad.",
+    "lat": 19.04283,
+    "lon": -98.19836,
+    "imagen": "Catedral de Puebla, México, 2013-10-11, DD 06.JPG",
+    "wiki": "Catedral metropolitana de Puebla",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q1994735"
+   },
+   {
+    "id": "Q22981426",
+    "nombre": "Museo Internacional del Barroco",
+    "tipo": "Museo",
+    "descripcion": "El Museo Internacional del Barroco es un museo de arte barroco diseñado por el arquitecto japonés Toyo Itō y localizado en Puebla de Zaragoza, Puebla, México. Fue inaugurado el 4 de febrero del 2016 por el gobernador del estado Rafael Moreno Valle Rosas.",
+    "lat": 19.01931,
+    "lon": -98.24661,
+    "imagen": "Museo Internacional del Barroco.jpg",
+    "wiki": "Museo Internacional del Barroco",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q22981426"
+   },
+   {
+    "id": "Q5561790",
+    "nombre": "Templo conventual de San Francisco",
+    "tipo": "Convento",
+    "descripcion": "El templo conventual de San Francisco es un templo religioso católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla de los Ángeles, dedicado a las Cinco llagas de San Francisco. Fue el primer convento establecido en la ciudad de Puebla.",
+    "lat": 19.04472,
+    "lon": -98.18944,
+    "imagen": "Templo conventual de San Francisco, Puebla.jpg",
+    "wiki": "Templo conventual de San Francisco (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q5561790"
+   },
+   {
+    "id": "Q26926677",
+    "nombre": "Templo de San Francisco Acatepec",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Francisco Acatepec es un monumento religioso del siglo XVIII, característico de la arquitectura barroca de México, especialmente reconocido por su fachada de mosaicos de talavera combinada con ladrillo rojo.",
+    "lat": 19.02217,
+    "lon": -98.30864,
+    "imagen": "Fachada del Templo de San Francisco Acatepec 01.jpg",
+    "wiki": "Templo de San Francisco Acatepec",
+    "municipio": "San Andrés Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q26926677"
+   },
+   {
+    "id": "Q6461965",
+    "nombre": "La Constancia Mexicana",
+    "tipo": "Museo",
+    "descripcion": "La Constancia Mexicana es el nombre de una antigua fábrica textil, ubicada en Puebla de Zaragoza, la primera fábrica textil mecanizada y la primera que utilizó la energía hidráulica en México para mover su maquinaria, formó parte de los inicios de la industria textil de América Latina.",
+    "lat": 19.0935,
+    "lon": -98.23456,
+    "imagen": "La Constancia Mexicana.jpg",
+    "wiki": "La Constancia Mexicana",
+    "fuente": "https://www.wikidata.org/wiki/Q6461965"
+   },
+   {
+    "id": "Q3328379",
+    "nombre": "Museo Amparo",
+    "tipo": "Museo",
+    "descripcion": "El Museo Amparo, ubicado en el centro histórico de la ciudad de Puebla, es una institución privada creada en memoria de Amparo Rugarcía de Espinosa Yglesias, esposa del banquero y filántropo mexicano Manuel Espinosa Yglesias, a través de la Fundación Amparo por iniciativa de su hija Ángeles Espinosa Yglesias Rugarcía.",
+    "lat": 19.0408,
+    "lon": -98.1985,
+    "imagen": "Mampar Pue.jpg",
+    "wiki": "Museo Amparo",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q3328379"
+   },
+   {
+    "id": "Q20669536",
+    "nombre": "Catedral de Teziutlán",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Santa María de la Asunción es una catedral ubicada en la ciudad de Teziutlán, México. Antiguamente fue una ermita dedicada a San Miguel Arcángel, posteriormente se convirtió en capilla del Rosario.",
+    "lat": 19.81753,
+    "lon": -97.36003,
+    "imagen": "Catedral de Teziutlán.jpg",
+    "wiki": "Catedral de Teziutlán",
+    "municipio": "Teziutlán",
+    "fuente": "https://www.wikidata.org/wiki/Q20669536"
+   },
+   {
+    "id": "Q5991792",
+    "nombre": "Iglesia de Nuestra Señora de los Remedios",
+    "tipo": "Templo",
+    "descripcion": "El Santuario de Nuestra Señora de los Remedios es un templo católico ubicado en la cima de la Gran Pirámide de Cholula, en San Pedro Cholula, Puebla. Su construcción se inició en 1594, aunque el templo de esa época fue destruido parcialmente por un sismo en 1864, año en el que fue reconstruido.",
+    "lat": 19.05815,
+    "lon": -98.30178,
+    "imagen": "Santuario de Nuestra Señora de los Remedios Cholula 01.jpg",
+    "wiki": "Santuario de Nuestra Señora de los Remedios (San Pedro Cholula)",
+    "municipio": "San Pedro Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q5991792"
+   },
+   {
+    "id": "Q5748455",
+    "nombre": "Capilla del Rosario",
+    "tipo": "Templo",
+    "descripcion": "La capilla de la Virgen del Rosario es la capilla anexa al Templo de Santo Domingo en la ciudad de Puebla, México. Obra del siglo XVII, cumbre del barroco novohispano, fue calificada en su época como \"La Casa de Oro\", así como la octava maravilla del mundo por fray Diego de Gorozpe, en un impreso de 1690.",
+    "lat": 19.04681,
+    "lon": -98.19812,
+    "imagen": "Capilla del Rosario Puebla Diciembre 2015.jpg",
+    "wiki": "Capilla del Rosario (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q5748455"
+   },
+   {
+    "id": "Q5088400",
+    "nombre": "Hacienda de Chautla",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de San Antonio Chautla es un antiguo casco de hacienda ubicado en el municipio de San Salvador el Verde en el estado de Puebla establecida en el año de 1777 y pasando por diferentes propietarios a lo largo de su historia hasta quedar en manos del Gobierno del estado de Puebla y convertirse en un centro…",
+    "lat": 19.31596,
+    "lon": -98.47111,
+    "imagen": "Hacienda de Tomas Guillow.JPG",
+    "wiki": "Hacienda de Chautla",
+    "municipio": "San Salvador el Verde",
+    "fuente": "https://www.wikidata.org/wiki/Q5088400"
+   },
+   {
+    "id": "Q5785586",
+    "nombre": "Convento Franciscano de San Gabriel Arcángel",
+    "tipo": "Convento",
+    "descripcion": "El Convento de San Gabriel Arcángel es uno de los más antiguos conjuntos conventuales del siglo XVI de México, «uno de los monumentos arquitectónicos más emblemáticos de la larga historia mesoamericana que se desarrolló y evolucionó en Cholula».",
+    "lat": 19.06208,
+    "lon": -98.30433,
+    "imagen": "CFSGA Iglesia.jpg",
+    "wiki": "Convento Franciscano de San Gabriel Arcángel",
+    "municipio": "San Pedro Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q5785586"
+   },
+   {
+    "id": "Q59562083",
+    "nombre": "Parroquia de la Santa Cruz",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia de la Santa Cruz es un templo religioso del culto católico del Barrio El Alto de la ciudad de Puebla de Zaragoza. Ubicada entre las calles 12 Norte y 16 Oriente, su fiesta patronal es el 3 de mayo",
+    "lat": 19.04611,
+    "lon": -98.18782,
+    "imagen": "Puebla, Mexico (2018) - 099.jpg",
+    "wiki": "Parroquia de la Santa Cruz",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q59562083"
+   },
+   {
+    "id": "Q59621099",
+    "nombre": "Iglesia de Nuestra Señora de la Luz",
+    "tipo": "Templo",
+    "descripcion": "El Templo de Nuestra Señora de la Luz o Santuario de Nuestra Señora de la Luz es un edificio religioso para el culto católico, ubicado en la Av 2 Ote 1401, en la Ciudad de Puebla, específicamente en el Barrio de la Luz.",
+    "lat": 19.04082,
+    "lon": -98.19005,
+    "imagen": "NSdelaluzPuebla002.JPG",
+    "wiki": "Templo de Nuestra Señora de la Luz (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q59621099"
+   },
+   {
+    "id": "Q5480078",
+    "nombre": "Templo Conventual de Nuestra Señora del Carmen",
+    "tipo": "Convento",
+    "descripcion": "El Templo Conventual de Nuestra Señora del Carmen actualmente conocido como Iglesia de la virgen del Carmen es un templo religioso de culto católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla de los Ángeles, bajo la advocación de la Virgen del Carmen.",
+    "lat": 19.03801,
+    "lon": -98.20211,
+    "imagen": "Portada del Carmen.JPG",
+    "wiki": "Templo conventual de Nuestra Señora del Carmen (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q5480078"
+   },
+   {
+    "id": "Q6141059",
+    "nombre": "Templo de la Compañía",
+    "tipo": "Templo",
+    "descripcion": "El Templo del Espíritu Santo es un templo religioso de culto católico bajo la advocación del Espíritu Santo. Es más conocido como Templo de La Compañía por haber sido fundado por religiosos jesuitas pertenecientes a la Compañía de Jesús.",
+    "lat": 19.04264,
+    "lon": -98.19556,
+    "imagen": "CompañiaPuebla1.JPG",
+    "wiki": "Templo de la Compañía (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q6141059"
+   },
+   {
+    "id": "Q6141021",
+    "nombre": "Templo del Santo Ángel Custodio de Analco",
+    "tipo": "Templo",
+    "descripcion": "El templo del Santo Ángel Custodio de Analco es un templo religioso de culto católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla de los Ángeles, bajo la advocación de santo Ángel de la Guarda. Está ubicado en el antiguo barrio indígena de Analco.",
+    "lat": 19.03878,
+    "lon": -98.19278,
+    "imagen": "Templo de Analco.JPG",
+    "wiki": "Templo de Analco (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q6141021"
+   },
+   {
+    "id": "Q6141048",
+    "nombre": "Templo de San Cristóbal",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Cristóbal es un templo religioso de culto católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla de los Ángeles, bajo la advocación de la Purísima Concepción.",
+    "lat": 19.04538,
+    "lon": -98.19432,
+    "imagen": "San Cristobal 037.JPG",
+    "wiki": "Templo de San Cristóbal (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q6141048"
+   },
+   {
+    "id": "Q59589903",
+    "nombre": "Parroquia de Santa Clara de Asís",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia de Santa Clara es una iglesia situada en el centro histórico de la ciudad de Puebla, en el estado mexicano de Puebla.",
+    "lat": 19.046,
+    "lon": -98.19787,
+    "imagen": "Parroquia de Santa Clara de Asís, Puebla, México, 2013-10-11, DD 02 HDR.JPG",
+    "wiki": "Parroquia de Santa Clara de Asís (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q59589903"
+   },
+   {
+    "id": "Q59650861",
+    "nombre": "Templo del Ex-Hospital de San Roque",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Roque es un edificio religioso ubicado en la Ciudad de Puebla, en el centro histórico de dicha ciudad. El templo data de 1672.",
+    "lat": 19.04207,
+    "lon": -98.19425,
+    "imagen": "HospitalChurch1.JPG",
+    "wiki": "Templo de San Roque",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q59650861"
+   },
+   {
+    "id": "Q61722286",
+    "nombre": "Templo de las Capuchinas, Puebla",
+    "tipo": "Templo",
+    "descripcion": "El Templo Conventual de San Joaquín y Santa Ana es un convento de monjas capuchinas ubicado en la Puebla de los Ángeles. Dentro del mismo se encuentra un interesante ícono llamado El Niño Cieguito.",
+    "lat": 19.04111,
+    "lon": -98.2,
+    "imagen": "TEMPLO CONVENTUAL DE SANN JOAQUIN Y SANTA ANA DE RELIGIOSAS CAPUCHINAS (6).jpg",
+    "wiki": "Templo Conventual de San Joaquín y Santa Ana (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q61722286"
+   },
+   {
+    "id": "Q16609761",
+    "nombre": "Museo de Historia y Antropologia de Cholula",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Historia y Antropología de Cholula, conocido también como Museo de Sitio de Cholula y zona Arqueológica de Cholula, es una institución dependiente del Instituto Nacional de Antropología e Historia de México (INAH) que se encuentra ubicado en el Estado de Puebla.",
+    "lat": 19.05978,
+    "lon": -98.30081,
+    "imagen": "Cholula_Pyramid.jpg",
+    "wiki": "Museo Historia y Antropología de Cholula",
+    "municipio": "San Pedro Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q16609761"
+   },
+   {
+    "id": "Q24529115",
+    "nombre": "Museo de Arte Religioso de Santa Mónica",
+    "tipo": "Ex convento",
+    "descripcion": "El Museo de Arte Religioso Ex Convento de Santa Mónica es un museo de arte sacro ubicado en la Ciudad de Puebla. El edificio, construido en el siglo XVII, fue el Convento de Santa Mónica.",
+    "lat": 19.05151,
+    "lon": -98.19512,
+    "imagen": "Museo de Arte Religioso Santa Monica Puebla 01.JPG",
+    "wiki": "Museo de Arte Religioso de Santa Mónica",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q24529115"
+   },
+   {
+    "id": "Q16565608",
+    "nombre": "Exconvento de Santa María Magdalena",
+    "tipo": "Convento",
+    "descripcion": "El Exconvento de Santa María Magdalena es un templo religioso de culto católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla, bajo el patronazgo de Santa María Magdalena, San Francisco de Asís y la Inmaculada Concepción.",
+    "lat": 19.28288,
+    "lon": -98.43757,
+    "imagen": "Exconvento de Santa María Magdalena, San Martín Texmelucan, Pue..jpg",
+    "wiki": "Exconvento de Santa María Magdalena (San Martín Texmelucan)",
+    "fuente": "https://www.wikidata.org/wiki/Q16565608"
+   },
+   {
+    "id": "Q5664387",
+    "nombre": "Templo de la Limpia Concepción",
+    "tipo": "Templo",
+    "descripcion": "El Templo de la Inmaculada Concepción de María, conocido por su feligresía como el templo de La Limpia Concepción, es un templo religioso de culto católico y bajo la advocación de la Virgen María en la Ciudad de Puebla, México. Está ubicado en la esquina de la 7 poniente y 16 de septiembre del centro histórico.",
+    "lat": 19.04216,
+    "lon": -98.20019,
+    "imagen": "Templo de la Limpia Concepción (2).JPG",
+    "wiki": "Templo de la Limpia Concepción (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q5664387"
+   },
+   {
+    "id": "Q6063710",
+    "nombre": "Iglesia de San José",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia de San José es un templo religioso de culto católico que pertenece a la jurisdicción eclesiástica de la arquidiócesis de Puebla de los Ángeles, bajo la advocación de San José. Sus retablos y la capilla de Jesús Nazareno constituyen algunos de los mejores ejemplos del arte barroco novohispano.",
+    "lat": 19.05114,
+    "lon": -98.19333,
+    "imagen": "Parroquia de San José en Puebla.JPG",
+    "wiki": "Parroquia de San José (Puebla)",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q6063710"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q5853681",
+    "nombre": "Reserva de la Biosfera Tehuacán-Cuicatlán",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la Biosfera Tehuacán-Cuicatlán (a veces abreviada RBTC) es un área natural protegida de México al oeste del istmo de Tehuantepec. Su nombre deriva de sus dos principales localidades: Cuicatlán y Tehuacán, en esta última se encuentran sus oficinas administrativas.",
+    "lat": 18.2114,
+    "lon": -97.3994,
+    "imagen": "Paisaje en Texcala, Puebla, México.JPG",
+    "wiki": "Reserva de la biosfera Tehuacán-Cuicatlán",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5853681"
+   },
+   {
+    "id": "Q125293",
+    "nombre": "Heroica Puebla de Zaragoza",
+    "tipo": "Ciudad",
+    "descripcion": "Puebla de Zaragoza,oficialmente Heroica Puebla de Zaragoza o simplemente Puebla es una metrópoli mexicana, capital del estado de Puebla y cabecera del municipio homónimo. Se encuentra en el centro-oriente de México, en la zona geográfica conocida como el valle de Puebla.",
+    "lat": 19.05139,
+    "lon": -98.21778,
+    "imagen": "Catedral puebla nocturna.jpg",
+    "wiki": "Puebla de Zaragoza",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q125293"
+   },
+   {
+    "id": "Q181157",
+    "nombre": "Popocatépetl",
+    "tipo": "Volcán",
+    "descripcion": "El Popocatépetl (español, náhuatl ) (del náhuatl: Popōcatepētl o Popokatepetl ‘Montaña que humea’), también conocido como don Goyo, es un volcán activo localizado en México. Tiene una altitud de 5413 metros sobre el nivel del mar.",
+    "lat": 19.02339,
+    "lon": -98.62343,
+    "imagen": "Mexico-Popocatepetl.jpg",
+    "wiki": "Popocatépetl",
+    "fuente": "https://www.wikidata.org/wiki/Q181157"
+   },
+   {
+    "id": "Q238147",
+    "nombre": "Citlaltépetl",
+    "tipo": "Montaña",
+    "descripcion": "El Citlaltépetl, (del náhuatl: Sitlaltepetl ‘estrella-monte-ABS’‘Monte de la Estrella’) o Pico de Orizaba, es un volcán activo de extrema altura, ubicado entre los estados de Veracruz y Puebla.",
+    "lat": 19.03,
+    "lon": -97.27,
+    "imagen": "Pico de Orizaba desde Hidalgo, Puebla.jpg",
+    "wiki": "Citlaltépetl",
+    "fuente": "https://www.wikidata.org/wiki/Q238147"
+   },
+   {
+    "id": "Q664059",
+    "nombre": "Iztaccíhuatl",
+    "tipo": "Volcán",
+    "descripcion": "El Iztaccíhuatl (pronunciado [istaːkˈsiwaːt͡ɬ] ) (del náhuatl: Iztaccíhuatl ‘Mujer Dormida’‘istak, dormida; siwatl, mujer’) es un volcán activo, ubicado en el centro de México y es la tercera montaña más alta del país (5215.128 m s. n. m.), después del Pico de Orizaba (5634 m s. n. m.) y el Popocatépetl (5426 m s. n.…",
+    "lat": 19.178,
+    "lon": -98.64183,
+    "imagen": "Mujerdormida 2018 1544.jpg",
+    "wiki": "Iztaccíhuatl",
+    "fuente": "https://www.wikidata.org/wiki/Q664059"
+   },
+   {
+    "id": "Q842261",
+    "nombre": "Tehuacán",
+    "tipo": "Ciudad",
+    "descripcion": "Tehuacán es una ciudad mexicana ubicada en el estado de Puebla, del que es la segunda ciudad más poblada. Es la cabecera del municipio homónimo, mismo que, junto con Santiago Miahuatlán, conforma la zona metropolitana de Tehuacán.",
+    "lat": 18.46278,
+    "lon": -97.39417,
+    "imagen": "Palacio Municipal Tehuacán.JPG",
+    "wiki": "Tehuacán",
+    "municipio": "Tehuacán",
+    "fuente": "https://www.wikidata.org/wiki/Q842261"
+   },
+   {
+    "id": "Q2686100",
+    "nombre": "Izúcar de Matamoros",
+    "tipo": "Ciudad",
+    "descripcion": "Izúcar de Matamoros es una ciudad del estado mexicano de Puebla. Es la cabecera del Municipio de Izúcar de Matamoros.",
+    "lat": 18.60278,
+    "lon": -98.46528,
+    "imagen": "UTIM. Izúcar de Matamoros, Pue. - panoramio (2).jpg",
+    "wiki": "Izúcar de Matamoros",
+    "municipio": "Izúcar de Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q2686100"
+   },
+   {
+    "id": "Q1962265",
+    "nombre": "San Martín Texmelucan",
+    "tipo": "Ciudad",
+    "descripcion": "San Martín Texmelucan de Labastida (del náhuatl: Tetzmullocan ‘Donde está el Encinar’) es una ciudad ubicada en la zona centro oeste del estado mexicano de Puebla, es la cabecera municipal de San Martín Texmelucan, dista 32 kilómetros de la ciudad de Puebla, 95 km de la Ciudad de México y 23 km de la ciudad de…",
+    "lat": 19.28444,
+    "lon": -98.43889,
+    "imagen": "Iglesia del Carmen. San Martín Texmelucan.jpg",
+    "wiki": "San Martín Texmelucan",
+    "municipio": "San Martín Texmelucan",
+    "fuente": "https://www.wikidata.org/wiki/Q1962265"
+   },
+   {
+    "id": "Q2277969",
+    "nombre": "Ciudad Serdán",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Serdán, con anterioridad y aún popularmente conocida como San Andrés Chalchicomula, es una ciudad del estado mexicano de Puebla. Es cabecera del municipio de Chalchicomula de Sesma.",
+    "lat": 18.9894,
+    "lon": -97.44702,
+    "imagen": "Desde Ciudad Serdán, Citlali, Sierra Negra y GTM.JPG",
+    "wiki": "Ciudad Serdán",
+    "municipio": "Chalchicomula de Sesma",
+    "fuente": "https://www.wikidata.org/wiki/Q2277969"
+   },
+   {
+    "id": "Q2844093",
+    "nombre": "Amozoc de Mota",
+    "tipo": "Ciudad",
+    "descripcion": "Amozoc de Mota es una ciudad mexicana cabecera del municipio de Amozoc, en el estado de Puebla. Esta población se encuentra situada a 18 kilómetros al oriente de la ciudad de Puebla, forma parte del área metropolitana de ésta, ubicándose en la parte central del Estado de Puebla.",
+    "lat": 19.04611,
+    "lon": -98.045,
+    "imagen": "Parroquia de Santa Maria de la Asunción Amozoc - panoramio.jpg",
+    "wiki": "Amozoc",
+    "municipio": "Amozoc",
+    "fuente": "https://www.wikidata.org/wiki/Q2844093"
+   },
+   {
+    "id": "Q2651821",
+    "nombre": "Acatlán de Osorio",
+    "tipo": "Ciudad",
+    "descripcion": "Acatlán de Osorio, (en mixteco colonial Tizaa /tiˈsaʔa/ y en mixteco del sur de Puebla Tèsa'à /tèˈsāˀà/) es la cabecera municipal de Acatlán, uno de los 217 municipios del estado mexicano de Puebla. Se localiza en el centro norte del término municipal y es una de las mayores ciudades de la región Mixteca.",
+    "lat": 18.20333,
+    "lon": -98.04861,
+    "imagen": "Camino Tradicional (179724517).jpeg",
+    "wiki": "Acatlán de Osorio",
+    "municipio": "Acatlán",
+    "fuente": "https://www.wikidata.org/wiki/Q2651821"
+   },
+   {
+    "id": "Q2651855",
+    "nombre": "Ajalpan",
+    "tipo": "Ciudad",
+    "descripcion": "Ajalpan (del náhuatl: atl, xalli, pan ‘agua, arena, sobre’‘Sobre la arena del agua’) es una ciudad del estado mexicano de Puebla, cabecera del Municipio de Ajalpan. Ajalpan se ubica a unos 140 kilómetros de la capital del estado de Puebla, en el extremo suroeste del territorio estatal.",
+    "lat": 18.37833,
+    "lon": -97.25944,
+    "imagen": "ZócaloAjalpan.JPG",
+    "wiki": "Ajalpan",
+    "municipio": "Ajalpan",
+    "fuente": "https://www.wikidata.org/wiki/Q2651855"
+   },
+   {
+    "id": "Q2256382",
+    "nombre": "Sierra Negra",
+    "tipo": "Montaña",
+    "descripcion": "La Sierra Negra es un volcán ubicado en Puebla, México, cerca del límite estatal con Veracruz. En su cumbre se localiza el Gran Telescopio Milimétrico Alfonso Serrano (GTM), el mayor radiotelescopio del mundo en su rango de frecuencia.",
+    "lat": 18.98333,
+    "lon": -97.31667,
+    "imagen": "CerroLaNegraPico.jpg",
+    "wiki": "Sierra Negra",
+    "fuente": "https://www.wikidata.org/wiki/Q2256382"
+   },
+   {
+    "id": "Q27682243",
+    "nombre": "Las Derrumbadas",
+    "tipo": "Volcán",
+    "descripcion": "Las Derrumbadas son dos domos volcánicos riolíticos en el oriente del estado de Puebla, en México.",
+    "lat": 19.28806,
+    "lon": -97.4575,
+    "imagen": "Derrumbadas.jpg",
+    "wiki": "Las Derrumbadas",
+    "fuente": "https://www.wikidata.org/wiki/Q27682243"
+   },
+   {
+    "id": "Q3699213",
+    "nombre": "Cuexcomate",
+    "tipo": "Manantial",
+    "descripcion": "El Cuexcomate es una pequeña eminencia ubicada en Puebla de Zaragoza, en el estado mexicano del mismo nombre. Ha adquirido fama con el mote turístico de «el volcán más pequeño del mundo», aunque en realidad se trata de un géiser inactivo.",
+    "lat": 19.0706,
+    "lon": -98.2353,
+    "imagen": "Cuexcomate Completo.jpg",
+    "wiki": "Cuexcomate (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q3699213"
+   },
+   {
+    "id": "Q27844003",
+    "nombre": "Cerro Pizarro",
+    "tipo": "Volcán",
+    "descripcion": "El Cerro Pizarro es un volcán cónico ubicado en México, específicamente en el municipio de Tepeyahualco, al este del estado de Puebla. Cuenta con una elevación de 3080 metros sobre el nivel del mar.",
+    "lat": 19.50889,
+    "lon": -97.43778,
+    "imagen": "Cerro_Pizarro.jpg",
+    "wiki": "Cerro Pizarro",
+    "municipio": "Tepeyahualco",
+    "fuente": "https://www.wikidata.org/wiki/Q27844003"
+   },
+   {
+    "id": "Q5685885",
+    "nombre": "Sierra Norte de Puebla",
+    "tipo": "Sierra",
+    "descripcion": "La sierra Norte de Puebla, denominada como sierra Norte en el estado de Puebla, es una cadena montañosa que constituye el extremo sur de la Sierra Madre Oriental en México. Tiene una longitud aproximada de 100 kilómetros, con anchuras de hasta 50 kilómetros.",
+    "lat": 20.03,
+    "lon": -97.87167,
+    "imagen": "Cristo IM000925.jpg",
+    "wiki": "Sierra Norte de Puebla",
+    "municipio": "Huauchinango",
+    "fuente": "https://www.wikidata.org/wiki/Q5685885"
+   },
+   {
+    "id": "Q27768363",
+    "nombre": "Peñón del Rosario",
+    "tipo": "Montaña",
+    "descripcion": "El peñón del Rosario, llamado Cerro El Rosario en fuentes geográficas oficiales, es una montaña coronada por una peña, ubicada en el estado mexicano de Puebla.",
+    "lat": 19.67879,
+    "lon": -98.20157,
+    "imagen": "Peñón del Rosario.jpg",
+    "wiki": "Peñón del Rosario",
+    "municipio": "Chignahuapan",
+    "fuente": "https://www.wikidata.org/wiki/Q27768363"
+   },
+   {
+    "id": "Q16492970",
+    "nombre": "Estrella de Puebla",
+    "tipo": "Atractivo turístico",
+    "descripcion": "La Estrella de Puebla es una noria turística ubicada en la ciudad de Puebla de Zaragoza, en Puebla, México. Fue inaugurada el 22 de julio de 2013 por el gobernador Rafael Moreno Valle Rosas.",
+    "lat": 19.03447,
+    "lon": -98.23232,
+    "imagen": "Estrella de Puebla y Letrero.jpg",
+    "wiki": "Estrella de Puebla",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q16492970"
+   },
+   {
+    "id": "Q968298",
+    "nombre": "Africam Safari",
+    "tipo": "Atractivo turístico",
+    "descripcion": "Africam Safari es un parque de conservación de vida silvestre mexicano ubicado a 16.5 km de la ciudad de Puebla, donde los animales deambulan en libertad controlada y en cautiverio. Está acreditado por la Association of Zoos and Aquariums y por la World Association of Zoos and Aquariums.",
+    "lat": 18.93712,
+    "lon": -98.13671,
+    "imagen": "Grants zebras zoo.jpg",
+    "wiki": "Africam Safari",
+    "fuente": "https://www.wikidata.org/wiki/Q968298"
+   },
+   {
+    "id": "Q27106783",
+    "nombre": "Cerro Zapotecas",
+    "tipo": "Área natural protegida",
+    "descripcion": "El cerro Zapotecas, conocido informalmente como el «Zapo», es un cerro de origen volcánico ubicado en San Pedro Cholula, en el estado mexicano de Puebla.",
+    "lat": 19.07518,
+    "lon": -98.34617,
+    "imagen": "Cerro Zapotecas.jpg",
+    "wiki": "Cerro Zapotecas",
+    "municipio": "San Pedro Cholula",
+    "fuente": "https://www.wikidata.org/wiki/Q27106783"
+   },
+   {
+    "id": "Q28663179",
+    "nombre": "Laguna de Alchichica",
+    "tipo": "Laguna",
+    "descripcion": "La laguna de Alchichica, también llamada lago Alchichica, es un lago salino alcalino tipo axalapasco en un maar con 60 metros de profundidad, una extensión de agua acumulada con alto grado de salinidad (13g/L) y altas concentraciones de magnesio, es un lago cráter volcánico, en México.",
+    "lat": 19.41609,
+    "lon": -97.40295,
+    "imagen": "Laguna de Alchichica.jpg",
+    "wiki": "Laguna de Alchichica",
+    "municipio": "Tepeyahualco",
+    "fuente": "https://www.wikidata.org/wiki/Q28663179"
+   },
+   {
+    "id": "Q66084462",
+    "nombre": "Laguna de Atexcac",
+    "tipo": "Lago",
+    "descripcion": "La laguna de Atexcac es un maar (llamado 'axalapasco' localmente) ubicado en el municipio de Guadalupe Victoria, en el estado mexicano de Puebla. Es uno de los seis lagos de cráter de la región fisiográfica de los Llanos de San Juan y se suele considerar el más bello de estos.",
+    "lat": 19.33472,
+    "lon": -97.45028,
+    "imagen": null,
+    "wiki": "Laguna de Atexcac",
+    "municipio": "Guadalupe Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q66084462"
+   },
+   {
+    "id": "Q60297471",
+    "nombre": "El Pinal",
+    "tipo": "Montaña",
+    "descripcion": "El Pinal es un monte de origen volcánico en el estado mexicano de Puebla, con una altitud de 3280 m s. n. m.",
+    "lat": 19.14222,
+    "lon": -97.90694,
+    "imagen": "El Pinal.jpg",
+    "wiki": "El Pinal (Puebla)",
+    "fuente": "https://www.wikidata.org/wiki/Q60297471"
+   },
+   {
+    "id": "Q6054777",
+    "nombre": "Otzelotzi",
+    "tipo": "Volcán",
+    "descripcion": "El Otzelotzi es un cerro de origen volcánico ubicado en el municipio de Vicente Guerrero, en el estado mexicano de Puebla.",
+    "lat": 18.59882,
+    "lon": -97.25705,
+    "imagen": null,
+    "wiki": "Otzelotzi",
+    "municipio": "Vicente Guerrero",
+    "fuente": "https://www.wikidata.org/wiki/Q6054777"
+   },
+   {
+    "id": "Q5926405",
+    "nombre": "Jardín Botánico Ignacio Rodríguez Alconedo, BUAP",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Botánico Universitario de la Benemérita Universidad Autónoma de Puebla (JBU-BUAP) anteriormente llamado Jardín Botánico Ignacio Rodríguez Alconedo, se encuentra en la Ciudad Universitaria de Puebla, México y tiene 10,7 hectáreas de extensión.",
+    "lat": 19.0014,
+    "lon": -98.2008,
+    "imagen": "Lago Jardin Botanico Universitario (BUAP de Puebla).jpg",
+    "wiki": "Jardín Botánico Universitario de la Benemérita Universidad Autónoma de Puebla",
+    "municipio": "Puebla",
+    "fuente": "https://www.wikidata.org/wiki/Q5926405"
+   },
+   {
+    "id": "Q5926699",
+    "nombre": "Jardín Etnobotánico Francisco Peláez R.",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Etnobotánico Francisco Peláez R. A.C. es un jardín botánico con una extensión de 5.000 m² que se encuentra en el Estado de Puebla, México.",
+    "lat": 19.0456,
+    "lon": -98.3091,
+    "imagen": "Echeveria setosa-IMG 1622.jpg",
+    "wiki": "Jardín Etnobotánico Francisco Peláez R.",
+    "fuente": "https://www.wikidata.org/wiki/Q5926699"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q3319470",
+    "nombre": "Mole poblano",
+    "tipo": "Platillo",
+    "descripcion": "El mole poblano es una especialidad cultural culinaria de la ciudad de Puebla, en México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Mole Poblano.jpg",
+    "wiki": "Mole poblano",
+    "fuente": "https://www.wikidata.org/wiki/Q3319470"
+   },
+   {
+    "id": "Q1072902",
+    "nombre": "Chile en nogada",
+    "tipo": "Platillo",
+    "descripcion": "El chile en nogada es uno de los platillos típicos de la gastronomía mexicana y del estado de Puebla. Ha sido llamado el «platillo mexicano por excelencia».",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chile relleno en nogada con granada.jpg",
+    "wiki": "Chile en nogada",
+    "fuente": "https://www.wikidata.org/wiki/Q1072902"
+   },
+   {
+    "id": "Q17090617",
+    "nombre": "Tinga",
+    "tipo": "Platillo",
+    "descripcion": "La tinga es un platillo típico mexicano, elaborado con carne deshebrada (de pollo, puerco o res) en una salsa a base de jitomate, cebolla, ajo y chile chipotle. Generalmente, se consume en tostada, taco, quesadilla o molote, acompañado de aguacate, queso fresco, lechuga picada, crema o rábano.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tostada de tinga.jpg",
+    "wiki": "Tinga",
+    "fuente": "https://www.wikidata.org/wiki/Q17090617"
+   },
+   {
+    "id": "Q389727",
+    "nombre": "Huaxmole",
+    "tipo": "Platillo",
+    "descripcion": "El huaxmole (/waʃ'mole/) o mole de huaje es un guiso típico del centro de México con multitud de variantes regionales, muy diferentes entre sí, cuya característica principal es el uso de semillas de guaje o huaje (Leucaena leucocephala).",
+    "lat": null,
+    "lon": null,
+    "imagen": "Huaxmole.JPG",
+    "wiki": "Huaxmole",
+    "fuente": "https://www.wikidata.org/wiki/Q389727"
+   },
+   {
+    "id": "Q5794070",
+    "nombre": "Cuetla",
+    "tipo": "Producto típico",
+    "descripcion": "Cuetlas, cueclas, cuetlame, cuétano, pochocuil, tzapala, tzapula, xonocuil, xonocuilin, chiancuetla, tepolchichic o zatz son los nombres comunes que se le dan en México a una variedad de orugas de mariposa de las familias Saturniidae y Noctuidae que crecen en las plantas de chía, cuaulote, jonote y tlahuilote, y que…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Annona squamosa fruit.jpg",
+    "wiki": "Cuetla",
+    "fuente": "https://www.wikidata.org/wiki/Q5794070"
+   },
+   {
+    "id": "Q1454955",
+    "nombre": "Rompope",
+    "tipo": "Bebida",
+    "descripcion": "El rompope es una bebida parecida al ponche de huevo hecha con huevos, leche y vainilla. Las yemas de huevo imparten un tono amarillo a la bebida emulsionada.",
+    "lat": null,
+    "lon": null,
+    "imagen": "20151226 Christmas 3524 crop Erin in Alpharetta, GA sRGB (cropped).jpg",
+    "wiki": "Rompope",
+    "fuente": "https://www.wikidata.org/wiki/Q1454955"
+   },
+   {
+    "id": "Q5069084",
+    "nombre": "Chalupa",
+    "tipo": "Platillo",
+    "descripcion": "Las chalupasson un tipo de antojito mexicano originario del estado de Hidalgo, que se consume especialmente los fines de semana por las noches o como comida típica durante la celebración del día de la Independencia Mexicana, el 16 de septiembre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chalupa (comida).jpg",
+    "wiki": "Chalupa (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q5069084"
+   },
+   {
+    "id": "Q3189940",
+    "nombre": "Jumiles",
+    "tipo": "Platillo",
+    "descripcion": "Jumil, chumil (del náhuatl xomilli o xotlinilli), o chinche de monte, son los nombres que se les da en México a varias especies de insectos hemípteros comestibles de la familia Pentatomidae:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jumiles-taxco-mercados.jpg",
+    "wiki": "Jumil",
+    "fuente": "https://www.wikidata.org/wiki/Q3189940"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q2386967",
+    "nombre": "Taco al pastor",
+    "tipo": "Platillo",
+    "descripcion": "El taco al pastor es un taco de carne adobada de puerco con piña originario de la Ciudad de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "(El Flaco) Al Pastor Tacos.jpg",
+    "wiki": "Taco al pastor",
+    "fuente": "https://www.wikidata.org/wiki/Q2386967"
+   },
+   {
+    "id": "Q6815190",
+    "nombre": "Memela",
+    "tipo": "Pan",
+    "descripcion": "La memela es un platillo mexicano, típico de los estados de Puebla, Chiapas, Tlaxcala, Veracruz y Oaxaca.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Memelas Oaxaquenos.jpg",
+    "wiki": "Memela",
+    "fuente": "https://www.wikidata.org/wiki/Q6815190"
+   },
+   {
+    "id": "Q109353074",
+    "nombre": "Cemita de Puebla",
+    "tipo": "Pan",
+    "descripcion": "La cemita poblana (a veces escrita con s: semita) es un pan blanco mexicano típico en el estado de Puebla. Contiene harina de trigo, agua, leche, huevos, levadura, mantequilla y sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cemita poblana.jpg",
+    "wiki": "Cemita poblana",
+    "fuente": "https://www.wikidata.org/wiki/Q109353074"
+   },
+   {
+    "id": "Q7285800",
+    "nombre": "Rajas con crema",
+    "tipo": "Platillo",
+    "descripcion": "Las rajas con crema o rajas poblanas son un platillo típico mexicano que consiste en rajas (un chile tatemado y cortado en tiras) bañadas en crema. Se trata de un plato sencillo de preparar, humilde y muy popular.",
+    "lat": null,
+    "lon": null,
+    "imagen": "BrunchRajas con crema.png",
+    "wiki": "Rajas con crema",
+    "fuente": "https://www.wikidata.org/wiki/Q7285800"
+   },
+   {
+    "id": "Q6747205",
+    "nombre": "Manchamanteles",
+    "tipo": "Platillo",
+    "descripcion": "Manchamanteles es un platillo mexicano. Se trata de un guiso con una variedad de carnes, vegetales y frutas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Manchamanteles - Puebla.jpg",
+    "wiki": "Manchamanteles",
+    "fuente": "https://www.wikidata.org/wiki/Q6747205"
+   },
+   {
+    "id": "Q9034272",
+    "nombre": "Molote",
+    "tipo": "Platillo",
+    "descripcion": "El molote forma parte de la gastronomía mexicana, en especial de los antojitos mexicanos. Es una comida popular en algunos estados de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Molotes.jpg",
+    "wiki": "Molote",
+    "fuente": "https://www.wikidata.org/wiki/Q9034272"
+   },
+   {
+    "id": "Q112317561",
+    "nombre": "Chanclas poblanas",
+    "tipo": "Platillo",
+    "descripcion": "Las chanclas poblanas son un platillo mexicano típico de los estados de Puebla y Tlaxcala, que consiste en un pan bañado en una salsa de chile, con carne molida de res, lechuga, cebolla y aguacate.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chancla poblana.jpg",
+    "wiki": "Chanclas poblanas",
+    "fuente": "https://www.wikidata.org/wiki/Q112317561"
+   },
+   {
+    "id": "Q5832771",
+    "nombre": "Enfrijoladas",
+    "tipo": "Platillo",
+    "descripcion": "Las enfrijoladas son un platillo mexicano elaborado a base de dos ingredientes esenciales en su gastronomía: tortillas de maíz y frijoles. Generalmente, se fríe la tortilla y luego se sumergen en un caldo espeso de frijoles molidos, enrolladas o dobladas.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Desayuno Veracruzano.jpg",
+    "wiki": "Enfrijoladas",
+    "fuente": "https://www.wikidata.org/wiki/Q5832771"
+   },
+   {
+    "id": "Q110100833",
+    "nombre": "Pan de fiesta",
+    "tipo": "Pan",
+    "descripcion": "El pan de fiesta o pan de feria es un pan dulce originario de los municipios mexicanos de San Juan Huactzinco y San Juan Totolac, y tradicionales en los estados de Puebla y Tlaxcala. Como su nombre indica, se prepara y consume durante las fiestas patronales de cada ciudad de esos estados.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Panes_de_fiesta.jpg",
+    "wiki": "Pan de fiesta",
+    "fuente": "https://www.wikidata.org/wiki/Q110100833"
+   },
+   {
+    "id": "Q111365597",
+    "nombre": "Taco árabe",
+    "tipo": "Platillo",
+    "descripcion": "Los tacos árabes son una variedad de tacos típicos de la gastronomía del estado de Puebla, en el Oriente de México, que tienen su origen en la inmigración árabe en el país.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tacos_árabes_en_Puebla_(México).jpg",
+    "wiki": "Taco árabe",
+    "fuente": "https://www.wikidata.org/wiki/Q111365597"
+   },
+   {
+    "id": "Q6151013",
+    "nombre": "Tortitas de Santa Clara",
+    "tipo": "Dulce",
+    "descripcion": "Las tortitas de Santa Clara son un postre mexicano típico de la gastronomía del estado de Puebla, creado durante la época virreinal. Tienen la forma de una galleta y son originarias de la ciudad de Puebla, Puebla.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tortitas_de_Santa_Clara.jpg",
+    "wiki": "Tortitas de Santa Clara",
+    "fuente": "https://www.wikidata.org/wiki/Q6151013"
+   }
+  ]
+ }
+}

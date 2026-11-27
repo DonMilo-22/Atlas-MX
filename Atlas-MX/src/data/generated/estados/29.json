@@ -1,0 +1,620 @@
+{
+ "cve": "29",
+ "estado": "Tlaxcala",
+ "wikidata": "Q82681",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q576636",
+    "nombre": "Huamantla",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Huamantla ( wama'ntla) es la ciudad principal y cabecera del municipio de Huamantla, perteneciente al estado mexicano de Tlaxcala.",
+    "lat": 19.31444,
+    "lon": -97.92528,
+    "imagen": "MonumentoToroBravoHuamantla 14.JPG",
+    "wiki": "Huamantla",
+    "municipio": "Huamantla",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q576636"
+   },
+   {
+    "id": "Q16892769",
+    "nombre": "Ixtenco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ixtenco es una localidad del estado mexicano de Tlaxcala. Es cabecera del municipio de Ixtenco.",
+    "lat": 19.25,
+    "lon": -97.89444,
+    "imagen": "SJBautistaIxtenco08.JPG",
+    "wiki": "Ixtenco",
+    "municipio": "Ixtenco",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q16892769"
+   },
+   {
+    "id": "Q19824930",
+    "nombre": "Tlaxco",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Tlaxco es una ciudad mexicana, cabecera y localidad más poblada del municipio del mismo nombre, ubicada al norte del estado de Tlaxcala.",
+    "lat": 19.62157,
+    "lon": -98.11966,
+    "imagen": "Parroquia de San Agustin.JPG",
+    "wiki": "Tlaxco",
+    "municipio": "Tlaxco",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q19824930"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q5758514",
+    "nombre": "Catedral de Nuestra Señora de la Asunción",
+    "tipo": "Catedral",
+    "descripcion": "La catedral de Tlaxcala es una catedral ubicada en la ciudad de Tlaxcala, México con advocación a Nuestra Señora de la Asunción. Fue conocida como el Templo de San Francisco de Asís, sin embargo, cuando comenzó a levantarse la diócesis se nombró catedral, bajo la jurisdicción la diócesis de Tlaxcala.",
+    "lat": 19.31389,
+    "lon": -98.23778,
+    "imagen": "Capilla Campanario.jpg",
+    "wiki": "Catedral de Tlaxcala",
+    "municipio": "Tlaxcala",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5758514"
+   },
+   {
+    "id": "Q1024995",
+    "nombre": "Cacaxtla",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Cacaxtla es un sitio arqueológico mexicano a 19 km al sur de la ciudad de Tlaxcala de Xicohténcatl y a 128 km al este de la capital Ciudad de México, en el sur del Estado de Tlaxcala, en el municipio de Natívitas. El sitio destaca por el buen estado en el que se han conservado sus murales.",
+    "lat": 19.24357,
+    "lon": -98.33995,
+    "imagen": "Mexico.Tlax.Cacaxtla.02.jpg",
+    "wiki": "Cacaxtla",
+    "fuente": "https://www.wikidata.org/wiki/Q1024995"
+   },
+   {
+    "id": "Q536787",
+    "nombre": "Xochitécatl",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Xochitécatl es una zona arqueológica localizada en el municipio de Nativitas, en el sur del estado mexicano de Tlaxcala. Se trata de un conjunto de monumentos que tiene una importancia singular por constituir uno de los asentamientos más antiguos en el valle de Tlaxcala-Puebla.",
+    "lat": 19.24473,
+    "lon": -98.34956,
+    "imagen": "Xochitecatl 1.jpg",
+    "wiki": "Xochitécatl",
+    "municipio": "Natívitas",
+    "fuente": "https://www.wikidata.org/wiki/Q536787"
+   },
+   {
+    "id": "Q7692767",
+    "nombre": "Tecoaque",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tecoaque es un sitio arqueológico mesoamericano, ubicado en el municipio de Calpulalpan en el occidente del estado mexicano de Tlaxcala. Se cree que el sitio fue creado por la cultura de Tetzcuco.",
+    "lat": 19.58495,
+    "lon": -98.62489,
+    "imagen": "Tecoaque1.jpg",
+    "wiki": "Tecoaque",
+    "fuente": "https://www.wikidata.org/wiki/Q7692767"
+   },
+   {
+    "id": "Q47015590",
+    "nombre": "Cerrito del Chiquihuite",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Cerrito del Chiquihuite llamado simplemente El Cerrito es un teocalli menor mesoamericano, ubicado en el municipio de Zacatelco en el sur del estado mexicano de Tlaxcala.",
+    "lat": 19.20024,
+    "lon": -98.24564,
+    "imagen": "Cerrito_01.jpg",
+    "wiki": "Cerrito del chiquihuite",
+    "fuente": "https://www.wikidata.org/wiki/Q47015590"
+   },
+   {
+    "id": "Q24051755",
+    "nombre": "Tlaxcallan",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Tlaxcallan (del náhuatl: Tollan Tlaxcallan), fue el principal núcleo urbano de la república del mismo nombre durante el Posclásico tardío, en el actual estado mexicano de Tlaxcala. Su formación partió del asentamiento de Tepeticpac y continuó con el crecimiento y la articulación de Ocotelulco, Tizatlán y Quiahuiztlán.",
+    "lat": 19.31695,
+    "lon": -98.23823,
+    "imagen": "Tlaxcaltecas-conquistan-México.jpg",
+    "wiki": "Tlaxcallan (ciudad prehispánica)",
+    "municipio": "Tlaxcala",
+    "fuente": "https://www.wikidata.org/wiki/Q24051755"
+   },
+   {
+    "id": "Q142071187",
+    "nombre": "Sitio arqueológico de Tetlatlahuca",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El sitio arqueológico de Tetlatlahuca es un asentamiento prehispánico que se encuentra en el cerro de las Tres Cruces, en el municipio de Tetlatlahuca, en el estado mexicano de Tlaxcala.",
+    "lat": 19.2355,
+    "lon": -98.29355,
+    "imagen": null,
+    "wiki": "Sitio arqueológico de Tetlatlahuca",
+    "municipio": "Tetlatlahuca",
+    "fuente": "https://www.wikidata.org/wiki/Q142071187"
+   },
+   {
+    "id": "Q5721961",
+    "nombre": "Basílica de Nuestra Señora de la Misericordia",
+    "tipo": "Templo",
+    "descripcion": "La Basílica de Nuestra Señora de la Misericordia (Basílica Menor), es una iglesia católica ubicada en la ciudad de Apizaco, en el estado de Tlaxcala, México. Su construcción empezó en la tercera década del siglo XX y se culminó en el año 1961.",
+    "lat": 19.41594,
+    "lon": -98.14089,
+    "imagen": "Basilica Apizaco.jpg",
+    "wiki": "Basílica de Nuestra Señora de la Misericordia (Apizaco)",
+    "municipio": "Apizaco",
+    "fuente": "https://www.wikidata.org/wiki/Q5721961"
+   },
+   {
+    "id": "Q16489558",
+    "nombre": "Basílica de Ocotlán",
+    "tipo": "Templo",
+    "descripcion": "El santuario y basílica de Ocotlán es un conjunto arquitectónico religioso de México que se encuentra dedicado a Nuestra Señora de Ocotlán en la localidad de Ocotlán, en el municipio de Tlaxcala, emplazado sobre una colina a tan sólo un kilómetro de la Ciudad de Tlaxcala, capital del homónimo estado de Tlaxcala.",
+    "lat": 19.3179,
+    "lon": -98.22796,
+    "imagen": "Basilica-de-Ocotlán-Tlaxcala.jpg",
+    "wiki": "Basílica de Ocotlán",
+    "municipio": "El Carmen Tequexquitla",
+    "fuente": "https://www.wikidata.org/wiki/Q16489558"
+   },
+   {
+    "id": "Q24699777",
+    "nombre": "La Barca de la Fe",
+    "tipo": "Templo",
+    "descripcion": "La Barca de la Fe es un templo católico en forma de barco ubicado en el municipio de Tlaxco, en el estado de Tlaxcala, México. La construcción está localizada en el poblado de José María Morelos Buenavista, donde también funge como templo parroquial y zona recreativa.",
+    "lat": 19.56866,
+    "lon": -98.27327,
+    "imagen": "La Barca de la Fe.jpg",
+    "wiki": "La Barca de la Fe",
+    "municipio": "Tlaxco",
+    "fuente": "https://www.wikidata.org/wiki/Q24699777"
+   },
+   {
+    "id": "Q20024590",
+    "nombre": "Museo Nacional del Títere",
+    "tipo": "Museo",
+    "descripcion": "El Museo Nacional del Títere se encuentra ubicado en la ciudad de Huamantla, en el estado mexicano de Tlaxcala. Único en su tipo en todo México, está instalado en una casona antigua del centro histórico del pueblo mágico de Huamantla.",
+    "lat": 19.31331,
+    "lon": -97.92337,
+    "imagen": "TitereHuamantla01.JPG",
+    "wiki": "Museo Nacional del Títere",
+    "municipio": "Huamantla",
+    "fuente": "https://www.wikidata.org/wiki/Q20024590"
+   },
+   {
+    "id": "Q18641904",
+    "nombre": "Ex Convento de Santa María de la Concepción Atlihuetzia",
+    "tipo": "Convento",
+    "descripcion": "El Convento de Santa María de la Concepción en Atlihuetzia es una construcción del siglo XVI. Sus arcos son el principal acceso al interior, fue uno de los primeros en establecerse en tierras de América y tlaxcaltecas.",
+    "lat": 19.3725,
+    "lon": -98.17667,
+    "imagen": "Exconvento de Santa María Atlihuetzia, Tlaxcala.jpg",
+    "wiki": "Convento de Santa María de la Concepción (Atlihuetzia)",
+    "municipio": "Yauhquemehcan",
+    "fuente": "https://www.wikidata.org/wiki/Q18641904"
+   },
+   {
+    "id": "Q47074437",
+    "nombre": "Templo del Sagrado Corazón",
+    "tipo": "Templo",
+    "descripcion": "El Templo del Sagrado Corazón, es una iglesia católica ubicada en la ciudad de Zacatelco, en el estado mexicano de Tlaxcala. Fue construido durante los siglos XVIII y XIX.",
+    "lat": 19.20175,
+    "lon": -98.24219,
+    "imagen": "Santuario del Sagrado Corazón de Jesús 08.jpg",
+    "wiki": "Templo del Sagrado Corazón (Zacatelco)",
+    "municipio": "Zacatelco",
+    "fuente": "https://www.wikidata.org/wiki/Q47074437"
+   },
+   {
+    "id": "Q20740004",
+    "nombre": "Capilla del Cristo",
+    "tipo": "Templo",
+    "descripcion": "La Capilla del Cristo fue un pequeño edificio de culto católico localizado en el Barrio del Cristo de Villa Vicente Guerrero, municipio de San Pablo del Monte, en el estado de Tlaxcala, México.",
+    "lat": 19.13,
+    "lon": -98.15889,
+    "imagen": "Capilla del Cristo, San Pable del Monte.jpg",
+    "wiki": "Capilla del Cristo (San Pablo del Monte)",
+    "municipio": "San Pablo del Monte",
+    "fuente": "https://www.wikidata.org/wiki/Q20740004"
+   },
+   {
+    "id": "Q106085942",
+    "nombre": "San Nicolás de Bari Church, Panotla",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia de San Nicolás de Bari es un edificio religioso católico de estilo arquitectónico barroco novohispano ubicado en la cabecera del municipio de Panotla en el estado mexicano de Tlaxcala. De acuerdo a los registros parroquiales fue iniciada la construcción del templo en el año 1693 finalizando en el año 1796.",
+    "lat": 19.31495,
+    "lon": -98.26707,
+    "imagen": "SanNicolasChurchPanotla09.JPG",
+    "wiki": "Iglesia de San Nicolás de Bari (Panotla)",
+    "municipio": "Panotla",
+    "fuente": "https://www.wikidata.org/wiki/Q106085942"
+   },
+   {
+    "id": "Q19950462",
+    "nombre": "Iglesia de San José",
+    "tipo": "Templo",
+    "descripcion": "El Santuario Diocesano del Señor San José, anteriormente llamado Parroquia de San Juan y San José, fue construido durante el siglo XVII en el lugar que ocupaba una antigua ermita del siglo XVI.",
+    "lat": 19.31833,
+    "lon": -98.23889,
+    "imagen": "Parroquia de San Jose Tlaxcala, Tlaxcala..jpg",
+    "wiki": "Parroquia de San José (Tlaxcala)",
+    "municipio": "Tlaxcala",
+    "fuente": "https://www.wikidata.org/wiki/Q19950462"
+   },
+   {
+    "id": "Q24657728",
+    "nombre": "Parroquia de Santa Cruz Tlaxcala",
+    "tipo": "Templo",
+    "descripcion": "La parroquia de la Santa Cruz, también conocida como la parroquia de Santa Cruz Tlaxcala debido al lugar en que se encuentra ubicada en el municipio de Santa Cruz Tlaxcala del estado de Tlaxcala, México, es una iglesia de culto católico que pertenece a la jurisdicción eclesiástica de la diócesis de Tlaxcala, bajo el…",
+    "lat": 19.355,
+    "lon": -98.14945,
+    "imagen": "Iglesis.JPG",
+    "wiki": "Parroquia de Santa Cruz Tlaxcala",
+    "municipio": "Santa Cruz Tlaxcala",
+    "fuente": "https://www.wikidata.org/wiki/Q24657728"
+   },
+   {
+    "id": "Q24960322",
+    "nombre": "Museo Taurino de Huamantla",
+    "tipo": "Museo",
+    "descripcion": "El Museo Taurino de Huamantla Miguel Corona Medina se encuentra ubicado en la ciudad de Huamantla, en el estado mexicano de Tlaxcala a un costado de la Centenaria Plaza de Toros La Taurina Fernando de los Reyes El Callao. El inmueble que lo alberga data de mediados del siglo XVIII.",
+    "lat": 19.31543,
+    "lon": -97.92086,
+    "imagen": "Museo Taurino de Huamantla 2.jpg",
+    "wiki": "Museo Taurino de Huamantla",
+    "municipio": "Huamantla",
+    "fuente": "https://www.wikidata.org/wiki/Q24960322"
+   },
+   {
+    "id": "Q107637209",
+    "nombre": "Museo Casa de Piedra",
+    "tipo": "Museo",
+    "descripcion": "El Museo Casa de Piedra, está ubicado en la antigua estación de la ciudad de Apizaco, Tlaxcala. Fue creado en 1916 por Ferrocarriles Nacionales de México, como sede de los trabajadores de vía.",
+    "lat": 19.40444,
+    "lon": -98.14332,
+    "imagen": "Museo_Casa_de_Piedra_en_Apizaco_(Tlaxcala,_México).jpg",
+    "wiki": "Museo Casa de Piedra",
+    "fuente": "https://www.wikidata.org/wiki/Q107637209"
+   },
+   {
+    "id": "Q24557525",
+    "nombre": "Museo Regional de Tlaxcala",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Tlaxcala se encuentra ubicado en el ex-convento de San Francisco del siglo XVI anexo a la actual catedral de Tlaxcala. Este recinto fue inaugurado en 1981.",
+    "lat": 19.31428,
+    "lon": -98.23792,
+    "imagen": "Atrio y ex-convento de San Francisco de la Asunción de Nuestra Señora, Tlaxcala 06.JPG",
+    "wiki": "Museo Regional de Tlaxcala",
+    "municipio": "Tlaxcala",
+    "fuente": "https://www.wikidata.org/wiki/Q24557525"
+   },
+   {
+    "id": "Q136282036",
+    "nombre": "Hacienda San Nicolás El Grande",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda San Nicolás El Grande es una hacienda histórica ubicada en el municipio de Benito Juárez, en el estado de Tlaxcala, México.",
+    "lat": 19.58036,
+    "lon": -98.43552,
+    "imagen": null,
+    "wiki": "Hacienda San Nicolás El Grande",
+    "municipio": "Benito Juárez",
+    "fuente": "https://www.wikidata.org/wiki/Q136282036"
+   },
+   {
+    "id": "Q28543225",
+    "nombre": "Museo Miguel N. Lira",
+    "tipo": "Museo",
+    "descripcion": "El Museo Miguel N. Lira es un museo biográfico ubicado en la ciudad de Tlaxcala, dedicado a la vida y obra del escritor, poeta, periodista y dramaturgo tlaxcalteca Miguel N. Lira quien destacó en la vida cultural de la nación, en la primera mitad del siglo XX.",
+    "lat": 19.31516,
+    "lon": -98.23869,
+    "imagen": "Museo-N-Lira.jpg",
+    "wiki": "Museo Miguel N. Lira",
+    "municipio": "Tlaxcala",
+    "fuente": "https://www.wikidata.org/wiki/Q28543225"
+   },
+   {
+    "id": "Q24569618",
+    "nombre": "Museo de Sitio de Ocotelulco",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Sitio de Ocotelulco exhibe piezas arqueológicas encontradas en el templo de Ocotelulco, uno de los cuatro altépetls del Señorío de Tlaxcala. Destacan sus cerámicas policromadas \"tipo códice\" donde se aprecia el culto a Tezcatlipoca.",
+    "lat": 19.32946,
+    "lon": -98.23583,
+    "imagen": null,
+    "wiki": "Museo de Sitio de Ocotelulco",
+    "municipio": "Totolac",
+    "fuente": "https://www.wikidata.org/wiki/Q24569618"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q2474056",
+    "nombre": "San Pablo del Monte",
+    "tipo": "Ciudad",
+    "descripcion": "San Pablo del Monte abreviado SPM, anteriormente llamado Villa Vicente Guerrero, es una ciudad mexicana, cabecera del municipio homónimo, ubicada en el sur del estado de Tlaxcala.",
+    "lat": 19.11974,
+    "lon": -98.17042,
+    "imagen": "Portada de San Pablo del Monte, Tlaxcala 02.jpg",
+    "wiki": "San Pablo del Monte",
+    "municipio": "San Pablo del Monte",
+    "fuente": "https://www.wikidata.org/wiki/Q2474056"
+   },
+   {
+    "id": "Q578799",
+    "nombre": "Malinche",
+    "tipo": "Volcán",
+    "descripcion": "La Malinche, Malintzin o Matlalcueye (para los tlaxcaltecas) es un volcán sísmicamente activo con una altitud oficial de 4438 metros sobre el nivel del mar, localizado entre los estados mexicanos de Tlaxcala y Puebla. Forma parte del Eje Neovolcánico.",
+    "lat": 19.23083,
+    "lon": -98.03194,
+    "imagen": "La Malinche (volcán).jpg",
+    "wiki": "La Malinche (volcán)",
+    "fuente": "https://www.wikidata.org/wiki/Q578799"
+   },
+   {
+    "id": "Q618693",
+    "nombre": "Apizaco",
+    "tipo": "Ciudad",
+    "descripcion": "Apizaco es una ciudad mexicana, cabecera municipal y principal ciudad del municipio homónimo, situada en el centro del estado de Tlaxcala.",
+    "lat": 19.4112,
+    "lon": -98.14056,
+    "imagen": "Un monumento emblemático de la ciudad Apizaco es la maquinita.JPG",
+    "wiki": "Apizaco",
+    "municipio": "Apizaco",
+    "fuente": "https://www.wikidata.org/wiki/Q618693"
+   },
+   {
+    "id": "Q2879423",
+    "nombre": "Zacatelco",
+    "tipo": "Ciudad",
+    "descripcion": "Zacatelco (del náhuatl: Zacatlātelco ‘lugar de zacate’) es una ciudad mexicana, cabecera del Municipio de Zacatelco, ubicada al sur del estado de Tlaxcala.",
+    "lat": 19.20133,
+    "lon": -98.24557,
+    "imagen": "Zacatelco Skyline.jpg",
+    "wiki": "Zacatelco",
+    "municipio": "Zacatelco",
+    "fuente": "https://www.wikidata.org/wiki/Q2879423"
+   },
+   {
+    "id": "Q1997497",
+    "nombre": "Calpulalpan",
+    "tipo": "Ciudad",
+    "descripcion": "Calpulalpan ( kalpuˈlalpan) oficialmente como Heroica Ciudad de Calpulalpan, es una ciudad mexicana, cabecera y principal centro urbano del municipio de Calpulalpan, ubicada al poniente del estado de Tlaxcala.",
+    "lat": 19.57889,
+    "lon": -98.56443,
+    "imagen": "Air view of Calpulalpan, Tlaxcala.jpg",
+    "wiki": "Heroica Ciudad de Calpulalpan",
+    "municipio": "Calpulalpan",
+    "fuente": "https://www.wikidata.org/wiki/Q1997497"
+   },
+   {
+    "id": "Q2605356",
+    "nombre": "Chiautempan",
+    "tipo": "Ciudad",
+    "descripcion": "Chiautempan, frecuentemente llamada Santa Ana Chiautempan o simplemente Santa Ana, es una ciudad mexicana, cabecera municipal y principal ciudad del municipio homónimo, ubicada en el centro-sur del estado de Tlaxcala.",
+    "lat": 19.3114,
+    "lon": -98.18797,
+    "imagen": "Iglesia en Santa Ana Chiautempan 01.jpg",
+    "wiki": "Chiautempan",
+    "municipio": "Chiautempan",
+    "fuente": "https://www.wikidata.org/wiki/Q2605356"
+   },
+   {
+    "id": "Q6463645",
+    "nombre": "Parque nacional La Malinche",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional La Malinche es un parque nacional ubicado en los estados de Tlaxcala y Puebla en el centro de México. El parque se encuentra a 151 km al este de la Ciudad de México, a 43 km de la Ciudad de Tlaxcala y a 73 km de Ciudad de Puebla.",
+    "lat": 19.21204,
+    "lon": -98.04333,
+    "imagen": "Mount La Malinche.JPG",
+    "wiki": "Parque nacional La Malinche",
+    "fuente": "https://www.wikidata.org/wiki/Q6463645"
+   },
+   {
+    "id": "Q8352236",
+    "nombre": "Cuatlapanga",
+    "tipo": "Montaña",
+    "descripcion": "El Cuatlapanga es un cerro de origen volcánico de 2,917 metros sobre el nivel del mar, ubicado en el estado mexicano de Tlaxcala, entre los municipios de San José Teacalco y San Antonio Cuaxomulco. Está en las faldas de la Malinche o Matlalcueye, principal elevación del estado.",
+    "lat": 19.33694,
+    "lon": -98.08667,
+    "imagen": "La Malinche y Cuatlapanga al atardecer.jpg",
+    "wiki": "Cuatlapanga",
+    "fuente": "https://www.wikidata.org/wiki/Q8352236"
+   },
+   {
+    "id": "Q3020507",
+    "nombre": "Parque nacional Xicoténcatl",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Xicohténcatl se encuentra ubicado en el centro del Estado de Tlaxcala con una superficie aproximada de 600 ha, y comprende el centro histórico de la ciudad de Tlaxcala y otras localidades de los municipios de Tlaxcala y Totolac, como Los Reyes Quiahuixtlán, San Francisco Ocotelulco o Santiago…",
+    "lat": 19.3167,
+    "lon": -98.2386,
+    "imagen": "Atardeciendo en San Jose.jpg",
+    "wiki": "Parque nacional Xicoténcatl",
+    "fuente": "https://www.wikidata.org/wiki/Q3020507"
+   },
+   {
+    "id": "Q125149973",
+    "nombre": "Presa El Muerto",
+    "tipo": "Lago",
+    "descripcion": "La Presa El Muerto es una estructura hidráulica ubicada a 1700 metros al sureste de la comunidad de José María Morelos Buenavista, en el municipio de Tlaxco, en el estado de Tlaxcala, México.",
+    "lat": 19.58249,
+    "lon": -98.289,
+    "imagen": "Atardecer con la Presa El Muerto a la derecha.jpg",
+    "wiki": "Presa El Muerto",
+    "municipio": "Tlaxco",
+    "fuente": "https://www.wikidata.org/wiki/Q125149973"
+   },
+   {
+    "id": "Q47371992",
+    "nombre": "Laguna de Acomulco",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de Acomulco es un cuerpo de agua ubicado en el municipio de Zacatelco en el estado mexicano de Tlaxcala. Cubre un área total de 20 000 metros cuadrados, sus fuentes de aguas nacen de los manantiales adyacentes provenientes de la cuenca del Río Zahuapan.",
+    "lat": 19.19858,
+    "lon": -98.25053,
+    "imagen": "Laguna de Acomulco.jpg",
+    "wiki": "Laguna de Acomulco",
+    "municipio": "Zacatelco",
+    "fuente": "https://www.wikidata.org/wiki/Q47371992"
+   },
+   {
+    "id": "Q125145566",
+    "nombre": "Laguna de Atlangatepec",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de Atlangatepec es un cuerpo de agua natural ubicado en el estado de Tlaxcala, México. Situada en el municipio de Atlangatepec, esta laguna representa un importante ecosistema acuático dentro de la región central de México.",
+    "lat": 19.56342,
+    "lon": -98.18871,
+    "imagen": "Laguna de Atlangatepec 1.jpg",
+    "wiki": "Laguna de Atlangatepec",
+    "municipio": "Atlangatepec",
+    "fuente": "https://www.wikidata.org/wiki/Q125145566"
+   },
+   {
+    "id": "Q27777392",
+    "nombre": "Cerro Tlacoxolo",
+    "tipo": "Montaña",
+    "descripcion": "El cerro Tlacaxolo también conocido simplemente como Tlacoxolo, es una elevación de origen volcánico situada en el municipio de Terrenate, en el noreste del estado mexicano de Tlaxcala.",
+    "lat": 19.525,
+    "lon": -97.93667,
+    "imagen": "Cerro_Tlacaxolo.jpg",
+    "wiki": "Tlacaxolo",
+    "fuente": "https://www.wikidata.org/wiki/Q27777392"
+   },
+   {
+    "id": "Q47004269",
+    "nombre": "Val'Quirico",
+    "tipo": "Destino turístico",
+    "descripcion": "Val'Quirico es una localidad y pueblo artificial ubicado en el municipio de Tetlatlahuca en el estado mexicano de Tlaxcala. Se abrió al público en 2014 y comenzó principalmente como un complejo turístico y residencial.",
+    "lat": 19.19273,
+    "lon": -98.29066,
+    "imagen": "Val'quirico.png",
+    "wiki": "Val'Quirico",
+    "municipio": "Tetlatlahuca",
+    "fuente": "https://www.wikidata.org/wiki/Q47004269"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q6020881",
+    "nombre": "Mole prieto",
+    "tipo": "Platillo",
+    "descripcion": "El 'mole prieto es un mole originario de los municipios de Santa Ana Chiautempan y Contla de Juan Cuamatzi, en el estado de Tlaxcala (México).",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Mole prieto",
+    "fuente": "https://www.wikidata.org/wiki/Q6020881"
+   },
+   {
+    "id": "Q102393836",
+    "nombre": "Tacos de canasta",
+    "tipo": "Platillo",
+    "descripcion": "Los tacos de canasta son una popular preparación culinaria mexicana que consiste en tortillas rellenas de diversos guisados, típicamente papa, chicharrón, frijoles o adobo, y bañadas en aceite o manteca de puerco derretida.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tacos de canasta Coyoacán.jpg",
+    "wiki": "Tacos de canasta",
+    "fuente": "https://www.wikidata.org/wiki/Q102393836"
+   },
+   {
+    "id": "Q110100833",
+    "nombre": "Pan de fiesta",
+    "tipo": "Pan",
+    "descripcion": "El pan de fiesta o pan de feria es un pan dulce originario de los municipios mexicanos de San Juan Huactzinco y San Juan Totolac, y tradicionales en los estados de Puebla y Tlaxcala. Como su nombre indica, se prepara y consume durante las fiestas patronales de cada ciudad de esos estados.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Panes_de_fiesta.jpg",
+    "wiki": "Pan de fiesta",
+    "fuente": "https://www.wikidata.org/wiki/Q110100833"
+   },
+   {
+    "id": "Q3501262",
+    "nombre": "Tlacoyo",
+    "tipo": "Platillo",
+    "descripcion": "Los tlacoyos (también, clacoyos, clacoyito, tlatloyos, tlayoyos o tlacoyos; del náhuatl tlayoyo, empanada de maíz desgranado) son un platillo de la gastronomía típica mexicana es elaborado con masa de maíz en forma oblonga, romboide o triangular que se rellena de pasta de haba, alverjón, asientos de chicharrón o…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tlacoyos en comal.jpg",
+    "wiki": "Tlacoyo",
+    "fuente": "https://www.wikidata.org/wiki/Q3501262"
+   },
+   {
+    "id": "Q5644076",
+    "nombre": "Sopa de tortilla",
+    "tipo": "Sopa",
+    "descripcion": "La sopa de tortilla es una sopa tradicional mexicana elaborada con caldo de tomates molidos, ajo y cebolla, sazonada con epazote, y servida con tiras fritas de tortilla de maíz y chile pasilla, aguacate, queso asadero o fresco, y crema.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tortilla Soup.jpg",
+    "wiki": "Sopa de tortilla",
+    "fuente": "https://www.wikidata.org/wiki/Q5644076"
+   },
+   {
+    "id": "Q5766381",
+    "nombre": "Chileatole",
+    "tipo": "Platillo",
+    "descripcion": "El chileatole puede referirse a dos clases de comidas mexicanas:",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chileatole_en_Veracruz.jpg",
+    "wiki": "Chileatole",
+    "fuente": "https://www.wikidata.org/wiki/Q5766381"
+   },
+   {
+    "id": "Q112317561",
+    "nombre": "Chanclas poblanas",
+    "tipo": "Platillo",
+    "descripcion": "Las chanclas poblanas son un platillo mexicano típico de los estados de Puebla y Tlaxcala, que consiste en un pan bañado en una salsa de chile, con carne molida de res, lechuga, cebolla y aguacate.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chancla poblana.jpg",
+    "wiki": "Chanclas poblanas",
+    "fuente": "https://www.wikidata.org/wiki/Q112317561"
+   },
+   {
+    "id": "Q5794872",
+    "nombre": "Curado",
+    "tipo": "Bebida",
+    "descripcion": "El pulque curado o curado de pulque es una bebida alcohólica preparada a base de pulque, fruta, y algún endulzante como miel o azúcar. Se le tiene como una bebida tradicional mexicana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Curado.jpg",
+    "wiki": "Pulque curado",
+    "fuente": "https://www.wikidata.org/wiki/Q5794872"
+   },
+   {
+    "id": "Q96314848",
+    "nombre": "Texmole",
+    "tipo": "Platillo",
+    "descripcion": "El tesmole o texmole es un guiso típico del centro de México que se elabora con alguna carne, generalmente de pollo, hortalizas y condimentos. Frecuentemente se incluyen chochoyones, que son bolitas de masa.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Tesmole_de_pollo_con_arroz_típico_de_Orizaba.jpg",
+    "wiki": "Tesmole",
+    "fuente": "https://www.wikidata.org/wiki/Q96314848"
+   },
+   {
+    "id": "Q511700",
+    "nombre": "Pulque",
+    "tipo": "Bebida",
+    "descripcion": "El pulque es una bebida fermentada tradicional de México, cuyo origen es prehispánico y que se elabora a partir de la fermentación del mucílago (popularmente conocido en México como aguamiel) del agave o maguey, en particular de tres tipos, llamados por ello maguey pulquero: Agave salmiana, Agave atrovirens y Agave…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pulquebottle.JPG",
+    "wiki": "Pulque",
+    "fuente": "https://www.wikidata.org/wiki/Q511700"
+   },
+   {
+    "id": "Q5067730",
+    "nombre": "Escarabajos comestibles",
+    "tipo": "Platillo",
+    "descripcion": "En la gastronomía mexicana, chahuis, shahuis, shawis, shahues, chagüis, xohues, xahuis, gusanos de los palos, escarabajos rinoceronte, escarabajo de cuernos largos, escarabajos longicornio, gallinas ciegas, titococos, titocos, canalejos o cuauhocuilin (del náhuatl: \"gusanos de la madera\") son nombres que hacen…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chahuis, Tula, Mexico.jpg",
+    "wiki": "Chahui",
+    "fuente": "https://www.wikidata.org/wiki/Q5067730"
+   }
+  ]
+ }
+}

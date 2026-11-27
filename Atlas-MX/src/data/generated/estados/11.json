@@ -1,0 +1,752 @@
+{
+ "cve": "11",
+ "estado": "Guanajuato",
+ "wikidata": "Q46475",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q2651278",
+    "nombre": "Comonfort",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Comonfort, anteriormente Chamacuero, es un Pueblo Mágico mexicano perteneciente a la Zona Metropolitana de Celaya, cabecera del municipio homónimo, ubicado en el estado de Guanajuato. Su nombre hace referencia a Ignacio Comonfort, Presidente de México.",
+    "lat": 20.719,
+    "lon": -100.7605,
+    "imagen": "TEMPLO DE SAN FRANCISCO, COMONFORT,GTO..jpg",
+    "wiki": "Comonfort (Guanajuato)",
+    "municipio": "Comonfort",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2651278"
+   },
+   {
+    "id": "Q17487868",
+    "nombre": "Dolores Hidalgo",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Dolores Hidalgo, oficialmente llamada Dolores Hidalgo Cuna de la Independencia Nacional, es una ciudad mexicana, cabecera del municipio homónimo, ubicada en el estado de Guanajuato.",
+    "lat": 21.15611,
+    "lon": -100.9325,
+    "imagen": "DoloresHidalgo167.jpg",
+    "wiki": "Dolores Hidalgo",
+    "municipio": "Dolores Hidalgo",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q17487868"
+   },
+   {
+    "id": "Q16580697",
+    "nombre": "Jalpa de Cánovas",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Jalpa de Cánovas es una población mexicana situada en el municipio de Purísima del Rincón, Guanajuato. Según el Censo de Población y Vivienda 2020 del INEGI tiene 670 habitantes.",
+    "lat": 20.88,
+    "lon": -101.98167,
+    "imagen": "Templo del Señor de la Misericordia, Jalpa de Canovas, Purísima del Rincón, Guanajuato- Del Señor de la Misericordia Temple (23949944869).jpg",
+    "wiki": "Jalpa de Cánovas",
+    "municipio": "Purísima del Rincón",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q16580697"
+   },
+   {
+    "id": "Q5691954",
+    "nombre": "Mineral de Pozos",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mineral de Pozos, oficialmente San Pedro de los Pozos, es una delegación municipal del estado de Guanajuato, México, que pertenece al municipio de San Luis de la Paz, que en el pasado tuvo un gran auge minero pero cuyo declive ocasionó el despoblamiento de la localidad que presentó signos de abandono.",
+    "lat": 21.22194,
+    "lon": -100.49556,
+    "imagen": "Parroquia San Pedro de los Pozos, Mineral de Pozos, San Luis de la Paz, Guanajuato..JPG",
+    "wiki": "Mineral de Pozos",
+    "municipio": "San Luis de la Paz",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5691954"
+   },
+   {
+    "id": "Q2447267",
+    "nombre": "Salvatierra",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Salvatierra es una localidad del estado mexicano de Guanajuato, cabecera del municipio de Salvatierra.",
+    "lat": 20.215,
+    "lon": -100.87806,
+    "imagen": "Parroquia de Nuestra Santísima Madre de la Luz. Santuario Diocesano en Salvatierra, Gto..jpg",
+    "wiki": "Salvatierra (Guanajuato)",
+    "municipio": "Salvatierra",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2447267"
+   },
+   {
+    "id": "Q20210961",
+    "nombre": "Yuriria",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Yuriria es una localidad mexicana, cabecera del municipio homónimo, situada en el sur del estado de Guanajuato. En 2012 Yuriria fue incluida en el programa turístico Pueblos Mágicos.",
+    "lat": 20.21222,
+    "lon": -101.1275,
+    "imagen": "Ex-convento yuriria 01.JPG",
+    "wiki": "Yuriria",
+    "municipio": "Yuriria",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q20210961"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q1510389",
+    "nombre": "Santuario de Jesús Nazareno de Atotonilco",
+    "tipo": "Santuario",
+    "descripcion": "El Santuario de Jesús Nazareno de Atotonilco es un templo barroco del siglo XVIII situado a 14 kilómetros de San Miguel en el estado mexicano de Guanajuato. La edificación fue fundada por el padre Luis Felipe Neri de Alfaro en el año de 1740, inspirado en el Santo Sepulcro ubicado en Jerusalén.",
+    "lat": 21.00499,
+    "lon": -100.79456,
+    "imagen": "SanctuaryAtotonilco.JPG",
+    "wiki": "Santuario de Jesús Nazareno de Atotonilco",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1510389"
+   },
+   {
+    "id": "Q5697252",
+    "nombre": "Antiguo Real Hospital de San Juan de Dios",
+    "tipo": "Patrimonio de la Humanidad",
+    "descripcion": "El Antiguo Real Hospital de San Juan de Dios es un «grandioso edificio donde se conjugan los estilos barroco, ecléctico y neoclásico» construido en el siglo XVII en Morelia (Michoacán, México).",
+    "lat": 20.91583,
+    "lon": -100.74861,
+    "imagen": "Morelia - hotel los Juaninos).jpg",
+    "wiki": "Antiguo Real Hospital de San Juan de Dios",
+    "municipio": "San Miguel de Allende",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q5697252"
+   },
+   {
+    "id": "Q2920817",
+    "nombre": "Chupícuaro",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Chupícuaro es una zona arqueológica prehispánica, localizada a 7 km de Acámbaro, Guanajuato, México, en centro-norte de Mesoamérica, al sur-occidente del Mesa del Centro, se encuentra en las lomas cercanas al río Lerma y su afluente el río Coroneo o Tigre; actualmente gran parte quedó cubierto por la Presa de Solís.",
+    "lat": 20.02222,
+    "lon": -100.59139,
+    "imagen": null,
+    "wiki": "Zona arqueológica de Chupícuaro",
+    "municipio": "Acámbaro",
+    "fuente": "https://www.wikidata.org/wiki/Q2920817"
+   },
+   {
+    "id": "Q1504007",
+    "nombre": "Plazuelas",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Plazuelas es un yacimiento arqueológico ubicado en la comunidad de San Juan El Alto Plazuelas, a pocos kilómetros al oeste de la ciudad de Pénjamo, Guanajuato, en una de las estribaciones de la Sierra de Pénjamo, ocupando un área de 34 hectáreas. Actualmente la zona arqueológica más importante del estado de Guanajuato.",
+    "lat": 20.40417,
+    "lon": -101.82667,
+    "imagen": "Plazuelas.JPG",
+    "wiki": "Plazuelas",
+    "municipio": "Pénjamo",
+    "fuente": "https://www.wikidata.org/wiki/Q1504007"
+   },
+   {
+    "id": "Q5055568",
+    "nombre": "Cañada de la Virgen",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Cañada de la Virgen es un sitio arqueológico localizado a 16 km al suroeste de la ciudad de San Miguel de Allende, en el estado de Guanajuato, México, sobre una superficie aproximada de 12 hectáreas a lo largo de la cuenca central del río Laja.",
+    "lat": 20.85806,
+    "lon": -100.92806,
+    "imagen": "Cañada de La Virgen Complex A 01.jpg",
+    "wiki": "Cañada de la Virgen",
+    "fuente": "https://www.wikidata.org/wiki/Q5055568"
+   },
+   {
+    "id": "Q5351103",
+    "nombre": "El Cóporo",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Cóporo es un sitio arqueológico en la frontera norte de la cultura mesoamericana, situado a 150 metros de altitud en las faldas occidentales de la Cordillera de Santa Bárbara (Sierra de Santa Bárbara), cerca de la comunidad de San José del Torreón, a unos 15 kilómetros al sur del Municipio de Ocampo del Estado de…",
+    "lat": 21.47778,
+    "lon": -101.45861,
+    "imagen": "Coporo.jpg",
+    "wiki": "El Cóporo",
+    "fuente": "https://www.wikidata.org/wiki/Q5351103"
+   },
+   {
+    "id": "Q7166897",
+    "nombre": "Zona Arqueológica de Peralta",
+    "tipo": "Zona arqueológica",
+    "descripcion": "La Zona arqueológica de Peralta se ubica en las cercanías de la comunidad de Peralta, municipio de Abasolo, Guanajuato, México, a unos cuantos kilómetros al este de la cabecera municipal. Se estima que este asentamiento floreció entre los años 200 y 700 de nuestra era en la ribera del río Lerma.",
+    "lat": 20.47139,
+    "lon": -101.41639,
+    "imagen": "Peralta Main Structure.jpg",
+    "wiki": "Zona Arqueológica de Peralta",
+    "fuente": "https://www.wikidata.org/wiki/Q7166897"
+   },
+   {
+    "id": "Q1889286",
+    "nombre": "Alhóndiga de Granaditas",
+    "tipo": "Museo",
+    "descripcion": "La Alhóndiga de Granaditas es un edificio construido en la ciudad de Guanajuato, en el estado de Guanajuato, México, a finales del siglo XVIII, en tiempos del virreinato, empleado en un principio como almacén y comercio de granos (es decir, una alhóndiga).",
+    "lat": 21.01889,
+    "lon": -101.25806,
+    "imagen": "Alhóndiga de Granaditas - Guanajuato capital, GTO.jpg",
+    "wiki": "Alhóndiga de Granaditas",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q1889286"
+   },
+   {
+    "id": "Q5758358",
+    "nombre": "Catedral Basílica de León",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral Basílica Metropolitana de la Madre Santísima de la Luz es una iglesia de culto católico, ubicada en el centro histórico de la ciudad de León, México. Es la sede metropolitana de la arquidiócesis de León.",
+    "lat": 21.1242,
+    "lon": -101.6819,
+    "imagen": "Catedral5.JPG",
+    "wiki": "Catedral basílica de León",
+    "fuente": "https://www.wikidata.org/wiki/Q5758358"
+   },
+   {
+    "id": "Q5758442",
+    "nombre": "Catedral de Celaya",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de la Inmaculada Concepción de Celaya o Catedral de Celaya es el principal edificio católico en la ciudad de Celaya en México, ocupa actualmente lo que fuera el espacio de una capilla anexa al Templo de San Francisco.",
+    "lat": 20.52242,
+    "lon": -100.81174,
+    "imagen": "Monumentos (Celaya, Guanajuato).jpg",
+    "wiki": "Catedral de Celaya",
+    "municipio": "Celaya",
+    "fuente": "https://www.wikidata.org/wiki/Q5758442"
+   },
+   {
+    "id": "Q5758481",
+    "nombre": "Catedral de Irapuato",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Irapuato, dedicada a Nuestra Señora de la Limpia Concepción de María, se ubica en el centro de la ciudad de Irapuato. Es la Iglesia principal de la diócesis del mismo nombre, sede del obispado.",
+    "lat": 20.675,
+    "lon": -101.34667,
+    "imagen": "Nuestra Señora de la Soledad Irapuato.JPG",
+    "wiki": "Catedral de Irapuato",
+    "fuente": "https://www.wikidata.org/wiki/Q5758481"
+   },
+   {
+    "id": "Q24961095",
+    "nombre": "Basílica Colegiata de Nuestra Señora de Guanajuato",
+    "tipo": "Templo",
+    "descripcion": "La basílica colegiata de Nuestra Señora de Guanajuato es un templo católico ubicado en la ciudad de Guanajuato, México. Se encuentra en la plaza de la Paz, frente a la placa que nombra al centro de Guanajuato como Patrimonio de la Humanidad.",
+    "lat": 21.01647,
+    "lon": -101.25333,
+    "imagen": "Basílica Colegiata de Nuestra Señora de Guanajuato.jpg",
+    "wiki": "Basílica colegiata de Nuestra Señora de Guanajuato",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q24961095"
+   },
+   {
+    "id": "Q16577999",
+    "nombre": "Iglesia de la Valenciana",
+    "tipo": "Templo",
+    "descripcion": "El templo de San Cayetano, también conocido como iglesia de la Valenciana, es un monumento religioso del siglo XVIII situado en la comunidad minera de Valenciana, en Guanajuato, México. Es considerado uno de los máximos exponentes del barroco churrigueresco novohispano.",
+    "lat": 21.0416,
+    "lon": -101.258,
+    "imagen": "Templo de San Cayetano 01.jpg",
+    "wiki": "Iglesia de la Valenciana",
+    "fuente": "https://www.wikidata.org/wiki/Q16577999"
+   },
+   {
+    "id": "Q5688172",
+    "nombre": "Museo Alfredo Dugès",
+    "tipo": "Museo",
+    "descripcion": "El Museo Alfredo Dugès es un museo de historia natural ubicado en la ciudad de Guanajuato, México, nombrado así en honor al naturalista francés radicado en Guanajuato Alfredo Dugès. Se encuentra en la planta baja del Edificio Central de la Universidad de Guanajuato.",
+    "lat": 21.01726,
+    "lon": -101.25304,
+    "imagen": "Museo Alfredo Dugès (UG).jpg",
+    "wiki": "Museo Alfredo Dugès",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q5688172"
+   },
+   {
+    "id": "Q11704266",
+    "nombre": "Teatro Juárez",
+    "tipo": "Teatro",
+    "descripcion": "El Teatro Juárez de Guanajuato es un histórico teatro que data de finales del siglo XIX ubicado en la ciudad mexicana de Guanajuato en el estado del mismo nombre, en México.",
+    "lat": 21.01526,
+    "lon": -101.25304,
+    "imagen": "Guana5.JPG",
+    "wiki": "Teatro Juárez (Guanajuato)",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q11704266"
+   },
+   {
+    "id": "Q10968423",
+    "nombre": "Iglesia de San Agustín",
+    "tipo": "Templo",
+    "descripcion": "El Templo y exconvento de San Juan de Sahagún se encuentra localizado en la ciudad de Salamanca, Guanajuato, México.",
+    "lat": 20.56764,
+    "lon": -101.19835,
+    "imagen": "SanAgustinSalamanca 11.jpg",
+    "wiki": "Templo y exconvento de San Juan de Sahagún (Salamanca)",
+    "municipio": "Salamanca",
+    "fuente": "https://www.wikidata.org/wiki/Q10968423"
+   },
+   {
+    "id": "Q16490490",
+    "nombre": "Castillo de Santa Cecilia",
+    "tipo": "Fortificación",
+    "descripcion": "Castillo Santa Cecilia es un hotel localizado en la ciudad de Guanajuato, en el estado de Guanajuato, México. Manuel Quezada Brandy adquirió los terrenos de la antigua finca de San Javier y comenzó la construcción de un edificio con aspecto de castillo medieval en 1951.",
+    "lat": 21.03,
+    "lon": -101.25889,
+    "imagen": "CastillaSantaCecelia.JPG",
+    "wiki": "Castillo Santa Cecilia",
+    "fuente": "https://www.wikidata.org/wiki/Q16490490"
+   },
+   {
+    "id": "Q6141009",
+    "nombre": "Templo Expiatorio del Sagrado Corazón de Jesús",
+    "tipo": "Templo",
+    "descripcion": "El Templo Expiatorio Diocesano del Sagrado Corazón de Jesús también conocido como El Expiatorio es un templo dedicado al Sagrado Corazón de Jesús, ubicado en León, Guanajuato, en México. Es de estilo neogótico.",
+    "lat": 21.12028,
+    "lon": -101.67471,
+    "imagen": "Fachada lateral del Templo Expiatorio de León, Gto., México 2.JPG",
+    "wiki": "Templo Expiatorio (León)",
+    "municipio": "León",
+    "fuente": "https://www.wikidata.org/wiki/Q6141009"
+   },
+   {
+    "id": "Q30907165",
+    "nombre": "Iglesia de la Compañía",
+    "tipo": "Templo",
+    "descripcion": "El Templo y Antiguo Convento de la Compañía de Jesús, también conocido como Templo de la Compañía o Iglesia de la Compañía, es un conjunto religioso católico localizado en el centro histórico de la ciudad de Guanajuato, México.",
+    "lat": 21.01728,
+    "lon": -101.25234,
+    "imagen": "Templo de la Compañia, Guanajuato, Guanajuato.jpg",
+    "wiki": "Templo y Antiguo Convento de la Compañía de Jesús (Guanajuato)",
+    "fuente": "https://www.wikidata.org/wiki/Q30907165"
+   },
+   {
+    "id": "Q136358951",
+    "nombre": "Hacienda de Santa Ana",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Santa Ana del Conde es una antigua finca agrícola ubicada en la comunidad de Santa Ana del Conde, municipio de León, Guanajuato. Su origen se remonta al siglo XVI y ha sido escenario de episodios relevantes de la Historia de México, como la Independencia y la Revolución mexicana.",
+    "lat": 21.125,
+    "lon": -100.56982,
+    "imagen": "Santa Ana del Conde - León, Gto. (1915).jpg",
+    "wiki": "Hacienda de Santa Ana",
+    "fuente": "https://www.wikidata.org/wiki/Q136358951"
+   },
+   {
+    "id": "Q5864290",
+    "nombre": "Forum Cultural Guanajuato",
+    "tipo": "Museo",
+    "descripcion": "El Forum Cultural Guanajuato es un complejo cultural ubicado en la ciudad mexicana de León, Guanajuato. Es un espacio de entretenimiento, formación artística y cultural con el fin de promover la profesionalización de los artistas regionales, la formación de públicos, así como el turismo cultural.",
+    "lat": 21.11611,
+    "lon": -101.66049,
+    "imagen": "Panorámica del Museo de Arte e Historia de Guanajuato.jpg",
+    "wiki": "Forum Cultural Guanajuato",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q5864290"
+   },
+   {
+    "id": "Q24524288",
+    "nombre": "Museo iconográfico del Quijote",
+    "tipo": "Museo",
+    "descripcion": "El Museo Iconográfico del Quijote es un recinto museístico ubicado en la ciudad de Guanajuato, México.",
+    "lat": 21.01452,
+    "lon": -101.25223,
+    "imagen": "Museo Quijote.JPG",
+    "wiki": "Museo Iconográfico del Quijote",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q24524288"
+   },
+   {
+    "id": "Q24548271",
+    "nombre": "Casa de Miguel Hidalgo, Dolores Hidalgo",
+    "tipo": "Museo",
+    "descripcion": "La Casa de Hidalgo o Museo Histórico Curato de Dolores es una finca ubicada en Dolores Hidalgo, Guanajuato, construida en 1779. Este edificio fue la última casa de Miguel Hidalgo y Costilla, sacerdote que organizó y comenzó la Independencia de México, y última parada antes de dar el grito de Independencia en 1810.",
+    "lat": 21.15637,
+    "lon": -100.93584,
+    "imagen": "Casa de Miguel Hidalgo y Costilla - Dolores Hidalgo, Guanajuato, México.jpg",
+    "wiki": "Casa de Miguel Hidalgo (Dolores Hidalgo)",
+    "municipio": "Dolores Hidalgo",
+    "fuente": "https://www.wikidata.org/wiki/Q24548271"
+   },
+   {
+    "id": "Q24763974",
+    "nombre": "Museo Casa de Allende",
+    "tipo": "Museo",
+    "descripcion": "El Museo Casa Allende es la casa habitación de Ignacio de Allende y Unzaga, que fue un importante caudillo ya que fue líder e iniciador en la Independencia de México. Está ubicado en Cuna de Allende esq.",
+    "lat": 20.91387,
+    "lon": -100.7441,
+    "imagen": "Museo Casa d Allende (2).JPG",
+    "wiki": "Museo Casa de Allende",
+    "fuente": "https://www.wikidata.org/wiki/Q24763974"
+   },
+   {
+    "id": "Q5910933",
+    "nombre": "Iglesia de San Miguel Arcángel",
+    "tipo": "Templo",
+    "descripcion": "La Iglesia San Miguel Arcángel es el templo católico y casa parroquial del municipio de Uriangato, en la zona sur del estado de Guanajuato, en México. También es conocida como \"Parroquia de San Miguel Arcángel\"",
+    "lat": 20.14171,
+    "lon": -101.17797,
+    "imagen": "110Uriangato.jpg",
+    "wiki": "Iglesia de San Miguel Arcángel (Uriangato)",
+    "municipio": "Uriangato",
+    "fuente": "https://www.wikidata.org/wiki/Q5910933"
+   },
+   {
+    "id": "Q136298845",
+    "nombre": "Templo de San Sebastián",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Sebastián es un edificio religioso de la Iglesia católica ubicado en el barrio de San Sebastián, en la ciudad de Guanajuato, México. Forma parte de la Zona de Monumentos Históricos de Guanajuato, declarada Patrimonio de la Humanidad por la UNESCO en 1988.",
+    "lat": 21.0131,
+    "lon": -101.2533,
+    "imagen": "Templo de San Sebastián, Guanajuato Capital, Guanajuato.jpg",
+    "wiki": "Templo de San Sebastián (Guanajuato Capital)",
+    "fuente": "https://www.wikidata.org/wiki/Q136298845"
+   },
+   {
+    "id": "Q136333006",
+    "nombre": "Capilla del Señor de Gutiérrez",
+    "tipo": "Templo",
+    "descripcion": "La Capilla del Señor de Gutiérrez es un templo católico localizado en el centro histórico de la ciudad de Guanajuato, México. Forma parte del patrimonio religioso incluido en la Zona de Monumentos Históricos de Guanajuato, declarada en 1988 como Patrimonio de la Humanidad por la UNESCO.",
+    "lat": 21.01059,
+    "lon": -101.24919,
+    "imagen": "Capilla del Señor de Gutiérrez, Guanajuato Capital, Guanajuato - Fachada 2.jpg",
+    "wiki": "Capilla del Señor de Gutiérrez",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q136333006"
+   },
+   {
+    "id": "Q136399068",
+    "nombre": "Capilla de la Virgen del Rosario",
+    "tipo": "Templo",
+    "descripcion": "La Capilla de la Virgen del Rosario (Los Martínez, Guanajuato) es un templo católico ubicado en el Rancho Los Martínez, al suroriente de la ciudad de Guanajuato, en el estado de Guanajuato, México.",
+    "lat": 21.0639,
+    "lon": -101.1369,
+    "imagen": "Iglesia de la Virgen del Rosario - Rancho Los Martínez, Guanajuato, Gto.jpg",
+    "wiki": "Capilla de la Virgen del Rosario (Los Martínez, Guanajuato)",
+    "fuente": "https://www.wikidata.org/wiki/Q136399068"
+   },
+   {
+    "id": "Q6063340",
+    "nombre": "Parroquia Antigua",
+    "tipo": "Templo",
+    "descripcion": "La Rectoría de la Divina Providencia, más conocida como la Parroquia Antigua, es un edificio católico ubicado en el centro histórico de la ciudad de Salamanca, Guanajuato, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 20.57014,
+    "lon": -101.20102,
+    "imagen": "Parroquia Antigua (Salamanca) 002.jpg",
+    "wiki": "Parroquia Antigua (Salamanca)",
+    "municipio": "Salamanca",
+    "fuente": "https://www.wikidata.org/wiki/Q6063340"
+   },
+   {
+    "id": "Q6141077",
+    "nombre": "Templo del señor del Hospital",
+    "tipo": "Templo",
+    "descripcion": "La Parroquia del Señor del Hospital y San Bartolomé Apóstol es un edificio católico ubicado en el Jardín Constitución de la ciudad de Salamanca, Guanajuato, México. El templo es catalogado como monumento histórico por el Instituto Nacional de Antropología e Historia (INAH) para su preservación.",
+    "lat": 20.56843,
+    "lon": -101.20034,
+    "imagen": "SeñorHospitalSalamanca003.jpg",
+    "wiki": "Parroquia del Señor del Hospital (Salamanca)",
+    "municipio": "Salamanca",
+    "fuente": "https://www.wikidata.org/wiki/Q6141077"
+   },
+   {
+    "id": "Q136408374",
+    "nombre": "Hacienda de Trancas",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de Trancas es un conjunto histórico ubicado en el municipio de Dolores Hidalgo, Guanajuato, México. Sus orígenes se remontan a una merced de tierras concedida en 1567 para la cría de ganado menor, lo que la convierte en una de las haciendas más antiguas de la región.",
+    "lat": 21.22725,
+    "lon": -101.02945,
+    "imagen": "Hacienda de Trancas (Dolores Hidalgo) I.jpg",
+    "wiki": "Hacienda de Trancas",
+    "municipio": "Dolores Hidalgo",
+    "fuente": "https://www.wikidata.org/wiki/Q136408374"
+   },
+   {
+    "id": "Q136410055",
+    "nombre": "Hacienda Rincón de Abasolo",
+    "tipo": "Hacienda",
+    "descripcion": "La hacienda Rincón de Abasolo es un conjunto histórico ubicado en el municipio de Dolores Hidalgo, Guanajuato, México. Su origen se remonta a la época virreinal y está vinculada a la familia del insurgente José Mariano Abasolo, de donde proviene su nombre.",
+    "lat": 21.16631,
+    "lon": -100.94027,
+    "imagen": "Hacienda Rincón de Abasolo, Dolores Hidalgo, Guanajuato - Principal 1.jpg",
+    "wiki": "Hacienda Rincón de Abasolo",
+    "municipio": "Dolores Hidalgo",
+    "fuente": "https://www.wikidata.org/wiki/Q136410055"
+   },
+   {
+    "id": "Q136512396",
+    "nombre": "Hacienda de la Erre",
+    "tipo": "Hacienda",
+    "descripcion": "La Hacienda de La Erre es una antigua hacienda agrícola ubicada en el municipio de Dolores Hidalgo, en el estado de Guanajuato, México.",
+    "lat": 21.15033,
+    "lon": -100.94136,
+    "imagen": "Hacienda de La Erre - Dolores Hidalgo, Guanajuato I.jpg",
+    "wiki": "Hacienda de la Erre",
+    "municipio": "Dolores Hidalgo",
+    "fuente": "https://www.wikidata.org/wiki/Q136512396"
+   },
+   {
+    "id": "Q25409740",
+    "nombre": "Museo Histórico Casa de Hidalgo. La Francia Chiquita",
+    "tipo": "Museo",
+    "descripcion": "La Francia Chiquita o Museo Histórico Casa de Hidalgo es un recinto museográfico ubicado en San Felipe, Guanajuato. Perteneciente a la arquitectura civil del siglo XVIII.",
+    "lat": 21.47838,
+    "lon": -101.21705,
+    "imagen": "Casa de Miguel Hidalgo - La Francia Chiquita - Interior - San Felipe, Guanajuato.jpg",
+    "wiki": "Casa de Miguel Hidalgo (La Francia Chiquita)",
+    "municipio": "San Felipe",
+    "fuente": "https://www.wikidata.org/wiki/Q25409740"
+   },
+   {
+    "id": "Q24532864",
+    "nombre": "Museo Regional de Guanajuato Alhóndiga de Granaditas",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Guanajuato Alhóndiga de Granaditas es un recinto que fue construido entre los años 1796 y 1809, bajo la planeación del señor José Alejandro Durán y Villaseñor.",
+    "lat": 21.01886,
+    "lon": -101.25755,
+    "imagen": "La Alhóndiga de Granaditas y Museo 1.JPG",
+    "wiki": "Museo Regional de Guanajuato Alhóndiga de Granaditas",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q24532864"
+   },
+   {
+    "id": "Q24553355",
+    "nombre": "Museo Casa Diego Rivera",
+    "tipo": "Museo",
+    "descripcion": "El Museo Casa Diego Rivera es un museo de México que se encuentra en Ciudad de Guanajuato, Guanajuato y fue fundado en la casa natal del artista Diego Rivera (1886 - 1957), en septiembre de 1975 con el objetivo de difundir obras del pintor, destacado y reconocido muralista mexicano famoso por plasmar su ideal…",
+    "lat": 21.0183,
+    "lon": -101.25527,
+    "imagen": "Museo Casa Diego Rivera. Gto. Julio 2012.JPG",
+    "wiki": "Museo Casa Diego Rivera (Guanajuato)",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q24553355"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q753891",
+    "nombre": "San Miguel de Allende",
+    "tipo": "Ciudad",
+    "descripcion": "San Miguel de Allende es una ciudad del estado mexicano de Guanajuato. Es parte de la macrorregión del Bajío.",
+    "lat": 20.91528,
+    "lon": -100.74389,
+    "imagen": "San Miguel de Allende sky.jpg",
+    "wiki": "San Miguel de Allende",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q753891"
+   },
+   {
+    "id": "Q189128",
+    "nombre": "León de Los Aldama",
+    "tipo": "Ciudad",
+    "descripcion": "León de los Aldama, conocida simplemente como León, es una ciudad mexicana, cabecera del municipio homónimo, ubicada en el estado de Guanajuato. En 2020 la ciudad de León tenía 1 579 803",
+    "lat": 21.12194,
+    "lon": -101.68333,
+    "imagen": "León montage.jpg",
+    "wiki": "León de Los Aldama",
+    "municipio": "León",
+    "fuente": "https://www.wikidata.org/wiki/Q189128"
+   },
+   {
+    "id": "Q61306",
+    "nombre": "Guanajuato",
+    "tipo": "Ciudad",
+    "descripcion": "Guanajuato —del purépecha: Kuanasïuatu ‘Lugar montuoso de ranas’— es una ciudad mexicana, capital del estado del mismo nombre y cabecera del municipio de Guanajuato. Está en el centro norte de México.",
+    "lat": 21.01778,
+    "lon": -101.25667,
+    "imagen": "Guanajuato30 guanajuato.jpg",
+    "wiki": "Guanajuato (Guanajuato)",
+    "municipio": "Guanajuato",
+    "fuente": "https://www.wikidata.org/wiki/Q61306"
+   },
+   {
+    "id": "Q816845",
+    "nombre": "Irapuato",
+    "tipo": "Ciudad",
+    "descripcion": "Irapuato es una ciudad mexicana del estado de Guanajuato, en el centro de la entidad y de la región del Bajío. Es la cabecera del municipio homónimo.",
+    "lat": 20.67417,
+    "lon": -101.3475,
+    "imagen": "IrapuatoCentroHistorico.jpg",
+    "wiki": "Irapuato",
+    "municipio": "Irapuato",
+    "fuente": "https://www.wikidata.org/wiki/Q816845"
+   },
+   {
+    "id": "Q580649",
+    "nombre": "Celaya",
+    "tipo": "Ciudad",
+    "descripcion": "Celaya es una ciudad mexicana en el estado de Guanajuato y cabecera del municipio homónimo. Fue fundada el 12 de octubre de 1570 con el nombre de Villa de la Purisíma Concepción de Zalaya.",
+    "lat": 20.52889,
+    "lon": -100.815,
+    "imagen": "Templo de la Virgen del Carmen, Celaya, Guanajuato, México .jpg",
+    "wiki": "Celaya",
+    "municipio": "Celaya",
+    "fuente": "https://www.wikidata.org/wiki/Q580649"
+   },
+   {
+    "id": "Q1801321",
+    "nombre": "Salamanca",
+    "tipo": "Ciudad",
+    "descripcion": "Salamanca es una ciudad y cabecera del municipio homónimo, en el estado mexicano de Guanajuato. En 2020 la ciudad contaba con 160 682 habitantes, lo que representa el 58.77 % del total municipal.",
+    "lat": 20.56903,
+    "lon": -101.19961,
+    "imagen": "JardinSalamanca.jpg",
+    "wiki": "Salamanca (Guanajuato)",
+    "municipio": "Salamanca",
+    "fuente": "https://www.wikidata.org/wiki/Q1801321"
+   },
+   {
+    "id": "Q947689",
+    "nombre": "Acámbaro",
+    "tipo": "Ciudad",
+    "descripcion": "Acámbaro es una ciudad mexicana ubicada en el estado de Guanajuato, cabecera del municipio homónimo.",
+    "lat": 20.0325,
+    "lon": -100.72139,
+    "imagen": "Acambaro027.jpg",
+    "wiki": "Acámbaro",
+    "municipio": "Acámbaro",
+    "fuente": "https://www.wikidata.org/wiki/Q947689"
+   },
+   {
+    "id": "Q1962063",
+    "nombre": "Silao",
+    "tipo": "Ciudad",
+    "descripcion": "Silao de la Victoria es una ciudad mexicana en el estado de Guanajuato y cabecera municipal del municipio homónimo. Se encuentra alrededor de 30 kilómetros de León, la ciudad más poblada del estado y pertenece al corredor industrial del Bajío.",
+    "lat": 20.94361,
+    "lon": -101.42667,
+    "imagen": "Parroquia de Santiago Apóstol - Silao, Guanajuato.jpg",
+    "wiki": "Silao",
+    "municipio": "Silao de la Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q1962063"
+   },
+   {
+    "id": "Q523302",
+    "nombre": "El Bajío",
+    "tipo": "Sierra",
+    "descripcion": "El Bajío es una región geográfica, histórica, económica y cultural del Occidente de México que abarca los valles y llanuras de la cuenca del río Lerma-Chapala, en los estados de Guanajuato, Querétaro, Michoacán (Franja Norte) y Jalisco (Altos y Oriente), aunque se suele tomar en cuenta a Aguascalientes y a partes de…",
+    "lat": 20.47333,
+    "lon": -101.20056,
+    "imagen": "El Bajío.jpg",
+    "wiki": "Bajío (México)",
+    "fuente": "https://www.wikidata.org/wiki/Q523302"
+   },
+   {
+    "id": "Q823391",
+    "nombre": "Cerro del Cubilete",
+    "tipo": "Montaña",
+    "descripcion": "El cerro del Cubilete es una montaña en el municipio de Silao, en el estado de Guanajuato que la dueña donó para la instalación en la cima del monumental Cristo Rey de la Montaña, mismo que por ser bendecido en 1923 la primera piedra por el nuncio papal, fue expulsado por Álvaro Obregón y fue bombardeado y dinamitado…",
+    "lat": 21.012,
+    "lon": -101.369,
+    "imagen": "Cristo Rey en el Cerro del Cubilete - Silao, Guanajuato, México.jpg",
+    "wiki": "Cerro del Cubilete",
+    "municipio": "Silao de la Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q823391"
+   },
+   {
+    "id": "Q8344246",
+    "nombre": "Cerro Culiacán",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro Culiacán, también llamado Cerro El Culiacán, Cerro del Culiacán, Cerro de Culiacán o Cerro de la Santa Cruz de Culiacán, es una montaña localizada en el estado de Guanajuato, entre los municipios de Cortazar, Jaral del Progreso y Salvatierra.",
+    "lat": 20.339,
+    "lon": -100.9704,
+    "imagen": "Cerro Culiacán from Jaral del Progreso.jpg",
+    "wiki": "Cerro Culiacán",
+    "fuente": "https://www.wikidata.org/wiki/Q8344246"
+   },
+   {
+    "id": "Q9020037",
+    "nombre": "Laguna de Yuriria",
+    "tipo": "Lago",
+    "descripcion": "La Laguna de Yuriria, es un humedal artificial, localizado en el municipio de Yuriria del Estado de Guanajuato (México). Fue construida por el fraile agustino Diego de Chávez y Alvarado en el año de 1548, con el objetivo de tener un vaso regulador del río Lerma.Tiene una superficie de 80 km² y una capacidad de 188 hm³.",
+    "lat": 20.2475,
+    "lon": -101.14944,
+    "imagen": "Lago Yuriria, Guanajuato- Yuriria Lake, Guanajuato (24295357066).jpg",
+    "wiki": "Laguna de Yuriria",
+    "municipio": "Yuriria",
+    "fuente": "https://www.wikidata.org/wiki/Q9020037"
+   },
+   {
+    "id": "Q9077132",
+    "nombre": "Sierra de Pénjamo",
+    "tipo": "Sierra",
+    "descripcion": "La sierra de Pénjamo se extiende por las localidades mexicanas de Pénjamo principalmente, Manuel Doblado y Cuerámaro Guanajuato, sus altitudes varían de los 1700 hasta 2500 metros sobre el nivel del mar.",
+    "lat": 20.53998,
+    "lon": -101.67708,
+    "imagen": null,
+    "wiki": "Sierra de Pénjamo",
+    "fuente": "https://www.wikidata.org/wiki/Q9077132"
+   },
+   {
+    "id": "Q136333211",
+    "nombre": "Presa de la Olla",
+    "tipo": "Lago",
+    "descripcion": "La Presa de la Olla es una obra hidráulica construida en el siglo XVIII en la ciudad de Guanajuato, México. Forma parte de las infraestructuras históricas que abastecieron de agua a la capital minera y se localiza en la zona conocida como paseo de la Presa, dentro de la Zona de Monumentos Históricos de Guanajuato.",
+    "lat": 21.00156,
+    "lon": -101.24052,
+    "imagen": "Presa de la Olla, Guanajuato Capital, Guanajuato - Atalaya.jpg",
+    "wiki": "Presa de la Olla",
+    "fuente": "https://www.wikidata.org/wiki/Q136333211"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q5017984",
+    "nombre": "Cajeta de Celaya",
+    "tipo": "Dulce",
+    "descripcion": "La cajeta de Celaya, también conocida como dulce de cajeta o simplemente cajeta, es un dulce típico mexicano, originario de la ciudad homónima, en Guanajuato, México. Es muy popular en las gastronomías en México y algunos países de Centroamérica.",
+    "lat": null,
+    "lon": null,
+    "imagen": "MoscosLiquorShop 02.JPG",
+    "wiki": "Cajeta de Celaya",
+    "fuente": "https://www.wikidata.org/wiki/Q5017984"
+   },
+   {
+    "id": "Q2890326",
+    "nombre": "Fresas con crema",
+    "tipo": "Dulce",
+    "descripcion": "Las fresas con nata o crema son un postre y una merienda de origen inglés, que incluye las citadas frutas que se sirven troceadas y bañadas en nata montada con azúcar o bien con nata montada y azúcar moreno salpicada al gusto.[cita requerida]",
+    "lat": null,
+    "lon": null,
+    "imagen": "Fresas_con_crema.jpg",
+    "wiki": "Fresas con crema (postre)",
+    "fuente": "https://www.wikidata.org/wiki/Q2890326"
+   },
+   {
+    "id": "Q5069084",
+    "nombre": "Chalupa",
+    "tipo": "Platillo",
+    "descripcion": "Las chalupasson un tipo de antojito mexicano originario del estado de Hidalgo, que se consume especialmente los fines de semana por las noches o como comida típica durante la celebración del día de la Independencia Mexicana, el 16 de septiembre.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chalupa (comida).jpg",
+    "wiki": "Chalupa (comida)",
+    "fuente": "https://www.wikidata.org/wiki/Q5069084"
+   },
+   {
+    "id": "Q105840963",
+    "nombre": "Queso de tuna",
+    "tipo": "Queso",
+    "descripcion": "El queso de tuna es un producto dulce típico mexicano elaborado a partir de reducir jugo de tuna cardona, el fruto del nopal cardón. A pesar de su nombre, no tiene nada que ver con el queso lácteo.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Queso de tuna",
+    "fuente": "https://www.wikidata.org/wiki/Q105840963"
+   },
+   {
+    "id": "Q5044066",
+    "nombre": "Carnitas",
+    "tipo": "Platillo",
+    "descripcion": "En México, se le llama carnitas a la carne de puerco de diferentes porciones, incluyendo carne que son fritas en manteca de puerco. Para su preparación, se emplean enormes ollas de cobre, o cazos de acero inoxidable.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Carnitas in Mexico.jpg",
+    "wiki": "Carnitas",
+    "fuente": "https://www.wikidata.org/wiki/Q5044066"
+   }
+  ]
+ }
+}

@@ -1,0 +1,666 @@
+{
+ "cve": "03",
+ "estado": "Baja California Sur",
+ "wikidata": "Q46508",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q1020758",
+    "nombre": "Loreto",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Loreto es una ciudad mexicana del estado de Baja California Sur. Es cabecera del municipio homónimo y se ubica a 354 km al norte de La Paz, capital del estado.",
+    "lat": 26.01217,
+    "lon": -111.34888,
+    "imagen": "Misión Nuestra Señora de Loreto.jpg",
+    "wiki": "Loreto (Baja California Sur)",
+    "municipio": "Loreto",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1020758"
+   },
+   {
+    "id": "Q1640231",
+    "nombre": "Santa Rosalía",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Santa Rosalía es una pequeña ciudad mexicana localizada en la parte central de la península de Baja California, frente al Golfo de California. Es la cabecera del municipio de Mulegé, Baja California Sur y se localiza al norte del estado.",
+    "lat": 27.33694,
+    "lon": -112.26833,
+    "imagen": "View over Harbor from Mesa - Santa Rosalia - Baja California Sur - Mexico (23777896820) (2).jpg",
+    "wiki": "Santa Rosalía (Baja California Sur)",
+    "municipio": "Mulegé",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1640231"
+   },
+   {
+    "id": "Q1658489",
+    "nombre": "Todos Santos",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Todos Santos es una población mexicana ubicada en el municipio de La Paz, en el estado mexicano de Baja California Sur, a unos 3 kilómetros del océano Pacífico y por el que cruza exactamente el trópico de Cáncer.",
+    "lat": 23.44688,
+    "lon": -110.22308,
+    "imagen": "Todos_Santos_(50944403246).jpg",
+    "wiki": "Todos Santos (Baja California Sur)",
+    "municipio": "La Paz",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q1658489"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q552005",
+    "nombre": "Pinturas rupestres de la Sierra de San Francisco",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Las pinturas rupestres de la Sierra de San Francisco constituyen un conjunto de manifestaciones de arte rupestre compuesto principalmente por pinturas rupestres y petroglifos, situado en el estado de Baja California Sur, México.",
+    "lat": 27.65556,
+    "lon": -112.91611,
+    "imagen": "Baja California Sur.jpg",
+    "wiki": "Pinturas rupestres de la Sierra de San Francisco",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q552005"
+   },
+   {
+    "id": "Q7258551",
+    "nombre": "Puerto Cortés",
+    "tipo": "Zona arqueológica",
+    "descripcion": "Puerto Cortés es una pequeña localidad pesquera y portuaria en el Océano Pacífico que se localiza en el estado mexicano de Baja California Sur y forma parte del municipio de Comondú.",
+    "lat": 24.47778,
+    "lon": -111.82194,
+    "imagen": null,
+    "wiki": "Puerto Cortés (Baja California Sur)",
+    "municipio": "Comondú",
+    "fuente": "https://www.wikidata.org/wiki/Q7258551"
+   },
+   {
+    "id": "Q6407466",
+    "nombre": "Catedral de Nuestra Señora de La Paz",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de La Paz es la sede de la diócesis de La Paz en Baja California Sur. Se ubica en el centro de la ciudad de La Paz, Baja California Sur.",
+    "lat": 24.16167,
+    "lon": -110.31278,
+    "imagen": "La Paz Cathedral.jpg",
+    "wiki": "Catedral de La Paz (México)",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q6407466"
+   },
+   {
+    "id": "Q6875731",
+    "nombre": "Misión de San Ignacio de Kadakaamán",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Ignacio Kadakaamán es una antigua misión fundada por la Compañía de Jesús en 1728, en la región habitada por los cochimíes de Kadakaamán, en la actual Baja California Sur, México. Su fundación estuvo a cargo del misionero jesuita Juan Bautista Luyando.",
+    "lat": 27.28387,
+    "lon": -112.89851,
+    "imagen": "Misión de San Ignacio Kadakaaman.JPG",
+    "wiki": "Misión de San Ignacio de Kadakaamán",
+    "fuente": "https://www.wikidata.org/wiki/Q6875731"
+   },
+   {
+    "id": "Q567822",
+    "nombre": "Misión San Francisco Javier de Viggé-Biaundó",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Francisco Javier de Viggé Biaundó fue fundada por el padre misionero de la orden de los jesuitas Francisco María Piccolo en marzo de 1699.se encuentra a 35 km al sur de la ciudad de Loreto, Baja California Sur.",
+    "lat": 25.86056,
+    "lon": -111.54361,
+    "imagen": "Misión de San Javier.jpg",
+    "wiki": "Misión San Francisco Javier de Viggé-Biaundó",
+    "fuente": "https://www.wikidata.org/wiki/Q567822"
+   },
+   {
+    "id": "Q6875757",
+    "nombre": "Misión de Loreto Conchó",
+    "tipo": "Misión",
+    "descripcion": "Nuestra Señora de Loreto Conchó es una misión jesuítica considerada Cabeza y Madre de las Misiones de la Alta y Baja California. Fue fundada por el jesuita Juan María Salvatierra, en el territorio monguí, en la región que los indígenas llamaban Conchó, el día 25 de octubre de 1697.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Misión de Ntra. Sra. de Loreto.JPG",
+    "wiki": "Misión Nuestra Señora de Loreto Conchó",
+    "fuente": "https://www.wikidata.org/wiki/Q6875757"
+   },
+   {
+    "id": "Q2835983",
+    "nombre": "Misión de La Paz de Airapí",
+    "tipo": "Misión",
+    "descripcion": "La misión de Nuestra Señora del Pilar de la Paz de Airapí fue un establecimiento jesuita que estuvo ubicado en la actual ciudad de La Paz (Baja California Sur), en México, entre 1720, año en que fue establecida y 1749, año en que fue abandonada.",
+    "lat": 24.16167,
+    "lon": -110.31302,
+    "imagen": "Catedral de Nuestra Señora de La Paz (24076058191).jpg",
+    "wiki": "Misión Nuestra Señora del Pilar de La Paz Airapí",
+    "fuente": "https://www.wikidata.org/wiki/Q2835983"
+   },
+   {
+    "id": "Q6018551",
+    "nombre": "Misión de Santiago de los Coras Aiñiní",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Santiago de los Coras Aiñiní fue fundada por el jesuita italiano Ignacio María Nápoli en 1724, con la financiación del Marqués de Villapuente de la Peña, en el asentamiento que los nativos pericúes llamaban Aiñiní, a unos 40 kilómetros al norte de San José del Cabo, en Baja California Sur (México).",
+    "lat": 23.47563,
+    "lon": -109.71743,
+    "imagen": "Santiago - Mission Santiago de Los Coras - 1.jpg",
+    "wiki": "Misión de Santiago de los Coras Aiñiní",
+    "municipio": "Los Cabos",
+    "fuente": "https://www.wikidata.org/wiki/Q6018551"
+   },
+   {
+    "id": "Q6018549",
+    "nombre": "Misión de San José del Cabo Añuití",
+    "tipo": "Misión",
+    "descripcion": "La Misión de San José del Cabo Añuití fue construida por el padre misionero Nicolás Tamaral y el visitador José de Echeverría (1730), y fue la más sureña de las misiones jesuíticas que se establecieron durante el período colonial de la historia de México en el territorio de la Vieja California —correspondiente al…",
+    "lat": 23.0621,
+    "lon": -109.6956,
+    "imagen": "Misión de San José del Cabo Añuití (8773094194).jpg",
+    "wiki": "Misión Estero de las Palmas de San José del Cabo Añuití",
+    "municipio": "Los Cabos",
+    "fuente": "https://www.wikidata.org/wiki/Q6018549"
+   },
+   {
+    "id": "Q6875734",
+    "nombre": "Misión de San José de Comondú",
+    "tipo": "Misión",
+    "descripcion": "La misión de San José de Comondú es un sitio histórico y era una misión católica, localizada a 50 km al oeste de la misión de Nuestra Señora de Loreto, fundada en 1708 por los jesuitas y se encuentra en la localidad de San José de Comondú en el municipio de Comondú, Baja California Sur, México, con la intención de…",
+    "lat": 26.05961,
+    "lon": -111.82234,
+    "imagen": "Mission de San José.jpg",
+    "wiki": "Misión de San José de Comondú",
+    "fuente": "https://www.wikidata.org/wiki/Q6875734"
+   },
+   {
+    "id": "Q6875748",
+    "nombre": "Misión de Todos Santos",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Santa Rosa de las Palmas, está ubicada en el pueblo de Todos Santos, a 2 kilómetros del océano Pacífico, a 80 km al oeste de La Paz, Baja California Sur, México, y por él cruza el trópico de Cáncer",
+    "lat": 23.46036,
+    "lon": -110.21897,
+    "imagen": "Church mission todos santos (40693205371).jpg",
+    "wiki": "Misión Santa Rosa de las Palmas",
+    "fuente": "https://www.wikidata.org/wiki/Q6875748"
+   },
+   {
+    "id": "Q6875751",
+    "nombre": "Misión de Mulegé",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Santa Rosalía de Mulegé es una antigua misión jesuita situada en Mulegé, Baja California Sur, México. Fue fundada en 1705 por el misionero jesuita Juan Manuel Basaldúa.",
+    "lat": 26.88536,
+    "lon": -111.98583,
+    "imagen": "Misión de Santa Rosalía Mulegé.jpg",
+    "wiki": "Misión Santa Rosalía de Mulegé",
+    "fuente": "https://www.wikidata.org/wiki/Q6875751"
+   },
+   {
+    "id": "Q11693052",
+    "nombre": "Misión de San Luis Gonzaga de Chiriyaquí",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Luis Gonzaga de Chiriyaquí fue establecida en 1721 por el misionero jesuita Padre Clemente Guillén de Castro a aproximadamente a 50 km a sureste de Cd. Constitución, en el sitio que los indígenas llamaban Chiriyaquí, topónimo guaycura de significado desconocido.",
+    "lat": 24.90797,
+    "lon": -111.29083,
+    "imagen": "Baja California Sur (21323879725).jpg",
+    "wiki": "Misión de San Luis Gonzaga de Chiriyaquí",
+    "fuente": "https://www.wikidata.org/wiki/Q11693052"
+   },
+   {
+    "id": "Q11693047",
+    "nombre": "Misión de Huasinapí",
+    "tipo": "Misión",
+    "descripcion": "La misión Nuestra Señora de Guadalupe de Huasinapi fue fundada por el jesuita Everardo Helen con la financiación del marqués de Villapuente de la Peña (España) el día 12 de diciembre (día dedicado a la Virgen de Guadalupe) de 1720 en el asentamiento cochimí de la Sierra de la Giganta, a unos 40 km al sur de Mulegé…",
+    "lat": 26.91931,
+    "lon": -112.40572,
+    "imagen": null,
+    "wiki": "Misión Nuestra Señora de Guadalupe de Huasinapi",
+    "fuente": "https://www.wikidata.org/wiki/Q11693047"
+   },
+   {
+    "id": "Q9033646",
+    "nombre": "Misión de Malibat y Ligüí",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Juan Bautista Malibat y Ligüí, fue fundada por los sacerdotes jesuitas Juan María de Salvatierra y Juan de Ugarte en 1705.",
+    "lat": 25.73944,
+    "lon": -111.26417,
+    "imagen": null,
+    "wiki": "Misión San Juan Bautista Malibat",
+    "fuente": "https://www.wikidata.org/wiki/Q9033646"
+   },
+   {
+    "id": "Q6875723",
+    "nombre": "Misión de San Bruno",
+    "tipo": "Misión",
+    "descripcion": "La misión de San Bruno fue el primer asiento misional fundado en la península de Baja California. Fue fundada el 6 de octubre de 1683 por los padres jesuitas Eusebio Francisco Kino, Matías Goñi y Juan Bautista Copart, a unos 20 km al norte de la hoy ciudad de Loreto (Baja California Sur).",
+    "lat": 26.2325,
+    "lon": -111.39806,
+    "imagen": null,
+    "wiki": "Misión de San Bruno",
+    "fuente": "https://www.wikidata.org/wiki/Q6875723"
+   },
+   {
+    "id": "Q6875710",
+    "nombre": "Misión de Cadegomó",
+    "tipo": "Misión",
+    "descripcion": "La misión de Nuestra Señora de la Purísima Concepción de Cadegomó fue un establecimiento religioso fundado por vez primera en 1712 por el misionero el jesuita Francisco María Píccolo en la península de California en el siglo XVIII.",
+    "lat": 26.19044,
+    "lon": -112.07294,
+    "imagen": null,
+    "wiki": "Misión La Purísima Concepción de Cadegomó",
+    "fuente": "https://www.wikidata.org/wiki/Q6875710"
+   },
+   {
+    "id": "Q953407",
+    "nombre": "Misión de Dolores de Chillá",
+    "tipo": "Misión",
+    "descripcion": "La Misión de Nuestra Señora de los Dolores de Chillá o de los Dolores del Sur fue fundada en agosto de 1721 a orillas del mar por el misionero jesuita Clemente Guillén de Castro, para su construcción fue dotada por el Fondo Piadoso de las Californias.",
+    "lat": 24.88723,
+    "lon": -111.0305,
+    "imagen": null,
+    "wiki": "Misión Nuestra Señora de los Dolores del Sur Chillá",
+    "fuente": "https://www.wikidata.org/wiki/Q953407"
+   },
+   {
+    "id": "Q24528182",
+    "nombre": "Museo de Historia Natural de Cabo San Lucas",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Historia Natural de Cabo San Lucas o Museo de las Californias es un museo de historia natural ubicado en el Cabo San Lucas, en México. Fue inaugurado el 9 de octubre de 2006.",
+    "lat": 22.88292,
+    "lon": -109.91467,
+    "imagen": "Museo_de_Historia_Natural_de_Cabo_San_Lucas_(Noviembre_2024).jpg",
+    "wiki": "Museo de Historia Natural de Cabo San Lucas",
+    "municipio": "Los Cabos",
+    "fuente": "https://www.wikidata.org/wiki/Q24528182"
+   },
+   {
+    "id": "Q971750",
+    "nombre": "Misión de San Juan Bautista Londó",
+    "tipo": "Misión",
+    "descripcion": "La Misión o \"visita\" de San Juan Bautista Londó también conocida como Londó de San Juan Bautista y como San Juan de Londó, fue fundada por el sacerdote jesuita Eusebio Francisco Kino durante su corta estancia en la península de Baja California, el establecimiento misional estuvo ubicado a unas pocas leguas al norte…",
+    "lat": 26.22522,
+    "lon": -111.47347,
+    "imagen": null,
+    "wiki": "Visita de San Juan Bautista Londó",
+    "fuente": "https://www.wikidata.org/wiki/Q971750"
+   },
+   {
+    "id": "Q24532892",
+    "nombre": "Museo Regional de Antropología e Historia de Baja California Sur",
+    "tipo": "Museo",
+    "descripcion": "El Museo Regional de Baja California Sur es un recinto que tiene el objetivo tanto de exhibir, como de preservar el patrimonio cultural de la región. Este se inauguró en marzo de 1981 y se encuentra en la calle Ignacio M. Altamirano en la Paz, Baja California Sur.",
+    "lat": 24.15956,
+    "lon": -110.30881,
+    "imagen": "Museo Regional de Antropología e Historia de Baja California Sur 2.jpg",
+    "wiki": "Museo Regional de Baja California Sur",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q24532892"
+   },
+   {
+    "id": "Q125507536",
+    "nombre": "Museo de la Ballena y Ciencias del Mar",
+    "tipo": "Museo",
+    "descripcion": "El Museo de la Ballena y las Ciencias del Mar es un museo ubicado en la La Paz, Baja California Sur que está dedicado a la difusión, promoción, estudio y conservación de los cetáceos y el ambiente que habitan.",
+    "lat": 24.14852,
+    "lon": -110.31721,
+    "imagen": "Museo de la ballena y ciencias del mar 02.jpg",
+    "wiki": "Museo de la Ballena y Ciencias Del Mar",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q125507536"
+   },
+   {
+    "id": "Q125815177",
+    "nombre": "Museo de Arte de Baja California Sur",
+    "tipo": "Museo",
+    "descripcion": "El Museo de Arte de Baja California Sur (MUABCS) es un museo ubicado en la La Paz, Baja California Sur y el primero en el estado que está dedicado a la difusión del arte y la cultura local, nacional e incluso internacional.",
+    "lat": 24.16247,
+    "lon": -110.31392,
+    "imagen": "Museo de Arte de Baja California Sur 02.jpg",
+    "wiki": "Museo de Arte de Baja California Sur",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q125815177"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q432483",
+    "nombre": "Santuario de ballenas de El Vizcaíno",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la biosfera El Vizcaíno es un área natural protegida que se localiza en el norte del estado de Baja California Sur (México), dentro del municipio de Mulegé; sus más de dos millones de hectáreas la ubican como una de las reservas naturales más extensas del mundo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Pelícano en Mulegé.jpg",
+    "wiki": "Reserva de la biosfera El Vizcaíno",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q432483"
+   },
+   {
+    "id": "Q3364404",
+    "nombre": "Parque nacional Cabo Pulmo",
+    "tipo": "Parque nacional",
+    "descripcion": "El Parque nacional Cabo Pulmo es una de las áreas más importantes de la región del mar de Cortés.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cabo Pulmo.jpg",
+    "wiki": "Parque nacional Cabo Pulmo",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)",
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q3364404"
+   },
+   {
+    "id": "Q2068929",
+    "nombre": "Laguna Ojo de Liebre",
+    "tipo": "Bahía",
+    "descripcion": "La laguna Ojo de Liebre (anteriormente conocida como Laguna de Scammon, del inglés: Scammon's Lagoon por el capitán que la descubrió, que luego fue traducida al inglés como: Hare's Eye Lagoon y finalmente castellanizada), es una laguna costera localizada en el municipio de Mulegé, cerca de la ciudad de Guerrero Negro…",
+    "lat": null,
+    "lon": null,
+    "imagen": "Laguna Ojo de Liebre, Mexico.jpg",
+    "wiki": "Laguna Ojo de Liebre",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2068929"
+   },
+   {
+    "id": "Q6378115",
+    "nombre": "Parque nacional Bahía de Loreto",
+    "tipo": "Parque nacional",
+    "descripcion": "El parque nacional Bahía de Loreto es un área natural protegida de México, con el carácter de Parque Nacional, cuyo espacio designado como tal se encalle",
+    "lat": null,
+    "lon": null,
+    "imagen": "SierraDeLaGiganta 2002 Thomas Kestas.jpg",
+    "wiki": "Parque nacional Bahía de Loreto",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)",
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q6378115"
+   },
+   {
+    "id": "Q7414296",
+    "nombre": "Laguna San Ignacio",
+    "tipo": "Bahía",
+    "descripcion": "La laguna San Ignacio es una laguna costera de México en aguas del océano Pacífico, localizada en el municipio de Mulegé, en el estado de Baja California Sur, a 59 kilómetros de la ciudad de San Ignacio y la carretera Federal 1.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Big Spy Hop, Laguna San Ignacio.jpg",
+    "wiki": "Laguna San Ignacio",
+    "distinciones": [
+     "Patrimonio de la Humanidad (UNESCO)",
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q7414296"
+   },
+   {
+    "id": "Q214215",
+    "nombre": "La Paz",
+    "tipo": "Ciudad",
+    "descripcion": "La Paz es una ciudad mexicana, capital y ciudad más poblada del estado de Baja California Sur y a su vez cabecera del municipio de La Paz; está ubicada al sur de la bahía de la Paz, en la costa del golfo de California, al sur de la península de Baja California.",
+    "lat": 24.14861,
+    "lon": -110.30667,
+    "imagen": "La Paz vista desde the one.jpg",
+    "wiki": "La Paz (Baja California Sur)",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q214215"
+   },
+   {
+    "id": "Q1020776",
+    "nombre": "Cabo San Lucas",
+    "tipo": "Ciudad",
+    "descripcion": "Cabo San Lucas es una ciudad turística de México ubicada en el extremo sur de la península de Baja California, siendo una delegación del municipio de Los Cabos en el estado de Baja California Sur. Su ubicación geográfica es: norte 23°40′, sur 22°52′, este 109°24′, oeste 110°7′.",
+    "lat": 22.89472,
+    "lon": -109.91528,
+    "imagen": "Cabo San Lucas bay.jpg",
+    "wiki": "Cabo San Lucas",
+    "municipio": "Los Cabos",
+    "fuente": "https://www.wikidata.org/wiki/Q1020776"
+   },
+   {
+    "id": "Q2088134",
+    "nombre": "San José del Cabo",
+    "tipo": "Ciudad",
+    "descripcion": "San José del Cabo es una ciudad mexicana, cabecera del municipio de Los Cabos ubicado en el extremo meridional del estado mexicano de Baja California Sur. Tiene como principal actividad el turismo.",
+    "lat": 23.06167,
+    "lon": -109.71139,
+    "imagen": "PlazaPrincipalCabos2.JPG",
+    "wiki": "San José del Cabo",
+    "municipio": "Los Cabos",
+    "fuente": "https://www.wikidata.org/wiki/Q2088134"
+   },
+   {
+    "id": "Q599087",
+    "nombre": "Ciudad Constitución",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Constitución es una ciudad mexicana, en el estado de Baja California Sur, ubicada en el corazón del valle agrícola de Santo Domingo. Además del acceso por carretera, la ciudad cuenta con el Aeropuerto Nacional de Ciudad Constitución operado por el gobierno municipal de Comondú.",
+    "lat": 25.0312,
+    "lon": -111.6578,
+    "imagen": "Cdconst.jpg",
+    "wiki": "Ciudad Constitución (Baja California Sur)",
+    "municipio": "Comondú",
+    "fuente": "https://www.wikidata.org/wiki/Q599087"
+   },
+   {
+    "id": "Q2257840",
+    "nombre": "Sierra de la Laguna",
+    "tipo": "Montaña",
+    "descripcion": "La Sierra La Laguna es una sierra y una Reserva de la biosfera en los municipios de La Paz y Los Cabos, estado de Baja California Sur, México. Es un área donde se encuentra una enorme variedad de especies endémicas, además de vestigios arqueológicos.",
+    "lat": 23.56667,
+    "lon": -110,
+    "imagen": "El picacho.jpg",
+    "wiki": "Sierra La Laguna",
+    "fuente": "https://www.wikidata.org/wiki/Q2257840"
+   },
+   {
+    "id": "Q1040858",
+    "nombre": "Isla Espíritu Santo",
+    "tipo": "Isla",
+    "descripcion": "Isla Espíritu Santo es una isla en el golfo de California, del estado mexicano de Baja California Sur. La orografía de ambas es completamente diferente a las otras islas del Golfo.",
+    "lat": 24.47139,
+    "lon": -110.3325,
+    "imagen": "Espiritu santo partida.JPG",
+    "wiki": "Isla Espíritu Santo (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q1040858"
+   },
+   {
+    "id": "Q1578410",
+    "nombre": "Isla Jacques Cousteau",
+    "tipo": "Isla",
+    "descripcion": "La Isla Cerralvo, nombrada comúnmente así, cuyo nombre oficial es Isla Jacques Cousteau, pronunciado en francés como; /ʒak kusto/, y pronunciado en español como /ʝak 'kusto/ o yak kústo, es una isla situada en el Golfo de California en la costa del estado mexicano de Baja California Sur.",
+    "lat": 24.24278,
+    "lon": -109.88028,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla Jacques Cousteau",
+    "municipio": "La Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q1578410"
+   },
+   {
+    "id": "Q2344525",
+    "nombre": "Tres Vírgenes",
+    "tipo": "Volcán",
+    "descripcion": "Las Tres Vírgenes es un complejo de volcanes localizado en el Municipio de Mulegé en el estado de Baja California Sur, en la Península de Baja California en el noroeste de México.",
+    "lat": 27.4697,
+    "lon": -112.591,
+    "imagen": "Volcán Las Tres Vírgenes.jpg",
+    "wiki": "Las Tres Vírgenes",
+    "fuente": "https://www.wikidata.org/wiki/Q2344525"
+   },
+   {
+    "id": "Q1578060",
+    "nombre": "Isla San José",
+    "tipo": "Isla",
+    "descripcion": "La isla San José es una isla de México localizada en el golfo de California frente a las costas del estado de Baja California Sur.",
+    "lat": 24.97417,
+    "lon": -110.61444,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla San José (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q1578060"
+   },
+   {
+    "id": "Q967564",
+    "nombre": "Isla del Carmen",
+    "tipo": "Isla",
+    "descripcion": "La Isla del Carmen es una isla ubicada frente a la ciudad de Loreto en el Golfo de California, en el Municipio de Loreto en la porción este del estado de Baja California Sur, México.",
+    "lat": 25.97699,
+    "lon": -111.16387,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla del Carmen (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q967564"
+   },
+   {
+    "id": "Q1477398",
+    "nombre": "Isla Santa Catalina",
+    "tipo": "Isla",
+    "descripcion": "Isla Santa Catalina conocida oficialmente como Isla catalana, es una pequeña isla de México en el golfo de California frente a las costas del estado de Baja California Sur.",
+    "lat": 25.64917,
+    "lon": -110.77861,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla Santa Catalina (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q1477398"
+   },
+   {
+    "id": "Q634306",
+    "nombre": "Isla Santa Margarita",
+    "tipo": "Isla",
+    "descripcion": "La Isla Santa Margarita es una isla de México, perteneciente al estado de Baja California Sur, ubicada a pocas millas náuticas al oeste de la península de Baja California, separando la bahía de Magdalena del océano Pacífico. En su mar territorial existen diversas especies de peces, crustáceos y moluscos.",
+    "lat": 24.45,
+    "lon": -111.83333,
+    "imagen": "ISS050-E-191 - View of Earth.jpg",
+    "wiki": "Isla Santa Margarita",
+    "fuente": "https://www.wikidata.org/wiki/Q634306"
+   },
+   {
+    "id": "Q1674036",
+    "nombre": "Isla Montserrat",
+    "tipo": "Isla",
+    "descripcion": "Isla Monserrat (nombre oficial en México) es una isla del golfo de California, al este de la península de Baja California. La isla está deshabitada y forma parte del municipio de Loreto, frente a la costa de Baja California Sur.",
+    "lat": 25.68413,
+    "lon": -111.03239,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla Montserrat",
+    "fuente": "https://www.wikidata.org/wiki/Q1674036"
+   },
+   {
+    "id": "Q1263554",
+    "nombre": "Isla San Marcos",
+    "tipo": "Isla",
+    "descripcion": "Isla San Marcos es una isla de México en el golfo de California frente a San Bruno, al sureste de Santa Rosalía, en las costas del estado de Baja California Sur, conocida por albergar uno de los yacimientos y minas de yeso más grandes y puros del mundo.",
+    "lat": 27.21,
+    "lon": -112.07,
+    "imagen": "Isla San Marcos (Baja California Sur) from aircraft (October 2024).jpg",
+    "wiki": "Isla San Marcos",
+    "fuente": "https://www.wikidata.org/wiki/Q1263554"
+   },
+   {
+    "id": "Q27784937",
+    "nombre": "Sierra de la Giganta",
+    "tipo": "Montaña",
+    "descripcion": "La sierra de la Giganta es una sierra paralela al golfo de California, situad al frente de Loreto, donde más al norte está la sierra de Guadalupe, desde el sur de la bahía Concepción, hasta el norte de la bahía de La Paz al sur, pasando por los municipios de Loreto, Comondú y La Paz, en el estado de Baja California…",
+    "lat": 26.11667,
+    "lon": -111.6,
+    "imagen": "SierraDeLaGiganta 2002 Thomas Kestas.jpg",
+    "wiki": "Sierra de la Giganta",
+    "fuente": "https://www.wikidata.org/wiki/Q27784937"
+   },
+   {
+    "id": "Q1145914",
+    "nombre": "Isla Santa Cruz",
+    "tipo": "Isla",
+    "descripcion": "Isla Santa Cruz es una isla de México situada en el Golfo de California frente a las costas del estado de Baja California Sur.",
+    "lat": 25.285,
+    "lon": -110.71667,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla Santa Cruz (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q1145914"
+   },
+   {
+    "id": "Q771842",
+    "nombre": "Isla San Francisco",
+    "tipo": "Isla",
+    "descripcion": "La isla San Francisco es una pequeña isla de México situada en el golfo de California frente a las costas del estado de Baja California Sur, al sur de la Isla San José.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla San Francisco (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q771842"
+   },
+   {
+    "id": "Q1301010",
+    "nombre": "Isla Danzante",
+    "tipo": "Isla",
+    "descripcion": "Isla Danzante, es una isla mexicana en el Golfo de California al este de la Península de Baja California. La isla actualmente está deshabitada y forma parte del Municipio de Loreto.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla Danzante",
+    "fuente": "https://www.wikidata.org/wiki/Q1301010"
+   },
+   {
+    "id": "Q803682",
+    "nombre": "Bahía de Magdalena",
+    "tipo": "Bahía",
+    "descripcion": "La bahía Magdalena es una bahía de 50 km de largo a lo largo de la costa occidental del estado mexicano de Baja California Sur. La bahía está protegida del océano Pacífico por las barreras de las islas arenosas de Magdalena y Santa Margarita.",
+    "lat": 24.58333,
+    "lon": -112,
+    "imagen": "Baja peninsula (mexico) 250m.jpg",
+    "wiki": "Bahía de Magdalena",
+    "fuente": "https://www.wikidata.org/wiki/Q803682"
+   },
+   {
+    "id": "Q1674038",
+    "nombre": "Isla San Diego",
+    "tipo": "Isla",
+    "descripcion": "Isla San Diego es una pequeña isla de México en el sur del golfo de California. Administrativamente pertenece al municipio de Comondú del Estado de Baja California Sur, y está muy cerca de la pequeña isla llamada La Habana.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Iles de Basse-Californie Sud.jpg",
+    "wiki": "Isla San Diego",
+    "fuente": "https://www.wikidata.org/wiki/Q1674038"
+   },
+   {
+    "id": "Q3211381",
+    "nombre": "Isla Partida",
+    "tipo": "Isla",
+    "descripcion": "La isla Partida es una isla ubicada en el golfo de California. Está conectada a la isla Espíritu Santo por un canal de pocos metros de profundidad.",
+    "lat": 24.5625,
+    "lon": -110.375,
+    "imagen": "Espiritu santo partida.JPG",
+    "wiki": "Isla Partida",
+    "fuente": "https://www.wikidata.org/wiki/Q3211381"
+   },
+   {
+    "id": "Q5813355",
+    "nombre": "Isla Magdalena",
+    "tipo": "Isla",
+    "descripcion": "La Isla Magdalena es una isla alargada del Océano Pacífico de la costa del estado mexicano de Baja California Sur, al oeste de Ciudad Constitución. Su superficie es de 314 km².",
+    "lat": 25.33722,
+    "lon": -112.11306,
+    "imagen": "Iles_de_Basse-Californie_Sud.jpg",
+    "wiki": "Isla Magdalena (Baja California Sur)",
+    "fuente": "https://www.wikidata.org/wiki/Q5813355"
+   },
+   {
+    "id": "Q19462529",
+    "nombre": "Isla Islitas",
+    "tipo": "Isla",
+    "descripcion": "Isla Islitas, es una isla en el Golfo de California al este de la Península de Baja California. La isla se encuentra deshabitada y forma parte del Municipio de Loreto en Baja California Sur.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Isla Islitas",
+    "fuente": "https://www.wikidata.org/wiki/Q19462529"
+   },
+   {
+    "id": "Q27784142",
+    "nombre": "Bahía de la Paz",
+    "tipo": "Bahía",
+    "descripcion": "La bahía de la Paz es una bahía ubicada sobre la costa del Golfo de California, la misma se encuentra en el estado de Baja California Sur, México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Baja La Paz (mexico) 250m.JPG",
+    "wiki": "Bahía de la Paz",
+    "fuente": "https://www.wikidata.org/wiki/Q27784142"
+   }
+  ],
+  "cocina": []
+ }
+}

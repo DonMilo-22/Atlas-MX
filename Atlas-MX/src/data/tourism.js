@@ -25,11 +25,13 @@ export async function loadStateTourism(cve) {
   return cache.get(code);
 }
 
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+
 export const CATEGORY_META = {
-  pueblos: { label: 'Pueblos Mágicos', single: 'Pueblo Mágico' },
-  historia: { label: 'Historia', single: 'Sitio histórico' },
-  destinos: { label: 'Destinos', single: 'Destino' },
-  cocina: { label: 'Cocina', single: 'Platillo típico' },
+  pueblos: { label: 'Pueblos Mágicos', single: 'Pueblo Mágico', count: (n) => plural(n, 'pueblo mágico', 'pueblos mágicos') },
+  historia: { label: 'Historia', single: 'Sitio histórico', count: (n) => plural(n, 'sitio histórico', 'sitios históricos') },
+  destinos: { label: 'Destinos', single: 'Destino', count: (n) => plural(n, 'destino', 'destinos') },
+  cocina: { label: 'Cocina', single: 'Platillo típico', count: (n) => plural(n, 'platillo típico', 'platillos típicos') },
 };
 
 export function commonsThumb(fileName, width = 640) {

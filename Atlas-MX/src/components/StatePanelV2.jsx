@@ -27,7 +27,8 @@ function GuideButton({ state, onOpen }) {
   const { data, isLoading } = useStateTourism(state.cve);
   const counts = GUIDE_ORDER.map((key) => [key, data?.categorias?.[key]?.length || 0]).filter(([, n]) => n > 0);
   const photos = guidePreview(data);
-  const summary = counts.map(([key, n]) => `${n} ${CATEGORY_META[key]?.countLabel?.(n) || CATEGORY_META[key]?.label?.toLocaleLowerCase('es-MX')}`);
+  const parts = counts.map(([key, n]) => CATEGORY_META[key].count(n));
+  const summary = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} y ${parts[parts.length - 1]}` : parts[0] || '';
   return (
     <button type="button" className="guide-cta" onClick={() => onOpen?.()} aria-label={`Qué visitar en ${state.nombre}: pueblos mágicos, historia, destinos y cocina`}>
       <span className={`guide-cta-photos n${photos.length}`} aria-hidden="true">
@@ -35,7 +36,7 @@ function GuideButton({ state, onOpen }) {
       </span>
       <span className="guide-cta-text">
         <strong>Qué visitar en {state.nombreCorto}</strong>
-        <span>{isLoading ? 'Cargando la guía…' : summary.length ? summary.join(', ') : 'Pueblos, historia, destinos y cocina'}</span>
+        <span>{isLoading ? 'Cargando la guía…' : summary || 'Pueblos, historia, destinos y cocina'}</span>
       </span>
       <ArrowRight size={18} aria-hidden="true" className="guide-cta-arrow" />
     </button>

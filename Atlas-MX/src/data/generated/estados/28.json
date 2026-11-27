@@ -1,0 +1,483 @@
+{
+ "cve": "28",
+ "estado": "Tamaulipas",
+ "wikidata": "Q80007",
+ "generado": "2026-11-27",
+ "categorias": {
+  "pueblos": [
+   {
+    "id": "Q631325",
+    "nombre": "Mier",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Mier es una localidad, cabecera del municipio de Mier, en el estado mexicano de Tamaulipas. Se localiza en la frontera entre Estados Unidos y México, cerca de la presa Falcón, en la región conocida como \"Frontera Chica\".",
+    "lat": 26.43056,
+    "lon": -99.14861,
+    "imagen": "Ciudad Mier, Tamaulipas, Mexico - panoramio.jpg",
+    "wiki": "Mier",
+    "municipio": "Mier",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q631325"
+   },
+   {
+    "id": "Q2000148",
+    "nombre": "Tula",
+    "tipo": "Pueblo Mágico",
+    "descripcion": "Ciudad Tula (del náhuatl: Tollan ‘lugar de tules’) es una ciudad en el Estado de Tamaulipas, México. La ciudad fue fundada el 22 de julio de 1617 por el fraile franciscano Juan Bautista de Mollinedo por lo cual usualmente es considerada la ciudad más antigua del estado de Tamaulipas.",
+    "lat": 22.99688,
+    "lon": -99.713,
+    "imagen": "Iglesia de San Antonio de Padua, Tula, Tampico.jpg",
+    "wiki": "Ciudad Tula",
+    "municipio": "Tula",
+    "distinciones": [
+     "Pueblo Mágico"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q2000148"
+   }
+  ],
+  "historia": [
+   {
+    "id": "Q93255509",
+    "nombre": "El Sabinito",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Sabinito es el nombre de una ruina precolombina asociada a la civilización huasteca. Ubicado en el estado mexicano de Tamaulipas, El Sabinito se encuentra aproximadamente a 25 kilómetros al suroeste y 96 kilómetros al este de las actuales ciudades Soto la Marina y Ciudad Victoria.",
+    "lat": 23.63639,
+    "lon": -98.40722,
+    "imagen": "Monumento_principal_en_El_Sabinito.JPG",
+    "wiki": "El Sabinito",
+    "fuente": "https://www.wikidata.org/wiki/Q93255509"
+   },
+   {
+    "id": "Q4850276",
+    "nombre": "Balcón de Montezuma",
+    "tipo": "Zona arqueológica",
+    "descripcion": "El Balcón de Montezuma es un sitio arqueológico situado en el ejido de Alta Cumbre, a 18 kilómetros de Ciudad Victoria, en el Estado de Tamaulipas, México, por la Carretera Federal 101, en dirección a San Luís Potosí.",
+    "lat": 23.59083,
+    "lon": -99.17806,
+    "imagen": null,
+    "wiki": "Balcón de Montezuma",
+    "fuente": "https://www.wikidata.org/wiki/Q4850276"
+   },
+   {
+    "id": "Q5758604",
+    "nombre": "Catedral de Tampico",
+    "tipo": "Catedral",
+    "descripcion": "La Santa Iglesia Catedral de Tampico, dedicada a la Inmaculada Concepción de la Santísima Virgen María, es el principal templo católico de la diócesis de Tampico.",
+    "lat": 22.21639,
+    "lon": -97.8575,
+    "imagen": "Catedral de la Inmaculada Concepción desde Edificio.JPG",
+    "wiki": "Catedral de Tampico",
+    "municipio": "Tampico",
+    "fuente": "https://www.wikidata.org/wiki/Q5758604"
+   },
+   {
+    "id": "Q2836315",
+    "nombre": "Catedral de Nuevo Laredo",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral del Espíritu Santo es la sede de la Diócesis de Nuevo Laredo. Está situada en la avenida de Paseo Colón en Nuevo Laredo.",
+    "lat": 27.46794,
+    "lon": -99.50631,
+    "imagen": null,
+    "wiki": "Catedral de Nuevo Laredo",
+    "fuente": "https://www.wikidata.org/wiki/Q2836315"
+   },
+   {
+    "id": "Q5679692",
+    "nombre": "Catedral de Matamoros",
+    "tipo": "Catedral",
+    "descripcion": "Situada en Matamoros, Tamaulipas, México, la Catedral de Matamoros, cuyo nombre completo es Catedral de Nuestra Señora del Refugio, es la sede de la Diócesis de Matamoros-Reynosa. Fue levantada en el siglo XIX, y se ubica en el centro histórico de la ciudad.",
+    "lat": 25.88019,
+    "lon": -97.50356,
+    "imagen": "Catedral Nuestra Señora del Refugio.JPG",
+    "wiki": "Catedral de Matamoros",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q5679692"
+   },
+   {
+    "id": "Q5758458",
+    "nombre": "Catedral de Ciudad Victoria",
+    "tipo": "Catedral",
+    "descripcion": "La Catedral de Ciudad Victoria, dedicada al Sagrado Corazón de Jesús, es el segundo edificio principal de la diócesis de Ciudad Victoria.",
+    "lat": 23.73153,
+    "lon": -99.15069,
+    "imagen": "Catedral Ciudad Victoria, Sagrado Corazón de Jesús, Ciudad Victoria, Estado de Tamaulipas, México (10634382494).jpg",
+    "wiki": "Catedral de Ciudad Victoria",
+    "municipio": "Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q5758458"
+   },
+   {
+    "id": "Q7681790",
+    "nombre": "Templo de Tampico",
+    "tipo": "Templo",
+    "descripcion": "El templo de Tampico, México, es uno de los templos construidos y operados por la Iglesia de Jesucristo de los Santos de los Últimos Días en las inmediaciones de Tampico, Tamaulipas, una ciudad de aproximadamente 212,000 habitantes. Hay aproximadamente 18,000 miembros de la iglesia en la ciudad.",
+    "lat": 22.2543,
+    "lon": -97.8559,
+    "imagen": "LDStemple83TampicoMexico.jpg",
+    "wiki": "Templo de Tampico",
+    "fuente": "https://www.wikidata.org/wiki/Q7681790"
+   },
+   {
+    "id": "Q17389574",
+    "nombre": "Iglesia de San Antonio de Padua",
+    "tipo": "Templo",
+    "descripcion": "El Templo de San Antonio de Padua está situado en Cd. Tula, Tamaulipas, México.",
+    "lat": 22.99711,
+    "lon": -99.71203,
+    "imagen": "Iglesia de San Antonio de Padua en Cd. Tula.JPG",
+    "wiki": "Iglesia de San Antonio de Padua (Tula)",
+    "municipio": "Tula",
+    "fuente": "https://www.wikidata.org/wiki/Q17389574"
+   },
+   {
+    "id": "Q17266495",
+    "nombre": "Fuerte Casamata",
+    "tipo": "Fuerte",
+    "descripcion": "La palabra Casamata se deriva del latín casa armata, que significa 'casa armada'. Desde su construcción, este fuerte fue el dispositivo de defensa de Matamoros durante el siglo XIX.",
+    "lat": 25.87816,
+    "lon": -97.49724,
+    "imagen": "Casamata en 2010.jpg",
+    "wiki": "Fuerte Casamata",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q17266495"
+   },
+   {
+    "id": "Q24529758",
+    "nombre": "Museo del Agrarismo Mexicano",
+    "tipo": "Museo",
+    "descripcion": "El museo del Agrarismo Mexicano es la única institución museística en México que tiene como temática el análisis y presentación de los distintos movimientos sociales y políticos a lo largo de la historia que buscan la distribución de la tierra, es decir el agrarismo, cuya máxima expresión tuvo lugar en el siglo XX.",
+    "lat": 25.84744,
+    "lon": -97.4544,
+    "imagen": "Museo del Agrarismo Mexicano.jpg",
+    "wiki": "Museo del Agrarismo Mexicano",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q24529758"
+   },
+   {
+    "id": "Q107637928",
+    "nombre": "Museo del Ferrocarril Estación Heroica Matamoros",
+    "tipo": "Museo",
+    "descripcion": "El Museo del Ferrocarril de Matamoros es un museo y antigua estación ferroviaria situada en Matamoros, Tamaulipas, México. Está dedicado a estudiar, conservar y difundir el legado ferroviario a partir de reseñas históricas del ferrocarril, desde sus inicios en 2017.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Museo del Ferrocaril de Matamoros.jpg",
+    "wiki": "Museo del Ferrocarril de Matamoros",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q107637928"
+   },
+   {
+    "id": "Q124396849",
+    "nombre": "Aduana de Tampico",
+    "tipo": "Museo",
+    "descripcion": "El edificio de la antigua Aduana de Tampico o la Receptoría Marítima es una construcción de la época del Porfiriato localizada al margen norte de la desembocadura del río Pánuco en la ciudad y puerto de Tampico, en el estado de Tamaulipas.",
+    "lat": 22.21151,
+    "lon": -97.85779,
+    "imagen": "Aduana de Tampico.jpg",
+    "wiki": "Aduana de Tampico",
+    "fuente": "https://www.wikidata.org/wiki/Q124396849"
+   }
+  ],
+  "destinos": [
+   {
+    "id": "Q331661",
+    "nombre": "Ciudad Victoria",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Victoria ( escuchar) es una ciudad mexicana, capital del estado de Tamaulipas, y cabecera del municipio de Victoria. Se localiza en el noreste de México, en la parte centro del estado al pie de la Sierra Madre Oriental.",
+    "lat": 23.73611,
+    "lon": -99.14611,
+    "imagen": "Montaje de Victoria.jpg",
+    "wiki": "Ciudad Victoria",
+    "municipio": "Victoria",
+    "fuente": "https://www.wikidata.org/wiki/Q331661"
+   },
+   {
+    "id": "Q273014",
+    "nombre": "Tampico",
+    "tipo": "Ciudad",
+    "descripcion": "Tampico (del huasteco: Tampikꞌoꞌ ‘Lugar de perros’) es una ciudad y puerto en México, ubicada en la región Huasteca del estado de Tamaulipas. es una de las grandes ciudades que tienen mayor desarrollo económico del estado y una de las más importantes de la región Noreste de México.",
+    "lat": 22.2372,
+    "lon": -97.87,
+    "imagen": "Tampico, Centro Historico (12059306706).jpg",
+    "wiki": "Tampico",
+    "municipio": "Tampico",
+    "fuente": "https://www.wikidata.org/wiki/Q273014"
+   },
+   {
+    "id": "Q738303",
+    "nombre": "Reynosa",
+    "tipo": "Ciudad",
+    "descripcion": "Reynosa es una ciudad mexicana, cabecera del municipio homónimo. Se sitúa en la región noreste del país, en el norte del estado de Tamaulipas.",
+    "lat": 26.09222,
+    "lon": -98.27778,
+    "imagen": "Vista desde el tejado.jpeg",
+    "wiki": "Reynosa",
+    "municipio": "Reynosa",
+    "fuente": "https://www.wikidata.org/wiki/Q738303"
+   },
+   {
+    "id": "Q328846",
+    "nombre": "Nuevo Laredo",
+    "tipo": "Ciudad",
+    "descripcion": "Nuevo Laredo es una ciudad fronteriza del estado de Tamaulipas, en el norte de México. Está ubicada en el norte de Tamaulipas, en el margen sur del río Bravo, en el límite fronterizo entre Estados Unidos y México.",
+    "lat": 27.4774,
+    "lon": -99.5252,
+    "imagen": "Presidencia Municipal Edificio.jpg",
+    "wiki": "Nuevo Laredo",
+    "fuente": "https://www.wikidata.org/wiki/Q328846"
+   },
+   {
+    "id": "Q738353",
+    "nombre": "Heroica Matamoros",
+    "tipo": "Ciudad",
+    "descripcion": "Heroica Matamoros, conocida como Matamoros, es una ciudad en el estado de Tamaulipas, México, cabecera del municipio homónimo.",
+    "lat": 25.85,
+    "lon": -97.50417,
+    "imagen": "Matamoros Portada.jpg",
+    "wiki": "Heroica Matamoros",
+    "municipio": "Matamoros",
+    "fuente": "https://www.wikidata.org/wiki/Q738353"
+   },
+   {
+    "id": "Q985365",
+    "nombre": "Ciudad Madero",
+    "tipo": "Ciudad",
+    "descripcion": "Ciudad Madero es un municipio mexicano y ciudad costera en el golfo de México, localizada en el sureste del estado de Tamaulipas, es el séptimo municipio más poblado en el estado, con una población de 205 933 habitantes en 2020, con un área de 46.6 km². Forma parte de la zona metropolitana de Tampico.",
+    "lat": 22.2475,
+    "lon": -97.8375,
+    "imagen": "Ciudad Madero.jpg",
+    "wiki": "Ciudad Madero",
+    "municipio": "Ciudad Madero",
+    "fuente": "https://www.wikidata.org/wiki/Q985365"
+   },
+   {
+    "id": "Q1963086",
+    "nombre": "Río Bravo",
+    "tipo": "Ciudad",
+    "descripcion": "Río Bravo, oficialmente Ciudad Río Bravo, es una ciudad mexicana situada en el estado de Tamaulipas, cabecera del municipio homónimo.",
+    "lat": 25.98167,
+    "lon": -98.09028,
+    "imagen": "Cuidad Rio Bravo paolaa meeza.jpg",
+    "wiki": "Río Bravo (Tamaulipas)",
+    "municipio": "Río Bravo",
+    "fuente": "https://www.wikidata.org/wiki/Q1963086"
+   },
+   {
+    "id": "Q434225",
+    "nombre": "Altamira",
+    "tipo": "Ciudad",
+    "descripcion": "Altamira es una ciudad mexicana situada en la región noreste de México, en el estado de Tamaulipas. Funciona como la cabecera del municipio de Altamira.",
+    "lat": 22.39583,
+    "lon": -97.93694,
+    "imagen": "Altamira Tam may06 008.JPG",
+    "wiki": "Altamira (Tamaulipas)",
+    "municipio": "Altamira",
+    "fuente": "https://www.wikidata.org/wiki/Q434225"
+   },
+   {
+    "id": "Q139259",
+    "nombre": "El Zacatón",
+    "tipo": "Gruta",
+    "descripcion": "El Zacatón es un pozo lleno de agua termal de México que pertenece al sistema Zacatón, un grupo kárstico de características inusuales formado por cinco dolinas o cenotes interconectados que se encuentra situado en el municipio de Aldama, en la parte suroriental del estado de Tamaulipas.",
+    "lat": 22.99335,
+    "lon": -98.16133,
+    "imagen": "Poza del Zacaton.jpg",
+    "wiki": "Cenote El Zacatón",
+    "fuente": "https://www.wikidata.org/wiki/Q139259"
+   },
+   {
+    "id": "Q4967120",
+    "nombre": "Lago Falcón",
+    "tipo": "Lago",
+    "descripcion": "EL Embalse Internacional Falcón, comúnmente llamado lago Falcón (Falcon Lake en inglés), es un lago y embalse artificial en las aguas del río Grande, al sureste de Laredo, Texas en Estados Unidos y Nuevo Laredo, Tamaulipas en México.",
+    "lat": 26.65,
+    "lon": -99.2,
+    "imagen": "FalconReservoir.JPG",
+    "wiki": "Lago Falcón",
+    "fuente": "https://www.wikidata.org/wiki/Q4967120"
+   },
+   {
+    "id": "Q7511669",
+    "nombre": "Sierra de Tamaulipas",
+    "tipo": "Sierra",
+    "descripcion": "La sierra de Tamaulipas es una pequeña cadena montañosa aislada, semi-tropical, en el estado de Tamaulipas, México. Su punto más alto es de 1260 m s. n. m. (metros sobre el nivel del mar).",
+    "lat": 23.53333,
+    "lon": -98.51667,
+    "imagen": null,
+    "wiki": "Sierra de Tamaulipas",
+    "fuente": "https://www.wikidata.org/wiki/Q7511669"
+   },
+   {
+    "id": "Q15241273",
+    "nombre": "Laguna Madre",
+    "tipo": "Laguna",
+    "descripcion": "La laguna Madre es un cuerpo de agua hipersalina al norte del estado mexicano de Tamaulipas.",
+    "lat": 25.23227,
+    "lon": -97.60803,
+    "imagen": "Laguna Madre Summer 2025.png",
+    "wiki": "Laguna Madre (Tamaulipas)",
+    "distinciones": [
+     "Sitio Ramsar"
+    ],
+    "fuente": "https://www.wikidata.org/wiki/Q15241273"
+   },
+   {
+    "id": "Q5549302",
+    "nombre": "Cerro del Bernal",
+    "tipo": "Montaña",
+    "descripcion": "El Cerro del Bernal, también conocido como Bernal de Horcasitas, es un volcán extinto en el municipio de González, en la zona sur del estado de Tamaulipas, México; su altitud máxima es de 820 metros sobre el nivel del mar. Es un símbolo del estado por su aislamiento topográfico y su figura escarpada.",
+    "lat": 22.75253,
+    "lon": -98.59006,
+    "imagen": "Cerro del bernal tamaulipas.jpg",
+    "wiki": "Cerro del Bernal",
+    "municipio": "González",
+    "fuente": "https://www.wikidata.org/wiki/Q5549302"
+   },
+   {
+    "id": "Q19601171",
+    "nombre": "El Cielo",
+    "tipo": "Reserva de la biosfera",
+    "descripcion": "La Reserva de la biósfera El Cielo es una reserva de la biosfera con 144 530 hectáreas de extensión, reconocida por Naciones Unidas desde 1987, fue ubicada en el estado de Tamaulipas es el área protegida más importante del noreste de México.",
+    "lat": 22.9,
+    "lon": -99.16,
+    "imagen": "El Cielo Biosphere Reserve, Municipality of Gómez Farías, Tamaulipas, Mexico (16 April 2001).jpg",
+    "wiki": "El Cielo (Tamaulipas)",
+    "municipio": "Gómez Farías",
+    "fuente": "https://www.wikidata.org/wiki/Q19601171"
+   },
+   {
+    "id": "Q6127878",
+    "nombre": "Sierra de San Carlos",
+    "tipo": "Sierra",
+    "descripcion": "La Sierra de San Carlos es una pequeña cadena montañosa mexicana localizada en la parte centro-oeste del estado de Tamaulipas, entre los ríos de San Fernando y Purificación. Se extiende por los municipios de Burgos, Cruillas, Jiménez, San Nicolás y San Carlos, tomando su nombre de la cabecera de este último municipio.",
+    "lat": 24.34,
+    "lon": -99.04,
+    "imagen": null,
+    "wiki": "Sierra de San Carlos",
+    "fuente": "https://www.wikidata.org/wiki/Q6127878"
+   },
+   {
+    "id": "Q5926682",
+    "nombre": "Jardín Botánico y Arboreto de Alta Cima",
+    "tipo": "Jardín botánico",
+    "descripcion": "El Jardín Botánico y Arboreto de Alta Cima, es un jardín botánico y Arboreto de unas 7 hectáreas de extensión que se encuentra en la Reserva de la Biosfera El Cielo, en el municipio de Jaumave, Tamaulipas, México.",
+    "lat": 22.91667,
+    "lon": -99.03333,
+    "imagen": "Asclepias curassavica crop.jpg",
+    "wiki": "Jardín Botánico y Arboreto de Alta Cima",
+    "fuente": "https://www.wikidata.org/wiki/Q5926682"
+   }
+  ],
+  "cocina": [
+   {
+    "id": "Q98716450",
+    "nombre": "Chilpachole",
+    "tipo": "Platillo",
+    "descripcion": "El chilpachol o chilpachole es un estofado marinero, también conocido como chile-atole originario de la región del Sotavento, en Veracruz, México, hoy en día extendido por todas las costas del golfo de México.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Chilpachole de mariscos.jpg",
+    "wiki": "Chilpachole",
+    "fuente": "https://www.wikidata.org/wiki/Q98716450"
+   },
+   {
+    "id": "Q112944304",
+    "nombre": "Cortadillo norteño",
+    "tipo": "Platillo",
+    "descripcion": "El cortadillo al estilo norteño es un guiso de carne de res y jitomate típico de los estados de Coahuila, Nuevo León y Tamaulipas, en el norte de México. El cortadillo es el nombre que recibe las puntas de filete o la pulpa de res en cubos.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Cortadillo Santiago NL. Consejo para la Cultura y las Artes de Nuevo León.jpg",
+    "wiki": "Cortadillo norteño",
+    "fuente": "https://www.wikidata.org/wiki/Q112944304"
+   },
+   {
+    "id": "Q96064581",
+    "nombre": "Jaibas rellenas",
+    "tipo": "Platillo",
+    "descripcion": "Las jaibas rellenas son un plato típico de la gastronomía del golfo de México, particularmente Tamaulipas y el norte y centro del estado de Veracruz. Se elabora con jaibas (Callinectes sapidus), un tipo de cangrejo de color azul.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Jaibasrellenas.jpg",
+    "wiki": "Jaibas rellenas",
+    "fuente": "https://www.wikidata.org/wiki/Q96064581"
+   },
+   {
+    "id": "Q107986694",
+    "nombre": "Chochas",
+    "tipo": "Platillo",
+    "descripcion": "Las chochas, también conocidas como pita, es un platillo típico de Tamaulipas cocinado con las flores de la palma de yuca.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Flor de Palma Entre los llanos y Sierra Hermosa, Coahuila - panoramio.jpg",
+    "wiki": "Chochas",
+    "fuente": "https://www.wikidata.org/wiki/Q107986694"
+   },
+   {
+    "id": "Q96039977",
+    "nombre": "Huatape",
+    "tipo": "Sopa",
+    "descripcion": "El huatape o guatape, también michitlacuali, es un caldo típico de la Huasteca, el área de Tampico, Tamaulipas, y el norte del estado de Veracruz, en México. Consiste en una salsa elaborada con tomatillo o tomate verde, cebolla y chile, dependiendo de la receta xalapeño, verde, ancho o guajillo.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Huatapecamaron.jpg",
+    "wiki": "Huatape",
+    "fuente": "https://www.wikidata.org/wiki/Q96039977"
+   },
+   {
+    "id": "Q111995448",
+    "nombre": "Panzaje",
+    "tipo": "Platillo",
+    "descripcion": "El panzaje es un plato de carne típico del Estado de Tamaulipas, en el norte de México. Consiste en un estofado o ragú de carne de res, típicamente la panza (de ahí su nombre), o a veces también algunas vísceras, asaduras o sangre de res, combinado con cebolla, tomate, papas y especiado con pimienta, comino, ajo y sal.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Panzaje",
+    "fuente": "https://www.wikidata.org/wiki/Q111995448"
+   },
+   {
+    "id": "Q152336",
+    "nombre": "Machacado con huevo",
+    "tipo": "Platillo",
+    "descripcion": "El machacado con huevo o huevo con machaca es un platillo mexicano típico en algunas zonas del norte de México. Consiste de un preparado con carne seca de res desmenuzada, huevos y en ocasiones salsa picante.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Machacado con huevo.jpg",
+    "wiki": "Machacado con huevo",
+    "fuente": "https://www.wikidata.org/wiki/Q152336"
+   },
+   {
+    "id": "Q1057953",
+    "nombre": "Ceviche",
+    "tipo": "Platillo",
+    "descripcion": "El cebiche, ceviche, sebiche o seviche (todas válidas según la RAE; dependiendo de la zona geográfica) es un plato consistente en carne marinada ―pescado, mariscos o ambos― en aliños cítricos, reconocido por la Unesco como expresión de la cocina tradicional peruana y patrimonio cultural inmaterial de la humanidad.",
+    "lat": null,
+    "lon": null,
+    "imagen": "Ceviche del Perú.jpg",
+    "wiki": "Cebiche",
+    "fuente": "https://www.wikidata.org/wiki/Q1057953"
+   },
+   {
+    "id": "Q16489885",
+    "nombre": "Cabrito al pastor",
+    "tipo": "Platillo",
+    "descripcion": "El cabrito al pastor es un platillo tradicional del noreste de México, conocido por su preparación al fuego utilizando técnicas de asado primitivas.",
+    "lat": null,
+    "lon": null,
+    "imagen": null,
+    "wiki": "Cabrito al pastor",
+    "fuente": "https://www.wikidata.org/wiki/Q16489885"
+   },
+   {
+    "id": "Q62018789",
+    "nombre": "Discada",
+    "tipo": "Platillo",
+    "descripcion": "La discada es un platillo mexicano típico en los estados del norte, caracterizado por ser una abundante mezcla de carnes, embutidos y verduras.",
+    "lat": null,
+    "lon": null,
+    "imagen": "DISCADA.JPG",
+    "wiki": "Discada",
+    "fuente": "https://www.wikidata.org/wiki/Q62018789"
+   }
+  ]
+ }
+}
